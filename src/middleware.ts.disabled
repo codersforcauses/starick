@@ -1,0 +1,10 @@
+import { authMiddleware } from "@clerk/nextjs";
+
+export default authMiddleware({
+  // url routes that don't require login
+  publicRoutes: ["/"]
+});
+
+export const config = {
+  matcher: ["/((?!.*\\..*|_next).*)", "/", "/(api|trpc)(.*)"]
+};
