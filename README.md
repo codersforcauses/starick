@@ -8,15 +8,21 @@ A progressive web app aiming to raise funds and awareness for Starick.
 
 * Typescript
 * Next.JS for frontend + backend
-* Postgres (Docker) for local DB
 * Mocha + Chai for testing
-* Clerk for auth
 * TailwindCSS for styling
 * ESLint + Prettier for linting
 
 ## Getting Started
 
-First, run the development server:
+First, install [Node](https://nodejs.org/en/download/) (either of versions 18 or 20 is fine).
+
+Then, install the dependencies by executing the following command in the project directory:
+
+```bash
+npm install
+```
+
+Now run the development server:
 
 ```bash
 npm run dev
@@ -31,3 +37,9 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Testing
+
+```sh
+npm run test
+```

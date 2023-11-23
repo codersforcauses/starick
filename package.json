@@ -1,5 +1,5 @@
 {
-  "name": "next-prisma-template",
+  "name": "starick",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -10,19 +10,11 @@
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
     "format": "prettier --write .",
-    "docker:up": "docker compose up -d",
-    "docker:down": "docker compose down",
-    "test": "npm run docker:up && dotenv -e .env -- prisma migrate deploy && dotenv -e .env -- mocha",
-    "prisma:generate": "prisma generate",
-    "prisma:push": "prisma db push",
-    "prisma:studio": "prisma studio"
+    "test": "dotenv -e .env -- mocha"
   },
   "dependencies": {
-    "@clerk/nextjs": "^4.18.5",
-    "@prisma/client": "^4.14.1",
     "@types/chai": "^4.3.5",
-    "next": "13.4.3",
-    "next-pwa": "^5.6.0",
+    "next": "^13.5.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.43.9"
@@ -45,10 +37,9 @@
     "eslint-plugin-unused-imports": "^2.0.0",
     "mocha": "^10.2.0",
     "next-test-api-route-handler": "^3.1.8",
-    "postcss": "8.4.23",
+    "postcss": "^8.4.31",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.3.0",
-    "prisma": "^4.14.1",
     "tailwindcss": "3.3.2",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4"
