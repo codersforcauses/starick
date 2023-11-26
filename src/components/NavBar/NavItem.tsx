@@ -3,22 +3,27 @@ import { NavBarItem } from "./types";
 import NavDropDown from "./NavDropDown";
 import Link from "next/link";
 
-const NavBarItem = ({ href, label, submenu }: NavBarItem) => {
+const NavItem = ({ href, label, submenu }: NavBarItem) => {
   const [activated, setActivated] = useState(false);
 
   const handleMouseEnter = () => setActivated(true);
   const handleMouseLeave = () => setActivated(false);
+  const handleClick = () => setActivated(activated ? false : true);
 
-  return (
-    <div
-      className="relative"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
+  return submenu ? (
+    <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+      <button onClick={handleClick}>{label}</button>
+      {activated && (
+        <NavDropDown submenu={submenu}>
+          <Link href={href}>{label}</Link>
+        </NavDropDown>
+      )}
+    </div>
+  ) : (
+    <div>
       <Link href={href}>{label}</Link>
-      {activated && submenu && <NavDropDown submenu={submenu} />}
     </div>
   );
 };
 
-export default NavBarItem;
+export default NavItem;
