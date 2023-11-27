@@ -1,8 +1,10 @@
-import { primaryNav, secondaryNav } from "./links";
-import NavItem from "./NavItem";
-import Link from "next/link";
-import styles from "./NavBar.module.css";
 import React, { useState } from "react";
+import Link from "next/link";
+
+import { primaryNav } from "./links";
+import NavItem from "./NavItem";
+
+import styles from "./NavBar.module.css";
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -10,11 +12,11 @@ const NavBar = () => {
   const handleMenuClick = () => setMenuOpen(menuOpen ? false : true);
 
   return (
-    <nav className="relative flex h-14 items-center justify-between border-b px-6">
-      <div className="flex">
+    <nav className="relative flex h-14 items-center justify-between px-2 md:px-6">
+      <div className="flex basis-0 items-center md:basis-auto">
         <div>
           <Link href="/">
-            <h2 className="pr-6 font-bold">Starick Logo</h2>
+            <h2 className="font-bold md:pr-6">Starick Logo</h2>
           </Link>
         </div>
         <div
@@ -25,25 +27,32 @@ const NavBar = () => {
           <ul className={`flex md:space-x-6 ${styles.responsiveList}`}>
             {primaryNav.map((link, i) => (
               <li key={i}>
-                <NavItem
-                  href={link.href}
-                  label={link.label}
-                  submenu={link.submenu}
-                />
+                <NavItem classNames="p-2 bg-white rounded-lg" link={link} />
               </li>
             ))}
           </ul>
         </div>
       </div>
       <div className="flex">
-        <ul className="flex space-x-6 font-bold">
-          {secondaryNav.map((link, i) => (
-            <li key={i}>
-              <NavItem href={link.href} label={link.label} />
-            </li>
-          ))}
+        <ul className="flex space-x-2 font-thin md:space-x-6 md:font-bold">
+          <li>
+            <NavItem
+              classNames="bg-[--starick-orange] text-[--starick-white] p-1 md:p-2 rounded-lg"
+              link={{ href: "/help", label: "Seek Help" }}
+            />
+          </li>
+          <li>
+            <NavItem
+              classNames="bg-[--starick-green] text-[--starick-white] p-1 md:p-2 rounded-lg"
+              link={{ href: "/donate", label: "Donate" }}
+            />
+          </li>
           <li className="z-10 md:hidden">
-            <button onClick={handleMenuClick}>hamburger menu</button>
+            <button className="text-xs" onClick={handleMenuClick}>
+              hamburger
+              <br />
+              menu
+            </button>
           </li>
         </ul>
       </div>

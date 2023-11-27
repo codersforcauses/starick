@@ -4,6 +4,10 @@ export const primaryNav: Array<NavBarItem> = [
   // THESE LINKS ARE PLACEHOLDERS
   // SUBJECT TO CHANGE
   {
+    href: "/",
+    label: "Home"
+  },
+  {
     href: "/about",
     label: "About Us",
     submenu: [
@@ -58,18 +62,5 @@ export const primaryNav: Array<NavBarItem> = [
   {
     href: "/chat",
     label: "Chat"
-  }
-];
-
-export const secondaryNav: Array<NavBarItem> = [
-  // THESE LINKS ARE PLACEHOLDERS
-  // SUBJECT TO CHANGE
-  {
-    href: "/donate",
-    label: "Donate"
-  },
-  {
-    href: "/contact",
-    label: "Contact Us"
   }
 ];

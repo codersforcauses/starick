@@ -1,4 +1,5 @@
 import React from "react";
+
 import NavItem from "./NavItem";
 import { NavBarItem } from "./types";
 
@@ -9,19 +10,21 @@ type Props = {
 
 const NavDropDown = ({ submenu, children }: Props) => {
   return (
-    <div className="pb-2 pl-2 md:absolute md:border md:bg-white md:p-2">
+    <div className="mx-2 drop-shadow-md md:absolute md:bg-white">
       <ul>
         {children && (
-          <>
-            <li>{children}</li>
-            <hr />
-          </>
+          <li className="px-2 hover:bg-[--starick-olive] md:pt-1">
+            {children}
+            <hr className="mt-1 md:-mx-2 md:mt-1 md:h-0.5 md:border-none md:bg-gray-100" />
+          </li>
         )}
         {submenu &&
           submenu.map((link, i) => (
-            <li key={i}>
-              <NavItem href={link.href} label={link.label} />
-              {i < submenu.length - 1 ? <hr /> : null}
+            <li key={i} className="px-2 hover:bg-[--starick-olive]">
+              <NavItem classNames="py-1 md:my-1 md:py-0" link={link} />
+              {i < submenu.length - 1 ? (
+                <hr className="md:-mx-2 md:h-0.5 md:border-none md:bg-gray-100" />
+              ) : null}
             </li>
           ))}
       </ul>

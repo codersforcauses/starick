@@ -1,27 +1,44 @@
 import React, { useState } from "react";
-import { NavBarItem } from "./types";
-import NavDropDown from "./NavDropDown";
 import Link from "next/link";
 
-const NavItem = ({ href, label, submenu }: NavBarItem) => {
+import NavDropDown from "./NavDropDown";
+import { NavBarItem } from "./types";
+
+type Props = {
+  link: NavBarItem;
+  classNames?: string;
+};
+
+const NavItem = ({ link, classNames }: Props) => {
   const [activated, setActivated] = useState(false);
 
   const handleMouseEnter = () => setActivated(true);
   const handleMouseLeave = () => setActivated(false);
   const handleClick = () => setActivated(activated ? false : true);
 
-  return submenu ? (
+  return link.submenu ? (
     <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-      <button onClick={handleClick}>{label}</button>
+      <button
+        className={`${classNames} transition hover:brightness-90 hover:filter`}
+        onClick={handleClick}
+      >
+        {link.label}
+      </button>
       {activated && (
-        <NavDropDown submenu={submenu}>
-          <Link href={href}>{label}</Link>
+        <NavDropDown submenu={link.submenu}>
+          <button>
+            <Link href={link.href}>{link.label}</Link>
+          </button>
         </NavDropDown>
       )}
     </div>
   ) : (
     <div>
-      <Link href={href}>{label}</Link>
+      <button
+        className={`${classNames} transition hover:brightness-90 hover:filter`}
+      >
+        <Link href={link.href}>{link.label}</Link>
+      </button>
     </div>
   );
 };
