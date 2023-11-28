@@ -6,6 +6,8 @@ import NavItem from "./NavItem";
 
 import styles from "./NavBar.module.css";
 
+import Image from 'next/image'
+
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -16,7 +18,14 @@ const NavBar = () => {
       <div className="flex basis-0 items-center md:basis-auto">
         <div>
           <Link href="/">
-            <h2 className="font-bold md:pr-6">Starick Logo</h2>
+            {/* <h2 className="font-bold md:pr-6">Starick Logo</h2> */}
+            <Image
+              src="/placeholder_starick_logo.png"
+              alt="Starick Logo"
+              width={170}
+              height={50}
+              className="font-bold md:pr-6"
+              />
           </Link>
         </div>
         <div
