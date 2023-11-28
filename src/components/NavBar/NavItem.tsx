@@ -22,7 +22,7 @@ const NavItem = ({ link, classNames }: Props) => {
         className={`${classNames} transition hover:brightness-90 hover:filter`}
         onClick={handleClick}
       >
-        {link.label}
+        {link.label + (activated ? " \u25B3" : " \u25BD")}
       </button>
       {activated && (
         <NavDropDown submenu={link.submenu}>

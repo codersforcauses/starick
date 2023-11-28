@@ -6,7 +6,7 @@ import NavItem from "./NavItem";
 
 import styles from "./NavBar.module.css";
 
-import Image from 'next/image'
+import Image from "next/image";
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,18 +14,17 @@ const NavBar = () => {
   const handleMenuClick = () => setMenuOpen(menuOpen ? false : true);
 
   return (
-    <nav className="relative flex h-14 items-center justify-between px-2 md:px-6">
-      <div className="flex basis-0 items-center md:basis-auto">
+    <nav className="flex h-14 items-center justify-between px-6">
+      <div className="flex basis-auto items-center">
         <div>
           <Link href="/">
-            {/* <h2 className="font-bold md:pr-6">Starick Logo</h2> */}
             <Image
               src="/placeholder_starick_logo.png"
               alt="Starick Logo"
               width={170}
               height={50}
-              className="font-bold md:pr-6"
-              />
+              className="relative z-10 font-bold md:pr-6"
+            />
           </Link>
         </div>
         <div
@@ -43,24 +42,44 @@ const NavBar = () => {
         </div>
       </div>
       <div className="flex">
-        <ul className="flex space-x-2 font-thin md:space-x-6 md:font-bold">
-          <li>
+        <ul className="flex space-x-2 font-bold md:space-x-6">
+          <li
+            className={`${
+              menuOpen ? "" : "hidden"
+            } absolute bottom-10 left-20 md:static md:block`}
+          >
             <NavItem
-              classNames="bg-[--starick-orange] text-[--starick-white] p-1 md:p-2 rounded-lg"
+              classNames="bg-[--starick-orange] text-[--starick-white] p-2 rounded-lg"
               link={{ href: "/help", label: "Seek Help" }}
             />
           </li>
-          <li>
+          <li
+            className={`${
+              menuOpen ? "" : "hidden"
+            } absolute bottom-10 right-20 md:static md:block`}
+          >
             <NavItem
-              classNames="bg-[--starick-green] text-[--starick-white] p-1 md:p-2 rounded-lg"
+              classNames="bg-[--starick-green] text-[--starick-white] p-2 rounded-lg"
               link={{ href: "/donate", label: "Donate" }}
             />
           </li>
-          <li className="z-10 md:hidden">
-            <button className="text-xs" onClick={handleMenuClick}>
-              hamburger
-              <br />
-              menu
+          <li className="z-10 flex md:hidden">
+            <button onClick={handleMenuClick}>
+              <div
+                className={`${
+                  menuOpen ? styles.responsiveHamburgerTop : ""
+                } my-1 h-1 w-7 bg-[--starick-green] transition duration-300`}
+              ></div>
+              <div
+                className={`${
+                  menuOpen ? styles.responsiveHamburgerMiddle : ""
+                } my-1 h-1 w-7 bg-[--starick-green] transition duration-300`}
+              ></div>
+              <div
+                className={`${
+                  menuOpen ? styles.responsiveHamburgerBottom : ""
+                } my-1 h-1 w-7 bg-[--starick-green] transition duration-300`}
+              ></div>
             </button>
           </li>
         </ul>

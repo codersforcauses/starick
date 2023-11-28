@@ -21,7 +21,18 @@
   .responsiveList {
     flex-direction: column;
     width: 100%;
-    margin-left: 35vw;
-    margin-right: 20vw;
+    margin-left: 4em;
+  }
+
+  .responsiveHamburgerTop {
+    transform: translate(0, 8px) rotate(-45deg);
+  }
+
+  .responsiveHamburgerMiddle {
+    opacity: 0;
+  }
+
+  .responsiveHamburgerBottom {
+    transform: translate(0, -8px) rotate(45deg);
   }
 }

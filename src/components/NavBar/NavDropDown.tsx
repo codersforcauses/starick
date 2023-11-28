@@ -15,7 +15,7 @@ const NavDropDown = ({ submenu, children }: Props) => {
         {children && (
           <li className="px-2 hover:bg-[--starick-olive] md:pt-1">
             {children}
-            <hr className="mt-1 md:-mx-2 md:mt-1 md:h-0.5 md:border-none md:bg-gray-100" />
+            <hr className="mt-1 hidden md:-mx-2 md:mt-1 md:block md:h-0.5 md:border-none md:bg-gray-100" />
           </li>
         )}
         {submenu &&
@@ -23,7 +23,7 @@ const NavDropDown = ({ submenu, children }: Props) => {
             <li key={i} className="px-2 hover:bg-[--starick-olive]">
               <NavItem classNames="py-1 md:my-1 md:py-0" link={link} />
               {i < submenu.length - 1 ? (
-                <hr className="md:-mx-2 md:h-0.5 md:border-none md:bg-gray-100" />
+                <hr className="hidden md:-mx-2 md:block md:h-0.5 md:border-none md:bg-gray-100" />
               ) : null}
             </li>
           ))}
