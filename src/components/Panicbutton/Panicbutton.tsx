@@ -23,7 +23,7 @@ const Panicbutton = () => {
     <div className="fixed top-1/3 right-0">
         <Link href="https://www.google.com">
             <button className="px-4 py-2 bg-starick-slate text-white sqaure hover:bg-starick-orange">
-                Quick Exit (Esc)
+                <span className= "font-bold">X</span> Quick Exit (Esc)
             </button>
         </Link>
     </div>
