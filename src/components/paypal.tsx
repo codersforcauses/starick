@@ -80,7 +80,7 @@ const ButtonWrapper: React.FC<{ showSpinner: boolean }> = ({ showSpinner }) => {
         </>
     );
 };
-const PaypalComponent: React.FC = () => {
+const Paypal: React.FC = () => {
     return (
 
         <PayPalScriptProvider
@@ -93,4 +93,4 @@ const PaypalComponent: React.FC = () => {
     );
 };
 
-export default PaypalComponent;
+export default Paypal;
