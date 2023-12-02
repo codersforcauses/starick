@@ -24,5 +24,4 @@ export default function PanicButton() {
       </Link>
     </div>
   );
-};
-
+}
