@@ -1,11 +1,39 @@
 import { NavBarItem } from "./types";
 
 export const primaryNav: Array<NavBarItem> = [
-  // THESE LINKS ARE PLACEHOLDERS
-  // SUBJECT TO CHANGE
   {
     href: "/",
     label: "Home"
+  },
+  {
+    href: "/what-is-domestic-violence",
+    label: "What is Domestic Violence"
+  },
+  {
+    href: "/services",
+    label: "Our Services",
+    submenu: [
+      {
+        href: "/service1",
+        label: "Service 1"
+      },
+      {
+        href: "/service2",
+        label: "Service 2"
+      },
+      {
+        href: "/service3",
+        label: "Service 3"
+      },
+      {
+        href: "/service4",
+        label: "Service 4"
+      },
+      {
+        href: "/service5",
+        label: "Service 5"
+      }
+    ]
   },
   {
     href: "/about",
@@ -34,30 +62,8 @@ export const primaryNav: Array<NavBarItem> = [
     ]
   },
   {
-    href: "/services",
-    label: "Our Services",
-    submenu: [
-      {
-        href: "/service1",
-        label: "Service 1"
-      },
-      {
-        href: "/service2",
-        label: "Service 2"
-      },
-      {
-        href: "/service3",
-        label: "Service 3"
-      },
-      {
-        href: "/service4",
-        label: "Service 4"
-      },
-      {
-        href: "/service5",
-        label: "Service 5"
-      }
-    ]
+    href: "/support",
+    label: "Support Us"
   },
   {
     href: "/chat",

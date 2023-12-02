@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 
 import { primaryNav } from "./links";
@@ -6,17 +7,20 @@ import NavItem from "./NavItem";
 
 import styles from "./NavBar.module.css";
 
-import Image from "next/image";
-
 const NavBar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  // handles hamburger button state
+  const [hamburgerMenuOpen, setHamburgerMenuOpen] = useState(false);
 
-  const handleMenuClick = () => setMenuOpen(menuOpen ? false : true);
+  // handles hamburger button clicks
+  const handleHamburgerClick = () =>
+    setHamburgerMenuOpen(hamburgerMenuOpen ? false : true);
 
   return (
-    <nav className="flex h-14 items-center justify-between px-6">
+    <nav className="fixed left-0 right-0 top-0 flex h-14 items-center justify-between px-6 md:static">
+      {/* Left nav container (logo and links) */}
       <div className="flex basis-auto items-center">
-        <div>
+        {/* Header container */}
+        <div className="relative">
           <Link href="/">
             <Image
               src="/placeholder_starick_logo.png"
@@ -27,57 +31,66 @@ const NavBar = () => {
             />
           </Link>
         </div>
+        {/* Primary nav link container */}
         <div
           className={`${
-            menuOpen ? styles.responsiveContainer : styles.hidden
+            hamburgerMenuOpen ? styles.responsiveContainer : styles.hidden
           } md:block`}
         >
           <ul className={`flex md:space-x-6 ${styles.responsiveList}`}>
             {primaryNav.map((link, i) => (
               <li key={i}>
-                <NavItem classNames="p-2 bg-white rounded-lg" link={link} />
+                <NavItem
+                  classNames="bg-white md:p-2 md:rounded-lg my-2 md:my-0"
+                  link={link}
+                />
               </li>
             ))}
           </ul>
         </div>
       </div>
-      <div className="flex">
+
+      {/* Right nav component (help/donate/hamburger buttons) */}
+      <div>
+        {/* Help button */}
         <ul className="flex space-x-2 font-bold md:space-x-6">
           <li
             className={`${
-              menuOpen ? "" : "hidden"
-            } absolute bottom-10 left-20 md:static md:block`}
+              hamburgerMenuOpen ? "" : "hidden"
+            } fixed bottom-10 left-20 md:static md:block`}
           >
             <NavItem
               classNames="bg-[--starick-orange] text-[--starick-white] p-2 rounded-lg"
               link={{ href: "/help", label: "Seek Help" }}
             />
           </li>
+          {/* Donate button */}
           <li
             className={`${
-              menuOpen ? "" : "hidden"
-            } absolute bottom-10 right-20 md:static md:block`}
+              hamburgerMenuOpen ? "" : "hidden"
+            } fixed bottom-10 right-20 md:static md:block`}
           >
             <NavItem
               classNames="bg-[--starick-green] text-[--starick-white] p-2 rounded-lg"
               link={{ href: "/donate", label: "Donate" }}
             />
           </li>
+          {/* Hamburger button */}
           <li className="z-10 flex md:hidden">
-            <button onClick={handleMenuClick}>
+            <button onClick={handleHamburgerClick}>
               <div
                 className={`${
-                  menuOpen ? styles.responsiveHamburgerTop : ""
+                  hamburgerMenuOpen ? styles.responsiveHamburgerTop : ""
                 } my-1 h-1 w-7 bg-[--starick-green] transition duration-300`}
               ></div>
               <div
                 className={`${
-                  menuOpen ? styles.responsiveHamburgerMiddle : ""
+                  hamburgerMenuOpen ? styles.responsiveHamburgerMiddle : ""
                 } my-1 h-1 w-7 bg-[--starick-green] transition duration-300`}
               ></div>
               <div
                 className={`${
-                  menuOpen ? styles.responsiveHamburgerBottom : ""
+                  hamburgerMenuOpen ? styles.responsiveHamburgerBottom : ""
                 } my-1 h-1 w-7 bg-[--starick-green] transition duration-300`}
               ></div>
             </button>
