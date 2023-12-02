@@ -58,6 +58,7 @@ export default function RefugesSection() {
                     <p>You can also read the stories of women who have stayed in a Starick refuge here.</p>
                     <br></br>
                     <p>For crisis accommodation contact information, go to our useful numbers page.</p>
+                    <br></br>
                 </div></>)
     return <ServicesSection colour="bg-neutral-200" sectionBody={body} title="Refuges" />
 }
