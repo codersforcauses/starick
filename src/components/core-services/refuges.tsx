@@ -1,5 +1,6 @@
 import React from "react"
 import ServicesSection from "./services-section"
+import SubSection from "./subsection"
 import { List } from "../lib"
 
 export default function RefugesSection() {
@@ -16,14 +17,13 @@ export default function RefugesSection() {
     "Homework support",
     "Art-related activities"]}/>
 
-    const body = (<><div className="flex flex-row items-center mb-4 w-full">
-                    <img src={"images/Icon-CRISIS-150x150.png"} className="w-24 h-24" alt="!"></img>
-                    <div className="pl-3">
-                        <p>If you are in immediate physical danger, call the police now on 000. If you are not in immediate danger and would prefer to speak to a support worker at one of our refuges:</p>
-                        <br></br>
-                        <ul><li className="list-disc list-inside">Phone (08) 9458 1107</li></ul>
-                    </div>
-                </div>
+    const subBody = <div className="pl-3">
+        <p>If you are in immediate physical danger, call the police now on 000. If you are not in immediate danger and would prefer to speak to a support worker at one of our refuges:</p>
+        <br></br>
+        <ul><li className="list-disc list-inside">Phone (08) 9458 1107</li></ul>
+    </div>;
+
+    const body = (<><SubSection sectionBody={subBody} iconPath="images/Icon-CRISIS-150x150.png"/>
                 <div>
                     <p>Starick&apos;s two refuges, Mary Smith Refuge and Starick House, offer short term crisis accommodation for women and children who need a safe place to stay where they are supported and offered access to free professional services to help them escape the violence and make plans for their future.</p>
                     <br></br>
