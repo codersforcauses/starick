@@ -10,7 +10,7 @@ export default function CoreServices() {
                 <p className="text-center text-2xl mt-1 font-semibold">Core Services</p>
                 <DropDown />
             </div>
-            <img src={"images/starick-image1.jpg"} className="h-40 w-full"></img>
+            <img src={"images/starick-image1.jpg"} className="h-40 w-full" alt=""></img>
             <CounsellingSection />
             <RefugesSection />
         </>

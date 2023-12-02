@@ -1,7 +1,7 @@
 import React from "react"
 import ServicesSection from "./services-section"
 
-function List({ items }: {items: String[]}) {
+function List({ items }: {items: string[]}) {
     return (<ul>
         {items.map((text, index) => <li className="list-disc list-inside" key={index}>{text}</li>)}
         </ul>
@@ -23,7 +23,7 @@ export default function RefugesSection() {
     "Art-related activities"]}/>
 
     const body = (<><div className="flex flex-row items-center mb-4 w-full">
-                    <img src={"images/Icon-CRISIS-150x150.png"} className="w-24 h-24"></img>
+                    <img src={"images/Icon-CRISIS-150x150.png"} className="w-24 h-24" alt="!"></img>
                     <div className="pl-3">
                         <p>If you are in immediate physical danger, call the police now on 000. If you are not in immediate danger and would prefer to speak to a support worker at one of our refuges:</p>
                         <br></br>
@@ -31,13 +31,13 @@ export default function RefugesSection() {
                     </div>
                 </div>
                 <div>
-                    <p>Starick's two refuges, Mary Smith Refuge and Starick House, offer short term crisis accommodation for women and children who need a safe place to stay where they are supported and offered access to free professional services to help them escape the violence and make plans for their future.</p>
+                    <p>Starick&apos;s two refuges, Mary Smith Refuge and Starick House, offer short term crisis accommodation for women and children who need a safe place to stay where they are supported and offered access to free professional services to help them escape the violence and make plans for their future.</p>
                     <br></br>
-                    <p>Child advocates and women's advocates are employed at both refuges, and counselling is available to women and their children.</p>
+                    <p>Child advocates and women&apos;s advocates are employed at both refuges, and counselling is available to women and their children.</p>
                     <br></br>
                     <p className="text-xl font-semibold">How we support the women in our refuges</p>
                     <br></br>
-                    <p>Our refuge teams work hard to provide an integrated service, with the aim of increasing a client's sense of safety and wellbeing. The support provided at our refuges includes:</p>
+                    <p>Our refuge teams work hard to provide an integrated service, with the aim of increasing a client&apos;s sense of safety and wellbeing. The support provided at our refuges includes:</p>
                     {refugeSupportExamples}
                     <br></br>
                     <p>We also offer our clients a range of other services and programs, to support their wellbeing.</p>
