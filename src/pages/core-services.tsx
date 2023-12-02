@@ -3,6 +3,7 @@ import CounsellingSection from '../components/core-services/counselling'
 import RefugesSection from '../components/core-services/refuges'
 import PoliceSection from '../components/core-services/police-stations';
 import SafeAtHomeSection from '../components/core-services/safe-at-home';
+import TransitionalHousingSection from '../components/core-services/transitional-housing';
 
 export default function CoreServices() {
     return (
@@ -15,6 +16,7 @@ export default function CoreServices() {
             <img src={"images/starick-image1.jpg"} className="h-40 w-full" alt=""></img>
             <CounsellingSection />
             <RefugesSection />
+            <TransitionalHousingSection />
             <PoliceSection />
             <SafeAtHomeSection />
         </>
