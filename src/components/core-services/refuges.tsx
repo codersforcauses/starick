@@ -1,12 +1,6 @@
 import React from "react"
 import ServicesSection from "./services-section"
-
-function List({ items }: {items: string[]}) {
-    return (<ul>
-        {items.map((text, index) => <li className="list-disc list-inside" key={index}>{text}</li>)}
-        </ul>
-    );
-}
+import { List } from "../lib"
 
 export default function RefugesSection() {
     const refugeSupportExamples = <List items={["Emotional support", 
