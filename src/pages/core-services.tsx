@@ -19,6 +19,9 @@ export default function CoreServices() {
             <TransitionalHousingSection />
             <PoliceSection />
             <SafeAtHomeSection />
+            <div className="bg-white-200 py-10 flex justify-center items-center">
+                <button className="bg-[--starick-brown] rounded-2xl p-5 text-white text-lg">Other Services</button>
+            </div>
         </>
     );
 }
