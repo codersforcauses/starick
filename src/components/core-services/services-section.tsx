@@ -1,9 +1,9 @@
-import React, { ReactNode } from "react"
+import { ReactNode } from "react"
 
 interface SectionProps {
-    title: string,
-    colour: string,
-    sectionBody: ReactNode
+    title: string;
+    colour: string;
+    sectionBody: ReactNode;
 }
 
 export default function Section({ title, colour, sectionBody }: SectionProps) {
