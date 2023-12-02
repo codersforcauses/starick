@@ -7,8 +7,8 @@ interface SectionProps {
 }
 
 export default function Section({ title, colour, sectionBody }: SectionProps) {
-    return <div className={`${colour} px-40`}>
-        <p className="text-center text-2xl pt-1 font-semibold">{title}</p>
+    return <div className={`${colour} md:px-40 px-6`}>
+        <p className="text-center text-2xl py-8 font-semibold">{title}</p>
         { sectionBody }
     </div>
 }
