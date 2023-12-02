@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
 
-const Panicbutton = () => {
+export default function PanicButton() {
   useEffect(() => {
     const handleKeyPress = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
@@ -26,4 +26,3 @@ const Panicbutton = () => {
   );
 };
 
-export default Panicbutton;
