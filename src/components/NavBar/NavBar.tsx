@@ -16,9 +16,9 @@ const NavBar = () => {
     setHamburgerMenuOpen(hamburgerMenuOpen ? false : true);
 
   return (
-    <nav className="fixed left-0 right-0 top-0 flex h-14 items-center justify-between px-6 md:static">
+    <nav className="fixed left-0 right-0 top-0 flex h-14 items-center justify-between px-4 md:static md:text-[1vw]">
       {/* Left nav container (logo and links) */}
-      <div className="flex basis-auto items-center">
+      <div className="flex basis-auto items-center justify-center">
         {/* Header container */}
         <div className="relative">
           <Link href="/">
@@ -37,7 +37,7 @@ const NavBar = () => {
             hamburgerMenuOpen ? styles.responsiveContainer : styles.hidden
           } md:block`}
         >
-          <ul className={`flex md:space-x-6 ${styles.responsiveList}`}>
+          <ul className={`flex md:space-x-4 ${styles.responsiveList}`}>
             {primaryNav.map((link, i) => (
               <li key={i}>
                 <NavItem
