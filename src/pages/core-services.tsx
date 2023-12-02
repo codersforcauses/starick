@@ -11,7 +11,10 @@ export default function CoreServices() {
         <>
             <div className="h-10 text-center bg-[--starick-green]">Navbar - replace with component later</div>
             <div>
-            <img src={"images/starick-image1.jpg"} className="w-full" alt=""></img>
+                <img src={"images/starick-image1.jpg"} className="w-full" alt=""></img>
+                <div className="bg-white -mt-20 relative rounded-md w-fit ml-6 mb-6">
+                    <p className="text-[--starick-brown] font-bold text-4xl p-2">Core Services</p>
+                </div>
             </div>
             <ServicesSection colour="bg-neutral-200" sectionBody={<DropDown />}/>
             <CounsellingSection />

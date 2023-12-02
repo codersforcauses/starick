@@ -18,6 +18,7 @@ export default function PoliceSection() {
                     </ul>
                 <p>Our domestic violence advocates provide a range of services including:</p>
                 { services }
+                <br></br>
     </>)
     return <ServicesSection colour="bg-neutral-200" sectionBody={body} title="Support in Police Stations" />
 }
