@@ -7,10 +7,31 @@ export const GPTMessageSchema = z.object({
 
 export const GPTMessageArraySchema = z.array(GPTMessageSchema);
 
-export type GPTMessage = z.infer<typeof GPTMessageSchema>;
-
 export type GPTPayload = {
   model: string;
   messages: GPTMessage[];
   stream: boolean;
 };
+
+export const GPTResponseSchema = z.object({
+  id: z.string(),
+  object: z.literal("chat.completion"),
+  created: z.number().int(),
+  model: z.string(),
+  choices: z.array(
+    z.object({
+      index: z.number().int(),
+      message: GPTMessageSchema,
+      finish_reason: z.string()
+    })
+  ),
+  usage: z.object({
+    prompt_tokens: z.number().int(),
+    completion_tokens: z.number().int(),
+    total_tokens: z.number().int()
+  }),
+  system_fingerprint: z.string().optional()
+});
+
+export type GPTMessage = z.infer<typeof GPTMessageSchema>;
+export type GPTResponse = z.infer<typeof GPTResponseSchema>;
