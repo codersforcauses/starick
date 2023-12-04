@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
 
-import { GPTStream } from "@/lib/chatbot/methods";
+import { fetchGPTResponse } from "@/lib/chatbot/methods";
 import { chatbotPrompt } from "@/lib/chatbot/prompt";
 import {
   GPTMessage,
@@ -15,7 +15,6 @@ export default async function handler(
   if (req.method === "POST") {
     const body = await req.body;
     const messages = GPTMessageArraySchema.safeParse(body);
-
     if (!messages.success) {
       return res.status(400).json({ message: "Bad Request" });
     }
@@ -26,12 +25,15 @@ export default async function handler(
     const payload: GPTPayload = {
       model: "gpt-3.5-turbo",
       messages: outgoingMessages,
-      stream: true
+      stream: false
     };
 
-    const incomingMessage = await GPTStream(payload);
+    const incomingMessages = await fetchGPTResponse(payload);
+    if (!incomingMessages.success) {
+      return res.status(500).json({ message: incomingMessages.message });
+    }
 
-    return res.status(200).json({ message: incomingMessage });
+    return res.status(200).json({ message: incomingMessages });
   }
   return res.status(405).json({ message: `${req.method} Not Allowed` });
 }
