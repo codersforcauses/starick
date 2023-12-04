@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 :root {
-    --starick-green: rgb(115, 140, 74);
-    --starick-brown: rgb(114, 102, 88);
-    --starick-orange: rgb(232, 110, 52);
-    --starick-olive: rgb(195, 201, 160);
-    --starick-white: rgb(243, 244, 246);
-    --starick-black: rgb(3, 7, 18);
-  }
+  --starick-green: rgb(115, 140, 74);
+  --starick-brown: rgb(114, 102, 88);
+  --starick-orange: rgb(232, 110, 52);
+  --starick-olive: rgb(195, 201, 160);
+  --starick-white: rgb(243, 244, 246);
+  --starick-black: rgb(3, 7, 18);
+}

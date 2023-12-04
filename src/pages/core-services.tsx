@@ -9,7 +9,6 @@ import ServicesSection from "../components/core-services/services-section"
 export default function CoreServices() {
     return (
         <>
-            <div className="h-10 text-center bg-[--starick-green]">Navbar - replace with component later</div>
             <div>
                 <img src={"images/starick-image1.jpg"} className="w-full" alt=""></img>
                 <div className="bg-white -mt-20 relative rounded-md w-fit ml-6 mb-6">
