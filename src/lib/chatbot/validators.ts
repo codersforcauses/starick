@@ -5,4 +5,12 @@ export const GPTMessageSchema = z.object({
   content: z.string()
 });
 
+export const GPTMessageArraySchema = z.array(GPTMessageSchema);
+
 export type GPTMessage = z.infer<typeof GPTMessageSchema>;
+
+export type GPTPayload = {
+  model: string;
+  messages: GPTMessage[];
+  stream: boolean;
+};
