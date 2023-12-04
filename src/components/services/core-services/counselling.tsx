@@ -1,5 +1,5 @@
 import React from "react"
-import ServicesSection from "./services-section"
+import ServicesSection from "../services-section"
 
 export default function CounsellingSection() {
     const body = (<>

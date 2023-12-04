@@ -1,6 +1,6 @@
 import React from "react"
 
-import ServicesSection from "./services-section"
+import ServicesSection from "../services-section"
 
 export default function TransitionalHousingSection() {
     const body = (<>

@@ -1,10 +1,10 @@
-import DropDown from '../components/dropdown'
-import CounsellingSection from '../components/core-services/counselling'
-import RefugesSection from '../components/core-services/refuges'
-import PoliceSection from '../components/core-services/police-stations';
-import SafeAtHomeSection from '../components/core-services/safe-at-home';
-import TransitionalHousingSection from '../components/core-services/transitional-housing';
-import ServicesSection from "../components/core-services/services-section"
+import DropDown from '../components/services/dropdown'
+import CounsellingSection from '../components/services/core-services/counselling'
+import RefugesSection from '../components/services/core-services/refuges'
+import PoliceSection from '../components/services/core-services/police-stations';
+import SafeAtHomeSection from '../components/services/core-services/safe-at-home';
+import TransitionalHousingSection from '../components/services/core-services/transitional-housing';
+import ServicesSection from "../components/services/services-section"
 
 export default function CoreServices() {
     return (
