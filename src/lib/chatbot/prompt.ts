@@ -1,4 +1,4 @@
-import { GPTMessage } from "./types";
+import { GPTMessage } from "./validators";
 
 export const chatbotPrompt: GPTMessage = {
   role: "system",
