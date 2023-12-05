@@ -1,8 +1,7 @@
-import PanicButton from "@/components/panicbutton/panicbutton";
-
 import { Inter } from "next/font/google";
 
 import NavBar from "@/components/NavBar/NavBar";
+import PanicButton from "@/components/panicbutton/panicbutton";
 
 const inter = Inter({ subsets: ["latin"] });
 
