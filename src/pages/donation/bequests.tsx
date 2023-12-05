@@ -1,6 +1,6 @@
 import React from "react";
 
-import Paypal from "@/components/paypal";
+import Paypal from "@/components/paypal/paypal";
 
 const bequests: React.FC = () => {
     return (
