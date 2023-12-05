@@ -5,12 +5,12 @@ import {Inter} from "next/font/google";
 import NavBar from "@/components/NavBar/NavBar";
 
 import Image from 'next/image';
-import CounsellingServices from '~/CoreServices/CounsellingServices.png'
-import SafeAtHomeProgram from  '~/CoreServices/SafeAtHomeProgram.png'
-import SupportInPoliceStations from  '~/CoreServices/SupportInPoliceStations.png'
-import TransitionalHousing from  '~/CoreServices/TransitionalHousing.png'
-import TwoRefuges from  '~/CoreServices/TwoRefuges.png'
-import DonatingToday from '~/DonatingToday.png'
+import CounsellingServices from '~/home/CounsellingServices.png'
+import SafeAtHomeProgram from '~/home/SafeAtHomeProgram.png'
+import SupportInPoliceStations from '~/home/SupportInPoliceStations.png'
+import TransitionalHousing from '~/home/TransitionalHousing.png'
+import TwoRefuges from '~/home/TwoRefuges.png'
+import DonatingToday from '~/home/DonatingToday.png'
 import CoreServiceItem from "@/components/home/coreServiceItem";
 
 // const inter = Inter({subsets: ["latin"]});

@@ -17,6 +17,7 @@ interface Order {
 async function createOrder(): Promise<string> {
     // replace this url with your server
     const response = await fetch(
+        // replace this url with your server
         "https://react-paypal-js-storybook.fly.dev/api/paypal/create-order",
         {
             method: "POST",
@@ -45,6 +46,7 @@ async function createOrder(): Promise<string> {
 async function onApprove(data: { orderID: string }): Promise<void> {
     // replace this url with your server
     const response = await fetch(
+        // replace this url with your server
         "https://react-paypal-js-storybook.fly.dev/api/paypal/capture-order",
         {
             method: "POST",
