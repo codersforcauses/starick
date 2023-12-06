@@ -1,14 +1,18 @@
 import { ReactNode } from "react"
+import SectionTitle from "../section-title"
 
 interface SectionProps {
-    title?: string;
-    colour: string;
-    sectionBody: ReactNode;
+    title: string
+    titleBackgroundColour: string
+    titleTextColour: string;
+    sectionBody: ReactNode
+    iconPath?: string
 }
 
-export default function Section({ title, colour, sectionBody }: SectionProps) {
-    return <div className={`${colour} md:px-40 px-6 py-2`}>
-        {title ? <p className="text-center text-2xl py-8 font-semibold">{title}</p> : null}
+export default function Section({ title, titleBackgroundColour, titleTextColour, sectionBody, iconPath }: SectionProps) {
+    return <div className={`bg-[--starick-white] md:px-40 px-6 py-2`}>
+        <SectionTitle backgroundColour={titleBackgroundColour} text={title} iconPath={iconPath} textColour={titleTextColour}/>
+        <br></br>
         { sectionBody }
     </div>
 }

@@ -54,5 +54,5 @@ export default function RefugesSection() {
                     <p>For crisis accommodation contact information, go to our useful numbers page.</p>
                     <br></br>
                 </div></>)
-    return <ServicesSection colour="bg-neutral-200" sectionBody={body} title="Refuges" />
+    return <ServicesSection titleTextColour="[--starick-black]" titleBackgroundColour="[--starick-olive]" sectionBody={body} title="Refuges" iconPath="images/Icon-CRISIS-150x150.png"/>
 }

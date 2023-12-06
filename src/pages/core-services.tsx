@@ -15,7 +15,6 @@ export default function CoreServices() {
                     <p className="text-[--starick-brown] font-bold text-4xl p-2">Core Services</p>
                 </div>
             </div>
-            <ServicesSection colour="bg-neutral-200" sectionBody={<DropDown />}/>
             <CounsellingSection />
             <RefugesSection />
             <TransitionalHousingSection />

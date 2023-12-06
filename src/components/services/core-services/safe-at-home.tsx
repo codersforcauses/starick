@@ -38,5 +38,5 @@ export default function SafeAtHomeSection() {
         <SubSection iconPath="images/Lived-Experience-150x150.png" sectionBody={subbody2}/>
         <SubSection iconPath="images/Icons_Safe-at-Home-catchment-area-150x150.png" sectionBody={subbody3}/>
     </>
-    return <ServicesSection colour="bg-white-200" sectionBody={body} title="Safe At Home Program" />
+    return <ServicesSection titleTextColour="[--starick-white]" titleBackgroundColour="[--starick-green]" sectionBody={body} title="Safe at Home Program" iconPath="images/Icon-CRISIS-150x150.png"/>
 }

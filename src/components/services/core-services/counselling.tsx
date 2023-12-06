@@ -11,5 +11,5 @@ export default function CounsellingSection() {
         <ul><li className="list-disc list-inside" key="1">Phone 9398 5039 or walk into Starick’s outreach services office at Community Lotteries House, 2232 Albany Highway, Gosnells.</li></ul>
         <br></br>
     </>)
-    return <ServicesSection colour="bg-white-200" sectionBody={body} title="Counselling" />
+    return <ServicesSection titleTextColour="[--starick-white]" titleBackgroundColour="[--starick-green]" sectionBody={body} title="Counselling Services" iconPath="images/Icon-CRISIS-150x150.png"/>
 }

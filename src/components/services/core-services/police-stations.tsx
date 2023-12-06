@@ -20,5 +20,5 @@ export default function PoliceSection() {
                 { services }
                 <br></br>
     </>)
-    return <ServicesSection colour="bg-neutral-200" sectionBody={body} title="Support in Police Stations" />
+    return <ServicesSection titleTextColour="[--starick-black]" titleBackgroundColour="[--starick-olive]" sectionBody={body} title="Support in Police Stations" iconPath="images/Icon-CRISIS-150x150.png"/>
 }
