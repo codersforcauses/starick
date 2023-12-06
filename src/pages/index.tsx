@@ -13,15 +13,27 @@ import TwoRefuges from '~/home/TwoRefuges.png'
 import DonatingToday from '~/home/DonatingToday.png'
 import CoreServiceItem from "@/components/home/coreServiceItem";
 
+import Search from "@/components/searchBar";
+import {useState} from "react";
+
 // const inter = Inter({subsets: ["latin"]});
 
 export default function Home() {
+    const [searchValue, setSearchValue] = useState('');
+
+    const handleSearch = (value: string) => {
+        setSearchValue(value)
+    }
+
     return (
         <>
             <header>
                 <NavBar/>
                 <PanicButton/>
             </header>
+            <Search onSearch={handleSearch}/>
+
+            {searchValue}
 
             <div className="grid auto-rows-max">
 
