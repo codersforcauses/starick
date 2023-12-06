@@ -11,7 +11,7 @@ export default function CoreServices() {
         <>
             <div>
                 <img src={"images/starick-image1.jpg"} className="w-full" alt=""></img>
-                <div className="bg-white -mt-20 relative rounded-md w-fit ml-6 mb-6">
+                <div className="bg-white -mt-20 relative rounded-r-full w-fit mb-6 px-14">
                     <p className="text-[--starick-brown] font-bold text-4xl p-2">Core Services</p>
                 </div>
             </div>
