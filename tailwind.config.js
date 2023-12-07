@@ -14,5 +14,8 @@ module.exports = {
       }
     }
   },
+  safelist: [
+    'bg-[--starick-olive]'
+  ],
   plugins: []
 };
