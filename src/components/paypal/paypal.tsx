@@ -18,7 +18,7 @@ async function createOrder(): Promise<string> {
     // replace this url with your server
     const response = await fetch(
         // replace this url with your server
-        "https://react-paypal-js-storybook.fly.dev/api/paypal/create-order",
+        "/api/paypal/createOrder",
         {
             method: "POST",
             headers: {
@@ -27,17 +27,15 @@ async function createOrder(): Promise<string> {
             // use the "body" param to optionally pass additional order information
             // like product ids and quantities
             body: JSON.stringify({
-                cart: [
-                    {
-                        sku: "etanod01",
-                        quantity: 1,
-                    },
-                ],
+                currency_code: 'AUD',
+                value: '100.00'
             }),
         }
     );
 
     const order: Order = await response.json();
+
+    console.log(order)
 
     // Your code here after creating the order
     return order.id;
@@ -47,7 +45,7 @@ async function onApprove(data: { orderID: string }): Promise<void> {
     // replace this url with your server
     const response = await fetch(
         // replace this url with your server
-        "https://react-paypal-js-storybook.fly.dev/api/paypal/capture-order",
+        "/api/paypal/captureOrder",
         {
             method: "POST",
             headers: {
@@ -60,22 +58,24 @@ async function onApprove(data: { orderID: string }): Promise<void> {
     );
 
     const orderData: Order = await response.json();
+    console.log(orderData)
+
 
     // Your code here after capturing the order
 }
 
 // Custom component to wrap the PayPalButtons and show loading spinner
-const ButtonWrapper: React.FC<{ showSpinner: boolean }> = ({ showSpinner }) => {
-    const [{ isPending }] = usePayPalScriptReducer();
+const ButtonWrapper: React.FC<{ showSpinner: boolean }> = ({showSpinner}) => {
+    const [{isPending}] = usePayPalScriptReducer();
 
     return (
         <>
-            {showSpinner && isPending && <div className="spinner" />}
+            {showSpinner && isPending && <div className="spinner"/>}
             <PayPalButtons
                 fundingSource="paypal"
-                style={{ layout: "vertical", label: "donate" }}
+                style={{layout: "horizontal"}}
                 disabled={false}
-                forceReRender={[{ layout: "vertical", label: "donate" }]}
+                forceReRender={[{layout: "horizontal"}]}
                 createOrder={createOrder}
                 onApprove={onApprove}
             />
@@ -86,10 +86,15 @@ const Paypal: React.FC = () => {
     return (
 
         <PayPalScriptProvider
-            options={{clientId: "test", components: "buttons", currency: "AUD"}}
+            options={{
+                clientId: process.env["NEXT_PUBLIC_PAYPAL_CLIENT_ID"] as string,
+                components: "buttons",
+                currency: "AUD"
+            }}
         >
-            <PayPalButtons fundingSource="paypal" style={{"layout": "horizontal"}}/>
-            {/* <ButtonWrapper showSpinner={false}/> */}
+            {/* <PayPalButtons fundingSource="paypal" style={{layout: "vertical", label: "donate"}} createOrder={createOrder} */}
+            {/*                onApprove={onApprove}/> */}
+            <ButtonWrapper showSpinner={false}/>
         </PayPalScriptProvider>
 
     );
