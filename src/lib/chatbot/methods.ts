@@ -21,5 +21,5 @@ export async function fetchGPTResponse(payload: GPTPayload): Promise<GPTRes> {
 
   const data = await res.json();
 
-  return { success: false, message: data };
+  return { success: true, message: data };
 }
