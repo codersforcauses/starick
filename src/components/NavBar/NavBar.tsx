@@ -16,7 +16,7 @@ const NavBar = () => {
     setHamburgerMenuOpen(hamburgerMenuOpen ? false : true);
 
   return (
-    <nav className="fixed left-0 right-0 top-0 flex h-14 items-center justify-between px-4 md:static md:text-[1vw]">
+    <nav className="fixed left-0 right-0 top-0 flex h-14 items-center justify-between px-4 lg:static">
       {/* Left nav container (logo and links) */}
       <div className="flex basis-auto items-center justify-center">
         {/* Header container */}
@@ -27,7 +27,7 @@ const NavBar = () => {
               alt="Starick Logo"
               width={170}
               height={50}
-              className="relative z-10 font-bold md:pr-6"
+              className="relative z-10 font-bold lg:pr-6"
             />
           </Link>
         </div>
@@ -35,13 +35,13 @@ const NavBar = () => {
         <div
           className={`${
             hamburgerMenuOpen ? styles.responsiveContainer : styles.hidden
-          } md:block`}
+          } lg:block`}
         >
-          <ul className={`flex md:space-x-4 ${styles.responsiveList}`}>
-            {primaryNav.map((link, i) => (
-              <li key={i}>
+          <ul className={`flex lg:space-x-2 ${styles.responsiveList}`}>
+            {primaryNav.map((link) => (
+              <li key={link.href}>
                 <NavItem
-                  classNames="bg-white md:p-2 md:rounded-lg my-2 md:my-0"
+                  classNames="bg-white lg:p-2 lg:rounded-lg my-2 lg:my-0"
                   link={link}
                 />
               </li>
@@ -53,11 +53,11 @@ const NavBar = () => {
       {/* Right nav component (help/donate/hamburger buttons) */}
       <div>
         {/* Help button */}
-        <ul className="flex space-x-2 font-bold md:space-x-6">
+        <ul className="flex space-x-2 font-bold lg:space-x-6">
           <li
             className={`${
               hamburgerMenuOpen ? "" : "hidden"
-            } fixed bottom-10 left-20 md:static md:block`}
+            } fixed bottom-5 left-20 lg:static lg:block`}
           >
             <NavItem
               classNames="bg-[--starick-orange] text-[--starick-white] p-2 rounded-lg"
@@ -68,7 +68,7 @@ const NavBar = () => {
           <li
             className={`${
               hamburgerMenuOpen ? "" : "hidden"
-            } fixed bottom-10 right-20 md:static md:block`}
+            } fixed bottom-5 right-20 lg:static lg:block`}
           >
             <NavItem
               classNames="bg-[--starick-green] text-[--starick-white] p-2 rounded-lg"
@@ -76,7 +76,7 @@ const NavBar = () => {
             />
           </li>
           {/* Hamburger button */}
-          <li className="z-10 flex md:hidden">
+          <li className="z-10 flex lg:hidden">
             <button onClick={handleHamburgerClick}>
               <div
                 className={`${
