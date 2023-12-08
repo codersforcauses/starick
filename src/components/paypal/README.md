@@ -11,6 +11,5 @@ PAYPAL_CLIENT_SECRET = "<your-secret>"
 NEXT_PUBLIC_PAYPAL_CLIENT_ID = "<your-client-id>"
 ```
 
-
-
-
+ - create another sandbox app and retrieve the email and password in the account info of that sandbox app.
+ - after click paypal button, enter the account info mentioned above to test the payment functionality.
