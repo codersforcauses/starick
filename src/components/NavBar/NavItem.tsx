@@ -26,7 +26,7 @@ const NavItem = ({ link, classNames }: Props) => {
     >
       {/* button handles click action */}
       <button
-        className={`${classNames} transition hover:brightness-90 hover:filter`}
+        className={`${classNames} my-0.5 transition hover:brightness-90 hover:filter`}
         onClick={handleClick}
       >
         {/* Coniditional text rendering depending on submenu existence */}
@@ -42,18 +42,15 @@ const NavItem = ({ link, classNames }: Props) => {
         <ul
           className={`${
             activated ? "" : "hidden"
-          } w-max bg-white md:absolute md:shadow-md`}
+          } w-max bg-white lg:absolute lg:shadow-md`}
         >
-          {link.submenu.map((sublink, i) => (
-            <>
-              <hr className="hidden md:mx-2 md:block md:h-0.5 md:border-none md:bg-gray-100" />
-              <li
-                key={i}
-                className="px-2 py-1 hover:bg-[--starick-olive] md:py-0.5"
-              >
+          {link.submenu.map((sublink) => (
+            <li key={sublink.href}>
+              <hr className="hidden lg:mx-2 lg:block lg:h-0.5 lg:border-none lg:bg-gray-100" />
+              <div className="px-2 py-0.5 hover:bg-[--starick-olive] lg:py-0.5">
                 <Link href={sublink.href}>{sublink.label}</Link>
-              </li>
-            </>
+              </div>
+            </li>
           ))}
         </ul>
       )}
