@@ -2,6 +2,7 @@ import React from "react"
 import ServicesSection from "../services-section"
 import SubSection from "../subsection"
 import { List } from "../list"
+import Link from "next/link"
 
 export default function RefugesSection() {
     const refugeSupportExamples = <List items={["Emotional support", 
@@ -45,13 +46,13 @@ export default function RefugesSection() {
                     <p>Our services for children currently include:</p>
                     {childrenServicesExamples}
                     <br></br>
-                    <p>Support from Starick continues after women and children leave our refuges through our outreach services.</p>
+                    <p>Support from Starick continues after women and children leave our refuges through our <Link href="/services/outreach/" className='my-link'>outreach services</Link>.</p> 
                     <br></br>
-                    <p>For answers to some of the most frequently asked questions about domestic violence and our refuges click here.</p>
+                    <p>For answers to some of the most frequently asked questions about domestic violence and our refuges click <Link href="/faq/" className='my-link'>here</Link>.</p>
                     <br></br>
-                    <p>You can also read the stories of women who have stayed in a Starick refuge here.</p>
+                    <p>You can also read the stories of women who have stayed in a Starick refuge <Link href="/about/stories/" className='my-link'>here</Link>.</p>
                     <br></br>
-                    <p>For crisis accommodation contact information, go to our useful numbers page.</p>
+                    <p>For crisis accommodation contact information, go to our <Link href="/contact/useful-numbers/" className='my-link'>useful numbers</Link> page.</p>
                     <br></br>
                 </div></>)
     return <ServicesSection titleTextColour="[--starick-black]" titleBackgroundColour="[--starick-olive]" sectionBody={body} title="Refuges" iconPath="icons/multicultural-heads.svg"/>

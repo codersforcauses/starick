@@ -10,3 +10,9 @@
   --starick-white: rgb(243, 244, 246);
   --starick-black: rgb(3, 7, 18);
 }
+
+
+.my-link {
+  color: orange;
+  text-decoration: underline;
+}
