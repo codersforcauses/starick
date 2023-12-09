@@ -33,9 +33,9 @@ export default function Home() {
 
                 {/* </div> */}
 
-                <div className="min-h-screen bg-light-green grid gap-10 px-10 py-20">
-                    <h1 className="text-dark-green font-semibold text-3xl text-center">What We Do</h1>
-                    <h2 className="text-brown font-semibold text-2xl text-center">Core Services</h2>
+                <div className="min-h-screen bg-[--starick-olive] grid gap-10 px-10 py-20">
+                    <h1 className="text-[--starick-green] font-semibold text-3xl text-center">What We Do</h1>
+                    <h2 className="text-[--starick-brown] font-semibold text-2xl text-center">Core Services</h2>
 
                     <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-10 px-10">
                         <div className="grid gap-10">
