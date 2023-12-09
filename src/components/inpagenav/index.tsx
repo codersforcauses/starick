@@ -1,11 +1,8 @@
+import { useState } from "react";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
-
-// collapsable
-// focus: (been clicked on)
-// html link bookmarks for jumping to section
 
 type listDetails = {
   href: string;
@@ -19,21 +16,31 @@ export default function InPageNav({
   header: string;
   list: listDetails[];
 }) {
+  const [toggle, setToggle] = useState(true);
+
   const inPageNavList = list.map((details) => {
     return (
       <>
-        <div
+        <Link
+          href={details.href}
           key={details.name}
-          className="rounded-md border-x-2 border-y border-[--starick-green] p-2 text-gray-600 last:border-b-2"
+          className={`${
+            toggle ? "block" : "hidden"
+          } rounded-md border-x-2 border-y border-[--starick-olive] p-2 text-gray-600 last:border-b-2 hover:bg-gray-100`}
         >
-          <Link href={details.href}>{details.name}</Link>
-        </div>
+          {details.name}
+        </Link>
       </>
     );
   });
   return (
     <div className={`flex flex-col justify-between ${inter.className}`}>
-      <div className="inline-flex justify-between rounded-md border-2 border-b border-[--starick-green] p-2 font-semibold text-gray-600">
+      <button
+        className={`${
+          toggle ? "border-b" : "border-b-2"
+        } inline-flex justify-between rounded-md border-2 border-[--starick-olive] p-2 font-semibold text-gray-600`}
+        onClick={() => setToggle(!toggle)}
+      >
         {header}
         <svg
           className="mr-3 h-5 w-5 text-gray-600"
@@ -47,7 +54,7 @@ export default function InPageNav({
             clip-rule="evenodd"
           />
         </svg>
-      </div>
+      </button>
       {inPageNavList}
     </div>
   );
