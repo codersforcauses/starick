@@ -9,6 +9,6 @@ export default function ProgramComponents() {
         <p>Schools participating in the WARRTSP are supported via the following components:</p> 
         <List items={list}/>
     </>)
-    const body = <SubSection iconPath="/icons/resources.svg" sectionBody={subbody}/>
+    const body = <SubSection iconPath="/icons/resources.svg" sectionBody={subbody} iconOnRight={false}/>
     return <ServicesSection titleTextColour="[--starick-white]" titleBackgroundColour="[--starick-green]" sectionBody={body} title="Program Components" />
 }
