@@ -32,23 +32,23 @@ export default function AchievedSection() {
         <br></br>
         <p className="text-xl font-semibold">Policy and Practice:</p>
         <br></br>
-        <List items={list1}/>
+        <List items={list1} style="list-disc"/>
         <br></br>
         <p className="text-xl font-semibold">School Culture and Environment:</p>
         <br></br>
-        <List items={list2}/>
+        <List items={list2} style="list-disc"/>
         <br></br>
         <p className="text-xl font-semibold">Community Partnerships:</p>
         <br></br>
-        <List items={list3}/>
+        <List items={list3} style="list-disc"/>
         <br></br>
         <p className="text-xl font-semibold">Support for staff and students:</p>
         <br></br>
-        <List items={list4}/>
+        <List items={list4} style="list-disc"/>
         <br></br>
         <p className="text-xl font-semibold">Professional Learning:</p>
         <br></br>
-        <List items={list5}/>
+        <List items={list5} style="list-disc"/>
         <br></br>
     </>)
     const body = (<>
