@@ -1,9 +1,9 @@
-import CounsellingServices from '~/home/CounsellingServices.png'
-import SafeAtHomeProgram from '~/home/SafeAtHomeProgram.png'
-import SupportInPoliceStations from '~/home/SupportInPoliceStations.png'
-import TransitionalHousing from '~/home/TransitionalHousing.png'
-import TwoRefuges from '~/home/TwoRefuges.png'
-import DonatingToday from '~/home/DonatingToday.png'
+import CounsellingServices from '~/images/CounsellingServices.png'
+import SafeAtHomeProgram from '~/images/SafeAtHomeProgram.png'
+import SupportInPoliceStations from '~/images/SupportInPoliceStations.png'
+import TransitionalHousing from '~/images/TransitionalHousing.png'
+import TwoRefuges from '~/images/TwoRefuges.png'
+import DonatingToday from '~/images/DonatingToday.png'
 import CoreServiceItem from "@/components/home/coreServiceItem";
 
 import Search from "@/components/searchBar";
