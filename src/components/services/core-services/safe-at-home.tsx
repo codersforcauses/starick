@@ -34,9 +34,9 @@ export default function SafeAtHomeSection() {
         <p>Ascot, Belmont, Bickley, Burswood, Canning Mills, Carlisle, Carmel, Cloverdale, Darlington, East Perth, East Victoria Park, Forrestfield, Glen Forrest, Gooseberry Hill, Hacketts Gully, High Wycombe, Hovea, Jane Brook, Kalamunda, Kensington, Kewdale, Lathlain, Lesmurdie, Mahogany Creek, Maida Vale, Mundaring, Parkerville, Paulls Valley, Perth, Perth Airport, Piesse Brook, Redcliffe, Rivervale, South Kalamunda, St James, Stoneville, Victoria Park, Walliston, Wattle Grove and Welshpool.</p>
     </>)
     const body = <>
-        <SubSection iconPath="images/What-is-150x150.png" sectionBody={subbody1}/>
-        <SubSection iconPath="images/Lived-Experience-150x150.png" sectionBody={subbody2}/>
-        <SubSection iconPath="images/Icons_Safe-at-Home-catchment-area-150x150.png" sectionBody={subbody3}/>
+        <SubSection iconPath="icons/did-you-know.svg" sectionBody={subbody1}/>
+        <SubSection iconPath="icons/resources.svg" sectionBody={subbody2}/>
+        <SubSection iconPath="icons/location.svg" sectionBody={subbody3}/>
     </>
-    return <ServicesSection titleTextColour="[--starick-white]" titleBackgroundColour="[--starick-green]" sectionBody={body} title="Safe at Home Program" iconPath="images/Icon-CRISIS-150x150.png"/>
+    return <ServicesSection titleTextColour="[--starick-white]" titleBackgroundColour="[--starick-green]" sectionBody={body} title="Safe at Home Program" iconPath="icons/resources.svg"/>
 }
