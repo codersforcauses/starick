@@ -15,7 +15,7 @@ const CoreServiceItem: React.FC<ItemProps> = ({
     return (
         <div className="flex justify-items-start items-center">
             <Image src={img} alt='description' width={150} height={150}/>
-            <p className='ml-20 text-background-white font-bold'>{text}</p>
+            <p className='ml-20 text-[--starick-white] font-bold'>{text}</p>
         </div>
     );
 };
