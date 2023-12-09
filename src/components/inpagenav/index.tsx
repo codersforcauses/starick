@@ -7,17 +7,20 @@ const inter = Inter({ subsets: ["latin"] });
 // focus: (been clicked on)
 // todo: styling
 
-// stuck trying to pass both header and list
+// html link bookmarks for jumping to section
 
 type listDetails = {
   href: string;
   name: string;
 };
 
-export default function InPageNav(
-  header: string,
-  { list }: { list: listDetails[] }
-) {
+export default function InPageNav({
+  header,
+  list
+}: {
+  header: string;
+  list: listDetails[];
+}) {
   const inPageNavList = list.map((details) => {
     return (
       <>
