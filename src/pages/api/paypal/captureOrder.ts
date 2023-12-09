@@ -11,8 +11,6 @@ export default async function handler(
     if (req.method != "POST")
         return res.status(404).json({success: false, message: "Not Found"})
 
-
-    // Capture order to complete payment
     const {orderID} = req.body;
     const PaypalClient = client();
     const request = new paypal.orders.OrdersCaptureRequest(orderID);
@@ -20,9 +18,6 @@ export default async function handler(
     if (!response) {
         res.status(500).json({success: false, message: "Some Error Occured at backend"});
     }
-
-    // Your Custom Code to Update Order Status
-    // And Other stuff that is related to that order, like wallet
 
     res.status(200).json({success: true, data: response.result});
 }
