@@ -8,6 +8,6 @@ export default function HowDoSchoolsParticipate() {
         <br />
         <p>Since 2019, Starick has worked with 47 public schools grouped into five cohorts.</p>
     </>)
-    const body = <SubSection iconPath="/icons/did-you-know.svg" sectionBody={subbody}/>
+    const body = <SubSection iconPath="/icons/did-you-know.svg" sectionBody={subbody} iconOnRight={false}/>
     return <ServicesSection titleTextColour="[--starick-white]" titleBackgroundColour="[--starick-green]" sectionBody={body} title="How do schools participate in the program?" />
 }
