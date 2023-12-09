@@ -10,13 +10,13 @@ export default function RefugesSection() {
     "Counselling",
     "Case management",
     "Conducting risk assessments",
-    "Safety plans"]}/>
+    "Safety plans"]} style="list-disc"/>
     const childrenServicesExamples = <List items={["Emotional support", 
     "Referral to relevant services", 
     "Counselling",
     "Out-of-school activities and school holiday programs",
     "Homework support",
-    "Art-related activities"]}/>
+    "Art-related activities"]} style="list-disc"/>
 
     const subBody = <div className="pl-3">
         <p>If you are in immediate physical danger, call the police now on 000. If you are not in immediate danger and would prefer to speak to a support worker at one of our refuges:</p>

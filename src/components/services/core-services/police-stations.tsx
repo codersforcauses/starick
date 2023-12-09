@@ -9,11 +9,11 @@ export default function PoliceSection() {
                         "Emotional support",
                         "Support to those applying for a Family Violence Restraining Order or attending court",
                         "Assistance with income support",
-                        "Referral to other services and agencies as appropriate"]} />
+                        "Referral to other services and agencies as appropriate"]} style="list-disc"/>
     
     const body = (<><p>Our domestic violence advocates are based at local police stations and offer an advocacy service, safety planning and case management with court support. They can also refer you to legal and other services:</p>
                     <br></br>
-                    <ul className = "list-disc">
+                    <ul className = "list-disc ml-10">
                         <li ><b>Armadale</b>: Walk into Armadale Police Station at 23 Prospect Rd, Armadale</li>
                         <li><b>Cannington</b>: Walk into Cannington Police Station at 1325 Albany Hwy, Cannington.</li>
                     </ul>

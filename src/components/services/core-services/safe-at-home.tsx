@@ -24,7 +24,7 @@ export default function SafeAtHomeSection() {
         "Help with safety planning for you and your children.", 
         "Upgrading home security.", "Emotional and practical support.", 
         "Looking at other ways to help women and their children stay safe including physical, emotional, financial, and legal needs.", 
-        "Providing information and referrals to other avenues of support.", "Advocacy with relevant agencies"]}/>
+        "Providing information and referrals to other avenues of support.", "Advocacy with relevant agencies"]} style="list-disc"/>
     </>)
     const subbody3 = (<>
         <p className="text-xl font-semibold">What is our catchment area for Safe at Home?</p>
