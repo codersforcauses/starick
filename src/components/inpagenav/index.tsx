@@ -26,7 +26,7 @@ export default function InPageNav({
       <>
         <div
           key={details.name}
-          className="rounded-md border-x-2 border-y border-light-green p-2 text-gray-600 first:border-t-2 last:border-b-2"
+          className="rounded-md border-x-2 border-y border-[--starick-green] p-2 text-gray-600 first:border-t-2 last:border-b-2"
         >
           <Link href={details.href}>{details.name}</Link>
         </div>
@@ -35,7 +35,7 @@ export default function InPageNav({
   });
   return (
     <div className={`flex flex-col justify-between ${inter.className}`}>
-      <div className="rounded-md border-x-2 border-y border-light-green p-2 text-gray-600 first:border-t-2 first:font-semibold last:border-b-2">
+      <div className="rounded-md border-x-2 border-y border-[--starick-green] p-2 text-gray-600 first:border-t-2 first:font-semibold last:border-b-2">
         {header}
       </div>
       {inPageNavList}
