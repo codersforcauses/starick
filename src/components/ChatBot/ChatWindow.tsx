@@ -2,6 +2,8 @@ import { GPTMessage } from '@/lib/chatbot/validators'
 import React from 'react'
 
 function ChatWindow() {
+  const [messages, setMessages] = React.useState<GPTMessage[]>([]);
+
   const getMessage = async (payload: GPTMessage[]) => {
     const response = await fetch("/api/chatbot/message", {
       method: "POST",
@@ -11,7 +13,7 @@ function ChatWindow() {
       body: JSON.stringify(payload)
     });
     const responseMessage = await response.json();
-    console.log(responseMessage);
+    setMessages([...messages, responseMessage])
   };
 
   getMessage([]);
@@ -20,3 +22,4 @@ function ChatWindow() {
 }
 
 export default ChatWindow
+
