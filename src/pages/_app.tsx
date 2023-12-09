@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <NavBar />
         <PanicButton />
       </header>
-      <main>
+      <main className="mt-14">
         <Component {...pageProps} />
       </main>
     </>
