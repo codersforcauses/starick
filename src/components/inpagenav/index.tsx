@@ -20,7 +20,7 @@ export default function InPageNav({ list }: { list: listDetails[] }) {
           key={details.name}
           className={`${
             toggle ? "block" : "hidden"
-          } rounded-md border-x-2 border-y border-[--starick-olive] p-2 text-gray-600 last:border-b-2 hover:bg-gray-100`}
+          } rounded-md border-x-2 border-y border-[--starick-olive] bg-white p-2 text-gray-600 last:border-b-2 hover:bg-[--starick-white]`}
         >
           {details.name}
         </Link>
@@ -28,11 +28,13 @@ export default function InPageNav({ list }: { list: listDetails[] }) {
     );
   });
   return (
-    <div className={`flex flex-col justify-between ${inter.className}`}>
+    <div
+      className={`flex flex-col justify-between bg-[--starick-white] px-6 py-10 md:px-32 ${inter.className}`}
+    >
       <button
         className={`${
           toggle ? "border-b" : "border-b-2"
-        } inline-flex justify-between rounded-md border-2 border-[--starick-olive] p-2 font-semibold text-gray-600`}
+        } inline-flex justify-between rounded-md border-2 border-[--starick-olive] bg-white p-2 font-semibold text-gray-600`}
         onClick={() => setToggle(!toggle)}
       >
         Page Navigation
