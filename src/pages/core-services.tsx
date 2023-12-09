@@ -11,23 +11,23 @@ import TransitionalHousingSection from "../components/services/core-services/tra
 export default function CoreServices() {
   const navLinkDetails = [
     {
-      href: "/counselling",
+      href: "#Counselling Services",
       name: "Counselling Services"
     },
     {
-      href: "/support",
+      href: "#Refuges",
       name: "Refuges"
     },
     {
-      href: "/other",
+      href: "#Transitional Housing",
       name: "Transitional Housing"
     },
     {
-      href: "/other",
+      href: "#Support in Police Stations",
       name: "Support at Police Stations"
     },
     {
-      href: "/other",
+      href: "#Safe at Home Program",
       name: "Safe at Home Program"
     }
   ];
