@@ -15,5 +15,5 @@ export default function TransitionalHousingSection() {
         <p>For information about accessing Starick&apos;s transitional housing, contact Starick&apos;s outreach worker on 9398 5039.</p>
         <br></br>
     </>)
-    return <ServicesSection titleTextColour="[--starick-white]" titleBackgroundColour="[--starick-green]" sectionBody={body} title="Transitional Housing" iconPath="images/Icon-CRISIS-150x150.png"/>
+    return <ServicesSection titleTextColour="[--starick-white]" titleBackgroundColour="[--starick-green]" sectionBody={body} title="Transitional Housing" iconPath="icons/houses.svg"/>
 }
