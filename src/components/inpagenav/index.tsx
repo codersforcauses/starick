@@ -9,13 +9,7 @@ type listDetails = {
   name: string;
 };
 
-export default function InPageNav({
-  header,
-  list
-}: {
-  header: string;
-  list: listDetails[];
-}) {
+export default function InPageNav({ list }: { list: listDetails[] }) {
   const [toggle, setToggle] = useState(true);
 
   const inPageNavList = list.map((details) => {
@@ -41,7 +35,7 @@ export default function InPageNav({
         } inline-flex justify-between rounded-md border-2 border-[--starick-olive] p-2 font-semibold text-gray-600`}
         onClick={() => setToggle(!toggle)}
       >
-        {header}
+        Page Navigation
         <svg
           className="mr-3 h-5 w-5 text-gray-600"
           viewBox="0 0 20 20"
