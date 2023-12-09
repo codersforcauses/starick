@@ -24,7 +24,7 @@ export default function RefugesSection() {
         <ul><li className="list-disc list-inside">Phone (08) 9458 1107</li></ul>
     </div>;
 
-    const body = (<><SubSection sectionBody={subBody} iconPath="images/Icon-CRISIS-150x150.png"/>
+    const body = (<><SubSection sectionBody={subBody} iconPath="icons/exclamation.svg"/>
                 <div>
                     <p>Starick&apos;s two refuges, Mary Smith Refuge and Starick House, offer short term crisis accommodation for women and children who need a safe place to stay where they are supported and offered access to free professional services to help them escape the violence and make plans for their future.</p>
                     <br></br>
@@ -55,5 +55,5 @@ export default function RefugesSection() {
                     <p>For crisis accommodation contact information, go to our <Link href="/contact/useful-numbers/" className='my-link'>useful numbers</Link> page.</p>
                     <br></br>
                 </div></>)
-    return <ServicesSection titleTextColour="[--starick-black]" titleBackgroundColour="[--starick-olive]" sectionBody={body} title="Refuges" iconPath="images/Icon-CRISIS-150x150.png"/>
+    return <ServicesSection titleTextColour="[--starick-black]" titleBackgroundColour="[--starick-olive]" sectionBody={body} title="Refuges" iconPath="icons/multicultural-heads.svg"/>
 }
