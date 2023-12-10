@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 import DonationAmount from "@/components/donations/donationAmount";
+import DonationApproach from "@/components/donations/donationApproach";
 import DonationTitle from "@/components/donations/donationTitle";
 import DonationType from "@/components/donations/donationType";
 import Paypal from "@/components/paypal/paypal"
@@ -23,8 +24,6 @@ import BequestIcon12 from '~/images/donations/bequests/BequestIcon12.png'
 import BequestIcon13 from '~/images/donations/bequests/BequestIcon13.png'
 import BequestIcon14 from '~/images/donations/bequests/BequestIcon14.png'
 import BequestIcon15 from '~/images/donations/bequests/BequestIcon15.png'
-
-import DonationApproach from "@/components/donations/donationApproach";
 
 const bequests: React.FC = () => {
     return (
@@ -86,7 +85,7 @@ const bequests: React.FC = () => {
                 className="grid auto-rows-max p-10 md:gap-3 text-[--starick-brown] font-semibold text-xs md:text-xl lg:text-2xl">
                 <div
                     className="flex bg-[--starick-green]  w-full h-[150px] p-4 items-center justify-center">
-                    <DonationTitle text={"What can I do with my donations?"}/>
+                    <DonationTitle text="What can I do with my donations?"/>
                 </div>
                 <div className="grid grid-cols-2 place-items-center">
 
@@ -218,10 +217,10 @@ const bequests: React.FC = () => {
 
 
             <div className="relative bg-[--starick-olive] grid auto-rows-max p-10 text-[--starick-brown]">
-                {/* eslint-disable-next-line react/no-unescaped-entities */}
-                <p className="text-2xl md:text-4xl text-[--starick-white] font-semibold mx-auto">Donate your 'Containers
-                    {/* eslint-disable-next-line react/no-unescaped-entities */}
-                    for Change' refunds to Starick!</p>
+
+                <p className="text-2xl md:text-4xl text-[--starick-white] font-semibold mx-auto">Donate your &apos;Containers
+
+                    for Change&apos; refunds to Starick!</p>
 
 
                 <div className="font-bold mx-auto text-xl">
@@ -319,8 +318,7 @@ const bequests: React.FC = () => {
                     <li>Maddie Mulholland: Clothes Swap with friends.</li>
                     <li>Southern River College: Sausage sizzle.</li>
                     <li>Sundowners Ladies Golf Club: Fundraising lunch.</li>
-                    {/* eslint-disable-next-line react/no-unescaped-entities */}
-                    <li>Gelo: 'Craptastic' quiz night.</li>
+                    <li>Gelo: &apos;Craptastic&apos; quiz night.</li>
                     <li>WA Poets: Performance poetry event, donating door takings.</li>
                 </ul>
 
@@ -359,7 +357,7 @@ const bequests: React.FC = () => {
                         your legal advisor before you do so.
                     </p>
 
-                    <p className="mt-6 mb-4">"I GIVE, FREE OF ALL DUTIES AND TAXES</p>
+                    <p className="mt-6 mb-4">&quot;I GIVE, FREE OF ALL DUTIES AND TAXES</p>
                     <p className="mb-4">The whole of my estate, or</p>
                     <p className="mb-4">___ % of my estate, or</p>
                     <p className="mb-4">The residue of my estate (or ___ % of the residue of my estate), or</p>
@@ -367,7 +365,8 @@ const bequests: React.FC = () => {
                     <p className="mb-4">My units/shares in __________________ Trust/Ltd, or</p>
                     <p className="mb-4">My real property situated at (insert street address) having the title reference (insert reference)</p>
                     <p className="mb-4">TO STARICK SERVICES INC, ABN 56 721 993 085PO BOX 174CLOVERDALE WA 6985</p>
-                    <p className="mb-4">THE RECEIPT OF THE TREASURER, SECRETARY OR EXECUTIVE OFFICER FOR THE TIME BEING IS AN ABSOLUTE DISCHARGE TO MY EXECUTOR".</p>
+
+                    <p className="mb-4">THE RECEIPT OF THE TREASURER, SECRETARY OR EXECUTIVE OFFICER FOR THE TIME BEING IS AN ABSOLUTE DISCHARGE TO MY EXECUTOR&quot;.</p>
 
                     <p className="mt-20">For more information about how your bequest can help women and children escaping and recovering from violence, call Starick on 9478 5300 or email
                     </p>
