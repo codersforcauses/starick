@@ -11,11 +11,19 @@ import Bequest2 from '~/images/donations/bequests/Bequest2.png'
 import Bequest3 from '~/images/donations/bequests/Bequest3.png'
 import Bequest4 from '~/images/donations/bequests/Bequest4.png'
 import Bequest5 from '~/images/donations/bequests/Bequest5.png'
+import Bequest6 from '~/images/donations/bequests/Bequest6.png'
 import BequestIcon2 from '~/images/donations/bequests/BequestIcon2.png'
 import BequestIcon3 from '~/images/donations/bequests/BequestIcon3.png'
 import BequestIcon4 from '~/images/donations/bequests/BequestIcon4.png'
 import BequestIcon6 from '~/images/donations/bequests/BequestIcon6.png'
 import BequestIcon9 from '~/images/donations/bequests/BequestIcon9.png'
+import BequestIcon10 from '~/images/donations/bequests/BequestIcon10.png'
+import BequestIcon11 from '~/images/donations/bequests/BequestIcon11.png'
+import BequestIcon12 from '~/images/donations/bequests/BequestIcon12.png'
+import BequestIcon13 from '~/images/donations/bequests/BequestIcon13.png'
+import BequestIcon14 from '~/images/donations/bequests/BequestIcon14.png'
+import BequestIcon15 from '~/images/donations/bequests/BequestIcon15.png'
+
 import DonationApproach from "@/components/donations/donationApproach";
 
 const bequests: React.FC = () => {
@@ -25,7 +33,7 @@ const bequests: React.FC = () => {
                 <Image src={Bequest1} alt='description'
                        width="0"
                        height="0"
-                       sizes="100vw"
+
                        className="w-full h-auto"/>
             </div>
 
@@ -70,7 +78,7 @@ const bequests: React.FC = () => {
             <Image src={Bequest2} alt='description'
                    width="0"
                    height="0"
-                   sizes="100vw"
+
                    className="w-full h-auto"/>
 
 
@@ -85,7 +93,7 @@ const bequests: React.FC = () => {
                     <Image src={BequestIcon4} alt='description'
                            width="0"
                            height="0"
-                           sizes="100vw"
+
                            className="w-full h-auto"/>
 
 
@@ -104,7 +112,7 @@ const bequests: React.FC = () => {
                         <Image src={BequestIcon6} alt='description'
                                width="0"
                                height="0"
-                               sizes="100vw"
+
                                className="w-full h-auto"/>
                     </div>
                 </div>
@@ -134,7 +142,7 @@ const bequests: React.FC = () => {
                 <Image src={Bequest3} alt='description'
                        width="0"
                        height="0"
-                       sizes="100vw"
+
                        className="w-full h-auto"/>
             </div>
 
@@ -174,25 +182,27 @@ const bequests: React.FC = () => {
             <Image src={Bequest4} alt='description'
                    width="0"
                    height="0"
-                   sizes="100vw"
+
                    className="w-full h-auto"/>
 
 
             <div className="relative m-10 font-semibold text-[--starick-brown] text-center text-xl md:text-2xl">
                 <DonationTitle text="Financial Donations"/>
 
-                    <p className='mt-6'>Empower Change with Your Financial Support</p>
-                    <p className='mb-6'>Your financial contributions are a powerful way to assist our clients.</p>
+                <p className='mt-6'>Empower Change with Your Financial Support</p>
+                <p className='mb-6'>Your financial contributions are a powerful way to assist our clients.</p>
 
 
+                <p className='mt-6'>They help us expand essential services, complementing government funding in our
+                    mission to break the cycle of domestic violence.</p>
+                <p className='mb-6'>Financial abuse, intricately tied to domestic violence, leaves women financially
+                    vulnerable both short and long term. Your support bridges this gap, empowering survivors to
+                    rebuild.</p>
 
-                    <p className='mt-6'>They help us expand essential services, complementing government funding in our mission to break the cycle of domestic violence.</p>
-                    <p className='mb-6'>Financial abuse, intricately tied to domestic violence, leaves women financially vulnerable both short and long term. Your support bridges this gap, empowering survivors to rebuild.</p>
 
-
-
-                    <p>In our refuges, women often lack access to financial resources, relying on us for basic needs. Addressing these essentials ensures safety and lays the groundwork for lasting change.</p>
-                    <p className='mb-6'>Join us in making a meaningful impact with your support.</p>
+                <p>In our refuges, women often lack access to financial resources, relying on us for basic needs.
+                    Addressing these essentials ensures safety and lays the groundwork for lasting change.</p>
+                <p className='mb-6'>Join us in making a meaningful impact with your support.</p>
 
                 <Image src={BequestIcon9} alt='description'
                        width="0"
@@ -203,13 +213,15 @@ const bequests: React.FC = () => {
             <Image src={Bequest5} alt='description'
                    width="0"
                    height="0"
-                   sizes="100vw"
+
                    className="w-full h-auto"/>
 
 
             <div className="relative bg-[--starick-olive] grid auto-rows-max p-10 text-[--starick-brown]">
                 {/* eslint-disable-next-line react/no-unescaped-entities */}
-                <p className="text-3xl md:text-4xl text-[--starick-white] font-semibold mx-auto">Donate your 'Containers for Change' refunds to Starick!</p>
+                <p className="text-2xl md:text-4xl text-[--starick-white] font-semibold mx-auto">Donate your 'Containers
+                    {/* eslint-disable-next-line react/no-unescaped-entities */}
+                    for Change' refunds to Starick!</p>
 
 
                 <div className="font-bold mx-auto text-xl">
@@ -219,14 +231,152 @@ const bequests: React.FC = () => {
                 </div>
 
                 <div className="grid grid-rows-5 place-content-center">
-                    <DonationApproach order={1} text="Find your closest refund point at the <strong>Containers for Change</strong> website."/>
-                    <DonationApproach order={2} text="Collect eligible drink containers (check the label to see if it carries to 10c return information)."/>
+                    <DonationApproach order={1}
+                                      text="Find your closest refund point at the <strong>Containers for Change</strong> website."/>
+                    <DonationApproach order={2}
+                                      text="Collect eligible drink containers (check the label to see if it carries to 10c return information)."/>
                     <DonationApproach order={3} text="Take your containers to the refund point."/>
-                    <DonationApproach order={4} text="Use the <strong>Starick Scheme ID C10289306</strong>. You can also download our barcode for scanning by clicking below."/>
-                    <DonationApproach order={5} text="The donation is the sent directly to Starick from the refund point."/>
+                    <DonationApproach order={4}
+                                      text="Use the <strong>Starick Scheme ID C10289306</strong>. You can also download our barcode for scanning by clicking below."/>
+                    <DonationApproach order={5}
+                                      text="The donation is the sent directly to Starick from the refund point."/>
+                </div>
+
+
+                <div className="flex flex-row items-center justify-between">
+                    <p className="text-2xl md:text-4xl text-[--starick-white] font-semibold mr-10 text-center">Donate by
+                        using your ID at the refund locations!</p>
+                    <Image src={BequestIcon10} alt='description'
+                           width="0"
+                           height="0"
+                           className="w-1/5 h-auto"/>
+                </div>
+
+                <div className="flex flex-row items-center justify-between">
+                    <Image src={BequestIcon11} alt='description'
+                           width="0"
+                           height="0"
+                           className="w-1/5 h-auto"/>
+
+                    <div className="flex flex-col ml-10">
+                        <p className="text-2xl md:text-4xl text-[--starick-white] font-semibold">Starick Scheme ID</p>
+                        <p className="prose">
+                            Starick is registered as a charity with the Australian Charities and Not-for-profits
+                            Commission,
+                            <strong>ABN 56 721 993 085</strong>. This means that all donations over $2 are tax
+                            deductible
+                        </p>
+                    </div>
+                </div>
+
+                <div className="flex flex-row items-end justify-between">
+                    <Image src={BequestIcon12} alt='description'
+                           width="0"
+                           height="0"
+                           className="w-1/4 h-auto mr-10"/>
+                    <Image src={BequestIcon13} alt='description'
+                           width="0"
+                           height="0"
+                           className="w-3/5 h-auto"/>
+                </div>
+
+                <div className="relative m-10 text-center font-semibold">
+                    <p className="text-3xl md:text-4xl text-[--starick-white]">Donate your
+                        services</p>
+
+                    <p className="mt-6 mb-4">Your organisation or community group can help us improve the wellness and
+                        quality of life of the women and children in our service.</p>
+                    <p className="mb-4">Donated services could include providing a regular gardening service, offering
+                        yoga classes, providing us with health club memberships for our clients, or teaching our clients
+                        a skill to help them become independent, such as cooking classes and self-defense.</p>
+                    <p className="mb-6">If you wish to offer volunteer services to the women and children in our
+                        services, contact the Starick Office on 9478 5300.</p>
+
+                    <Image src={BequestIcon14} alt='description'
+                           width="0"
+                           height="0"
+                           className="w-full h-auto"/>
+                </div>
+            </div>
+
+            <div className="relative p-10 text-[--starick-brown] text-xl md:text-2xl font-semibold">
+                <DonationTitle text="Ideas and Ways to Support Our Charity"/>
+                <p className="text-2xl font-bold mb-4 mt-6">Support Options:</p>
+                <ul className="list-disc pl-6 space-y-4">
+                    <li>Call us at 9478 5300 for a discussion on how you or your organization can contribute.</li>
+                    <li>Fund a Family Camp: Similar to Vivienne Stewart and Mandy Loton, support a family camp in
+                        country WA, offering women and children a break and activities to boost confidence and
+                        mother-child relationships.
+                    </li>
+                    <li>Sponsor a Starick Family: Emulate the New Apostolic Church in Rivervale, WA, by providing
+                        essentials to a family for a year.
+                    </li>
+                    <li>Run a Fundraiser: Organize a campaign and donate via our Gofundraise charity page.</li>
+                </ul>
+                <p className="text-2xl font-bold mb-4 mt-6">Fundraising Examples:</p>
+                <ul className="list-disc pl-6 space-y-4">
+                    <li>Soroptimists of South Perth: Annual breakfast.</li>
+                    <li>Maddie Mulholland: Clothes Swap with friends.</li>
+                    <li>Southern River College: Sausage sizzle.</li>
+                    <li>Sundowners Ladies Golf Club: Fundraising lunch.</li>
+                    {/* eslint-disable-next-line react/no-unescaped-entities */}
+                    <li>Gelo: 'Craptastic' quiz night.</li>
+                    <li>WA Poets: Performance poetry event, donating door takings.</li>
+                </ul>
+
+
+            </div>
+
+
+            <div className=" bg-[--starick-olive] text-[--starick-brown] font-semibold">
+                <Image src={Bequest6} alt='description'
+                       width="0"
+                       height="0"
+                       className="w-full h-auto"/>
+
+                <div className="p-10 flex flex-col">
+                    <p>If you would like to donate to Starick and choose how your donation is used, you can do this too.
+                        For
+                        instance, some of our donors specify that funds are to be used for a particular program or used
+                        for
+                        clothing and other supplies at the refuge.</p>
+                    <Image src={BequestIcon15} alt='description'
+                           width="0"
+                           height="0"
+                           className="w-full h-auto mt-10"/>
                 </div>
 
             </div>
+
+            <div className="p-10 text-[--starick-brown] font-semibold text-xl italic">
+                <DonationTitle text="Bequests"/>
+
+                <div className="p-10">
+                    <p className="mb-4">Starick welcomes and values bequests. Through making a gift to Starick in your will, you project your
+                        values and wishes, as well as support our work with women and children well into the future.</p>
+                    <p>
+                        You may find the following words helpful for inclusion in your will. However it is important to see
+                        your legal advisor before you do so.
+                    </p>
+
+                    <p className="mt-6 mb-4">"I GIVE, FREE OF ALL DUTIES AND TAXES</p>
+                    <p className="mb-4">The whole of my estate, or</p>
+                    <p className="mb-4">___ % of my estate, or</p>
+                    <p className="mb-4">The residue of my estate (or ___ % of the residue of my estate), or</p>
+                    <p className="mb-4">The sum of $ ____, or</p>
+                    <p className="mb-4">My units/shares in __________________ Trust/Ltd, or</p>
+                    <p className="mb-4">My real property situated at (insert street address) having the title reference (insert reference)</p>
+                    <p className="mb-4">TO STARICK SERVICES INC, ABN 56 721 993 085PO BOX 174CLOVERDALE WA 6985</p>
+                    <p className="mb-4">THE RECEIPT OF THE TREASURER, SECRETARY OR EXECUTIVE OFFICER FOR THE TIME BEING IS AN ABSOLUTE DISCHARGE TO MY EXECUTOR".</p>
+
+                    <p className="mt-20">For more information about how your bequest can help women and children escaping and recovering from violence, call Starick on 9478 5300 or email
+                    </p>
+
+                </div>
+
+
+            </div>
+
 
         </>
 
