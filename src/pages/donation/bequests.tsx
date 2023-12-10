@@ -219,10 +219,10 @@ const bequests: React.FC = () => {
                 </div>
 
                 <div className="grid grid-rows-5 place-content-center">
-                    <DonationApproach order={1} text="Find your closest refund point at the Containers for Change website."/>
+                    <DonationApproach order={1} text="Find your closest refund point at the <strong>Containers for Change</strong> website."/>
                     <DonationApproach order={2} text="Collect eligible drink containers (check the label to see if it carries to 10c return information)."/>
                     <DonationApproach order={3} text="Take your containers to the refund point."/>
-                    <DonationApproach order={4} text="Use the Starick Scheme ID C10289306. You can also download our barcode for scanning by clicking below."/>
+                    <DonationApproach order={4} text="Use the <strong>Starick Scheme ID C10289306</strong>. You can also download our barcode for scanning by clicking below."/>
                     <DonationApproach order={5} text="The donation is the sent directly to Starick from the refund point."/>
                 </div>
 
