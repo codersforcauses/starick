@@ -16,6 +16,7 @@ import BequestIcon3 from '~/images/donations/bequests/BequestIcon3.png'
 import BequestIcon4 from '~/images/donations/bequests/BequestIcon4.png'
 import BequestIcon6 from '~/images/donations/bequests/BequestIcon6.png'
 import BequestIcon9 from '~/images/donations/bequests/BequestIcon9.png'
+import DonationApproach from "@/components/donations/donationApproach";
 
 const bequests: React.FC = () => {
     return (
@@ -27,9 +28,6 @@ const bequests: React.FC = () => {
                        sizes="100vw"
                        className="w-full h-auto"/>
             </div>
-
-
-            {/* <Image className="absolute m-10" src={BequestIcon1} alt='description' width={218} height={218}/> */}
 
             <div
                 className="relative h-full bg-[--starick-olive] text-center grid grid-flow-row auto-rows-max gap-10 px-32 py-32">
@@ -214,14 +212,19 @@ const bequests: React.FC = () => {
                 <p className="text-3xl md:text-4xl text-[--starick-white] font-semibold mx-auto">Donate your 'Containers for Change' refunds to Starick!</p>
 
 
-                <div className="font-bold mx-auto">
+                <div className="font-bold mx-auto text-xl">
                     <p>You can donate your refund to Starick using the Starick </p>
                     <p>SCHEME ID: C10289306. </p>
                     <p>To support Starick and recycle at the same time:</p>
                 </div>
 
-
-
+                <div className="grid grid-rows-5 place-content-center">
+                    <DonationApproach order={1} text="Find your closest refund point at the Containers for Change website."/>
+                    <DonationApproach order={2} text="Collect eligible drink containers (check the label to see if it carries to 10c return information)."/>
+                    <DonationApproach order={3} text="Take your containers to the refund point."/>
+                    <DonationApproach order={4} text="Use the Starick Scheme ID C10289306. You can also download our barcode for scanning by clicking below."/>
+                    <DonationApproach order={5} text="The donation is the sent directly to Starick from the refund point."/>
+                </div>
 
             </div>
 
