@@ -5,6 +5,7 @@ import { chatbotPrompt } from "@/lib/chatbot/prompt";
 import {
   GPTMessage,
   GPTMessageArraySchema,
+  GPTMessageSchema,
   GPTPayload
 } from "@/lib/chatbot/validators";
 
@@ -16,7 +17,7 @@ export default async function handler(
     const body = await req.body;
     const messages = GPTMessageArraySchema.safeParse(body);
     if (!messages.success) {
-      return res.status(400).json({ message: "Bad Request" });
+      return res.status(400).json("Bad Request");
     }
 
     const outgoingMessages: GPTMessage[] = messages.data;
@@ -29,11 +30,13 @@ export default async function handler(
     };
 
     const incomingMessages = await fetchGPTResponse(payload);
-    if (!incomingMessages.success) {
-      return res.status(500).json({ message: incomingMessages.message });
+    const valid = GPTMessageSchema.safeParse(incomingMessages.message);
+
+    if (incomingMessages.success && valid.success) {
+      return res.status(200).json(valid.data);
     }
 
-    return res.status(200).json({ message: incomingMessages });
+    return res.status(500).json(incomingMessages.message);
   }
-  return res.status(405).json({ message: `${req.method} Not Allowed` });
+  return res.status(405).json(`${req.method} Not Allowed`);
 }
