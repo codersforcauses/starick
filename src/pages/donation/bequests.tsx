@@ -1,30 +1,26 @@
 import React from "react";
 import Image from "next/image";
 
-import Paypal from "@/components/paypal/paypal"
-
 import DonationAmount from "@/components/donations/donationAmount";
+import DonationTitle from "@/components/donations/donationTitle";
+import DonationType from "@/components/donations/donationType";
+import Paypal from "@/components/paypal/paypal"
 
 import Bequest1 from '~/images/donations/bequests/Bequest1.png'
 import Bequest2 from '~/images/donations/bequests/Bequest2.png'
 import Bequest3 from '~/images/donations/bequests/Bequest3.png'
-import BequestIcon1 from '~/images/donations/bequests/BequestIcon1.png'
+import Bequest4 from '~/images/donations/bequests/Bequest4.png'
+import Bequest5 from '~/images/donations/bequests/Bequest5.png'
 import BequestIcon2 from '~/images/donations/bequests/BequestIcon2.png'
 import BequestIcon3 from '~/images/donations/bequests/BequestIcon3.png'
 import BequestIcon4 from '~/images/donations/bequests/BequestIcon4.png'
-import BequestIcon5 from '~/images/donations/bequests/BequestIcon5.png'
 import BequestIcon6 from '~/images/donations/bequests/BequestIcon6.png'
-
+import BequestIcon9 from '~/images/donations/bequests/BequestIcon9.png'
 
 const bequests: React.FC = () => {
     return (
         <>
             <div className="relative">
-                <div
-                    className="absolute min-w-[100px] min-h-[100px] sm:min-w-[150px] sm:min-h-[150px] md:min-w-[218px] md:min-h-[218px]">
-                    <Image className="m-10" src={BequestIcon1} alt='description' fill/>
-                </div>
-
                 <Image src={Bequest1} alt='description'
                        width="0"
                        height="0"
@@ -47,28 +43,15 @@ const bequests: React.FC = () => {
 
                 <div className="grid auto-rows-max">
                     <div className="grid sm:grid-cols-1 md:grid-cols-3 mt-0 gap-10">
-                        <div className="flex flex-col">
-                            <Image src={BequestIcon2} alt='description'
-                                   width="0"
-                                   height="0"
-                                   sizes="100vw"
-                                   className="w-full h-auto self-center"/>
-                            <p className="text-[--starick-brown] italic font-bold">SCHEDULE MONTHLY CONTRIBUTIONS
-                                TOWARDS
-                                OUR
-                                FOUNDATION </p>
-                        </div>
+                        <DonationType image={BequestIcon2}
+                                      text="SCHEDULE MONTHLY CONTRIBUTIONS TOWARDS OUR FOUNDATION"/>
 
                         <p className="uppercase text-[--starick-white] font-bold text-4xl self-center">or</p>
 
-                        <div className="flex flex-col">
-                            <Image src={BequestIcon3} alt='description'
-                                   width="0"
-                                   height="0"
-                                   sizes="100vw"
-                                   className="w-full h-auto self-center"/>
-                            <p className="text-[--starick-brown] italic font-bold">MAKE A ONE OFF DONATION </p>
-                        </div>
+                        <DonationType image={BequestIcon3}
+                                      text="MAKE A ONE OFF DONATION"/>
+
+
                     </div>
 
 
@@ -87,33 +70,26 @@ const bequests: React.FC = () => {
             </div>
 
             <Image src={Bequest2} alt='description'
-                       width="0"
-                       height="0"
-                       sizes="100vw"
-                       className="w-full h-auto"/>
+                   width="0"
+                   height="0"
+                   sizes="100vw"
+                   className="w-full h-auto"/>
 
 
             <div
-                className="grid auto-rows-max p-10 gap-10 text-[--starick-brown] font-semibold text-xs md:text-xl lg:text-2xl">
+                className="grid auto-rows-max p-10 md:gap-3 text-[--starick-brown] font-semibold text-xs md:text-xl lg:text-2xl">
                 <div
                     className="flex bg-[--starick-green]  w-full h-[150px] p-4 items-center justify-center">
-                    <p className="flex justify-center items-center  w-full h-full text-2xl md:text-3xl text-[--starick-white] font-bold border-4 md:border-8 border-[--starick-white]">What
-                        can
-                        I do with my donations?</p>
+                    <DonationTitle text={"What can I do with my donations?"}/>
                 </div>
                 <div className="grid grid-cols-2 place-items-center">
-                    <div className="grid grid-cols-2">
-                        <Image src={BequestIcon4} alt='description'
-                       width="0"
-                       height="0"
-                       sizes="100vw"
-                       className="w-full h-auto"/>
-                        <Image src={BequestIcon5} alt='description'
-                       width="0"
-                       height="0"
-                       sizes="100vw"
-                       className="w-full h-auto"/>
-                    </div>
+
+                    <Image src={BequestIcon4} alt='description'
+                           width="0"
+                           height="0"
+                           sizes="100vw"
+                           className="w-full h-auto"/>
+
 
                     <p className="m-10">
                         Your donation to Starick allows us to offer a baby massage program for mums and babies
@@ -128,10 +104,10 @@ const bequests: React.FC = () => {
                     </p>
                     <div className="max-w-[50%]">
                         <Image src={BequestIcon6} alt='description'
-                       width="0"
-                       height="0"
-                       sizes="100vw"
-                       className="w-full h-auto"/>
+                               width="0"
+                               height="0"
+                               sizes="100vw"
+                               className="w-full h-auto"/>
                     </div>
                 </div>
 
@@ -166,7 +142,7 @@ const bequests: React.FC = () => {
 
 
             <div
-                className="grid auto-rows-max p-10 gap-10 text-[--starick-brown] font-semibold text-xs md:text-xl lg:text-2xl">
+                className="grid auto-rows-max p-10 text-[--starick-brown] font-semibold text-xs md:text-xl lg:text-2xl">
 
                 <DonationAmount
                     pos={true}
@@ -196,6 +172,58 @@ const bequests: React.FC = () => {
 
             </div>
 
+
+            <Image src={Bequest4} alt='description'
+                   width="0"
+                   height="0"
+                   sizes="100vw"
+                   className="w-full h-auto"/>
+
+
+            <div className="relative m-10 font-semibold text-[--starick-brown] text-center text-xl md:text-2xl">
+                <DonationTitle text="Financial Donations"/>
+
+                    <p className='mt-6'>Empower Change with Your Financial Support</p>
+                    <p className='mb-6'>Your financial contributions are a powerful way to assist our clients.</p>
+
+
+
+                    <p className='mt-6'>They help us expand essential services, complementing government funding in our mission to break the cycle of domestic violence.</p>
+                    <p className='mb-6'>Financial abuse, intricately tied to domestic violence, leaves women financially vulnerable both short and long term. Your support bridges this gap, empowering survivors to rebuild.</p>
+
+
+
+                    <p>In our refuges, women often lack access to financial resources, relying on us for basic needs. Addressing these essentials ensures safety and lays the groundwork for lasting change.</p>
+                    <p className='mb-6'>Join us in making a meaningful impact with your support.</p>
+
+                <Image src={BequestIcon9} alt='description'
+                       width="0"
+                       height="0"
+                       className="mx-auto w-1/2 h-auto"/>
+
+            </div>
+            <Image src={Bequest5} alt='description'
+                   width="0"
+                   height="0"
+                   sizes="100vw"
+                   className="w-full h-auto"/>
+
+
+            <div className="relative bg-[--starick-olive] grid auto-rows-max p-10 text-[--starick-brown]">
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
+                <p className="text-3xl md:text-4xl text-[--starick-white] font-semibold mx-auto">Donate your 'Containers for Change' refunds to Starick!</p>
+
+
+                <div className="font-bold mx-auto">
+                    <p>You can donate your refund to Starick using the Starick </p>
+                    <p>SCHEME ID: C10289306. </p>
+                    <p>To support Starick and recycle at the same time:</p>
+                </div>
+
+
+
+
+            </div>
 
         </>
 
