@@ -14,17 +14,15 @@ export default function InPageNav({ list }: { list: listDetails[] }) {
 
   const inPageNavList = list.map((details) => {
     return (
-      <>
-        <Link
-          href={details.href}
-          key={details.name}
-          className={`${
-            toggle ? "block" : "hidden"
-          } rounded-md border-x-2 border-y border-[--starick-olive] bg-white p-2 text-gray-600 last:border-b-2 hover:bg-[--starick-white]`}
-        >
-          {details.name}
-        </Link>
-      </>
+      <Link
+        href={details.href}
+        key={details.name}
+        className={`${
+          toggle ? "block" : "hidden"
+        } rounded-md border-x-2 border-y border-[--starick-olive] bg-white p-2 text-gray-600 last:border-b-2 hover:bg-[--starick-white]`}
+      >
+        {details.name}
+      </Link>
     );
   });
   return (
