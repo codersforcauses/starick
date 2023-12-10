@@ -14,17 +14,15 @@ export default function InPageNav({ list }: { list: listDetails[] }) {
 
   const inPageNavList = list.map((details) => {
     return (
-      <>
-        <Link
-          href={details.href}
-          key={details.name}
-          className={`${
-            toggle ? "block" : "hidden"
-          } rounded-md border-x-2 border-y border-[--starick-olive] bg-white p-2 text-gray-600 last:border-b-2 hover:bg-[--starick-white]`}
-        >
-          {details.name}
-        </Link>
-      </>
+      <Link
+        href={details.href}
+        key={details.name}
+        className={`${
+          toggle ? "block" : "hidden"
+        } rounded-md border-x-2 border-y border-[--starick-olive] bg-white p-2 text-gray-600 last:border-b-2 hover:bg-[--starick-white]`}
+      >
+        {details.name}
+      </Link>
     );
   });
   return (
@@ -45,9 +43,9 @@ export default function InPageNav({ list }: { list: listDetails[] }) {
           aria-hidden="true"
         >
           <path
-            fill-rule="evenodd"
+            fillRule="evenodd"
             d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-            clip-rule="evenodd"
+            clipRule="evenodd"
           />
         </svg>
       </button>
