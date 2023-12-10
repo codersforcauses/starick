@@ -22,7 +22,7 @@ export const GPTResponseSchema = z.object({
     z.object({
       index: z.number().int(),
       message: GPTMessageSchema,
-      finish_reason: z.string()
+      finish_reason: z.string().optional()
     })
   ),
   usage: z.object({
@@ -30,7 +30,7 @@ export const GPTResponseSchema = z.object({
     completion_tokens: z.number().int(),
     total_tokens: z.number().int()
   }),
-  system_fingerprint: z.string().optional()
+  system_fingerprint: z.string().nullable()
 });
 
 export type GPTMessage = z.infer<typeof GPTMessageSchema>;
