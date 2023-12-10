@@ -13,8 +13,6 @@ interface ItemProps {
 const DonationAmount: React.FC<ItemProps> = ({pos, amount, description}) => {
         if (pos) {
             return (
-                <div
-                    className="grid auto-rows-max p-4 md:p-10 gap-4 md:gap-10 text-[--starick-brown] font-semibold text-xs md:text-xl lg:text-2xl">
                     <div className="grid grid-cols-2 place-items-center">
                         <div className="relative max-w-[60%] min-w-[160px]">
                             <p className="absolute top-1/2 left-1/2 transform -translate-x-2/3 -translate-y-1/2 sm:text-xs md:text-xl lg:text-2xl xl:text-4xl text-[--starick-white] font-bold">
@@ -29,7 +27,6 @@ const DonationAmount: React.FC<ItemProps> = ({pos, amount, description}) => {
                             {description}
                         </p>
                     </div>
-                </div>
             );
         } else {
             return (
