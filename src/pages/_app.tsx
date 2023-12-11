@@ -13,6 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <header>
         <NavBar />
         <PanicButton />
+        <MessengerChat />
       </header>
       <main className="mt-14">
         <Component {...pageProps} />
