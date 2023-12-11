@@ -1,10 +1,10 @@
 // types.ts
-// export interface FBWindow extends Window {
-//   fbAsyncInit: () => void;
-//   FB: {
-//     init: (options: { xfbml: boolean; version: string }) => void;
-//   };
-// }
+export interface FBWindow extends Window {
+  fbAsyncInit: () => void;
+  FB: {
+    init: (options: { xfbml: boolean; version: string }) => void;
+  };
+}
 
 // import { FacebookStatic } from 'facebook';
 // export type FBWindow = {
@@ -15,7 +15,7 @@
 // import fb = facebook;
 // declare var FB: fb.FacebookStatic;
 
-export type FB = {
-  fbAsyncInit: any;
-  FB: any;
-};
+// export type FB = {
+//   fbAsyncInit: any;
+//   FB: any;
+// };

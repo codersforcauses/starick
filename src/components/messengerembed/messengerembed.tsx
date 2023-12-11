@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import { FB } from "./types";
+import { FBWindow } from "./types";
 
-//declare let window: FBWindow;
+declare let window: FBWindow;
 
 export default function MessengerChat() {
   useEffect(() => {
@@ -11,24 +11,13 @@ export default function MessengerChat() {
       chatbox.setAttribute("attribution", "biz_inbox");
     }
 
-    // fbAsyncInit = function () {
-    //   FB.init({
-    //     xfbml: true,
-    //     version: "v18.0"
-    //   });
-    // };
-
-    let fbObject: FB = {
-    fbAsyncInit: function () {
-    },
-      FB: {
-        init: function (config: {xfbml: boolean, version: string}) {
-        xfbml: true
+    window.fbAsyncInit = function () {
+      window.FB.init({
+        xfbml: true,
         version: "v18.0"
-        }
-    }
-  };
-  
+      });
+    };
+
     (function (d, s, id) {
       const fts = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
