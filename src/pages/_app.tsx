@@ -8,10 +8,15 @@ import PanicButton from "@/components/panicbutton/panicbutton";
 import MessengerChat from "@/components/messengerembed/messengerembed"; 
 
 export default function App({ Component, pageProps }: AppProps) {
-  return (<><header>
-    <NavBar />
-    <PanicButton />
-    <MessengerChat />
-  </header>
-  <Component {...pageProps} /></>);
+  return (
+    <>
+      <header>
+        <NavBar />
+        <PanicButton />
+      </header>
+      <main className="mt-14">
+        <Component {...pageProps} />
+      </main>
+    </>
+  );
 }
