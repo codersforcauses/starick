@@ -15,5 +15,5 @@ export default function EvidenceBase() {
         </ol>
     </>)
     const body = <SubSection iconPath="/icons/reports.svg" sectionBody={subbody} iconOnRight={false}/>
-    return <ServicesSection titleTextColour="[--starick-white]" titleBackgroundColour="[--starick-green]" sectionBody={body} title="Program Components" />
+    return <ServicesSection titleTextColour="[--starick-white]" titleBackgroundColour="[--starick-green]" sectionBody={body} title="Evidence Base" />
 }
