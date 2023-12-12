@@ -1,3 +1,3 @@
 export type SearchProps = {
-    onSearch: (value: string) => void
-}
+  onSearch: (value: string) => void;
+};
