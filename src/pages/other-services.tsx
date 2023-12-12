@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import InPageNav from "@/components/InPageNav";
+import RespectfulRelationshipsSection from "@/components/Services/OtherServices/respectful-relationships";
 import WorkWithChildrenAndYoungPeopleSection from "@/components/Services/OtherServices/work-with-children-and-young-people";
 
 
@@ -38,6 +39,7 @@ export default function OtherServices() {
                 </div>
             </div>
             <InPageNav list={navLinkDetails}></InPageNav>
+            <RespectfulRelationshipsSection />
             <WorkWithChildrenAndYoungPeopleSection />
         </>
     );
