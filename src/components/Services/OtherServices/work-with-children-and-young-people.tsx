@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import ServicesSection from "../services-section";
 
 export default function WorkWithChildrenAndYoungPeopleSection() {
@@ -32,12 +33,19 @@ export default function WorkWithChildrenAndYoungPeopleSection() {
             <p>We are committed to upholding children and young people's rights and needs in relation to equity and 
                 cultural diversity, with particular attention to the needs of Aboriginal and Torres Strait Islander children, children with disability, children from culturally and linguistically diverse backgrounds and lesbian, gay, bisexual, transgender and intersex children and young people. 
             </p>
+
+            <div className="flex items-center justify-center bg-[--starick-white] py-10">
+                <button className="rounded-2xl bg-[--starick-brown] p-5 text-lg text-white hover:bg-[--starick-black]">
+                    <Link href="/resources-toolkits-reading">Resources, toolkits, and further reading</Link>
+                </button>
+            </div>
         </>
+        
     );
     return (
         <ServicesSection
-            titleTextColour="[--starick-white]"
-            titleBackgroundColour="[--starick-green]"
+            titleTextColour="[--starick-black]"
+            titleBackgroundColour="[--starick-olive]"
             sectionBody={body}
             title="Our Work with Children and Young People"
             iconPath="images/Icon-CRISIS-150x150.png"
