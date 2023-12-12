@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
 
-import DonationAmount from "@/components/donations/donationAmount";
-import DonationApproach from "@/components/donations/donationApproach";
-import DonationTitle from "@/components/donations/donationTitle";
-import DonationType from "@/components/donations/donationType";
-import Paypal from "@/components/paypal/paypal"
+import DonationAmount from "@/components/Donations/donation-amount";
+import DonationApproach from "@/components/Donations/donation-approach";
+import DonationTitle from "@/components/Donations/donation-title";
+import DonationType from "@/components/Donations/donation-type";
+import Paypal from "@/components/PayPal"
 
 import Bequest1 from '~/images/donations/bequests/Bequest1.png'
 import Bequest2 from '~/images/donations/bequests/Bequest2.png'

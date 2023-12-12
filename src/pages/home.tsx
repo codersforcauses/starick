@@ -4,9 +4,9 @@ import SupportInPoliceStations from '~/images/SupportInPoliceStations.png'
 import TransitionalHousing from '~/images/TransitionalHousing.png'
 import TwoRefuges from '~/images/TwoRefuges.png'
 import DonatingToday from '~/images/DonatingToday.png'
-import CoreServiceItem from "@/components/home/coreServiceItem";
+import CoreServiceItem from "@/components/Home/core-service-item";
 
-import Search from "@/components/searchBar";
+import Search from "@/components/SearchBar";
 import {useState} from "react";
 
 export default function Home() {
@@ -66,9 +66,4 @@ export default function Home() {
         </>
     );
 
-
 }
-
-
-
-

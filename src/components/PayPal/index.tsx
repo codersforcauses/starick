@@ -18,7 +18,7 @@ async function createOrder(): Promise<string> {
     // replace this url with your server
     const response = await fetch(
         // replace this url with your server
-        "/api/paypal/createOrder",
+        "/api/paypal/create-order",
         {
             method: "POST",
             headers: {
@@ -45,7 +45,7 @@ async function onApprove(data: { orderID: string }): Promise<void> {
     // replace this url with your server
     const response = await fetch(
         // replace this url with your server
-        "/api/paypal/captureOrder",
+        "/api/paypal/capture-order",
         {
             method: "POST",
             headers: {

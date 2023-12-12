@@ -1,6 +1,6 @@
 import React, {ChangeEvent,KeyboardEvent, MouseEvent, useState} from "react";
 
-import {SearchProps} from "@/components/searchBar/types";
+import {SearchProps} from "./types";
 
 const Search = (props: SearchProps) => {
 
