@@ -4,15 +4,6 @@ import SubSection from "../subsection";
 import Link from "next/link";
 
 export default function EvidenceBase() {
-  const list = [
-    "Info Session",
-    "e-Learning",
-    "Workshop 1",
-    "Post-workshop Visit",
-    "Workshop 2",
-    "Post-workshop Visit",
-    "Tailored support is also provided throughout this period to meet the needs of individual schools"
-  ];
   const subbody = (
     <>
       <ol>

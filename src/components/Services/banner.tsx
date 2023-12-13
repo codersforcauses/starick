@@ -16,7 +16,7 @@ export default function Banner({ titleText, subtitleText }: BannerProps) {
           subtitleText ? "-mt-32" : "-mt-20"
         }`}
       >
-        <p className="p-2 text-4xl font-bold text-[--starick-brown]">
+        <p className="p-2 font-bold text-[--starick-brown] md:text-4xl">
           {titleText}
         </p>
         {subtitleText ? (
