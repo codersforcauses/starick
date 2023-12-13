@@ -4,6 +4,7 @@ import EvidenceBase from "@/components/Services/ResourcesAndFurtherLearning/evid
 import ResourceForParents from "@/components/Services/ResourcesAndFurtherLearning/resources-for-parents";
 import CommunityPartnerships from "@/components/Services/ResourcesAndFurtherLearning/community-partnerships";
 import ResourceForSchools from "@/components/Services/ResourcesAndFurtherLearning/resources-for-schools";
+import ResourcesForAboriginal from "@/components/Services/ResourcesAndFurtherLearning/resources-for-aboriginal";
 
 export default function InfoForSchools() {
   return (
@@ -14,6 +15,7 @@ export default function InfoForSchools() {
       />
       <EvidenceBase />
       <ResourceForParents />
+      <ResourcesForAboriginal />
       <ResourceForSchools />
       <CommunityPartnerships />
       <ProfessionalLearning />
