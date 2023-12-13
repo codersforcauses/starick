@@ -6,7 +6,7 @@ export function List({
   style: "list-disc" | "list-decimal";
 }) {
   return (
-    <ul className="ml-10">
+    <ul className="ml-4">
       {items.map((text, index) => (
         <li className={`${style} list-outside`} key={index}>
           {text}

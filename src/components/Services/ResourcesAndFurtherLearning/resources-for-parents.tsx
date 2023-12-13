@@ -6,13 +6,13 @@ import Link from "next/link";
 export default function ResourceForParents() {
   const subbody = (
     <>
-      <ul>
-        <li className="list-inside list-decimal">
+      <ol className="list-outside list-decimal ml-4">
+        <li>
           <Link href="https://www.respect.gov.au/" className="my-link">
             Respect.gov.au
           </Link>
         </li>
-        <li className="list-inside list-decimal">
+        <li>
           <Link
             href="https://www.respect.gov.au/resources/recognising-disrespect/"
             className="my-link"
@@ -22,7 +22,7 @@ export default function ResourceForParents() {
           – a resource to help us discover the hidden meanings of common
           expressions that can excuse disrespectful behaviour towards girls{" "}
         </li>
-        <li className="list-inside list-decimal">
+        <li>
           <Link
             href="https://www.respect.gov.au/resources/the-respect-checklist/"
             className="my-link"
@@ -33,7 +33,7 @@ export default function ResourceForParents() {
           a picture of what young people might believe and how they could react
           to disrespectful behaviour.
         </li>
-        <li className="list-inside list-decimal">
+        <li>
           <Link
             href="https://www.respect.gov.au/resources/talking-about-respect/"
             className="my-link"
@@ -43,7 +43,7 @@ export default function ResourceForParents() {
           – a practical guide for parents to have conversations with young
           people about respect.
         </li>
-        <li className="list-inside list-decimal">
+        <li>
           <Link
             href="https://www.respect.gov.au/resources/generation-respect/"
             className="my-link"
@@ -53,7 +53,7 @@ export default function ResourceForParents() {
           – a practical guide for talking to other adults about raising
           respectful young people.
         </li>
-      </ul>
+      </ol>
     </>
   );
   const body = (

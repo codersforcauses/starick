@@ -6,8 +6,8 @@ import Link from "next/link";
 export default function ResourcesForAboriginal() {
   const subbody = (
     <>
-      <ul>
-        <li className="list-inside list-decimal">
+      <ol className="list-outside list-decimal ml-4">
+        <li>
           <Link
             href="https://www.respect.gov.au/wp-content/uploads/2021/03/aboriginal-and-torres-strait-islander-speak-booklet_0.pdf"
             className="my-link"
@@ -19,7 +19,7 @@ export default function ResourcesForAboriginal() {
           relationships with the young people in their community.
         </li>
 
-        <li className="list-inside list-decimal">
+        <li>
           <Link
             href="https://www.respect.gov.au/wp-content/uploads/2016/11/atsi_storybook.pdf"
             className="my-link"
@@ -30,7 +30,7 @@ export default function ResourcesForAboriginal() {
           start the conversation about showing respect to women and girls.{" "}
         </li>
 
-        <li className="list-inside list-decimal">
+        <li>
           <Link
             href="https://www.respect.gov.au/wp-content/uploads/2016/06/atsi_conversation_guide.pdf"
             className="my-link"
@@ -62,7 +62,7 @@ export default function ResourcesForAboriginal() {
           .
         </li>
 
-        <li className="list-inside list-decimal">
+        <li>
           <Link
             href="https://www.respect.gov.au/wp-content/uploads/2018/07/atsi_excuse_interpreter.pdf"
             className="my-link"
@@ -73,7 +73,7 @@ export default function ResourcesForAboriginal() {
           towards women and girls without knowing it.
         </li>
 
-        <li className="list-inside list-decimal">
+        <li>
           <Link
             href="https://www.respect.gov.au/wp-content/uploads/2016/06/atsi_the_respect_checklist.pdf"
             className="my-link"
@@ -83,7 +83,7 @@ export default function ResourcesForAboriginal() {
           – a practical checklist to help parents and family members identify
           some aspects of respect to talk about with children.
         </li>
-      </ul>
+      </ol>
     </>
   );
   const body = (

@@ -35,16 +35,16 @@ export default function AchievedSection() {
       <br></br>
       <p className="text-xl font-semibold">Teaching and Learning:</p>
       <br></br>
-      <ul>
-        <li className="list-inside list-disc">
+      <ul className="list-outside list-disc ml-4">
+        <li>
           Creating Coded Zones of Regulation, Respectful Relationships, and PBS
           to the Curriculum Guidelines.
         </li>
-        <li className="list-inside list-disc">
+        <li>
           Producing positive behaviour videos with concrete examples of how to
           model respect in the school context.
         </li>
-        <li className="list-inside list-disc">
+        <li>
           Hosting a{" "}
           <Link href="https://rseproject.org.au/" className="my-link">
             Relationships and Sexuality Education (RSE)
@@ -52,11 +52,11 @@ export default function AchievedSection() {
           Project Sessions with Year 7 – 12 students using teaching resources
           from the Growing and Developing Healthy Relationships (GDHR) website.
         </li>
-        <li className="list-inside list-disc">
+        <li>
           Hosting RSE Project Sessions with Year 6 students to empower students
           transitioning to high school.
         </li>
-        <li className="list-inside list-disc">
+        <li>
           Engaging in the{" "}
           <Link href="https://tomorrowman.com.au/" className="my-link">
             Tomorrow Man

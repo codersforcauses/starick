@@ -6,9 +6,9 @@ import Link from "next/link";
 export default function ProfessionalLearning() {
   const subbody = (
     <>
-      <ul>
-        <li className="list-inside list-disc">Curtin University</li>
-        <li className="list-inside list-disc">
+      <ul className="list-outside list-disc ml-4">
+        <li>Curtin University</li>
+        <li>
           <Link
             href="https://rseproject.org.au/training-events/"
             className="my-link"
@@ -17,8 +17,8 @@ export default function ProfessionalLearning() {
           </Link>{" "}
           (RSE) training{" "}
         </li>
-        <li className="list-inside list-disc">Student Wellbeing Hub:</li>
-        <li className="list-inside list-disc">
+        <li>Student Wellbeing Hub:</li>
+        <li>
           <Link
             href="https://studentwellbeinghub.edu.au/educators/professional-learning-courses/respectful-relationships-education/"
             className="my-link"
@@ -26,7 +26,7 @@ export default function ProfessionalLearning() {
             Respect matters for teachers
           </Link>
         </li>
-        <li className="list-inside list-disc">
+        <li>
           <Link
             href="https://studentwellbeinghub.edu.au/educators/professional-learning-courses/principal-and-teacher-wellbeing/"
             className="my-link"
@@ -34,7 +34,7 @@ export default function ProfessionalLearning() {
             Principal and teacher wellbeing
           </Link>
         </li>
-        <li className="list-inside list-disc">
+        <li>
           <Link
             href="https://studentwellbeinghub.edu.au/educators/professional-learning-courses/australian-student-wellbeing-framework/"
             className="my-link"
@@ -42,20 +42,20 @@ export default function ProfessionalLearning() {
             Australian student wellbeing framework
           </Link>
         </li>
-        <li className="list-inside list-disc">
+        <li>
           <Link href="https://guidetothrive.lifeed.org.au/" className="my-link">
             Guide to Thrive{" "}
           </Link>
           (awaiting approval)
         </li>
-        <li className="list-inside list-disc">DV-alert</li>
-        <li className="list-inside list-disc">
+        <li>DV-alert</li>
+        <li>
           <Link href="https://www.dvalert.org.au/" className="my-link">
             Recognise, respond, refer{" "}
           </Link>
           FDV awareness workshop{" "}
         </li>
-        <li className="list-inside list-disc">
+        <li>
           <Link
             href="https://www.dvalert.org.au/workshops-courses/for-frontline-workers/2-day-workshops/indigenous-workshops"
             className="my-link"
@@ -66,7 +66,7 @@ export default function ProfessionalLearning() {
           support services relevant to Aboriginal and Torres Strait Islander
           communities.{" "}
         </li>
-        <li className="list-inside list-disc">
+        <li>
           <Link
             href="https://www.dvalert.org.au/workshops-courses/for-frontline-workers/2-day-workshops/multicultural-workshops"
             className="my-link"
