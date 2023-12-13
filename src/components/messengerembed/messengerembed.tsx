@@ -33,7 +33,7 @@ export default function MessengerChat() {
   return (
     <div>
       <div id="fb-root"></div>
-      <div id="fb-customer-chat" className="fb-customerchat"></div>
+      <div id="fb-customer-chat" className="fb-customerchat outline-none"></div>
     </div>
   );
 }
