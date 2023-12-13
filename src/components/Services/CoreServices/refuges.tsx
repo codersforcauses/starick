@@ -148,7 +148,7 @@ export default function RefugesSection() {
       titleBackgroundColour="[--starick-olive]"
       sectionBody={body}
       title="Refuges"
-      iconPath="icons/multicultural-heads.svg"
+      iconPath="icons/refugees.svg"
     />
   );
 }

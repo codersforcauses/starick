@@ -12,15 +12,17 @@ export default function Banner({ titleText, subtitleText }: BannerProps) {
         alt="banner"
       ></img>
       <div
-        className={`relative mb-6 w-fit rounded-r-full bg-white px-14 ${
-          subtitleText ? "-mt-32" : "-mt-20"
+        className={`relative w-fit rounded-r-full bg-white px-6 py-2 md:px-20 md:py-4 ${
+          subtitleText
+            ? "-mt-20 mb-2 md:-mt-44 md:mb-6"
+            : "-mt-14 mb-2 md:-mt-28 md:mb-4"
         }`}
       >
-        <p className="p-2 font-bold text-[--starick-brown] md:text-4xl">
+        <p className="text-2xl font-bold text-[--starick-brown] md:p-2 md:text-5xl">
           {titleText}
         </p>
         {subtitleText ? (
-          <p className="p-2 text-center text-3xl font-bold text-[--starick-brown]">
+          <p className="text-md text-center font-bold text-[--starick-brown] md:p-2 md:text-4xl">
             {subtitleText}
           </p>
         ) : null}
