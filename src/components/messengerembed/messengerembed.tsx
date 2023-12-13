@@ -30,10 +30,24 @@ export default function MessengerChat() {
     })(document, "script", "facebook-jssdk");
   }, []);
 
+  // return (
+  //   <div>
+  //     <div id="fb-root"></div>
+  //     <div id="fb-customer-chat" className="fb-customerchat outline-none"></div>
+  //   </div>
+  // );
+
   return (
     <div>
+      <style>
+        {`
+          #fb-customer-chat:focus {
+            outline: none !important;
+          }
+        `}
+      </style>
       <div id="fb-root"></div>
-      <div id="fb-customer-chat" className="fb-customerchat outline-none"></div>
+      <div id="fb-customer-chat" className="fb-customerchat"></div>
     </div>
   );
 }
