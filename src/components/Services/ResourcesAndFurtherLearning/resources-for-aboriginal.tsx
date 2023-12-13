@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function ResourcesForAboriginal() {
   const subbody = (
     <>
-      <ol className="list-outside list-decimal ml-4">
+      <ol className="ml-4 list-outside list-decimal">
         <li>
           <Link
             href="https://www.respect.gov.au/wp-content/uploads/2021/03/aboriginal-and-torres-strait-islander-speak-booklet_0.pdf"

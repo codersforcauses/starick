@@ -7,7 +7,7 @@ export default function ResourceForSchools() {
   const subbody = (
     <>
       <p className="my-4 text-lg">Teaching and learning:</p>
-      <ol className="list-outside list-decimal ml-4">
+      <ol className="ml-4 list-outside list-decimal">
         <li>Growing and Developing Healthy Relationships (GDHR)</li>
         <li>
           <Link
@@ -56,7 +56,7 @@ export default function ResourceForSchools() {
         </li>
       </ol>
       <p className="my-4 text-lg">Policy and practice:</p>
-      <ol className="list-outside list-decimal ml-4">
+      <ol className="ml-4 list-outside list-decimal">
         <li>Our Watch</li>
         <li>
           School respectful relationships education{" "}
@@ -78,7 +78,7 @@ export default function ResourceForSchools() {
         </li>
       </ol>
       <p className="my-4 text-lg">School culture and environment:</p>
-      <ol className="list-outside list-decimal ml-4">
+      <ol className="ml-4 list-outside list-decimal">
         <li>Our Watch</li>
         <li>
           <Link

@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function ProfessionalLearning() {
   const subbody = (
     <>
-      <ul className="list-outside list-disc ml-4">
+      <ul className="ml-4 list-outside list-disc">
         <li>Curtin University</li>
         <li>
           <Link

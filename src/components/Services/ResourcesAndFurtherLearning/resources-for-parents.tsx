@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function ResourceForParents() {
   const subbody = (
     <>
-      <ol className="list-outside list-decimal ml-4">
+      <ol className="ml-4 list-outside list-decimal">
         <li>
           <Link href="https://www.respect.gov.au/" className="my-link">
             Respect.gov.au

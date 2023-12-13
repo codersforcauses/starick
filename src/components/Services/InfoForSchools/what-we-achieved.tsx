@@ -35,7 +35,7 @@ export default function AchievedSection() {
       <br></br>
       <p className="text-xl font-semibold">Teaching and Learning:</p>
       <br></br>
-      <ul className="list-outside list-disc ml-4">
+      <ul className="ml-4 list-outside list-disc">
         <li>
           Creating Coded Zones of Regulation, Respectful Relationships, and PBS
           to the Curriculum Guidelines.

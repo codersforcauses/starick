@@ -10,7 +10,7 @@ export default function CommunityPartnerships() {
         Here is a list of organisations you can connect with to support your
         implementation.
       </p>
-      <ul className="list-outside list-disc ml-4">
+      <ul className="ml-4 list-outside list-disc">
         <li>
           <Link href="https://cwsw.org.au/" className="my-link">
             Centre for Women’s Safety and Wellbeing

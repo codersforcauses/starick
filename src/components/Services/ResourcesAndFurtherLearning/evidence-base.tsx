@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function EvidenceBase() {
   const subbody = (
     <>
-      <ol className="list-outside list-decimal ml-4">
+      <ol className="ml-4 list-outside list-decimal">
         <li>
           <Link
             href="https://education.ourwatch.org.au/resource/evidence-paper-respectful-relationships-education-in-schools/"
