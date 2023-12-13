@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "format": "prettier --write .",
+    "format": "prettier . --write '!./data' '!./.next'",
+    "format:check": "prettier . --check '!./data' '!./.next'",
     "test": "dotenv -e .env -- mocha"
   },
   "dependencies": {
@@ -17,7 +18,8 @@
     "next": "^13.5.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-hook-form": "^7.43.9"
+    "react-hook-form": "^7.43.9",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.1",
