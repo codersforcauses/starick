@@ -18,7 +18,7 @@ export default function SubSection({
       alt="!"
     ></img>
   );
-  const body = <div className="pl-3">{sectionBody}</div>;
+  const body = <div className="pl-3 grow">{sectionBody}</div>;
   const combined = iconOnRight ? (
     <>
       {body}

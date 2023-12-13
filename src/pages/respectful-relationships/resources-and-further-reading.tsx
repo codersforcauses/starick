@@ -1,8 +1,9 @@
-import ProfessionalLearning from "@/components/Services/ResourcesAndFurtherLearning/professional-learning";
 import Banner from "@/components/Services/banner";
+import ProfessionalLearning from "@/components/Services/ResourcesAndFurtherLearning/professional-learning";
 import EvidenceBase from "@/components/Services/ResourcesAndFurtherLearning/evidence-base";
 import ResourceForParents from "@/components/Services/ResourcesAndFurtherLearning/resources-for-parents";
 import CommunityPartnerships from "@/components/Services/ResourcesAndFurtherLearning/community-partnerships";
+import ResourceForSchools from "@/components/Services/ResourcesAndFurtherLearning/resources-for-schools";
 
 export default function InfoForSchools() {
   return (
@@ -13,6 +14,7 @@ export default function InfoForSchools() {
       />
       <EvidenceBase />
       <ResourceForParents />
+      <ResourceForSchools />
       <CommunityPartnerships />
       <ProfessionalLearning />
     </>
