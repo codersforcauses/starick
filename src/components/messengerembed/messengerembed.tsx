@@ -7,10 +7,7 @@ export default function MessengerChat() {
   useEffect(() => {
     const chatbox = document.getElementById("fb-customer-chat");
     if (chatbox) {
-      const pageId = process.env.NEXT_PUBLIC_PAGE_ID;
-      if (pageId) {
-        chatbox.setAttribute("page_id", pageId);
-      }
+      chatbox.setAttribute("page_id", process.env.NEXT_PUBLIC_FACEBOOK_PAGE_ID || "");
       chatbox.setAttribute("attribution", "biz_inbox");
     }
 
