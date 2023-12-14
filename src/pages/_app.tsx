@@ -1,14 +1,20 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 
-import NavBar from "@/components/NavBar/NavBar";
+import NavBar from "@/components/NavBar";
 
-import PanicButton from "@/components/panicbutton/panicbutton";
+import PanicButton from "@/components/PanicButton";
 
 export default function App({ Component, pageProps }: AppProps) {
-  return (<><header>
-    <NavBar />
-    <PanicButton />
-  </header>
-  <Component {...pageProps} /></>);
+  return (
+    <>
+      <header>
+        <NavBar />
+        <PanicButton />
+      </header>
+      <main className="mt-14">
+        <Component {...pageProps} />
+      </main>
+    </>
+  );
 }
