@@ -61,7 +61,7 @@ const NavBar = () => {
           >
             <NavItem
               classNames="bg-[--starick-orange] text-[--starick-white] p-2 rounded-lg"
-              link={{ href: "/help", label: "Seek Help" }}
+              link={{ href: "/chat", label: "Chat" }}
             />
           </li>
           {/* Donate button */}

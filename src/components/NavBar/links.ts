@@ -7,7 +7,7 @@ export const primaryNav: Array<NavBarItem> = [
   },
   {
     href: "/what-is-domestic-violence",
-    label: "What is Domestic Violence"
+    label: "What is Domestic Violence?"
   },
   {
     href: "/services",
@@ -28,33 +28,43 @@ export const primaryNav: Array<NavBarItem> = [
     label: "About Us",
     submenu: [
       {
-        href: "/stories",
-        label: "Our Stories"
-      },
-      {
-        href: "/contact",
-        label: "Contact Us"
-      },
-      {
-        href: "/jobs",
-        label: "Job Opportunities"
+        href: "/about",
+        label: "About Starick"
       },
       {
         href: "/people",
         label: "Our People"
       },
       {
-        href: "/support",
-        label: "Support Us"
+        href: "/supporters",
+        label: "Our Supporters"
+      },
+      {
+        href: "/stories",
+        label: "Our Stories"
+      },
+      {
+        href: "/publications",
+        label: "Our Publications"
       }
     ]
   },
   {
     href: "/support",
-    label: "Support Us"
+    label: "Support Us",
+    submenu: [
+      {
+        href: "/donations",
+        label: "Donations"
+      },
+      {
+        href: "/op-shop",
+        label: "Op Shop"
+      }
+    ]
   },
   {
-    href: "/chat",
-    label: "Chat"
+    href: "/faq",
+    label: "FAQ"
   }
 ];
