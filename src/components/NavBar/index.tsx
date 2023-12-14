@@ -42,6 +42,7 @@ const NavBar = () => {
               <li key={link.href}>
                 <NavItem
                   classNames="bg-white lg:p-2 lg:rounded-lg my-2 lg:my-0"
+                  callback={setHamburgerMenuOpen}
                   link={link}
                 />
               </li>
@@ -61,6 +62,7 @@ const NavBar = () => {
           >
             <NavItem
               classNames="bg-[--starick-orange] text-[--starick-white] p-2 rounded-lg"
+              callback={setHamburgerMenuOpen}
               link={{ href: "/chat", label: "Chat" }}
             />
           </li>
@@ -72,6 +74,7 @@ const NavBar = () => {
           >
             <NavItem
               classNames="bg-[--starick-green] text-[--starick-white] p-2 rounded-lg"
+              callback={setHamburgerMenuOpen}
               link={{ href: "/donate", label: "Donate" }}
             />
           </li>
