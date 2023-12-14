@@ -39,7 +39,6 @@ export default function MessengerChat() {
       <div id="fb-customer-chat" className="fb-customerchat outline-none"></div>
     </div>
   );
-
   // return (
   //   <div>
   //     <style>
