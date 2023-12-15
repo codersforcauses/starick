@@ -51,7 +51,7 @@ export default function WorkWithChildrenAndYoungPeopleSection() {
 
       <div className="flex items-center justify-center bg-[--starick-white] py-10">
         <button className="rounded-2xl bg-[--starick-brown] p-5 text-lg text-white hover:bg-[--starick-black]">
-          <Link href="/resources-toolkits-reading">
+          <Link href="/other-services/resources-and-toolkits">
             Resources, toolkits, and further reading
           </Link>
         </button>

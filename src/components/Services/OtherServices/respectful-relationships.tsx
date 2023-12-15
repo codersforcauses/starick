@@ -126,10 +126,10 @@ export default function RespectfulRelationshipsSection() {
       <br></br>
       <div className="flex justify-center gap-x-32 bg-[--starick-white] py-10">
         <button className="rounded-2xl bg-[--starick-brown] p-5 text-lg text-white hover:bg-[--starick-black]">
-          <Link href="/info-for-schools">Info for schools</Link>
+          <Link href="/other-services/info-for-schools">Info for schools</Link>
         </button>
         <button className="rounded-2xl bg-[--starick-brown] p-5 text-lg text-white hover:bg-[--starick-black]">
-          <Link href="/further-reading">Further reading</Link>
+          <Link href="/other-services/further-reading">Further reading</Link>
         </button>
       </div>
     </>
