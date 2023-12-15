@@ -12,6 +12,7 @@ function Assistant() {
   const [messages, setMessages] = useState<GPTMessage[]>([]);
   const messagesRef = useRef<HTMLDivElement | null>(null);
 
+  /* Calls the server for GPT response */
   const getMessage = async (payload: GPTMessage[]): Promise<GPTMessage> => {
     const response = await fetch("http://localhost:3000/api/chatbot/message", {
       method: "POST",
@@ -26,6 +27,7 @@ function Assistant() {
     return { role: "system", content: "Sorry, please try again" };
   };
 
+  /* Get GPT initial intro message */
   useEffect(() => {
     const getInitialMessage = async () => {
       const initialMessage = await getMessage([]);
@@ -35,12 +37,14 @@ function Assistant() {
     scrollToBottom();
   }, [messages]);
 
+  /* Scrolls to the bottom of the chat window */
   const scrollToBottom = () => {
     if (messagesRef.current) {
       messagesRef.current.scrollTop = messagesRef.current.scrollHeight;
     }
   };
 
+  /* Enter key submits user typed message */
   const handleEnterKey = async (event: React.KeyboardEvent) => {
     if (event.key == "Enter" && !event.shiftKey) {
       event.preventDefault();
