@@ -4,14 +4,14 @@ import Image from "next/image";
 import SectionTitle from "@/components/section-title";
 import ChildSafeItem from "@/components/Services/ResourceAndToolkits/child-safe-item";
 
-import ChildSafeResources from "~/images/ResourcesToolkits/child-safe-resources.png";
+import ChildSafeResourcesTitle from "~/images/ResourcesToolkits/child-safe-resources-title.png";
 
-const ChildSafeResources: React.FC = () => {
+export default function ChildSafeResources() {
     const emailAddress = "info@starick.org.au"
     return (
         <>
             <Image
-                src={ChildSafeResources}
+                src={ChildSafeResourcesTitle}
                 alt="description"
                 width="0"
                 height="0"
@@ -161,5 +161,3 @@ const ChildSafeResources: React.FC = () => {
         </>
     )
 }
-
-export default ChildSafeResources;
