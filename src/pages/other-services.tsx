@@ -1,11 +1,11 @@
 import Link from "next/link";
 
 import InPageNav from "@/components/InPageNav";
+import HealthAndWellbeingSection from "@/components/Services/OtherServices/health-wellbeing";
 import RespectfulRelationshipsSection from "@/components/Services/OtherServices/respectful-relationships";
+import ThrivingThroughConnectionSection from "@/components/Services/OtherServices/thriving-through-connection";
 import WorkWithChildrenAndYoungPeopleSection from "@/components/Services/OtherServices/work-with-children-and-young-people";
 import WorkplaceAwarenessSection from "@/components/Services/OtherServices/workplace-awareness";
-import HealthAndWellbeingSection from "@/components/Services/OtherServices/health-wellbeing";
-import ThrivingThroughConnectionSection from "@/components/Services/OtherServices/thriving-through-connection";
 
 export default function OtherServices() {
   const navLinkDetails = [

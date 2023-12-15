@@ -1,6 +1,6 @@
 import React from "react";
+
 import ServicesSection from "../services-section";
-import SubSection from "../subsection";
 
 export default function ThrivingThroughConnectionSection() {
   const body = (
