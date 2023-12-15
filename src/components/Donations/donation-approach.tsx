@@ -1,5 +1,3 @@
-import React from "react";
-
 const DonationApproach: React.FC<{ order: number; text: string }> = ({
   order,
   text

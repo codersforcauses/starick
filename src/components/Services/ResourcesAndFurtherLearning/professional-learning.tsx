@@ -1,7 +1,5 @@
-import React from "react";
 import ServicesSection from "../services-section";
 import SubSection from "../subsection";
-import Link from "next/link";
 
 export default function ProfessionalLearning() {
   const subbody = (
@@ -9,70 +7,70 @@ export default function ProfessionalLearning() {
       <ul className="ml-4 list-outside list-disc">
         <li>Curtin University</li>
         <li>
-          <Link
+          <a
             href="https://rseproject.org.au/training-events/"
             className="my-link"
           >
             Relationships and Sexuality Education
-          </Link>{" "}
+          </a>{" "}
           (RSE) training{" "}
         </li>
         <li>Student Wellbeing Hub:</li>
         <li>
-          <Link
+          <a
             href="https://studentwellbeinghub.edu.au/educators/professional-learning-courses/respectful-relationships-education/"
             className="my-link"
           >
             Respect matters for teachers
-          </Link>
+          </a>
         </li>
         <li>
-          <Link
+          <a
             href="https://studentwellbeinghub.edu.au/educators/professional-learning-courses/principal-and-teacher-wellbeing/"
             className="my-link"
           >
             Principal and teacher wellbeing
-          </Link>
+          </a>
         </li>
         <li>
-          <Link
+          <a
             href="https://studentwellbeinghub.edu.au/educators/professional-learning-courses/australian-student-wellbeing-framework/"
             className="my-link"
           >
             Australian student wellbeing framework
-          </Link>
+          </a>
         </li>
         <li>
-          <Link href="https://guidetothrive.lifeed.org.au/" className="my-link">
+          <a href="https://guidetothrive.lifeed.org.au/" className="my-link">
             Guide to Thrive{" "}
-          </Link>
+          </a>
           (awaiting approval)
         </li>
         <li>DV-alert</li>
         <li>
-          <Link href="https://www.dvalert.org.au/" className="my-link">
+          <a href="https://www.dvalert.org.au/" className="my-link">
             Recognise, respond, refer{" "}
-          </Link>
+          </a>
           FDV awareness workshop{" "}
         </li>
         <li>
-          <Link
+          <a
             href="https://www.dvalert.org.au/workshops-courses/for-frontline-workers/2-day-workshops/indigenous-workshops"
             className="my-link"
           >
             Indigenous workshops{" "}
-          </Link>
+          </a>
           to recognise signs of family violence, respond appropriately and refer
           support services relevant to Aboriginal and Torres Strait Islander
           communities.{" "}
         </li>
         <li>
-          <Link
+          <a
             href="https://www.dvalert.org.au/workshops-courses/for-frontline-workers/2-day-workshops/multicultural-workshops"
             className="my-link"
           >
             Multicultural workshops{" "}
-          </Link>
+          </a>
           to recognise the signs of FDV, respond appropriately and refer to
           support services relevant to culturally and linguistically diverse
           communities.

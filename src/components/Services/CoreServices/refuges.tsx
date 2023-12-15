@@ -1,8 +1,6 @@
-import React from "react";
 import ServicesSection from "../services-section";
 import SubSection from "../subsection";
 import { List } from "../list";
-import Link from "next/link";
 
 export default function RefugesSection() {
   const refugeSupportExamples = (
@@ -39,7 +37,7 @@ export default function RefugesSection() {
         you are not in immediate danger and would prefer to speak to a support
         worker at one of our refuges:
       </p>
-      <br></br>
+      <br />
       <ul>
         <li className="list-inside list-disc">Phone (08) 9458 1107</li>
       </ul>
@@ -61,37 +59,37 @@ export default function RefugesSection() {
           professional services to help them escape the violence and make plans
           for their future.
         </p>
-        <br></br>
+        <br />
         <p>
           Child advocates and women&apos;s advocates are employed at both
           refuges, and counselling is available to women and their children.
         </p>
-        <br></br>
+        <br />
         <p className="text-xl font-semibold">
           How we support the women in our refuges
         </p>
-        <br></br>
+        <br />
         <p>
           Our refuge teams work hard to provide an integrated service, with the
           aim of increasing a client&apos;s sense of safety and wellbeing. The
           support provided at our refuges includes:
         </p>
         {refugeSupportExamples}
-        <br></br>
+        <br />
         <p>
           We also offer our clients a range of other services and programs, to
           support their wellbeing.
         </p>
-        <br></br>
+        <br />
         <p className="text-xl font-semibold">
           How we support the children in our refuges
         </p>
-        <br></br>
+        <br />
         <p>
           Starick also provides support and programs specifically aimed at the
           children living in our refuges.
         </p>
-        <br></br>
+        <br />
         <p>
           Starick has been at the forefront of recognising the impact of family
           and domestic violence on children and developing our services for
@@ -100,45 +98,45 @@ export default function RefugesSection() {
           effectively meeting the diverse needs of the children living at both
           refuges.
         </p>
-        <br></br>
+        <br />
         <p>Our services for children currently include:</p>
         {childrenServicesExamples}
-        <br></br>
+        <br />
         <p>
           Support from Starick continues after women and children leave our
           refuges through our{" "}
-          <Link href="/services/outreach/" className="my-link">
+          <a href="/services/outreach/" className="my-link">
             outreach services
-          </Link>
+          </a>
           .
         </p>
-        <br></br>
+        <br />
         <p>
           For answers to some of the most frequently asked questions about
           domestic violence and our refuges click{" "}
-          <Link href="/faq/" className="my-link">
+          <a href="/faq/" className="my-link">
             here
-          </Link>
+          </a>
           .
         </p>
-        <br></br>
+        <br />
         <p>
           You can also read the stories of women who have stayed in a Starick
           refuge{" "}
-          <Link href="/about/stories/" className="my-link">
+          <a href="/about/stories/" className="my-link">
             here
-          </Link>
+          </a>
           .
         </p>
-        <br></br>
+        <br />
         <p>
           For crisis accommodation contact information, go to our{" "}
-          <Link href="/contact/useful-numbers/" className="my-link">
+          <a href="/contact/useful-numbers/" className="my-link">
             useful numbers
-          </Link>{" "}
+          </a>{" "}
           page.
         </p>
-        <br></br>
+        <br />
       </div>
     </>
   );

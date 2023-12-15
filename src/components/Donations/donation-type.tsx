@@ -1,4 +1,3 @@
-import React from "react";
 import Image, { StaticImageData } from "next/image";
 import BequestIcon7 from "~/images/donations/bequests/BequestIcon7.png";
 import BequestIcon8 from "~/images/donations/bequests/BequestIcon8.png";

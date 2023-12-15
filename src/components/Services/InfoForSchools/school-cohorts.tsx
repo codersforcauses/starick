@@ -1,4 +1,3 @@
-import React from "react";
 import ServicesSection from "../services-section";
 import { List } from "../list";
 import SubSection from "../subsection";
@@ -74,48 +73,28 @@ export default function SchoolCohorts() {
     "Woodland Grove Primary School",
     "Yale Primary School"
   ];
+  const cohorts = [cohort1, cohort2, cohort3, cohort4, cohort5];
 
   const subbody = (
     <>
       <div className="grid grid-cols-1 md:grid-cols-2 ">
-        <div>
-          <br />
-          <p>
-            <b>Cohorts 1</b>
-          </p>
-          <br />
-          <List items={cohort1} style="list-decimal" />
-
-          <br />
-          <p>
-            <b>Cohorts 2</b>
-          </p>
-          <br></br>
-          <List items={cohort2} style="list-decimal" />
-
-          <br />
-          <p>
-            <b>Cohorts 3</b>
-          </p>
-          <br />
-          <List items={cohort3} style="list-decimal" />
-        </div>
-
-        <div>
-          <br />
-          <p>
-            <b>Cohorts 4</b>
-          </p>
-          <br />
-          <List items={cohort4} style="list-decimal" />
-
-          <br />
-          <p>
-            <b>Cohorts 5</b>
-          </p>
-          <br />
-          <List items={cohort5} style="list-decimal" />
-        </div>
+        {[
+          [0, 3],
+          [3, 5]
+        ].map(([start, end], _) => (
+          <div key={start}>
+            {cohorts.slice(start, end).map((cohort, index) => (
+              <div key={start + index}>
+                <br />
+                <p>
+                  <b>Cohort {index + start + 1}</b>
+                </p>
+                <br />
+                <List items={cohort} style="list-decimal" />
+              </div>
+            ))}
+          </div>
+        ))}
       </div>
     </>
   );

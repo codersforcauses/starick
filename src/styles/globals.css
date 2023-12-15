@@ -11,7 +11,9 @@
   --starick-black: rgb(3, 7, 18);
 }
 
-.my-link {
-  color: orange;
-  text-decoration: underline;
+@layer components {
+  .my-link {
+    color: orange;
+    text-decoration: underline;
+  }
 }

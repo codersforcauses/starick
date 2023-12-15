@@ -1,7 +1,5 @@
-import React from "react";
 import { List } from "../list";
 import ServicesSection from "../services-section";
-import Link from "next/link";
 import SubSection from "../subsection";
 
 export default function AchievedSection() {
@@ -26,15 +24,23 @@ export default function AchievedSection() {
   const list5 = [
     "One school's teaching staff completed Domestic Violence and Complex Trauma training."
   ];
+  const sections = [
+    { title: "Policy and Practice", items: list1 },
+    { title: "School Culture and Environment", items: list2 },
+    { title: "Community Partnerships", items: list3 },
+    { title: "Support for staff and students", items: list4 },
+    { title: "Professional Learning", items: list5 }
+  ];
+
   const subbody = (
     <>
       <p>
         The following real examples show what some schools have achieved as a
         result of engaging with the Starick RRE program.
       </p>
-      <br></br>
+      <br />
       <p className="text-xl font-semibold">Teaching and Learning:</p>
-      <br></br>
+      <br />
       <ul className="ml-4 list-outside list-disc">
         <li>
           Creating Coded Zones of Regulation, Respectful Relationships, and PBS
@@ -46,9 +52,9 @@ export default function AchievedSection() {
         </li>
         <li>
           Hosting a{" "}
-          <Link href="https://rseproject.org.au/" className="my-link">
+          <a href="https://rseproject.org.au/" className="my-link">
             Relationships and Sexuality Education (RSE)
-          </Link>{" "}
+          </a>{" "}
           Project Sessions with Year 7 – 12 students using teaching resources
           from the Growing and Developing Healthy Relationships (GDHR) website.
         </li>
@@ -58,38 +64,25 @@ export default function AchievedSection() {
         </li>
         <li>
           Engaging in the{" "}
-          <Link href="https://tomorrowman.com.au/" className="my-link">
+          <a href="https://tomorrowman.com.au/" className="my-link">
             Tomorrow Man
-          </Link>
+          </a>
           /
-          <Link href="https://tomorrowwoman.com.au/" className="my-link">
+          <a href="https://tomorrowwoman.com.au/" className="my-link">
             Tomorrow Woman
-          </Link>{" "}
+          </a>{" "}
           Program once a term every term for three years.
         </li>
       </ul>
-      <br></br>
-      <br></br>
-      <p className="text-xl font-semibold">Policy and Practice:</p>
-      <br></br>
-      <List items={list1} style="list-disc" />
-      <br></br>
-      <p className="text-xl font-semibold">School Culture and Environment:</p>
-      <br></br>
-      <List items={list2} style="list-disc" />
-      <br></br>
-      <p className="text-xl font-semibold">Community Partnerships:</p>
-      <br></br>
-      <List items={list3} style="list-disc" />
-      <br></br>
-      <p className="text-xl font-semibold">Support for staff and students:</p>
-      <br></br>
-      <List items={list4} style="list-disc" />
-      <br></br>
-      <p className="text-xl font-semibold">Professional Learning:</p>
-      <br></br>
-      <List items={list5} style="list-disc" />
-      <br></br>
+      <br />
+      {sections.map(({ title, items }) => (
+        <>
+          <p className="text-xl font-semibold">{title}:</p>
+          <br />
+          <List items={items} style="list-disc" />
+          <br />
+        </>
+      ))}
     </>
   );
   const body = (

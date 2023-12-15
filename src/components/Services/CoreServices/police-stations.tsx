@@ -1,4 +1,3 @@
-import React from "react";
 import ServicesSection from "../services-section";
 import { List } from "../list";
 
@@ -25,7 +24,7 @@ export default function PoliceSection() {
         offer an advocacy service, safety planning and case management with
         court support. They can also refer you to legal and other services:
       </p>
-      <br></br>
+      <br />
       <ul className="ml-10 list-disc">
         <li>
           <b>Armadale</b>: Walk into Armadale Police Station at 23 Prospect Rd,
@@ -42,7 +41,7 @@ export default function PoliceSection() {
       </p>
       <br />
       {services}
-      <br></br>
+      <br />
     </>
   );
   return (

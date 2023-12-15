@@ -1,7 +1,5 @@
-import React from "react";
 import ServicesSection from "../services-section";
 import SubSection from "../subsection";
-import Link from "next/link";
 
 export default function CommunityPartnerships() {
   const subbody = (
@@ -12,9 +10,9 @@ export default function CommunityPartnerships() {
       </p>
       <ul className="ml-4 list-outside list-disc">
         <li>
-          <Link href="https://cwsw.org.au/" className="my-link">
+          <a href="https://cwsw.org.au/" className="my-link">
             Centre for Women’s Safety and Wellbeing
-          </Link>
+          </a>
         </li>
         <li>
           The peak body for women’s specialist family and domestic violence,
@@ -22,9 +20,9 @@ export default function CommunityPartnerships() {
           Australia.Stopping Family Violence
         </li>
         <li>
-          <Link href="https://sfv.org.au/" className="my-link">
+          <a href="https://sfv.org.au/" className="my-link">
             Stopping Family Violence
-          </Link>
+          </a>
         </li>
         <li>
           The peak body, non-for-profit organisation in Western Australia
@@ -32,21 +30,21 @@ export default function CommunityPartnerships() {
           responding to perpetrators of Family and Domestic Violence (FDV).
         </li>
         <li>
-          <Link href="https://laalangford.com.au/about/" className="my-link">
+          <a href="https://laalangford.com.au/about/" className="my-link">
             Langford Aboriginal Association
-          </Link>
+          </a>
         </li>
         <li>
           A not-for-profit community organisation which delivers programs to
           benefit the local Aboriginal and Non-Aboriginal community.
         </li>
         <li>
-          <Link
+          <a
             href="https://www.redcross.org.au/places/offices/perth/"
             className="my-link"
           >
             Australian Red Cross Perth
-          </Link>
+          </a>
         </li>
         <li>
           Delivery Roads2Respect, a program providing family and domestic

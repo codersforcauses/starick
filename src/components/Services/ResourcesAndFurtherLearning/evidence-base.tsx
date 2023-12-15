@@ -1,67 +1,65 @@
-import React from "react";
 import ServicesSection from "../services-section";
 import SubSection from "../subsection";
-import Link from "next/link";
 
 export default function EvidenceBase() {
   const subbody = (
     <>
       <ol className="ml-4 list-outside list-decimal">
         <li>
-          <Link
+          <a
             href="https://education.ourwatch.org.au/resource/evidence-paper-respectful-relationships-education-in-schools/"
             className="my-link"
           >
             Evidence paper:
-          </Link>{" "}
+          </a>{" "}
           Respectful relationships education in schools,{" "}
-          <Link
+          <a
             href="https://education.ourwatch.org.au/resource/school-respectful-relationships-education-commitment-statement/"
             className="my-link"
           >
             Our Watch
-          </Link>
+          </a>
         </li>
         <li>
           Respectful Relationships Education in School: The Beginnings of Change
           -{" "}
-          <Link
+          <a
             href="https://www.education.vic.gov.au/Documents/about/programs/health/ourwatchrespectfulrelationships.pdf"
             className="my-link"
           >
             Final Evaluation Report
-          </Link>
+          </a>
           ,{" "}
-          <Link
+          <a
             href="https://education.ourwatch.org.au/resource/school-respectful-relationships-education-commitment-statement/"
             className="my-link"
           >
             Our Watch
-          </Link>
+          </a>
         </li>
         <li>
-          <Link
+          <a
             href="https://www.starick.org.au/wp-content/uploads/FINAL_RRTSP-Overall-Evaluation-Report.2.pdf"
             className="my-link"
           >
             FINAL_RRTSP Overall Evaluation Report.2
-          </Link>
+          </a>
         </li>
         <li>
-          <Link
+          <a
             href="https://www.starick.org.au/wp-content/uploads/RRTSP-Embedded-Case-Study-Evaluation.pdf"
             className="my-link"
           >
             RRTSP Embedded Case Study Evaluation
-          </Link>
+          </a>
         </li>
         <li>
-          <Link
+          <a
             href="https://www.starick.org.au/wp-content/uploads/RRE-Stocktake-Gap-Analysis-Report.pdf"
             className="my-link"
           >
             RRE Stocktake & Gap Analysis Report
-          </Link>
+          </a>
         </li>
       </ol>
     </>
