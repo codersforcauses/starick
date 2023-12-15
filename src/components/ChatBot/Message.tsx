@@ -1,9 +1,10 @@
-import { GPTMessage } from "@/lib/chatbot/validators";
 import React from "react";
 
+import { GPTMessage } from "@/lib/chatbot/validators";
+
 const styles = {
-  user: "bg-lime-700",
-  system: "bg-rose-400",
+  user: "bg-lime-700 self-end",
+  system: "bg-rose-400 self-center",
   assistant: "bg-cyan-600"
 };
 

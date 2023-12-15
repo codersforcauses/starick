@@ -1,0 +1,47 @@
+.windowOpen {
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+  flex-direction: column;
+  position: relative;
+  height: 448px;
+  width: 384px;
+  margin: 8px;
+  border-width: 1px;
+  border-radius: 8px;
+  background: white;
+  filter: drop-shadow(-4px -4px 10px rgb(200, 200, 200));
+  transition: height 0.2s ease-in, visibility 0.2s linear, opacity 0.2s linear;
+}
+
+.windowClosed {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  width: 384px;
+  transition: height 0.2s ease-out, visibility 0.2s linear, opacity 0.2s linear;
+}
+
+.buttonOpen {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 16px;
+}
+
+.buttonClosed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+  width: 50px;
+  margin: 8px;
+  background: var(--starick-orange);
+}
+
+.textOpen {
+  height: 100%;
+  width: 100%;
+  resize: none;
+  padding: 2px;
+}
