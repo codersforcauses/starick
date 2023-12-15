@@ -113,19 +113,19 @@ export default function WorkplaceAwarenessSection() {
         <>
             <SubSection 
                 sectionBody={subBodyAware}
-                iconPath="images/Icon-CRISIS-150x150.png"
+                iconPath="images/What-is-150x150.png"
             />
             <br></br>
             <br></br>
             <SubSection 
                 sectionBody={subBodyRightsResponsibilities}
-                iconPath="images/Icon-CRISIS-150x150.png"
+                iconPath="images/Icons-FAQ-150x150.png"
             />
             <br></br>
             <br></br>
             <SubSection 
                 sectionBody={subBodyHelp}
-                iconPath="images/Icon-CRISIS-150x150.png"
+                iconPath="images/I-need-help-150x150.png"
             />
         </>
     );
@@ -135,7 +135,7 @@ export default function WorkplaceAwarenessSection() {
             titleBackgroundColour="[--starick-green]"
             sectionBody={body}
             title="Workplace Awareness"
-            iconPath="images/Icon-CRISIS-150x150.png"
+            iconPath=""
         />
     );
 }

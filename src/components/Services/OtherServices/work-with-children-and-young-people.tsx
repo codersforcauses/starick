@@ -48,7 +48,7 @@ export default function WorkWithChildrenAndYoungPeopleSection() {
             titleBackgroundColour="[--starick-olive]"
             sectionBody={body}
             title="Our Work with Children and Young People"
-            iconPath="images/Icon-CRISIS-150x150.png"
+            iconPath=""
         />
     );
 }

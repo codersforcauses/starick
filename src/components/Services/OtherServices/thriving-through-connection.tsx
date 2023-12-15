@@ -16,7 +16,9 @@ export default function ThrivingThroughConnectionSection() {
             <br></br>
             <p>To find out more please email: youth@starick.org.au</p>
             <br></br>
-            <p>TTC is made possible by generous support from Telethon.</p>
+            <br></br>
+            <p className="text-center">TTC is made possible by generous support from Telethon.</p>
+            <img className="mx-auto w-96" src="/images/telethon-logo.png"></img>
         </>
     );
 
@@ -27,7 +29,7 @@ export default function ThrivingThroughConnectionSection() {
             titleBackgroundColour="[--starick-green]"
             sectionBody={body}
             title="Thriving Through Connection Supporting Young People Aged 11 - 17 years"
-            iconPath="images/Icon-CRISIS-150x150.png"
+            iconPath=""
         />
     );
 

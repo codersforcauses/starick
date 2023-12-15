@@ -54,11 +54,12 @@ export default function RespectfulRelationshipsSection() {
       <br></br>
       <p>
         It is also a key initiative of Path to Safety:{" "}
-        <a href="https://www.wa.gov.au/government/publications/western-australias-strategy-reduce-family-and-domestic-violence">
+        <a className="underline" href="https://www.wa.gov.au/government/publications/western-australias-strategy-reduce-family-and-domestic-violence">
           Western Australia&apos;s Strategy to Reduce Family and Domestic
           Violence 2020-2030.
         </a>
       </p>
+      <br></br>
       <br></br>
       <p className="flex items-center justify-center text-xl font-semibold">
         About Respectful Relationships Education
@@ -82,6 +83,8 @@ export default function RespectfulRelationshipsSection() {
         as places of learning and as workplaces to address the drivers of
         gender-based violence and create a future free from violence.{" "}
       </p>
+      <br></br>
+      <br></br>
       <p className="flex items-center justify-center text-xl font-semibold">
         What is a whole-of-school approach?
       </p>
@@ -117,7 +120,7 @@ export default function RespectfulRelationshipsSection() {
         important to include student voices in implementing RRE in schools.{" "}
       </p>
       <br></br>
-      <div className="flex items-center justify-around bg-[--starick-white] py-10">
+      <div className="flex justify-center gap-x-32 bg-[--starick-white] py-10">
                 <button className="rounded-2xl bg-[--starick-brown] p-5 text-lg text-white hover:bg-[--starick-black]">
                     <Link href="/info-for-schools">Info for schools</Link>
                 </button>
@@ -133,7 +136,7 @@ export default function RespectfulRelationshipsSection() {
       titleBackgroundColour="[--starick-green]"
       sectionBody={body}
       title="WA Respectful Relationships Teaching Support Program"
-      iconPath="images/Icon-CRISIS-150x150.png"
+      iconPath=""
     />
   );
 }
