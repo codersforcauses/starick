@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
 
-import ChildSafeResources from "~/images/ResourcesToolkits/child-safe-resources.png";
 import SectionTitle from "@/components/section-title";
 import ChildSafeItem from "@/components/Services/ResourceAndToolkits/child-safe-item";
 
-const ChildSafeOrganisationResources: React.FC = () => {
+import ChildSafeResources from "~/images/ResourcesToolkits/child-safe-resources.png";
+
+const ChildSafeResources: React.FC = () => {
     const emailAddress = "info@starick.org.au"
     return (
         <>
@@ -66,7 +67,7 @@ const ChildSafeOrganisationResources: React.FC = () => {
                 </p>
             </div>
             <div className="px-10 md:px-20 lg:px-32">
-                <SectionTitle className="px-10 md:px-20 lg:px-30" text="Child Safe Template"
+                <SectionTitle text="Child Safe Template"
                               backgroundColour={"[--starick-green]"} textColour={"[--starick-white]"}
                               iconPath={"/images/ResourcesToolkits/child-safe-templates-icon.png"}/>
             </div>
@@ -106,7 +107,7 @@ const ChildSafeOrganisationResources: React.FC = () => {
 
 
             <div className="px-10 md:px-20 lg:px-32">
-                <SectionTitle className="px-10 md:px-20 lg:px-30" text="Posters" backgroundColour={"[--starick-brown]"}
+                <SectionTitle text="Posters" backgroundColour={"[--starick-brown]"}
                               textColour={"[--starick-white]"}
                               iconPath={"/images/ResourcesToolkits/child-safe-templates-icon.png"}/>
             </div>
@@ -118,7 +119,7 @@ const ChildSafeOrganisationResources: React.FC = () => {
             </div>
 
             <div className="px-10 md:px-20 lg:px-32">
-                <SectionTitle className="px-10 md:px-20 lg:px-30" text="External Resources"
+                <SectionTitle text="External Resources"
                               backgroundColour={"[--starick-olive]"} textColour={"black"}
                               iconPath={"/images/ResourcesToolkits/child-safe-templates-icon.png"}/>
             </div>
@@ -161,4 +162,4 @@ const ChildSafeOrganisationResources: React.FC = () => {
     )
 }
 
-export default ChildSafeOrganisationResources;
+export default ChildSafeResources;
