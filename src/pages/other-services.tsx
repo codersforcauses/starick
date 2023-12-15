@@ -5,6 +5,7 @@ import RespectfulRelationshipsSection from "@/components/Services/OtherServices/
 import WorkWithChildrenAndYoungPeopleSection from "@/components/Services/OtherServices/work-with-children-and-young-people";
 import WorkplaceAwarenessSection from "@/components/Services/OtherServices/workplace-awareness";
 import HealthAndWellbeingSection from "@/components/Services/OtherServices/health-wellbeing";
+import ThrivingThroughConnectionSection from "@/components/Services/OtherServices/thriving-through-connection";
 
 export default function OtherServices() {
     const navLinkDetails = [
@@ -25,8 +26,8 @@ export default function OtherServices() {
           name: "Health and Wellbeing"
         },
         {
-          href: "#Thriving Through Connection",
-          name: "Thriving Through Connection"
+          href: "#Thriving Through Connection Supporting Young People Aged 11 - 17 years",
+          name: "Thriving Through Connection Supporting Young People Aged 11 - 17 years"
         }
       ];
     return (
@@ -44,6 +45,7 @@ export default function OtherServices() {
             <WorkWithChildrenAndYoungPeopleSection />
             <WorkplaceAwarenessSection />
             <HealthAndWellbeingSection />
+            <ThrivingThroughConnectionSection />
         </>
     );
 }
