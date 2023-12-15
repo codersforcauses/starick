@@ -45,3 +45,54 @@
   resize: none;
   padding: 2px;
 }
+
+.loading {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: var(--starick-orange);
+  color: var(--starick-orange);
+  animation: loading 1s infinite linear alternate;
+  animation-delay: 0.5s;
+}
+
+.loading::before,
+.loading::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.loading::before {
+  left: -15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: var(--starick-orange);
+  color: var(--starick-orange);
+  animation: loading 1s infinite alternate;
+  animation-delay: 0s;
+}
+
+.loading::after {
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: var(--starick-orange);
+  color: var(--starick-orange);
+  animation: loading 1s infinite alternate;
+  animation-delay: 1s;
+}
+
+@keyframes loading {
+  0% {
+    background-color: var(--starick-orange);
+  }
+  50%,
+  100% {
+    background-color: rgba(152, 128, 255, 0.2);
+  }
+}

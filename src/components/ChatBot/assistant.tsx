@@ -10,6 +10,7 @@ function Assistant() {
   const [chatOpen, setChatOpen] = useState(false);
   const [userText, setUserText] = useState("");
   const [messages, setMessages] = useState<GPTMessage[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
   const messagesRef = useRef<HTMLDivElement | null>(null);
 
   /* Calls the server for GPT response */
@@ -30,8 +31,10 @@ function Assistant() {
   /* Get GPT initial intro message */
   useEffect(() => {
     const getInitialMessage = async () => {
+      setIsLoading(true);
       const initialMessage = await getMessage([]);
       setMessages([initialMessage]);
+      setIsLoading(false);
     };
     if (messages.length == 0) getInitialMessage();
     scrollToBottom();
@@ -51,8 +54,10 @@ function Assistant() {
       const userMessage: GPTMessage = { role: "user", content: userText };
       setUserText("");
       setMessages((prev) => [...prev, userMessage]);
+      setIsLoading(true);
       const reply = await getMessage([...messages, userMessage]);
       setMessages((prev) => [...prev, reply]);
+      setIsLoading(false);
     }
   };
 
@@ -70,15 +75,22 @@ function Assistant() {
         </div>
         {/* Message display area */}
         <div
-          className="flex basis-9/12 flex-col gap-1 overflow-scroll p-2"
+          className="flex basis-9/12 flex-col overflow-scroll p-2"
           ref={messagesRef}
         >
-          {messages.map((message, i) => (
-            <Message key={i} role={message.role} content={message.content} />
-          ))}
+          <div className="flex flex-col gap-1">
+            {messages.map((message, i) => (
+              <Message key={i} role={message.role} content={message.content} />
+            ))}
+          </div>
+          {isLoading && (
+            <div className="self-end px-6 pt-4">
+              <div className={styles.loading}></div>
+            </div>
+          )}
         </div>
         {/* Text input area */}
-        <div className="basis-2/12 border-t">
+        <div className="m-2 basis-2/12 border-t">
           <textarea
             className={`${chatOpen && styles.textOpen}`}
             value={userText}
