@@ -54,7 +54,10 @@ export default function RespectfulRelationshipsSection() {
       <br></br>
       <p>
         It is also a key initiative of Path to Safety:{" "}
-        <a className="underline" href="https://www.wa.gov.au/government/publications/western-australias-strategy-reduce-family-and-domestic-violence">
+        <a
+          className="underline"
+          href="https://www.wa.gov.au/government/publications/western-australias-strategy-reduce-family-and-domestic-violence"
+        >
           Western Australia&apos;s Strategy to Reduce Family and Domestic
           Violence 2020-2030.
         </a>
@@ -113,21 +116,22 @@ export default function RespectfulRelationshipsSection() {
         whole-of-school approach to embed RRE.{" "}
       </p>
       <br></br>
-      <p>resources-toolkits-reading
-        Evidence shows that when students have authentic opportunities to
-        actively participate in their learning, they feel connected and can use
-        the skills learnt to promote respectful relationships. It is therefore
-        important to include student voices in implementing RRE in schools.{" "}
+      <p>
+        resources-toolkits-reading Evidence shows that when students have
+        authentic opportunities to actively participate in their learning, they
+        feel connected and can use the skills learnt to promote respectful
+        relationships. It is therefore important to include student voices in
+        implementing RRE in schools.{" "}
       </p>
       <br></br>
       <div className="flex justify-center gap-x-32 bg-[--starick-white] py-10">
-                <button className="rounded-2xl bg-[--starick-brown] p-5 text-lg text-white hover:bg-[--starick-black]">
-                    <Link href="/info-for-schools">Info for schools</Link>
-                </button>
-                <button className="rounded-2xl bg-[--starick-brown] p-5 text-lg text-white hover:bg-[--starick-black]">
-                    <Link href="/further-reading">Further reading</Link>
-                </button>
-            </div>
+        <button className="rounded-2xl bg-[--starick-brown] p-5 text-lg text-white hover:bg-[--starick-black]">
+          <Link href="/info-for-schools">Info for schools</Link>
+        </button>
+        <button className="rounded-2xl bg-[--starick-brown] p-5 text-lg text-white hover:bg-[--starick-black]">
+          <Link href="/further-reading">Further reading</Link>
+        </button>
+      </div>
     </>
   );
   return (
