@@ -3,7 +3,7 @@ import Link from "next/link";
 import InPageNav from "@/components/InPageNav";
 import RespectfulRelationshipsSection from "@/components/Services/OtherServices/respectful-relationships";
 import WorkWithChildrenAndYoungPeopleSection from "@/components/Services/OtherServices/work-with-children-and-young-people";
-
+import WorkplaceAwarenessSection from "@/components/Services/OtherServices/workplace-awareness";
 
 export default function OtherServices() {
     const navLinkDetails = [
@@ -41,6 +41,7 @@ export default function OtherServices() {
             <InPageNav list={navLinkDetails}></InPageNav>
             <RespectfulRelationshipsSection />
             <WorkWithChildrenAndYoungPeopleSection />
+            <WorkplaceAwarenessSection />
         </>
     );
 }
