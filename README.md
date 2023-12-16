@@ -1,16 +1,16 @@
 # Starick
 
->Starick is a charity supporting women and children escaping domestic and family violence. We work predominantly in Perth's south-eastern metropolitan region. Our vision is to build futures free from violence for the women and children who use our service and for the community as a whole.
+> Starick is a charity supporting women and children escaping domestic and family violence. We work predominantly in Perth's south-eastern metropolitan region. Our vision is to build futures free from violence for the women and children who use our service and for the community as a whole.
 
-A progressive web app aiming to raise funds and awareness for Starick.
+A desktop and mobile website aiming to raise funds and awareness for Starick.
 
 ## Stack
 
-* Typescript
-* Next.JS for frontend + backend
-* Mocha + Chai for testing
-* TailwindCSS for styling
-* ESLint + Prettier for linting
+- Typescript
+- Next.JS for frontend + backend
+- Mocha + Chai for testing
+- TailwindCSS for styling
+- ESLint + Prettier for linting
 
 ## Getting Started
 
