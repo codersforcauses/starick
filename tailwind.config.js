@@ -11,6 +11,14 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))"
+      },
+      colors: {
+        "starick-green": "var(--starick-green)",
+        "starick-brown": "var(--starick-brown)",
+        "starick-orange": "var(--starick-orange)",
+        "starick-olive": "var(--starick-olive)",
+        "starick-white": "var(--starick-white)",
+        "starick-black": "var(--starick-black)"
       }
     }
   },
