@@ -1,6 +1,7 @@
 import React from "react";
-import ServicesSection from "../services-section";
+
 import { List } from "../list";
+import ServicesSection from "../services-section";
 
 export default function PoliceSection() {
   const services = (
