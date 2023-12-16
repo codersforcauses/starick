@@ -41,7 +41,7 @@ export default function ThrivingThroughConnectionSection() {
       titleTextColour="[--starick-white]"
       titleBackgroundColour="[--starick-green]"
       sectionBody={body}
-      title="Thriving Through Connection Supporting Young People Aged 11 - 17 years"
+      title={'Thriving Through Connection \nSupporting Young People Aged 11 - 17 years'}
       iconPath=""
     />
   );
