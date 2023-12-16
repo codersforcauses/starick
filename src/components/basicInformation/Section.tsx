@@ -19,7 +19,7 @@ export default function Section({
 }: SectionProp) {
   return (
     <div className="flex flex-col">
-      <div>
+      <div className="p-20">
         <SectionTitle
           textColor={titleTextColor}
           backgroundColor={titleBackgroundColor}
@@ -27,17 +27,29 @@ export default function Section({
         />
       </div>
       {isIconLeftSide ? (
-        <div className="inline-flex flex-row justify-items-center p-20">
+        <div className="flex justify-center ">
           <div>
-            <Image src={iconPath} alt="a" height={100} width={100} />
+            <Image
+              src={iconPath}
+              alt="a"
+              height={100}
+              width={100}
+              className="pt-6"
+            />
           </div>
-          <div className="p-4">{contentBody}</div>
+          <div className="p-8">{contentBody}</div>
         </div>
       ) : (
-        <div className="inline-flex flex-row justify-items-center p-20">
-          <div className="p-4">{contentBody}</div>
+        <div className="flex justify-center">
+          <div className="p-8">{contentBody}</div>
           <div>
-            <Image src={iconPath} alt="a" height={100} width={100} />
+            <Image
+              src={iconPath}
+              alt="a"
+              height={100}
+              width={100}
+              className="pt-6"
+            />
           </div>
         </div>
       )}
