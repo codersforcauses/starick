@@ -1,6 +1,5 @@
 import { ChangeEvent, KeyboardEvent, MouseEvent, useState } from "react";
 
-
 import { SearchProps } from "./types";
 
 export default function Search(props: SearchProps) {
