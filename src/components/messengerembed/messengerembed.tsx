@@ -7,7 +7,10 @@ export default function MessengerChat() {
   useEffect(() => {
     const chatbox = document.getElementById("fb-customer-chat");
     if (chatbox) {
-      chatbox.setAttribute("page_id", process.env.NEXT_PUBLIC_FACEBOOK_PAGE_ID || "");
+      chatbox.setAttribute(
+        "page_id",
+        process.env.NEXT_PUBLIC_FACEBOOK_PAGE_ID || ""
+      );
       chatbox.setAttribute("attribution", "biz_inbox");
     }
 
@@ -36,17 +39,4 @@ export default function MessengerChat() {
       <div id="fb-customer-chat" className="fb-customerchat outline-none"></div>
     </div>
   );
-  // return (
-  //   <div>
-  //     <style>
-  //       {`
-  //         #fb-customer-chat:focus {
-  //           outline: none !important;
-  //         }
-  //       `}
-  //     </style>
-  //     <div id="fb-root"></div>
-  //     <div id="fb-customer-chat" className="fb-customerchat"></div>
-  //   </div>
-  // );
 }
