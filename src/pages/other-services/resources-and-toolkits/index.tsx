@@ -4,7 +4,6 @@ export default function ResourcesAndToolkits() {
   return (
     <>
       <div>
-        {/* Header */}
         <img src="/images/starick-image1.jpg" className="w-full" alt=""></img>
         <div className="relative -mt-36 mb-6 w-fit rounded-r-full bg-white px-10">
           <p className="p-2 text-4xl font-bold text-[--starick-brown]">
@@ -16,7 +15,6 @@ export default function ResourcesAndToolkits() {
         </div>
       </div>
 
-      {/* Images */}
       <br></br>
       <br></br>
       <div className="-mx-2 flex flex-wrap justify-center bg-[--starick-white]">
