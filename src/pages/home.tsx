@@ -1,13 +1,13 @@
+import { useState } from "react";
+
+import CoreServiceItem from "@/components/Home/core-service-item";
+import Search from "@/components/SearchBar";
+
 import CounsellingServices from "~/images/CounsellingServices.png";
 import SafeAtHomeProgram from "~/images/SafeAtHomeProgram.png";
 import SupportInPoliceStations from "~/images/SupportInPoliceStations.png";
 import TransitionalHousing from "~/images/TransitionalHousing.png";
 import TwoRefuges from "~/images/TwoRefuges.png";
-import DonatingToday from "~/images/DonatingToday.png";
-import CoreServiceItem from "@/components/Home/core-service-item";
-
-import Search from "@/components/SearchBar";
-import { useState } from "react";
 
 export default function Home() {
   const [searchValue, setSearchValue] = useState("");
