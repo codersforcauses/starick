@@ -24,7 +24,6 @@ async function createOrder(): Promise<string> {
 
 async function onApprove(data: { orderID: string }): Promise<void> {
   const response = await fetch(
-    // replace this url with your server
     "/api/paypal/capture-order",
     {
       method: "POST",
