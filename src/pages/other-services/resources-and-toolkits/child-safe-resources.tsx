@@ -1,3 +1,5 @@
+import { Children } from "react";
+
 import Image from "next/image";
 
 import SectionTitle from "@/components/section-title";
@@ -5,8 +7,13 @@ import ChildSafeItem from "@/components/Services/ResourceAndToolkits/child-safe-
 
 import ChildSafeResourcesTitle from "~/images/ResourcesToolkits/child-safe-resources-title.png";
 
+import childSafeTemplate from "@/components/Services/ResourceAndToolkits/child-safe-resources-items/child-safe-template.json";
+import practiceTools from "@/components/Services/ResourceAndToolkits/child-safe-resources-items/practice-tools.json";
+import externalResources from "@/components/Services/ResourceAndToolkits/child-safe-resources-items/external-resources.json";
+
 export default function ChildSafeResources() {
   const emailAddress = "info@starick.org.au";
+
   return (
     <>
       <Image
@@ -19,10 +26,10 @@ export default function ChildSafeResources() {
 
       <div className="px-20 py-10 font-semibold md:px-40 md:py-20 lg:px-60">
         <p className="mb-4">
-          Starick&apos;s organisational culture prioritises the safety and wellbeing
-          of all children and young people engaged with its services, to support
-          them to grow and develop in safe, caring environments free from abuse
-          and harm.
+          Starick&apos;s organisational culture prioritises the safety and
+          wellbeing of all children and young people engaged with its services,
+          to support them to grow and develop in safe, caring environments free
+          from abuse and harm.
         </p>
         <p className="mb-4">
           Starick respects the rights of the child and recognises the
@@ -31,7 +38,8 @@ export default function ChildSafeResources() {
           context of family and domestic violence.
         </p>
         <p className="mb-4">
-          Starick&apos;s developing suite of child safe policies is aligned to the{" "}
+          Starick&apos;s developing suite of child safe policies is aligned to
+          the{" "}
           <a
             href="https://www.unicef.org.au/united-nations-convention-on-the-rights-of-the-child"
             className="underline"
@@ -67,8 +75,8 @@ export default function ChildSafeResources() {
         </p>
         <p>
           Below are some child safe policy and procedure templates that can be
-          downloaded and customised for organisations&apos; specific needs. If you
-          have any child safe policies or procedures that your organisation
+          downloaded and customised for organisations&apos; specific needs. If
+          you have any child safe policies or procedures that your organisation
           would like to share, please email{" "}
           <a href={`mailto:${emailAddress}`} className="underline">
             info@starick.org.au
@@ -86,81 +94,25 @@ export default function ChildSafeResources() {
       </div>
 
       <div className="px-20 py-10 md:px-40 md:py-20 lg:px-60">
-        <ChildSafeItem
-          backgroundColor="olive"
-          text={
-            "Child Safe Principle 2 - Self assessment&nbsp;<strong>FDV Board and management audit</strong>"
-          }
-        />
-        <ChildSafeItem
-          backgroundColor="white"
-          text={
-            "Child Safe Principle 2 - Self assessment&nbsp;<strong>FDV Service audit</strong>"
-          }
-        />
-        <ChildSafeItem
-          backgroundColor="olive"
-          text={
-            "Child Safe&nbsp;<strong>Organisation Procedure</strong>&nbsp;template"
-          }
-        />
-        <ChildSafeItem
-          backgroundColor="white"
-          text={
-            "Child Safe&nbsp;<strong>Organisation Policy</strong>&nbsp;template"
-          }
-        />
-        <ChildSafeItem
-          backgroundColor="olive"
-          text={
-            "Child Safe&nbsp;<strong>Code of Conduct Policy</strong>&nbsp;template"
-          }
-        />
-        <ChildSafeItem
-          backgroundColor="white"
-          text={"Sample WHFS&nbsp;<strong>Policy for Child Safety</strong>"}
-        />
-        <ChildSafeItem
-          backgroundColor="olive"
-          text={"Sample WHFS&nbsp;<strong>Code of Conduct Policy</strong>"}
-        />
-        <ChildSafeItem
-          backgroundColor="white"
-          text={"Sample WHFS&nbsp;<strong>Incident Reporting Policy</strong>"}
-        />
-        <ChildSafeItem
-          backgroundColor="olive"
-          text="<strong>Empowerment and Participation of Children and Young People Policy</strong>"
-        />
-        <ChildSafeItem
-          backgroundColor="white"
-          text={
-            "Children and Young People&nbsp;<strong>Safety and Wellbeing Policy</strong>"
-          }
-        />
+        {childSafeTemplate.map((child, index) => (
+          <ChildSafeItem
+            backgroundColor={child.backgroundColor}
+            text={child.text}
+            key={index}
+          />
+        ))}
 
         <p className="my-10 text-center text-2xl font-semibold">
           Practice Tools
         </p>
 
-        <ChildSafeItem
-          backgroundColor="olive"
-          text={
-            "<strong>Practice Tool 1</strong>&nbsp;- Building Relationships"
-          }
-        />
-        <ChildSafeItem
-          backgroundColor="white"
-          text={
-            "<strong>Practice Tool 2</strong>&nbsp;- Empowerment & Participation"
-          }
-        />
-        <ChildSafeItem
-          backgroundColor="olive"
-          text={
-            "<strong>Practice Tool 3</strong>&nbsp;- Informed About Their Rights"
-          }
-        />
+        {practiceTools.map((child, index) => (
+          <ChildSafeItem
+            backgroundColor={child.backgroundColor}
+            text={child.text}
+            key={index}
+          />
+        ))}
       </div>
 
       <div className="px-10 md:px-20 lg:px-32">
@@ -189,22 +141,13 @@ export default function ChildSafeResources() {
       </div>
 
       <div className="px-20 py-10 md:px-40 md:py-20 lg:px-60">
-        <ChildSafeItem
-          backgroundColor="olive"
-          text="Child friendly version of the Children's Safety and Wellbeing report"
-        />
-        <ChildSafeItem
-          backgroundColor="white"
-          text="Commonwealth Child Safe Framework"
-        />
-        <ChildSafeItem
-          backgroundColor="olive"
-          text="Learning from lived experience - a guide for professionals supporting children and young people experiencing family violence"
-        />
-        <ChildSafeItem
-          backgroundColor="white"
-          text="Commonwealth Child safe framework 2nd edition"
-        />
+        {externalResources.map((child, index) => (
+          <ChildSafeItem
+            backgroundColor={child.backgroundColor}
+            text={child.text}
+            key={index}
+          />
+        ))}
       </div>
 
       <div className="h-auto w-full bg-[--starick-brown] px-20 py-10 text-[--starick-white] md:px-40 lg:px-60">
