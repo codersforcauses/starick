@@ -69,7 +69,7 @@ function Assistant() {
   };
 
   return (
-    <div className="absolute bottom-0 right-0 mb-6 mr-6 flex flex-col gap-1">
+    <div className="fixed bottom-0 right-0 mb-6 mr-6 flex flex-col gap-1">
       {/* Chat window */}
       <div className={`${chatOpen ? styles.windowOpen : styles.windowClosed}`}>
         {/* Top "assistant" bar */}
