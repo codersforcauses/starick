@@ -17,7 +17,7 @@ export default function Section({
   iconPath
 }: SectionProps) {
   return (
-    <div className={`bg-[--starick-white] px-6 py-2 md:px-32`} id={title}>
+    <div className={`bg-starick-white px-6 py-2 md:px-32`} id={title}>
       <SectionTitle
         backgroundColour={titleBackgroundColour}
         text={title}

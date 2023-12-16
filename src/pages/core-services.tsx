@@ -36,7 +36,7 @@ export default function CoreServices() {
       <div>
         <img src="images/starick-image1.jpg" className="w-full" alt=""></img>
         <div className="relative -mt-20 mb-6 w-fit rounded-r-full bg-white px-14">
-          <p className="p-2 text-4xl font-bold text-[--starick-brown]">
+          <p className="p-2 text-4xl font-bold text-starick-brown">
             Core Services
           </p>
         </div>
@@ -47,8 +47,8 @@ export default function CoreServices() {
       <TransitionalHousingSection />
       <PoliceSection />
       <SafeAtHomeSection />
-      <div className="flex items-center justify-center bg-[--starick-white] py-10">
-        <button className="rounded-2xl bg-[--starick-brown] p-5 text-lg text-white hover:bg-[--starick-black]">
+      <div className="flex items-center justify-center bg-starick-white py-10">
+        <button className="rounded-2xl bg-starick-brown p-5 text-lg text-white hover:bg-starick-black">
           <Link href="/other-services">Other Services</Link>
         </button>
       </div>

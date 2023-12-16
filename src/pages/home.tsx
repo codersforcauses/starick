@@ -32,11 +32,11 @@ export default function Home() {
 
         {/* </div> */}
 
-        <div className="grid min-h-screen gap-10 bg-[--starick-olive] px-10 py-20">
-          <h1 className="text-center text-3xl font-semibold text-[--starick-green]">
+        <div className="grid min-h-screen gap-10 bg-starick-olive px-10 py-20">
+          <h1 className="text-center text-3xl font-semibold text-starick-green">
             What We Do
           </h1>
-          <h2 className="text-center text-2xl font-semibold text-[--starick-brown]">
+          <h2 className="text-center text-2xl font-semibold text-starick-brown">
             Core Services
           </h2>
 

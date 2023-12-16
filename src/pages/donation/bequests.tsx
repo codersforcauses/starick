@@ -38,13 +38,13 @@ const bequests: React.FC = () => {
         />
       </div>
 
-      <div className="relative grid h-full grid-flow-row auto-rows-max gap-10 bg-[--starick-olive] px-32 py-32 text-center">
+      <div className="relative grid h-full grid-flow-row auto-rows-max gap-10 bg-starick-olive px-32 py-32 text-center">
         <div>
-          <p className=" text-5xl font-bold uppercase text-[--starick-white]">
+          <p className=" text-5xl font-bold uppercase text-starick-white">
             help us make a change today
           </p>
 
-          <p className="my-10 text-2xl text-[--starick-brown]">
+          <p className="my-10 text-2xl text-starick-brown">
             Donating goods to Starick helps support women and children escaping
             domestic violence.
           </p>
@@ -57,7 +57,7 @@ const bequests: React.FC = () => {
               text="SCHEDULE MONTHLY CONTRIBUTIONS TOWARDS OUR FOUNDATION"
             />
 
-            <p className="self-center text-4xl font-bold uppercase text-[--starick-white]">
+            <p className="self-center text-4xl font-bold uppercase text-starick-white">
               or
             </p>
 
@@ -66,7 +66,7 @@ const bequests: React.FC = () => {
         </div>
 
         <div className="grid items-center sm:grid-cols-1 md:grid-cols-2">
-          <p className="text-4xl font-bold uppercase text-[--starick-white]">
+          <p className="text-4xl font-bold uppercase text-starick-white">
             Multiple payment options available
           </p>
 
@@ -84,8 +84,8 @@ const bequests: React.FC = () => {
         className="h-auto w-full"
       />
 
-      <div className="grid auto-rows-max p-10 text-xs font-semibold text-[--starick-brown] md:gap-3 md:text-xl lg:text-2xl">
-        <div className="flex h-[150px]  w-full items-center justify-center bg-[--starick-green] p-4">
+      <div className="grid auto-rows-max p-10 text-xs font-semibold text-starick-brown md:gap-3 md:text-xl lg:text-2xl">
+        <div className="flex h-[150px]  w-full items-center justify-center bg-starick-green p-4">
           <DonationTitle text="What can I do with my donations?" />
         </div>
         <div className="grid grid-cols-2 place-items-center">
@@ -137,8 +137,8 @@ const bequests: React.FC = () => {
         />
       </div>
 
-      <div className="grid h-full grid-cols-2 place-items-center bg-[--starick-olive] text-center">
-        <p className="text-4xl font-semibold text-[--starick-white] md:text-6xl md:font-bold">
+      <div className="grid h-full grid-cols-2 place-items-center bg-starick-olive text-center">
+        <p className="text-4xl font-semibold text-starick-white md:text-6xl md:font-bold">
           LET’S CARE FOR AUSTRALIAN WOMEN AND CHILDREN TOGETHER
         </p>
         <Image
@@ -150,7 +150,7 @@ const bequests: React.FC = () => {
         />
       </div>
 
-      <div className="grid auto-rows-max p-10 text-xs font-semibold text-[--starick-brown] md:text-xl lg:text-2xl">
+      <div className="grid auto-rows-max p-10 text-xs font-semibold text-starick-brown md:text-xl lg:text-2xl">
         <DonationAmount
           pos={true}
           amount="How about $1000?"
@@ -186,7 +186,7 @@ const bequests: React.FC = () => {
         className="h-auto w-full"
       />
 
-      <div className="relative m-10 text-center text-xl font-semibold text-[--starick-brown] md:text-2xl">
+      <div className="relative m-10 text-center text-xl font-semibold text-starick-brown md:text-2xl">
         <DonationTitle text="Financial Donations" />
 
         <p className="mt-6">Empower Change with Your Financial Support</p>
@@ -229,8 +229,8 @@ const bequests: React.FC = () => {
         className="h-auto w-full"
       />
 
-      <div className="relative grid auto-rows-max bg-[--starick-olive] p-10 text-[--starick-brown]">
-        <p className="mx-auto text-2xl font-semibold text-[--starick-white] md:text-4xl">
+      <div className="relative grid auto-rows-max bg-starick-olive p-10 text-starick-brown">
+        <p className="mx-auto text-2xl font-semibold text-starick-white md:text-4xl">
           Donate your &apos;Containers for Change&apos; refunds to Starick!
         </p>
 
@@ -264,7 +264,7 @@ const bequests: React.FC = () => {
         </div>
 
         <div className="flex flex-row items-center justify-between">
-          <p className="mr-10 text-center text-2xl font-semibold text-[--starick-white] md:text-4xl">
+          <p className="mr-10 text-center text-2xl font-semibold text-starick-white md:text-4xl">
             Donate by using your ID at the refund locations!
           </p>
           <Image
@@ -286,7 +286,7 @@ const bequests: React.FC = () => {
           />
 
           <div className="ml-10 flex flex-col">
-            <p className="text-2xl font-semibold text-[--starick-white] md:text-4xl">
+            <p className="text-2xl font-semibold text-starick-white md:text-4xl">
               Starick Scheme ID
             </p>
             <p className="prose">
@@ -316,7 +316,7 @@ const bequests: React.FC = () => {
         </div>
 
         <div className="relative m-10 text-center font-semibold">
-          <p className="text-3xl text-[--starick-white] md:text-4xl">
+          <p className="text-3xl text-starick-white md:text-4xl">
             Donate your services
           </p>
 
@@ -346,7 +346,7 @@ const bequests: React.FC = () => {
         </div>
       </div>
 
-      <div className="relative p-10 text-xl font-semibold text-[--starick-brown] md:text-2xl">
+      <div className="relative p-10 text-xl font-semibold text-starick-brown md:text-2xl">
         <DonationTitle text="Ideas and Ways to Support Our Charity" />
         <p className="mb-4 mt-6 text-2xl font-bold">Support Options:</p>
         <ul className="list-disc space-y-4 pl-6">
@@ -380,7 +380,7 @@ const bequests: React.FC = () => {
         </ul>
       </div>
 
-      <div className=" bg-[--starick-olive] font-semibold text-[--starick-brown]">
+      <div className=" bg-starick-olive font-semibold text-starick-brown">
         <Image
           src={Bequest6}
           alt="description"
@@ -406,7 +406,7 @@ const bequests: React.FC = () => {
         </div>
       </div>
 
-      <div className="p-10 text-xl font-semibold italic text-[--starick-brown]">
+      <div className="p-10 text-xl font-semibold italic text-starick-brown">
         <DonationTitle text="Bequests" />
 
         <div className="p-10">
