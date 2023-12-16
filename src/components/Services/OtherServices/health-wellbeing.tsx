@@ -161,16 +161,16 @@ export default function HealthAndWellbeingSection() {
       <p>
         Yoga is a practise that emphasises the importance of listening to the
         body as participants focus on different poses. It teaches self-care and
-        respect for one&apos;s body and strengthens the mind - an important skill to
-        develop for victims leaving abusive relationships and making the choice
-        to start a new way of life.
+        respect for one&apos;s body and strengthens the mind - an important
+        skill to develop for victims leaving abusive relationships and making
+        the choice to start a new way of life.
       </p>
       <br></br>
       <p>
-        Feedback from the women who are engaged with Starick&apos;s yoga programme
-        have indicated its effectiveness - “Yoga gives me a space”, said one
-        participant, while others reported a strong sense of emotional release
-        and all-important time for self.
+        Feedback from the women who are engaged with Starick&apos;s yoga
+        programme have indicated its effectiveness - “Yoga gives me a space”,
+        said one participant, while others reported a strong sense of emotional
+        release and all-important time for self.
       </p>
     </div>
   );
