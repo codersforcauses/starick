@@ -1,6 +1,6 @@
+import { List } from "../list";
 import ServicesSection from "../services-section";
 import SubSection from "../subsection";
-import { List } from "../list";
 
 export default function RefugesSection() {
   const refugeSupportExamples = (

@@ -1,7 +1,4 @@
 import Image, { StaticImageData } from "next/image";
-import BequestIcon7 from "~/images/donations/bequests/BequestIcon7.png";
-import BequestIcon8 from "~/images/donations/bequests/BequestIcon8.png";
-import BequestIcon2 from "~/images/donations/bequests/BequestIcon2.png";
 
 interface ItemProps {
   image: StaticImageData;
