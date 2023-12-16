@@ -1,0 +1,38 @@
+@media (max-width: 1023px) {
+  .responsiveContainer {
+    display: flex;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hidden {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+  }
+
+  .responsiveList {
+    flex-direction: column;
+    width: 100%;
+    margin-left: 4em;
+  }
+
+  .responsiveHamburgerTop {
+    transform: translate(0, 8px) rotate(-45deg);
+  }
+
+  .responsiveHamburgerMiddle {
+    opacity: 0;
+  }
+
+  .responsiveHamburgerBottom {
+    transform: translate(0, -8px) rotate(45deg);
+  }
+}
