@@ -23,7 +23,12 @@ export default function ThrivingThroughConnectionSection() {
         line with current best practice.
       </p>
       <br></br>
-      <p>To find out more please email: <Link className="underline" href="mailto:youth@starick.org.au">youth@starick.org.au</Link></p>
+      <p>
+        To find out more please email:{" "}
+        <Link className="underline" href="mailto:youth@starick.org.au">
+          youth@starick.org.au
+        </Link>
+      </p>
       <br></br>
       <br></br>
       <p className="text-center">
@@ -42,7 +47,9 @@ export default function ThrivingThroughConnectionSection() {
       titleTextColour="[--starick-white]"
       titleBackgroundColour="[--starick-green]"
       sectionBody={body}
-      title={'Thriving Through Connection \nSupporting Young People Aged 11 - 17 years'}
+      title={
+        "Thriving Through Connection \nSupporting Young People Aged 11 - 17 years"
+      }
       iconPath=""
     />
   );

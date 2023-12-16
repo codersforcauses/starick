@@ -37,8 +37,14 @@ export default function WorkplaceAwarenessSection() {
       </p>
       <br></br>
       <p>
-        Email Karen Kerlin at <Link className="underline" href="mailto:communitylinkages@starick.org.au">communitylinkages@starick.org.au</Link> for more
-        information.
+        Email Karen Kerlin at{" "}
+        <Link
+          className="underline"
+          href="mailto:communitylinkages@starick.org.au"
+        >
+          communitylinkages@starick.org.au
+        </Link>{" "}
+        for more information.
       </p>
     </div>
   );
