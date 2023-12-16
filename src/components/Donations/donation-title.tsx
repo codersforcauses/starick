@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function DonationTitle({ text }: { text: string }) {
   return (
     <div className="flex h-[150px]  w-full items-center justify-center bg-[--starick-green] p-4">

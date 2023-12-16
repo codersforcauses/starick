@@ -1,4 +1,3 @@
-import React from "react";
 import { PayPalButtons, usePayPalScriptReducer } from "@paypal/react-paypal-js";
 
 interface Order {
