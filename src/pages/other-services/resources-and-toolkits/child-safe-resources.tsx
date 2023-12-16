@@ -19,19 +19,19 @@ export default function ChildSafeResources() {
 
       <div className="px-20 py-10 font-semibold md:px-40 md:py-20 lg:px-60">
         <p className="mb-4">
-          Starick’s organisational culture prioritises the safety and wellbeing
+          Starick&apos;s organisational culture prioritises the safety and wellbeing
           of all children and young people engaged with its services, to support
           them to grow and develop in safe, caring environments free from abuse
           and harm.
         </p>
         <p className="mb-4">
           Starick respects the rights of the child and recognises the
-          significant role that mother’s/carer’s play and seeks their
+          significant role that mother&apos;s/carer&apos;s play and seeks their
           involvement to support the safety and wellbeing of their child in the
           context of family and domestic violence.
         </p>
         <p className="mb-4">
-          Starick’s developing suite of child safe policies is aligned to the{" "}
+          Starick&apos;s developing suite of child safe policies is aligned to the{" "}
           <a
             href="https://www.unicef.org.au/united-nations-convention-on-the-rights-of-the-child"
             className="underline"
@@ -45,12 +45,12 @@ export default function ChildSafeResources() {
           >
             National Principles and Standards for Child Safe Organisations
           </a>{" "}
-          and
+          and{" "}
           <a
             href="https://www.aracy.org.au/documents/item/700#:~:text=What%20is%20the%20Nest%3F,young%20person%20needs%20to%20thrive."
             className="underline"
           >
-            Australia’s Wellbeing Framework for Children and Young People
+            Australia&apos;s Wellbeing Framework for Children and Young People
             What&apos;s in the Nest?
           </a>{" "}
           - Australian Research Alliance for Children and Youth (ARACY).
@@ -67,7 +67,7 @@ export default function ChildSafeResources() {
         </p>
         <p>
           Below are some child safe policy and procedure templates that can be
-          downloaded and customised for organisations’ specific needs. If you
+          downloaded and customised for organisations&apos; specific needs. If you
           have any child safe policies or procedures that your organisation
           would like to share, please email{" "}
           <a href={`mailto:${emailAddress}`} className="underline">
