@@ -9,17 +9,15 @@ export default function SectionTitle({
   content
 }: SectionTitleProps) {
   return (
-    <div
-      className={`flex items-center justify-center gap-2.5 p-6 bg-[${backgroundColor}]`}
-    >
-      <div className="flex h-[92px] shrink grow basis-0 items-center justify-center gap-2.5 border-8 border-white bg-white bg-opacity-0 px-[150px] py-6">
-        <div className="flex items-center justify-center gap-10 bg-white bg-opacity-0 px-4">
-          <div
-            className={`text-center font-['Inter'] text-4xl font-semibold text-[${textColor}]`}
-          >
-            {content}
-          </div>
-        </div>
+    <div className={`bg-[${backgroundColor}] h-24 p-3`}>
+      <div
+        className={`bg-[${backgroundColor}] flex h-full flex-row items-center justify-center border-4 border-solid border-[--starick-white]`}
+      >
+        <p
+          className={`align-middle text-2xl font-semibold text-[${textColor}] mx-2`}
+        >
+          {content}
+        </p>
       </div>
     </div>
   );

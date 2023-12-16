@@ -24,23 +24,27 @@ const sections: Section[] = [
       <div className="text-3xl">
         <p className="font-bold">Domestic violence means abuse</p>
         <p>
-            Domestic violence is often called “domestic and family violence”{" "}
-          <span className="font-semibold"> because it’s not just partners that abuse.</span>
+          Domestic violence is often called “domestic and family violence”{" "}
+          <span className="font-semibold">
+            {" "}
+            because it’s not just partners that abuse.
+          </span>
         </p>
         <br></br>
         <p>
-          
-            Domestic and family violence means any type of abuse that creates
-            fear and controls another person, often causing physical, sexual and/or
-            psychological damage, forced social isolation and economic deprivation.
+          Domestic and family violence means any type of abuse that creates fear
+          and controls another person, often causing physical, sexual and/or
+          psychological damage, forced social isolation and economic
+          deprivation.
         </p>
         <br></br>
         <span>
           Domestic and family violence usually means abuse against an intimate
-          partner(including same sex relationships and ex-partners). </span>
-        <span className="font-semibold">But it can also occur between
-          siblings, from adolescents to parents, or from family carers to a
-          relative.{" "}
+          partner(including same sex relationships and ex-partners).{" "}
+        </span>
+        <span className="font-semibold">
+          But it can also occur between siblings, from adolescents to parents,
+          or from family carers to a relative.{" "}
         </span>
         <br />
         <span>
@@ -63,62 +67,70 @@ const sections: Section[] = [
         <br />
         <p>
           This may include hurting you (pushing, hair-pulling, spitting,
-          slapping, punching,choking, kicking), or threatening to hurt you, a loved one or a pet.
+          slapping, punching,choking, kicking), or threatening to hurt you, a
+          loved one or a pet.
         </p>
         <br />
         <p>
           But not all abuse is physical. If someone in your life regularly
-          controls, threatens or insults you, stops you using social media or won't let you contact
-          your friends, it can harm you just as much as physical violence. 
-          Here are some of the forms that abuse may take:</p>
+          controls, threatens or insults you, stops you using social media or
+          won't let you contact your friends, it can harm you just as much as
+          physical violence. Here are some of the forms that abuse may take:
+        </p>
 
         <br />
         <p className="font-bold">Financial abuse</p>
         <br />
         <p>
           Taking, stealing or controlling your money, denying you access to
-          money or telling you what you can and can’t buy. You'll find more information on
-          financial abuse and how to deal with it here.</p>
+          money or telling you what you can and can’t buy. You'll find more
+          information on financial abuse and how to deal with it here.
+        </p>
         <br />
         <p className=" font-bold">Sexual abuse</p>
         <br />
         <p>
           Pressuring, manipulating or forcing you into sexual activities you
-          don’t want to do.
-          Being "forced" also means not being in a position to say no as a
-          result of fear, threats or intimidation.</p>
+          don’t want to do. Being "forced" also means not being in a position to
+          say no as a result of fear, threats or intimidation.
+        </p>
         <br />
         <p className="font-bold">Emotional abuse</p>
         <br />
         <p>
           This form of abuse is often unrecognised and can be very hurtful. Mind
-          games,manipulation, threats, humiliation, put-downs, shouting, telling you
-          that you're worthless or no good – these are all types of emotional or
-          psychological abuse.
+          games,manipulation, threats, humiliation, put-downs, shouting, telling
+          you that you're worthless or no good – these are all types of
+          emotional or psychological abuse.
         </p>
         <br />
         <p className="font-bold">Social abuse</p>
         <br />
         <p>
           If someone is insulting you or teasing you in front of other people,
-          keeping you isolated from family, friends and work, controlling what you do and
-          where you go, then they are being abusive and you may need to take some action</p>
+          keeping you isolated from family, friends and work, controlling what
+          you do and where you go, then they are being abusive and you may need
+          to take some action
+        </p>
         <br />
         <p className="font-bold">Spiritual abuse</p>
         <br />
         <p>
           This type of violence involves a situation where you are not allowed
-          to go to your place of worship or not allowed to have your own opinions about
-          religion, cultural beliefs and values. Your spirituality is manipulated to keep you
-          feeling powerless, or you are forced to participate in religious practice you do not want to
-          be involved with.</p>
+          to go to your place of worship or not allowed to have your own
+          opinions about religion, cultural beliefs and values. Your
+          spirituality is manipulated to keep you feeling powerless, or you are
+          forced to participate in religious practice you do not want to be
+          involved with.
+        </p>
         <br />
         <p className="font-bold"> Technological or digital abuse</p>
         <br />
         <p>
           Some abusers use social networks, emails and text messages to control
-          you. This includes high-tech eavesdropping, video-monitoring the home, tracking
-          your location with GPS devices and tampering with phone bills or emails.
+          you. This includes high-tech eavesdropping, video-monitoring the home,
+          tracking your location with GPS devices and tampering with phone bills
+          or emails.
         </p>
         <br />
         <p>
@@ -135,12 +147,14 @@ const sections: Section[] = [
             <li>
               <p>
                 Sending you negative, insulting or threatening emails, Facebook
-                messages, tweets or other online messages</p>
+                messages, tweets or other online messages
+              </p>
             </li>
             <li>
               <p>
                 Using sites like Facebook, Twitter, foursquare and others to
-                keep constant tabs on you</p>
+                keep constant tabs on you
+              </p>
             </li>
             <li>Stealing or insisting you share your passwords</li>
             <li>
@@ -149,7 +163,8 @@ const sections: Section[] = [
             <li>
               <p>
                 Looking through your phone frequently to check up on your
-                pictures, texts and outgoing calls</p>
+                pictures, texts and outgoing calls
+              </p>
             </li>
             <li>
               Tagging you in negative ways in pictures on Facebook, Instagram,
@@ -213,7 +228,8 @@ const sections: Section[] = [
             <li>
               <p>
                 Do you have to be careful around this person because of their
-                anger, violence or emotional abuse?</p>
+                anger, violence or emotional abuse?
+              </p>
             </li>
             <li>
               <p>
@@ -231,7 +247,8 @@ const sections: Section[] = [
             <li>
               <p>
                 Are you unable to spend time with family or friends because this
-                person won’t let you?</p>
+                person won’t let you?
+              </p>
             </li>
             <li>Do you make excuses for this person’s violent behaviour?</li>
           </ul>
@@ -265,7 +282,7 @@ export default function BasicInormation() {
         </p>
       </div>
 
-      <div className="flex-row px-96 py-24">
+      <div className="flex-row">
         {sections.map((section) => (
           <Section
             key={section.key}
