@@ -1,5 +1,3 @@
-import React from "react";
-
 interface ChildSafeItemProps {
   backgroundColor: string;
   text: string;
