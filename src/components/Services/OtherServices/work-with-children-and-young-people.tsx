@@ -10,7 +10,7 @@ export default function WorkWithChildrenAndYoungPeopleSection() {
         Starick is committed to the safety and wellbeing of children and young
         people and to creating and maintaining a child safe organisation that
         creates a culture, strategies and actions to promote children and young
-        people's wellbeing and protect them from harm.
+        people&apos;s wellbeing and protect them from harm.
       </p>
       <br></br>
       <p>
@@ -31,7 +31,7 @@ export default function WorkWithChildrenAndYoungPeopleSection() {
       <br></br>
       <p>
         Every person working at Starick understands the important role they play
-        individually and collectively in children and young people's lives and
+        individually and collectively in children and young people&apos;s lives and
         demonstrates this by putting children and young people and their
         mothers/carers at the centre of decision making and actions.
       </p>
@@ -42,7 +42,7 @@ export default function WorkWithChildrenAndYoungPeopleSection() {
       </p>
       <br></br>
       <p>
-        We are committed to upholding children and young people's rights and
+        We are committed to upholding children and young people&apos;s rights and
         needs in relation to equity and cultural diversity, with particular
         attention to the needs of Aboriginal and Torres Strait Islander
         children, children with disability, children from culturally and

@@ -70,13 +70,13 @@ export default function WorkplaceAwarenessSection() {
       <br></br>
       <p>
         Formal policies or strategies to support workers experiencing FDV can be
-        key to an organisation's social responsibility. Such practices may be
-        embedded within the workplace’s corporate social responsibility charter
+        key to an organisation&apos;s social responsibility. Such practices may be
+        embedded within the workplace&apos;s corporate social responsibility charter
         and contribute towards a supportive organisational culture.
       </p>
       <br></br>
       <p>
-        Starick can offer tips when you are drafting your organisation’s FDV
+        Starick can offer tips when you are drafting your organisation&apos;s FDV
         leave policy or reviewing flexible options for staff. We can also
         provide examples of FDV leave policy related to legislation, FDV leave
         provisions and flexible work options.
