@@ -5,7 +5,7 @@ import NavBar from "@/components/NavBar";
 
 import PanicButton from "@/components/PanicButton";
 
-import MessengerChat from "@/components/messengerembed/messengerembed"; 
+import MessengerChat from "@/components/messengerembed/messengerembed";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
