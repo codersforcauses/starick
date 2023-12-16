@@ -20,7 +20,7 @@ export default function SectionTitle({
           <img src={iconPath} className="mx-2 w-12" alt={text}></img>
         ) : null}
         <p
-          className={`align-middle text-2xl font-semibold text-${textColour} mx-2`}
+          className={`text-center align-middle text-2xl font-semibold text-${textColour} mx-2 whitespace-pre-wrap`}
         >
           {text}
         </p>

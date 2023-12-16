@@ -1,4 +1,4 @@
-import React, { ChangeEvent, KeyboardEvent, MouseEvent, useState } from "react";
+import React, { ChangeEvent, KeyboardEvent, useState } from "react";
 
 import { SearchProps } from "./types";
 
