@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { primaryNav } from "./links";
-import NavItem from "./NavItem";
+import NavItem from "./nav-item";
 
-import styles from "./NavBar.module.css";
+import styles from "./nav-bar.module.css";
 
 const NavBar = () => {
   // handles hamburger button state
