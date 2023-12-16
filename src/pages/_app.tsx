@@ -1,9 +1,9 @@
-import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 
 import NavBar from "@/components/NavBar";
-
 import PanicButton from "@/components/PanicButton";
+
+import "@/styles/globals.css";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <NavBar />
         <PanicButton />
       </header>
-      <main className="mt-14">
+      <main className="mt-14 bg-[--starick-white]">
         <Component {...pageProps} />
       </main>
     </>
