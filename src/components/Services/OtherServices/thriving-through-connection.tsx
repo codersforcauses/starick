@@ -28,7 +28,7 @@ export default function ThrivingThroughConnectionSection() {
       <p className="text-center">
         TTC is made possible by generous support from Telethon.
       </p>
-      <img className="mx-auto w-96" src="/images/telethon-logo.png"></img>
+      <img className="mx-auto w-96" alt="Telethon Logo" src="/images/telethon-logo.png"></img>
     </>
   );
 

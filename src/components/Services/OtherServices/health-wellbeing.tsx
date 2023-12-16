@@ -73,7 +73,7 @@ export default function HealthAndWellbeingSection() {
         confidence in public speaking.
       </p>
       <br></br>
-      <p>You don't have to be a Starick client to attend the workshops.</p>
+      <p>You don&apos;t have to be a Starick client to attend the workshops.</p>
       <br></br>
       <p>
         <b>The Lived Experience creative writing program</b> is an effective way
@@ -86,7 +86,7 @@ export default function HealthAndWellbeingSection() {
       <br></br>
       <p>
         <b>Module 1: Telling My Stories</b> is a gently guided creative writing
-        class offering a range of writing prompts tailored to participants'
+        class offering a range of writing prompts tailored to participants&apos;
         needs. In response to these prompts, participants are given the rare
         opportunity to explore and share their lived experience with others in
         the workshop.
@@ -161,13 +161,13 @@ export default function HealthAndWellbeingSection() {
       <p>
         Yoga is a practise that emphasises the importance of listening to the
         body as participants focus on different poses. It teaches self-care and
-        respect for one’s body and strengthens the mind - an important skill to
+        respect for one&apos;s body and strengthens the mind - an important skill to
         develop for victims leaving abusive relationships and making the choice
         to start a new way of life.
       </p>
       <br></br>
       <p>
-        Feedback from the women who are engaged with Starick's yoga programme
+        Feedback from the women who are engaged with Starick&apos;s yoga programme
         have indicated its effectiveness - “Yoga gives me a space”, said one
         participant, while others reported a strong sense of emotional release
         and all-important time for self.
