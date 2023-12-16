@@ -42,7 +42,7 @@ const NavItem = ({ link, classNames }: Props) => {
         <ul
           className={`${
             activated ? "" : "hidden"
-          } w-max bg-white lg:absolute lg:shadow-md lg:divide-y lg:divide-gray-200`}
+          } w-max bg-white lg:absolute lg:divide-y lg:divide-gray-200 lg:shadow-md`}
         >
           {link.submenu.map((sublink) => (
             <li key={sublink.href}>
