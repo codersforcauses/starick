@@ -175,7 +175,7 @@ const sections: Section[] = [
       </div>
     ),
     iconPath: "/images/reports.png",
-    isIconLeftSide: false
+    isIconLeftSide: true
   },
   {
     key: "3",
@@ -215,7 +215,7 @@ const sections: Section[] = [
     titleTextColor: "--starick-black",
     titleContent: "Recognising the signs",
     iconPath: "/images/important.png",
-    isIconLeftSide: false,
+    isIconLeftSide: true,
     contentBody: (
       <div className="text-3xl">
         <p className="font-bold">
@@ -282,7 +282,7 @@ export default function BasicInormation() {
         </p>
       </div>
 
-      <div className="flex-row">
+      <div className="flex-row ">
         {sections.map((section) => (
           <Section
             key={section.key}
