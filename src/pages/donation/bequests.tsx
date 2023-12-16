@@ -25,7 +25,7 @@ import BequestIcon13 from "~/images/donations/bequests/BequestIcon13.png";
 import BequestIcon14 from "~/images/donations/bequests/BequestIcon14.png";
 import BequestIcon15 from "~/images/donations/bequests/BequestIcon15.png";
 
-const bequests: React.FC = () => {
+export default function bequests() {
   return (
     <>
       <div className="relative">
@@ -455,6 +455,4 @@ const bequests: React.FC = () => {
       </div>
     </>
   );
-};
-
-export default bequests;
+}
