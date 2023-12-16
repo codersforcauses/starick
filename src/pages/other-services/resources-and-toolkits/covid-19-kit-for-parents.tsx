@@ -3,15 +3,6 @@ import Image from "next/image";
 import { List } from "@/components/Services/list";
 
 export default function ResourcesAndToolkits() {
-  const covidBookletList = (
-    <List
-      items={[
-        "families and organisations with practical tips, activities and links to resources that are focused on women and children and young people’s health and wellbeing.",
-        "offers guidance, support and information for women whose families are in isolation."
-      ]}
-    />
-  );
-
   const body = (
     <>
       <div className="flex justify-center bg-[--starick-white] px-6 py-2 md:px-32">
@@ -24,7 +15,12 @@ export default function ResourcesAndToolkits() {
           </p>
           <br />
           <p>The booklet provides</p>
-          {covidBookletList}
+          <List
+            items={[
+              "families and organisations with practical tips, activities and links to resources that are focused on women and children and young people’s health and wellbeing.",
+              "offers guidance, support and information for women whose families are in isolation."
+            ]}
+          />
           <br />
           <p>
             As we move into living with COVID-19, this booklet can be used more
@@ -44,14 +40,39 @@ export default function ResourcesAndToolkits() {
     </>
   );
 
+  const pdfs: { linkhref: string; imgsrc: string }[] = [
+    {
+      linkhref:
+        "https://www.starick.org.au/wp-content/uploads/STARICK-Covid-Womens-Resource11.7.22.pdf",
+      imgsrc: "/images/covid-19-pdf-English.png"
+    },
+    {
+      linkhref:
+        "https://www.starick.org.au/wp-content/uploads/COVID-womens-resource-Chinese-Simplified.pdf",
+      imgsrc: "/images/covid-19-pdf-Chinese.png"
+    },
+    {
+      linkhref:
+        "https://www.starick.org.au/wp-content/uploads/STARICK-Covid-Womens-Resource-ARABIC.pdf",
+      imgsrc: "/images/covid-19-pdf-Arabic.png"
+    },
+    {
+      linkhref:
+        "https://www.starick.org.au/wp-content/uploads/STARICK-Covid-Womens-booklet-FARSI.pdf",
+      imgsrc: "/images/covid-19-pdf-Farsi.png"
+    }
+  ];
+
   return (
     <>
       <div>
         <Image
-          src="/images/Parents-with-kids-graphic.png"
           className="h-[500px] w-full object-cover"
+          src="/images/Parents-with-kids-graphic.png"
           alt=""
-        ></Image>
+          height="500"
+          width="1000"
+        />
         <div className="relative -mt-20 mb-6 w-fit rounded-r-full bg-white px-10">
           <p className="p-2 text-4xl font-bold text-[--starick-brown]">
             COVID-19 Kit for Parents
@@ -61,42 +82,21 @@ export default function ResourcesAndToolkits() {
       {body}
 
       <div className="-mx-2 flex flex-wrap justify-center bg-[--starick-white]">
-        <div className="w-1/2 px-8 md:w-1/3 lg:w-1/6">
-          <a href="https://www.starick.org.au/wp-content/uploads/STARICK-Covid-Womens-Resource11.7.22.pdf">
-            <Image
-              className="block h-auto w-full"
-              src="/images/covid-19-pdf-English.png"
-              alt=""
-            ></Image>
-          </a>
-        </div>
-        <div className="w-1/2 px-8 md:w-1/3 lg:w-1/6">
-          <a href="https://www.starick.org.au/wp-content/uploads/COVID-womens-resource-Chinese-Simplified.pdf">
-            <Image
-              className="block h-auto w-full"
-              src="/images/covid-19-pdf-Chinese.png"
-              alt=""
-            ></Image>
-          </a>
-        </div>
-        <div className="w-1/2 px-8 md:w-1/3 lg:w-1/6">
-          <a href="https://www.starick.org.au/wp-content/uploads/STARICK-Covid-Womens-Resource-ARABIC.pdf">
-            <Image
-              className="block h-auto w-full"
-              src="/images/covid-19-pdf-Arabic.png"
-              alt=""
-            ></Image>
-          </a>
-        </div>
-        <div className="w-1/2 px-8 md:w-1/3 lg:w-1/6">
-          <a href="https://www.starick.org.au/wp-content/uploads/STARICK-Covid-Womens-booklet-FARSI.pdf">
-            <Image
-              className="block h-auto w-full"
-              src="/images/covid-19-pdf-Farsi.png"
-              alt=""
-            ></Image>
-          </a>
-        </div>
+        {pdfs.map((pdf) => {
+          return (
+            <div className="w-1/2 px-8 md:w-1/3 lg:w-1/6" key={pdf.linkhref}>
+              <a href={pdf.linkhref}>
+                <Image
+                  className="block h-auto w-full"
+                  src={pdf.imgsrc}
+                  alt=""
+                  height="300"
+                  width="300"
+                />
+              </a>
+            </div>
+          );
+        })}
       </div>
     </>
   );

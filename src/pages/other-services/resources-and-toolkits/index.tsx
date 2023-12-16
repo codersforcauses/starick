@@ -6,10 +6,12 @@ export default function ResourcesAndToolkits() {
     <>
       <div>
         <Image
+          className="h-[500px] w-full object-cover"
           src="/images/starick-image1.jpg"
-          className="w-full"
           alt=""
-        ></Image>
+          height="500"
+          width="1000"
+        />
         <div className="relative -mt-36 mb-6 w-fit rounded-r-full bg-white px-10">
           <p className="p-2 text-4xl font-bold text-[--starick-brown]">
             Work with Children and Young People
@@ -30,7 +32,9 @@ export default function ResourcesAndToolkits() {
               className="block h-auto w-full"
               src="/images/child-safe-organisation-resources.png"
               alt=""
-            ></Image>
+              height="300"
+              width="300"
+            />
           </Link>
         </div>
         <div className="w-1/2 px-4 md:w-1/3 lg:w-1/4">
@@ -39,7 +43,9 @@ export default function ResourcesAndToolkits() {
               className="block h-auto w-full"
               src="/images/children's-participation-and-engagement.png"
               alt=""
-            ></Image>
+              height="300"
+              width="300"
+            />
           </Link>
         </div>
       </div>
@@ -52,7 +58,9 @@ export default function ResourcesAndToolkits() {
               className="block h-auto w-full"
               src="/images/covid-19-kit-for-children-&-young-people.png"
               alt=""
-            ></Image>
+              height="300"
+              width="300"
+            />
           </a>
         </div>
         <div className="w-1/2 px-4 md:w-1/3 lg:w-1/4">
@@ -61,7 +69,9 @@ export default function ResourcesAndToolkits() {
               className="block h-auto w-full"
               src="/images/covid-19-kit-for-parents.png"
               alt=""
-            ></Image>
+              height="300"
+              width="300"
+            />
           </Link>
         </div>
       </div>
