@@ -7,9 +7,9 @@
   height: 448px;
   width: 384px;
   border-width: 1px;
-  border-radius: 8px;
+  border-radius: 18px;
   background: white;
-  filter: drop-shadow(-4px -4px 10px rgb(200, 200, 200));
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
   transition: height 0.2s ease-in, visibility 0.2s linear, opacity 0.2s linear;
 }
 
@@ -77,5 +77,23 @@
   50%,
   100% {
     background-color: rgba(152, 128, 255, 0.2);
+  }
+}
+
+@media (max-width: 767px) {
+  .windowOpen {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    flex-direction: column;
+    position: relative;
+    height: 80vh;
+    width: 100vw;
+    margin-right: -24px;
+    border-width: 1px;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+    transition: height 0.2s ease-in, visibility 0.2s linear, opacity 0.2s linear;
   }
 }
