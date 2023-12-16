@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { List } from "@/components/services/list";
 
 export default function ResourcesAndToolkits() {
@@ -60,40 +62,40 @@ export default function ResourcesAndToolkits() {
 
       <div className="-mx-2 flex flex-wrap justify-center bg-[--starick-white]">
         <div className="w-1/2 px-8 md:w-1/3 lg:w-1/6">
-          <a href="https://www.starick.org.au/wp-content/uploads/STARICK-Covid-Womens-Resource11.7.22.pdf">
+          <Link href="https://www.starick.org.au/wp-content/uploads/STARICK-Covid-Womens-Resource11.7.22.pdf">
             <img
               className="block h-auto w-full"
               src="/images/covid-19-pdf-English.png"
               alt=""
             ></img>
-          </a>
+          </Link>
         </div>
         <div className="w-1/2 px-8 md:w-1/3 lg:w-1/6">
-          <a href="https://www.starick.org.au/wp-content/uploads/COVID-womens-resource-Chinese-Simplified.pdf">
+          <Link href="https://www.starick.org.au/wp-content/uploads/COVID-womens-resource-Chinese-Simplified.pdf">
             <img
               className="block h-auto w-full"
               src="/images/covid-19-pdf-Chinese.png"
               alt=""
             ></img>
-          </a>
+          </Link>
         </div>
         <div className="w-1/2 px-8 md:w-1/3 lg:w-1/6">
-          <a href="https://www.starick.org.au/wp-content/uploads/STARICK-Covid-Womens-Resource-ARABIC.pdf">
+          <Link href="https://www.starick.org.au/wp-content/uploads/STARICK-Covid-Womens-Resource-ARABIC.pdf">
             <img
               className="block h-auto w-full"
               src="/images/covid-19-pdf-Arabic.png"
               alt=""
             ></img>
-          </a>
+          </Link>
         </div>
         <div className="w-1/2 px-8 md:w-1/3 lg:w-1/6">
-          <a href="https://www.starick.org.au/wp-content/uploads/STARICK-Covid-Womens-booklet-FARSI.pdf">
+          <Link href="https://www.starick.org.au/wp-content/uploads/STARICK-Covid-Womens-booklet-FARSI.pdf">
             <img
               className="block h-auto w-full"
               src="/images/covid-19-pdf-Farsi.png"
               alt=""
             ></img>
-          </a>
+          </Link>
         </div>
       </div>
     </>
