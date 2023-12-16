@@ -322,7 +322,7 @@ const sections: Section[] = [
 
 export default function BasicInormation() {
   return (
-    <div className="bg-{--starick-white}">
+    <div className="bg-[--starick-white]">
       <div>
         <Image
           src="/images/starick-image1.jpg"
