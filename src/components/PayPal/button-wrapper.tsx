@@ -23,18 +23,15 @@ async function createOrder(): Promise<string> {
 }
 
 async function onApprove(data: { orderID: string }): Promise<void> {
-  const response = await fetch(
-    "/api/paypal/capture-order",
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        orderID: data.orderID
-      })
-    }
-  );
+  const response = await fetch("/api/paypal/capture-order", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      orderID: data.orderID
+    })
+  });
 
   const orderData: Order = await response.json();
   console.log(orderData);
