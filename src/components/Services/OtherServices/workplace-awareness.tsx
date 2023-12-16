@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 import ServicesSection from "../services-section";
 import SubSection from "../subsection";
@@ -36,7 +37,7 @@ export default function WorkplaceAwarenessSection() {
       </p>
       <br></br>
       <p>
-        Email Karen Kerlin at communitylinkages@starick.org.au for more
+        Email Karen Kerlin at <Link className="underline" href="mailto:communitylinkages@starick.org.au">communitylinkages@starick.org.au</Link> for more
         information.
       </p>
     </div>

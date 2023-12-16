@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 import ServicesSection from "../services-section";
 
@@ -22,7 +23,7 @@ export default function ThrivingThroughConnectionSection() {
         line with current best practice.
       </p>
       <br></br>
-      <p>To find out more please email: youth@starick.org.au</p>
+      <p>To find out more please email: <Link className="underline" href="mailto:youth@starick.org.au">youth@starick.org.au</Link></p>
       <br></br>
       <br></br>
       <p className="text-center">

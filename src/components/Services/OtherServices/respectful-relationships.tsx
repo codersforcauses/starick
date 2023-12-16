@@ -54,13 +54,13 @@ export default function RespectfulRelationshipsSection() {
       <br></br>
       <p>
         It is also a key initiative of Path to Safety:{" "}
-        <a
+        <Link
           className="underline"
           href="https://www.wa.gov.au/government/publications/western-australias-strategy-reduce-family-and-domestic-violence"
         >
           Western Australia&apos;s Strategy to Reduce Family and Domestic
           Violence 2020-2030.
-        </a>
+        </Link>
       </p>
       <br></br>
       <br></br>
