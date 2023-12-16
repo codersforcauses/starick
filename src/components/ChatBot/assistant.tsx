@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 import { GPTMessage, GPTMessageSchema } from "@/lib/chatbot/validators";
 
+import Bubble from "./bubble";
 import Message from "./message";
 
 import styles from "./assistant.module.css";
@@ -68,7 +69,7 @@ function Assistant() {
   };
 
   return (
-    <div className="absolute bottom-0 right-0">
+    <div className="absolute bottom-0 right-0 mb-6 mr-6 flex flex-col gap-1">
       {/* Chat window */}
       <div className={`${chatOpen ? styles.windowOpen : styles.windowClosed}`}>
         {/* Top "assistant" bar */}
@@ -102,11 +103,8 @@ function Assistant() {
           />
         </div>
       </div>
-      <button
-        className={chatOpen ? styles.buttonOpen : styles.buttonClosed}
-        onClick={toggleChat}
-      >
-        {chatOpen ? "X" : "Open chat"}
+      <button className="mt-2 self-end" onClick={toggleChat}>
+        <Bubble />
       </button>
     </div>
   );

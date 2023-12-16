@@ -6,7 +6,6 @@
   position: relative;
   height: 448px;
   width: 384px;
-  margin: 8px;
   border-width: 1px;
   border-radius: 8px;
   background: white;
@@ -22,21 +21,11 @@
   transition: height 0.2s ease-out, visibility 0.2s linear, opacity 0.2s linear;
 }
 
-.buttonOpen {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 16px;
-}
-
 .buttonClosed {
-  position: fixed;
+  /* position: fixed;
   bottom: 0;
   right: 0;
-  height: 50px;
-  width: 50px;
-  margin: 8px;
-  background: var(--starick-orange);
+  margin: 8px; */
 }
 
 .textOpen {
