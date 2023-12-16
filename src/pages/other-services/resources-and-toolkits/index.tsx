@@ -1,57 +1,81 @@
+import Image from "next/image";
 import Link from "next/link";
-import Banner from "@/components/Services/banner";
 
 export default function ResourcesAndToolkits() {
   return (
     <>
-      <Banner
-        titleText="Work with Children and Young People"
-        subtitleText="Resources and Toolkits"
-      />
-      <br></br>
-      <br></br>
+      <div>
+        <Image
+          className="h-[500px] w-full object-cover"
+          src="/images/starick-image1.jpg"
+          alt=""
+          height="500"
+          width="1000"
+        />
+        <div className="relative -mt-36 mb-6 w-fit rounded-r-full bg-white px-10">
+          <p className="p-2 text-4xl font-bold text-[--starick-brown]">
+            Work with Children and Young People
+          </p>
+          <p className="p-2 text-center text-3xl font-bold text-[--starick-brown]">
+            Resources and Toolkits
+          </p>
+        </div>
+      </div>
+
+      <br />
+      <br />
+
       <div className="-mx-2 flex flex-wrap justify-center bg-[--starick-white]">
         <div className="w-1/2 px-4 md:w-1/3 lg:w-1/4">
           <Link href="./resources-and-toolkits/child-safe-resources">
-            <img
+            <Image
               className="block h-auto w-full"
               src="/images/child-safe-organisation-resources.png"
               alt=""
-            ></img>
+              height="300"
+              width="300"
+            />
           </Link>
         </div>
         <div className="w-1/2 px-4 md:w-1/3 lg:w-1/4">
           <Link href="./resources-and-toolkits/childrens-participation-and-engagement">
-            <img
+            <Image
               className="block h-auto w-full"
               src="/images/children's-participation-and-engagement.png"
               alt=""
-            ></img>
+              height="300"
+              width="300"
+            />
           </Link>
         </div>
       </div>
 
-      <br></br>
+      <br />
       <div className="-mx-2 flex flex-wrap justify-center bg-[--starick-white]">
         <div className="w-1/2 px-4 md:w-1/3 lg:w-1/4">
-          <Link href="https://www.starick.org.au/wp-content/uploads/STARICK-Covid-Childrens-Resource-11.7.22.pdf">
-            <img
+          <a href="https://www.starick.org.au/wp-content/uploads/STARICK-Covid-Childrens-Resource-11.7.22.pdf">
+            <Image
               className="block h-auto w-full"
               src="/images/covid-19-kit-for-children-&-young-people.png"
               alt=""
-            ></img>
-          </Link>
+              height="300"
+              width="300"
+            />
+          </a>
         </div>
         <div className="w-1/2 px-4 md:w-1/3 lg:w-1/4">
           <Link href="./resources-and-toolkits/covid-19-kit-for-parents">
-            <img
+            <Image
               className="block h-auto w-full"
               src="/images/covid-19-kit-for-parents.png"
               alt=""
-            ></img>
+              height="300"
+              width="300"
+            />
           </Link>
         </div>
       </div>
+      <br />
     </>
   );
 }
