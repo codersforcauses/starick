@@ -19,7 +19,7 @@ export default function ResourcesAndToolkits() {
       <br></br>
       <div className="-mx-2 flex flex-wrap justify-center bg-[--starick-white]">
         <div className="w-1/2 px-4 md:w-1/3 lg:w-1/4">
-          <Link href="./child-safe-resources">
+          <Link href="./resources-and-toolkits/child-safe-resources">
             <img
               className="block h-auto w-full"
               src="/images/child-safe-organisation-resources.png"
@@ -28,7 +28,7 @@ export default function ResourcesAndToolkits() {
           </Link>
         </div>
         <div className="w-1/2 px-4 md:w-1/3 lg:w-1/4">
-          <Link href="./childrens-participation-and-engagement">
+          <Link href="./resources-and-toolkits/childrens-participation-and-engagement">
             <img
               className="block h-auto w-full"
               src="/images/children's-participation-and-engagement.png"
