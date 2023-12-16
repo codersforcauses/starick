@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { List } from "@/components/services/list";
+import { List } from "@/components/Services/list";
 
 export default function ResourcesAndToolkits() {
   const covidBookletList = (

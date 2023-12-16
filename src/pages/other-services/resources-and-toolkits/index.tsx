@@ -52,7 +52,7 @@ export default function ResourcesAndToolkits() {
           </Link>
         </div>
         <div className="w-1/2 px-4 md:w-1/3 lg:w-1/4">
-          <Link href="./covid-19-kit-for-parents">
+          <Link href="./resources-and-toolkits/covid-19-kit-for-parents">
             <img
               className="block h-auto w-full"
               src="/images/covid-19-kit-for-parents.png"
