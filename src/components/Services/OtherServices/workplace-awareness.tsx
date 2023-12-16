@@ -141,18 +141,21 @@ export default function WorkplaceAwarenessSection() {
       <SubSection
         sectionBody={subBodyAware}
         iconPath="images/What-is-150x150.png"
+        iconOnRight={false}
       />
       <br></br>
       <br></br>
       <SubSection
         sectionBody={subBodyRightsResponsibilities}
         iconPath="images/Icons-FAQ-150x150.png"
+        iconOnRight={false}
       />
       <br></br>
       <br></br>
       <SubSection
         sectionBody={subBodyHelp}
         iconPath="images/I-need-help-150x150.png"
+        iconOnRight={false}
       />
     </>
   );

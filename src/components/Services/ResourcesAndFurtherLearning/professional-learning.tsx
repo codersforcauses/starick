@@ -82,7 +82,7 @@ export default function ProfessionalLearning() {
     <SubSection
       iconPath="/icons/professional-learning.svg"
       sectionBody={subbody}
-      iconOnRight={true}
+      iconOnRight={false}
     />
   );
   return (

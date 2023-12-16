@@ -58,7 +58,7 @@ export default function ResourceForParents() {
     <SubSection
       iconPath="/icons/resources.svg"
       sectionBody={subbody}
-      iconOnRight={true}
+      iconOnRight={false}
     />
   );
   return (

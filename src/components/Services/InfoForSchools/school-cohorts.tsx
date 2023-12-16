@@ -102,7 +102,7 @@ export default function SchoolCohorts() {
     <SubSection
       iconPath="/icons/school.svg"
       sectionBody={subbody}
-      iconOnRight={true}
+      iconOnRight={false}
     />
   );
   return (

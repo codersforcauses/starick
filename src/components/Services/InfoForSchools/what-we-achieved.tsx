@@ -90,7 +90,7 @@ export default function AchievedSection() {
       <SubSection
         sectionBody={subbody}
         iconPath="/icons/reports.svg"
-        iconOnRight={true}
+        iconOnRight={false}
       />
     </>
   );

@@ -113,7 +113,7 @@ export default function ResourceForSchools() {
     <SubSection
       iconPath="/icons/school.svg"
       sectionBody={subbody}
-      iconOnRight={true}
+      iconOnRight={false}
     />
   );
   return (
