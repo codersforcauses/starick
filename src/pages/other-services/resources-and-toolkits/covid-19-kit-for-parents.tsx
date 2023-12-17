@@ -20,6 +20,7 @@ export default function ResourcesAndToolkits() {
               "families and organisations with practical tips, activities and links to resources that are focused on women and children and young people’s health and wellbeing.",
               "offers guidance, support and information for women whose families are in isolation."
             ]}
+            style="list-disc"
           />
           <br />
           <p>
