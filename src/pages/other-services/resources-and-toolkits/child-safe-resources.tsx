@@ -1,15 +1,13 @@
-import { Children } from "react";
-
 import Image from "next/image";
 
 import SectionTitle from "@/components/section-title";
-import ChildSafeItem from "@/components/Services/ResourceAndToolkits/child-safe-item";
+import childSafeTemplate from "@/components/Services/ResourceAndToolkits/child-safe-items/child-safe-template.json";
+import externalResources from "@/components/Services/ResourceAndToolkits/child-safe-items/external-resources.json";
+import practiceTools from "@/components/Services/ResourceAndToolkits/child-safe-items/practice-tools.json";
+import ChildSafeList from "@/components/Services/ResourceAndToolkits/child-safe-list";
 
 import ChildSafeResourcesTitle from "~/images/ResourcesToolkits/child-safe-resources-title.png";
-
-import childSafeTemplate from "@/components/Services/ResourceAndToolkits/child-safe-resources-items/child-safe-template.json";
-import practiceTools from "@/components/Services/ResourceAndToolkits/child-safe-resources-items/practice-tools.json";
-import externalResources from "@/components/Services/ResourceAndToolkits/child-safe-resources-items/external-resources.json";
+import ChildSafeItem from "@/components/Services/ResourceAndToolkits/child-safe-item";
 
 export default function ChildSafeResources() {
   const emailAddress = "info@starick.org.au";
@@ -94,25 +92,11 @@ export default function ChildSafeResources() {
       </div>
 
       <div className="px-20 py-10 md:px-40 md:py-20 lg:px-60">
-        {childSafeTemplate.map((child, index) => (
-          <ChildSafeItem
-            backgroundColor={child.backgroundColor}
-            text={child.text}
-            key={index}
-          />
-        ))}
-
+        <ChildSafeList itemList={childSafeTemplate} />
         <p className="my-10 text-center text-2xl font-semibold">
           Practice Tools
         </p>
-
-        {practiceTools.map((child, index) => (
-          <ChildSafeItem
-            backgroundColor={child.backgroundColor}
-            text={child.text}
-            key={index}
-          />
-        ))}
+        <ChildSafeList itemList={practiceTools} />
       </div>
 
       <div className="px-10 md:px-20 lg:px-32">
@@ -141,13 +125,7 @@ export default function ChildSafeResources() {
       </div>
 
       <div className="px-20 py-10 md:px-40 md:py-20 lg:px-60">
-        {externalResources.map((child, index) => (
-          <ChildSafeItem
-            backgroundColor={child.backgroundColor}
-            text={child.text}
-            key={index}
-          />
-        ))}
+        <ChildSafeList itemList={externalResources} />
       </div>
 
       <div className="h-auto w-full bg-[--starick-brown] px-20 py-10 text-[--starick-white] md:px-40 lg:px-60">
