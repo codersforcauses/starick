@@ -1,0 +1,22 @@
+[
+  {
+    "pos": true,
+    "amount": "How about $1000?",
+    "description": "Provide financial assistance to a woman with no resources of her own because of financial abuse. Supply a starter pack of basic household items, electrical appliances and linen to two families transitioning from refuge accommodation into their own subsidised rental property."
+  },
+  {
+    "pos": false,
+    "amount": "And with $2000?",
+    "description": "Run a two-day Lived Experience writing and confidence-building programme for up to seven women."
+  },
+  {
+    "pos": true,
+    "amount": "What can $6000 do?",
+    "description": "Fund a specialist children's counsellor for one month! this could make an imense diference in their mental development "
+  },
+  {
+    "pos": false,
+    "amount": "What can $20000 do?",
+    "description": "$20,000 would enable us to continue offering a full-time domestic violence advocacy service at Armadale Police Station."
+  }
+]

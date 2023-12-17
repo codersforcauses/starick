@@ -5,6 +5,9 @@ import DonationApproach from "@/components/Donations/donation-approach";
 import DonationTitle from "@/components/Donations/donation-title";
 import DonationType from "@/components/Donations/donation-type";
 import Paypal from "@/components/PayPal";
+import approachItems from "@/components/Donations/items/approach-items.json";
+import amountItems1 from "@/components/Donations/items/amount-items1.json";
+import amountItems2 from "@/components/Donations/items/amount-items2.json";
 
 import Bequest1 from "~/images/donations/bequests/Bequest1.png";
 import Bequest2 from "~/images/donations/bequests/Bequest2.png";
@@ -118,22 +121,14 @@ export default function bequests() {
           </div>
         </div>
 
-        <DonationAmount
-          pos={true}
-          amount="Can $50 buy?"
-          description="Provide emergency provisions, toiletries and groceries to one woman arriving at our refuge with
-                        nothing but the clothes she stands up in."
-        />
-        <DonationAmount
-          pos={false}
-          amount="What about $100?"
-          description="Send one of our mums on a “Baby and Child First Aid” course!
-                        Provide back-to-school basics for one of the children living at our refuge.
-                        Cover the cost of one child participating in an engaging program of fun school holiday
-                        activities.
-                        Run one baby massage session, aimed at helping traumatised mothers and babies re-establish their
-                        bond."
-        />
+        {amountItems1.map((child, index) => (
+          <DonationAmount
+            pos={child.pos}
+            amount={child.amount}
+            description={child.description}
+            key={index}
+          />
+        ))}
       </div>
 
       <div className="grid h-full grid-cols-2 place-items-center bg-[--starick-olive] text-center">
@@ -150,31 +145,14 @@ export default function bequests() {
       </div>
 
       <div className="grid auto-rows-max p-10 text-xs font-semibold text-[--starick-brown] md:text-xl lg:text-2xl">
-        <DonationAmount
-          pos={true}
-          amount="How about $1000?"
-          description="Provide financial assistance to a woman with no resources of her own because of financial abuse.
-                        Supply a starter pack of basic household items, electrical appliances and linen to two families
-                        transitioning from refuge accommodation into their own subsidised rental property."
-        />
-
-        <DonationAmount
-          pos={false}
-          amount="And with $2000?"
-          description="Run a two-day Lived Experience writing and confidence-building programme for up to seven women."
-        />
-
-        <DonationAmount
-          pos={true}
-          amount="What can $6000 do?"
-          description="Fund a specialist children's counsellor for one month! this could make an imense diference in their mental development "
-        />
-
-        <DonationAmount
-          pos={false}
-          amount="What can $20000 do?"
-          description="$20,000 would enable us to continue offering a full-time domestic violence advocacy service at Armadale Police Station."
-        />
+        {amountItems2.map((child, index) => (
+          <DonationAmount
+            pos={child.pos}
+            amount={child.amount}
+            description={child.description}
+            key={index}
+          />
+        ))}
       </div>
 
       <Image
@@ -240,26 +218,13 @@ export default function bequests() {
         </div>
 
         <div className="grid grid-rows-5 place-content-center">
-          <DonationApproach
-            order={1}
-            text="Find your closest refund point at the <strong>Containers for Change</strong> website."
-          />
-          <DonationApproach
-            order={2}
-            text="Collect eligible drink containers (check the label to see if it carries to 10c return information)."
-          />
-          <DonationApproach
-            order={3}
-            text="Take your containers to the refund point."
-          />
-          <DonationApproach
-            order={4}
-            text="Use the <strong>Starick Scheme ID C10289306</strong>. You can also download our barcode for scanning by clicking below."
-          />
-          <DonationApproach
-            order={5}
-            text="The donation is the sent directly to Starick from the refund point."
-          />
+          {approachItems.map((child, index) => (
+            <DonationApproach
+              order={child.order}
+              text={child.text}
+              key={index}
+            />
+          ))}
         </div>
 
         <div className="flex flex-row items-center justify-between">
