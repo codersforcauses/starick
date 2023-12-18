@@ -3,7 +3,8 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <>
-      <footer className="grid bg-[#C3C9A0] p-4 lg:grid-cols-[2fr_1.2fr_1fr] ">
+    {/* only in large window will g */}
+      <footer className="lg:sticky bottom-0 grid bg-[#C3C9A0] p-0 lg:grid-cols-[2fr_1.2fr_1fr] ">
         <Flag></Flag>
         <Contact></Contact>
         <Email></Email>
@@ -15,7 +16,7 @@ const Footer = () => {
 const Flag = () => {
   return (
     <div className=" text-center md:ml-6 ">
-      <div className=" flex flex-wrap items-center justify-center p-5 ">
+      <div className=" flex flex-wrap items-center justify-center p-1 ">
         <div className=" w-auto overflow-hidden  ">
           <Image
             src=""
@@ -41,7 +42,7 @@ const Flag = () => {
         </p>
       </div>
 
-      <p className="  font-normal text-black   ">
+      <p className="pb-1 font-normal text-black mb-1  ">
         © 2023 Starick. All Rights Reserved. |{" "}
         <a href="#" className="hover:underline">
           Privacy & Disclaimer
@@ -53,7 +54,7 @@ const Flag = () => {
 
 const Contact = () => {
   return (
-    <div className="m-3 text-center ">
+    <div className="m-3 p-2 text-center lg:text-left   ">
       <p className="min-w-min hover:underline  ">
         <a href="#">Site map / links to pages here</a>
       </p>

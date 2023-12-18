@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import NavBar from "@/components/NavBar";
 import PanicButton from "@/components/PanicButton";
 import MessengerChat from "@/components/messengerembed/messengerembed";
+import Footer from "@/components/Footer/Footer";
 
 import "@/styles/globals.css";
 
@@ -17,6 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <main className="mt-14 bg-[--starick-white]">
         <Component {...pageProps} />
       </main>
+      <Footer></Footer>
     </>
   );
 }
