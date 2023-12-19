@@ -14,7 +14,7 @@ const DonationAmount: React.FC<ItemProps> = ({ pos, amount, description }) => {
     return (
       <div className="grid grid-cols-2 place-items-center">
         <div className="relative min-w-[160px] max-w-[60%]">
-          <p className="absolute left-1/2 top-1/2 -translate-x-2/3 -translate-y-1/2 transform font-bold text-[--starick-white] sm:text-xs md:text-xl lg:text-2xl xl:text-4xl">
+          <p className="absolute left-1/2 top-1/2 -translate-x-2/3 -translate-y-1/2 transform font-bold text-starick-white sm:text-xs md:text-xl lg:text-2xl xl:text-4xl">
             {amount}
           </p>
           <Image
@@ -34,7 +34,7 @@ const DonationAmount: React.FC<ItemProps> = ({ pos, amount, description }) => {
       <div className="grid grid-cols-2 place-items-center">
         <p className="m-10">{description}</p>
         <div className="relative min-w-[160px] max-w-[60%]">
-          <p className="absolute left-2/3 top-1/2 -translate-x-1/2 -translate-y-1/2 transform font-bold text-[--starick-white] sm:text-xs md:text-xl lg:text-2xl xl:text-4xl">
+          <p className="absolute left-2/3 top-1/2 -translate-x-1/2 -translate-y-1/2 transform font-bold text-starick-white sm:text-xs md:text-xl lg:text-2xl xl:text-4xl">
             {amount}
           </p>
           <Image

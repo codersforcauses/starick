@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <PanicButton />
         <MessengerChat />
       </header>
-      <main className="mt-14 bg-[--starick-white]">
+      <main className="mt-14 bg-starick-white">
         <Component {...pageProps} />
       </main>
     </>

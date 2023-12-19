@@ -46,7 +46,7 @@ const NavItem = ({ link, classNames }: Props) => {
         >
           {link.submenu.map((sublink) => (
             <li key={sublink.href}>
-              <div className="px-2 py-0.5 text-center hover:bg-[--starick-olive] lg:py-0.5">
+              <div className="px-2 py-0.5 text-center hover:bg-starick-olive lg:py-0.5">
                 <Link href={sublink.href}>{sublink.label}</Link>
               </div>
             </li>

@@ -5,7 +5,7 @@ import { List } from "@/components/Services/list";
 export default function ResourcesAndToolkits() {
   const body = (
     <>
-      <div className="flex justify-center bg-[--starick-white] px-6 py-2 md:px-32">
+      <div className="flex justify-center bg-starick-white px-6 py-2 md:px-32">
         <div className="w-fit">
           <br />
           <p>
@@ -75,14 +75,14 @@ export default function ResourcesAndToolkits() {
           width="1000"
         />
         <div className="relative -mt-20 mb-6 w-fit rounded-r-full bg-white px-10">
-          <p className="p-2 text-4xl font-bold text-[--starick-brown]">
+          <p className="p-2 text-4xl font-bold text-starick-brown">
             COVID-19 Kit for Parents
           </p>
         </div>
       </div>
       {body}
 
-      <div className="-mx-2 flex flex-wrap justify-center bg-[--starick-white]">
+      <div className="-mx-2 flex flex-wrap justify-center bg-starick-white">
         {pdfs.map((pdf) => {
           return (
             <div className="w-1/2 px-8 md:w-1/3 lg:w-1/6" key={pdf.linkhref}>
