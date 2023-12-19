@@ -1,27 +1,26 @@
-import React from "react";
+import { List } from "../list";
 import ServicesSection from "../services-section";
 import SubSection from "../subsection";
-import { List } from "../list";
 
 export default function SafeAtHomeSection() {
   const subbody1 = (
     <>
       <p className="text-xl font-semibold">What is the Safe at Home program?</p>
-      <br></br>
+      <br />
       <p>
         Starick&apos;s Safe at Home program is designed to help women and
         children experiencing domestic or family violence to stay safely in
         their homes after separation from their abuser.
       </p>
-      <br></br>
+      <br />
       <p className="text-xl font-semibold">Who can use Safe at Home?</p>
-      <br></br>
+      <br />
       <p>
         Starick&apos;s Safe at Home program is available to any woman living in
         our catchment area who is experiencing domestic or family violence and
         wants to remain in her own home.
       </p>
-      <br></br>
+      <br />
       <p>
         This includes women with or without children. The service is free,
         confidential and sensitive to the needs of women.
@@ -33,11 +32,11 @@ export default function SafeAtHomeSection() {
       <p className="text-xl font-semibold">
         What can the Safe at Home program offer?
       </p>
-      <br></br>
+      <br />
       <p>
         Our Safe at Home outreach workers can assist you in the following ways:
       </p>
-      <br></br>
+      <br />
       <List
         items={[
           "Carrying out a risk assessment and safety audit of your home.",
@@ -48,6 +47,7 @@ export default function SafeAtHomeSection() {
           "Providing information and referrals to other avenues of support.",
           "Advocacy with relevant agencies"
         ]}
+        style="list-disc"
       />
     </>
   );
@@ -56,12 +56,12 @@ export default function SafeAtHomeSection() {
       <p className="text-xl font-semibold">
         What is our catchment area for Safe at Home?
       </p>
-      <br></br>
+      <br />
       <p>
         Any woman living in the following suburbs can use Starick&apos;s Safe at
         Home program:
       </p>
-      <br></br>
+      <br />
       <p>
         Ascot, Belmont, Bickley, Burswood, Canning Mills, Carlisle, Carmel,
         Cloverdale, Darlington, East Perth, East Victoria Park, Forrestfield,
@@ -76,16 +76,19 @@ export default function SafeAtHomeSection() {
   const body = (
     <>
       <SubSection
-        iconPath="images/What-is-150x150.png"
+        iconPath="icons/did-you-know.svg"
         sectionBody={subbody1}
+        iconOnRight={false}
       />
       <SubSection
-        iconPath="images/Lived-Experience-150x150.png"
+        iconPath="icons/resources.svg"
         sectionBody={subbody2}
+        iconOnRight={false}
       />
       <SubSection
-        iconPath="images/Icons_Safe-at-Home-catchment-area-150x150.png"
+        iconPath="icons/location.svg"
         sectionBody={subbody3}
+        iconOnRight={false}
       />
     </>
   );
@@ -95,7 +98,7 @@ export default function SafeAtHomeSection() {
       titleBackgroundColour="[--starick-green]"
       sectionBody={body}
       title="Safe at Home Program"
-      iconPath="images/Icon-CRISIS-150x150.png"
+      iconPath="icons/care.svg"
     />
   );
 }

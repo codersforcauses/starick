@@ -1,6 +1,5 @@
-import React from "react";
-import ServicesSection from "../services-section";
 import { List } from "../list";
+import ServicesSection from "../services-section";
 
 export default function PoliceSection() {
   const services = (
@@ -14,6 +13,7 @@ export default function PoliceSection() {
         "Assistance with income support",
         "Referral to other services and agencies as appropriate"
       ]}
+      style="list-disc"
     />
   );
 
@@ -24,21 +24,24 @@ export default function PoliceSection() {
         offer an advocacy service, safety planning and case management with
         court support. They can also refer you to legal and other services:
       </p>
-      <ul>
+      <br />
+      <ul className="ml-10 list-disc">
         <li>
-          Armadale: Walk into Armadale Police Station at 23 Prospect Rd,
+          <b>Armadale</b>: Walk into Armadale Police Station at 23 Prospect Rd,
           Armadale
         </li>
         <li>
-          Cannington: Walk into Cannington Police Station at 1325 Albany Hwy,
-          Cannington.
+          <b>Cannington</b>: Walk into Cannington Police Station at 1325 Albany
+          Hwy, Cannington.
         </li>
       </ul>
+      <br />
       <p>
         Our domestic violence advocates provide a range of services including:
       </p>
+      <br />
       {services}
-      <br></br>
+      <br />
     </>
   );
   return (
@@ -47,7 +50,7 @@ export default function PoliceSection() {
       titleBackgroundColour="[--starick-olive]"
       sectionBody={body}
       title="Support in Police Stations"
-      iconPath="images/Icon-CRISIS-150x150.png"
+      iconPath="icons/police-justice.svg"
     />
   );
 }
