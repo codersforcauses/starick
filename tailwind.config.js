@@ -13,12 +13,12 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))"
       },
       colors: {
-        "starick-green": "var(--starick-green)",
-        "starick-brown": "var(--starick-brown)",
-        "starick-orange": "var(--starick-orange)",
-        "starick-olive": "var(--starick-olive)",
-        "starick-white": "var(--starick-white)",
-        "starick-black": "var(--starick-black)"
+        "starick-green": "#738c4a",
+        "starick-brown": "#726658",
+        "starick-orange": "#e86e34",
+        "starick-olive": "#c3c9a0",
+        "starick-white": "#f3f4f6",
+        "starick-black": "#030712"
       }
     }
   },
