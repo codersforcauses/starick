@@ -142,8 +142,8 @@ export default function RefugesSection() {
   );
   return (
     <ServicesSection
-      titleTextColour="[--starick-black]"
-      titleBackgroundColour="[--starick-olive]"
+      titleTextColour="starick-black"
+      titleBackgroundColour="starick-olive"
       sectionBody={body}
       title="Refuges"
       iconPath="icons/refugees.svg"

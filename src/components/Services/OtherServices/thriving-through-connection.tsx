@@ -44,8 +44,8 @@ export default function ThrivingThroughConnectionSection() {
 
   return (
     <ServicesSection
-      titleTextColour="[--starick-white]"
-      titleBackgroundColour="[--starick-green]"
+      titleTextColour="starick-white"
+      titleBackgroundColour="starick-green"
       sectionBody={body}
       title={
         "Thriving Through Connection \nSupporting Young People Aged 11 - 17 years"

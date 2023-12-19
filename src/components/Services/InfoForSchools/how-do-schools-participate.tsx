@@ -30,8 +30,8 @@ export default function HowDoSchoolsParticipate() {
   );
   return (
     <ServicesSection
-      titleTextColour="[--starick-white]"
-      titleBackgroundColour="[--starick-green]"
+      titleTextColour="starick-white"
+      titleBackgroundColour="starick-green"
       sectionBody={body}
       title="How do schools participate in the program?"
     />

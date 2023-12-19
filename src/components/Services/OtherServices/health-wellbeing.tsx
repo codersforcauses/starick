@@ -214,8 +214,8 @@ export default function HealthAndWellbeingSection() {
 
   return (
     <ServicesSection
-      titleTextColour="[--starick-black]"
-      titleBackgroundColour="[--starick-olive]"
+      titleTextColour="starick-black"
+      titleBackgroundColour="starick-olive"
       sectionBody={body}
       title="Health and Wellbeing"
       iconPath=""
