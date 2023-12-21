@@ -282,7 +282,7 @@ export default function BasicInormation() {
         </p>
       </div>
 
-      <div className="flex-row ">
+      <div className=" flex flex-col">
         {sections.map((section) => (
           <Section
             key={section.key}

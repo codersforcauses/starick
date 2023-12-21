@@ -18,7 +18,8 @@ export default function Section({
   isIconLeftSide
 }: SectionProp) {
   return (
-    <div className="px-30 flex flex-col">
+    <div className="px-30 flex flex-col md:p-20 ">
+      {/* section title */}
       <div className="p-16">
         <SectionTitle
           textColor={titleTextColor}
@@ -26,8 +27,10 @@ export default function Section({
           content={titleContent}
         />
       </div>
-      {isIconLeftSide ? (
-        <div className="flex flex-row  px-56 ">
+      {/* section content */}
+      <div className="px-6">
+        <div className=" flex flex-row justify-center md:px-24">
+          {/* img */}
           <div className="basis-1/5">
             <Image
               src={iconPath}
@@ -37,22 +40,10 @@ export default function Section({
               className=" pt-6"
             />
           </div>
+          {/* text */}
           <div className="basis-4/5 p-8">{contentBody}</div>
         </div>
-      ) : (
-        <div className=" flex flex-row px-56">
-          <div className="basis-4/5 p-8">{contentBody}</div>
-          <div className="basis-1/5">
-            <Image
-              src={iconPath}
-              alt="a"
-              height={100}
-              width={100}
-              className=" pt-6"
-            />
-          </div>
-        </div>
-      )}
+      </div>
     </div>
   );
 }
