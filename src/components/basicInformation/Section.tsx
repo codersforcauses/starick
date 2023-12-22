@@ -14,13 +14,12 @@ export default function Section({
   titleTextColor,
   titleContent,
   contentBody,
-  iconPath,
-  isIconLeftSide
+  iconPath
 }: SectionProp) {
   return (
-    <div className="px-30 flex flex-col md:p-8 ">
+    <div className=" flex flex-col pb-20">
       {/* section title */}
-      <div className="p-8">
+      <div>
         <SectionTitle
           textColor={titleTextColor}
           backgroundColor={titleBackgroundColor}
@@ -28,20 +27,21 @@ export default function Section({
         />
       </div>
       {/* section content */}
-      <div className="px-6">
-        <div className=" flex flex-row justify-center md:px-24">
+      <div className="px-4 md:px-6">
+        <div className=" flex justify-center md:px-24">
           {/* img */}
-          <div className="basis-1/5">
+          <div className="w-1/4">
             <Image
               src={iconPath}
               alt="a"
               height={100}
               width={100}
-              className=" pt-6"
+              className="mt-6"
+              layout="fixed"
             />
           </div>
           {/* text */}
-          <div className="basis-4/5 p-8">{contentBody}</div>
+          <div className="w-3/4 p-4 md:p-8">{contentBody}</div>
         </div>
       </div>
     </div>

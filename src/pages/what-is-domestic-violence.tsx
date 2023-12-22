@@ -266,6 +266,7 @@ const sections: Section[] = [
 
 export default function BasicInormation() {
   return (
+    // baner
     <div className="bg-[--starick-white]">
       <div className=" pb-10">
         <Image
@@ -281,8 +282,8 @@ export default function BasicInormation() {
           What is Domestic Violence?
         </p>
       </div>
-
-      <div className=" flex flex-col">
+      {/* sections */}
+      <div className="flex flex-col p-4 md:px-40 md:py-20">
         {sections.map((section) => (
           <Section
             key={section.key}
