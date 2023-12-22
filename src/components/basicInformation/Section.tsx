@@ -18,9 +18,9 @@ export default function Section({
   isIconLeftSide
 }: SectionProp) {
   return (
-    <div className="px-30 flex flex-col md:p-20 ">
+    <div className="px-30 flex flex-col md:p-8 ">
       {/* section title */}
-      <div className="p-16">
+      <div className="p-8">
         <SectionTitle
           textColor={titleTextColor}
           backgroundColor={titleBackgroundColor}
