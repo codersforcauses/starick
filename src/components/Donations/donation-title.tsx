@@ -1,5 +1,3 @@
-import React from "react";
-
 const DonationTitle: React.FC<{ text: string }> = ({ text }) => {
   return (
     <div className="flex h-[150px]  w-full items-center justify-center bg-[--starick-green] p-4">

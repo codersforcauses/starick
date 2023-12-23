@@ -1,5 +1,3 @@
-import React from "react";
-
 import ServicesSection from "../services-section";
 
 export default function CounsellingSection() {
@@ -12,7 +10,7 @@ export default function CounsellingSection() {
         domestic violence is equally important, and helps break the cycle of
         violence.
       </p>
-      <br></br>
+      <br />
       <p>
         Our counselling service is available to women and children staying in a
         Starick refuge, although funding limits how much counselling we can
@@ -20,7 +18,7 @@ export default function CounsellingSection() {
         through grants and fundraising. We also offer counselling to women in
         the community who have experienced family and domestic violence.
       </p>
-      <br></br>
+      <br />
       <p>Contact our counselling service:</p>
       <ul>
         <li className="list-inside list-disc" key="1">
@@ -28,7 +26,7 @@ export default function CounsellingSection() {
           at Community Lotteries House, 2232 Albany Highway, Gosnells.
         </li>
       </ul>
-      <br></br>
+      <br />
     </>
   );
   return (
@@ -37,7 +35,7 @@ export default function CounsellingSection() {
       titleBackgroundColour="[--starick-green]"
       sectionBody={body}
       title="Counselling Services"
-      iconPath="images/Icon-CRISIS-150x150.png"
+      iconPath="icons/speech.svg"
     />
   );
 }
