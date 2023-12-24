@@ -93,8 +93,8 @@ export default function ResourcesForAboriginal() {
   );
   return (
     <ServicesSection
-      titleTextColour="[--starick-white]"
-      titleBackgroundColour="[--starick-green]"
+      titleTextColour="starick-white"
+      titleBackgroundColour="starick-green"
       sectionBody={body}
       title="Resources for Aboriginal 
       and Torres Strait Islander People"

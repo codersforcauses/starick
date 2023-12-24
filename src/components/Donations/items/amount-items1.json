@@ -1,0 +1,12 @@
+[
+  {
+    "pos": true,
+    "amount": "Can $50 buy?",
+    "description": "Provide emergency provisions, toiletries and groceries to one woman arriving at our refuge with nothing but the clothes she stands up in."
+  },
+  {
+    "pos": false,
+    "amount": "What about $100?",
+    "description": "Send one of our mums on a “Baby and Child First Aid” course! Provide back-to-school basics for one of the children living at our refuge. Cover the cost of one child participating in an engaging program of fun school holiday activities. Run one baby massage session, aimed at helping traumatised mothers and babies re-establish their bond."
+  }
+]

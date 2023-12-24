@@ -87,8 +87,8 @@ export default function ProfessionalLearning() {
   );
   return (
     <ServicesSection
-      titleTextColour="[--starick-black]"
-      titleBackgroundColour="[--starick-olive]"
+      titleTextColour="starick-black"
+      titleBackgroundColour="starick-olive"
       sectionBody={body}
       title="Professional Learning"
     />

@@ -5,7 +5,7 @@ interface ItemProps {
   text: string;
 }
 
-const DonationTitle: React.FC<ItemProps> = ({ image, text }) => {
+export default function DonationTitle({ image, text }: ItemProps) {
   return (
     <div className="flex flex-col">
       <Image
@@ -16,8 +16,7 @@ const DonationTitle: React.FC<ItemProps> = ({ image, text }) => {
         sizes="100vw"
         className="h-auto w-full self-center"
       />
-      <p className="font-bold italic text-[--starick-brown]">{text}</p>
+      <p className="font-bold italic text-starick-brown">{text}</p>
     </div>
   );
-};
-export default DonationTitle;
+}

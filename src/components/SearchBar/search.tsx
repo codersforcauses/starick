@@ -1,8 +1,8 @@
-import React, { ChangeEvent, KeyboardEvent, useState } from "react";
+import { ChangeEvent, KeyboardEvent, MouseEvent, useState } from "react";
 
 import { SearchProps } from "./types";
 
-const Search = (props: SearchProps) => {
+export default function Search(props: SearchProps) {
   const { onSearch } = props;
   const [value, setValue] = useState("Enter search...");
   const searchHandler = (event: ChangeEvent<HTMLInputElement>) => {
@@ -45,6 +45,4 @@ const Search = (props: SearchProps) => {
       </button>
     </div>
   );
-};
-
-export default Search;
+}
