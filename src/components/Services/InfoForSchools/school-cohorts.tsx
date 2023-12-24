@@ -107,8 +107,8 @@ export default function SchoolCohorts() {
   );
   return (
     <ServicesSection
-      titleTextColour="[--starick-black]"
-      titleBackgroundColour="[--starick-olive]"
+      titleTextColour="starick-black"
+      titleBackgroundColour="starick-olive"
       sectionBody={body}
       title="School Cohorts"
     />

@@ -16,7 +16,7 @@ export default function DonationTitle({ image, text }: ItemProps) {
         sizes="100vw"
         className="h-auto w-full self-center"
       />
-      <p className="font-bold italic text-[--starick-brown]">{text}</p>
+      <p className="font-bold italic text-starick-brown">{text}</p>
     </div>
   );
 }

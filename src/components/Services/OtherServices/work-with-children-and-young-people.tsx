@@ -50,8 +50,8 @@ export default function WorkWithChildrenAndYoungPeopleSection() {
         transgender and intersex children and young people.
       </p>
 
-      <div className="flex items-center justify-center bg-[--starick-white] py-10">
-        <button className="rounded-2xl bg-[--starick-brown] p-5 text-lg text-white hover:bg-[--starick-black]">
+      <div className="flex items-center justify-center bg-starick-white py-10">
+        <button className="rounded-2xl bg-starick-brown p-5 text-lg text-white hover:bg-starick-black">
           <Link href="/other-services/resources-and-toolkits">
             Resources, toolkits, and further reading
           </Link>
@@ -61,8 +61,8 @@ export default function WorkWithChildrenAndYoungPeopleSection() {
   );
   return (
     <ServicesSection
-      titleTextColour="[--starick-black]"
-      titleBackgroundColour="[--starick-olive]"
+      titleTextColour="starick-black"
+      titleBackgroundColour="starick-olive"
       sectionBody={body}
       title="Our Work with Children and Young People"
       iconPath=""

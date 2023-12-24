@@ -73,8 +73,8 @@ export default function EvidenceBase() {
   );
   return (
     <ServicesSection
-      titleTextColour="[--starick-white]"
-      titleBackgroundColour="[--starick-green]"
+      titleTextColour="starick-white"
+      titleBackgroundColour="starick-green"
       sectionBody={body}
       title="Evidence Base"
     />

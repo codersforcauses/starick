@@ -94,8 +94,8 @@ export default function SafeAtHomeSection() {
   );
   return (
     <ServicesSection
-      titleTextColour="[--starick-white]"
-      titleBackgroundColour="[--starick-green]"
+      titleTextColour="starick-white"
+      titleBackgroundColour="starick-green"
       sectionBody={body}
       title="Safe at Home Program"
       iconPath="icons/care.svg"
