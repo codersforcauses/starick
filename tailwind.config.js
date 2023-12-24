@@ -18,7 +18,8 @@ module.exports = {
         "starick-orange": "#e86e34",
         "starick-olive": "#c3c9a0",
         "starick-white": "#f3f4f6",
-        "starick-black": "#030712"
+        "starick-black": "#030712",
+        "messenger-grey": "#f0f0f0",
       }
     }
   },
