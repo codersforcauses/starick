@@ -111,7 +111,7 @@ export default function ChildSafeResources() {
 
       <div className="px-20 py-10 md:px-40 md:py-20 lg:px-60">
         <ChildSafeItem
-          backgroundColor="olive"
+          backgroundColor="starick-olive"
           text="UN Convention on the Rights of the Child"
         />
       </div>
