@@ -34,8 +34,8 @@
   width: 10px;
   height: 10px;
   border-radius: 5px;
-  background-color: var(--starick-orange);
-  color: var(--starick-orange);
+  background-color: theme(colors.starick-orange);
+  color: theme(colors.starick-orange);
   animation: loading 1s infinite linear alternate;
   animation-delay: 0.5s;
 }
@@ -53,8 +53,8 @@
   width: 10px;
   height: 10px;
   border-radius: 5px;
-  background-color: var(--starick-orange);
-  color: var(--starick-orange);
+  background-color: theme(colors.starick-orange);
+  color: theme(colors.starick-orange);
   animation: loading 1s infinite alternate;
   animation-delay: 0s;
 }
@@ -64,15 +64,15 @@
   width: 10px;
   height: 10px;
   border-radius: 5px;
-  background-color: var(--starick-orange);
-  color: var(--starick-orange);
+  background-color: theme(colors.starick-orange);
+  color: theme(colors.starick-orange);
   animation: loading 1s infinite alternate;
   animation-delay: 1s;
 }
 
 @keyframes loading {
   0% {
-    background-color: var(--starick-orange);
+    background-color: theme(colors.starick-orange);
   }
   50%,
   100% {
