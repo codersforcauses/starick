@@ -5,7 +5,7 @@ interface ItemProps {
   text: string;
 }
 
-const DonationTitle: React.FC<ItemProps> = ({ image, text }) => {
+export default function DonationTitle({ image, text }: ItemProps) {
   return (
     <div className="flex flex-col">
       <Image
@@ -19,5 +19,4 @@ const DonationTitle: React.FC<ItemProps> = ({ image, text }) => {
       <p className="font-bold italic text-starick-brown">{text}</p>
     </div>
   );
-};
-export default DonationTitle;
+}
