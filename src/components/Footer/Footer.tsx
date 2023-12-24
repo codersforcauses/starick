@@ -3,8 +3,8 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <>
-    {/* only in large window will g */}
-      <footer className="lg:sticky bottom-0 grid bg-[#C3C9A0] p-0 lg:grid-cols-[2fr_1.2fr_1fr] ">
+      {/* only in large window will g */}
+      <footer className="bottom-0 grid bg-[#C3C9A0] p-0 lg:sticky lg:grid-cols-[2fr_1.2fr_1fr] ">
         <Flag></Flag>
         <Contact></Contact>
         <Email></Email>
@@ -42,7 +42,7 @@ const Flag = () => {
         </p>
       </div>
 
-      <p className="pb-1 font-normal text-black mb-1  ">
+      <p className="mb-1 pb-1 font-normal text-black  ">
         © 2023 Starick. All Rights Reserved. |{" "}
         <a href="#" className="hover:underline">
           Privacy & Disclaimer
