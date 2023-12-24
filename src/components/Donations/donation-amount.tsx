@@ -9,7 +9,11 @@ interface ItemProps {
   description: string;
 }
 
-const DonationAmount: React.FC<ItemProps> = ({ pos, amount, description }) => {
+export default function DonationAmount({
+  pos,
+  amount,
+  description
+}: ItemProps) {
   if (pos) {
     return (
       <div className="grid grid-cols-2 place-items-center">
@@ -49,5 +53,4 @@ const DonationAmount: React.FC<ItemProps> = ({ pos, amount, description }) => {
       </div>
     );
   }
-};
-export default DonationAmount;
+}
