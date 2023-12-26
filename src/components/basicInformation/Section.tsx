@@ -2,14 +2,17 @@ import SectionTitle from "@/components/basicInformation/utility/SectionTitle";
 import Image from "next/image";
 import { ReactNode } from "react";
 interface SectionProp {
+  sectionId: string;
+  key: string;
   titleBackgroundColor: string;
   titleTextColor: string;
   titleContent: string;
   contentBody: ReactNode;
   iconPath: string;
-  isIconLeftSide: boolean;
 }
 export default function Section({
+  sectionId,
+  key,
   titleBackgroundColor,
   titleTextColor,
   titleContent,
@@ -17,7 +20,7 @@ export default function Section({
   iconPath
 }: SectionProp) {
   return (
-    <div className=" flex flex-col pb-20">
+    <div className=" flex flex-col pb-20" id={sectionId}>
       {/* section title */}
       <div>
         <SectionTitle
@@ -30,7 +33,7 @@ export default function Section({
       <div className="px-4 md:px-6">
         <div className=" flex justify-center md:px-24">
           {/* img */}
-          <div className="w-1/4">
+          <div className="w-1/5">
             <Image
               src={iconPath}
               alt="a"
@@ -41,7 +44,7 @@ export default function Section({
             />
           </div>
           {/* text */}
-          <div className="w-3/4 p-4 md:p-8">{contentBody}</div>
+          <div className="ml-2 w-4/5  pt-4 md:pt-8">{contentBody}</div>
         </div>
       </div>
     </div>

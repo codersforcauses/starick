@@ -5,17 +5,18 @@ import Section from "@/components/basicInformation/Section";
 import internal from "stream";
 
 type Section = {
+  sectionId: string;
   titleBackgroundColor: string;
   titleTextColor: string;
   titleContent: string;
   contentBody: ReactNode;
   iconPath: string;
-  isIconLeftSide: boolean;
   key: string;
 };
 
 const sections: Section[] = [
   {
+    sectionId: "section1",
     key: "1",
     titleBackgroundColor: "--starick-green",
     titleTextColor: "--starick-white",
@@ -53,10 +54,10 @@ const sections: Section[] = [
         </span>
       </div>
     ),
-    iconPath: "/images/did-you-know.png",
-    isIconLeftSide: true
+    iconPath: "/images/did-you-know.png"
   },
   {
+    sectionId: "section2",
     key: "2",
     titleBackgroundColor: "--starick-olive",
     titleTextColor: "--starick-black",
@@ -174,10 +175,10 @@ const sections: Section[] = [
         </div>
       </div>
     ),
-    iconPath: "/images/reports.png",
-    isIconLeftSide: true
+    iconPath: "/images/reports.png"
   },
   {
+    sectionId: "section3",
     key: "3",
     titleBackgroundColor: "--starick-green",
     titleTextColor: "--starick-white",
@@ -206,16 +207,16 @@ const sections: Section[] = [
         </div>
       </div>
     ),
-    iconPath: "/images/health.png",
-    isIconLeftSide: true
+    iconPath: "/images/health.png"
   },
   {
+    sectionId: "section4",
     key: "4",
     titleBackgroundColor: "--starick-olive",
     titleTextColor: "--starick-black",
     titleContent: "Recognising the signs",
     iconPath: "/images/important.png",
-    isIconLeftSide: true,
+
     contentBody: (
       <div className="text-3xl">
         <p className="font-bold">
@@ -291,7 +292,6 @@ export default function BasicInormation() {
             titleContent={section.titleContent}
             titleTextColor={section.titleTextColor}
             iconPath={section.iconPath}
-            isIconLeftSide={section.isIconLeftSide}
             contentBody={section.contentBody}
           />
         ))}
