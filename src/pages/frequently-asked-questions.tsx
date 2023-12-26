@@ -465,7 +465,7 @@ export default function Questions() {
       </div>
 
       {/* nav drop--down menu */}
-      <div className="px-20 pt-20">
+      <div className="px-4 pt-6 md:px-20 md:pt-20">
         <button
           className=" inline-flex w-full rounded-lg bg-[--starick-white] px-4 py-2 shadow-sm ring-1 ring-inset ring-gray-300"
           onClick={() => {

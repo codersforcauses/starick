@@ -31,7 +31,7 @@ export default function Section({
       </div>
       {/* section content */}
       <div className="px-4 md:px-6">
-        <div className=" flex justify-center md:px-24">
+        <div className=" flex justify-center md:px-12">
           {/* img */}
           <div className="w-1/5">
             <Image

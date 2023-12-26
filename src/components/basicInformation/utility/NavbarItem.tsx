@@ -7,7 +7,7 @@ interface NavbarItemProp {
 export default function NavbarItem({ href, key, text }: NavbarItemProp) {
   return (
     <div className=" w-full rounded-lg bg-[--starick-white] px-4 py-2 shadow-sm ring-1 ring-inset ring-gray-300">
-      <a href={`#${href}`} className="">
+      <a href={`#${href}`} className="text-slate-400">
         {text}
       </a>
     </div>

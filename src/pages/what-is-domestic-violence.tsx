@@ -85,7 +85,15 @@ const sections: Section[] = [
         <p>
           Taking, stealing or controlling your money, denying you access to
           money or telling you what you can and can’t buy. You'll find more
-          information on financial abuse and how to deal with it here.
+          information on financial abuse and how to deal with it{" "}
+          <a
+            href="https://yourtoolkit.com/"
+            className="underline underline-offset-auto"
+          >
+            {" "}
+            here
+          </a>
+          .
         </p>
         <br />
         <p className=" font-bold">Sexual abuse</p>
