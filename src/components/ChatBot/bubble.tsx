@@ -2,7 +2,7 @@ import React from "react";
 
 function Bubble() {
   return (
-    <div className="flex h-[60px] w-[60px] items-center justify-center rounded-[50%] bg-[--starick-orange]">
+    <div className="flex h-[60px] w-[60px] items-center justify-center rounded-[50%] bg-starick-orange">
       <svg width="36" height="36" viewBox="0 0 36 36">
         <path
           fill="white"

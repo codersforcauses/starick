@@ -86,8 +86,8 @@ export default function ChildSafeResources() {
       <div className="px-10 md:px-20 lg:px-32">
         <SectionTitle
           text="Child Safe Template"
-          backgroundColour="[--starick-green]"
-          textColour="[--starick-white]"
+          backgroundColour="starick-green"
+          textColour="starick-white"
           iconPath="/images/ResourcesToolkits/child-safe-templates-icon.png"
         />
       </div>
@@ -103,15 +103,15 @@ export default function ChildSafeResources() {
       <div className="px-10 md:px-20 lg:px-32">
         <SectionTitle
           text="Posters"
-          backgroundColour="[--starick-brown]"
-          textColour="[--starick-white]"
+          backgroundColour="starick-brown"
+          textColour="starick-white"
           iconPath="/images/ResourcesToolkits/child-safe-templates-icon.png"
         />
       </div>
 
       <div className="px-20 py-10 md:px-40 md:py-20 lg:px-60">
         <ChildSafeItem
-          backgroundColor="olive"
+          backgroundColor="starick-olive"
           text="UN Convention on the Rights of the Child"
         />
       </div>
@@ -119,7 +119,7 @@ export default function ChildSafeResources() {
       <div className="px-10 md:px-20 lg:px-32">
         <SectionTitle
           text="External Resources"
-          backgroundColour="[--starick-olive]"
+          backgroundColour="starick-olive"
           textColour="black"
           iconPath="/images/ResourcesToolkits/child-safe-templates-icon.png"
         />
