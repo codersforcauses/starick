@@ -295,6 +295,7 @@ export default function BasicInormation() {
       <div className="flex flex-col p-4 md:px-40 md:py-20">
         {sections.map((section) => (
           <Section
+            sectionId={section.sectionId}
             key={section.key}
             titleBackgroundColor={section.titleBackgroundColor}
             titleContent={section.titleContent}
