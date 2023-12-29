@@ -18,8 +18,8 @@ const sections: Section[] = [
   {
     sectionId: "section1",
     key: "1",
-    titleBackgroundColor: "--starick-green",
-    titleTextColor: "--starick-white",
+    titleBackgroundColor: "starick-green",
+    titleTextColor: "starick-white",
     titleContent: "What is Domestic Violence?",
     contentBody: (
       <div className="text-3xl">
@@ -59,8 +59,8 @@ const sections: Section[] = [
   {
     sectionId: "section2",
     key: "2",
-    titleBackgroundColor: "--starick-olive",
-    titleTextColor: "--starick-black",
+    titleBackgroundColor: "starick-olive",
+    titleTextColor: "starick-black",
     titleContent: "Types of Abuse",
     contentBody: (
       <div className="text-3xl">
@@ -188,8 +188,8 @@ const sections: Section[] = [
   {
     sectionId: "section3",
     key: "3",
-    titleBackgroundColor: "--starick-green",
-    titleTextColor: "--starick-white",
+    titleBackgroundColor: "starick-green",
+    titleTextColor: "starick-white",
     titleContent: "Your rights as a human being",
     contentBody: (
       <div className="text-3xl">
@@ -220,8 +220,8 @@ const sections: Section[] = [
   {
     sectionId: "section4",
     key: "4",
-    titleBackgroundColor: "--starick-olive",
-    titleTextColor: "--starick-black",
+    titleBackgroundColor: "starick-olive",
+    titleTextColor: "starick-black",
     titleContent: "Recognising the signs",
     iconPath: "/images/important.png",
 
@@ -276,7 +276,7 @@ const sections: Section[] = [
 export default function BasicInormation() {
   return (
     // baner
-    <div className="bg-[--starick-white]">
+    <div className="bg-starick-white">
       <div className=" pb-10">
         <Image
           src="/images/starick-image1.jpg"
@@ -287,7 +287,7 @@ export default function BasicInormation() {
         />
       </div>
       <div className="relative -mt-28  w-fit rounded-r-full bg-white px-20 py-4">
-        <p className=" text-5xl font-extrabold text-[--starick-brown]">
+        <p className=" text-5xl font-extrabold text-starick-brown">
           What is Domestic Violence?
         </p>
       </div>
@@ -306,7 +306,7 @@ export default function BasicInormation() {
         ))}
         <div className="flex flex-row justify-center py-20">
           <a href={`/frequently-asked-questions`}>
-            <button className="rounded-3xl bg-[--starick-brown] px-12 py-6 text-3xl  font-semibold text-white ">
+            <button className="rounded-3xl bg-starick-brown px-12 py-6 text-3xl  font-semibold text-white ">
               Frequently Asked Questions
             </button>
           </a>

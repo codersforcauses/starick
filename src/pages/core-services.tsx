@@ -1,29 +1,51 @@
-import CounsellingSection from '../components/services/core-services/counselling'
-import RefugesSection from '../components/services/core-services/refuges'
-import PoliceSection from '../components/services/core-services/police-stations';
-import SafeAtHomeSection from '../components/services/core-services/safe-at-home';
-import TransitionalHousingSection from '../components/services/core-services/transitional-housing';
-import Link from 'next/link';
+import Link from "next/link";
+
+import InPageNav from "@/components/InPageNav";
+
+import CounsellingSection from "../components/Services/CoreServices/counselling";
+import PoliceSection from "../components/Services/CoreServices/police-stations";
+import RefugesSection from "../components/Services/CoreServices/refuges";
+import SafeAtHomeSection from "../components/Services/CoreServices/safe-at-home";
+import TransitionalHousingSection from "../components/Services/CoreServices/transitional-housing";
+import Banner from "@/components/Services/banner";
 
 export default function CoreServices() {
-    return (
-        <>
-            <div>
-                <img src={"images/starick-image1.jpg"} className="w-full" alt=""></img>
-                <div className="bg-white -mt-20 relative rounded-r-full w-fit mb-6 px-14">
-                    <p className="text-[--starick-brown] font-bold text-4xl p-2">Core Services</p>
-                </div>
-            </div>
-            <CounsellingSection />
-            <RefugesSection />
-            <TransitionalHousingSection />
-            <PoliceSection />
-            <SafeAtHomeSection />
-            <div className="bg-[--starick-white] py-10 flex justify-center items-center">
-                <button className="bg-[--starick-brown] hover:bg-[--starick-black] rounded-2xl p-5 text-white text-lg">
-                    <Link href="/other-services">Other Services</Link>
-                </button>
-            </div>
-        </>
-    );
+  const navLinkDetails = [
+    {
+      href: "#Counselling Services",
+      name: "Counselling Services"
+    },
+    {
+      href: "#Refuges",
+      name: "Refuges"
+    },
+    {
+      href: "#Transitional Housing",
+      name: "Transitional Housing"
+    },
+    {
+      href: "#Support in Police Stations",
+      name: "Support at Police Stations"
+    },
+    {
+      href: "#Safe at Home Program",
+      name: "Safe at Home Program"
+    }
+  ];
+  return (
+    <>
+      <Banner titleText="Core Services" />
+      <InPageNav list={navLinkDetails}></InPageNav>
+      <CounsellingSection />
+      <RefugesSection />
+      <TransitionalHousingSection />
+      <PoliceSection />
+      <SafeAtHomeSection />
+      <div className="flex items-center justify-center bg-starick-white py-10">
+        <button className="rounded-2xl bg-starick-brown p-5 text-lg text-white hover:bg-starick-black">
+          <Link href="/other-services">Other Services</Link>
+        </button>
+      </div>
+    </>
+  );
 }

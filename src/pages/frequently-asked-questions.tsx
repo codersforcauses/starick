@@ -60,8 +60,8 @@ const sections: Section[] = [
   {
     sectionId: "section1",
     key: "1",
-    titleBackgroundColor: "--starick-green",
-    titleTextColor: "--starick-white",
+    titleBackgroundColor: "starick-green",
+    titleTextColor: "starick-white",
     titleContent:
       "What should I do if someone I know is experiencing domestic or family violence?",
     contentBody: (
@@ -96,8 +96,8 @@ const sections: Section[] = [
   {
     sectionId: "section2",
     key: "2",
-    titleBackgroundColor: "--starick-olive",
-    titleTextColor: "--starick-black",
+    titleBackgroundColor: "starick-olive",
+    titleTextColor: "starick-black",
     titleContent: "How do I report an incident of domestic or family violence?",
     contentBody: (
       <div className="text-3xl">
@@ -130,8 +130,8 @@ const sections: Section[] = [
   {
     sectionId: "section3",
     key: "3",
-    titleBackgroundColor: "--starick-green",
-    titleTextColor: "--starick-white",
+    titleBackgroundColor: "starick-green",
+    titleTextColor: "starick-white",
     titleContent: "How do I get into a Starick refuge?",
     contentBody: (
       <div className="text-3xl">
@@ -164,8 +164,8 @@ const sections: Section[] = [
   {
     sectionId: "section4",
     key: "4",
-    titleBackgroundColor: "--starick-olive",
-    titleTextColor: "--starick-black",
+    titleBackgroundColor: "starick-olive",
+    titleTextColor: "starick-black",
     titleContent: "What can I take with me to the refuge?",
     iconPath: "/images/gift.png",
     contentBody: (
@@ -185,8 +185,8 @@ const sections: Section[] = [
   {
     sectionId: "section5",
     key: "5",
-    titleBackgroundColor: "--starick-green",
-    titleTextColor: "--starick-white",
+    titleBackgroundColor: "starick-green",
+    titleTextColor: "starick-white",
     titleContent: "Can I bring my pet to the refuge?",
     iconPath: "/images/heart.png",
     contentBody: (
@@ -228,8 +228,8 @@ const sections: Section[] = [
   {
     sectionId: "section6",
     key: "6",
-    titleBackgroundColor: "--starick-olive",
-    titleTextColor: "--starick-black",
+    titleBackgroundColor: "starick-olive",
+    titleTextColor: "starick-black",
     titleContent: "How long can I stay at the refuge?",
     iconPath: "/images/did-you-know.png",
     contentBody: (
@@ -245,8 +245,8 @@ const sections: Section[] = [
   {
     sectionId: "section7",
     key: "7",
-    titleBackgroundColor: "--starick-green",
-    titleTextColor: "--starick-white",
+    titleBackgroundColor: "starick-green",
+    titleTextColor: "starick-white",
     titleContent: "How does witnessing domestic violence affect children?",
     iconPath: "/images/did-you-know.png",
     contentBody: (
@@ -265,8 +265,8 @@ const sections: Section[] = [
   {
     sectionId: "section8",
     key: "8",
-    titleBackgroundColor: "--starick-olive",
-    titleTextColor: "--starick-black",
+    titleBackgroundColor: "starick-olive",
+    titleTextColor: "starick-black",
     titleContent: "What is outreach?",
     iconPath: "/images/did-you-know.png",
     contentBody: (
@@ -352,8 +352,8 @@ const sections: Section[] = [
   {
     sectionId: "section9",
     key: "9",
-    titleBackgroundColor: "--starick-green",
-    titleTextColor: "--starick-white",
+    titleBackgroundColor: "starick-green",
+    titleTextColor: "starick-white",
     titleContent: "What is a child advocate?",
     iconPath: "/images/did-you-know.png",
     contentBody: (
@@ -370,8 +370,8 @@ const sections: Section[] = [
   {
     sectionId: "section10",
     key: "10",
-    titleBackgroundColor: "--starick-olive",
-    titleTextColor: "--starick-black",
+    titleBackgroundColor: "starick-olive",
+    titleTextColor: "starick-black",
     titleContent: "What is a women’s advocate?",
     iconPath: "/images/did-you-know.png",
     contentBody: (
@@ -387,8 +387,8 @@ const sections: Section[] = [
   {
     sectionId: "section11",
     key: "11",
-    titleBackgroundColor: "--starick-green",
-    titleTextColor: "--starick-white",
+    titleBackgroundColor: "starick-green",
+    titleTextColor: "starick-white",
     titleContent: "What is a domestic violence advocate?",
     iconPath: "/images/did-you-know.png",
     contentBody: (
@@ -406,8 +406,8 @@ const sections: Section[] = [
   {
     sectionId: "section12",
     key: "12",
-    titleBackgroundColor: "--starick-olive",
-    titleTextColor: "--starick-black",
+    titleBackgroundColor: "starick-olive",
+    titleTextColor: "starick-black",
     titleContent: "What is HOWIC?",
     iconPath: "/images/did-you-know.png",
     contentBody: (
@@ -425,8 +425,8 @@ const sections: Section[] = [
   {
     sectionId: "section13",
     key: "13",
-    titleBackgroundColor: "--starick-green",
-    titleTextColor: "--starick-white",
+    titleBackgroundColor: "starick-green",
+    titleTextColor: "starick-white",
     titleContent: "What is a housing cluster?",
     iconPath: "/images/did-you-know.png",
     contentBody: (
@@ -444,7 +444,7 @@ export default function Questions() {
   const [isDisplayed, setIsDisplayed] = useState(true);
 
   return (
-    <div className="bg-[--starick-white]">
+    <div className="bg-starick-white">
       <div className="relative  ">
         <div className="">
           <Image
@@ -455,7 +455,7 @@ export default function Questions() {
             layout="responsive"
           />
         </div>
-        <div className=" absolute inset-y-0 left-0 z-10 w-2/3 rounded-r-full bg-[--starick-green]">
+        <div className=" absolute inset-y-0 left-0 z-10 w-2/3 rounded-r-full bg-starick-green">
           <div className="flex h-full items-center justify-center text-4xl">
             <p className=" text-[40px] font-black text-white">
               Frequently Asked Questions
@@ -467,7 +467,7 @@ export default function Questions() {
       {/* nav drop--down menu */}
       <div className="px-4 pt-6 md:px-20 md:pt-20">
         <button
-          className=" inline-flex w-full rounded-lg bg-[--starick-white] px-4 py-2 shadow-sm ring-1 ring-inset ring-gray-300"
+          className=" inline-flex w-full rounded-lg bg-starick-white px-4 py-2 shadow-sm ring-1 ring-inset ring-gray-300"
           onClick={() => {
             setIsDisplayed(!isDisplayed);
           }}

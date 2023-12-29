@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "format": "prettier --write .",
+    "format": "prettier . --write '!./data' '!./.next'",
+    "format:check": "prettier . --check '!./data' '!./.next'",
     "test": "dotenv -e .env -- mocha"
   },
   "dependencies": {
@@ -17,11 +18,15 @@
     "next": "^13.5.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-hook-form": "^7.43.9"
+    "react-hook-form": "^7.43.9",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
+    "@paypal/checkout-server-sdk": "^1.0.3",
+    "@paypal/react-paypal-js": "^8.1.3",
     "@types/mocha": "^10.0.1",
     "@types/node": "^20.2.4",
+    "@types/paypal__checkout-server-sdk": "^1.0.8",
     "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",
     "@typescript-eslint/eslint-plugin": "^5.59.7",
