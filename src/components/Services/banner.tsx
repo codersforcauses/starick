@@ -18,11 +18,11 @@ export default function Banner({ titleText, subtitleText }: BannerProps) {
             : "-mt-14 mb-2 md:-mt-28 md:mb-4"
         }`}
       >
-        <p className="text-2xl font-bold text-[--starick-brown] md:p-2 md:text-5xl">
+        <p className="text-2xl font-bold text-starick-brown md:p-2 md:text-5xl">
           {titleText}
         </p>
         {subtitleText ? (
-          <p className="text-md text-center font-bold text-[--starick-brown] md:p-2 md:text-4xl">
+          <p className="text-md text-center font-bold text-starick-brown md:p-2 md:text-4xl">
             {subtitleText}
           </p>
         ) : null}

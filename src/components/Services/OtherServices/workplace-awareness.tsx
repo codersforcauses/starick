@@ -161,8 +161,8 @@ export default function WorkplaceAwarenessSection() {
   );
   return (
     <ServicesSection
-      titleTextColour="[--starick-white]"
-      titleBackgroundColour="[--starick-green]"
+      titleTextColour="starick-white"
+      titleBackgroundColour="starick-green"
       sectionBody={body}
       title="Workplace Awareness"
       iconPath=""

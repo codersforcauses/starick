@@ -46,8 +46,8 @@ export default function PoliceSection() {
   );
   return (
     <ServicesSection
-      titleTextColour="[--starick-black]"
-      titleBackgroundColour="[--starick-olive]"
+      titleTextColour="starick-black"
+      titleBackgroundColour="starick-olive"
       sectionBody={body}
       title="Support in Police Stations"
       iconPath="icons/police-justice.svg"
