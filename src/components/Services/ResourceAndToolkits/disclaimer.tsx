@@ -1,6 +1,6 @@
 export default function Disclaimer() {
   return (
-    <div className="h-auto w-full bg-[--starick-brown] px-20 py-10 text-[--starick-white] md:px-40 lg:px-60">
+    <div className="h-auto w-full bg-starick-brown px-20 py-10 text-starick-white md:px-40 lg:px-60">
       <p className="text-center text-xl font-semibold">Disclaimer</p>
 
       <p className="mb-4 mt-6">
