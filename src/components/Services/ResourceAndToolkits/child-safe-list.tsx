@@ -13,7 +13,7 @@ export default function ChildSafeList({ itemList }: ChildSafeListProps) {
       {itemList.map((child, index) => (
         <ChildSafeItem
           key={index}
-          backgroundColor={child.backgroundColor} // Assuming order is a number
+          backgroundColor={child.backgroundColor}
           text={child.text}
         />
       ))}

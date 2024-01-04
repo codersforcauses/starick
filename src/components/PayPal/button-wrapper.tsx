@@ -45,9 +45,8 @@ export default function ButtonWrapper(showSpinner: { showSpinner: boolean }) {
       {showSpinner && isPending && <div className="spinner" />}
       <PayPalButtons
         fundingSource="paypal"
-        style={{ layout: "horizontal" }}
+        className="layout-horizontal z-0"
         disabled={false}
-        forceReRender={[{ layout: "horizontal" }]}
         createOrder={createOrder}
         onApprove={onApprove}
       />

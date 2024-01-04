@@ -11,9 +11,18 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))"
+      },
+      colors: {
+        "starick-green": "#738c4a",
+        "starick-brown": "#726658",
+        "starick-orange": "#e86e34",
+        "starick-olive": "#c3c9a0",
+        "starick-white": "#f3f4f6",
+        "starick-black": "#030712",
+        "messenger-grey": "#f0f0f0"
       }
     }
   },
-  safelist: ["bg-[--starick-olive]"],
+  safelist: [],
   plugins: []
 };

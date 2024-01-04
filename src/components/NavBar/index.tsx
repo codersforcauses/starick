@@ -16,7 +16,7 @@ const NavBar = () => {
     setHamburgerMenuOpen(hamburgerMenuOpen ? false : true);
 
   return (
-    <nav className="fixed left-0 right-0 top-0 z-10 flex h-14 items-center justify-between bg-white px-4">
+    <nav className="fixed left-0 right-0 top-0 z-10 flex h-14 items-center justify-between whitespace-nowrap bg-white px-4">
       {/* Left nav container (logo and links) */}
       <div className="flex basis-auto items-center justify-center">
         {/* Header container */}
@@ -60,7 +60,7 @@ const NavBar = () => {
             } fixed bottom-5 left-20 lg:static lg:block`}
           >
             <NavItem
-              classNames="bg-[--starick-orange] text-[--starick-white] p-2 rounded-lg"
+              classNames="bg-starick-orange text-starick-white p-2 rounded-lg"
               link={{ href: "/help", label: "Seek Help" }}
             />
           </li>
@@ -71,7 +71,7 @@ const NavBar = () => {
             } fixed bottom-5 right-20 lg:static lg:block`}
           >
             <NavItem
-              classNames="bg-[--starick-green] text-[--starick-white] p-2 rounded-lg"
+              classNames="bg-starick-green text-starick-white p-2 rounded-lg"
               link={{ href: "/donate", label: "Donate" }}
             />
           </li>
@@ -81,17 +81,17 @@ const NavBar = () => {
               <div
                 className={`${
                   hamburgerMenuOpen ? styles.responsiveHamburgerTop : ""
-                } my-1 h-1 w-7 bg-[--starick-green] transition duration-300`}
+                } my-1 h-1 w-7 bg-starick-green transition duration-300`}
               ></div>
               <div
                 className={`${
                   hamburgerMenuOpen ? styles.responsiveHamburgerMiddle : ""
-                } my-1 h-1 w-7 bg-[--starick-green] transition duration-300`}
+                } my-1 h-1 w-7 bg-starick-green transition duration-300`}
               ></div>
               <div
                 className={`${
                   hamburgerMenuOpen ? styles.responsiveHamburgerBottom : ""
-                } my-1 h-1 w-7 bg-[--starick-green] transition duration-300`}
+                } my-1 h-1 w-7 bg-starick-green transition duration-300`}
               ></div>
             </button>
           </li>

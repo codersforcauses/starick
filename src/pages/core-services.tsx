@@ -41,8 +41,8 @@ export default function CoreServices() {
       <TransitionalHousingSection />
       <PoliceSection />
       <SafeAtHomeSection />
-      <div className="flex items-center justify-center bg-[--starick-white] py-10">
-        <button className="rounded-2xl bg-[--starick-brown] p-5 text-lg text-white hover:bg-[--starick-black]">
+      <div className="flex items-center justify-center bg-starick-white py-10">
+        <button className="rounded-2xl bg-starick-brown p-5 text-lg text-white hover:bg-starick-black">
           <Link href="/other-services">Other Services</Link>
         </button>
       </div>

@@ -31,8 +31,8 @@ export default function CounsellingSection() {
   );
   return (
     <ServicesSection
-      titleTextColour="[--starick-white]"
-      titleBackgroundColour="[--starick-green]"
+      titleTextColour="starick-white"
+      titleBackgroundColour="starick-green"
       sectionBody={body}
       title="Counselling Services"
       iconPath="icons/speech.svg"

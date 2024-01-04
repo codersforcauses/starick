@@ -39,8 +39,8 @@ export default function TransitionalHousingSection() {
   );
   return (
     <ServicesSection
-      titleTextColour="[--starick-white]"
-      titleBackgroundColour="[--starick-green]"
+      titleTextColour="starick-white"
+      titleBackgroundColour="starick-green"
       sectionBody={body}
       title="Transitional Housing"
       iconPath="icons/houses.svg"
