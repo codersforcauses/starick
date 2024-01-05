@@ -1,12 +1,34 @@
 import Image from "next/image";
+import Link from "next/link";
 
+import AboriginalFlag from "~/aboriginal_flags/aboriginal-flag-150x150.png";
+import AboriginalFlagBlue from "~/aboriginal_flags/aboriginal-flag-blue-150x150.png";
+
+interface SiteMap {
+  title: string;
+  link: string;
+}
+type Props = {
+  children: SiteMap[];
+};
+{
+  /* write the sitemap's title and link here */
+}
+const SiteMaps: SiteMap[] = [
+  { title: "Site map / links to pages here", link: "#" },
+  { title: "Site map / links to pages here", link: "#" }
+];
+{
+  /* figue out the Privacy & Disclaimer link */
+}
+const PrivacyDisclaimerLink = "/privacy";
 const Footer = () => {
   return (
     <>
-      {/* only in large window will g */}
-      <footer className="bottom-0 grid bg-[#C3C9A0] p-0 lg:sticky lg:grid-cols-[2fr_1.2fr_1fr] ">
+      {/* only in large window will get the sticky effect */}
+      <footer className="bottom-0 grid items-center justify-items-center bg-[#C3C9A0] p-0 lg:sticky lg:grid-cols-[2fr_1.2fr_1fr] xl:grid-cols-[1.2fr_1fr_1fr]">
         <Flag></Flag>
-        <Contact></Contact>
+        <Contact>{SiteMaps}</Contact>
         <Email></Email>
       </footer>
     </>
@@ -15,26 +37,26 @@ const Footer = () => {
 
 const Flag = () => {
   return (
-    <div className=" text-center md:ml-6 ">
+    <div className="text-center md:ml-6">
       <div className=" flex flex-wrap items-center justify-center p-1 ">
-        <div className=" w-auto overflow-hidden  ">
+        <div className="w-auto overflow-hidden">
           <Image
-            src=""
-            alt=""
-            width="0"
-            height="0"
-            className=" float-left mr-2 h-[50px]  w-[50px]"
+            src={AboriginalFlag}
+            alt="Aboriginal Flag"
+            width={50}
+            height={50}
+            className=" float-left mr-2 mt-1 "
           />
           <Image
-            src=""
-            alt=""
-            width="0"
-            height="0"
-            className=" float-left h-[50px] w-[50px]"
+            src={AboriginalFlagBlue}
+            alt="Aboriginal Flag Blue"
+            width={50}
+            height={50}
+            className=" float-left mt-1"
           />
         </div>
 
-        <p className=" my-2 ml-3 max-w-sm text-left text-xs font-normal text-black  ">
+        <p className=" my-2 ml-3 max-w-sm text-left text-xs font-normal text-black ">
           Starick acknowledges Aboriginal and Torres Strait Islander people as
           the Traditional Custodians of this country and its waters. We pay
           respect to their Elders past and present and extend this to all
@@ -44,36 +66,35 @@ const Flag = () => {
 
       <p className="mb-1 pb-1 font-normal text-black  ">
         © 2023 Starick. All Rights Reserved. |{" "}
-        <a href="#" className="hover:underline">
+        <Link href={PrivacyDisclaimerLink} className="hover:underline">
           Privacy & Disclaimer
-        </a>
+        </Link>
       </p>
     </div>
   );
 };
 
-const Contact = () => {
+const Contact = ({ children }: Props) => {
+  const siteLists = children.map((site) => (
+    <li
+      key={site.title}
+      className="min-w-min hover:text-[#ED7328] hover:underline  "
+    >
+      <a href={site.link}>{site.title}</a>
+    </li>
+  ));
+
   return (
-    <div className="m-3 p-2 text-center lg:text-left   ">
-      <p className="min-w-min hover:underline  ">
-        <a href="#">Site map / links to pages here</a>
-      </p>
-      <p className="min-w-min hover:underline  ">
-        <a href="#">Site map / links to pages here</a>
-      </p>{" "}
-      <p className="min-w-min hover:underline  ">
-        <a href="#">Site map / links to pages here</a>
-      </p>{" "}
-      <p className="min-w-min hover:underline  ">
-        <a href="#">Site map / links to pages here</a>
-      </p>
-    </div>
+    <>
+      <ul className="m-3 p-2 text-center lg:text-left">{siteLists}</ul>
+    </>
   );
 };
+
 const Email = () => {
   return (
-    <div className=" mx-auto my-5 mb-9  lg:ml-6 lg:text-left ">
-      <p className="mb-4 text-left text-base font-normal text-black">
+    <div className="mx-auto mb-9  lg:ml-6  lg:mr-5 lg:text-left">
+      <p className="mb-2 text-center text-base font-normal text-black lg:text-left">
         Subscribe to our newsletter
       </p>
       <section className=" flex min-w-[100px] overflow-hidden ">
