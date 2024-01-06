@@ -26,7 +26,7 @@ const Footer = () => {
   return (
     <>
       {/* only in large window will get the sticky effect */}
-      <footer className="bottom-0 grid items-center justify-items-center bg-[#C3C9A0] p-0 lg:sticky lg:grid-cols-[2fr_1.2fr_1fr] xl:grid-cols-[1.2fr_1fr_1fr]">
+      <footer className="bottom-0 grid items-center justify-items-center bg-starick-olive p-0 lg:sticky lg:grid-cols-[2fr_1.2fr_1fr] xl:grid-cols-[1.2fr_1fr_1fr]">
         <Flag></Flag>
         <Contact>{SiteMaps}</Contact>
         <Email></Email>
