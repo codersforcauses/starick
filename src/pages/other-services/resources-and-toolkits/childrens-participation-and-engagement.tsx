@@ -4,7 +4,7 @@ import Section from "@/components/Services/services-section";
 import SectionTitle from "@/components/section-title";
 import ResourceToolkitItem from "@/components/Services/ResourceAndToolkits/resource-toolkit-item";
 
-import ChildParticipationResources from "~/images/ResourcesToolkits/child-participation-resources.png";
+import ChildParticipationResources from "~/images/ResourcesToolkits/page-headers/child-participation-resources.png";
 import Disclaimer from "@/components/Services/ResourceAndToolkits/disclaimer";
 import ChildSafeList from "@/components/Services/ResourceAndToolkits/child-safe-list";
 import consultingResources from "@/components/Services/ResourceAndToolkits/child-part-items/consulting-resources.json";
@@ -85,7 +85,7 @@ export default function ChildrensParticipationAndEngagement() {
             text="Powerpoint Presentation"
             backgroundColour="starick-brown"
             textColour="starick-white"
-            iconPath="/images/ResourcesToolkits/child-safe-templates-icon.png"
+            iconPath="/icons/refugees.svg"
         />
       </div>
 
@@ -98,7 +98,7 @@ export default function ChildrensParticipationAndEngagement() {
             text="Consulting Resources"
             backgroundColour="starick-olive"
             textColour="starick-black"
-            iconPath="/images/ResourcesToolkits/child-safe-templates-icon.png"
+            iconPath="/icons/refugees.svg"
         />
       </div>
       <div className="px-20 py-10 md:px-40 md:py-20 lg:px-60">
