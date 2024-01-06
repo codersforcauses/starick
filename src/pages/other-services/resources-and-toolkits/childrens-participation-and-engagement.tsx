@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import Section from "@/components/Services/services-section";
+import SectionTitle from "@/components/section-title";
 import ResourceToolkitItem from "@/components/Services/ResourceAndToolkits/resource-toolkit-item";
 
 import ChildParticipationResources from "~/images/ResourcesToolkits/child-participation-resources.png";
@@ -74,15 +75,6 @@ export default function ChildrensParticipationAndEngagement() {
         </p>
       </div>
       <Section title="The Resource Toolkit" titleBackgroundColour="starick-green" titleTextColour="starick-white" sectionBody={resourceToolkitBody} iconPath="/icons/refugees.svg"/>
-
-      <div className="px-10 md:px-20 lg:px-32">
-        <SectionTitle
-            text="The Resource Toolkit"
-            backgroundColour="starick-green"
-            textColour="starick-white"
-            iconPath="/images/ResourcesToolkits/child-safe-templates-icon.png"
-        />
-      </div>
 
       <div className="px-10 md:px-20 lg:px-32">
         <SectionTitle
