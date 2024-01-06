@@ -9,13 +9,22 @@ import Disclaimer from "@/components/Services/ResourceAndToolkits/disclaimer";
 import ChildSafeList from "@/components/Services/ResourceAndToolkits/child-safe-list";
 import consultingResources from "@/components/Services/ResourceAndToolkits/child-part-items/consulting-resources.json";
 import powerpointPresentation from "@/components/Services/ResourceAndToolkits/child-part-items/powerpoint-presentation.json";
-import resourceToolkitItems from "@/components/Services/ResourceAndToolkits/child-part-items/resource-toolkit.json"
+import resourceToolkitItems from "@/components/Services/ResourceAndToolkits/child-part-items/resource-toolkit.json";
 
 export default function ChildrensParticipationAndEngagement() {
-  const resourceToolkitBody = <>
-    {resourceToolkitItems.map((item, index) => 
-      <ResourceToolkitItem key={index} backgroundColor={index%2 == 0 ? "starick-olive" : "starick-white"} text={item.text} imageUrl={item.img} linkUrl={item.url}/>)}
-  </>
+  const resourceToolkitBody = (
+    <>
+      {resourceToolkitItems.map((item, index) => (
+        <ResourceToolkitItem
+          key={index}
+          backgroundColor={index % 2 == 0 ? "starick-olive" : "white"}
+          text={item.text}
+          imageUrl={item.img}
+          linkUrl={item.url}
+        />
+      ))}
+    </>
+  );
   return (
     <>
       <Image
@@ -78,14 +87,20 @@ export default function ChildrensParticipationAndEngagement() {
           practice.
         </p>
       </div>
-      <Section title="The Resource Toolkit" titleBackgroundColour="starick-green" titleTextColour="starick-white" sectionBody={resourceToolkitBody} iconPath="/icons/refugees.svg"/>
+      <Section
+        title="The Resource Toolkit"
+        titleBackgroundColour="starick-green"
+        titleTextColour="starick-white"
+        sectionBody={resourceToolkitBody}
+        iconPath="/icons/refugees.svg"
+      />
 
       <div className="px-10 md:px-20 lg:px-32">
         <SectionTitle
-            text="Powerpoint Presentation"
-            backgroundColour="starick-brown"
-            textColour="starick-white"
-            iconPath="/icons/refugees.svg"
+          text="Powerpoint Presentation"
+          backgroundColour="starick-brown"
+          textColour="starick-white"
+          iconPath="/icons/refugees.svg"
         />
       </div>
 
@@ -95,10 +110,10 @@ export default function ChildrensParticipationAndEngagement() {
 
       <div className="px-10 md:px-20 lg:px-32">
         <SectionTitle
-            text="Consulting Resources"
-            backgroundColour="starick-olive"
-            textColour="starick-black"
-            iconPath="/icons/refugees.svg"
+          text="Consulting Resources"
+          backgroundColour="starick-olive"
+          textColour="starick-black"
+          iconPath="/icons/refugees.svg"
         />
       </div>
       <div className="px-20 py-10 md:px-40 md:py-20 lg:px-60">
