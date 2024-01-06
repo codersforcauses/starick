@@ -1,4 +1,4 @@
-// CombinedFile.tsx
+
 import React from "react";
 import { Inter } from "next/font/google";
 import DonatingToday from 'next/image';
@@ -19,7 +19,7 @@ const CombinedFile: React.FC = () => {
         className={`flex min-h-screen items-left text-2xl justify-left p-72 ${inter.className}`}
       >
         <h1 className="">Domestic and Family Violence Support Services for Women and Children</h1>
-        <img className="home_image1" alt="Layer" src="/home/CounsellingServices.png"></img>
+        <img className="home_image1" alt="counselling services" src="/home/CounsellingServices.png"></img>
       </main>
       <div className="grid auto-rows-max">
         <div className="min-h-screen bg-light-green grid gap-10 px-10 py-20">
@@ -29,7 +29,7 @@ const CombinedFile: React.FC = () => {
             <DonatingToday
               src="/home/DonatingToday.png"
               alt="homepage main image"
-              width={1920}
+              width={2200}
               height={1080}
             />
           </div>
