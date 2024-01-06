@@ -5,6 +5,9 @@ import ResourceToolkitItem from "@/components/Services/ResourceAndToolkits/resou
 
 import ChildParticipationResources from "~/images/ResourcesToolkits/child-participation-resources.png";
 import Disclaimer from "@/components/Services/ResourceAndToolkits/disclaimer";
+import ChildSafeList from "@/components/Services/ResourceAndToolkits/child-safe-list";
+import consultingResources from "@/components/Services/ResourceAndToolkits/child-part-items/consulting-resources.json";
+import powerpointPresentation from "@/components/Services/ResourceAndToolkits/child-part-items/powerpoint-presentation.json";
 
 export default function ChildrensParticipationAndEngagement() {
   const resourceToolkitBody = <ResourceToolkitItem backgroundColor="starick-olive" text="Sample Workshop Overview and Child Consent Form"/>;
@@ -71,6 +74,40 @@ export default function ChildrensParticipationAndEngagement() {
         </p>
       </div>
       <Section title="The Resource Toolkit" titleBackgroundColour="starick-green" titleTextColour="starick-white" sectionBody={resourceToolkitBody} iconPath="/icons/refugees.svg"/>
+
+      <div className="px-10 md:px-20 lg:px-32">
+        <SectionTitle
+            text="The Resource Toolkit"
+            backgroundColour="starick-green"
+            textColour="starick-white"
+            iconPath="/images/ResourcesToolkits/child-safe-templates-icon.png"
+        />
+      </div>
+
+      <div className="px-10 md:px-20 lg:px-32">
+        <SectionTitle
+            text="Powerpoint Presentation"
+            backgroundColour="starick-brown"
+            textColour="starick-white"
+            iconPath="/images/ResourcesToolkits/child-safe-templates-icon.png"
+        />
+      </div>
+
+      <div className="px-20 py-10 md:px-40 md:py-20 lg:px-60">
+        <ChildSafeList itemList={powerpointPresentation} />
+      </div>
+
+      <div className="px-10 md:px-20 lg:px-32">
+        <SectionTitle
+            text="Consulting Resources"
+            backgroundColour="starick-olive"
+            textColour="starick-black"
+            iconPath="/images/ResourcesToolkits/child-safe-templates-icon.png"
+        />
+      </div>
+      <div className="px-20 py-10 md:px-40 md:py-20 lg:px-60">
+        <ChildSafeList itemList={consultingResources} />
+      </div>
 
       <Disclaimer />
     </>
