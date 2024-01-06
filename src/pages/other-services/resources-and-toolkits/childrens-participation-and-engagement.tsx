@@ -9,9 +9,13 @@ import Disclaimer from "@/components/Services/ResourceAndToolkits/disclaimer";
 import ChildSafeList from "@/components/Services/ResourceAndToolkits/child-safe-list";
 import consultingResources from "@/components/Services/ResourceAndToolkits/child-part-items/consulting-resources.json";
 import powerpointPresentation from "@/components/Services/ResourceAndToolkits/child-part-items/powerpoint-presentation.json";
+import resourceToolkitItems from "@/components/Services/ResourceAndToolkits/child-part-items/resource-toolkit.json"
 
 export default function ChildrensParticipationAndEngagement() {
-  const resourceToolkitBody = <ResourceToolkitItem backgroundColor="starick-olive" text="Sample Workshop Overview and Child Consent Form"/>;
+  const resourceToolkitBody = <>
+    {resourceToolkitItems.map((item, index) => 
+      <ResourceToolkitItem backgroundColor={index%2 == 0 ? "starick-olive" : "starick-white"} text={item.text}/>)}
+  </>
   return (
     <>
       <Image
