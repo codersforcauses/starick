@@ -16,23 +16,26 @@ const CombinedFile: React.FC = () => {
   return (
     <>
       <main
-        className={`flex min-h-screen items-left text-2xl justify-left p-72 ${inter.className}`}
+        className={`flex min-h-screen items-left text-2xl justify-left justify-front font-semibold mt-4 ${inter.className}`}
       >
-        <h1 className="">Domestic and Family Violence Support Services for Women and Children</h1>
-        <img className="home_image1" alt="counselling services" src="/home/CounsellingServices.png"></img>
+
+         <div className="main-h-screen">
+            <DonatingToday
+              src="/home/DonatingToday.png"
+              alt="homepage main image"
+              width={6000}
+              height={1085}
+              className="flex items-start mb-24"
+            />
+          <h1 className="">Domestic and Family Violence Support Services for Women and Children</h1>
+
+          </div>
       </main>
       <div className="grid auto-rows-max">
         <div className="min-h-screen bg-light-green grid gap-10 px-10 py-20">
           <h1 className="text-dark-green font-semibold text-3xl text-center">What We Do</h1>
           <h2 className="text-brown font-semibold text-2xl text-center">Core Services</h2>
-          <div className="main-h-screen">
-            <DonatingToday
-              src="/home/DonatingToday.png"
-              alt="homepage main image"
-              width={2200}
-              height={1085}
-            />
-          </div>
+         
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-10 px-10">
             <div className="grid gap-10">
               <CoreServiceItem text='Counselling Services' img={CounsellingServices}/>
