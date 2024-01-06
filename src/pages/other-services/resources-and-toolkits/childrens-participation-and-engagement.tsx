@@ -1,12 +1,13 @@
 import Image from "next/image";
 
-import SectionTitle from "@/components/section-title";
-import ChildSafeItem from "@/components/Services/ResourceAndToolkits/child-safe-item";
+import Section from "@/components/Services/services-section";
+import ResourceToolkitItem from "@/components/Services/ResourceAndToolkits/resource-toolkit-item";
 
 import ChildParticipationResources from "~/images/ResourcesToolkits/child-participation-resources.png";
 import Disclaimer from "@/components/Services/ResourceAndToolkits/disclaimer";
 
 export default function ChildrensParticipationAndEngagement() {
+  const resourceToolkitBody = <ResourceToolkitItem backgroundColor="starick-olive" text="Sample Workshop Overview and Child Consent Form"/>;
   return (
     <>
       <Image
@@ -69,6 +70,7 @@ export default function ChildrensParticipationAndEngagement() {
           practice.
         </p>
       </div>
+      <Section title="The Resource Toolkit" titleBackgroundColour="starick-green" titleTextColour="starick-white" sectionBody={resourceToolkitBody} iconPath="/icons/refugees.svg"/>
 
       <Disclaimer />
     </>
