@@ -75,8 +75,8 @@ const sections: Section[] = [
         <p>
           But not all abuse is physical. If someone in your life regularly
           controls, threatens or insults you, stops you using social media or
-          won't let you contact your friends, it can harm you just as much as
-          physical violence. Here are some of the forms that abuse may take:
+          won&apos;t let you contact your friends, it can harm you just as much
+          as physical violence. Here are some of the forms that abuse may take:
         </p>
 
         <br />
@@ -84,8 +84,8 @@ const sections: Section[] = [
         <br />
         <p>
           Taking, stealing or controlling your money, denying you access to
-          money or telling you what you can and can’t buy. You'll find more
-          information on financial abuse and how to deal with it{" "}
+          money or telling you what you can and can&apos;t buy. You&apos;ll find
+          more information on financial abuse and how to deal with it{" "}
           <a
             href="https://yourtoolkit.com/"
             className="underline underline-offset-auto"
@@ -100,8 +100,8 @@ const sections: Section[] = [
         <br />
         <p>
           Pressuring, manipulating or forcing you into sexual activities you
-          don’t want to do. Being "forced" also means not being in a position to
-          say no as a result of fear, threats or intimidation.
+          don’t want to do. Being &ldquo;forced&rdquo; also means not being in a
+          position to say no as a result of fear, threats or intimidation.
         </p>
         <br />
         <p className="font-bold">Emotional abuse</p>
@@ -109,7 +109,7 @@ const sections: Section[] = [
         <p>
           This form of abuse is often unrecognised and can be very hurtful. Mind
           games,manipulation, threats, humiliation, put-downs, shouting, telling
-          you that you're worthless or no good – these are all types of
+          you that you&apos;re worthless or no good – these are all types of
           emotional or psychological abuse.
         </p>
         <br />
@@ -167,7 +167,7 @@ const sections: Section[] = [
             </li>
             <li>Stealing or insisting you share your passwords</li>
             <li>
-              Constantly texting you and punishing you if you don't respond
+              Constantly texting you and punishing you if you don&apos;t respond
             </li>
             <li>
               <p>

@@ -73,19 +73,23 @@ const sections: Section[] = [
         <br />
         <p>
           If the situation is not urgent, the most important thing you can do is
-          to listen without judging, respect the person's decisions and help
-          them find ways to become stronger and safer.
+          to listen without judging, respect the person&apos;s decisions and
+          help them find ways to become stronger and safer.
         </p>
         <br />
         <p className="font-bold">Things you can say to the victim:</p>
         <div className="pl-12">
           <ul className="list-disc">
-            <li>'I believe you.'</li>
-            <li>'You do not deserve to be abused.'</li>
+            <li>&apos;I believe you.&apos;</li>
+            <li>&apos;You do not deserve to be abused.&apos;</li>
             <li>
-              'I am afraid for your safety and the safety of your children.'
+              &apos;I am afraid for your safety and the safety of your
+              children.&apos;
             </li>
-            <li>'Do you need help to find out what services are available?'</li>
+            <li>
+              &apos;Do you need help to find out what services are
+              available?&apos;
+            </li>
           </ul>
         </div>
       </div>
@@ -112,10 +116,10 @@ const sections: Section[] = [
           <ul className="list-disc">
             <li>The address where the incident is taking place</li>
             <li>Your name and telephone number</li>
-            <li>The offender's name, age and date of birth</li>
+            <li>The offender&apos;s name, age and date of birth</li>
             <li>If there any weapons involved.</li>
             <li>A description of the abuser.</li>
-            <li>The victim's name</li>
+            <li>The victim&apos;s name</li>
           </ul>
         </div>
         <br />
@@ -145,7 +149,7 @@ const sections: Section[] = [
             </li>
             <li>Any medications you or your children are taking.</li>
             <li>
-              Identification, such as birth certificates, children's
+              Identification, such as birth certificates, children&apos;s
               immunisation records, any Department of Housing documentation,
               legal documents, passports and visa information you may have.
             </li>
@@ -174,10 +178,10 @@ const sections: Section[] = [
         <p>If you have the time, you should take:</p>
         <br />
         <p>
-          Starick's crisis accommodation can be accessed by phoning the 24-hour
-          phone number – 08 9458 1107. Women can phone our refuge direct or go
-          through Crisis Care on 08 9223 1111 or 1800 199 008 (country free
-          call).
+          Starick&apos;s crisis accommodation can be accessed by phoning the
+          24-hour phone number – 08 9458 1107. Women can phone our refuge direct
+          or go through Crisis Care on 08 9223 1111 or 1800 199 008 (country
+          free call).
         </p>
       </div>
     )
@@ -209,8 +213,8 @@ const sections: Section[] = [
         <br />
         <span>
           Dogs: Temporary care of dogs may be available through Pat Giles
-          Centre's Safe Families Safe Pets (SFSP) Program. For more information,
-          visit the{" "}
+          Centre&apos;s Safe Families Safe Pets (SFSP) Program. For more
+          information, visit the{" "}
         </span>{" "}
         <span>
           {" "}
@@ -256,8 +260,8 @@ const sections: Section[] = [
           affect their behaviour, development, physical health, relationships,
           emotions, learning and thinking abilities. How quickly and completely
           children recover depends on many things, including their individual
-          personalities and strengths. If you'd like to discuss this with our
-          outreach worker, call (08) 9398 5039.
+          personalities and strengths. If you&apos;d like to discuss this with
+          our outreach worker, call (08) 9398 5039.
         </p>
       </div>
     )
@@ -305,8 +309,9 @@ const sections: Section[] = [
         <p>Outreach worker support</p>
         <br />
         <p>
-          Starick's outreach worker supports women and children in the community
-          who have escaped family and domestic violence in the following ways:
+          Starick&apos;s outreach worker supports women and children in the
+          community who have escaped family and domestic violence in the
+          following ways:
         </p>
         <br />
         <div className="pl-12">
@@ -345,7 +350,9 @@ const sections: Section[] = [
           .
         </p>
         <br />
-        <p>Starick's outreach worker can be contacted on (08) 9398 5039.</p>
+        <p>
+          Starick&apos;s outreach worker can be contacted on (08) 9398 5039.
+        </p>
       </div>
     )
   },
@@ -359,8 +366,8 @@ const sections: Section[] = [
     contentBody: (
       <div className="text-3xl">
         <p>
-          Starick's child advocates are trained professionals who assist and
-          support the children using our service. Starick recognises that
+          Starick&apos;s child advocates are trained professionals who assist
+          and support the children using our service. Starick recognises that
           children need their own advocate to ensure they receive the best
           possible outcome.
         </p>
@@ -378,8 +385,8 @@ const sections: Section[] = [
       <div className="text-3xl">
         <p className="font-bold">What is a women’s advocate?</p>
         <p>
-          Starick's women's advocates are trained professionals who assist and
-          support the women using our service.
+          Starick&apos;s women&apos;s advocates are trained professionals who
+          assist and support the women using our service.
         </p>
       </div>
     )
@@ -395,7 +402,7 @@ const sections: Section[] = [
       <div className="text-3xl">
         <p className="font-bold">What is a women’s advocate?</p>
         <p>
-          Starick's domestic violence advocates work in police stations,
+          Starick&apos;s domestic violence advocates work in police stations,
           providing assistance and support to women who have come into contact
           with the police or court system because of a family and domestic
           violence incident.
