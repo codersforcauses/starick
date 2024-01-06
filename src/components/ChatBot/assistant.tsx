@@ -55,7 +55,10 @@ function Assistant() {
   const handleEnterKey = async (event: React.KeyboardEvent) => {
     if (event.key == "Enter" && !event.shiftKey) {
       event.preventDefault();
-      const lastMessage = messages.slice(-1)[0].role;
+      var lastMessage;
+      if (messages.length > 0) {
+        lastMessage = messages.slice(-1)[0].role;
+      }
       if (lastMessage !== "assistant" || userText.length < 3) return; // prevent spamming of enter button
       const userMessage: GPTMessage = { role: "user", content: userText };
       setUserText("");
