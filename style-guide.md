@@ -48,9 +48,15 @@ export default MyComponent;
 ### `src/components/`
 
 - Try to reuse components as much as possible. If you find yourself copying and pasting code, it's probably time to refactor. If you didn't make the component, make sure to let them know or ask them for help.
-- All file and folder names here should be `lowercase.tsx`. Exported component names should be in `<PascalCase />`.
+- Folders should use PascalCase while files should use kebab-case. Exported component names should be in `<PascalCase />`.
+- Unless appropriate to do so, avoid placing a single component file in the root. (E.g. it might be appropriate if the component is a generic UI element used in many other components). Prefer creating a subfolder for it. Additionally, prefer using `index.tsx` for the main component in the subfolder. E.g. rather than `Footer/footer.tsx`, do `Footer/index.tsx`.
 
 > If you need to break a component into smaller components, create a folder with the same name as the component and create the smaller components in there. For example, if you have a component called `mycomponent.tsx` and you need to break it into smaller components, create a folder called `mycomponent` and create the smaller components in there. The main component should be called `index.tsx` (still exported as `MyComponent`).
+
+### `src/pages/` and other subfolders of `src/` except `src/components/`
+
+- Both files and folders should use kebab-case.
+- Any routes (including API routes) should use kebab-case.
 
 ## `tests/`
 

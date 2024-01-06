@@ -14,24 +14,12 @@ export const primaryNav: Array<NavBarItem> = [
     label: "Our Services",
     submenu: [
       {
-        href: "/service1",
-        label: "Service 1"
+        href: "/core-services",
+        label: "Core Services"
       },
       {
-        href: "/service2",
-        label: "Service 2"
-      },
-      {
-        href: "/service3",
-        label: "Service 3"
-      },
-      {
-        href: "/service4",
-        label: "Service 4"
-      },
-      {
-        href: "/service5",
-        label: "Service 5"
+        href: "/other-services",
+        label: "Other Services"
       }
     ]
   },
