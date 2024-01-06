@@ -14,7 +14,7 @@ import resourceToolkitItems from "@/components/Services/ResourceAndToolkits/chil
 export default function ChildrensParticipationAndEngagement() {
   const resourceToolkitBody = <>
     {resourceToolkitItems.map((item, index) => 
-      <ResourceToolkitItem backgroundColor={index%2 == 0 ? "starick-olive" : "starick-white"} text={item.text}/>)}
+      <ResourceToolkitItem key={index} backgroundColor={index%2 == 0 ? "starick-olive" : "starick-white"} text={item.text} imageUrl={item.img} linkUrl={item.url}/>)}
   </>
   return (
     <>
