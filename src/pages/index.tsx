@@ -30,7 +30,7 @@ const CombinedFile: React.FC = () => {
               src="/home/DonatingToday.png"
               alt="homepage main image"
               width={2200}
-              height={1080}
+              height={1085}
             />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-10 px-10">
