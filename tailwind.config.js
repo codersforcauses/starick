@@ -23,6 +23,6 @@ module.exports = {
       }
     }
   },
-  safelist: [],
+  safelist: ["bg-white"],
   plugins: []
 };
