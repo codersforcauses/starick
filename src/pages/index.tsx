@@ -13,7 +13,7 @@ import NavBar from "@/components/NavBar/NavBar";
 const inter = Inter({ subsets: ["latin"] });
 
 const CombinedFile: React.FC = () => {
-  return (
+  return ( 
     <>
       <main
         className={`flex min-h-screen items-left text-2xl justify-left justify-front font-semibold mt-4 ${inter.className}`}
