@@ -119,7 +119,7 @@ const Email = () => {
         />
         <button
           onClick={onSubmit}
-          className="ml-0 rounded-none rounded-r-lg bg-starick-olive  px-5 py-2 text-sm font-semibold text-white shadow-sm"
+          className="ml-0 rounded-none rounded-r-lg bg-starick-green   px-5 py-2 text-sm font-semibold text-white shadow-sm"
         >
           Submit
         </button>
