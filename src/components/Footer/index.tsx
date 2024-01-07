@@ -34,7 +34,7 @@ const Footer = () => {
   return (
     <>
       {/* only in large window will get the sticky effect */}
-      <div className="bottom-0 grid flex-grow-0 items-center justify-items-center bg-starick-olive p-0 lg:grid-cols-[2fr_1.2fr_1fr] xl:grid-cols-[1.2fr_1fr_1fr]">
+      <div className="bottom-0 grid flex-grow-0 items-center justify-items-center bg-starick-olive p-0 lg:grid-cols-12 ">
         <Flag></Flag>
         <Contact>{SiteMaps}</Contact>
         <Email></Email>
@@ -45,8 +45,8 @@ const Footer = () => {
 
 const Flag = () => {
   return (
-    <div className="text-center md:ml-6">
-      <div className=" flex flex-wrap items-center justify-center p-1 ">
+    <div className="text-center md:ml-6 lg:col-span-4">
+      <div className=" flex flex-wrap items-center justify-center p-1  ">
         <div className="w-auto overflow-hidden">
           <Image
             src={AboriginalFlag}
@@ -76,7 +76,7 @@ const Flag = () => {
         © 2023 Starick. All Rights Reserved. |{" "}
         <Link
           href={PrivacyDisclaimerLink}
-          className=" transition ease-in-out hover:text-starick-orange hover:underline"
+          className=" hover:text-starick-orange hover:underline"
         >
           Privacy & Disclaimer
         </Link>
@@ -87,39 +87,38 @@ const Flag = () => {
 
 const Contact = ({ children }: Props) => {
   const siteLists = children.map((site) => (
-    <li
-      key={site.title}
-      className=" transition ease-in-out hover:text-starick-orange hover:underline"
-    >
+    <li key={site.title} className=" hover:text-starick-orange hover:underline">
       <a href={site.link}>{site.title}</a>
     </li>
   ));
 
   return (
     <>
-      <ul className="m-3 p-2 text-center lg:text-left">{siteLists}</ul>
+      <ul className="m-3 p-2 text-center lg:col-span-4 lg:text-left">
+        {siteLists}
+      </ul>
     </>
   );
 };
 
 const Email = () => {
   return (
-    <div className=" mx-auto  mb-9 lg:mb-2 lg:ml-6  lg:mr-5 lg:text-left">
+    <div className="mx-auto mb-9  lg:col-span-4 lg:mb-2 lg:ml-6  lg:mr-5 lg:text-left">
       <p className="mb-2 text-center text-base font-normal text-black lg:text-left">
         Subscribe to our newsletter
       </p>
-      <section className=" flex min-w-[100px] overflow-hidden ">
+      <section>
         <input
           type="email"
           name="email"
-          className=" rounded-l-lg px-5 py-2 placeholder-slate-400  shadow-sm outline-none ring-0 
-          invalid:border-starick-orange invalid:text-starick-orange focus:ring-2 focus:ring-inset focus:ring-starick-orange focus:invalid:border-starick-orange
-          focus:invalid:ring-starick-orange sm:text-sm"
+          className=" h-full rounded-l-lg px-5 py-2 text-sm  placeholder-slate-400 shadow-sm outline-none 
+          ring-0 invalid:border-starick-orange invalid:text-starick-orange focus:ring-2 focus:ring-inset focus:ring-starick-orange
+          focus:invalid:border-starick-orange focus:invalid:ring-starick-orange"
           placeholder="you@example.com"
         />
         <button
           onClick={onSubmit}
-          className="ml-0 rounded-none rounded-r-lg bg-starick-green   px-5 py-2 text-sm font-semibold text-white shadow-sm"
+          className=" ml-0 h-full rounded-r-lg bg-starick-green px-5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-starick-orange"
         >
           Submit
         </button>

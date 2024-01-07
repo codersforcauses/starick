@@ -1,7 +1,7 @@
 import type { AppProps } from "next/app";
 
 import Assistant from "@/components/ChatBot/assistant";
-import Footer from "@/components/Footer/Footer";
+import Footer from "@/components/Footer";
 import MessengerChat from "@/components/messengerembed/messengerembed";
 import NavBar from "@/components/NavBar";
 import PanicButton from "@/components/PanicButton";
