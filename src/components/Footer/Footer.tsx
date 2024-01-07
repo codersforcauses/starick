@@ -113,13 +113,13 @@ const Email = () => {
           type="email"
           name="email"
           className=" rounded-l-lg px-5 py-2 placeholder-slate-400  shadow-sm outline-none ring-0 
-          invalid:border-[#ED7328] invalid:text-starick-orange focus:ring-2 focus:ring-inset focus:ring-[#ED7328] focus:invalid:border-[#ED7328]
-          focus:invalid:ring-[#ED7328] sm:text-sm"
+          invalid:border-starick-orange invalid:text-starick-orange focus:ring-2 focus:ring-inset focus:ring-starick-orange focus:invalid:border-starick-orange
+          focus:invalid:ring-starick-orange sm:text-sm"
           placeholder="you@example.com"
         />
         <button
           onClick={onSubmit}
-          className="ml-0 rounded-none rounded-r-lg bg-[#738C4B] px-5 py-2 text-sm font-semibold text-white shadow-sm"
+          className="ml-0 rounded-none rounded-r-lg bg-starick-olive  px-5 py-2 text-sm font-semibold text-white shadow-sm"
         >
           Submit
         </button>
