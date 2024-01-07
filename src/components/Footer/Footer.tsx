@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import AboriginalFlag from "~/aboriginal_flags/aboriginal-flag-150x150.png";
-import AboriginalFlagBlue from "~/aboriginal_flags/aboriginal-flag-blue-150x150.png";
+import TorresStraitIslanderFlag from "~/aboriginal_flags/aboriginal-flag-blue-150x150.png";
 
 interface SiteMap {
   title: string;
@@ -16,21 +16,29 @@ type Props = {
 }
 const SiteMaps: SiteMap[] = [
   { title: "Site map / links to pages here", link: "#" },
-  { title: "Site map / links to pages here", link: "#" }
+  { title: "Home", link: "/home" }
 ];
 {
   /* figue out the Privacy & Disclaimer link */
 }
 const PrivacyDisclaimerLink = "/privacy";
+
+const onSubmit = (event: React.MouseEvent<HTMLButtonElement>) => {
+  {
+    /* figue out the Privacy & Disclaimer link */
+  }
+  return event;
+};
+
 const Footer = () => {
   return (
     <>
       {/* only in large window will get the sticky effect */}
-      <footer className="bottom-0 grid items-center justify-items-center bg-starick-olive p-0 lg:sticky lg:grid-cols-[2fr_1.2fr_1fr] xl:grid-cols-[1.2fr_1fr_1fr]">
+      <div className="bottom-0 grid flex-grow-0 items-center justify-items-center bg-starick-olive p-0 lg:grid-cols-[2fr_1.2fr_1fr] xl:grid-cols-[1.2fr_1fr_1fr]">
         <Flag></Flag>
         <Contact>{SiteMaps}</Contact>
         <Email></Email>
-      </footer>
+      </div>
     </>
   );
 };
@@ -48,8 +56,8 @@ const Flag = () => {
             className=" float-left mr-2 mt-1 "
           />
           <Image
-            src={AboriginalFlagBlue}
-            alt="Aboriginal Flag Blue"
+            src={TorresStraitIslanderFlag}
+            alt="Torres Strait Islander Flag"
             width={50}
             height={50}
             className=" float-left mt-1"
@@ -66,7 +74,10 @@ const Flag = () => {
 
       <p className="mb-1 pb-1 font-normal text-black  ">
         © 2023 Starick. All Rights Reserved. |{" "}
-        <Link href={PrivacyDisclaimerLink} className="hover:underline">
+        <Link
+          href={PrivacyDisclaimerLink}
+          className=" transition ease-in-out hover:text-starick-orange hover:underline"
+        >
           Privacy & Disclaimer
         </Link>
       </p>
@@ -78,7 +89,7 @@ const Contact = ({ children }: Props) => {
   const siteLists = children.map((site) => (
     <li
       key={site.title}
-      className="min-w-min hover:text-[#ED7328] hover:underline  "
+      className=" transition ease-in-out hover:text-starick-orange hover:underline"
     >
       <a href={site.link}>{site.title}</a>
     </li>
@@ -93,7 +104,7 @@ const Contact = ({ children }: Props) => {
 
 const Email = () => {
   return (
-    <div className="mx-auto mb-9  lg:ml-6  lg:mr-5 lg:text-left">
+    <div className=" mx-auto  mb-9 lg:mb-2 lg:ml-6  lg:mr-5 lg:text-left">
       <p className="mb-2 text-center text-base font-normal text-black lg:text-left">
         Subscribe to our newsletter
       </p>
@@ -101,10 +112,15 @@ const Email = () => {
         <input
           type="email"
           name="email"
-          className=" px-5 py-2 placeholder-slate-400 shadow-sm  focus:outline-none focus:ring-1 sm:text-sm"
+          className=" rounded-l-lg px-5 py-2 placeholder-slate-400  shadow-sm outline-none ring-0 
+          invalid:border-[#ED7328] invalid:text-starick-orange focus:ring-2 focus:ring-inset focus:ring-[#ED7328] focus:invalid:border-[#ED7328]
+          focus:invalid:ring-[#ED7328] sm:text-sm"
           placeholder="you@example.com"
         />
-        <button className="ml-0 rounded-none bg-[#738C4B] px-5 py-2 text-sm font-semibold text-white shadow-sm">
+        <button
+          onClick={onSubmit}
+          className="ml-0 rounded-none rounded-r-lg bg-[#738C4B] px-5 py-2 text-sm font-semibold text-white shadow-sm"
+        >
           Submit
         </button>
       </section>
