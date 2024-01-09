@@ -6,7 +6,7 @@ import externalResources from "@/components/Services/ResourceAndToolkits/child-s
 import practiceTools from "@/components/Services/ResourceAndToolkits/child-safe-items/practice-tools.json";
 import ChildSafeList from "@/components/Services/ResourceAndToolkits/child-safe-list";
 
-import ChildSafeResourcesTitle from "~/images/ResourcesToolkits/child-safe-resources-title.png";
+import ChildSafeResourcesTitle from "~/images/ResourcesToolkits/page-headers/child-safe-resources-title.png";
 import ChildSafeItem from "@/components/Services/ResourceAndToolkits/child-safe-item";
 import Disclaimer from "@/components/Services/ResourceAndToolkits/disclaimer";
 
@@ -88,7 +88,7 @@ export default function ChildSafeResources() {
           text="Child Safe Template"
           backgroundColour="starick-green"
           textColour="starick-white"
-          iconPath="/images/ResourcesToolkits/child-safe-templates-icon.png"
+          iconPath="/icons/refugees.svg"
         />
       </div>
 
@@ -105,7 +105,7 @@ export default function ChildSafeResources() {
           text="Posters"
           backgroundColour="starick-brown"
           textColour="starick-white"
-          iconPath="/images/ResourcesToolkits/child-safe-templates-icon.png"
+          iconPath="/icons/refugees.svg"
         />
       </div>
 
@@ -121,7 +121,7 @@ export default function ChildSafeResources() {
           text="External Resources"
           backgroundColour="starick-olive"
           textColour="black"
-          iconPath="/images/ResourcesToolkits/child-safe-templates-icon.png"
+          iconPath="/icons/refugees.svg"
         />
       </div>
 
