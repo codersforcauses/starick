@@ -8,3 +8,7 @@
     text-decoration: underline;
   }
 }
+
+:has(> .next-error-h1) {
+  color: theme(colors.starick-brown);
+}
