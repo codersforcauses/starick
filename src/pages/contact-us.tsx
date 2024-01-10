@@ -12,10 +12,10 @@ export default function ContactUs() {
         </div>
       </div>
       <div className="bg-[--starick-white] px-6 py-2 md:px-32 md:py-12">
-        <div className="flex">
+        <div className="flex flex-wrap">
           <div className="basis-1/2">
-            <div className="py-5 md:px-20 ">
-              <p className="text pb-5 text-2xl font-semibold">Starick</p>
+            <div className="p-6 md:px-20 ">
+              <p className="text pb-6 text-2xl font-semibold">Starick</p>
               <p>
                 <span className="font-semibold">Refuges:</span> Phone: 08
                 9458107
@@ -37,8 +37,8 @@ export default function ContactUs() {
               </p>
             </div>
 
-            <div className="py-5 md:px-20">
-              <p className="text pb-5 text-2xl font-semibold">
+            <div className="p-6 md:px-20">
+              <p className="text pb-6 text-2xl font-semibold">
                 Starick Op Shop
               </p>
               <p>
@@ -55,7 +55,8 @@ export default function ContactUs() {
             </div>
           </div>
 
-          <div className="bg-blue basis-1/2 py-5 md:px-20 ">
+          <div className="bg-blue basis-1/2 p-6 md:px-20 ">
+
             <form
               id="mG61Hd"
               action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdom5UoasUsG7u_lMByRvLR6-VSHmiIVLksgkpmgdaAPdRcPA/formResponse"
@@ -63,7 +64,7 @@ export default function ContactUs() {
               method="POST"
             >
               <div>
-                <p className="text pb-5 text-2xl font-semibold">Send us an email</p>
+                <p className="text pb-6 text-2xl font-semibold">Send us an email</p>
                 <div>
                   <label htmlFor="firstname">First Name *</label>
                   <div>
