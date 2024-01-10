@@ -23,7 +23,46 @@ export default function ContactUs() {
                         <p>Admin hours: Mon-Fri 8:30am to 4:30pm</p>
                     </div>
                 </div>
-                <div className="bg-blue basis-1/2">World</div>
+                <div className="bg-blue basis-1/2">
+                    <form id="mG61Hd" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdom5UoasUsG7u_lMByRvLR6-VSHmiIVLksgkpmgdaAPdRcPA/formResponse" target="_self" method="POST">
+                        <div>
+                            <p>Send us an email</p>
+                            <div>
+                                <label htmlFor="firstname">First Name *</label>
+                                <div>
+                                    <input name="entry.339576848" id="firstname" type="text"></input>
+                                </div>
+                            </div>
+                            <div>
+                                <label htmlFor="lastname">Last Name *</label>
+                                <div>
+                                    <input name="entry.810035821" id="lastname" type="text"></input>
+                                </div>
+                            </div>
+                            <div>
+                                <label htmlFor="phone">Phone *</label>
+                                <div>
+                                    <input name="entry.622549956" id="phone" type="text"></input>
+                                </div>
+                            </div>
+                            <div>
+                                <label htmlFor="email">Email Address *</label>
+                                <div>
+                                    <input name="entry.2009362426" id="email" type="text"></input>
+                                </div>
+                            </div>
+                            <div>
+                                <label htmlFor="enquiry">Enquiry *</label>
+                                <div>
+                                    <textarea name="entry.1073078232" id="enquiry"></textarea>
+                                </div>
+                            </div>
+                            <div>
+                                <button type="submit">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </>
     );
