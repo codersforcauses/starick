@@ -12,5 +12,7 @@ export const chatbotPrompt: GPTMessage = {
     }
     ` +
     "If you include links in your response, they should be in markdown. " +
-    "E.g., You can access the donations link [here](https://donationlink.com)"
+    "E.g., You can access the donations link [here](https://donationlink.com) " +
+    "The very first message you send should be a short and simple introduction " +
+    "E.g. 'Hello, I am a virtual assistant, how can I help today?'"
 };

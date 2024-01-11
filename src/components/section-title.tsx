@@ -12,9 +12,9 @@ export default function SectionTitle({
   iconPath
 }: SectionTitleProps) {
   return (
-    <div className={`bg-${backgroundColour} h-24 p-3`}>
+    <div className={`bg-${backgroundColour} p-3`}>
       <div
-        className={`bg-${backgroundColour} flex h-full flex-row items-center justify-center border-4 border-solid border-[--starick-white]`}
+        className={`bg-${backgroundColour} flex flex-row items-center justify-center border-4 border-solid border-starick-white py-1`}
       >
         {iconPath ? (
           <img src={iconPath} className="mx-2 w-12" alt={text}></img>

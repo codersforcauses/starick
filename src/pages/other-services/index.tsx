@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import Banner from "@/components/Services/banner";
 import InPageNav from "@/components/InPageNav";
 import HealthAndWellbeingSection from "@/components/Services/OtherServices/health-wellbeing";
 import RespectfulRelationshipsSection from "@/components/Services/OtherServices/respectful-relationships";
@@ -32,22 +32,15 @@ export default function OtherServices() {
   ];
   return (
     <>
-      <div>
-        <img src="images/starick-image1.jpg" className="w-full" alt=""></img>
-        <div className="relative -mt-20 mb-6 w-fit rounded-r-full bg-white px-14">
-          <p className="p-2 text-4xl font-bold text-[--starick-brown]">
-            Other Services
-          </p>
-        </div>
-      </div>
+      <Banner titleText="Other Services" />
       <InPageNav list={navLinkDetails}></InPageNav>
       <RespectfulRelationshipsSection />
       <WorkWithChildrenAndYoungPeopleSection />
       <WorkplaceAwarenessSection />
       <HealthAndWellbeingSection />
       <ThrivingThroughConnectionSection />
-      <div className="flex items-center justify-center bg-[--starick-white] py-10">
-        <button className="rounded-2xl bg-[--starick-brown] p-5 text-lg text-white hover:bg-[--starick-black]">
+      <div className="flex items-center justify-center bg-starick-white py-10">
+        <button className="rounded-2xl bg-starick-brown p-5 text-lg text-white hover:bg-starick-black">
           <Link href="/core-services">Core Services</Link>
         </button>
       </div>

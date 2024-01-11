@@ -124,11 +124,11 @@ export default function RespectfulRelationshipsSection() {
         implementing RRE in schools.{" "}
       </p>
       <br></br>
-      <div className="flex justify-center gap-x-32 bg-[--starick-white] py-10">
-        <button className="rounded-2xl bg-[--starick-brown] p-5 text-lg text-white hover:bg-[--starick-black]">
+      <div className="flex justify-center gap-x-32 bg-starick-white py-10">
+        <button className="rounded-2xl bg-starick-brown p-5 text-lg text-white hover:bg-starick-black">
           <Link href="/other-services/info-for-schools">Info for schools</Link>
         </button>
-        <button className="rounded-2xl bg-[--starick-brown] p-5 text-lg text-white hover:bg-[--starick-black]">
+        <button className="rounded-2xl bg-starick-brown p-5 text-lg text-white hover:bg-starick-black">
           <Link href="/other-services/further-reading">Further reading</Link>
         </button>
       </div>
@@ -136,8 +136,8 @@ export default function RespectfulRelationshipsSection() {
   );
   return (
     <ServicesSection
-      titleTextColour="[--starick-white]"
-      titleBackgroundColour="[--starick-green]"
+      titleTextColour="starick-white"
+      titleBackgroundColour="starick-green"
       sectionBody={body}
       title="WA Respectful Relationships Teaching Support Program"
       iconPath=""
