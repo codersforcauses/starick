@@ -1,13 +1,13 @@
+import { useState } from "react";
+
+import CoreServiceItem from "@/components/Home/core-service-item";
+import Search from "@/components/SearchBar";
+
 import CounsellingServices from "~/images/CounsellingServices.png";
 import SafeAtHomeProgram from "~/images/SafeAtHomeProgram.png";
 import SupportInPoliceStations from "~/images/SupportInPoliceStations.png";
 import TransitionalHousing from "~/images/TransitionalHousing.png";
 import TwoRefuges from "~/images/TwoRefuges.png";
-import DonatingToday from "~/images/DonatingToday.png";
-import CoreServiceItem from "@/components/Home/core-service-item";
-
-import Search from "@/components/SearchBar";
-import { useState } from "react";
 
 export default function Home() {
   const [searchValue, setSearchValue] = useState("");
@@ -32,11 +32,11 @@ export default function Home() {
 
         {/* </div> */}
 
-        <div className="grid min-h-screen gap-10 bg-[--starick-olive] px-10 py-20">
-          <h1 className="text-center text-3xl font-semibold text-[--starick-green]">
+        <div className="grid min-h-screen gap-10 bg-starick-olive px-10 py-20">
+          <h1 className="text-center text-3xl font-semibold text-starick-green">
             What We Do
           </h1>
-          <h2 className="text-center text-2xl font-semibold text-[--starick-brown]">
+          <h2 className="text-center text-2xl font-semibold text-starick-brown">
             Core Services
           </h2>
 

@@ -1,8 +1,14 @@
-export function List({ items }: { items: string[] }) {
+export function List({
+  items,
+  style
+}: {
+  items: string[];
+  style: "list-disc" | "list-decimal";
+}) {
   return (
-    <ul>
+    <ul className="ml-4">
       {items.map((text, index) => (
-        <li className="list-inside list-disc" key={index}>
+        <li className={`${style} list-outside`} key={index}>
           {text}
         </li>
       ))}
