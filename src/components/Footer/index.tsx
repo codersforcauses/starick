@@ -1,3 +1,4 @@
+import { Dispatch, SetStateAction, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,6 +9,7 @@ interface SiteMap {
   title: string;
   link: string;
 }
+
 type Props = {
   children: SiteMap[];
 };
@@ -23,11 +25,22 @@ const SiteMaps: SiteMap[] = [
 }
 const PrivacyDisclaimerLink = "/privacy";
 
-const onSubmit = (event: React.MouseEvent<HTMLButtonElement>) => {
+const handleSubmit = (
+  e: React.MouseEvent,
+  userMail: string,
+  setUserMail: Dispatch<SetStateAction<string>>
+) => {
   {
+    // console.log(3);
+
     /* figue out the Privacy & Disclaimer link */
+    e.preventDefault();
+    if (!userMail) {
+      return;
+    }
+    setUserMail("");
   }
-  return event;
+  return;
 };
 
 const Footer = () => {
@@ -102,12 +115,14 @@ const Contact = ({ children }: Props) => {
 };
 
 const Email = () => {
+  const [userMail, setUserMail] = useState<string>("");
+  const [isValid, setIsValid] = useState<boolean>(true);
   return (
     <div className="mx-auto mb-9  lg:col-span-4 lg:mb-2 lg:ml-6  lg:mr-5 lg:text-left">
       <p className="mb-2 text-center text-base font-normal text-black lg:text-left">
         Subscribe to our newsletter
       </p>
-      <section>
+      <form>
         <input
           type="email"
           name="email"
@@ -115,14 +130,24 @@ const Email = () => {
           ring-0 invalid:border-starick-orange invalid:text-starick-orange focus:ring-2 focus:ring-inset focus:ring-starick-orange
           focus:invalid:border-starick-orange focus:invalid:ring-starick-orange"
           placeholder="you@example.com"
+          value={userMail}
+          onChange={(e) => {
+            const validation: boolean = e.target.checkValidity();
+            setIsValid(true);
+            if (validation) {
+              setIsValid(false);
+            }
+            setUserMail(e.target.value);
+          }}
         />
         <button
-          onClick={onSubmit}
+          onClick={(e) => handleSubmit(e, userMail, setUserMail)}
           className=" ml-0 h-full rounded-r-lg bg-starick-green px-5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-starick-orange"
+          disabled={isValid}
         >
           Submit
         </button>
-      </section>
+      </form>
     </div>
   );
 };
