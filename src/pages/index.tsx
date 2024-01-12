@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import CoreServiceItem from "@/components/Home/core-service-item";
 import Subtitle from "@/components/Home/subtitle";
 
