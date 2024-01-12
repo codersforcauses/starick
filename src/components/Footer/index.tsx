@@ -5,18 +5,18 @@ import Link from "next/link";
 import AboriginalFlag from "~/aboriginal_flags/aboriginal-flag-150x150.png";
 import TorresStraitIslanderFlag from "~/aboriginal_flags/aboriginal-flag-blue-150x150.png";
 
-interface SiteMap {
+interface SiteLink {
   title: string;
   link: string;
 }
 
 type Props = {
-  children: SiteMap[];
+  children: SiteLink[];
 };
 {
   /* write the sitemap's title and link here */
 }
-const SiteMaps: SiteMap[] = [
+const SiteLinks: SiteLink[] = [
   { title: "Site map / links to pages here", link: "#" },
   { title: "Home", link: "/home" }
 ];
@@ -25,22 +25,17 @@ const SiteMaps: SiteMap[] = [
 }
 const PrivacyDisclaimerLink = "/privacy";
 
-const handleSubmit = (
+const handleSubmit = async (
   e: React.MouseEvent,
   userMail: string,
   setUserMail: Dispatch<SetStateAction<string>>
 ) => {
-  {
-    // console.log(3);
+  /* figue out the Privacy & Disclaimer link */
+  e.preventDefault();
 
-    /* figue out the Privacy & Disclaimer link */
-    e.preventDefault();
-    if (!userMail) {
-      return;
-    }
-    setUserMail("");
-  }
-  return;
+  setUserMail("");
+
+  // send a POST and send userMail to the DB
 };
 
 const Footer = () => {
@@ -49,7 +44,7 @@ const Footer = () => {
       {/* only in large window will get the sticky effect */}
       <div className="bottom-0 grid flex-grow-0 items-center justify-items-center bg-starick-olive p-0 lg:grid-cols-12 ">
         <Flag></Flag>
-        <Contact>{SiteMaps}</Contact>
+        <Contact>{SiteLinks}</Contact>
         <Email></Email>
       </div>
     </>
@@ -116,34 +111,34 @@ const Contact = ({ children }: Props) => {
 
 const Email = () => {
   const [userMail, setUserMail] = useState<string>("");
-  const [isValid, setIsValid] = useState<boolean>(true);
+  const [isNotValid, setIsNotValid] = useState<boolean>(true);
   return (
     <div className="mx-auto mb-9  lg:col-span-4 lg:mb-2 lg:ml-6  lg:mr-5 lg:text-left">
       <p className="mb-2 text-center text-base font-normal text-black lg:text-left">
         Subscribe to our newsletter
       </p>
-      <form>
+      <form className=" relative">
         <input
           type="email"
           name="email"
-          className=" h-full rounded-l-lg px-5 py-2 text-sm  placeholder-slate-400 shadow-sm outline-none 
-          ring-0 invalid:border-starick-orange invalid:text-starick-orange focus:ring-2 focus:ring-inset focus:ring-starick-orange
+          className=" h-29 rounded-l-lg px-5 py-2 text-sm  placeholder-slate-400 shadow-sm outline-none 
+          ring-0 invalid:border-starick-orange invalid:text-red-600   focus:ring-2 focus:ring-inset focus:ring-starick-orange
           focus:invalid:border-starick-orange focus:invalid:ring-starick-orange"
           placeholder="you@example.com"
           value={userMail}
           onChange={(e) => {
             const validation: boolean = e.target.checkValidity();
-            setIsValid(true);
+            setIsNotValid(true);
             if (validation) {
-              setIsValid(false);
+              setIsNotValid(false);
             }
             setUserMail(e.target.value);
           }}
         />
         <button
           onClick={(e) => handleSubmit(e, userMail, setUserMail)}
-          className=" ml-0 h-full rounded-r-lg bg-starick-green px-5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-starick-orange"
-          disabled={isValid}
+          className=" ml-0  h-9 rounded-r-lg bg-starick-green px-5 text-center text-sm font-semibold text-white shadow-sm hover:bg-starick-orange disabled:text-starick-white "
+          disabled={isNotValid}
         >
           Submit
         </button>
