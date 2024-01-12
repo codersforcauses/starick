@@ -54,10 +54,7 @@ function Assistant() {
   const handleEnterKey = async (event: React.KeyboardEvent) => {
     if (event.key == "Enter" && !event.shiftKey) {
       event.preventDefault();
-      let lastMessage;
-      if (messages.length > 0) {
-        lastMessage = messages.slice(-1)[0].role;
-      }
+      const lastMessage = messages.slice(-1)[0].role;
       if (lastMessage !== "assistant" || userText.length < 3) return; // prevent spamming of enter button
       const userMessage: GPTMessage = { role: "user", content: userText };
       setUserText("");
@@ -99,9 +96,6 @@ function Assistant() {
             {messages.map((message, i) => (
               <Message key={i} role={message.role} content={message.content} />
             ))}
-            <button onClick={switchToMessengerEmbed}>
-              Switch to MessengerEmbed
-            </button>
           </div>
           {isLoading && (
             <div className="self-end px-6 pt-4">
@@ -109,6 +103,12 @@ function Assistant() {
             </div>
           )}
         </div>
+        <button
+          className="bg-messenger-grey text-starick-black"
+          onClick={switchToMessengerEmbed}
+        >
+          Talk to a Starick Agent
+        </button>
         {/* Text input area */}
         <div className="m-2 basis-2/12 border-t">
           <textarea
