@@ -54,7 +54,7 @@ function Assistant() {
   const handleEnterKey = async (event: React.KeyboardEvent) => {
     if (event.key == "Enter" && !event.shiftKey) {
       event.preventDefault();
-      var lastMessage;
+      let lastMessage;
       if (messages.length > 0) {
         lastMessage = messages.slice(-1)[0].role;
       }
