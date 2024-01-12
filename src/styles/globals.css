@@ -9,6 +9,7 @@
   }
 }
 
+/* Sets the colour of error page text brown for readability against the backgroud */
 :has(> .next-error-h1) {
   color: theme(colors.starick-brown);
 }
