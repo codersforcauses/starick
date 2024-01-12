@@ -6,25 +6,20 @@ export default function ChatInterface() {
     const [showChatbot, setShowChatbot] = useState(true);
   
     const toggleChatType = () => {
-      setShowChatbot(!showChatbot);
+      setShowChatbot(false);
     };
   
     return (
       <div>
-      {showChatbot ? <ChatBot onToggleChat={toggleChatType} /> : <MessengerEmbed />}
+        {showChatbot ? (
+          <div>
+            <ChatBot />
+            <button onClick={toggleChatType}>Switch to MessengerEmbed</button>
+          </div>
+        ) : (
+          <MessengerEmbed />
+        )}
       </div>
     );
-  }
+}
 
-//for assistant.tsx code
-
-  //   const Chatbot = ({ onToggleChat }) => {
-//     // ... your existing code ...
-  
-//     return (
-//       <div>
-//         {/* ... your existing code ... */}
-//         <button onClick={onToggleChat}>Switch to Human Chat</button>
-//       </div>
-//     );
-//   };

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 
 import { GPTMessage, GPTMessageSchema } from "@/lib/chatbot/validators";
+import MessengerEmbed from '../messengerembed/messengerembed';
 
 import Bubble from "./bubble";
 import Message from "./message";
@@ -13,6 +14,7 @@ function Assistant() {
   const [messages, setMessages] = useState<GPTMessage[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const messagesRef = useRef<HTMLDivElement | null>(null);
+  const [showChatbot, setShowChatbot] = useState(true); 
 
   /* Calls the server for GPT response */
   const getMessage = async (payload: GPTMessage[]): Promise<GPTMessage> => {
@@ -67,6 +69,15 @@ function Assistant() {
     }
   };
 
+  //Switch to MessengerEmbed
+  const switchToMessengerEmbed = () => {
+    setShowChatbot(false);
+  };
+
+  if (!showChatbot) {
+    return <MessengerEmbed />;
+  }
+
   const toggleChat = () => {
     setChatOpen(!chatOpen);
   };
@@ -88,6 +99,7 @@ function Assistant() {
             {messages.map((message, i) => (
               <Message key={i} role={message.role} content={message.content} />
             ))}
+            <button onClick={switchToMessengerEmbed}>Switch to MessengerEmbed</button>
           </div>
           {isLoading && (
             <div className="self-end px-6 pt-4">
