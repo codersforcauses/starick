@@ -1,6 +1,6 @@
 import ServicesSection from "../Services/services-section";
 
-export default function StratigicPlans(){
+export default function StrategicPlans(){
     const body = (
         <>
         <p>
@@ -15,7 +15,7 @@ export default function StratigicPlans(){
           titleTextColour="starick-white"
           titleBackgroundColour="starick-green"
           sectionBody={body}
-          title="stratigic Plans"
+          title="Strategic Plans"
           iconPath="icons/refugees.svg"
         />  );
 }
