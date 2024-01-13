@@ -1,11 +1,10 @@
+import Image from "next/image";
+
 import SectionTitle from "@/components/section-title";
 
 export default function WhoWeAre() {
-  // const icon = (
-  //     <img src=""
-  // )
   const body = (
-    <>
+    <div className="grow pl-3">
       <p>
         Starick is an independent, not for profit organisation with charitable
         status based in Perth&apos;s south-eastern metropolitan region and
@@ -25,7 +24,7 @@ export default function WhoWeAre() {
         volunteers.
       </p>
       <br />
-    </>
+    </div>
   );
   return (
     <div className="bg-starick-white px-6 py-2 md:px-32">
@@ -35,7 +34,16 @@ export default function WhoWeAre() {
         iconPath=""
         textColour="starick-white"
       />
-      <div className="pt-5 md:px-20">{body}</div>
+      <div className="mb-4 flex w-full flex-row pt-5 md:px-20">
+        <Image
+          src="icons/identity.svg"
+          className="mx-2 h-12 w-12 md:h-24 md:w-24"
+          height={100}
+          width={100}
+          alt="identity"
+        />
+        {body}
+      </div>
     </div>
   );
 }
