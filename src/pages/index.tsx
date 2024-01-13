@@ -47,7 +47,7 @@ export default function Home() {
           from violence for the women and children who use our service and for
           the community as a whole.
         </p>
-        <Image
+        <Staricklogo
           src="/icons/starick-logo.svg"
           alt="starick logo"
           width="0"
