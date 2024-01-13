@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <header>
         <NavBar />
         <PanicButton />
-        <MessengerChat shouldInitialize={false} />
+        <MessengerChat shouldInitializeEmbed={false} />
       </header>
       <main className="mt-14 bg-starick-white">
         <Assistant />

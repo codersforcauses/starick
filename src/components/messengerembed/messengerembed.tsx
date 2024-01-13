@@ -1,15 +1,14 @@
 import { useEffect } from "react";
 import { FBWindow } from "./types";
-import { MessengerEmbedProps } from "./types"; // Import the missing type declaration
+import { MessengerEmbedProps } from "./types";
 
 declare let window: FBWindow;
 
 export default function MessengerChat({
-  shouldInitialize
+  shouldInitializeEmbed
 }: MessengerEmbedProps) {
-  // const initializeMessengerEmbed = () => {
   useEffect(() => {
-    if (!shouldInitialize) {
+    if (!shouldInitializeEmbed) {
       return;
     }
 
@@ -42,17 +41,6 @@ export default function MessengerChat({
     })(document, "script", "facebook-jssdk");
   }, []);
 
-  // (function (d, s, id) {
-  //   const fts = d.getElementsByTagName(s)[0];
-  //   if (d.getElementById(id)) return;
-  //   const ts = d.createElement(s) as HTMLScriptElement;
-  //   ts.id = id;
-  //   ts.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-  //   if (fts.parentNode) {
-  //     fts.parentNode.insertBefore(ts, fts);
-  //   }
-  // })(document, "script", "facebook-jssdk");
-
   return (
     <div>
       <div id="fb-root"></div>
@@ -60,10 +48,3 @@ export default function MessengerChat({
     </div>
   );
 }
-
-// return (
-//   <div>
-//     <div id="fb-root"></div>
-//     <div id="fb-customer-chat" className="fb-customerchat outline-none"></div>
-//   </div>
-// );

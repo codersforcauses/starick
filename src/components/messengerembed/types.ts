@@ -6,6 +6,5 @@ export interface FBWindow extends Window {
   };
 }
 export interface MessengerEmbedProps {
-  // Add your interface properties here
-  shouldInitialize: boolean;
+  shouldInitializeEmbed: boolean;
 }

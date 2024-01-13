@@ -66,18 +66,18 @@ function Assistant() {
     }
   };
 
+  const toggleChat = () => {
+    setChatOpen(!chatOpen);
+  };
+
   //Switch to MessengerEmbed
   const handleButtonClick = () => {
     setShowChatbot(false);
   };
 
   if (!showChatbot) {
-    return <MessengerEmbed shouldInitialize={true} />;
+    return <MessengerEmbed shouldInitializeEmbed={true} />;
   }
-
-  const toggleChat = () => {
-    setChatOpen(!chatOpen);
-  };
 
   return (
     <div className="fixed bottom-0 right-0 z-10 mb-6 mr-6 flex flex-col gap-1">
