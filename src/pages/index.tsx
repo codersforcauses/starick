@@ -8,6 +8,7 @@ import TransitionalHousing from "~/images/home/transitional-housing.png";
 import TwoRefuges from "~/images/home/two-refuges.png";
 import Image from "next/image";
 import HomeTitle from "~/images/home/home-title.png";
+import HomeLogo from "~/images/home/home-logo.png";
 import LinkButton from "@/components/Home/link-button";
 import Poster1 from "~/images/home/poster1.png";
 import Poster2 from "~/images/home/poster2.png";
@@ -19,7 +20,9 @@ export default function Home() {
     <>
       <div className="relative">
         <p className="md:bottom-15 absolute bottom-10 left-10 w-2/5 text-2xl font-semibold text-starick-white md:left-20 md:text-3xl">
+
           Domestic Violence Support Services for Women and Children
+
         </p>
 
         <Image
@@ -30,30 +33,29 @@ export default function Home() {
           className="h-auto w-full"
         />
       </div>
-      <div className="bg-starick-orange py-2 pl-6 text-center text-starick-white">
+      <div className="bg-starick-orange py-2 pl-6 text-starick-black">
         <p>
-          If in need of urgent help, call Crisis Care: <br />
+          If you need urgent help, call Crisis Care: <br />
           (08) 9223 1111 or Country Freecall: 1800 199 008 <br />
           <br />
           If you are in immediate physical danger, call Police: 000
         </p>
       </div>
-
-      <Image
-        src="~/icons/starick-logo.svg"
-        alt="starick-logo"
-        width="0"
-        height="0"
-        className="mx-auto my-16 h-auto w-1/3"
-      />
-      <div className="pb-10">
-        <p className="mx-auto w-4/5 text-center">
+      <div className="pb-10 pt-56">
+        <p className="mx-auto w-4/5">
           Starick is a charity supporting women and children escaping domestic
           and family violence. We work predominantly in Perth&apos;s
           south-eastern metropolitan region. Our vision is to build futures free
-          of violence for the women and children in our communitiies and in
-          Australia as a whole.
+          from violence for the women and children who use our service and for
+          the community as a whole.
         </p>
+        <Image
+          src={HomeLogo}
+          alt="description"
+          width="0"
+          height="0"
+          className="mx-auto h-auto w-1/3"
+        />
       </div>
 
       <Subtitle title="Our Services" />
@@ -131,6 +133,7 @@ export default function Home() {
           link="./what-is-domestic-violence"
         />
       </div>
+
 
       <Subtitle title="Social Media" />
 
