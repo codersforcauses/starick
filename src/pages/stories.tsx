@@ -5,6 +5,7 @@ import Banner from "@/components/Services/banner";
 import AnnesStory from "@/components/Stories/annes-story";
 import CarolsStory from "@/components/Stories/carols-story";
 import HelenasStory from "@/components/Stories/helenas-story";
+import BarbarasStory from "@/components/Stories/barbaras-story";
 
 export default function Stories() {
     const navLinkDetails = [
@@ -12,6 +13,22 @@ export default function Stories() {
             href: "#Anne's Story",
             name: 'Anne\'s Story: "It\'ll never happen to me"'
         },
+        {
+            href: "#Taraneh's Story",
+            name: "Taraneh's Story: Mary Smith Refuge"
+        },
+        {
+            href: "#Carol's Story",
+            name: "Carol's Story: Starick House Refuge"
+        },
+        {
+            href: "#Helena's Story",
+            name: "Helena's Story: Outreach Services"
+        },
+        {
+            href: "#Barbara's Story",
+            name: "Barbara's Story: Transitional Housing"
+        }
     ];
     return <>
         <Banner titleText="Our Stories"/>
@@ -22,5 +39,6 @@ export default function Stories() {
         <AnnesStory />
         <CarolsStory />
         <HelenasStory />
+        <BarbarasStory />
     </>
 }
