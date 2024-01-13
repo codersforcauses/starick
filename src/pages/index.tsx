@@ -40,8 +40,8 @@ export default function Home() {
       </div>
 
       <Image
-        src={'/icons/starick-logo.svg'}
-        alt="description"
+        src="~/icons/starick-logo.svg"
+        alt="starick-logo"
         width="0"
         height="0"
         className="mx-auto my-16 h-auto w-1/3"
