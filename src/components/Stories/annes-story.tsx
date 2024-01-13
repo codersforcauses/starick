@@ -14,8 +14,8 @@ export default function AnnesStory() {
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-20">
         <div>
           <p>
-            "Hello. My name is Anne and I’m a survivor of domestic violence.
-            Fortunately I can tell my story because I am still here.
+            `&quot;`Hello. My name is Anne and I’m a survivor of domestic
+            violence. Fortunately I can tell my story because I am still here.
           </p>
           <br />
           <p>
@@ -120,13 +120,13 @@ export default function AnnesStory() {
           <p>
             I didn’t appreciate fully at the time the beautiful people who came
             along and walked every step by my side to support me and be my
-            strength in times of complete weakness. I thought that they didn't
-            really know my situation or understand, but they actually did. They
-            knew my predicament better than I ever knew and if it wasn’t for
-            their continued support, encouragement and protection I would most
-            definitely not be here today, and my seven precious children would
-            be dispersed among&nbsp;the community, trying to make sense of it
-            all.
+            strength in times of complete weakness. I thought that they
+            didn`&apos;`t really know my situation or understand, but they
+            actually did. They knew my predicament better than I ever knew and
+            if it wasn’t for their continued support, encouragement and
+            protection I would most definitely not be here today, and my seven
+            precious children would be dispersed among&nbsp;the community,
+            trying to make sense of it all.
           </p>
           <br />
           <QuoteBlock text={quoteBlockText} />
@@ -147,11 +147,11 @@ export default function AnnesStory() {
           </p>
           <br />
           <p>
-            I am glad that they didn't grow despondent and give up and that on
-            their hard days they continued to press on and serve their community
-            and in all honesty, by doing so, save lives. They saved my life and
-            the lives of the seven others that were in my care. For that I am
-            thankful.
+            I am glad that they didn`&apos;`t grow despondent and give up and
+            that on their hard days they continued to press on and serve their
+            community and in all honesty, by doing so, save lives. They saved my
+            life and the lives of the seven others that were in my care. For
+            that I am thankful.
           </p>
           <br />
           <p>
