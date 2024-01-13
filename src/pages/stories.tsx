@@ -3,6 +3,8 @@ import InPageNav from "@/components/InPageNav";
 import Banner from "@/components/Services/banner";
 
 import AnnesStory from "@/components/Stories/annes-story";
+import CarolsStory from "@/components/Stories/carols-story";
+import HelenasStory from "@/components/Stories/helenas-story";
 
 export default function Stories() {
     const navLinkDetails = [
@@ -18,5 +20,7 @@ export default function Stories() {
         </div>
         <InPageNav list={navLinkDetails}/>
         <AnnesStory />
+        <CarolsStory />
+        <HelenasStory />
     </>
 }
