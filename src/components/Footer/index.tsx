@@ -1,4 +1,4 @@
-import { ChangeEvent,Dispatch, SetStateAction, useState } from "react";
+import { ChangeEvent, Dispatch, SetStateAction, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -24,19 +24,6 @@ const SiteLinks: SiteLink[] = [
   /* figue out the Privacy & Disclaimer link */
 }
 const PrivacyDisclaimerLink = "/privacy";
-
-const handleSubmit = async (
-  e: React.MouseEvent,
-  userMail: string,
-  setUserMail: Dispatch<SetStateAction<string>>
-) => {
-  /* figue out the Privacy & Disclaimer link */
-  e.preventDefault();
-
-  setUserMail("");
-
-  // send a POST and send userMail to the DB
-};
 
 const Footer = () => {
   return (
@@ -120,6 +107,21 @@ const Email = () => {
     }
     setUserMail(e.target.value);
   };
+  const handleSubmit = async (
+    e: React.MouseEvent,
+    userMail: string,
+    setUserMail: Dispatch<SetStateAction<string>>
+  ) => {
+    /* figue out the Privacy & Disclaimer link */
+    e.preventDefault();
+    const isSuccess = await fetch("url");
+    if (isSuccess) {
+      setUserMail("");
+      return;
+    }
+
+    // send a POST and send userMail to the DB
+  };
   return (
     <div className="mx-auto mb-9  lg:col-span-4 lg:mb-2 lg:ml-6  lg:mr-5 lg:text-left">
       <p className="mb-2 text-center text-base font-normal text-black lg:text-left">
@@ -138,7 +140,7 @@ const Email = () => {
         />
         <button
           onClick={(e) => handleSubmit(e, userMail, setUserMail)}
-          className=" ml-0  h-9 rounded-r-lg bg-starick-green px-5 text-center text-sm font-semibold text-starick-white shadow-sm hover:bg-starick-orange "
+          className=" h-9 rounded-r-lg bg-starick-green px-5 text-sm font-semibold text-starick-white shadow-sm hover:bg-starick-orange "
           disabled={isNotValid}
         >
           Submit
