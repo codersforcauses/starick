@@ -8,7 +8,6 @@ import TransitionalHousing from "~/images/home/transitional-housing.png";
 import TwoRefuges from "~/images/home/two-refuges.png";
 import Image from "next/image";
 import HomeTitle from "~/images/home/home-title.png";
-import HomeLogo from "~/icons/starick-logo.svg";
 import LinkButton from "@/components/Home/link-button";
 import Poster1 from "~/images/home/poster1.png";
 import Poster2 from "~/images/home/poster2.png";
@@ -41,7 +40,7 @@ export default function Home() {
       </div>
 
       <Image
-        src={HomeLogo}
+        src={'/icons/starick-logo.svg'}
         alt="description"
         width="0"
         height="0"
