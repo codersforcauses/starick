@@ -7,6 +7,7 @@ import SupportInPoliceStations from "~/images/home/support-in-police-stations.pn
 import TransitionalHousing from "~/images/home/transitional-housing.png";
 import TwoRefuges from "~/images/home/two-refuges.png";
 import Image from "next/image";
+import Staricklogo from "~/icons/starick-logo.svg";
 import HomeTitle from "~/images/home/home-title.png";
 import LinkButton from "@/components/Home/link-button";
 import Poster1 from "~/images/home/poster1.png";
@@ -47,7 +48,7 @@ export default function Home() {
           the community as a whole.
         </p>
         <Image
-          src="~/icons/starick-logo.svg"
+          src="/icons/starick-logo.svg"
           alt="starick logo"
           width="0"
           height="0"
