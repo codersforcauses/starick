@@ -6,6 +6,7 @@ services:
       context: .
       dockerfile: docker/frontend/Dockerfile
     restart: always
+    init: true
     env_file:
       - .env
 
@@ -14,8 +15,8 @@ services:
     restart: always
     environment:
       MYSQL_DATABASE: db
-      MYSQL_USER: user
-      MYSQL_PASSWORD: password
+      MYSQL_USER: ${MYSQL_USER:-user}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-password}
       MYSQL_RANDOM_ROOT_PASSWORD: '1'
     volumes:
       - ./data/db:/var/lib/mysql
@@ -25,8 +26,8 @@ services:
     restart: always
     environment:
       WORDPRESS_DB_HOST: db
-      WORDPRESS_DB_USER: user
-      WORDPRESS_DB_PASSWORD: password
+      WORDPRESS_DB_USER: ${MYSQL_USER:-user}
+      WORDPRESS_DB_PASSWORD: ${MYSQL_PASSWORD:-password}
       WORDPRESS_DB_NAME: db
     depends_on:
       - db

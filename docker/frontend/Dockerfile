@@ -10,4 +10,4 @@ RUN npm install
 COPY . /app
 
 # Set the entrypoint
-ENTRYPOINT ["yarn","dev"]
+ENTRYPOINT ["npm","run","dev"]
