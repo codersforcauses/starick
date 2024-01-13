@@ -13,14 +13,14 @@ export default function Carousel({
   const [description, setDescription] = useState(images[0].description);
 
   const handleNextSlide = () => {
-    let newSlide = currentSlide === images.length - 1 ? 0 : currentSlide + 1;
+    const newSlide = currentSlide === images.length - 1 ? 0 : currentSlide + 1;
     setCurrentSlide(newSlide);
     setDescription(images[newSlide].description);
     setEvent(images[newSlide].event);
   };
 
   const handlePrevSlide = () => {
-    let newSlide = currentSlide === 0 ? images.length - 1 : currentSlide - 1;
+    const newSlide = currentSlide === 0 ? images.length - 1 : currentSlide - 1;
     setCurrentSlide(newSlide);
     setDescription(images[newSlide].description);
     setEvent(images[newSlide].event);
@@ -53,6 +53,7 @@ export default function Carousel({
               if (index === currentSlide) {
                 return (
                   <Image
+                    key={index}
                     src={image.imgUrl}
                     alt={image.description}
                     objectFit="contain"
@@ -70,7 +71,7 @@ export default function Carousel({
           className="absolute inset-y-1/2 right-0 z-20 m-auto cursor-pointer rounded-full border  border-gray-400 text-5xl text-gray-400 hover:bg-gray-400 hover:text-gray-700"
         />
 
-        <div className="relative flex justify-center p-2">
+        <div className="relative flex justify-center p-2" role="group">
           {images.map((_, index) => (
             <div
               className={
@@ -79,8 +80,15 @@ export default function Carousel({
                   : "mx-2 mb-2 h-4 w-4 cursor-pointer rounded-full bg-gray-300"
               }
               key={index}
+              role="button"
+              tabIndex={0}
               onClick={() => {
                 setCurrentSlide(index);
+              }}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  setCurrentSlide(index);
+                }
               }}
             />
           ))}
