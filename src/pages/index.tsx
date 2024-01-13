@@ -8,7 +8,6 @@ import TransitionalHousing from "~/images/home/transitional-housing.png";
 import TwoRefuges from "~/images/home/two-refuges.png";
 import Image from "next/image";
 import HomeTitle from "~/images/home/home-title.png";
-import HomeLogo from "~/images/home/home-logo.png";
 import LinkButton from "@/components/Home/link-button";
 import Poster1 from "~/images/home/poster1.png";
 import Poster2 from "~/images/home/poster2.png";
@@ -20,9 +19,7 @@ export default function Home() {
     <>
       <div className="relative">
         <p className="md:bottom-15 absolute bottom-10 left-10 w-2/5 text-2xl font-semibold text-starick-white md:left-20 md:text-3xl">
-
           Domestic Violence Support Services for Women and Children
-
         </p>
 
         <Image
@@ -50,8 +47,8 @@ export default function Home() {
           the community as a whole.
         </p>
         <Image
-          src={HomeLogo}
-          alt="description"
+          src="~/icons/starick-logo.svg"
+          alt="starick logo"
           width="0"
           height="0"
           className="mx-auto h-auto w-1/3"
@@ -133,7 +130,6 @@ export default function Home() {
           link="./what-is-domestic-violence"
         />
       </div>
-
 
       <Subtitle title="Social Media" />
 
