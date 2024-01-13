@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import AboriginalFlag from "~/images/aboriginal_flags/aboriginal-flag-150x150.png";
-import TorresStraitIslanderFlag from "~/images/aboriginal_flags/aboriginal-flag-blue-150x150.png";
+import TorresStraitIslanderFlag from "~/images/aboriginal_flags/torres-strait-islander-flag-150x150.png";
 
 type SiteLink = {
   title: string;
