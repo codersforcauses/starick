@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, useState } from "react";
+import { ChangeEvent,Dispatch, SetStateAction, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -112,6 +112,14 @@ const Contact = ({ children }: Props) => {
 const Email = () => {
   const [userMail, setUserMail] = useState<string>("");
   const [isNotValid, setIsNotValid] = useState<boolean>(true);
+  const handleChange = (e: ChangeEvent<HTMLInputElement>): void => {
+    const validation: boolean = e.target.checkValidity();
+    setIsNotValid(true);
+    if (validation) {
+      setIsNotValid(false);
+    }
+    setUserMail(e.target.value);
+  };
   return (
     <div className="mx-auto mb-9  lg:col-span-4 lg:mb-2 lg:ml-6  lg:mr-5 lg:text-left">
       <p className="mb-2 text-center text-base font-normal text-black lg:text-left">
@@ -126,18 +134,11 @@ const Email = () => {
           focus:invalid:border-starick-orange focus:invalid:ring-starick-orange"
           placeholder="you@example.com"
           value={userMail}
-          onChange={(e) => {
-            const validation: boolean = e.target.checkValidity();
-            setIsNotValid(true);
-            if (validation) {
-              setIsNotValid(false);
-            }
-            setUserMail(e.target.value);
-          }}
+          onChange={(e) => handleChange(e)}
         />
         <button
           onClick={(e) => handleSubmit(e, userMail, setUserMail)}
-          className=" ml-0  h-9 rounded-r-lg bg-starick-green px-5 text-center text-sm font-semibold text-white shadow-sm hover:bg-starick-orange disabled:text-starick-white "
+          className=" ml-0  h-9 rounded-r-lg bg-starick-green px-5 text-center text-sm font-semibold text-starick-white shadow-sm hover:bg-starick-orange "
           disabled={isNotValid}
         >
           Submit
