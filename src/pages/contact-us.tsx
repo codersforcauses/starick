@@ -11,10 +11,10 @@ export default function ContactUs() {
           </p>
         </div>
       </div>
-      <div className="bg-[--starick-white] px-6 py-2 md:px-32 md:py-12">
+      <div className="bg-[--starick-white] px-6 py-2">
         <div className="flex flex-wrap">
-          <div className="basis-1/2">
-            <div className="p-6 md:px-20 ">
+          <div className=" basis-full md:basis-1/2">
+            <div className="p-6 md:px-16 ">
               <p className="text pb-6 text-2xl font-semibold">Starick</p>
               <p>
                 <span className="font-semibold">Refuges:</span> Phone: 08
@@ -37,7 +37,7 @@ export default function ContactUs() {
               </p>
             </div>
 
-            <div className="p-6 md:px-20">
+            <div className="p-6 md:px-16">
               <p className="text pb-6 text-2xl font-semibold">
                 Starick Op Shop
               </p>
@@ -55,7 +55,7 @@ export default function ContactUs() {
             </div>
           </div>
 
-          <div className="bg-blue basis-1/2 p-6 md:px-20 ">
+          <div className="p-6 basis-full md:basis-1/2">
 
             <form
               id="mG61Hd"
