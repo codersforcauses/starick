@@ -1,6 +1,40 @@
 import Image from "next/image";
+import { FormEvent } from "react";
+
+
 
 export default function ContactUs() {
+
+
+
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault()
+
+    const formData = new FormData(event.currentTarget)
+    const firstname = (event.currentTarget.elements.namedItem("entry.339576848") as HTMLInputElement).value
+    const lastname = (event.currentTarget.elements.namedItem("entry.810035821") as HTMLInputElement).value
+    const phone = (event.currentTarget.elements.namedItem("entry.622549956") as HTMLInputElement).value
+    const email = (event.currentTarget.elements.namedItem("entry.2009362426") as HTMLInputElement).value
+    const enquiry = (event.currentTarget.elements.namedItem("entry.1073078232") as HTMLInputElement).value
+
+
+
+
+    // console.log((event.currentTarget.elements.namedItem("entry.339576848") as HTMLInputElement).value)
+    const response = await fetch('/api/email/email' , {
+      method: 'POST',
+      body: JSON.stringify({
+        'entry.339576848': firstname,
+        'entry.810035821': lastname,
+        'entry.622549956': phone,
+        'entry.2009362426': email,
+        'entry.1073078232': enquiry,
+      }),
+    })
+
+
+  }
+
   return (
     <>
       <div className="h-auto w-full">
@@ -59,9 +93,7 @@ export default function ContactUs() {
 
             <form
               id="mG61Hd"
-              action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdom5UoasUsG7u_lMByRvLR6-VSHmiIVLksgkpmgdaAPdRcPA/formResponse"
-              target="_self"
-              method="POST"
+              onSubmit={handleSubmit}
             >
               <div>
                 <p className="text pb-6 text-2xl font-semibold">Send us an email</p>
