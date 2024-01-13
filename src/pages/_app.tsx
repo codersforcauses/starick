@@ -10,7 +10,7 @@ import "@/styles/globals.css";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className=" flex min-h-[100vh] flex-col">
+    <div className=" flex min-h-screen flex-col">
       <header>
         <NavBar />
         <PanicButton />

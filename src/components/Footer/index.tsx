@@ -2,21 +2,19 @@ import { ChangeEvent, Dispatch, SetStateAction, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import AboriginalFlag from "~/aboriginal_flags/aboriginal-flag-150x150.png";
-import TorresStraitIslanderFlag from "~/aboriginal_flags/aboriginal-flag-blue-150x150.png";
+import AboriginalFlag from "~/images/aboriginal_flags/aboriginal-flag-150x150.png";
+import TorresStraitIslanderFlag from "~/images/aboriginal_flags/aboriginal-flag-blue-150x150.png";
 
-interface SiteLink {
+type SiteLink = {
   title: string;
   link: string;
-}
-
+};
 type Props = {
   children: SiteLink[];
 };
-{
-  /* write the sitemap's title and link here */
-}
+
 const SiteLinks: SiteLink[] = [
+  /* write the sitemap's title and link here */
   { title: "Site map / links to pages here", link: "#" },
   { title: "Home", link: "/home" }
 ];
