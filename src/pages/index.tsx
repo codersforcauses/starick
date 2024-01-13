@@ -15,6 +15,9 @@ import Poster2 from "~/images/home/poster2.png";
 import Poster3 from "~/images/home/poster3.png";
 import EventMap from "~/images/home/event-map.png";
 
+import carousel_list from "@/components/Home/carousel/carousel_list.json";
+import Carousel from "@/components/Home/carousel/carousel";
+
 export default function Home() {
   return (
     <>
@@ -176,6 +179,10 @@ export default function Home() {
         height="0"
         className="h-auto w-full p-10"
       />
+
+      <div className="relative mx-auto w-1/2">
+        <Carousel images={carousel_list} />
+      </div>
     </>
   );
 }
