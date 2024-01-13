@@ -7,7 +7,7 @@ import AnnesStory from "@/components/Stories/annes-story";
 export default function Stories() {
     const navLinkDetails = [
         {
-            href: "#Counselling Services",
+            href: "#Anne's Story",
             name: 'Anne\'s Story: "It\'ll never happen to me"'
         },
     ];
