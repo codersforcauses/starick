@@ -31,7 +31,7 @@ export default function Home() {
           className="h-auto w-full"
         />
       </div>
-      <div className="bg-starick-orange py-2 pl-6 text-starick-white">
+      <div className="bg-starick-orange text-center py-2 pl-6 text-starick-white">
         <p>
           If in need of urgent help, call Crisis Care: <br />
           (08) 9223 1111 or Country Freecall: 1800 199 008 <br />
@@ -41,20 +41,21 @@ export default function Home() {
       </div>
 
 
-      <div className="pb-10 pt-12">
-        <p className="mx-auto w-4/5">
+     
 
         <Image
           src={HomeLogo}
           alt="description"
           width="0"
           height="0"
-          className="mx-auto h-auto w-1/3"
+          className="mx-auto my-16 h-auto w-1/3"
         />
+         <div className="pb-10">
+        <p className="mx-auto w-4/5 text-center">
           Starick is a charity supporting women and children escaping domestic
           and family violence. We work predominantly in Perth&apos;s
           south-eastern metropolitan region. Our vision is to build futures free
-          from violence for the women and children in our communitiies and in Australia as a whole
+          of violence for the women and children in our communitiies and in Australia as a whole.
          </p>
 
 
