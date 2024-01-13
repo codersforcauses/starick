@@ -7,6 +7,7 @@ import Bubble from "./bubble";
 import Message from "./message";
 
 import styles from "./assistant.module.css";
+import MessengerChat from "../messengerembed/messengerembed";
 
 function Assistant() {
   const [chatOpen, setChatOpen] = useState(false);
@@ -69,7 +70,7 @@ function Assistant() {
   //Switch to MessengerEmbed
   const switchToMessengerEmbed = () => {
     setShowChatbot(false);
-  };
+    };
 
   if (!showChatbot) {
     return <MessengerEmbed />;

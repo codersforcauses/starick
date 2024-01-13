@@ -4,7 +4,8 @@ import { FBWindow } from "./types";
 declare let window: FBWindow;
 
 export default function MessengerChat() {
-  useEffect(() => {
+  // export const initializeMessengerEmbed = () => {
+  // useEffect(() => {
     const chatbox = document.getElementById("fb-customer-chat");
     if (chatbox) {
       chatbox.setAttribute(
@@ -22,17 +23,28 @@ export default function MessengerChat() {
       });
     };
 
-    (function (d, s, id) {
-      const fts = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      const ts = d.createElement(s) as HTMLScriptElement;
-      ts.id = id;
-      ts.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-      if (fts.parentNode) {
-        fts.parentNode.insertBefore(ts, fts);
-      }
-    })(document, "script", "facebook-jssdk");
-  }, []);
+  //   (function (d, s, id) {
+  //     const fts = d.getElementsByTagName(s)[0];
+  //     if (d.getElementById(id)) return;
+  //     const ts = d.createElement(s) as HTMLScriptElement;
+  //     ts.id = id;
+  //     ts.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+  //     if (fts.parentNode) {
+  //       fts.parentNode.insertBefore(ts, fts);
+  //     }
+  //   })(document, "script", "facebook-jssdk");
+  // }, []);
+
+  (function (d, s, id) {
+    const fts = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    const ts = d.createElement(s) as HTMLScriptElement;
+    ts.id = id;
+    ts.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+    if (fts.parentNode) {
+      fts.parentNode.insertBefore(ts, fts);
+    }
+  })(document, "script", "facebook-jssdk");
 
   return (
     <div>
@@ -40,4 +52,12 @@ export default function MessengerChat() {
       <div id="fb-customer-chat" className="fb-customerchat outline-none"></div>
     </div>
   );
-}
+};
+
+  // return (
+  //   <div>
+  //     <div id="fb-root"></div>
+  //     <div id="fb-customer-chat" className="fb-customerchat outline-none"></div>
+  //   </div>
+  // );
+
