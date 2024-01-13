@@ -6,12 +6,14 @@ import PanicButton from "@/components/PanicButton";
 import MessengerChat from "@/components/messengerembed/messengerembed";
 
 import "@/styles/globals.css";
+import Search from "@/components/SearchBar";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <header>
         <NavBar />
+        <Search prompt="" />
         <PanicButton />
         <MessengerChat />
       </header>
