@@ -20,7 +20,7 @@ export default function Home() {
     <>
       <div className="relative">
         <p className="md:bottom-15 absolute bottom-10 left-10 w-2/5 text-2xl font-semibold text-starick-white md:left-20 md:text-3xl">
-          Domestic and Family Violence Support Services for Women and Children
+          Domestic Violence Support Services for Women and Children
         </p>
         <Image
           src={HomeTitle}
@@ -32,7 +32,7 @@ export default function Home() {
       </div>
       <div className="bg-starick-orange py-2 pl-6 text-starick-black">
         <p>
-          If you need urgent help, call Crisis Care: <br />
+          If in need of urgent help, call Crisis Care: <br />
           (08) 9223 1111 or Country Freecall: 1800 199 008 <br />
           <br />
           If you are in immediate physical danger, call Police: 000
@@ -43,8 +43,7 @@ export default function Home() {
           Starick is a charity supporting women and children escaping domestic
           and family violence. We work predominantly in Perth&apos;s
           south-eastern metropolitan region. Our vision is to build futures free
-          from violence for the women and children who use our service and for
-          the community as a whole.
+          from violence for the women and children in our communitiies and in Australia as a whole
         </p>
         <Image
           src={HomeLogo}
