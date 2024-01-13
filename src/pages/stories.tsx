@@ -6,6 +6,7 @@ import AnnesStory from "@/components/Stories/annes-story";
 import CarolsStory from "@/components/Stories/carols-story";
 import HelenasStory from "@/components/Stories/helenas-story";
 import BarbarasStory from "@/components/Stories/barbaras-story";
+import TaranehsStory from "@/components/Stories/taranehs-story";
 
 export default function Stories() {
     const navLinkDetails = [
@@ -37,6 +38,7 @@ export default function Stories() {
         </div>
         <InPageNav list={navLinkDetails}/>
         <AnnesStory />
+        <TaranehsStory/>
         <CarolsStory />
         <HelenasStory />
         <BarbarasStory />
