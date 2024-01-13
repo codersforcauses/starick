@@ -9,7 +9,8 @@ export default function MessengerChat() {
     if (chatbox) {
       chatbox.setAttribute(
         "page_id",
-        process.env.NEXT_PUBLIC_FACEBOOK_PAGE_ID || ""
+        "174020045800640"
+        // process.env.NEXT_PUBLIC_FACEBOOK_PAGE_ID || ""
       );
       chatbox.setAttribute("attribution", "biz_inbox");
     }
