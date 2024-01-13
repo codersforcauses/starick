@@ -7,7 +7,6 @@ import Bubble from "./bubble";
 import Message from "./message";
 
 import styles from "./assistant.module.css";
-import MessengerChat from "../messengerembed/messengerembed";
 
 function Assistant() {
   const [chatOpen, setChatOpen] = useState(false);
@@ -68,12 +67,12 @@ function Assistant() {
   };
 
   //Switch to MessengerEmbed
-  const switchToMessengerEmbed = () => {
+  const handleButtonClick = () => {
     setShowChatbot(false);
   };
 
   if (!showChatbot) {
-    return <MessengerEmbed />;
+    return <MessengerEmbed shouldInitialize={true} />;
   }
 
   const toggleChat = () => {
@@ -106,7 +105,7 @@ function Assistant() {
         </div>
         <button
           className="bg-messenger-grey text-starick-black"
-          onClick={switchToMessengerEmbed}
+          onClick={handleButtonClick}
         >
           Talk to a Starick Agent
         </button>
