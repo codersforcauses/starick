@@ -6,22 +6,22 @@ declare let window: FBWindow;
 export default function MessengerChat() {
   // export const initializeMessengerEmbed = () => {
   // useEffect(() => {
-    const chatbox = document.getElementById("fb-customer-chat");
-    if (chatbox) {
-      chatbox.setAttribute(
-        "page_id",
-        "174020045800640"
-        // process.env.NEXT_PUBLIC_FACEBOOK_PAGE_ID || ""
-      );
-      chatbox.setAttribute("attribution", "biz_inbox");
-    }
+  const chatbox = document.getElementById("fb-customer-chat");
+  if (chatbox) {
+    chatbox.setAttribute(
+      "page_id",
+      "174020045800640"
+      // process.env.NEXT_PUBLIC_FACEBOOK_PAGE_ID || ""
+    );
+    chatbox.setAttribute("attribution", "biz_inbox");
+  }
 
-    window.fbAsyncInit = function () {
-      window.FB.init({
-        xfbml: true,
-        version: "v18.0"
-      });
-    };
+  window.fbAsyncInit = function () {
+    window.FB.init({
+      xfbml: true,
+      version: "v18.0"
+    });
+  };
 
   //   (function (d, s, id) {
   //     const fts = d.getElementsByTagName(s)[0];
@@ -52,12 +52,11 @@ export default function MessengerChat() {
       <div id="fb-customer-chat" className="fb-customerchat outline-none"></div>
     </div>
   );
-};
+}
 
-  // return (
-  //   <div>
-  //     <div id="fb-root"></div>
-  //     <div id="fb-customer-chat" className="fb-customerchat outline-none"></div>
-  //   </div>
-  // );
-
+// return (
+//   <div>
+//     <div id="fb-root"></div>
+//     <div id="fb-customer-chat" className="fb-customerchat outline-none"></div>
+//   </div>
+// );
