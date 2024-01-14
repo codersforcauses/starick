@@ -29,7 +29,7 @@ export default function Carousel({
   useEffect(() => {
     const intervalId = setInterval(() => {
       handleNextSlide();
-    }, 2000);
+    }, 5000);
 
     return () => {
       clearInterval(intervalId);
@@ -39,36 +39,37 @@ export default function Carousel({
   return (
     <>
       <div className="relative p-4">
-        <AiOutlineLeft
-          onClick={handlePrevSlide}
-          className="absolute inset-y-1/2 left-0 z-20 m-auto cursor-pointer rounded-full border  border-gray-400 text-5xl text-gray-400 hover:bg-gray-400 hover:text-gray-700"
-        />
         <div className="relative m-auto flex h-[50vh] w-full overflow-hidden px-10">
           <Swipe
             onSwipeLeft={handleNextSlide}
             onSwipeRight={handlePrevSlide}
-            className="relative z-10 h-full w-full"
+            className="relative h-full w-full"
           >
-            {images.map((image, index) => {
-              if (index === currentSlide) {
-                return (
-                  <Image
-                    key={index}
-                    src={image.imgUrl}
-                    alt={image.description}
-                    objectFit="contain"
-                    className="animate-fadeIn"
-                    fill
-                  />
-                );
-              }
-              return null;
-            })}
+            {images.map((image, index) => (
+              <Image
+                key={index}
+                src={image.imgUrl}
+                alt={image.description}
+                objectFit="contain"
+                className={`
+    opacity-0 transition-transform
+    duration-500
+    ${index === currentSlide ? "translate-x-0 opacity-100" : ""}
+    ${index > currentSlide ? "translate-x-1/3 opacity-0" : ""}
+    ${index < currentSlide ? "-translate-x-1/3 opacity-0" : ""}
+                    `}
+                fill
+              />
+            ))}
           </Swipe>
         </div>
+        <AiOutlineLeft
+          onClick={handlePrevSlide}
+          className="absolute inset-y-1/2 left-0 m-auto cursor-pointer rounded-full border  border-gray-400 text-5xl text-gray-400 hover:bg-gray-400 hover:text-gray-700"
+        />
         <AiOutlineRight
           onClick={handleNextSlide}
-          className="absolute inset-y-1/2 right-0 z-20 m-auto cursor-pointer rounded-full border  border-gray-400 text-5xl text-gray-400 hover:bg-gray-400 hover:text-gray-700"
+          className="absolute inset-y-1/2 right-0 m-auto cursor-pointer rounded-full border  border-gray-400 text-5xl text-gray-400 hover:bg-gray-400 hover:text-gray-700"
         />
 
         <div className="relative flex justify-center p-2" role="group">
