@@ -1,0 +1,52 @@
+FROM node:18-alpine AS base
+
+## Installation stage
+FROM base AS install
+WORKDIR /app
+RUN apk add --no-cache libc6-compat			# See https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine
+
+# Copy dependencies list and install them
+COPY ./package.json ./
+COPY ./package-lock.json ./
+RUN npm ci --production
+
+## Build stage
+FROM base as build
+WORKDIR /app
+
+# Copy files necessary for build
+COPY --from=install /app/node_modules ./node_modules
+COPY . ./
+COPY ./src ./src/
+COPY ./public ./public/
+
+RUN npm run build
+
+## Deployment stage
+FROM base AS runner
+WORKDIR /app
+
+# Production environment variables
+ENV NODE_ENV production
+ENV NEXT_TELEMETRY_DISABLED 1
+ENV PORT 3000
+ENV HOSTNAME "0.0.0.0"
+
+EXPOSE 3000
+
+# Set up isolated user and permissions
+RUN addgroup --system --gid 1001 nodejs
+RUN adduser --system --uid 1001 nextjs
+
+RUN mkdir build
+RUN chown nextjs:nodejs build
+
+# Copy built application. See https://nextjs.org/docs/pages/api-reference/next-config-js/output
+COPY --from=build --chown=nextjs:nodejs /app/build/standalone ./
+COPY --from=build --chown=nextjs:nodejs /app/build/static ./build/static
+COPY --from=build --chown=nextjs:nodejs /app/public ./public
+
+USER nextjs
+
+# Set the entrypoint
+ENTRYPOINT ["node","server.js"]

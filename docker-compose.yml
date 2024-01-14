@@ -4,7 +4,7 @@ services:
   frontend:
     build:
       context: .
-      dockerfile: docker/frontend/Dockerfile
+      dockerfile: docker/frontend/Dockerfile.${NODE_ENV:-development}
     restart: always
     init: true
     env_file:
