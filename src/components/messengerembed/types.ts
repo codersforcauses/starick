@@ -5,3 +5,6 @@ export interface FBWindow extends Window {
     init: (options: { xfbml: boolean; version: string }) => void;
   };
 }
+export interface MessengerEmbedProps {
+  shouldInitializeEmbed: boolean;
+}
