@@ -10,7 +10,7 @@ export default function ContactUs() {
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
 
-    const formData = new FormData(event.currentTarget)
+    // const formData = new FormData(event.currentTarget)
     const firstname = (event.currentTarget.elements.namedItem("entry.339576848") as HTMLInputElement).value
     const lastname = (event.currentTarget.elements.namedItem("entry.810035821") as HTMLInputElement).value
     const phone = (event.currentTarget.elements.namedItem("entry.622549956") as HTMLInputElement).value
@@ -59,7 +59,7 @@ export default function ContactUs() {
                 5300
               </p>
               <p>
-                <span className="font-semibold">Email:</span>{" "}
+                <span className="font-semibold">Email: </span>
                 info@starick.org.au
               </p>
               <p>PO Box 174</p>
@@ -83,7 +83,7 @@ export default function ContactUs() {
                 <span className="font-semibold">Phone:</span> 08 6271 0299
               </p>
               <p>
-                <span className="font-semibold">Hours: </span>Mon-Fri 10am to
+                <span className="font-semibold">Hours:</span> Mon-Fri 10am to
                 3pm, Sat 10am to 2pm
               </p>
             </div>
@@ -92,59 +92,61 @@ export default function ContactUs() {
           <div className="p-6 basis-full md:basis-1/2">
 
             <form
-              id="mG61Hd"
               onSubmit={handleSubmit}
             >
               <div>
                 <p className="text pb-6 text-2xl font-semibold">Send us an email</p>
-                <div>
-                  <label htmlFor="firstname">First Name *</label>
-                  <div>
-                    <input
-                      name="entry.339576848"
-                      id="firstname"
-                      type="text"
-                    ></input>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-8">
+                  <div className="col-span-1">
+                    <label htmlFor="firstname">First Name *</label>
+                    <div>
+                      <input className="block w-full rounded-md border-0 ring-2 ring-inset ring-[--starick-olive] py-1.5 px-1.5 outline-none focus:outline-2 focus:outline-offset-0 focus:outline-[--starick-green] "
+                        name="entry.339576848"
+                        id="firstname"
+                        type="text"
+                      ></input>
+                    </div>
+                  </div>
+                  <div className="col-span-1">
+                    <label htmlFor="lastname">Last Name *</label>
+                    <div>
+                      <input className="block w-full rounded-md border-0 ring-2 ring-inset ring-[--starick-olive] py-1.5 px-1.5 outline-none focus:outline-2 focus:outline-offset-0 focus:outline-[--starick-green]"
+                        name="entry.810035821"
+                        id="lastname"
+                        type="text"
+                      ></input>
+                    </div>
+                  </div>
+                  <div className="col-span-1 md:col-span-2">
+                    <label htmlFor="phone">Phone *</label>
+                    <div>
+                      <input className="block w-full rounded-md border-0 ring-2 ring-inset ring-[--starick-olive] py-1.5 px-1.5 outline-none focus:outline-2 focus:outline-offset-0 focus:outline-[--starick-green]"
+                        name="entry.622549956"
+                        id="phone"
+                        type="text"
+                      ></input>
+                    </div>
+                  </div>
+                  <div className="col-span-1 md:col-span-2">
+                    <label htmlFor="email">Email Address *</label>
+                    <div>
+                      <input className="block w-full rounded-md border-0 ring-2 ring-inset ring-[--starick-olive] py-1.5 px-1.5 outline-none focus:outline-2 focus:outline-offset-0 focus:outline-[--starick-green]"
+                        name="entry.2009362426"
+                        id="email"
+                        type="text"
+                      ></input>
+                    </div>
+                  </div>
+                  <div className="col-span-1 md:col-span-2">
+                    <label htmlFor="enquiry">Enquiry *</label>
+                    <div>
+                      <textarea className="bock w-full rounded-md border-0 ring-2 ring-inset ring-[--starick-olive] py-1.5 px-1.5 outline-none focus:outline-2 focus:outline-offset-0 focus:outline-[--starick-green]" name="entry.1073078232" id="enquiry"></textarea>
+                    </div>
                   </div>
                 </div>
-                <div>
-                  <label htmlFor="lastname">Last Name *</label>
-                  <div>
-                    <input
-                      name="entry.810035821"
-                      id="lastname"
-                      type="text"
-                    ></input>
-                  </div>
-                </div>
-                <div>
-                  <label htmlFor="phone">Phone *</label>
-                  <div>
-                    <input
-                      name="entry.622549956"
-                      id="phone"
-                      type="text"
-                    ></input>
-                  </div>
-                </div>
-                <div>
-                  <label htmlFor="email">Email Address *</label>
-                  <div>
-                    <input
-                      name="entry.2009362426"
-                      id="email"
-                      type="text"
-                    ></input>
-                  </div>
-                </div>
-                <div>
-                  <label htmlFor="enquiry">Enquiry *</label>
-                  <div>
-                    <textarea name="entry.1073078232" id="enquiry"></textarea>
-                  </div>
-                </div>
-                <div>
-                  <button type="submit">Submit</button>
+                <div className="flex justify-center">
+                  <button className="m-5 p-5 rounded-2xl bg-[--starick-brown] text-white" type="submit">Enquire</button>
                 </div>
               </div>
             </form>
