@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <NavBar />
         <Search prompt="" />
         <PanicButton />
-        <MessengerChat />
+        <MessengerChat shouldInitializeEmbed={false} />
       </header>
       <main className="mt-14  flex-grow bg-starick-white">
         <Assistant />
