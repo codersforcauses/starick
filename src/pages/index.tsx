@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 
 import CoreServiceItem from "@/components/Home/core-service-item";
@@ -22,7 +21,6 @@ export default function Home() {
     <>
       <div className="relative">
         <p className="md:bottom-15 left absolute left-10 top-20 w-2/5 text-2xl font-bold text-white md:left-20 md:text-8xl">
-          {" "}
           {/* how to make the text proportionate to the page as the user plays with size? */}
           Domestic Violence Support & Services for Women and Children
         </p>
