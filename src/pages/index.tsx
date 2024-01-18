@@ -40,15 +40,14 @@ export default function Home() {
         </p>
       </div>
       <div className="pb-10 pt-56">
-      <Image
-            priority
-            src={Staricklogo}
-            alt="starick logo"
-            width="0"
-            height="0"
-            className="mx-auto h-auto w-1/3"
-
-          />
+        <Image
+          priority
+          src={Staricklogo}
+          alt="starick logo"
+          width="0"
+          height="0"
+          className="mx-auto h-auto w-1/3"
+        />
 
         <p className="mx-auto w-4/5">
           Starick is a charity supporting women and children escaping domestic
@@ -57,11 +56,7 @@ export default function Home() {
           from violence for the women and children who use our service and for
           the community as a whole.
         </p>
-
-     
-          
-          </div>
-        
+      </div>
 
       <Subtitle title="Our Services" />
 
