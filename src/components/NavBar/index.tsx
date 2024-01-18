@@ -5,6 +5,8 @@ import Link from "next/link";
 import { primaryNav } from "./links";
 import NavItem from "./nav-item";
 
+import Staricklogo from "~/icons/starick-logo.svg";
+
 import styles from "./nav-bar.module.css";
 
 const NavBar = () => {
@@ -16,18 +18,18 @@ const NavBar = () => {
     setHamburgerMenuOpen(hamburgerMenuOpen ? false : true);
 
   return (
-    <nav className="fixed left-0 right-0 top-14 z-10 flex h-14 items-center justify-between whitespace-nowrap bg-white px-4">
+    <nav className="fixed left-0 right-0 top-14 z-10 flex h-16 items-center justify-between whitespace-nowrap bg-white px-4">
       {/* Left nav container (logo and links) */}
       <div className="flex basis-auto items-center justify-center">
         {/* Header container */}
         <div className="relative">
           <Link href="/">
             <Image
-              src="/placeholder_starick_logo.png"
-              alt="Starick Logo"
-              width={170}
-              height={50}
-              className="relative z-10 font-bold lg:pr-6"
+              src={Staricklogo}
+              alt="starick logo"
+              width="0"
+              height="0"
+              className="justify-left mx-10 h-28 w-1/3"
             />
           </Link>
         </div>

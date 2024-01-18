@@ -1,4 +1,6 @@
-import Image, { StaticImageData } from "next/image";
+import React from "react";
+import Image from "next/image";
+
 import HomeSubtitle from "~/images/home/home-subtitle.png";
 
 export default function Subtitle({ title }: { title: string }) {

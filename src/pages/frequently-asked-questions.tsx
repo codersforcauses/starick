@@ -1,9 +1,11 @@
-import Section from "@/components/basicInformation/Section";
-import Image from "next/image";
+import React from "react";
 import { useState } from "react";
 import { ReactNode } from "react";
-import NavbarItem from "@/components/basicInformation/utility/NavbarItem";
+import Image from "next/image";
 import { text } from "stream/consumers";
+
+import Section from "@/components/basicInformation/Section";
+import NavbarItem from "@/components/basicInformation/utility/NavbarItem";
 type Section = {
   sectionId: string;
   titleBackgroundColor: string;

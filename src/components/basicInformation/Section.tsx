@@ -1,6 +1,8 @@
-import SectionTitle from "@/components/basicInformation/utility/SectionTitle";
-import Image from "next/image";
 import { ReactNode } from "react";
+import React from "react";
+import Image from "next/image";
+
+import SectionTitle from "@/components/basicInformation/utility/SectionTitle";
 interface SectionProp {
   sectionId: string;
   key: string;
