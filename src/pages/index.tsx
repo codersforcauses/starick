@@ -1,11 +1,11 @@
 import CoreServiceItem from "@/components/Home/core-service-item";
 import Subtitle from "@/components/Home/subtitle";
-
-import CounsellingServices from "~/icons/aid.svg";
-import SafeAtHomeProgram from "~/images/home/safe-at-home-program.png";
-import SupportInPoliceStations from "~/images/home/support-in-police-stations.png";
-import TransitionalHousing from "~/images/home/transitional-housing.png";
-import TwoRefuges from "~/images/home/two-refuges.png";
+import React from "react";
+import CounsellingServices from "~/icons/psychology.svg";
+import SafeAtHomeProgram from "~/icons/health.svg";
+import SupportInPoliceStations from "~/icons/police-justice.svg";
+import TransitionalHousing from "~/icons/houses.svg";
+import TwoRefuges from "~/icons/refugees.svg";
 import Image from "next/image";
 import Staricklogo from "~/icons/starick-logo.svg";
 import HomeTitle from "~/images/home/home-title.png";
@@ -41,7 +41,6 @@ export default function Home() {
       </div>
       <div className="pb-10 pt-56">
         <Image
-          
           src={Staricklogo}
           alt="starick logo"
           width="0"
@@ -50,17 +49,16 @@ export default function Home() {
         />
 
         <p className="mx-auto w-4/5">
-          Starick is a charity supporting women and children escaping domestic
-          and family violence. We work predominantly in Perth&apos;s
-          south-eastern metropolitan region. Our vision is to build futures free
-          from violence for the women and children who use our service and for
-          the community as a whole.
+          We support women and children escaping domestic and family violence.
+          We work predominantly in Perth&apos;s south-eastern metropolitan
+          region and our vision is to build futures free from violence for the
+          women and children the community as a whole.
         </p>
       </div>
 
       <Subtitle title="Our Services" />
 
-      <div className="grid gap-10 px-10 py-20 font-semibold  text-starick-black">
+      <div className="grid gap-10 px-10 py-20 font-semibold text-starick-black">
         <p className="text-center text-2xl">Core Services</p>
 
         <div className="grid grid-cols-1 gap-10 px-10 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
@@ -83,7 +81,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="grid px-10  lg:justify-center">
+        <div className="grid px-10 lg:justify-center">
           <CoreServiceItem
             text="Safe at Home Program"
             img={SafeAtHomeProgram}
