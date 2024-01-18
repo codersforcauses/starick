@@ -1,7 +1,7 @@
 import CoreServiceItem from "@/components/Home/core-service-item";
 import Subtitle from "@/components/Home/subtitle";
 
-import CounsellingServices from "~/images/home/counselling-services.png";
+import CounsellingServices from "~/icons/aid.svg";
 import SafeAtHomeProgram from "~/images/home/safe-at-home-program.png";
 import SupportInPoliceStations from "~/images/home/support-in-police-stations.png";
 import TransitionalHousing from "~/images/home/transitional-housing.png";
