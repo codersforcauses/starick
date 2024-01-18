@@ -41,7 +41,7 @@ export default function Home() {
       </div>
       <div className="pb-10 pt-56">
         <Image
-          priority
+          
           src={Staricklogo}
           alt="starick logo"
           width="0"
