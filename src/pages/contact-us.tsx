@@ -47,8 +47,8 @@ export default function ContactUs() {
       </div>
       <div className="bg-[--starick-white] px-6 py-2">
         <div className="flex flex-wrap">
-          <div className=" basis-full md:basis-1/2">
-            <div className="p-6 md:px-16 ">
+          <div className="p-6 basis-full md:basis-1/2 md:pl-16 lg:pl-32">
+            <div>
               <p className="text pb-6 text-2xl font-semibold">Starick</p>
               <p>
                 <span className="font-semibold">Refuges:</span> Phone: 08
@@ -71,7 +71,7 @@ export default function ContactUs() {
               </p>
             </div>
 
-            <div className="p-6 md:px-16">
+            <div className="py-6">
               <p className="text pb-6 text-2xl font-semibold">
                 Starick Op Shop
               </p>
@@ -89,7 +89,7 @@ export default function ContactUs() {
             </div>
           </div>
 
-          <div className="p-6 basis-full md:basis-1/2">
+          <div className="p-6  md:pr-16 lg:pr-32 basis-full md:basis-1/2">
 
             <form
               onSubmit={handleSubmit}
