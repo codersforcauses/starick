@@ -99,49 +99,53 @@ export default function ContactUs() {
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-8">
                   <div className="col-span-1">
-                    <label htmlFor="firstname">First Name *</label>
+                    <label htmlFor="firstname">First Name <span className="text-red-700">*</span></label>
                     <div>
                       <input className="block w-full rounded-md border-0 ring-2 ring-inset ring-[--starick-olive] py-1.5 px-1.5 outline-none focus:outline-2 focus:outline-offset-0 focus:outline-[--starick-green] "
                         name="entry.339576848"
                         id="firstname"
                         type="text"
+                        required
                       ></input>
                     </div>
                   </div>
                   <div className="col-span-1">
-                    <label htmlFor="lastname">Last Name *</label>
+                    <label htmlFor="lastname">Last Name <span className="text-red-700">*</span></label>
                     <div>
                       <input className="block w-full rounded-md border-0 ring-2 ring-inset ring-[--starick-olive] py-1.5 px-1.5 outline-none focus:outline-2 focus:outline-offset-0 focus:outline-[--starick-green]"
                         name="entry.810035821"
                         id="lastname"
                         type="text"
+                        required
                       ></input>
                     </div>
                   </div>
                   <div className="col-span-1 md:col-span-2">
-                    <label htmlFor="phone">Phone *</label>
+                    <label htmlFor="phone">Phone <span className="text-red-700">*</span></label>
                     <div>
                       <input className="block w-full rounded-md border-0 ring-2 ring-inset ring-[--starick-olive] py-1.5 px-1.5 outline-none focus:outline-2 focus:outline-offset-0 focus:outline-[--starick-green]"
                         name="entry.622549956"
                         id="phone"
                         type="text"
+                        required
                       ></input>
                     </div>
                   </div>
                   <div className="col-span-1 md:col-span-2">
-                    <label htmlFor="email">Email Address *</label>
+                    <label htmlFor="email">Email Address <span className="text-red-700">*</span></label>
                     <div>
                       <input className="block w-full rounded-md border-0 ring-2 ring-inset ring-[--starick-olive] py-1.5 px-1.5 outline-none focus:outline-2 focus:outline-offset-0 focus:outline-[--starick-green]"
                         name="entry.2009362426"
                         id="email"
                         type="text"
+                        required
                       ></input>
                     </div>
                   </div>
                   <div className="col-span-1 md:col-span-2">
-                    <label htmlFor="enquiry">Enquiry *</label>
+                    <label htmlFor="enquiry">Enquiry <span className="text-red-700">*</span></label>
                     <div>
-                      <textarea className="bock w-full rounded-md border-0 ring-2 ring-inset ring-[--starick-olive] py-1.5 px-1.5 outline-none focus:outline-2 focus:outline-offset-0 focus:outline-[--starick-green]" name="entry.1073078232" id="enquiry"></textarea>
+                      <textarea className="bock w-full rounded-md border-0 ring-2 ring-inset ring-[--starick-olive] py-1.5 px-1.5 outline-none focus:outline-2 focus:outline-offset-0 focus:outline-[--starick-green]" name="entry.1073078232" id="enquiry" required></textarea>
                     </div>
                   </div>
                 </div>
