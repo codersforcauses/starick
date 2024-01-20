@@ -1,9 +1,9 @@
 import ServicesSection from "../Services/services-section";
+import PublicationList from "./pulications-list";
 
-export default function StrategicPlans () {
-    const body = <div className="bg-starick-olive pl-8 py-2 mt-5 mb-8">
-        <a href="https://www.starick.org.au/wp-content/uploads/2020-2025-Starick-Strategic-Plan.pdf">Starick Strategic Plan 2021-2025</a>
-    </div>
+export default function StrategicPlans() {
+    const itemList = [{text: "Starick Strategic Plan 2021-2025", link: "https://www.starick.org.au/wp-content/uploads/2020-2025-Starick-Strategic-Plan.pdf"}]
+    const body = <PublicationList items={itemList}/>
     return (
         <ServicesSection
           titleTextColour="starick-white"
