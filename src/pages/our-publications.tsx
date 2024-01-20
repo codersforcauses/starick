@@ -10,8 +10,8 @@ export default function OurPublications() {
   return (
     <>
       <Banner titleText="Our Publications" />
-      <StrategicPlans/>
-      <AnnualReports/>
+      <StrategicPlans />
+      <AnnualReports />
       <FacesOfStarick />
       <FriendsOfStarick />
     </>
