@@ -1,6 +1,6 @@
 import NavBar from "./NavBar";
 import SearchBar from "./SearchBar";
-import MessengerChat from "./messengerembed/messengerembed";
+import MessengerChat from "../MessengerChat";
 
 export default function Header() {
   return(

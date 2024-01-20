@@ -1,6 +1,6 @@
 import type { AppProps } from "next/app";
 
-import Assistant from "@/components/ChatBot/assistant";
+import Assistant from "@/components/Assistant";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
