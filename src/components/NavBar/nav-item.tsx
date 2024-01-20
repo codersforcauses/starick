@@ -12,22 +12,17 @@ const NavItem = ({ link, classNames }: Props) => {
   // handles a nav item state (hovered/clicked)
   const [activated, setActivated] = useState(false);
 
-  // handles mouse proximity or clicks in nav item area
-  const handleMouseEnter = () => setActivated(true);
-  const handleMouseLeave = () => setActivated(false);
-  const handleClick = () => setActivated(activated ? false : true);
 
   return (
     // root div handles mouse in and out events
     <div
       className="relative"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
+      onMouseEnter={() => setActivated(true)}
+      onMouseLeave={() => setActivated(false)}
     >
       {/* button handles click action */}
       <button
         className={`${classNames} my-0.5 transition hover:brightness-90 hover:filter`}
-        onClick={handleClick}
       >
         {/* Coniditional text rendering depending on submenu existence */}
         {link.submenu ? (
