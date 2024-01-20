@@ -1,4 +1,4 @@
-export default function PublicationList({ items } : {items: Array<{text: string, link: string}>}) {
+export default function PublicationList({ items } : {items: {text: string; link: string}[]}) {
     const colour1 = "starick-olive";
     const colour2 = "starick-white";
     return (

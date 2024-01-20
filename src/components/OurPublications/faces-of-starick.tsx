@@ -1,9 +1,8 @@
 import ServicesSection from "../Services/services-section";
+import PublicationList from "./publications-list";
 
 export default function FacesOfStarick() {
-    const body = <div className="bg-starick-olive pl-8 py-2 mt-5 mb-8">
-        <a href="https://www.starick.org.au/wp-content/uploads/The-Faces-of-Starick-1985-2015.pdf">The Faces of Starick 1985-2015</a>
-    </div>
+    const body = <><br /><PublicationList items={[{text: "The Faces of Starick 1985-2015", link: "https://www.starick.org.au/wp-content/uploads/The-Faces-of-Starick-1985-2015.pdf"}]}/><br /></>
     return (
         <ServicesSection
           titleTextColour="starick-white"
