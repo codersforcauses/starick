@@ -16,7 +16,7 @@ const NavBar = () => {
     setHamburgerMenuOpen(hamburgerMenuOpen ? false : true);
 
   return (
-    <nav className="fixed left-0 right-0 top-0 z-10 flex h-14 items-center justify-between whitespace-nowrap bg-white px-4">
+    <nav className="fixed left-0 right-0 top-0 z-10 flex h-14 items-center justify-between whitespace-nowrap bg-white px-4 text-starick-brown">
       {/* Left nav container (logo and links) */}
       <div className="flex basis-auto items-center justify-center">
         {/* Header container */}
