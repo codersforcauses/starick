@@ -24,7 +24,7 @@ export default function CoreServices() {
       <InPageNav list={navLinkDetails}></InPageNav>
       <Crisis />
       <SupportInfo />
-      <Legal/>
+      <Legal />
     </>
   );
 }

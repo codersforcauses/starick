@@ -3,7 +3,17 @@ import ServicesSection from "../Services/services-section";
 export default function Legal() {
   const body = (
     <>
-      <p>*<a href="https://www.legalaid.wa.gov.au/find-legal-answers/family/family-violence-and-your-safety/get-help-family-violence-and-your-safety" className="my-link">The Legal Aid WA </a> website also has a wealth of information on domestic and family violence.</p>
+      <p>
+        *
+        <a
+          href="https://www.legalaid.wa.gov.au/find-legal-answers/family/family-violence-and-your-safety/get-help-family-violence-and-your-safety"
+          className="my-link"
+        >
+          The Legal Aid WA{" "}
+        </a>{" "}
+        website also has a wealth of information on domestic and family
+        violence.
+      </p>
     </>
   );
   return (
