@@ -28,7 +28,7 @@ export default function Crisis() {
       titleBackgroundColour="starick-green"
       sectionBody={body}
       title="Crisis"
-      iconPath="icons/speech.svg"
+      iconPath="icons/important.svg"
     />
   );
 }
