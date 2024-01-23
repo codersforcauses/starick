@@ -12,7 +12,6 @@ const NavItem = ({ link, classNames }: Props) => {
   // handles a nav item state (hovered/clicked)
   const [activated, setActivated] = useState(false);
 
-
   return (
     // root div handles mouse in and out events
     <div

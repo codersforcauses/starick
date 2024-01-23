@@ -4,7 +4,7 @@ import MessengerChat from "../MessengerChat";
 import PanicButton from "./PanicButton";
 
 export default function Header() {
-  return(
+  return (
     <header>
       <nav className="bg-starick-green">
         <div className="flex flex-row">
@@ -13,8 +13,8 @@ export default function Header() {
         </div>
         <NavBar />
       </nav>
-      
+
       <MessengerChat shouldInitializeEmbed={false} />
     </header>
-  )
+  );
 }

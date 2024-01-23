@@ -1,22 +1,22 @@
+import Image from "next/image";
+
+import Carousel from "@/components/Home/carousel/carousel";
+import carousel_list from "@/components/Home/carousel/carousel_list.json";
 import CoreServiceItem from "@/components/Home/core-service-item";
+import LinkButton from "@/components/Home/link-button";
 import Subtitle from "@/components/Home/subtitle";
 
 import CounsellingServices from "~/icons/aid.svg";
+import Staricklogo from "~/icons/starick-logo.svg";
+import EventMap from "~/images/home/event-map.png";
+import HomeTitle from "~/images/home/home-title.png";
+import Poster1 from "~/images/home/poster1.png";
+import Poster2 from "~/images/home/poster2.png";
+import Poster3 from "~/images/home/poster3.png";
 import SafeAtHomeProgram from "~/images/home/safe-at-home-program.png";
 import SupportInPoliceStations from "~/images/home/support-in-police-stations.png";
 import TransitionalHousing from "~/images/home/transitional-housing.png";
 import TwoRefuges from "~/images/home/two-refuges.png";
-import Image from "next/image";
-import Staricklogo from "~/icons/starick-logo.svg";
-import HomeTitle from "~/images/home/home-title.png";
-import LinkButton from "@/components/Home/link-button";
-import Poster1 from "~/images/home/poster1.png";
-import Poster2 from "~/images/home/poster2.png";
-import Poster3 from "~/images/home/poster3.png";
-import EventMap from "~/images/home/event-map.png";
-
-import carousel_list from "@/components/Home/carousel/carousel_list.json";
-import Carousel from "@/components/Home/carousel/carousel";
 
 export default function Home() {
   return (
