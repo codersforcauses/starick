@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <>
       <div className="relative">
-        <p className="bottom-15 left absolute left-10 top-20 w-2/5 font-bold">
+        <p className="bottom-15 left absolute left-20 top-20 w-2/5 text-white text-7xl font-bold">
           Domestic Violence Support & Services for Women and Children
         </p>
 

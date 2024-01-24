@@ -18,7 +18,7 @@ const NavBar = () => {
     setHamburgerMenuOpen(hamburgerMenuOpen ? false : true);
 
   return (
-    <nav className="fixed left-0 right-0 top-14 z-10 flex h-16 items-center justify-between whitespace-nowrap bg-white px-4">
+    <nav className="fixed left-0 right-0 top-14 z-10 flex h-14 items-center justify-between whitespace-nowrap bg-white px-4">
       {/* Left nav container (logo and links) */}
       <div className="flex basis-auto items-center justify-center">
         {/* Header container */}
@@ -29,7 +29,7 @@ const NavBar = () => {
               alt="starick logo"
               width="0"
               height="0"
-              className="justify-left mx-10 h-28 w-1/3"
+              className="justify-left mx-0 h-28 w-1/3"
             />
           </Link>
         </div>
