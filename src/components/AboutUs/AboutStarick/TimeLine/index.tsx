@@ -1,25 +1,22 @@
-// alt: could do the line as like a border on one side, but then don't know how to do the circle
-
 export default function Timeline() {
   return (
     <div className="container bg-starick-white">
-      <div className="mx-auto flex grid-cols-9 flex-col p-2 text-starick-black md:grid md:px-32">
+      <div className="flex grid-cols-9 flex-col p-2 text-starick-black md:grid md:px-32">
         {/* left */}
         <div className="flex flex-row-reverse md:contents">
           {/* text */}
-          <div className="col-start-1 col-end-5 my-4 ml-auto">
-            <h3 className="mb-1 text-lg font-semibold">Lorem ipsum</h3>
-            <p className="text-justify leading-tight">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-              quaerat?
-            </p>
+          <div className="col-start-2 col-end-5 my-4 ml-auto text-right">
+            <h3 className="mb-1 text-lg font-semibold text-starick-orange">
+              1985
+            </h3>
+            <p className="leading-tight">Official opening of Starick House</p>
           </div>
           {/* line */}
           <div className="relative col-start-5 col-end-6 mr-10 md:mx-auto">
-            <div className="flex h-full w-5 items-center justify-center">
-              <div className="h-full w-1 bg-starick-green"></div>
+            <div className="flex h-full w-24 items-center justify-center">
+              <div className="h-full w-1 bg-starick-olive"></div>
+              <div className="absolute top-6 h-4 w-4 rounded-full bg-starick-orange"></div>
             </div>
-            <div className="absolute top-1/2 -mt-3 h-5 w-5 rounded-full bg-starick-orange"></div>
           </div>
         </div>
 
@@ -27,17 +24,19 @@ export default function Timeline() {
         <div className="flex md:contents">
           {/* line */}
           <div className="relative col-start-5 col-end-6 mr-10 md:mx-auto">
-            <div className="flex h-full w-5 items-center justify-center">
-              <div className="h-full w-1 bg-starick-green"></div>
+            <div className="flex h-full w-24 items-center justify-center">
+              <div className="h-full w-1 bg-starick-olive"></div>
+              <div className="absolute top-6 h-4 w-4 rounded-full bg-starick-orange"></div>
             </div>
-            <div className="absolute top-1/2 -mt-3 h-5 w-5 rounded-full bg-starick-orange"></div>
           </div>
           {/* text */}
-          <div className="col-start-6 col-end-10 my-4 mr-auto">
-            <h3 className="mb-1 text-lg font-semibold">Lorem ipsum</h3>
-            <p className="text-justify leading-tight">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae,
-              facilis.
+          <div className="col-start-6 col-end-9 my-4 mr-auto text-left">
+            <h3 className="mb-1 text-lg font-semibold text-starick-orange">
+              1987
+            </h3>
+            <p className="leading-tight">
+              Joint production with Curtin University of 30 minutes video to
+              increase awareness of domestic violence (DV) in the community
             </p>
           </div>
         </div>
