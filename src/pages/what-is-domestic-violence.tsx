@@ -1,8 +1,8 @@
-import Image from "next/image";
-
 import { ReactNode } from "react";
-import Section from "@/components/basicInformation/Section";
+import Image from "next/image";
 import internal from "stream";
+
+import Section from "@/components/basicInformation/Section";
 
 type Section = {
   sectionId: string;
