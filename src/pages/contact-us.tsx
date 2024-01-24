@@ -1,10 +1,9 @@
-import Image from "next/image";
-import { FormEvent } from "react";
-
+import { FormEvent, useState } from "react";
 
 
 export default function ContactUs() {
-
+  // const [error, setError] =useState("dsadsadsads")
+  // const [formErrorState, setFormErrorState] = 
 
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
@@ -18,9 +17,11 @@ export default function ContactUs() {
     const enquiry = (event.currentTarget.elements.namedItem("entry.1073078232") as HTMLInputElement).value
 
 
-
-
     // console.log((event.currentTarget.elements.namedItem("entry.339576848") as HTMLInputElement).value)
+    // const test: string = process.env.REACT_APP_FIRSTNAME_INPUT_NAME || '';
+    console.log(process.env.NEXT_PUBLIC_TEST);
+    
+
     const response = await fetch('/api/email/email' , {
       method: 'POST',
       body: JSON.stringify({
@@ -31,6 +32,10 @@ export default function ContactUs() {
         'entry.1073078232': enquiry,
       }),
     })
+
+    // if(response.status != "200"){
+    //   setError("Something went wrong")
+    // }
 
 
   }
@@ -90,6 +95,7 @@ export default function ContactUs() {
           </div>
 
           <div className="p-6  md:pr-16 lg:pr-32 basis-full md:basis-1/2">
+            {/* {error && <div>{error}</div>} */}
 
             <form
               onSubmit={handleSubmit}

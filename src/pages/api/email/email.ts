@@ -29,9 +29,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         })
 
       console.log(response );
-    } else {
-      // Handle any other HTTP method
-    }
+      res.status(response.status);
   }
 
 
