@@ -6,7 +6,7 @@ export default function Timeline() {
         <div className="flex flex-row-reverse md:contents">
           {/* text */}
           <div className="col-start-2 col-end-5 my-4 ml-auto text-right">
-            <h3 className="mb-1 text-lg font-semibold text-starick-orange">
+            <h3 className="mb-2 inline-block rounded-lg bg-starick-orange px-2 py-1 text-lg font-semibold text-starick-white">
               1985
             </h3>
             <p className="leading-tight">Official opening of Starick House</p>
@@ -31,7 +31,7 @@ export default function Timeline() {
           </div>
           {/* text */}
           <div className="col-start-6 col-end-9 my-4 mr-auto text-left">
-            <h3 className="mb-1 text-lg font-semibold text-starick-orange">
+            <h3 className="mb-2 inline-block rounded-lg bg-starick-orange px-2 py-1 text-lg font-semibold text-starick-white">
               1987
             </h3>
             <p className="leading-tight">
