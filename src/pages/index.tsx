@@ -1,9 +1,10 @@
 import Image from "next/image";
 
+import Carousel from "@/components/Home/carousel/carousel";
+import carousel_list from "@/components/Home/carousel/carousel_list.json";
 import CoreServiceItem from "@/components/Home/core-service-item";
 import LinkButton from "@/components/Home/link-button";
 import Subtitle from "@/components/Home/subtitle";
-
 
 import SafeAtHomeProgram from "~/icons/health.svg";
 import TransitionalHousing from "~/icons/houses.svg";
@@ -12,24 +13,18 @@ import CounsellingServices from "~/icons/psychology.svg";
 import TwoRefuges from "~/icons/refugees.svg";
 import Staricklogo from "~/icons/starick-logo.svg";
 import EventMap from "~/images/home/event-map.png";
-
 import Poster1 from "~/images/home/poster1.png";
 import Poster2 from "~/images/home/poster2.png";
 import Poster3 from "~/images/home/poster3.png";
 import HomeTitle from "~/images/Parents-with-kids-graphic.png";
 
-import carousel_list from "@/components/Home/carousel/carousel_list.json";
-import Carousel from "@/components/Home/carousel/carousel";
-
 export default function Home() {
   return (
     <>
       <div className="relative">
-
-        <p> className="md:bottom-15 left absolute left-10 top-20 w-2/5 text-2xl font-bold text-white md:left-20 md:text-8xl">
-          {/* how to make the text proportionate to the page as the user plays with size? */}
-          Domestic Violence Support & Services for Women and Children </p>
-
+        <p className="bottom-15 left absolute left-10 top-20 w-2/5 font-bold">
+          Domestic Violence Support & Services for Women and Children
+        </p>
 
         <Image
           src={HomeTitle}
@@ -39,6 +34,7 @@ export default function Home() {
           className="w-50 h-auto"
         />
       </div>
+
       <div className="bg-starick-olive py-2 pl-6 text-center font-bold text-starick-brown  ">
         <p>
           For urgent help call: <br />
@@ -52,12 +48,10 @@ export default function Home() {
 
       <div className="pb-20 pt-56">
         <Image
-
           src={Staricklogo}
           alt="starick logo"
           width="0"
           height="0"
-
           className="justify-left mx-10 h-auto w-1/3"
         />
 
@@ -66,7 +60,6 @@ export default function Home() {
           We work predominantly in Perth&apos;s south-eastern metropolitan
           region and our vision is to build futures free from violence for the
           women and children the community as a whole.
-
         </p>
       </div>
 
