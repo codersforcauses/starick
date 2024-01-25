@@ -18,6 +18,8 @@ import Poster2 from "~/images/home/poster2.png";
 import Poster3 from "~/images/home/poster3.png";
 import HomeTitle from "~/images/Parents-with-kids-graphic.png";
 
+import FacebookFeed from "@/components/social-media-feed";
+
 export default function Home() {
   return (
     <>
@@ -145,6 +147,7 @@ export default function Home() {
         <p className="text-center text-3xl font-bold text-starick-brown">
           Follow the movement on Facebook!
         </p>
+        <FacebookFeed />
 
         <div className="flex place-items-center gap-4 px-10 py-10">
           <div className="flex w-1/2 flex-wrap place-content-end gap-4">
