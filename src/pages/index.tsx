@@ -47,7 +47,6 @@ export default function Home() {
 
       <div className="flex items-center pb-20 pt-20">
         <Image
-
           src={Staricklogo}
           alt="starick logo"
           width="0"
