@@ -1,4 +1,5 @@
 import React from "react";
+
 import InPageNav from "@/components/InPageNav";
 
 const JobOpportunities = () => {

@@ -1,5 +1,5 @@
-import ServicesSection from "../Services/services-section";
 import PublicationList from "./publications-list";
+import ServicesSection from "../Services/services-section";
 
 export default function StrategicPlans() {
   const itemList = [

@@ -22,9 +22,7 @@ export default function Home() {
   return (
     <>
       <div className="relative">
-
         <p className="bottom-15 left absolute left-20 top-20 w-2/5 text-7xl font-bold text-white">
-
           Domestic Violence Support & Services for Women and Children
         </p>
 
@@ -49,7 +47,7 @@ export default function Home() {
       </div>
 
       <div className="pb-20 pt-56">
-        <Image
+        <img
           src={Staricklogo}
           alt="starick logo"
           width="0"

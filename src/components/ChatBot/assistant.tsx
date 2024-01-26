@@ -70,7 +70,7 @@ function Assistant() {
     setChatOpen(!chatOpen);
   };
 
-  //Switch to MessengerEmbed
+  // Switch to MessengerEmbed//
   const handleButtonClick = () => {
     setShowChatbot(false);
   };
