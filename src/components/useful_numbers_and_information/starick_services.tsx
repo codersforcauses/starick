@@ -64,7 +64,7 @@ export default function StarickServices() {
   );
   return (
     <ServicesSection
-      titleTextColour="starick-black"
+      titleTextColour="starick-white"
       titleBackgroundColour="starick-green"
       sectionBody={body}
       title="Starick Services"
