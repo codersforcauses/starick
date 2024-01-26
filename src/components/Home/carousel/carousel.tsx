@@ -34,7 +34,7 @@ export default function Carousel({
     return () => {
       clearInterval(intervalId);
     };
-  }, [currentSlide]);
+  }, [currentSlide, handleNextSlide]);
 
   return (
     <>

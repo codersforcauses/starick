@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 
 import { GPTMessage, GPTMessageSchema } from "@/lib/chatbot/validators";
-import MessengerEmbed from "../messengerembed/messengerembed";
 
 import Bubble from "./bubble";
 import Message from "./message";
+import MessengerEmbed from "../messengerembed/messengerembed";
 
 import styles from "./assistant.module.css";
 
