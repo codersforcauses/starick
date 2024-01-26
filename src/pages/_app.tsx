@@ -5,9 +5,9 @@ import Footer from "@/components/Footer";
 import MessengerChat from "@/components/messengerembed/messengerembed";
 import NavBar from "@/components/NavBar";
 import PanicButton from "@/components/PanicButton";
+import Search from "@/components/SearchBar";
 
 import "@/styles/globals.css";
-import Search from "@/components/SearchBar";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <PanicButton />
         <MessengerChat shouldInitializeEmbed={false} />
       </header>
-      <main className="mt-14  flex-grow bg-starick-white">
+      <main className="mt-14 flex flex-grow flex-col bg-starick-white">
         <Assistant />
         <Component {...pageProps} />
       </main>
