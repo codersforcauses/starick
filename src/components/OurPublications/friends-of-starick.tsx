@@ -1,6 +1,6 @@
-import ServicesSection from "../Services/services-section";
-import PublicationList from "./publications-list";
 import friendsOfStarickItems from "./friends-of-starick-items.json";
+import PublicationList from "./publications-list";
+import ServicesSection from "../Services/services-section";
 
 export default function FriendsOfStarick() {
   const body = friendsOfStarickItems.map(({ year, publications }, _) => {
