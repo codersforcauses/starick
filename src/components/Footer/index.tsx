@@ -12,7 +12,6 @@ type SiteLink = {
 type Props = {
   children: SiteLink[];
 };
-
 const SiteLinks: SiteLink[] = [
   /* write the sitemap's title and link here */
   { title: "Site map / links to pages here", link: "#" },
@@ -27,19 +26,20 @@ const Footer = () => {
   return (
     <>
       {/* only in large window will get the sticky effect */}
-      <div className="bottom-0 grid flex-grow-0 items-center justify-items-center bg-starick-olive p-0 lg:grid-cols-12 ">
-        <Flag></Flag>
+      <div className="flex flex-col overflow-hidden  bg-starick-green px-5 lg:grid lg:grid-cols-2 lg:grid-rows-2 ">
+        <Subscribe></Subscribe>
         <Contact>{SiteLinks}</Contact>
-        <Email></Email>
+        <Donation></Donation>
+        <Acknowledgement></Acknowledgement>
       </div>
     </>
   );
 };
 
-const Flag = () => {
+const Acknowledgement = () => {
   return (
-    <div className="text-center md:ml-6 lg:col-span-4">
-      <div className=" flex flex-wrap items-center justify-center p-1  ">
+    <div className="relative order-4 border-starick-olive text-center before:absolute before:left-0 before:top-0 before:w-[50vw] before:bg-starick-olive before:content-[''] lg:border-l lg:before:block lg:before:h-[1px] ">
+      <div className=" flex flex-wrap items-center justify-center p-1">
         <div className="w-auto overflow-hidden">
           <Image
             src={AboriginalFlag}
@@ -87,14 +87,12 @@ const Contact = ({ children }: Props) => {
 
   return (
     <>
-      <ul className="m-3 p-2 text-center lg:col-span-4 lg:text-left">
-        {siteLists}
-      </ul>
+      <ul className="m-3 p-2 text-center  lg:text-left">{siteLists}</ul>
     </>
   );
 };
 
-const Email = () => {
+const Subscribe = () => {
   const [userMail, setUserMail] = useState<string>("");
   const [isNotValid, setIsNotValid] = useState<boolean>(true);
   const handleChange = (e: ChangeEvent<HTMLInputElement>): void => {
@@ -121,7 +119,7 @@ const Email = () => {
     // send a POST and send userMail to the DB
   };
   return (
-    <div className="mx-auto mb-9  lg:col-span-4 lg:mb-2 lg:ml-6  lg:mr-5 lg:text-left">
+    <div className=" order-1 border-starick-olive lg:border-l lg:text-left">
       <p className="mb-2 text-center text-base font-normal text-black lg:text-left">
         Subscribe to our newsletter
       </p>
@@ -129,8 +127,8 @@ const Email = () => {
         <input
           type="email"
           name="email"
-          className=" h-29 rounded-l-lg px-5 py-2 text-sm  placeholder-slate-400 shadow-sm outline-none 
-          ring-0 invalid:border-starick-orange invalid:text-red-600   focus:ring-2 focus:ring-inset focus:ring-starick-orange
+          className="h-29 rounded-l-lg px-5 py-2 text-sm  placeholder-slate-400 shadow-sm outline-none 
+          ring-0 invalid:border-starick-orange invalid:text-red-600 focus:ring-2 focus:ring-inset focus:ring-starick-orange
           focus:invalid:border-starick-orange focus:invalid:ring-starick-orange"
           placeholder="you@example.com"
           value={userMail}
@@ -145,6 +143,16 @@ const Email = () => {
         </button>
       </form>
     </div>
+  );
+};
+
+const Donation = () => {
+  return (
+    <>
+      <div className="relative order-3 before:absolute before:right-0 before:top-0 before:w-[50vw] before:bg-starick-olive before:content-[''] lg:before:block  lg:before:h-[1px]  ">
+        Donation
+      </div>
+    </>
   );
 };
 
