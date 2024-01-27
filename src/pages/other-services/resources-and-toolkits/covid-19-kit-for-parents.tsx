@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { List } from "@/components/Services/list";
+import Banner from "@/components/Services/banner";
 
 export default function ResourcesAndToolkits() {
   const body = (
@@ -66,20 +67,7 @@ export default function ResourcesAndToolkits() {
 
   return (
     <>
-      <div>
-        <Image
-          className="h-[500px] w-full object-cover"
-          src="/images/Parents-with-kids-graphic.png"
-          alt=""
-          height="500"
-          width="1000"
-        />
-        <div className="relative -mt-20 mb-6 w-fit rounded-r-full bg-white px-10">
-          <p className="p-2 text-4xl font-bold text-starick-brown">
-            COVID-19 Kit for Parents
-          </p>
-        </div>
-      </div>
+      <Banner titleText="COVID-19 Kit for Parents" backgroundImagePath="/images/Parents-with-kids-graphic.png"/>
       {body}
 
       <div className="-mx-2 flex flex-wrap justify-center bg-starick-white">

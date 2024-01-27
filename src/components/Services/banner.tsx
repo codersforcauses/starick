@@ -1,16 +1,22 @@
+import Image from "next/image";
+
 interface BannerProps {
   titleText: string;
   subtitleText?: string;
+  backgroundImagePath?: string;
 }
 
-export default function Banner({ titleText, subtitleText }: BannerProps) {
+export default function Banner({ titleText, subtitleText, backgroundImagePath }: BannerProps) {
   return (
     <div>
-      <img
-        src="/images/starick-image1.jpg"
-        className="w-full"
+      <Image
+        src={backgroundImagePath ? backgroundImagePath : "/images/starick-image1.jpg"}
+        width={0}
+        height={0}
+        style={{width: "100%"}}
+        sizes="100vw"
         alt="banner"
-      ></img>
+      ></Image>
       <div
         className={`relative w-fit rounded-r-full bg-white px-6 py-2 md:px-20 md:py-4 ${
           subtitleText
