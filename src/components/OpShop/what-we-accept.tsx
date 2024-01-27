@@ -39,7 +39,7 @@ export default function WhatWeAccept() {
       <br />
       <div className="grid grid-cols-1 md:grid-cols-2">
         {[0, 1].map((num) => (
-          <List
+          <List key={num}
             items={acceptedItems.slice(
               num * halfIndex,
               (num + 1) * halfIndex + num
