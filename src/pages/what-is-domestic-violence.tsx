@@ -146,9 +146,7 @@ const sections: Section[] = [
           Ways that texting and social media can be used to bully, harass, stalk
           or intimidate you include:
         </p>
-        <div className="pl-12">
-          {" "}
-          <ul className="list-disc">
+          <ul className="list-disc ml-8 list-outside">
             <li>
               Telling you who you can or can’t be friends with on Facebook and
               other sites
@@ -180,7 +178,6 @@ const sections: Section[] = [
               Tumblr, etc.
             </li>
           </ul>
-        </div>
       </div>
     ),
     iconPath: "/icons/reports.svg"
@@ -197,8 +194,7 @@ const sections: Section[] = [
           Every human being has the right to control their own life. This{" "}
         </p>
         <p className="font-bold">includes:</p>
-        <div className="pl-12">
-          <ul className="list-disc">
+          <ul className="list-disc ml-8 list-outside">
             <li>Being safe all the time.</li>
             <li>Being treated with respect.</li>
             <li>Being safe from abuse.</li>
@@ -212,7 +208,6 @@ const sections: Section[] = [
             <li>Being able to contact community groups.</li>
             <li>Being able to choose your own religion.</li>
           </ul>
-        </div>
       </div>
     ),
     iconPath: "/icons/health.svg"
@@ -232,8 +227,7 @@ const sections: Section[] = [
         </p>
         <p className="font-bold">following ways?</p>
         <br />
-        <div className="pl-12">
-          <ul className="list-disc">
+          <ul className="list-disc ml-8 list-outside">
             <li>
               <p>
                 Do you have to be careful around this person because of their
@@ -261,7 +255,6 @@ const sections: Section[] = [
             </li>
             <li>Do you make excuses for this person’s violent behaviour?</li>
           </ul>
-        </div>
         <br />
         <p>
           If so, you may want to seek assistance or contact a Starick worker to

@@ -79,20 +79,18 @@ const sections: Section[] = [
         </p>
         <br />
         <p className="font-bold">Things you can say to the victim:</p>
-        <div className="pl-12">
-          <ul className="list-disc">
-            <li>&apos;I believe you.&apos;</li>
-            <li>&apos;You do not deserve to be abused.&apos;</li>
-            <li>
-              &apos;I am afraid for your safety and the safety of your
-              children.&apos;
-            </li>
-            <li>
-              &apos;Do you need help to find out what services are
-              available?&apos;
-            </li>
-          </ul>
-        </div>
+        <ul className="list-disc ml-8 list-outside">
+          <li>&apos;I believe you.&apos;</li>
+          <li>&apos;You do not deserve to be abused.&apos;</li>
+          <li>
+            &apos;I am afraid for your safety and the safety of your
+            children.&apos;
+          </li>
+          <li>
+            &apos;Do you need help to find out what services are
+            available?&apos;
+          </li>
+        </ul>
       </div>
     ),
     iconPath: "/icons/did-you-know.svg"
@@ -113,16 +111,14 @@ const sections: Section[] = [
         <br />
         <p className="font-bold">Information the police may ask you for:</p>
         <br />
-        <div className="pl-12">
-          <ul className="list-disc">
-            <li>The address where the incident is taking place</li>
-            <li>Your name and telephone number</li>
-            <li>The offender&apos;s name, age and date of birth</li>
-            <li>If there any weapons involved.</li>
-            <li>A description of the abuser.</li>
-            <li>The victim&apos;s name</li>
-          </ul>
-        </div>
+        <ul className="list-disc ml-8 list-outside">
+          <li>The address where the incident is taking place</li>
+          <li>Your name and telephone number</li>
+          <li>The offender&apos;s name, age and date of birth</li>
+          <li>If there any weapons involved.</li>
+          <li>A description of the abuser.</li>
+          <li>The victim&apos;s name</li>
+        </ul>
         <br />
         <p>
           If the incident is occurring while you are talking to the operator,
@@ -142,20 +138,18 @@ const sections: Section[] = [
       <div>
         <p className="font-bold">How do I get into a Starick refuge?</p>
         <br />
-        <div className="pl-12">
-          <ul className="list-disc">
-            <li>
-              Essential clothing and personal items for yourself and your
-              children.
-            </li>
-            <li>Any medications you or your children are taking.</li>
-            <li>
-              Identification, such as birth certificates, children&apos;s
-              immunisation records, any Department of Housing documentation,
-              legal documents, passports and visa information you may have.
-            </li>
-          </ul>
-        </div>
+        <ul className="list-disc ml-8 list-outside">
+          <li>
+            Essential clothing and personal items for yourself and your
+            children.
+          </li>
+          <li>Any medications you or your children are taking.</li>
+          <li>
+            Identification, such as birth certificates, children&apos;s
+            immunisation records, any Department of Housing documentation,
+            legal documents, passports and visa information you may have.
+          </li>
+        </ul>
         <br />
         <p>
           Sometimes when women are not able to bring the above items with them,
@@ -287,17 +281,15 @@ const sections: Section[] = [
           In addition to providing support to women while they are living in a
           Starick refuges, Starick also supports women and children:
         </p>
-        <div className="pl-12">
-          <ul className="list-disc">
-            <li>
-              when they are living in the community, are experiencing family and
-              domestic violence and are unable or unwilling to access refuge
-              accommodation;
-            </li>
-            <li>when they leave our refuges;</li>
-            <li>when they move into a Starick transitional home.</li>
-          </ul>
-        </div>
+        <ul className="list-disc ml-8 list-outside">
+          <li>
+            when they are living in the community, are experiencing family and
+            domestic violence and are unable or unwilling to access refuge
+            accommodation;
+          </li>
+          <li>when they leave our refuges;</li>
+          <li>when they move into a Starick transitional home.</li>
+        </ul>
         <br />
         <span>Information about these services can be found on the </span>
         <a href="" className="underline underline-offset-auto">
@@ -315,21 +307,19 @@ const sections: Section[] = [
           following ways:
         </p>
         <br />
-        <div className="pl-12">
-          <ul className="list-disc">
-            <li>Assisting with safety planning</li>
-            <li>
-              Liaison with services such as income support, health and education
-              services
-            </li>
-            <li>
-              Help with accessing support groups and other community services
-            </li>
-            <li>
-              Support if you need to attend court or access other legal services
-            </li>
-          </ul>
-        </div>
+        <ul className="list-disc ml-8 list-outside">
+          <li>Assisting with safety planning</li>
+          <li>
+            Liaison with services such as income support, health and education
+            services
+          </li>
+          <li>
+            Help with accessing support groups and other community services
+          </li>
+          <li>
+            Support if you need to attend court or access other legal services
+          </li>
+        </ul>
         <br />
         <p>
           Read how our outreach workers have helped two women,{" "}
