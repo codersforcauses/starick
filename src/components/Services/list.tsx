@@ -8,9 +8,7 @@ export function List({
   return (
     <ul className={`ml-8 list-outside ${style}`}>
       {items.map((text, index) => (
-        <li key={index}>
-          {text}
-        </li>
+        <li key={index}>{text}</li>
       ))}
     </ul>
   );

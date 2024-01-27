@@ -6,14 +6,22 @@ interface BannerProps {
   backgroundImagePath?: string;
 }
 
-export default function Banner({ titleText, subtitleText, backgroundImagePath }: BannerProps) {
+export default function Banner({
+  titleText,
+  subtitleText,
+  backgroundImagePath
+}: BannerProps) {
   return (
     <div>
       <Image
-        src={backgroundImagePath ? backgroundImagePath : "/images/starick-image1.jpg"}
+        src={
+          backgroundImagePath
+            ? backgroundImagePath
+            : "/images/starick-image1.jpg"
+        }
         width={0}
         height={0}
-        style={{width: "100%"}}
+        style={{ width: "100%" }}
         sizes="100vw"
         alt="banner"
       ></Image>

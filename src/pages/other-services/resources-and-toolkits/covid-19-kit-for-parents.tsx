@@ -67,7 +67,10 @@ export default function ResourcesAndToolkits() {
 
   return (
     <>
-      <Banner titleText="COVID-19 Kit for Parents" backgroundImagePath="/images/Parents-with-kids-graphic.png"/>
+      <Banner
+        titleText="COVID-19 Kit for Parents"
+        backgroundImagePath="/images/Parents-with-kids-graphic.png"
+      />
       {body}
 
       <div className="-mx-2 flex flex-wrap justify-center bg-starick-white">

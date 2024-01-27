@@ -19,7 +19,7 @@ export default function RespectfulRelationshipsSection() {
         and the broader school environment.
       </p>
 
-      <ul className="list-disc ml-8 list-outside">
+      <ul className="ml-8 list-outside list-disc">
         <li>
           The programs aim is to give school staff the skills they need to
           support students to build relationships that are non-violent, equal,
@@ -27,10 +27,8 @@ export default function RespectfulRelationshipsSection() {
         </li>
         <li>The program includes: </li>
 
-        <ul className="list-disc ml-8 list-outside">
-          <li>
-            Professional learning for teachers and school staff.
-          </li>
+        <ul className="ml-8 list-outside list-disc">
+          <li>Professional learning for teachers and school staff.</li>
           <li>
             Information, tools and strategies to teach students about respectful
             relationships and gender equality, and
@@ -93,7 +91,7 @@ export default function RespectfulRelationshipsSection() {
       </p>
       <br></br>
       <p>Effective RRE recognises that schools are: </p>
-      <ul className="list-disc ml-8 list-outside">
+      <ul className="ml-8 list-outside list-disc">
         <li>Places of learning</li>
         <li>Community hubs, and </li>
         <li>Workplaces. </li>
@@ -103,7 +101,7 @@ export default function RespectfulRelationshipsSection() {
         A whole-of-school approach engages with all aspects of a school
         including:
       </p>
-      <ul className="list-disc ml-8 list-outside">
+      <ul className="ml-8 list-outside list-disc">
         <li>in-class education, </li>
         <li>school culture and environment, </li>
         <li>policies and procedures, while </li>

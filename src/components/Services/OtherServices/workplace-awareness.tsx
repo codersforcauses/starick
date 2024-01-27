@@ -104,7 +104,7 @@ export default function WorkplaceAwarenessSection() {
         some things to be aware of:
       </p>
       <br></br>
-      <ul className="list-disc ml-8 list-outside">
+      <ul className="ml-8 list-outside list-disc">
         <li>
           <b>FDV is a workplace health and safety issue.</b> For instance, did
           you know that one in five women are harassed by perpetrators while at

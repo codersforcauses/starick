@@ -79,7 +79,7 @@ const sections: Section[] = [
         </p>
         <br />
         <p className="font-bold">Things you can say to the victim:</p>
-        <ul className="list-disc ml-8 list-outside">
+        <ul className="ml-8 list-outside list-disc">
           <li>&apos;I believe you.&apos;</li>
           <li>&apos;You do not deserve to be abused.&apos;</li>
           <li>
@@ -111,7 +111,7 @@ const sections: Section[] = [
         <br />
         <p className="font-bold">Information the police may ask you for:</p>
         <br />
-        <ul className="list-disc ml-8 list-outside">
+        <ul className="ml-8 list-outside list-disc">
           <li>The address where the incident is taking place</li>
           <li>Your name and telephone number</li>
           <li>The offender&apos;s name, age and date of birth</li>
@@ -138,7 +138,7 @@ const sections: Section[] = [
       <div>
         <p className="font-bold">How do I get into a Starick refuge?</p>
         <br />
-        <ul className="list-disc ml-8 list-outside">
+        <ul className="ml-8 list-outside list-disc">
           <li>
             Essential clothing and personal items for yourself and your
             children.
@@ -146,8 +146,8 @@ const sections: Section[] = [
           <li>Any medications you or your children are taking.</li>
           <li>
             Identification, such as birth certificates, children&apos;s
-            immunisation records, any Department of Housing documentation,
-            legal documents, passports and visa information you may have.
+            immunisation records, any Department of Housing documentation, legal
+            documents, passports and visa information you may have.
           </li>
         </ul>
         <br />
@@ -281,7 +281,7 @@ const sections: Section[] = [
           In addition to providing support to women while they are living in a
           Starick refuges, Starick also supports women and children:
         </p>
-        <ul className="list-disc ml-8 list-outside">
+        <ul className="ml-8 list-outside list-disc">
           <li>
             when they are living in the community, are experiencing family and
             domestic violence and are unable or unwilling to access refuge
@@ -307,7 +307,7 @@ const sections: Section[] = [
           following ways:
         </p>
         <br />
-        <ul className="list-disc ml-8 list-outside">
+        <ul className="ml-8 list-outside list-disc">
           <li>Assisting with safety planning</li>
           <li>
             Liaison with services such as income support, health and education

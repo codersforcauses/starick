@@ -146,38 +146,38 @@ const sections: Section[] = [
           Ways that texting and social media can be used to bully, harass, stalk
           or intimidate you include:
         </p>
-          <ul className="list-disc ml-8 list-outside">
-            <li>
-              Telling you who you can or can’t be friends with on Facebook and
-              other sites
-            </li>
-            <li>
-              <p>
-                Sending you negative, insulting or threatening emails, Facebook
-                messages, tweets or other online messages
-              </p>
-            </li>
-            <li>
-              <p>
-                Using sites like Facebook, Twitter, foursquare and others to
-                keep constant tabs on you
-              </p>
-            </li>
-            <li>Stealing or insisting you share your passwords</li>
-            <li>
-              Constantly texting you and punishing you if you don&apos;t respond
-            </li>
-            <li>
-              <p>
-                Looking through your phone frequently to check up on your
-                pictures, texts and outgoing calls
-              </p>
-            </li>
-            <li>
-              Tagging you in negative ways in pictures on Facebook, Instagram,
-              Tumblr, etc.
-            </li>
-          </ul>
+        <ul className="ml-8 list-outside list-disc">
+          <li>
+            Telling you who you can or can’t be friends with on Facebook and
+            other sites
+          </li>
+          <li>
+            <p>
+              Sending you negative, insulting or threatening emails, Facebook
+              messages, tweets or other online messages
+            </p>
+          </li>
+          <li>
+            <p>
+              Using sites like Facebook, Twitter, foursquare and others to keep
+              constant tabs on you
+            </p>
+          </li>
+          <li>Stealing or insisting you share your passwords</li>
+          <li>
+            Constantly texting you and punishing you if you don&apos;t respond
+          </li>
+          <li>
+            <p>
+              Looking through your phone frequently to check up on your
+              pictures, texts and outgoing calls
+            </p>
+          </li>
+          <li>
+            Tagging you in negative ways in pictures on Facebook, Instagram,
+            Tumblr, etc.
+          </li>
+        </ul>
       </div>
     ),
     iconPath: "/icons/reports.svg"
@@ -194,20 +194,20 @@ const sections: Section[] = [
           Every human being has the right to control their own life. This{" "}
         </p>
         <p className="font-bold">includes:</p>
-          <ul className="list-disc ml-8 list-outside">
-            <li>Being safe all the time.</li>
-            <li>Being treated with respect.</li>
-            <li>Being safe from abuse.</li>
-            <li>Being able to receive support and friendship.</li>
-            <li>Being treated as an equal.</li>
-            <li>Having control of your own finances.</li>
-            <li>Being free to leave a place if you are feeling unsafe.</li>
-            <li>Being able to say what you think and feel.</li>
-            <li>Being able to protect yourself and your children.</li>
-            <li>Being able to seek legal assistance.</li>
-            <li>Being able to contact community groups.</li>
-            <li>Being able to choose your own religion.</li>
-          </ul>
+        <ul className="ml-8 list-outside list-disc">
+          <li>Being safe all the time.</li>
+          <li>Being treated with respect.</li>
+          <li>Being safe from abuse.</li>
+          <li>Being able to receive support and friendship.</li>
+          <li>Being treated as an equal.</li>
+          <li>Having control of your own finances.</li>
+          <li>Being free to leave a place if you are feeling unsafe.</li>
+          <li>Being able to say what you think and feel.</li>
+          <li>Being able to protect yourself and your children.</li>
+          <li>Being able to seek legal assistance.</li>
+          <li>Being able to contact community groups.</li>
+          <li>Being able to choose your own religion.</li>
+        </ul>
       </div>
     ),
     iconPath: "/icons/health.svg"
@@ -227,34 +227,34 @@ const sections: Section[] = [
         </p>
         <p className="font-bold">following ways?</p>
         <br />
-          <ul className="list-disc ml-8 list-outside">
-            <li>
-              <p>
-                Do you have to be careful around this person because of their
-                anger, violence or emotional abuse?
-              </p>
-            </li>
-            <li>
-              <p>
-                Are you pressured by this person into sexual activities you are
-                not comfortable with?
-              </p>
-            </li>
-            <li>Are you are too scared to disagree with this person?</li>
-            <li>Is this person always checking up on what you are doing?</li>
-            <li>Does this person say you are stupid or useless?</li>
-            <li>Does this person threaten you, your family or your pets?</li>
-            <li>
-              Does this person stop you going out or doing what you want to do?
-            </li>
-            <li>
-              <p>
-                Are you unable to spend time with family or friends because this
-                person won’t let you?
-              </p>
-            </li>
-            <li>Do you make excuses for this person’s violent behaviour?</li>
-          </ul>
+        <ul className="ml-8 list-outside list-disc">
+          <li>
+            <p>
+              Do you have to be careful around this person because of their
+              anger, violence or emotional abuse?
+            </p>
+          </li>
+          <li>
+            <p>
+              Are you pressured by this person into sexual activities you are
+              not comfortable with?
+            </p>
+          </li>
+          <li>Are you are too scared to disagree with this person?</li>
+          <li>Is this person always checking up on what you are doing?</li>
+          <li>Does this person say you are stupid or useless?</li>
+          <li>Does this person threaten you, your family or your pets?</li>
+          <li>
+            Does this person stop you going out or doing what you want to do?
+          </li>
+          <li>
+            <p>
+              Are you unable to spend time with family or friends because this
+              person won’t let you?
+            </p>
+          </li>
+          <li>Do you make excuses for this person’s violent behaviour?</li>
+        </ul>
         <br />
         <p>
           If so, you may want to seek assistance or contact a Starick worker to
