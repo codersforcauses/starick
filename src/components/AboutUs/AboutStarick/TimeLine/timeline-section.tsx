@@ -1,8 +1,8 @@
 export default function TimelineSection() {
   return (
-    <div>
+    <div className="grow">
       {/* bubble and date */}
-      <div className="mx-auto w-4/6 rounded-lg p-2 text-center shadow-lg">
+      <div className="mx-auto w-4/6 p-2 text-center shadow-xl">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
