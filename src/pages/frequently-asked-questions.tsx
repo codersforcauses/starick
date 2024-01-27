@@ -1,9 +1,10 @@
-import Section from "@/components/basicInformation/Section";
-import Image from "next/image";
+import React from "react";
 import { useState } from "react";
 import { ReactNode } from "react";
+import Image from "next/image";
+
+import Section from "@/components/basicInformation/Section";
 import NavbarItem from "@/components/basicInformation/utility/NavbarItem";
-import { text } from "stream/consumers";
 type Section = {
   sectionId: string;
   titleBackgroundColor: string;
@@ -94,7 +95,7 @@ const sections: Section[] = [
         </div>
       </div>
     ),
-    iconPath: "/images/did-you-know.png"
+    iconPath: "/icons/did-you-know.svg"
   },
 
   {
@@ -129,7 +130,7 @@ const sections: Section[] = [
         </p>
       </div>
     ),
-    iconPath: "/images/did-you-know.png"
+    iconPath: "/icons/online-help.svg"
   },
   {
     sectionId: "section3",
@@ -163,7 +164,7 @@ const sections: Section[] = [
         </p>
       </div>
     ),
-    iconPath: "/images/did-you-know.png"
+    iconPath: "/icons/aid.svg"
   },
   {
     sectionId: "section4",
@@ -171,7 +172,7 @@ const sections: Section[] = [
     titleBackgroundColor: "starick-olive",
     titleTextColor: "starick-black",
     titleContent: "What can I take with me to the refuge?",
-    iconPath: "/images/gift.png",
+    iconPath: "/icons/did-you-know.svg",
     contentBody: (
       <div className="text-3xl">
         <p className="font-bold">How do I get into a Starick refuge?</p>
@@ -192,7 +193,7 @@ const sections: Section[] = [
     titleBackgroundColor: "starick-green",
     titleTextColor: "starick-white",
     titleContent: "Can I bring my pet to the refuge?",
-    iconPath: "/images/heart.png",
+    iconPath: "/icons/care.svg",
     contentBody: (
       <div className="text-3xl">
         <p>Unfortunately pets cannot be brought to the refuges.</p>
@@ -235,7 +236,7 @@ const sections: Section[] = [
     titleBackgroundColor: "starick-olive",
     titleTextColor: "starick-black",
     titleContent: "How long can I stay at the refuge?",
-    iconPath: "/images/did-you-know.png",
+    iconPath: "/icons/did-you-know.svg",
     contentBody: (
       <div className="text-3xl">
         <p>
@@ -252,7 +253,7 @@ const sections: Section[] = [
     titleBackgroundColor: "starick-green",
     titleTextColor: "starick-white",
     titleContent: "How does witnessing domestic violence affect children?",
-    iconPath: "/images/did-you-know.png",
+    iconPath: "/icons/did-you-know.svg",
     contentBody: (
       <div className="text-3xl">
         <p>
@@ -272,7 +273,7 @@ const sections: Section[] = [
     titleBackgroundColor: "starick-olive",
     titleTextColor: "starick-black",
     titleContent: "What is outreach?",
-    iconPath: "/images/did-you-know.png",
+    iconPath: "/icons/did-you-know.svg",
     contentBody: (
       <div className="text-3xl">
         <p className="font-bold">What is outreach?</p>
@@ -362,7 +363,7 @@ const sections: Section[] = [
     titleBackgroundColor: "starick-green",
     titleTextColor: "starick-white",
     titleContent: "What is a child advocate?",
-    iconPath: "/images/did-you-know.png",
+    iconPath: "/icons/domestic violence.svg",
     contentBody: (
       <div className="text-3xl">
         <p>
@@ -380,7 +381,7 @@ const sections: Section[] = [
     titleBackgroundColor: "starick-olive",
     titleTextColor: "starick-black",
     titleContent: "What is a women’s advocate?",
-    iconPath: "/images/did-you-know.png",
+    iconPath: "/icons/did-you-know.svg",
     contentBody: (
       <div className="text-3xl">
         <p className="font-bold">What is a women’s advocate?</p>
@@ -397,7 +398,7 @@ const sections: Section[] = [
     titleBackgroundColor: "starick-green",
     titleTextColor: "starick-white",
     titleContent: "What is a domestic violence advocate?",
-    iconPath: "/images/did-you-know.png",
+    iconPath: "/icons/did-you-know.svg",
     contentBody: (
       <div className="text-3xl">
         <p className="font-bold">What is a women’s advocate?</p>
@@ -416,7 +417,7 @@ const sections: Section[] = [
     titleBackgroundColor: "starick-olive",
     titleTextColor: "starick-black",
     titleContent: "What is HOWIC?",
-    iconPath: "/images/did-you-know.png",
+    iconPath: "/icons/did-you-know.svg",
     contentBody: (
       <div className="text-3xl">
         <p>
@@ -435,7 +436,7 @@ const sections: Section[] = [
     titleBackgroundColor: "starick-green",
     titleTextColor: "starick-white",
     titleContent: "What is a housing cluster?",
-    iconPath: "/images/did-you-know.png",
+    iconPath: "/icons/did-you-know.svg",
     contentBody: (
       <div className="text-3xl">
         <p>
