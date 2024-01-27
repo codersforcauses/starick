@@ -49,7 +49,7 @@ export const primaryNav: Array<NavBarItem> = [
       },
       {
         href: "/useful-numbers-and-information",
-        label:"Useful numbers & information"
+        label: "Useful numbers & information"
       }
     ]
   },
