@@ -45,24 +45,55 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="flex items-center pb-20 pt-20">
+      <div className="grid grid-cols-2 gap-4 p-4 mx-20">
+      {/* Element 1 */}
+      <div className="w-1/4 p-4">
         <Image
           src={Staricklogo}
           alt="starick logo"
           width="0"
           height="0"
-          className="justify-left mx-20  w-1/3"
+          className="justify-left mx-32 w-full"
         />
+      </div>
 
-        <p className=" white-space-normal mx-36 ml-auto w-1/3 text-right  text-2xl font-semibold text-starick-brown">
-          Supporting women and children escaping domestic and family violence.
-          We work predominantly in Perth&apos;s south-eastern metropolitan
-          region and our vision is to build futures free from violence for the
-          women and children the community as a whole.
+      {/* Element 2 */}
+      <div className="w-2/3 p-4">
+        <p className="white-space-normal text-right text-2xl font-semibold text-starick-brown">
+          Supporting women and children escaping domestic and family violence. We
+          work predominantly in Perth&apos; south-eastern metropolitan region, and our
+          vision is to build futures free from violence for the women and children
+          the community as a whole.
         </p>
       </div>
 
-      <Subtitle title="Our Services" />
+      {/* Element 4 */}
+      <div className="w-2/3 p-4">
+        <div className="grid justify-items-center gap-5 font-semibold text-starick-black">
+          <p className="text-2xl text-center">Did you know?</p>
+          <p>
+            One woman dies every week in Australia as a result of domestic and family
+            violence. 1.6 million women in Australia have experienced some form of
+            domestic or family violence. Escaping domestic or family violence is a
+            major contributor to homelessness among women and children.
+          </p>
+          {/* Assuming LinkButton is a React component */}
+          <LinkButton text="Learn more about domestic violence" link="./what-is-domestic-violence" />
+        </div>
+      </div>
+      
+      {/* Element 3 */}
+      <div className="w-1/3 p-4">
+        <div className="grid">
+          <p>Thriving Through Connection Supporting Young People Aged 11 -17 years</p>
+        </div>
+      </div>
+
+
+    </div>
+
+
+      
 
       <div className="grid gap-10 px-10 py-20 font-semibold text-starick-black">
         <p className="text-center text-2xl">Core Services</p>
@@ -109,12 +140,7 @@ export default function Home() {
             <p>Health and Wellbeing</p>
           </div>
         </div>
-        <div className="grid px-10  lg:justify-center">
-          <p>
-            Thriving Through Connection Supporting Young People Aged 11 -17
-            years
-          </p>
-        </div>
+        
       </div>
 
       <div className="flex justify-around p-10">
@@ -123,20 +149,7 @@ export default function Home() {
         <LinkButton text="View Other Services" link="./other-services" />
       </div>
 
-      <div className="grid justify-items-center gap-5 px-10 py-10 font-semibold text-starick-black">
-        <p className="text-center text-2xl">Did you know?</p>
-        <p>
-          One woman dies every week in Australia as a result of domestic and
-          family violence. 1.6 million women in Australia have experienced some
-          form of domestic or family violence. Escaping domestic or family
-          violence is a major contributor to homelessness among women and
-          children.
-        </p>
-        <LinkButton
-          text="Learn more about domestic violence"
-          link="./what-is-domestic-violence"
-        />
-      </div>
+      
 
       <Subtitle title="Social Media" />
 
