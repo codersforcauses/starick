@@ -60,6 +60,7 @@ export default function StarickServices() {
           Albany Highway, Gosnells.
         </li>
       </ul>
+      <br />
     </>
   );
   return (

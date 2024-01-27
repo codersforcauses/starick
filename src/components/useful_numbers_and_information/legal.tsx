@@ -14,6 +14,7 @@ export default function Legal() {
         website also has a wealth of information on domestic and family
         violence.
       </p>
+      <br />
     </>
   );
   return (

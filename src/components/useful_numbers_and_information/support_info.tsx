@@ -29,6 +29,7 @@ export default function SupportInfo() {
           Or Country Freecall 1800 000 599
         </li>
       </ul>
+      <br />
     </>
   );
   return (
