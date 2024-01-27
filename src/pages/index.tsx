@@ -146,7 +146,9 @@ export default function Home() {
         <p className="text-center text-3xl font-bold text-starick-brown">
           Follow the movement on Facebook!
         </p>
-        <FacebookFeed />
+        <div className="flex flex-row justify-center">
+          <FacebookFeed />
+        </div>
 
         <div className="flex place-items-center gap-4 px-10 py-10">
           <div className="flex w-1/2 flex-wrap place-content-end gap-4">
