@@ -1,6 +1,7 @@
 import Link from "next/link";
-import Banner from "@/components/Services/banner";
+
 import InPageNav from "@/components/InPageNav";
+import Banner from "@/components/Services/banner";
 import HealthAndWellbeingSection from "@/components/Services/OtherServices/health-wellbeing";
 import RespectfulRelationshipsSection from "@/components/Services/OtherServices/respectful-relationships";
 import ThrivingThroughConnectionSection from "@/components/Services/OtherServices/thriving-through-connection";

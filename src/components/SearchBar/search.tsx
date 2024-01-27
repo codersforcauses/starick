@@ -18,7 +18,7 @@ export default function Search({ prompt }: { prompt: string }) {
   };
 
   return (
-    <div className="relative top-16 mx-auto mb-5 mt-20 w-1/2 text-gray-600">
+    <div className="relative top-16 mx-auto mb-5 mt-8 w-1/2 text-gray-600">
       <input
         type="search"
         name="search"

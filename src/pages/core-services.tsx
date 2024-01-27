@@ -1,13 +1,13 @@
 import Link from "next/link";
 
 import InPageNav from "@/components/InPageNav";
+import Banner from "@/components/Services/banner";
 
 import CounsellingSection from "../components/Services/CoreServices/counselling";
 import PoliceSection from "../components/Services/CoreServices/police-stations";
 import RefugesSection from "../components/Services/CoreServices/refuges";
 import SafeAtHomeSection from "../components/Services/CoreServices/safe-at-home";
 import TransitionalHousingSection from "../components/Services/CoreServices/transitional-housing";
-import Banner from "@/components/Services/banner";
 
 export default function CoreServices() {
   const navLinkDetails = [

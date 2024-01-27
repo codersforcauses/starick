@@ -12,7 +12,6 @@ import SupportInPoliceStations from "~/icons/police-justice.svg";
 import CounsellingServices from "~/icons/psychology.svg";
 import TwoRefuges from "~/icons/refugees.svg";
 import Staricklogo from "~/icons/starick-logo.svg";
-import EventMap from "~/images/home/event-map.png";
 import Poster1 from "~/images/home/poster1.png";
 import Poster2 from "~/images/home/poster2.png";
 import Poster3 from "~/images/home/poster3.png";
@@ -24,7 +23,7 @@ export default function Home() {
   return (
     <>
       <div className="relative">
-        <p className="bottom-15 left absolute left-10 top-20 w-2/5 font-bold">
+        <p className="bottom-15 left absolute left-20 top-20 w-2/5 text-7xl font-bold text-white">
           Domestic Violence Support & Services for Women and Children
         </p>
 
@@ -44,20 +43,20 @@ export default function Home() {
           or <br />
           Country Freecall: 1800 199 008 <br />
           <br />
-          If you are in immediate physical danger, please call Police: 000
+          If you are in immediate physical danger call Police: 000
         </p>
       </div>
 
-      <div className="pb-20 pt-56">
+      <div className="flex items-center pb-20 pt-20">
         <Image
           src={Staricklogo}
           alt="starick logo"
           width="0"
           height="0"
-          className="justify-left mx-10 h-auto w-1/3"
+          className="justify-left mx-20  w-1/3"
         />
 
-        <p className=" w-1/3 text-right text-2xl font-semibold ">
+        <p className=" white-space-normal mx-36 ml-auto w-1/3 text-right  text-2xl font-semibold text-starick-brown">
           Supporting women and children escaping domestic and family violence.
           We work predominantly in Perth&apos;s south-eastern metropolitan
           region and our vision is to build futures free from violence for the
@@ -179,14 +178,6 @@ export default function Home() {
       </div>
 
       <Subtitle title="Events" />
-
-      <Image
-        src={EventMap}
-        alt="description"
-        width="0"
-        height="0"
-        className="h-auto w-full p-10"
-      />
 
       <div className="relative mx-auto w-1/2">
         <Carousel images={carousel_list} />

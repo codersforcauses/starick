@@ -2,7 +2,6 @@ import React from "react";
 import { useState } from "react";
 import { ReactNode } from "react";
 import Image from "next/image";
-import { text } from "stream/consumers";
 
 import Section from "@/components/basicInformation/Section";
 import NavbarItem from "@/components/basicInformation/utility/NavbarItem";

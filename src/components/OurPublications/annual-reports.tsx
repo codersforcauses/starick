@@ -1,6 +1,6 @@
-import ServicesSection from "../Services/services-section";
-import PublicationList from "./publications-list";
 import annualReportsItems from "./annual-reports-items.json";
+import PublicationList from "./publications-list";
+import ServicesSection from "../Services/services-section";
 
 export default function AnnualReports() {
   const body = (
