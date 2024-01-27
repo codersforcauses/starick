@@ -15,11 +15,11 @@ export default function CoreServices() {
       name: "Crisis"
     },
     {
-      href: "#SupportInfo",
+      href: "#Support Info",
       name: "Support Info"
     },
     {
-      href: "#StarickServices",
+      href: "#Starick Services",
       name: "Starick Services"
     },
     {
