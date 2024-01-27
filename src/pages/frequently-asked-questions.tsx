@@ -66,7 +66,7 @@ const sections: Section[] = [
     titleContent:
       "What should I do if someone I know is experiencing domestic or family violence?",
     contentBody: (
-      <div className="text-3xl">
+      <div>
         <p className="font-bold">
           If someone you know is in immediate danger, call the police now on
           000.
@@ -105,7 +105,7 @@ const sections: Section[] = [
     titleTextColor: "starick-black",
     titleContent: "How do I report an incident of domestic or family violence?",
     contentBody: (
-      <div className="text-3xl">
+      <div>
         <p>
           Phone the police on 131 444. People with hearing impairments can call
           TTY 106.
@@ -139,7 +139,7 @@ const sections: Section[] = [
     titleTextColor: "starick-white",
     titleContent: "How do I get into a Starick refuge?",
     contentBody: (
-      <div className="text-3xl">
+      <div>
         <p className="font-bold">How do I get into a Starick refuge?</p>
         <br />
         <div className="pl-12">
@@ -174,7 +174,7 @@ const sections: Section[] = [
     titleContent: "What can I take with me to the refuge?",
     iconPath: "/icons/did-you-know.svg",
     contentBody: (
-      <div className="text-3xl">
+      <div>
         <p className="font-bold">How do I get into a Starick refuge?</p>
         <p>If you have the time, you should take:</p>
         <br />
@@ -195,7 +195,7 @@ const sections: Section[] = [
     titleContent: "Can I bring my pet to the refuge?",
     iconPath: "/icons/care.svg",
     contentBody: (
-      <div className="text-3xl">
+      <div>
         <p>Unfortunately pets cannot be brought to the refuges.</p>
         <br />
         <span>
@@ -238,7 +238,7 @@ const sections: Section[] = [
     titleContent: "How long can I stay at the refuge?",
     iconPath: "/icons/did-you-know.svg",
     contentBody: (
-      <div className="text-3xl">
+      <div>
         <p>
           Women and children are able to stay up to three months. This gives
           them time to sort out income and legal issues and to find alternative
@@ -255,7 +255,7 @@ const sections: Section[] = [
     titleContent: "How does witnessing domestic violence affect children?",
     iconPath: "/icons/did-you-know.svg",
     contentBody: (
-      <div className="text-3xl">
+      <div>
         <p>
           Domestic and family violence can affect children in many ways. It can
           affect their behaviour, development, physical health, relationships,
@@ -275,7 +275,7 @@ const sections: Section[] = [
     titleContent: "What is outreach?",
     iconPath: "/icons/did-you-know.svg",
     contentBody: (
-      <div className="text-3xl">
+      <div>
         <p className="font-bold">What is outreach?</p>
         <br />
         <p>
@@ -365,7 +365,7 @@ const sections: Section[] = [
     titleContent: "What is a child advocate?",
     iconPath: "/icons/domestic violence.svg",
     contentBody: (
-      <div className="text-3xl">
+      <div>
         <p>
           Starick&apos;s child advocates are trained professionals who assist
           and support the children using our service. Starick recognises that
@@ -383,7 +383,7 @@ const sections: Section[] = [
     titleContent: "What is a women’s advocate?",
     iconPath: "/icons/did-you-know.svg",
     contentBody: (
-      <div className="text-3xl">
+      <div>
         <p className="font-bold">What is a women’s advocate?</p>
         <p>
           Starick&apos;s women&apos;s advocates are trained professionals who
@@ -400,7 +400,7 @@ const sections: Section[] = [
     titleContent: "What is a domestic violence advocate?",
     iconPath: "/icons/did-you-know.svg",
     contentBody: (
-      <div className="text-3xl">
+      <div>
         <p className="font-bold">What is a women’s advocate?</p>
         <p>
           Starick&apos;s domestic violence advocates work in police stations,
@@ -419,7 +419,7 @@ const sections: Section[] = [
     titleContent: "What is HOWIC?",
     iconPath: "/icons/did-you-know.svg",
     contentBody: (
-      <div className="text-3xl">
+      <div>
         <p>
           HOWIC stands for Housing of Women in the Community. This Starick
           program provides transitional medium to long term housing in the
@@ -438,7 +438,7 @@ const sections: Section[] = [
     titleContent: "What is a housing cluster?",
     iconPath: "/icons/did-you-know.svg",
     contentBody: (
-      <div className="text-3xl">
+      <div>
         <p>
           Some of our transitional housing is located within a small complex, or
           cluster.

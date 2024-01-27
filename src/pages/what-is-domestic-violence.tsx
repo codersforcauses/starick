@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import Image from "next/image";
-import internal from "stream";
+import Banner from "@/components/Services/banner";
 
 import Section from "@/components/basicInformation/Section";
 
@@ -22,7 +22,7 @@ const sections: Section[] = [
     titleTextColor: "starick-white",
     titleContent: "What is Domestic Violence?",
     contentBody: (
-      <div className="text-3xl">
+      <div>
         <p className="font-bold">Domestic violence means abuse</p>
         <p>
           Domestic violence is often called “domestic and family violence”{" "}
@@ -54,7 +54,7 @@ const sections: Section[] = [
         </span>
       </div>
     ),
-    iconPath: "/images/did-you-know.png"
+    iconPath: "/icons/did-you-know.svg"
   },
   {
     sectionId: "section2",
@@ -63,7 +63,7 @@ const sections: Section[] = [
     titleTextColor: "starick-black",
     titleContent: "Types of Abuse",
     contentBody: (
-      <div className="text-3xl">
+      <div>
         <p className="font-bold">Physical abuse</p>
         <br />
         <p>
@@ -183,7 +183,7 @@ const sections: Section[] = [
         </div>
       </div>
     ),
-    iconPath: "/images/reports.png"
+    iconPath: "/icons/reports.svg"
   },
   {
     sectionId: "section3",
@@ -192,7 +192,7 @@ const sections: Section[] = [
     titleTextColor: "starick-white",
     titleContent: "Your rights as a human being",
     contentBody: (
-      <div className="text-3xl">
+      <div>
         <p className="font-bold">
           Every human being has the right to control their own life. This{" "}
         </p>
@@ -215,7 +215,7 @@ const sections: Section[] = [
         </div>
       </div>
     ),
-    iconPath: "/images/health.png"
+    iconPath: "/icons/health.svg"
   },
   {
     sectionId: "section4",
@@ -223,10 +223,10 @@ const sections: Section[] = [
     titleBackgroundColor: "starick-olive",
     titleTextColor: "starick-black",
     titleContent: "Recognising the signs",
-    iconPath: "/images/important.png",
+    iconPath: "/icons/important.svg",
 
     contentBody: (
-      <div className="text-3xl">
+      <div>
         <p className="font-bold">
           Is there someone in your life who is behaving in some or all of the{" "}
         </p>
@@ -275,22 +275,8 @@ const sections: Section[] = [
 
 export default function BasicInormation() {
   return (
-    // baner
     <div className="bg-starick-white">
-      <div className=" pb-10">
-        <Image
-          src="/images/starick-image1.jpg"
-          alt=""
-          width={1440}
-          height={100}
-          layout="responsive"
-        />
-      </div>
-      <div className="relative -mt-28  w-fit rounded-r-full bg-white px-20 py-4">
-        <p className=" text-5xl font-extrabold text-starick-brown">
-          What is Domestic Violence?
-        </p>
-      </div>
+      <Banner titleText="What is Domestic Violence" />
       {/* sections */}
       <div className="flex flex-col p-4 md:px-40 md:py-20">
         {sections.map((section) => (
