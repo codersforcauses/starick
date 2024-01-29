@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import Image from "next/image";
-import internal from "stream";
+import Banner from "@/components/Services/banner";
 
 import Section from "@/components/basicInformation/Section";
 
@@ -22,7 +22,7 @@ const sections: Section[] = [
     titleTextColor: "starick-white",
     titleContent: "What is Domestic Violence?",
     contentBody: (
-      <div className="text-3xl">
+      <div>
         <p className="font-bold">Domestic violence means abuse</p>
         <p>
           Domestic violence is often called “domestic and family violence”{" "}
@@ -54,7 +54,7 @@ const sections: Section[] = [
         </span>
       </div>
     ),
-    iconPath: "/images/did-you-know.png"
+    iconPath: "/icons/did-you-know.svg"
   },
   {
     sectionId: "section2",
@@ -63,7 +63,7 @@ const sections: Section[] = [
     titleTextColor: "starick-black",
     titleContent: "Types of Abuse",
     contentBody: (
-      <div className="text-3xl">
+      <div>
         <p className="font-bold">Physical abuse</p>
         <br />
         <p>
@@ -146,44 +146,41 @@ const sections: Section[] = [
           Ways that texting and social media can be used to bully, harass, stalk
           or intimidate you include:
         </p>
-        <div className="pl-12">
-          {" "}
-          <ul className="list-disc">
-            <li>
-              Telling you who you can or can’t be friends with on Facebook and
-              other sites
-            </li>
-            <li>
-              <p>
-                Sending you negative, insulting or threatening emails, Facebook
-                messages, tweets or other online messages
-              </p>
-            </li>
-            <li>
-              <p>
-                Using sites like Facebook, Twitter, foursquare and others to
-                keep constant tabs on you
-              </p>
-            </li>
-            <li>Stealing or insisting you share your passwords</li>
-            <li>
-              Constantly texting you and punishing you if you don&apos;t respond
-            </li>
-            <li>
-              <p>
-                Looking through your phone frequently to check up on your
-                pictures, texts and outgoing calls
-              </p>
-            </li>
-            <li>
-              Tagging you in negative ways in pictures on Facebook, Instagram,
-              Tumblr, etc.
-            </li>
-          </ul>
-        </div>
+        <ul className="ml-8 list-outside list-disc">
+          <li>
+            Telling you who you can or can’t be friends with on Facebook and
+            other sites
+          </li>
+          <li>
+            <p>
+              Sending you negative, insulting or threatening emails, Facebook
+              messages, tweets or other online messages
+            </p>
+          </li>
+          <li>
+            <p>
+              Using sites like Facebook, Twitter, foursquare and others to keep
+              constant tabs on you
+            </p>
+          </li>
+          <li>Stealing or insisting you share your passwords</li>
+          <li>
+            Constantly texting you and punishing you if you don&apos;t respond
+          </li>
+          <li>
+            <p>
+              Looking through your phone frequently to check up on your
+              pictures, texts and outgoing calls
+            </p>
+          </li>
+          <li>
+            Tagging you in negative ways in pictures on Facebook, Instagram,
+            Tumblr, etc.
+          </li>
+        </ul>
       </div>
     ),
-    iconPath: "/images/reports.png"
+    iconPath: "/icons/reports.svg"
   },
   {
     sectionId: "section3",
@@ -192,30 +189,28 @@ const sections: Section[] = [
     titleTextColor: "starick-white",
     titleContent: "Your rights as a human being",
     contentBody: (
-      <div className="text-3xl">
+      <div>
         <p className="font-bold">
           Every human being has the right to control their own life. This{" "}
         </p>
         <p className="font-bold">includes:</p>
-        <div className="pl-12">
-          <ul className="list-disc">
-            <li>Being safe all the time.</li>
-            <li>Being treated with respect.</li>
-            <li>Being safe from abuse.</li>
-            <li>Being able to receive support and friendship.</li>
-            <li>Being treated as an equal.</li>
-            <li>Having control of your own finances.</li>
-            <li>Being free to leave a place if you are feeling unsafe.</li>
-            <li>Being able to say what you think and feel.</li>
-            <li>Being able to protect yourself and your children.</li>
-            <li>Being able to seek legal assistance.</li>
-            <li>Being able to contact community groups.</li>
-            <li>Being able to choose your own religion.</li>
-          </ul>
-        </div>
+        <ul className="ml-8 list-outside list-disc">
+          <li>Being safe all the time.</li>
+          <li>Being treated with respect.</li>
+          <li>Being safe from abuse.</li>
+          <li>Being able to receive support and friendship.</li>
+          <li>Being treated as an equal.</li>
+          <li>Having control of your own finances.</li>
+          <li>Being free to leave a place if you are feeling unsafe.</li>
+          <li>Being able to say what you think and feel.</li>
+          <li>Being able to protect yourself and your children.</li>
+          <li>Being able to seek legal assistance.</li>
+          <li>Being able to contact community groups.</li>
+          <li>Being able to choose your own religion.</li>
+        </ul>
       </div>
     ),
-    iconPath: "/images/health.png"
+    iconPath: "/icons/health.svg"
   },
   {
     sectionId: "section4",
@@ -223,45 +218,43 @@ const sections: Section[] = [
     titleBackgroundColor: "starick-olive",
     titleTextColor: "starick-black",
     titleContent: "Recognising the signs",
-    iconPath: "/images/important.png",
+    iconPath: "/icons/important.svg",
 
     contentBody: (
-      <div className="text-3xl">
+      <div>
         <p className="font-bold">
           Is there someone in your life who is behaving in some or all of the{" "}
         </p>
         <p className="font-bold">following ways?</p>
         <br />
-        <div className="pl-12">
-          <ul className="list-disc">
-            <li>
-              <p>
-                Do you have to be careful around this person because of their
-                anger, violence or emotional abuse?
-              </p>
-            </li>
-            <li>
-              <p>
-                Are you pressured by this person into sexual activities you are
-                not comfortable with?
-              </p>
-            </li>
-            <li>Are you are too scared to disagree with this person?</li>
-            <li>Is this person always checking up on what you are doing?</li>
-            <li>Does this person say you are stupid or useless?</li>
-            <li>Does this person threaten you, your family or your pets?</li>
-            <li>
-              Does this person stop you going out or doing what you want to do?
-            </li>
-            <li>
-              <p>
-                Are you unable to spend time with family or friends because this
-                person won’t let you?
-              </p>
-            </li>
-            <li>Do you make excuses for this person’s violent behaviour?</li>
-          </ul>
-        </div>
+        <ul className="ml-8 list-outside list-disc">
+          <li>
+            <p>
+              Do you have to be careful around this person because of their
+              anger, violence or emotional abuse?
+            </p>
+          </li>
+          <li>
+            <p>
+              Are you pressured by this person into sexual activities you are
+              not comfortable with?
+            </p>
+          </li>
+          <li>Are you are too scared to disagree with this person?</li>
+          <li>Is this person always checking up on what you are doing?</li>
+          <li>Does this person say you are stupid or useless?</li>
+          <li>Does this person threaten you, your family or your pets?</li>
+          <li>
+            Does this person stop you going out or doing what you want to do?
+          </li>
+          <li>
+            <p>
+              Are you unable to spend time with family or friends because this
+              person won’t let you?
+            </p>
+          </li>
+          <li>Do you make excuses for this person’s violent behaviour?</li>
+        </ul>
         <br />
         <p>
           If so, you may want to seek assistance or contact a Starick worker to
@@ -275,22 +268,8 @@ const sections: Section[] = [
 
 export default function BasicInormation() {
   return (
-    // baner
     <div className="bg-starick-white">
-      <div className=" pb-10">
-        <Image
-          src="/images/starick-image1.jpg"
-          alt=""
-          width={1440}
-          height={100}
-          layout="responsive"
-        />
-      </div>
-      <div className="relative -mt-28  w-fit rounded-r-full bg-white px-20 py-4">
-        <p className=" text-5xl font-extrabold text-starick-brown">
-          What is Domestic Violence?
-        </p>
-      </div>
+      <Banner titleText="What is Domestic Violence" />
       {/* sections */}
       <div className="flex flex-col p-4 md:px-40 md:py-20">
         {sections.map((section) => (
