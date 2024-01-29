@@ -93,15 +93,23 @@ const Contact = ({ children }: Props) => {
 };
 
 const Subscribe = () => {
+  const subscribeInputStyle = `h-29 rounded px-5 py-2 text-sm  placeholder-slate-400 shadow-sm outline-none ring-2
+ ring-starick-olive invalid:border-starick-orange invalid:text-red-600  focus:ring-2  focus:ring-starick-orange
+focus:invalid:border-starick-orange focus:invalid:ring-starick-orange`;
+  const [userLastName, setUserLastName] = useState<string>("");
+  const [userFirstName, setUserFirstName] = useState<string>("");
   const [userMail, setUserMail] = useState<string>("");
   const [isNotValid, setIsNotValid] = useState<boolean>(true);
-  const handleChange = (e: ChangeEvent<HTMLInputElement>): void => {
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement>,
+    setState: Dispatch<SetStateAction<string>>
+  ): void => {
     const validation: boolean = e.target.checkValidity();
     setIsNotValid(true);
     if (validation) {
       setIsNotValid(false);
     }
-    setUserMail(e.target.value);
+    setState(e.target.value);
   };
   const handleSubmit = async (
     e: React.MouseEvent,
@@ -123,20 +131,37 @@ const Subscribe = () => {
       <p className="mb-2 text-center text-base font-normal text-black lg:text-left">
         Subscribe to our newsletter
       </p>
-      <form className=" relative">
-        <input
-          type="email"
-          name="email"
-          className="h-29 rounded-l-lg px-5 py-2 text-sm  placeholder-slate-400 shadow-sm outline-none 
-          ring-0 invalid:border-starick-orange invalid:text-red-600 focus:ring-2 focus:ring-inset focus:ring-starick-orange
-          focus:invalid:border-starick-orange focus:invalid:ring-starick-orange"
-          placeholder="you@example.com"
-          value={userMail}
-          onChange={(e) => handleChange(e)}
-        />
+      <form className="grid  gap-10 ">
+        <fieldset className="grid grid-rows-3 gap-8">
+          <input
+            type="text"
+            name="firstname"
+            className={subscribeInputStyle}
+            placeholder="Your first name"
+            value={userFirstName}
+            onChange={(e) => handleChange(e, setUserFirstName)}
+          />
+          <input
+            type="text"
+            name="lastname"
+            className={subscribeInputStyle}
+            placeholder="Your last name"
+            value={userLastName}
+            onChange={(e) => handleChange(e, setUserLastName)}
+          />
+          <input
+            type="email"
+            name="email"
+            className={subscribeInputStyle}
+            placeholder="you@example.com"
+            value={userMail}
+            onChange={(e) => handleChange(e, setUserMail)}
+          />
+        </fieldset>
+
         <button
           onClick={(e) => handleSubmit(e, userMail, setUserMail)}
-          className=" h-9 rounded-r-lg bg-starick-green px-5 text-sm font-semibold text-starick-white shadow-sm hover:bg-starick-orange "
+          className=" h-9 rounded bg-starick-olive  px-5 text-sm font-semibold text-starick-white shadow-sm hover:bg-starick-orange before:content-['*'] "
           disabled={isNotValid}
         >
           Submit
