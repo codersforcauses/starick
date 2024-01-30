@@ -45,6 +45,7 @@ export default function Home() {
         </p>
       </div>
 
+
       <div className="mx-20 grid grid-cols-2 gap-4 p-4">
         {/* starick logo top left */}
         <div className="w-1/4 p-4">
@@ -66,6 +67,7 @@ export default function Home() {
             the women and children the community as a whole.
           </p>
         </div>
+
 
         {/* did you know bottom left */}
         <div className="w-2/3 p-4">
