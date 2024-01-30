@@ -1,17 +1,19 @@
-export default function TimelineSection() {
+export default function TimelineSection({
+  year,
+  description
+}: {
+  year: string;
+  description: string;
+}) {
   return (
     <div className="grow">
       {/* bubble and date */}
       <div className="mx-auto w-4/6 p-2 text-center shadow-xl">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud
-        </p>
+        <p>{description}</p>
       </div>
       <div className="my-3 flex justify-center">
         <h3 className="text-md inline-block bg-starick-olive px-1 font-semibold">
-          1987
+          {year}
         </h3>
       </div>
 
