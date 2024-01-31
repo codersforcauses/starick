@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 
+import Expand from "./icons/expand";
 import { NavBarItem } from "./types";
 
 type Props = {
@@ -23,13 +24,8 @@ const NavItem = ({ link, classNames }: Props) => {
       <button
         className={`${classNames} my-0.5 transition hover:brightness-90 hover:filter`}
       >
-        {/* Coniditional text rendering depending on submenu existence */}
-        {link.submenu ? (
-          // unicode chars represent up and down arrows
-          link.label + (activated ? " \u25B3" : " \u25BD")
-        ) : (
-          <Link href={link.href}>{link.label}</Link>
-        )}
+        {link.submenu ? link.label : <Link href={link.href}>{link.label}</Link>}
+        {link.submenu && <Expand />}
       </button>
       {/* handles added submenu links if they exist */}
       {link.submenu && (
