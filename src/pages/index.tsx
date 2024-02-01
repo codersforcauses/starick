@@ -12,6 +12,7 @@ import SupportInPoliceStations from "~/icons/police-justice.svg";
 import CounsellingServices from "~/icons/psychology.svg";
 import TwoRefuges from "~/icons/refugees.svg";
 import Staricklogo from "~/icons/starick-logo.svg";
+import Squarebottomright from "~/images/donations/bequests/Bequest5.png";
 import Poster1 from "~/images/home/poster1.png";
 import Poster2 from "~/images/home/poster2.png";
 import Poster3 from "~/images/home/poster3.png";
@@ -45,7 +46,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="mx-20 grid grid-cols-2 gap-4 p-4">
+      <div className="mx-20 my-36 grid grid-cols-2 gap-4 p-4">
         {/* starick logo top left */}
         <div className="w-1/4 p-4">
           <Image
@@ -53,12 +54,12 @@ export default function Home() {
             alt="starick logo"
             width="0"
             height="0"
-            className="justify-left mx-32 w-full"
+            className=" absolute ml-20 mt-20 h-auto w-auto p-4"
           />
         </div>
 
         {/* blurb top right */}
-        <div className="w-2/3 p-4">
+        <div className="mx-40 w-2/3 p-2">
           <p className="white-space-normal text-right text-2xl font-semibold text-starick-brown">
             Supporting women and children escaping domestic and family violence.
             We work predominantly in Perth&apos; south-eastern metropolitan
@@ -69,8 +70,8 @@ export default function Home() {
 
         {/* did you know bottom left */}
         <div className="w-2/3 p-4">
-          <div className="grid justify-items-center gap-5 font-semibold text-starick-brown">
-            <p className="text-center text-2xl">Did you know?</p>
+          <div className="grid justify-items-center gap-5 text-2xl text-starick-brown">
+            <p className="text-center text-3xl font-semibold">Did you know?</p>
             <p>
               One woman dies every week in Australia as a result of domestic and
               family violence. 1.6 million women in Australia have experienced
@@ -88,11 +89,11 @@ export default function Home() {
         {/* another picture bottom right */}
         <div className="w-1/4 p-4">
           <Image
-            src={Staricklogo}
-            alt="starick logo"
+            src={Squarebottomright}
+            alt="starick image bottom right"
             width="0"
             height="0"
-            className="justify-left mx-32 w-full"
+            className="absolute right-0 mr-36 h-1/2 w-1/2 object-cover"
           />
         </div>
       </div>
