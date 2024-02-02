@@ -52,29 +52,7 @@ const NavBar = () => {
 
       {/* Right nav component (help/donate/hamburger buttons) */}
       <div>
-        {/* Help button */}
         <ul className="flex space-x-2 font-bold lg:space-x-6">
-          <li
-            className={`${
-              hamburgerMenuOpen ? "" : "hidden"
-            } fixed bottom-5 left-20 lg:static lg:block`}
-          >
-            <NavItem
-              classNames="bg-starick-orange text-starick-white p-2 rounded-lg"
-              link={{ href: "/help", label: "Seek Help" }}
-            />
-          </li>
-          {/* Donate button */}
-          <li
-            className={`${
-              hamburgerMenuOpen ? "" : "hidden"
-            } fixed bottom-5 right-20 lg:static lg:block`}
-          >
-            <NavItem
-              classNames="bg-starick-green text-starick-white p-2 rounded-lg"
-              link={{ href: "/donate", label: "Donate" }}
-            />
-          </li>
           {/* Hamburger button */}
           <li className="z-10 flex lg:hidden">
             <button onClick={handleHamburgerClick}>
