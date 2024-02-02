@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 
-import Expand from "./icons/expand";
 import { NavBarItem } from "./types";
+import Expand from "../icons/expand";
 
 type Props = {
   link: NavBarItem;

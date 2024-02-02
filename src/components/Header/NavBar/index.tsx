@@ -18,24 +18,22 @@ const NavBar = () => {
   return (
     <div className="flex h-14 items-center justify-between whitespace-nowrap bg-white px-4 text-starick-brown">
       {/* Left nav container (logo and links) */}
-      <div className="flex basis-auto items-center justify-center">
+      <div className="flex items-center justify-center">
         {/* Header container */}
-        <div className="relative">
-          <Link href="/">
-            <Image
-              src="/placeholder_starick_logo.png"
-              alt="Starick Logo"
-              width={170}
-              height={50}
-              className="relative z-10 font-bold lg:pr-6"
-            />
-          </Link>
-        </div>
+        <Link href="/">
+          <Image
+            src="/placeholder_starick_logo.png"
+            alt="Starick Logo"
+            width={170}
+            height={50}
+            className="font-bold lg:pr-6"
+          />
+        </Link>
         {/* Primary nav link container */}
         <div
           className={`${
             hamburgerMenuOpen ? styles.responsiveContainer : styles.hidden
-          } lg:block`}
+          }`}
         >
           <ul className={`flex lg:space-x-2 ${styles.responsiveList}`}>
             {primaryNav.map((link) => (
