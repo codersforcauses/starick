@@ -49,30 +49,21 @@ const NavBar = () => {
       </div>
 
       {/* Right nav component (help/donate/hamburger buttons) */}
-      <div>
-        <ul className="flex space-x-2 font-bold lg:space-x-6">
-          {/* Hamburger button */}
-          <li className="z-10 flex lg:hidden">
-            <button onClick={handleHamburgerClick}>
-              <div
-                className={`${
-                  hamburgerMenuOpen ? styles.responsiveHamburgerTop : ""
-                } my-1 h-1 w-7 bg-starick-green transition duration-300`}
-              ></div>
-              <div
-                className={`${
-                  hamburgerMenuOpen ? styles.responsiveHamburgerMiddle : ""
-                } my-1 h-1 w-7 bg-starick-green transition duration-300`}
-              ></div>
-              <div
-                className={`${
-                  hamburgerMenuOpen ? styles.responsiveHamburgerBottom : ""
-                } my-1 h-1 w-7 bg-starick-green transition duration-300`}
-              ></div>
-            </button>
-          </li>
-        </ul>
-      </div>
+      {/* Hamburger button */}
+      <button onClick={handleHamburgerClick} className="lg:hidden">
+        <div
+          className="my-1 h-1 w-7 bg-starick-green transition duration-300"
+          style={hamburgerMenuOpen ? {transform: "translate(0, 8px) rotate(-45deg)"} : {}}
+        ></div>
+        <div
+          className="my-1 h-1 w-7 bg-starick-green transition duration-300"
+          style={hamburgerMenuOpen ? {transform: "opacity: 0;"} : {}}
+        ></div>
+        <div
+          className="my-1 h-1 w-7 bg-starick-green transition duration-300"
+          style={hamburgerMenuOpen ? {transform: "translate(0, -8px) rotate(45deg)"} : {}}
+        ></div>
+      </button>
     </div>
   );
 };
