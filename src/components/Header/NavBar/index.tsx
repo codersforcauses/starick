@@ -7,7 +7,7 @@ import NavItem from "./nav-item";
 
 import styles from "./nav-bar.module.css";
 
-const NavBar = () => {
+export default function NavBar() {
   // handles hamburger button state
   const [hamburgerMenuOpen, setHamburgerMenuOpen] = useState(false);
 
@@ -74,6 +74,4 @@ const NavBar = () => {
       </button>
     </div>
   );
-};
-
-export default NavBar;
+}
