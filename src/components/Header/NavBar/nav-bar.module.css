@@ -17,10 +17,4 @@
     height: 0;
     width: 0;
   }
-
-  .responsiveList {
-    flex-direction: column;
-    width: 100%;
-    margin-left: 4em;
-  }
 }

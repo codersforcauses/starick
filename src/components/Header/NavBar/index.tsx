@@ -35,7 +35,7 @@ const NavBar = () => {
             hamburgerMenuOpen ? styles.responsiveContainer : styles.hidden
           }`}
         >
-          <ul className={`flex lg:space-x-2 ${styles.responsiveList}`}>
+          <ul className="ml-20 flex w-full flex-col lg:ml-0 lg:flex-row lg:space-x-2">
             {primaryNav.map((link) => (
               <li key={link.href}>
                 <NavItem
@@ -53,15 +53,23 @@ const NavBar = () => {
       <button onClick={handleHamburgerClick} className="lg:hidden">
         <div
           className="my-1 h-1 w-7 bg-starick-green transition duration-300"
-          style={hamburgerMenuOpen ? {transform: "translate(0, 8px) rotate(-45deg)"} : {}}
+          style={
+            hamburgerMenuOpen
+              ? { transform: "translate(0, 8px) rotate(-45deg)" }
+              : {}
+          }
         ></div>
         <div
           className="my-1 h-1 w-7 bg-starick-green transition duration-300"
-          style={hamburgerMenuOpen ? {transform: "opacity: 0;"} : {}}
+          style={hamburgerMenuOpen ? { transform: "opacity: 0;" } : {}}
         ></div>
         <div
           className="my-1 h-1 w-7 bg-starick-green transition duration-300"
-          style={hamburgerMenuOpen ? {transform: "translate(0, -8px) rotate(45deg)"} : {}}
+          style={
+            hamburgerMenuOpen
+              ? { transform: "translate(0, -8px) rotate(45deg)" }
+              : {}
+          }
         ></div>
       </button>
     </div>
