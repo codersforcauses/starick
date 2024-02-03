@@ -12,8 +12,7 @@ export default function NavBar() {
   const [hamburgerMenuOpen, setHamburgerMenuOpen] = useState(false);
 
   // handles hamburger button clicks
-  const handleHamburgerClick = () =>
-    setHamburgerMenuOpen(hamburgerMenuOpen ? false : true);
+  const handleHamburgerClick = () => setHamburgerMenuOpen(!hamburgerMenuOpen);
 
   return (
     <div className="flex h-14 items-center justify-between whitespace-nowrap bg-white px-4 text-starick-brown">
@@ -31,9 +30,11 @@ export default function NavBar() {
         </Link>
         {/* Primary nav link container */}
         <div
-          className={`${
+          className={`lg:block lg:w-full lg:h-full${
             hamburgerMenuOpen ? styles.responsiveContainer : styles.hidden
-          }`}
+          }
+          ${hamburgerMenuOpen ? "" : "hidden"}
+          `}
         >
           <ul className="ml-20 flex w-full flex-col lg:ml-0 lg:flex-row lg:space-x-2">
             {primaryNav.map((link) => (
