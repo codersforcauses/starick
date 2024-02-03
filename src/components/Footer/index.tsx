@@ -22,11 +22,28 @@ const SiteLinks: SiteLink[] = [
 }
 const PrivacyDisclaimerLink = "/privacy";
 
+const JumpButton = () => {
+  return (
+    <>
+      <button
+        onClick={(e) => handClick()}
+        className=" h-9 text-sm font-semibold text-starick-white lg:text-left  "
+
+      >
+        <div className="ml-2 mt-8 flex items-center gap-2">
+          <span className="relative inline-block h-5 w-5 bg-starick-white before:absolute before:left-1/4 before:top-1/3 before:inline-block before:h-[7px] before:w-[7px] before:rotate-45 before:border-r-2 before:border-t-2 before:border-starick-black     before:content-['']"></span>
+          <span className=" text-lg">Subscribe</span>
+        </div>
+      </button>
+    </>
+  );
+};
+
 const Footer = () => {
   return (
     <>
       {/* only in large window will get the sticky effect */}
-      <div className="flex flex-col overflow-hidden  bg-starick-green px-5 lg:grid lg:grid-cols-2 lg:grid-rows-2 ">
+      <div className="flex flex-col overflow-hidden  bg-starick-green p-8 px-5 lg:grid lg:grid-cols-2 lg:grid-rows-2 ">
         <Subscribe></Subscribe>
         <Contact>{SiteLinks}</Contact>
         <Donation></Donation>
@@ -87,7 +104,15 @@ const Contact = ({ children }: Props) => {
 
   return (
     <>
-      <ul className="m-3 p-2 text-center  lg:text-left">{siteLists}</ul>
+      <section>
+        <div>
+          <p>Building futures for women and children free from violence</p>
+          <div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
@@ -127,56 +152,72 @@ focus:invalid:border-starick-orange focus:invalid:ring-starick-orange`;
     // send a POST and send userMail to the DB
   };
   return (
-    <div className=" order-1 border-starick-olive lg:border-l lg:text-left">
-      <p className="mb-2 text-center text-base font-normal text-black lg:text-left">
-        Subscribe to our newsletter
-      </p>
-      <form className="grid  gap-10 ">
-        <fieldset className="grid grid-rows-3 gap-8">
-          <input
-            type="text"
-            name="firstname"
-            className={subscribeInputStyle}
-            placeholder="Your first name"
-            value={userFirstName}
-            onChange={(e) => handleChange(e, setUserFirstName)}
-          />
-          <input
-            type="text"
-            name="lastname"
-            className={subscribeInputStyle}
-            placeholder="Your last name"
-            value={userLastName}
-            onChange={(e) => handleChange(e, setUserLastName)}
-          />
-          <input
-            type="email"
-            name="email"
-            className={subscribeInputStyle}
-            placeholder="you@example.com"
-            value={userMail}
-            onChange={(e) => handleChange(e, setUserMail)}
-          />
-        </fieldset>
+    <section className=" order-1 border-starick-olive pt-8 lg:border-l lg:pb-14 lg:pl-14 lg:pt-14 lg:text-left">
+      <div className=" mx-auto max-w-xl">
+        <p className="mb-2 max-w-lg text-4xl  font-normal  text-starick-white lg:text-left">
+          Subscribe to the Friends of Starick Newsletter
+        </p>
+        <form className=" mt-6 max-w-xl">
+          <fieldset className="grid grid-rows-3 gap-8">
+            <input
+              type="text"
+              name="firstname"
+              className={subscribeInputStyle}
+              placeholder="Your first name"
+              value={userFirstName}
+              onChange={(e) => handleChange(e, setUserFirstName)}
+            />
+            <input
+              type="text"
+              name="lastname"
+              className={subscribeInputStyle}
+              placeholder="Your last name"
+              value={userLastName}
+              onChange={(e) => handleChange(e, setUserLastName)}
+            />
+            <input
+              type="email"
+              name="email"
+              className={subscribeInputStyle}
+              placeholder="you@example.com"
+              value={userMail}
+              onChange={(e) => handleChange(e, setUserMail)}
+            />
+          </fieldset>
 
-        <button
-          onClick={(e) => handleSubmit(e, userMail, setUserMail)}
-          className=" h-9 rounded bg-starick-olive  px-5 text-sm font-semibold text-starick-white shadow-sm hover:bg-starick-orange before:content-['*'] "
-          disabled={isNotValid}
-        >
-          Submit
-        </button>
-      </form>
-    </div>
+          <button
+            onClick={(e) => handleSubmit(e, userMail, setUserMail)}
+            className=" h-9 text-sm font-semibold text-starick-white lg:text-left  "
+            disabled={isNotValid}
+          >
+            <div className="ml-2 mt-8 flex items-center gap-2">
+              <span className="relative inline-block h-5 w-5 bg-starick-white before:absolute before:left-1/4 before:top-1/3 before:inline-block before:h-[7px] before:w-[7px] before:rotate-45 before:border-r-2 before:border-t-2 before:border-starick-black     before:content-['']"></span>
+              <span className=" text-lg">Subscribe</span>
+            </div>
+          </button>
+        </form>
+      </div>
+    </section>
   );
 };
 
 const Donation = () => {
   return (
     <>
-      <div className="relative order-3 before:absolute before:right-0 before:top-0 before:w-[50vw] before:bg-starick-olive before:content-[''] lg:before:block  lg:before:h-[1px]  ">
-        Donation
-      </div>
+      <section className="relative order-3 before:absolute before:right-0 before:top-0 before:w-[50vw] before:bg-starick-olive before:content-[''] lg:before:block  lg:before:h-[1px]  ">
+        <div>
+          <div>
+            <p>Make a donation</p>
+            <p>
+              Donate now to help us support women and children escaping domestic
+              and family violence
+            </p>
+          </div>
+          <div>
+            <p>Explore our services</p>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
