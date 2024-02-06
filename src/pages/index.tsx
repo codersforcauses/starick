@@ -14,6 +14,7 @@ import SupportInPoliceStations from "~/icons/police-justice.svg";
 import CounsellingServices from "~/icons/psychology.svg";
 import TwoRefuges from "~/icons/refugees.svg";
 import Staricklogo from "~/icons/starick-logo.svg";
+import Gridpic1 from "~/images/home/carousel-1.png";
 import Poster1 from "~/images/home/poster1.png";
 import Poster2 from "~/images/home/poster2.png";
 import Poster3 from "~/images/home/poster3.png";
@@ -36,13 +37,13 @@ export default function Home() {
         />
       </div>
 
-      <div className="relative flex items-center justify-center bg-starick-olive py-2 pl-8 text-center font-bold text-starick-brown">
+      <div className="relative flex items-center justify-center bg-starick-olive py-10 py-2 pl-8 text-center font-bold text-starick-brown">
         <Image
           src={CrisisAlert}
           alt="crisis alert sign"
           width="0"
           height="0"
-          className="absolute left-96 top-20 z-10 h-40 w-20 -translate-x-1/2 -translate-y-1/2 transform"
+          className="z-2 absolute left-96 top-20 h-40 w-20 -translate-x-1/2 -translate-y-1/2 transform"
         />
 
         {/* Right warning sign */}
@@ -51,7 +52,7 @@ export default function Home() {
           alt="crisis alert sign"
           width="0"
           height="0"
-          className="absolute right-96 top-20 z-10 h-40 w-20 -translate-y-1/2 translate-x-1/2 transform"
+          className="z-2 absolute right-96 top-20 h-40 w-20 -translate-y-1/2 translate-x-1/2 transform"
         />
         <p>
           For urgent help call: <br />
@@ -80,11 +81,22 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="grid gap-10 px-10 py-20 font-semibold text-starick-black">
-        <p className="text-center text-2xl">Core Services</p>
+      <div className="grid grid-cols-2 font-semibold text-starick-black">
+        {/* Top Left: picture */}
+        <div className="bg-gray-200 ">
+          <Image
+            src={Gridpic1}
+            alt="image of starick people for home page"
+            width="0"
+            height="0"
+            className=" h-full"
+          />
+        </div>
 
-        <div className="grid grid-cols-1 gap-10 px-10 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
-          <div className="grid gap-10">
+        {/* Top Right: Core Services */}
+        <div className="bg-starick-olive ">
+          <p className="p-10 text-center text-2xl">Core Services</p>
+          <div className="mx-5 grid gap-4 px-24">
             <CoreServiceItem
               text="Counselling Services"
               img={CounsellingServices}
@@ -93,49 +105,47 @@ export default function Home() {
               text="Transitional Housing"
               img={TransitionalHousing}
             />
-          </div>
-
-          <div className="grid gap-10">
             <CoreServiceItem text="Two Refuges" img={TwoRefuges} />
             <CoreServiceItem
               text="Support in Police Stations"
               img={SupportInPoliceStations}
             />
+            <CoreServiceItem
+              text="Safe at Home Program"
+              img={SafeAtHomeProgram}
+            />
           </div>
         </div>
-        <div className="grid px-10 lg:justify-center">
-          <CoreServiceItem
-            text="Safe at Home Program"
-            img={SafeAtHomeProgram}
-          />
-        </div>
-      </div>
 
-      <div className="grid gap-10 px-10 font-semibold  text-starick-black">
-        <p className="text-center text-2xl">Other Services</p>
-
-        <div className="grid grid-cols-1 gap-10 px-10 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
-          <div className="grid justify-center gap-10">
+        {/* Bottom left: Other Services */}
+        <div className="bg-starick-olive">
+          <p className="mb-10 mt-10 text-center text-2xl">Other Services</p>
+          <div className="mx-5 grid h-1/2 gap-4 px-24">
             <p>WA Respectful Relationships Teaching Support Program</p>
             <p>Our Work with Children and Young People</p>
-          </div>
-
-          <div className="grid justify-center gap-10">
             <p>Workplace Awareness</p>
             <p>Health and Wellbeing</p>
+            <p>
+              Thriving Through Connection Supporting Young People Aged 11 -17
+              years
+            </p>
           </div>
         </div>
-        <div className="grid px-10  lg:justify-center">
-          <p>
-            Thriving Through Connection Supporting Young People Aged 11 -17
-            years
-          </p>
+
+        {/* bottom right: picture */}
+        <div className="t-10 bg-gray-200">
+          <Image
+            src={Gridpic1}
+            alt="image of starick people for home page"
+            width="0"
+            height="0"
+            className=""
+          />
         </div>
       </div>
 
       <div className="flex justify-around p-10">
         <LinkButton text="View Core Services" link="./core-services" />
-
         <LinkButton text="View Other Services" link="./other-services" />
       </div>
 
@@ -153,8 +163,6 @@ export default function Home() {
           link="./what-is-domestic-violence"
         />
       </div>
-
-      <Subtitle title="Social Media" />
 
       <div>
         <p className="text-center text-3xl font-bold text-starick-brown">
