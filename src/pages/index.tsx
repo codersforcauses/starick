@@ -19,6 +19,7 @@ import Poster1 from "~/images/home/poster1.png";
 import Poster2 from "~/images/home/poster2.png";
 import Poster3 from "~/images/home/poster3.png";
 import HomeTitle from "~/images/Parents-with-kids-graphic.png";
+import FillerImage1 from "~/images/starick-image1.jpg";
 
 export default function Home() {
   return (
@@ -144,6 +145,7 @@ export default function Home() {
         </div>
       </div>
 
+      {/* MAKE SURE TO CHANGE THESE LATER TO CORRESPOND EACH SERVICE */}
       <div className="flex justify-around p-10">
         <LinkButton text="View Core Services" link="./core-services" />
         <LinkButton text="View Other Services" link="./other-services" />
@@ -163,6 +165,30 @@ export default function Home() {
           link="./what-is-domestic-violence"
         />
       </div>
+      <div className="flex place-items-center gap-4 ">
+        <Image
+          src={FillerImage1}
+          alt="description"
+          width="0"
+          height="0"
+          className="h-auto w-full"
+        />
+      </div>
+
+      <div className="grid justify-items-center gap-5 px-10 py-10 font-semibold text-starick-black">
+        <p className="text-center text-2xl">Make a Donation</p>
+        <p>Make a direct impact on woman and children by donating now!</p>
+        <LinkButton text="Make A Donation" link="./what-is-domestic-violence" />
+      </div>
+
+      <div className="grid justify-items-center gap-5 px-10 py-10 font-semibold text-starick-black">
+        <p className="text-center text-2xl">Starick Op Shop</p>
+        <p>
+          Give women and children a second chance through giving our wonderful
+          shop items a second chance
+        </p>
+        <LinkButton text="Make A Donation" link="./what-is-domestic-violence" />
+      </div>
 
       <div>
         <p className="text-center text-3xl font-bold text-starick-brown">
@@ -171,37 +197,7 @@ export default function Home() {
         <div className="flex flex-row justify-center">
           <FacebookFeed />
         </div>
-
-        <div className="flex place-items-center gap-4 px-10 py-10">
-          <div className="flex w-1/2 flex-wrap place-content-end gap-4">
-            <Image
-              src={Poster1}
-              alt="description"
-              width="0"
-              height="0"
-              className="h-auto w-1/2"
-            />
-            <Image
-              src={Poster3}
-              alt="description"
-              width="0"
-              height="0"
-              className="h-auto w-1/2"
-            />
-          </div>
-          <div className="w-1/2">
-            <Image
-              src={Poster2}
-              alt="description"
-              width="0"
-              height="0"
-              className="h-auto w-1/2"
-            />
-          </div>
-        </div>
       </div>
-
-      <Subtitle title="Events" />
 
       <div className="relative mx-auto w-1/2">
         <Carousel images={carousel_list} />
