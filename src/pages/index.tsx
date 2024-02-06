@@ -5,7 +5,9 @@ import carousel_list from "@/components/Home/carousel/carousel_list.json";
 import CoreServiceItem from "@/components/Home/core-service-item";
 import LinkButton from "@/components/Home/link-button";
 import Subtitle from "@/components/Home/subtitle";
+import FacebookFeed from "@/components/social-media-feed";
 
+import CrisisAlert from "~/icons/crisis_alert.svg";
 import SafeAtHomeProgram from "~/icons/health.svg";
 import TransitionalHousing from "~/icons/houses.svg";
 import SupportInPoliceStations from "~/icons/police-justice.svg";
@@ -16,8 +18,6 @@ import Poster1 from "~/images/home/poster1.png";
 import Poster2 from "~/images/home/poster2.png";
 import Poster3 from "~/images/home/poster3.png";
 import HomeTitle from "~/images/Parents-with-kids-graphic.png";
-
-import FacebookFeed from "@/components/social-media-feed";
 
 export default function Home() {
   return (
@@ -36,7 +36,23 @@ export default function Home() {
         />
       </div>
 
-      <div className="bg-starick-olive py-2 pl-6 text-center font-bold text-starick-brown  ">
+      <div className="relative flex items-center justify-center bg-starick-olive py-2 pl-8 text-center font-bold text-starick-brown">
+        <Image
+          src={CrisisAlert}
+          alt="crisis alert sign"
+          width="0"
+          height="0"
+          className="absolute left-96 top-20 z-10 h-40 w-20 -translate-x-1/2 -translate-y-1/2 transform"
+        />
+
+        {/* Right warning sign */}
+        <Image
+          src={CrisisAlert}
+          alt="crisis alert sign"
+          width="0"
+          height="0"
+          className="absolute right-96 top-20 z-10 h-40 w-20 -translate-y-1/2 translate-x-1/2 transform"
+        />
         <p>
           For urgent help call: <br />
           Crisis Care:(08) 9223 1111 <br />
@@ -63,8 +79,6 @@ export default function Home() {
           women and children the community as a whole.
         </p>
       </div>
-
-      <Subtitle title="Our Services" />
 
       <div className="grid gap-10 px-10 py-20 font-semibold text-starick-black">
         <p className="text-center text-2xl">Core Services</p>
