@@ -4,7 +4,6 @@ import Carousel from "@/components/Home/carousel/carousel";
 import carousel_list from "@/components/Home/carousel/carousel_list.json";
 import CoreServiceItem from "@/components/Home/core-service-item";
 import LinkButton from "@/components/Home/link-button";
-import Subtitle from "@/components/Home/subtitle";
 import FacebookFeed from "@/components/social-media-feed";
 
 import CrisisAlert from "~/icons/crisis_alert.svg";
@@ -15,9 +14,6 @@ import CounsellingServices from "~/icons/psychology.svg";
 import TwoRefuges from "~/icons/refugees.svg";
 import Staricklogo from "~/icons/starick-logo.svg";
 import Gridpic1 from "~/images/home/carousel-1.png";
-import Poster1 from "~/images/home/poster1.png";
-import Poster2 from "~/images/home/poster2.png";
-import Poster3 from "~/images/home/poster3.png";
 import HomeTitle from "~/images/Parents-with-kids-graphic.png";
 import FillerImage1 from "~/images/starick-image1.jpg";
 
@@ -38,7 +34,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="relative flex items-center justify-center bg-starick-olive py-10 py-2 pl-8 text-center font-bold text-starick-brown">
+      <div className="relative flex items-center justify-center bg-starick-olive py-10 pl-8 text-center font-bold text-starick-brown">
         <Image
           src={CrisisAlert}
           alt="crisis alert sign"
