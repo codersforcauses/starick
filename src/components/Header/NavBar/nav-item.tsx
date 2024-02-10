@@ -19,15 +19,18 @@ const NavItem = ({ link }: Props) => {
       onMouseLeave={() => setActivated(false)}
     >
       {/* button handles click action */}
-      <button className="my-2 transition hover:brightness-90 hover:filter lg:my-0 lg:rounded-lg lg:p-2">
-        <Link href={link.href}>{link.label}{link.submenu && <Expand />}</Link>
+      <button className="my-2 w-max transition hover:brightness-90 hover:filter lg:my-0 lg:rounded-lg lg:p-2">
+        <Link href={link.href}>
+          {link.label}
+          {link.submenu && <Expand />}
+        </Link>
       </button>
       {/* handles added submenu links if they exist */}
       {link.submenu && (
         <ul
           className={`${
             activated ? "" : "hidden"
-          } w-max bg-white lg:absolute border-starick-olive border-l-2 lg:shadow-md`}
+          } w-max border-l-2 border-starick-olive bg-white lg:absolute lg:shadow-md`}
         >
           {link.submenu.map((sublink) => (
             <li key={sublink.href}>
