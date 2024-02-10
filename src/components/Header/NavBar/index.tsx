@@ -30,10 +30,10 @@ export default function NavBar() {
         </Link>
         {/* Primary nav link container */}
         <div
-          className={`lg:block lg:w-full lg:h-full${
-            hamburgerMenuOpen ? styles.responsiveContainer : styles.hidden
+          className={`lg:block lg:h-full lg:w-full ${
+            hamburgerMenuOpen ? styles.responsiveContainer : ""
           }
-          ${hamburgerMenuOpen ? "" : "hidden"}
+          ${hamburgerMenuOpen ? "" : "invisible"}
           `}
         >
           <ul className="ml-20 flex w-full flex-col lg:ml-0 lg:flex-row lg:space-x-2">
