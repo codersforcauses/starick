@@ -2,7 +2,7 @@ import { useState } from "react";
 import Image from "next/image";
 
 import timelineList from "./timeline-list.json";
-// todo scroll transition, progress bar, mobile styling
+// todo fix transition, mobile styling
 import TimelineSection from "./timeline-section";
 export default function Timeline() {
   // range is number of timeline sections shown on screen at once
@@ -20,6 +20,10 @@ export default function Timeline() {
           alt="left-arrow"
           onClick={() => setCurrent(current - range >= 0 ? current - range : 0)}
         />
+        {timelineList.length % range != 0
+          ? timelineList.push({ year: "", description: "" })
+          : null}
+
         {timelineList.map((section, index) => (
           <div
             key={index}
@@ -58,7 +62,7 @@ export default function Timeline() {
         {Array.from({ length: timelineList.length / 3 + 1 }).map((_, index) => (
           <div
             key={index}
-            className={`-my-2 mx-0.5 h-4 w-4 rounded-full ${
+            className={`-my-2 mx-0.5 h-3 w-3 rounded-full ${
               index == Math.floor((current + 1) / range)
                 ? "bg-starick-green"
                 : "bg-starick-olive"
