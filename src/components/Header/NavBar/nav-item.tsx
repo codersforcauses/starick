@@ -15,11 +15,12 @@ const NavItem = ({ link }: Props) => {
   return (
     // root div handles mouse in and out events
     <div
+      className="border-t-4 border-white hover:border-starick-green"
       onMouseEnter={() => setActivated(true)}
       onMouseLeave={() => setActivated(false)}
     >
       {/* button handles click action */}
-      <button className="my-2 w-max transition hover:brightness-90 hover:filter lg:my-0 lg:rounded-lg lg:p-2">
+      <button className="my-2 w-max hover:brightness-90 hover:filter lg:my-0 lg:rounded-lg lg:p-2">
         <Link href={link.href}>
           {link.label}
           {link.submenu && <Expand />}
