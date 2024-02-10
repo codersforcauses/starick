@@ -9,9 +9,7 @@ import RefugesSection from "../components/Services/CoreServices/refuges";
 import SafeAtHomeSection from "../components/Services/CoreServices/safe-at-home";
 import TransitionalHousingSection from "../components/Services/CoreServices/transitional-housing";
 
-//temp
-import SectionHeader from "@/components/section-header";
-import PageSummary from "@/components/page-summary";
+import PageHeader from "@/components/page-header";
 
 export default function CoreServices() {
   const navLinkDetails = [
@@ -39,7 +37,7 @@ export default function CoreServices() {
 
   return (
     <>
-      <Banner titleText="Core Services" />
+      <PageHeader titleText="Core Services"/>
       <InPageNav list={navLinkDetails}></InPageNav>
       <RefugesSection />
       <CounsellingSection />
