@@ -15,7 +15,6 @@ const NavItem = ({ link }: Props) => {
   return (
     // root div handles mouse in and out events
     <div
-      className="relative"
       onMouseEnter={() => setActivated(true)}
       onMouseLeave={() => setActivated(false)}
     >
