@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-import SectionTitle from "../section-title";
+import SectionTitle from "../old-section-title";
 
 interface SectionProps {
   title: string;

@@ -9,6 +9,9 @@ import RefugesSection from "../components/Services/CoreServices/refuges";
 import SafeAtHomeSection from "../components/Services/CoreServices/safe-at-home";
 import TransitionalHousingSection from "../components/Services/CoreServices/transitional-housing";
 
+//temp
+import SectionHeader from "@/components/section-header";
+
 export default function CoreServices() {
   const navLinkDetails = [
     {
@@ -36,6 +39,8 @@ export default function CoreServices() {
     <>
       <Banner titleText="Core Services" />
       <InPageNav list={navLinkDetails}></InPageNav>
+      <SectionHeader imagePath="/images/starick-image1.jpg" titleText="Refuges" backgroundColour="starick-green" textColour="starick-white" textOnLeft={false}/>
+      <SectionHeader imagePath="/images/starick-image1.jpg" titleText="Counselling Services" backgroundColour="starick-olive" textColour="starick-black" textOnLeft={true}/>
       <CounsellingSection />
       <RefugesSection />
       <TransitionalHousingSection />
