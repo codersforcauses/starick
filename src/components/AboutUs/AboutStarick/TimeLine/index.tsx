@@ -51,15 +51,15 @@ export default function Timeline() {
           alt="right-arrow"
           onClick={() =>
             setCurrent(
-              current + range <= timelineList.length - 3
+              current + range <= timelineList.length - range
                 ? current + range
-                : timelineList.length - 3
+                : timelineList.length - range
             )
           }
         />
       </div>
       <div className="my-5 flex justify-center">
-        {Array.from({ length: timelineList.length / 3 + 1 }).map((_, index) => (
+        {Array.from({ length: timelineList.length / range }).map((_, index) => (
           <div
             key={index}
             className={`-my-2 mx-0.5 h-3 w-3 rounded-full ${
