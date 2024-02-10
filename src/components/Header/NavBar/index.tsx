@@ -28,19 +28,16 @@ export default function NavBar() {
         </Link>
         {/* Primary nav link container */}
         <div
-          className={`lg:visible lg:static lg:block lg:h-full lg:w-full ${
+          className={`flex items-center justify-center lg:visible lg:static lg:block lg:h-full lg:w-full ${
             hamburgerMenuOpen
-              ? "fixed bottom-0 left-0 right-0 top-0 flex h-full items-center justify-center bg-white"
+              ? "fixed bottom-0 left-0 right-0 top-0 h-full bg-white"
               : "invisible"
           }`}
         >
           <ul className="ml-20 flex w-full flex-col lg:ml-0 lg:flex-row lg:space-x-2">
             {primaryNav.map((link) => (
               <li key={link.href}>
-                <NavItem
-                  classNames="lg:p-2 lg:rounded-lg my-2 lg:my-0"
-                  link={link}
-                />
+                <NavItem link={link} />
               </li>
             ))}
           </ul>

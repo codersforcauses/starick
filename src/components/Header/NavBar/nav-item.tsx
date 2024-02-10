@@ -6,10 +6,9 @@ import Expand from "../icons/expand";
 
 type Props = {
   link: NavBarItem;
-  classNames?: string;
 };
 
-const NavItem = ({ link, classNames }: Props) => {
+const NavItem = ({ link }: Props) => {
   // handles a nav item state (hovered/clicked)
   const [activated, setActivated] = useState(false);
 
@@ -21,9 +20,7 @@ const NavItem = ({ link, classNames }: Props) => {
       onMouseLeave={() => setActivated(false)}
     >
       {/* button handles click action */}
-      <button
-        className={`${classNames} my-0.5 transition hover:brightness-90 hover:filter`}
-      >
+      <button className="my-2 transition hover:brightness-90 hover:filter lg:my-0 lg:rounded-lg lg:p-2">
         {link.submenu ? link.label : <Link href={link.href}>{link.label}</Link>}
         {link.submenu && <Expand />}
       </button>
