@@ -5,8 +5,6 @@ import Link from "next/link";
 import { primaryNav } from "./links";
 import NavItem from "./nav-item";
 
-import styles from "./nav-bar.module.css";
-
 export default function NavBar() {
   // handles hamburger button state
   const [hamburgerMenuOpen, setHamburgerMenuOpen] = useState(false);
@@ -30,17 +28,17 @@ export default function NavBar() {
         </Link>
         {/* Primary nav link container */}
         <div
-          className={`lg:block lg:h-full lg:w-full ${
-            hamburgerMenuOpen ? styles.responsiveContainer : ""
-          }
-          ${hamburgerMenuOpen ? "" : "invisible"}
-          `}
+          className={`lg:visible lg:static lg:block lg:h-full lg:w-full ${
+            hamburgerMenuOpen
+              ? "fixed bottom-0 left-0 right-0 top-0 h-full items-center justify-center bg-white"
+              : "invisible"
+          }`}
         >
           <ul className="ml-20 flex w-full flex-col lg:ml-0 lg:flex-row lg:space-x-2">
             {primaryNav.map((link) => (
               <li key={link.href}>
                 <NavItem
-                  classNames="bg-white lg:p-2 lg:rounded-lg my-2 lg:my-0"
+                  classNames="lg:p-2 lg:rounded-lg my-2 lg:my-0"
                   link={link}
                 />
               </li>
