@@ -30,7 +30,7 @@ export default function NavBar() {
         <div
           className={`lg:visible lg:static lg:block lg:h-full lg:w-full ${
             hamburgerMenuOpen
-              ? "fixed bottom-0 left-0 right-0 top-0 h-full items-center justify-center bg-white"
+              ? "fixed bottom-0 left-0 right-0 top-0 flex h-full items-center justify-center bg-white"
               : "invisible"
           }`}
         >
