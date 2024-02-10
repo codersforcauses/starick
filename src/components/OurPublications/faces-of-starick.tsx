@@ -22,7 +22,7 @@ export default function FacesOfStarick() {
       titleBackgroundColour="starick-brown"
       sectionBody={body}
       title="The Faces of Starick 1985-2015"
-      iconPath="icons/refugees.svg"
+      textOnLeft={false}
     />
   );
 }

@@ -96,7 +96,7 @@ export default function ChildrensParticipationAndEngagement() {
         titleBackgroundColour="starick-green"
         titleTextColour="starick-white"
         sectionBody={resourceToolkitBody}
-        iconPath="/icons/refugees.svg"
+        textOnLeft={false}
       />
 
       <div className="px-10 md:px-20 lg:px-32">

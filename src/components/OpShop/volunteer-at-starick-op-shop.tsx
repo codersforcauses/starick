@@ -33,7 +33,7 @@ export default function VolunteerAtStarickOpShop() {
         titleBackgroundColour="starick-olive"
         sectionBody={body}
         title="Volunteer at the Starick Op Shop"
-        iconPath="/icons/refugees.svg"
+        textOnLeft={false}
       />
     </>
   );

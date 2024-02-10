@@ -81,7 +81,7 @@ export default function WhatWeAccept() {
       title="What We Accept"
       titleBackgroundColour="starick-green"
       titleTextColour="starick-white"
-      iconPath="/icons/refugees.svg"
+      textOnLeft={false}
     />
   );
 }

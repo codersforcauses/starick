@@ -15,7 +15,7 @@ export default function Section({
   titleBackgroundColour,
   titleTextColour,
   sectionBody,
-  textOnLeft,
+  textOnLeft
 }: SectionProps) {
   return (
     <div

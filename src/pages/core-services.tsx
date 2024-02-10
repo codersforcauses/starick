@@ -37,7 +37,7 @@ export default function CoreServices() {
 
   return (
     <>
-      <PageHeader titleText="Core Services"/>
+      <PageHeader titleText="Core Services" />
       <InPageNav list={navLinkDetails}></InPageNav>
       <RefugesSection />
       <CounsellingSection />
