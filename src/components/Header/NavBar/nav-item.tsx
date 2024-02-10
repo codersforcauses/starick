@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import { FiChevronDown } from "react-icons/fi";
 
 import { NavBarItem } from "./types";
-import Expand from "../icons/expand";
 
 type Props = {
   link: NavBarItem;
@@ -23,7 +23,7 @@ const NavItem = ({ link }: Props) => {
       <button className="my-2 w-max hover:brightness-90 hover:filter lg:my-0 lg:rounded-lg lg:p-2">
         <Link href={link.href}>
           {link.label}
-          {link.submenu && <Expand />}
+          {link.submenu && <FiChevronDown className="inline" />}
         </Link>
       </button>
       {/* handles added submenu links if they exist */}

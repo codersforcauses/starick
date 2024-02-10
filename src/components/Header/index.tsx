@@ -1,6 +1,6 @@
 import Link from "next/link";
+import { FiSearch } from "react-icons/fi";
 
-import Search from "./icons/search";
 import NavBar from "./NavBar";
 import PanicButton from "./PanicButton";
 import MessengerChat from "../MessengerChat";
@@ -11,9 +11,9 @@ export default function Header() {
       <nav className="bg-starick-green">
         <div className="flex flex-row justify-between">
           <PanicButton />
-          <div className="mx-5 flex flex-row items-center gap-5 text-starick-white">
+          <div className="mx-5 flex flex-row content-center items-center gap-5 text-starick-white">
             <button>
-              <Search />
+              <FiSearch title="Search" className="h-10" />
             </button>
             <Link href="/faq/">FAQ</Link>
             <Link href="/contact/">Contact Us</Link>
