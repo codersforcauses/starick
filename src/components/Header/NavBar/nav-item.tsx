@@ -14,13 +14,12 @@ const NavItem = ({ link }: Props) => {
 
   return (
     // root div handles mouse in and out events
-    <div
-      className="border-t-4 border-white hover:lg:border-starick-green"
+    <li
       onMouseEnter={() => setActivated(true)}
       onMouseLeave={() => setActivated(false)}
     >
       {/* button handles click action */}
-      <button className="my-2 w-max hover:brightness-90 hover:filter lg:my-0 lg:rounded-lg lg:px-2">
+      <button className="my-2 w-max border-t-4 border-white hover:brightness-90 hover:filter lg:my-0 lg:px-2 hover:lg:border-starick-green">
         <Link href={link.href}>
           {link.label}
           {link.submenu && <FiChevronDown className="inline" />}
@@ -45,7 +44,7 @@ const NavItem = ({ link }: Props) => {
           ))}
         </ul>
       )}
-    </div>
+    </li>
   );
 };
 
