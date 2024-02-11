@@ -18,9 +18,14 @@ export default function OurServices() {
   ];
   const summarySectionTitles : string[] = ["Core Services", "Other Services"];
 
+  const subtitleElement = <>
+    <p>Starick is a charity supporting women and children escaping domestic and family violence, predominantly in Perth&apos;s south-eastern metropolitan region.</p>
+    <br />
+    <p>Our core services are funded by the Department of Communities and Lotterywest:</p>
+  </>
   return (
     <>
-      <PageHeader titleText="Core Services" subtitleText="Starick is a charity supporting women and children escaping domestic and family violence, predominantly in Perth's south-eastern metropolitan region.\nOur core services are funded by the Department of Communities and Lotterywest:"/>
+      <PageHeader titleText="Our Services" subtitleElement={subtitleElement}/>
       {servicesSummaries.map(({title, text}, index) => {
         return <>
           {index%5 == 0 ? <SummaryHeader text={summarySectionTitles[Math.floor(index/5)]} /> : null}
