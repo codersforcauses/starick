@@ -15,7 +15,7 @@ const NavItem = ({ link }: Props) => {
   return (
     // root div handles mouse in and out events
     <div
-      className="border-t-4 border-white hover:border-starick-green"
+      className="border-t-4 border-white hover:lg:border-starick-green"
       onMouseEnter={() => setActivated(true)}
       onMouseLeave={() => setActivated(false)}
     >
