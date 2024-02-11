@@ -34,7 +34,7 @@ export default function NavBar() {
               : "invisible"
           }`}
         >
-          <ul className="ml-20 flex w-full flex-col lg:ml-0 lg:flex-row lg:space-x-2">
+          <ul className="ml-20 flex w-full flex-col lg:divide-x-2 divide-starick-olive lg:ml-0 lg:flex-row">
             {primaryNav.map((link) => (
               <li key={link.href}>
                 <NavItem link={link} />
