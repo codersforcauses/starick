@@ -4,7 +4,6 @@ import { FiSearch } from "react-icons/fi";
 
 import NavBar from "./NavBar";
 import PanicButton from "./PanicButton";
-import MessengerChat from "../MessengerChat";
 
 export default function Header() {
   const [searchOpen, setSearchOpen] = useState(false);
