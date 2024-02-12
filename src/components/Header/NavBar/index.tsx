@@ -9,9 +9,6 @@ export default function NavBar() {
   // handles hamburger button state
   const [hamburgerMenuOpen, setHamburgerMenuOpen] = useState(false);
 
-  // handles hamburger button clicks
-  const handleHamburgerClick = () => setHamburgerMenuOpen(!hamburgerMenuOpen);
-
   return (
     <div className="flex h-14 items-center justify-between whitespace-nowrap bg-white px-4 text-starick-brown">
       {/* Left nav container (logo and links) */}
@@ -44,7 +41,7 @@ export default function NavBar() {
 
       {/* Right nav component (help/donate/hamburger buttons) */}
       {/* Hamburger button */}
-      <button onClick={handleHamburgerClick} className="lg:hidden">
+      <button onClick={() => setHamburgerMenuOpen(!hamburgerMenuOpen)} className="lg:hidden">
         <div
           className="my-1 h-1 w-7 bg-starick-green transition duration-300"
           style={
