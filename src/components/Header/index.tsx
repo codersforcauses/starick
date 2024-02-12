@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Link from "next/link";
 import { FiSearch } from "react-icons/fi";
 
@@ -6,13 +7,15 @@ import PanicButton from "./PanicButton";
 import MessengerChat from "../MessengerChat";
 
 export default function Header() {
+  const [searchOpen, setSearchOpen] = useState(false);
+
   return (
     <header className="sticky top-0 z-50">
       <nav className="bg-starick-green">
         <div className="flex flex-row justify-between">
           <PanicButton />
           <div className="mx-5 flex flex-row content-center items-center gap-5 text-starick-white">
-            <button>
+            <button onClick={() => setSearchOpen(!searchOpen)}>
               <FiSearch title="Search" className="h-10" />
             </button>
             <Link href="/faq/">FAQ</Link>
@@ -24,7 +27,24 @@ export default function Header() {
         <NavBar />
       </nav>
 
-      <MessengerChat shouldInitializeEmbed={false} />
+      <div
+        role="search"
+        className={`${
+          searchOpen ? "" : "hidden"
+        } fixed bottom-0 left-0 right-0 top-0 flex h-full items-center justify-around bg-starick-green`}
+      >
+        <input
+          placeholder="Search..."
+          type="text"
+          className="border-b-2 bg-transparent text-starick-white focus:outline-none"
+        />
+        <button
+          onClick={() => setSearchOpen(false)}
+          className="text-starick-white"
+        >
+          Close
+        </button>
+      </div>
     </header>
   );
 }
