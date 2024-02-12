@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 import timelineList from "./timeline-list.json";
-// todo fix hydration error mobile styling
+// todo mobile styling
 import TimelineSection from "./timeline-section";
 export default function Timeline() {
   // range is number of timeline sections shown on screen at once
