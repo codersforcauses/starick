@@ -41,7 +41,10 @@ export default function NavBar() {
 
       {/* Right nav component (help/donate/hamburger buttons) */}
       {/* Hamburger button */}
-      <button onClick={() => setHamburgerMenuOpen(!hamburgerMenuOpen)} className="lg:hidden">
+      <button
+        onClick={() => setHamburgerMenuOpen(!hamburgerMenuOpen)}
+        className="lg:hidden"
+      >
         <div
           className="my-1 h-1 w-7 bg-starick-green transition duration-300"
           style={
