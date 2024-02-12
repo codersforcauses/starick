@@ -10,8 +10,11 @@ export default function Timeline() {
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
-    timelineList.length % range != 0
-      ? timelineList.push({ year: "", description: "" })
+    const res = timelineList.length % range;
+    res != 0
+      ? timelineList.push(
+          ...Array(range - res).fill({ year: "", description: "" })
+        )
       : null;
   }, []);
 
