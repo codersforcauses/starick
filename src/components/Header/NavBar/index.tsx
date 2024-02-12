@@ -28,7 +28,7 @@ export default function NavBar() {
           className={`flex items-center justify-center lg:visible lg:static lg:block lg:h-full lg:w-full ${
             hamburgerMenuOpen
               ? "fixed bottom-0 left-0 right-0 top-0 h-full bg-white"
-              : "invisible"
+              : "hidden"
           }`}
         >
           <ul className="ml-20 flex w-full flex-col divide-starick-olive lg:ml-0 lg:flex-row lg:divide-x-2">
