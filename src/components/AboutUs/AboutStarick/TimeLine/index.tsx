@@ -1,13 +1,19 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 
 import timelineList from "./timeline-list.json";
-// todo fix transition, mobile styling
+// todo fix hydration error mobile styling
 import TimelineSection from "./timeline-section";
 export default function Timeline() {
   // range is number of timeline sections shown on screen at once
   const range = 3; // todo adjust this number to change for smaller screens etc
   const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    timelineList.length % range != 0
+      ? timelineList.push({ year: "", description: "" })
+      : null;
+  }, []);
 
   return (
     <>
@@ -20,10 +26,6 @@ export default function Timeline() {
           alt="left-arrow"
           onClick={() => setCurrent(current - range >= 0 ? current - range : 0)}
         />
-        {timelineList.length % range != 0
-          ? timelineList.push({ year: "", description: "" })
-          : null}
-
         {timelineList.map((section, index) => (
           <div
             key={index}
