@@ -52,11 +52,11 @@ export default function NavBar() {
               ? { transform: "translate(0, 8px) rotate(-45deg)" }
               : {}
           }
-        ></div>
+        />
         <div
           className="my-1 h-1 w-7 bg-starick-green transition duration-300"
           style={hamburgerMenuOpen ? { transform: "opacity: 0" } : {}}
-        ></div>
+        />
         <div
           className="my-1 h-1 w-7 bg-starick-green transition duration-300"
           style={
@@ -64,7 +64,7 @@ export default function NavBar() {
               ? { transform: "translate(0, -8px) rotate(45deg)" }
               : {}
           }
-        ></div>
+        />
       </button>
     </div>
   );
