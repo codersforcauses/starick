@@ -47,7 +47,6 @@ export default function OurServices() {
       text: "Thriving Through Connection (TTC) supports young people aged 11 to 17 years who are impacted by family and domestic violence."
     }
   ];
-  const summarySectionTitles: string[] = ["Core Services", "Other Services"];
 
   const subtitleElement = (
     <>
@@ -71,7 +70,7 @@ export default function OurServices() {
           <>
             {index % 5 == 0 ? (
               <SummaryHeader
-                text={summarySectionTitles[Math.floor(index / 5)]}
+                text={index === 0 ? "Core Services" : "Other Services"}
               />
             ) : null}
             <PageSummary

@@ -16,11 +16,11 @@ export default function PageSummary({
   imagePath,
   imageAlt
 }: PageSummaryProps) {
-  const leftPadding = contentOnLeft ? "pl-20" : "pl-10";
-  const rightPadding = contentOnLeft ? "pr-10" : "pr-20";
+  const leftPadding = contentOnLeft ? "md:pl-40" : "md:pl-10";
+  const rightPadding = contentOnLeft ? "md:pr-10" : "md:pr-40";
   const contentSection = (
     <div
-      className={`flex bg-${backgroundColour} ${leftPadding} ${rightPadding} min-h-[300px] items-center py-10 ${
+      className={`flex bg-${backgroundColour} ${leftPadding} ${rightPadding} min-h-[300px] items-center px-4 py-10 ${
         contentOnLeft ? "md:order-first" : "md:order-last"
       }`}
     >
