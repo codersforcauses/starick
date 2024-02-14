@@ -85,6 +85,7 @@ export default function TaranehsStory() {
       titleBackgroundColour="starick-brown"
       sectionBody={body}
       title="Taraneh's Story"
+      textOnLeft={false}
     />
   );
 }

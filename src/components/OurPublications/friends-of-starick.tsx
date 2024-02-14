@@ -17,7 +17,7 @@ export default function FriendsOfStarick() {
       titleBackgroundColour="starick-green"
       sectionBody={body}
       title="Friends of Starick Newsletters"
-      iconPath="icons/refugees.svg"
+      textOnLeft={false}
     />
   );
 }

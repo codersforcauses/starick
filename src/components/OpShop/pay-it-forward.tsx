@@ -30,7 +30,7 @@ export default function PayItForward() {
         titleBackgroundColour="starick-green"
         sectionBody={body}
         title="Pay It Forward"
-        iconPath="/icons/refugees.svg"
+        textOnLeft={false}
       />
       <div className="flex items-center justify-center bg-starick-white py-10">
         <button className="rounded-2xl bg-starick-brown p-5 text-lg text-white hover:bg-starick-black">

@@ -23,7 +23,7 @@ export default function Legal() {
       titleBackgroundColour="starick-olive"
       sectionBody={body}
       title="Legal"
-      iconPath="icons/police-justice.svg"
+      textOnLeft={false}
     />
   );
 }

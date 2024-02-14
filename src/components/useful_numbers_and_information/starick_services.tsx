@@ -69,7 +69,7 @@ export default function StarickServices() {
       titleBackgroundColour="starick-green"
       sectionBody={body}
       title="Starick Services"
-      iconPath="icons/resources.svg"
+      textOnLeft={false}
     />
   );
 }
