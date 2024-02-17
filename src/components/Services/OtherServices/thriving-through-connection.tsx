@@ -50,7 +50,7 @@ export default function ThrivingThroughConnectionSection() {
       title={
         "Thriving Through Connection \nSupporting Young People Aged 11 - 17 years"
       }
-      iconPath=""
+      textOnLeft={false}
     />
   );
 }

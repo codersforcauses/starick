@@ -45,6 +45,7 @@ export default function CarolsStory() {
       titleBackgroundColour="starick-green"
       sectionBody={body}
       title="Carol's Story"
+      textOnLeft={false}
     />
   );
 }

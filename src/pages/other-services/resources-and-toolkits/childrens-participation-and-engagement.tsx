@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import SectionTitle from "@/components/section-title";
+import SectionTitle from "@/components/old-section-title";
 import consultingResources from "@/components/Services/ResourceAndToolkits/child-part-items/consulting-resources.json";
 import powerpointPresentation from "@/components/Services/ResourceAndToolkits/child-part-items/powerpoint-presentation.json";
 import resourceToolkitItems from "@/components/Services/ResourceAndToolkits/child-part-items/resource-toolkit.json";
@@ -96,7 +96,7 @@ export default function ChildrensParticipationAndEngagement() {
         titleBackgroundColour="starick-green"
         titleTextColour="starick-white"
         sectionBody={resourceToolkitBody}
-        iconPath="/icons/refugees.svg"
+        textOnLeft={false}
       />
 
       <div className="px-10 md:px-20 lg:px-32">

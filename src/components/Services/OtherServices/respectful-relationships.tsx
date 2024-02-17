@@ -138,7 +138,7 @@ export default function RespectfulRelationshipsSection() {
       titleBackgroundColour="starick-green"
       sectionBody={body}
       title="WA Respectful Relationships Teaching Support Program"
-      iconPath=""
+      textOnLeft={false}
     />
   );
 }

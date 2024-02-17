@@ -71,6 +71,7 @@ export default function HelenasStory() {
       titleBackgroundColour="starick-olive"
       sectionBody={body}
       title="Helena's Story"
+      textOnLeft={false}
     />
   );
 }

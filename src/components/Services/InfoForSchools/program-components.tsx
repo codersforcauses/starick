@@ -34,6 +34,7 @@ export default function ProgramComponents() {
       titleBackgroundColour="starick-green"
       sectionBody={body}
       title="Program Components"
+      textOnLeft={false}
     />
   );
 }

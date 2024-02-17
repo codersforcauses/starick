@@ -69,7 +69,7 @@ export default function SpecialDonations() {
       title="Special Donations"
       titleBackgroundColour="starick-green"
       titleTextColour="starick-white"
-      iconPath="/icons/refugees.svg"
+      textOnLeft={false}
     />
   );
 }

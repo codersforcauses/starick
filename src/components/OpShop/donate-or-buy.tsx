@@ -29,7 +29,7 @@ export default function DonateOrBuy() {
         titleBackgroundColour="starick-green"
         sectionBody={body}
         title="Donate or Buy - It All Helps"
-        iconPath="/icons/refugees.svg"
+        textOnLeft={false}
       />
     </>
   );

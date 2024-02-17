@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import SectionTitle from "@/components/section-title";
+import SectionTitle from "@/components/old-section-title";
 import ChildSafeItem from "@/components/Services/ResourceAndToolkits/child-safe-item";
 import childSafeTemplate from "@/components/Services/ResourceAndToolkits/child-safe-items/child-safe-template.json";
 import externalResources from "@/components/Services/ResourceAndToolkits/child-safe-items/external-resources.json";

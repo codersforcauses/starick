@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import OurHistory from "@/components/AboutUs/AboutStarick/our-history";
 import WhoWeAre from "@/components/AboutUs/AboutStarick/who-we-are";
-import SectionTitle from "@/components/section-title";
+import SectionTitle from "@/components/old-section-title";
 import Banner from "@/components/Services/banner";
 
 export default function AboutUs() {

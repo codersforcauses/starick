@@ -38,7 +38,7 @@ export default function SupportInfo() {
       titleBackgroundColour="starick-olive"
       sectionBody={body}
       title="Support Info"
-      iconPath="icons/care.svg"
+      textOnLeft={false}
     />
   );
 }

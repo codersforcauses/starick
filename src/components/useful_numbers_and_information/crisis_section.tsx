@@ -29,7 +29,7 @@ export default function Crisis() {
       titleBackgroundColour="starick-green"
       sectionBody={body}
       title="Crisis"
-      iconPath="icons/important.svg"
+      textOnLeft={false}
     />
   );
 }

@@ -142,11 +142,11 @@ export default function RefugesSection() {
   );
   return (
     <ServicesSection
-      titleTextColour="starick-black"
-      titleBackgroundColour="starick-olive"
+      titleTextColour="starick-white"
+      titleBackgroundColour="starick-green"
       sectionBody={body}
       title="Refuges"
-      iconPath="icons/refugees.svg"
+      textOnLeft={false}
     />
   );
 }

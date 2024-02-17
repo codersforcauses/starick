@@ -16,7 +16,7 @@ export default function AnnualReports() {
       titleBackgroundColour="starick-olive"
       sectionBody={body}
       title="Annual Reports"
-      iconPath="icons/refugees.svg"
+      textOnLeft={false}
     />
   );
 }
