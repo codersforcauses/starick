@@ -53,7 +53,13 @@ export default function WorkWithChildrenAndYoungPeopleSection() {
       <br />
       <br />
       <div className="flex justify-center">
-        <ServicesLink text={"Resources, toolkits, and further reading"} link={"other-services/resources-and-toolkits"} textColour="starick-black" arrowColour="starick-white" arrowBackgroundColor="starick-green"/>
+        <ServicesLink
+          text={"Resources, toolkits, and further reading"}
+          link={"other-services/resources-and-toolkits"}
+          textColour="starick-black"
+          arrowColour="starick-white"
+          arrowBackgroundColor="starick-green"
+        />
       </div>
     </>
   );

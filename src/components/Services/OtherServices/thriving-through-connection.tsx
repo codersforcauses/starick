@@ -41,7 +41,13 @@ export default function ThrivingThroughConnectionSection() {
         src="/images/telethon-logo.png"
       ></img>
       <div className="flex justify-center">
-        <ServicesLink text={"Core Services"} link={"/core-services"} textColour="starick-black" arrowColour="starick-white" arrowBackgroundColor="starick-green"/>
+        <ServicesLink
+          text={"Core Services"}
+          link={"/core-services"}
+          textColour="starick-black"
+          arrowColour="starick-white"
+          arrowBackgroundColor="starick-green"
+        />
       </div>
     </>
   );
