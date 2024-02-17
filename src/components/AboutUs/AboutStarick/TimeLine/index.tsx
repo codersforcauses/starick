@@ -95,7 +95,7 @@ export default function Timeline() {
             <div
               key={index}
               className={`-my-2 mx-0.5 h-3 w-3 rounded-full ${
-                index == Math.floor((current + 1) / numVisible)
+                index == Math.floor(current / numVisible)
                   ? "bg-starick-green"
                   : "bg-starick-olive"
               }`}
