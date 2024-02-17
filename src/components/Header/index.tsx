@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50">
       <nav className="bg-starick-green">
-        <div className="flex flex-row flex-wrap justify-between">
+        <div className="flex flex-row flex-wrap justify-end lg:justify-between">
           <PanicButton />
           <div className="mx-5 flex flex-row content-center items-center gap-5 text-starick-white">
             <button onClick={() => setSearchOpen(!searchOpen)}>
