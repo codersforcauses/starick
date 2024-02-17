@@ -34,12 +34,12 @@ export default function Header() {
       >
         <button
           onClick={() => setSearchOpen(false)}
-          className="self-end text-center text-starick-white m-2"
+          className="m-2 self-end text-center text-starick-white"
         >
-          <FiX className="inline h-5 w-5 mr-2 bg-starick-orange" />
+          <FiX className="mr-2 inline h-5 w-5 bg-starick-orange" />
           Close
         </button>
-        <div className="w-max border-b-2 text-starick-white self-center">
+        <div className="w-max self-center border-b-2 text-starick-white">
           <input
             placeholder="Search..."
             type="text"
