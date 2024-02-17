@@ -4,6 +4,7 @@ import Image from "next/image";
 import timelineList from "./timeline-list.json";
 import TimelineSection from "./timeline-section";
 // todo mobile styling, progress dots not wrapping and displaying all when on small screens
+// todo arrows moving on screen width 740
 export default function Timeline() {
   const [current, setCurrent] = useState(0);
   const [numVisible, setNumVisible] = useState(1);
@@ -42,7 +43,7 @@ export default function Timeline() {
 
   return (
     <>
-      <div className="relative my-5 flex h-[50vh] sm:h-[40vh] xl:h-[50vh] 2xl:h-[40vh] items-center justify-around gap-0 bg-starick-white px-2 sm:px-16 text-sm lg:text-base">
+      <div className="relative my-5 flex h-[33vh] sm:h-[20vh] md:h-[30vh] 2xl:h-[40vh] items-center justify-around gap-0 bg-starick-white px-2 sm:px-16 text-sm lg:text-base">
         <Image
           src="icons/left-arrow.svg"
           className="mx-2 z-10 mb-4 h-6 w-6 opacity-40 hover:opacity-60 md:h-12 md:w-12"
