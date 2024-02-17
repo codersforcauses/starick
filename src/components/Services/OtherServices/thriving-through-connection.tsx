@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 import ServicesSection from "../services-section";
+import ServicesLink from "../services-link";
 
 export default function ThrivingThroughConnectionSection() {
   const body = (
@@ -39,7 +40,9 @@ export default function ThrivingThroughConnectionSection() {
         alt="Telethon Logo"
         src="/images/telethon-logo.png"
       ></img>
-      <p>CORE SERVICES - PUT IN LINK</p>
+      <div className="flex justify-center">
+        <ServicesLink text={"Core Services"} link={"/core-services"} textColour="starick-black" arrowColour="starick-white" arrowBackgroundColor="starick-green"/>
+      </div>
     </>
   );
 

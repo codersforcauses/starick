@@ -26,7 +26,7 @@ export default function Section({
   const dimensions =
     circlesPlacement === "l" || circlesPlacement === "r"
       ? "h-full w-auto"
-      : "w-1/3 h-auto";
+      : "w-1/3 h-auto max-h-full";
   switch (circlesPlacement) {
     case "tl":
       positionStyle = "top-0 left-0";
@@ -54,7 +54,7 @@ export default function Section({
       break;
     case "r":
       positionStyle = "inset-y-0 right-0";
-      rotationStyle = "rotate-0";
+      rotationStyle = "rotate-180";
       break;
     default:
       positionStyle = "";
