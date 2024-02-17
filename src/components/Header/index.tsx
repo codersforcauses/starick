@@ -38,11 +38,11 @@ export default function Header() {
             type="search"
             className="w-80 bg-transparent focus:outline-none"
           />
-          <FiSearch className="inline"/>
+          <FiSearch className="inline" />
         </div>
         <button
           onClick={() => setSearchOpen(false)}
-          className="text-starick-white text-center"
+          className="text-center text-starick-white"
         >
           <FiX className="inline h-5 w-6" />
           Close
