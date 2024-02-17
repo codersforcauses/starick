@@ -30,20 +30,20 @@ export default function Header() {
         role="search"
         className={`${
           searchOpen ? "" : "hidden"
-        } fixed bottom-0 left-0 right-0 top-0 pt-10 bg-starick-green`}
+        } fixed bottom-0 left-0 right-0 top-0 flex flex-col gap-y-80 bg-starick-green pt-10`}
       >
         <button
           onClick={() => setSearchOpen(false)}
-          className="text-center text-starick-white block justify-self-end"
+          className="self-end text-center text-starick-white m-2"
         >
-          <FiX className="inline h-5 w-6" />
+          <FiX className="inline h-5 w-5 mr-2 bg-starick-orange" />
           Close
         </button>
-        <div className="border-b-2 w-max text-starick-white">
+        <div className="w-max border-b-2 text-starick-white self-center">
           <input
             placeholder="Search..."
-            type="search"
-            className="w-80 bg-transparent focus:outline-none placeholder:text-starick-white placeholder:opacity-80"
+            type="text"
+            className="relative inset-0 w-80 bg-transparent placeholder:text-starick-white placeholder:opacity-80  focus:outline-none"
           />
           <FiSearch className="inline" />
         </div>
