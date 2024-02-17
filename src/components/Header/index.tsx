@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
-import { FiSearch } from "react-icons/fi";
+import { FiSearch, FiX } from "react-icons/fi";
 
 import NavBar from "./NavBar";
 import PanicButton from "./PanicButton";
@@ -35,13 +35,14 @@ export default function Header() {
         <input
           placeholder="Search..."
           type="search"
-          className="border-b-2 bg-transparent text-starick-white focus:outline-none"
+          className="w-80 border-b-2 bg-transparent text-starick-white focus:outline-none"
         />
         <button
           onClick={() => setSearchOpen(false)}
           className="text-starick-white"
         >
           Close
+          <FiX className="inline h-5 w-5" />
         </button>
       </div>
     </header>
