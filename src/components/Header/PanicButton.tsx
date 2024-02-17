@@ -17,7 +17,7 @@ export default function PanicButton() {
 
   return (
     <Link href="https://www.google.com.au/" className="z-50">
-      <button className="square bg-starick-brown px-4 py-2 text-starick-white hover:bg-starick-orange">
+      <button className="square w-screen bg-starick-brown px-4 py-2 text-starick-white hover:bg-starick-orange lg:w-auto">
         <span className="font-bold">X</span> Quick Exit (Esc)
       </button>
     </Link>
