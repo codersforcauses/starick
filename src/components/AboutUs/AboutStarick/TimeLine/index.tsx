@@ -3,7 +3,6 @@ import Image from "next/image";
 
 import timelineList from "./timeline-list.json";
 import TimelineSection from "./timeline-section";
-// todo mobile styling, progress dots not wrapping and displaying all when on small screens
 // todo arrows moving on screen width 740
 export default function Timeline() {
   const [current, setCurrent] = useState(0);
@@ -89,7 +88,7 @@ export default function Timeline() {
           }
         />
       </div>
-      <div className="my-5 flex flex-wrap justify-center px-16">
+      <div className="my-5 flex flex-wrap justify-center px-16 h-12 sm:h-4">
         {Array.from({ length: timelineList.length / numVisible }).map(
           (_, index) => (
             <div
