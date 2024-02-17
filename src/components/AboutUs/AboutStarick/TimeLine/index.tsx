@@ -3,10 +3,10 @@ import Image from "next/image";
 
 import timelineList from "./timeline-list.json";
 import TimelineSection from "./timeline-section";
-// todo mobile styling, progress dots not wrapping, potential issue with blank section at end
+// todo mobile styling, progress dots not wrapping and displaying all when on small screens
 export default function Timeline() {
   const [current, setCurrent] = useState(0);
-  const [numVisible, setNumVisible] = useState(3);
+  const [numVisible, setNumVisible] = useState(1);
 
   useEffect(() => {
     const handleResize = () => {
@@ -30,12 +30,14 @@ export default function Timeline() {
   }, []);
 
   useEffect(() => {
-    const res = timelineList.length % numVisible;
-    res != 0
+    if (numVisible != 1) {
+      const res = timelineList.length % numVisible;
+      res != 0
       ? timelineList.push(
-          ...Array(numVisible - res).fill({ year: "", description: "" })
+        ...Array(numVisible - res).fill({ year: "", description: "" })
         )
-      : null;
+        : null;
+      }
   }, [numVisible]);
 
   return (
@@ -43,7 +45,7 @@ export default function Timeline() {
       <div className="relative my-5 flex h-[50vh] sm:h-[40vh] xl:h-[50vh] 2xl:h-[40vh] items-center justify-around gap-0 bg-starick-white px-2 sm:px-16 text-sm lg:text-base">
         <Image
           src="icons/left-arrow.svg"
-          className="z-10 mx-1 mb-4 h-6 w-6 opacity-40 hover:opacity-60 md:h-12 md:w-12"
+          className="mx-2 z-10 mb-4 h-6 w-6 opacity-40 hover:opacity-60 md:h-12 md:w-12"
           height={100}
           width={100}
           alt="left-arrow"
@@ -73,7 +75,7 @@ export default function Timeline() {
         ))}
         <Image
           src="icons/right-arrow.svg"
-          className="mx-2 mb-4 h-6 w-6 opacity-40 hover:opacity-60 md:h-12 md:w-12"
+          className="mx-2 z-10 mb-4 h-6 w-6 opacity-40 hover:opacity-60 md:h-12 md:w-12"
           height={100}
           width={100}
           alt="right-arrow"
