@@ -18,12 +18,15 @@ export default function Section({
   titleTextColour,
   sectionBody,
   textOnLeft,
-  circlesPlacement,
+  circlesPlacement
 }: SectionProps) {
-  var positionStyle;
-  var rotationStyle;
-  var originAndTranslate;
-  const dimensions = circlesPlacement === "l" || circlesPlacement === "r" ? "h-full w-auto" : "w-1/3 h-auto";
+  let positionStyle;
+  let rotationStyle;
+  let originAndTranslate;
+  const dimensions =
+    circlesPlacement === "l" || circlesPlacement === "r"
+      ? "h-full w-auto"
+      : "w-1/3 h-auto";
   switch (circlesPlacement) {
     case "tl":
       positionStyle = "top-0 left-0";
@@ -47,18 +50,17 @@ export default function Section({
       break;
     case "l":
       positionStyle = "inset-y-0 left-0";
-      rotationStyle = "rotate-0"
+      rotationStyle = "rotate-0";
       break;
     case "r":
       positionStyle = "inset-y-0 right-0";
-      rotationStyle = "rotate-0"
+      rotationStyle = "rotate-0";
       break;
     default:
       positionStyle = "";
       break;
   }
   return (
-    
     <>
       <SectionHeader
         backgroundColour={titleBackgroundColour}
@@ -67,20 +69,26 @@ export default function Section({
         textOnLeft={textOnLeft}
         textColour={titleTextColour}
       />
-      <div className="py-16 md:px-32 lg:px-72 bg-starick-white px-6 relative" id={title.replace("\n", "")}>
-        {circlesPlacement ?
-        <Image
-          src={circlesPlacement === "l" || circlesPlacement === "r" ? "/images/circles/crop-4.png" : "/images/circles/crop-7.png"}
-          width={0}
-          height={0}
-          alt="decorative circles"
-          sizes="100vw"
-          className={`absolute ${positionStyle} ${rotationStyle} ${dimensions} md:block hidden ${originAndTranslate}`}
-        />
-        : null}
-        <div className="z-10 relative">{sectionBody}</div>
+      <div
+        className="relative bg-starick-white px-6 py-16 md:px-32 lg:px-72"
+        id={title.replace("\n", "")}
+      >
+        {circlesPlacement ? (
+          <Image
+            src={
+              circlesPlacement === "l" || circlesPlacement === "r"
+                ? "/images/circles/crop-4.png"
+                : "/images/circles/crop-7.png"
+            }
+            width={0}
+            height={0}
+            alt="decorative circles"
+            sizes="100vw"
+            className={`absolute ${positionStyle} ${rotationStyle} ${dimensions} hidden md:block ${originAndTranslate}`}
+          />
+        ) : null}
+        <div className="relative z-10">{sectionBody}</div>
       </div>
-
     </>
   );
 }

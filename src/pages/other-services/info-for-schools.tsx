@@ -3,12 +3,12 @@ import ProgramComponents from "@/components/Services/InfoForSchools/program-comp
 import SchoolCohorts from "@/components/Services/InfoForSchools/school-cohorts";
 import AchievedSection from "@/components/Services/InfoForSchools/what-we-achieved";
 
-import Banner from "../../components/Services/banner";
+import PageHeader from "@/components/page-header";
 
 export default function InfoForSchools() {
   return (
     <>
-      <Banner
+      <PageHeader
         titleText="Respectful relationships"
         subtitleText="Info for schools"
       />

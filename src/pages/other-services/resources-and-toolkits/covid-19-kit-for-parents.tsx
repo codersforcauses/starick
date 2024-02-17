@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import { List } from "@/components/Services/list";
-import Banner from "@/components/Services/banner";
+import PageHeader from "@/components/page-header";
 
 export default function ResourcesAndToolkits() {
   const body = (
@@ -67,10 +67,7 @@ export default function ResourcesAndToolkits() {
 
   return (
     <>
-      <Banner
-        titleText="COVID-19 Kit for Parents"
-        backgroundImagePath="/images/Parents-with-kids-graphic.png"
-      />
+      <PageHeader titleText="COVID-19 Kit for Parents" />
       {body}
 
       <div className="-mx-2 flex flex-wrap justify-center bg-starick-white">

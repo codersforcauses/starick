@@ -1,5 +1,5 @@
 import InPageNav from "@/components/InPageNav";
-import Banner from "@/components/Services/banner";
+import PageHeader from "@/components/page-header";
 import AnnesStory from "@/components/Stories/annes-story";
 import BarbarasStory from "@/components/Stories/barbaras-story";
 import CarolsStory from "@/components/Stories/carols-story";
@@ -31,7 +31,7 @@ export default function Stories() {
   ];
   return (
     <>
-      <Banner titleText="Our Stories" />
+      <PageHeader titleText="Our Stories" />
       <div className="mx-4 mt-12 flex justify-center">
         <p className="text-2xl">
           Moving and courageous stories from the women who have used our service

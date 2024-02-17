@@ -3,12 +3,12 @@ import OpShopDonations from "@/components/OpShop/op-shop-donations";
 import PayItForward from "@/components/OpShop/pay-it-forward";
 import VolunteerAtStarickOpShop from "@/components/OpShop/volunteer-at-starick-op-shop";
 import WhatWeSell from "@/components/OpShop/what-we-sell";
-import Banner from "@/components/Services/banner";
+import PageHeader from "@/components/page-header";
 
 export default function StarickOpShop() {
   return (
     <>
-      <Banner titleText="Starick Op Shop" />
+      <PageHeader titleText="Starick Op Shop" />
       <div className="px-20 py-10 md:px-40 md:py-10 lg:px-60">
         <p className="mb-4">
           The Starick Op Shop is a medium in which you could get involved to

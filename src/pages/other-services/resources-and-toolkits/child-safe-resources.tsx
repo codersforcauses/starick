@@ -8,20 +8,14 @@ import practiceTools from "@/components/Services/ResourceAndToolkits/child-safe-
 import ChildSafeList from "@/components/Services/ResourceAndToolkits/child-safe-list";
 import Disclaimer from "@/components/Services/ResourceAndToolkits/disclaimer";
 
-import ChildSafeResourcesTitle from "~/images/ResourcesToolkits/page-headers/child-safe-resources-title.png";
+import PageHeader from "@/components/page-header";
 
 export default function ChildSafeResources() {
   const emailAddress = "info@starick.org.au";
 
   return (
     <>
-      <Image
-        src={ChildSafeResourcesTitle}
-        alt="description"
-        width="0"
-        height="0"
-        className="h-auto w-full"
-      />
+      <PageHeader titleText="Child Safe Organisation Resources" />
 
       <div className="px-20 py-10 font-semibold md:px-40 md:py-20 lg:px-60">
         <p className="mb-4">
