@@ -19,23 +19,21 @@ export default function RespectfulRelationshipsSection() {
         and the broader school environment.
       </p>
 
-      <ul>
-        <li className="list-inside list-disc">
+      <ul className="ml-8 list-outside list-disc">
+        <li>
           The programs aim is to give school staff the skills they need to
           support students to build relationships that are non-violent, equal,
           mutually respectful and trusting.
         </li>
-        <li className="list-inside list-disc">The program includes: </li>
+        <li>The program includes: </li>
 
-        <ul>
-          <li className="list-inside list-disc">
-            Professional learning for teachers and school staff.
-          </li>
-          <li className="list-inside list-disc">
+        <ul className="ml-8 list-outside list-disc">
+          <li>Professional learning for teachers and school staff.</li>
+          <li>
             Information, tools and strategies to teach students about respectful
             relationships and gender equality, and
           </li>
-          <li className="list-inside list-disc">
+          <li>
             Supporting schools to implement a whole-of-school approach to
             violence prevention.
           </li>
@@ -93,7 +91,7 @@ export default function RespectfulRelationshipsSection() {
       </p>
       <br></br>
       <p>Effective RRE recognises that schools are: </p>
-      <ul className="list-inside list-disc">
+      <ul className="ml-8 list-outside list-disc">
         <li>Places of learning</li>
         <li>Community hubs, and </li>
         <li>Workplaces. </li>
@@ -103,7 +101,7 @@ export default function RespectfulRelationshipsSection() {
         A whole-of-school approach engages with all aspects of a school
         including:
       </p>
-      <ul className="list-inside list-disc">
+      <ul className="ml-8 list-outside list-disc">
         <li>in-class education, </li>
         <li>school culture and environment, </li>
         <li>policies and procedures, while </li>
@@ -140,7 +138,7 @@ export default function RespectfulRelationshipsSection() {
       titleBackgroundColour="starick-green"
       sectionBody={body}
       title="WA Respectful Relationships Teaching Support Program"
-      iconPath=""
+      textOnLeft={false}
     />
   );
 }

@@ -1,15 +1,15 @@
 import Image from "next/image";
 
-import Section from "@/components/Services/services-section";
-import SectionTitle from "@/components/section-title";
-import ResourceToolkitItem from "@/components/Services/ResourceAndToolkits/resource-toolkit-item";
-
-import ChildParticipationResources from "~/images/ResourcesToolkits/page-headers/child-participation-resources.png";
-import Disclaimer from "@/components/Services/ResourceAndToolkits/disclaimer";
-import ChildSafeList from "@/components/Services/ResourceAndToolkits/child-safe-list";
+import SectionTitle from "@/components/old-section-title";
 import consultingResources from "@/components/Services/ResourceAndToolkits/child-part-items/consulting-resources.json";
 import powerpointPresentation from "@/components/Services/ResourceAndToolkits/child-part-items/powerpoint-presentation.json";
 import resourceToolkitItems from "@/components/Services/ResourceAndToolkits/child-part-items/resource-toolkit.json";
+import ChildSafeList from "@/components/Services/ResourceAndToolkits/child-safe-list";
+import Disclaimer from "@/components/Services/ResourceAndToolkits/disclaimer";
+import ResourceToolkitItem from "@/components/Services/ResourceAndToolkits/resource-toolkit-item";
+import Section from "@/components/Services/services-section";
+
+import ChildParticipationResources from "~/images/ResourcesToolkits/page-headers/child-participation-resources.png";
 
 export default function ChildrensParticipationAndEngagement() {
   const resourceToolkitBody = (
@@ -96,7 +96,7 @@ export default function ChildrensParticipationAndEngagement() {
         titleBackgroundColour="starick-green"
         titleTextColour="starick-white"
         sectionBody={resourceToolkitBody}
-        iconPath="/icons/refugees.svg"
+        textOnLeft={false}
       />
 
       <div className="px-10 md:px-20 lg:px-32">

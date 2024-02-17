@@ -1,10 +1,18 @@
 import { useEffect } from "react";
+
 import { FBWindow } from "./types";
+import { MessengerEmbedProps } from "./types";
 
 declare let window: FBWindow;
 
-export default function MessengerChat() {
+export default function MessengerChat({
+  shouldInitializeEmbed
+}: MessengerEmbedProps) {
   useEffect(() => {
+    if (!shouldInitializeEmbed) {
+      return;
+    }
+
     const chatbox = document.getElementById("fb-customer-chat");
     if (chatbox) {
       chatbox.setAttribute(

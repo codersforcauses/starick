@@ -104,17 +104,17 @@ export default function WorkplaceAwarenessSection() {
         some things to be aware of:
       </p>
       <br></br>
-      <ul>
-        <li className="list-inside list-disc">
+      <ul className="ml-8 list-outside list-disc">
+        <li>
           <b>FDV is a workplace health and safety issue.</b> For instance, did
           you know that one in five women are harassed by perpetrators while at
           work?
         </li>
-        <li className="list-inside list-disc">
+        <li>
           <b>Abuse comes in many forms.</b> These include physical, emotional,
           sexual, financial and technological abuse.
         </li>
-        <li className="list-inside list-disc">
+        <li>
           <b>FDV is a workplace productivity issue.</b> It costs Australia’s
           economy $21.7 billion per year in health, administration and social
           welfare costs. FDV also contributes to increased absenteeism, lost
@@ -140,21 +140,21 @@ export default function WorkplaceAwarenessSection() {
     <>
       <SubSection
         sectionBody={subBodyAware}
-        iconPath="images/What-is-150x150.png"
+        iconPath="icons/did-you-know.svg"
         iconOnRight={false}
       />
       <br></br>
       <br></br>
       <SubSection
         sectionBody={subBodyRightsResponsibilities}
-        iconPath="images/Icons-FAQ-150x150.png"
+        iconPath="icons/reports.svg"
         iconOnRight={false}
       />
       <br></br>
       <br></br>
       <SubSection
         sectionBody={subBodyHelp}
-        iconPath="images/I-need-help-150x150.png"
+        iconPath="icons/aid.svg"
         iconOnRight={false}
       />
     </>
@@ -165,7 +165,7 @@ export default function WorkplaceAwarenessSection() {
       titleBackgroundColour="starick-green"
       sectionBody={body}
       title="Workplace Awareness"
-      iconPath=""
+      textOnLeft={false}
     />
   );
 }

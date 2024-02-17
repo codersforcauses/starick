@@ -1,5 +1,5 @@
-import ServicesSection from "../services-section";
 import { List } from "../list";
+import ServicesSection from "../services-section";
 import SubSection from "../subsection";
 
 export default function ProgramComponents() {
@@ -34,6 +34,7 @@ export default function ProgramComponents() {
       titleBackgroundColour="starick-green"
       sectionBody={body}
       title="Program Components"
+      textOnLeft={false}
     />
   );
 }

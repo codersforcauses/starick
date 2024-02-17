@@ -1,6 +1,7 @@
 import Link from "next/link";
-import Banner from "@/components/Services/banner";
+
 import InPageNav from "@/components/InPageNav";
+import PageHeader from "@/components/page-header";
 import HealthAndWellbeingSection from "@/components/Services/OtherServices/health-wellbeing";
 import RespectfulRelationshipsSection from "@/components/Services/OtherServices/respectful-relationships";
 import ThrivingThroughConnectionSection from "@/components/Services/OtherServices/thriving-through-connection";
@@ -32,7 +33,7 @@ export default function OtherServices() {
   ];
   return (
     <>
-      <Banner titleText="Other Services" />
+      <PageHeader titleText="Other Services" />
       <InPageNav list={navLinkDetails}></InPageNav>
       <RespectfulRelationshipsSection />
       <WorkWithChildrenAndYoungPeopleSection />

@@ -43,7 +43,7 @@ export default function TransitionalHousingSection() {
       titleBackgroundColour="starick-green"
       sectionBody={body}
       title="Transitional Housing"
-      iconPath="icons/houses.svg"
+      textOnLeft={false}
     />
   );
 }

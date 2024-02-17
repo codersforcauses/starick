@@ -122,6 +122,7 @@ export default function ResourceForSchools() {
       titleBackgroundColour="starick-olive"
       sectionBody={body}
       title="Resources for Schools"
+      textOnLeft={false}
     />
   );
 }

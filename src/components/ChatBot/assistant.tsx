@@ -4,6 +4,7 @@ import { GPTMessage, GPTMessageSchema } from "@/lib/chatbot/validators";
 
 import Bubble from "./bubble";
 import Message from "./message";
+import MessengerEmbed from "../messengerembed/messengerembed";
 
 import styles from "./assistant.module.css";
 
@@ -13,6 +14,7 @@ function Assistant() {
   const [messages, setMessages] = useState<GPTMessage[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const messagesRef = useRef<HTMLDivElement | null>(null);
+  const [showChatbot, setShowChatbot] = useState(true);
 
   /* Calls the server for GPT response */
   const getMessage = async (payload: GPTMessage[]): Promise<GPTMessage> => {
@@ -68,6 +70,15 @@ function Assistant() {
     setChatOpen(!chatOpen);
   };
 
+  // Switch to MessengerEmbed//
+  const handleButtonClick = () => {
+    setShowChatbot(false);
+  };
+
+  if (!showChatbot) {
+    return <MessengerEmbed shouldInitializeEmbed={true} />;
+  }
+
   return (
     <div className="fixed bottom-0 right-0 z-10 mb-6 mr-6 flex flex-col gap-1">
       {/* Chat window */}
@@ -92,6 +103,12 @@ function Assistant() {
             </div>
           )}
         </div>
+        <button
+          className="bg-messenger-grey text-starick-black"
+          onClick={handleButtonClick}
+        >
+          Talk to a Starick Agent
+        </button>
         {/* Text input area */}
         <div className="m-2 basis-2/12 border-t">
           <textarea

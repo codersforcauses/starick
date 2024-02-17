@@ -1,5 +1,5 @@
-import { ChangeEvent, KeyboardEvent, MouseEvent, useState } from "react";
-
+import { ChangeEvent, KeyboardEvent, useState } from "react";
+import React from "react";
 export default function Search({ prompt }: { prompt: string }) {
   const [value, setValue] = useState("Enter search...");
   const searchHandler = (event: ChangeEvent<HTMLInputElement>) => {
@@ -18,7 +18,7 @@ export default function Search({ prompt }: { prompt: string }) {
   };
 
   return (
-    <div className="relative mx-auto mb-5 mt-20 w-1/2 text-gray-600">
+    <div className="relative top-16 mx-auto mb-5 mt-8 w-1/2 text-gray-600">
       <input
         type="search"
         name="search"
