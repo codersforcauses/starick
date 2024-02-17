@@ -123,6 +123,7 @@ export default function ResourceForSchools() {
       sectionBody={body}
       title="Resources for Schools"
       textOnLeft={false}
+      circlesPlacement="bl"
     />
   );
 }

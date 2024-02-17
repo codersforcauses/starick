@@ -22,7 +22,7 @@ export default function SectionHeader({
       } w-full px-12`}
     >
       <p
-        className={`text-${textColour} w-full text-lg font-semibold ${
+        className={`text-${textColour} w-full text-2xl font-semibold ${
           textOnLeft ? "text-right" : "text-left"
         }`}
       >
@@ -36,7 +36,7 @@ export default function SectionHeader({
     </div>
   );
   return (
-    <div className={`grid h-24 grid-cols-2`}>
+    <div className={`grid h-44 grid-cols-2`}>
       {textSection}
       {imageSection}
     </div>

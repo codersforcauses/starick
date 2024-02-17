@@ -39,6 +39,7 @@ export default function ThrivingThroughConnectionSection() {
         alt="Telethon Logo"
         src="/images/telethon-logo.png"
       ></img>
+      <p>CORE SERVICES - PUT IN LINK</p>
     </>
   );
 
@@ -51,6 +52,7 @@ export default function ThrivingThroughConnectionSection() {
         "Thriving Through Connection \nSupporting Young People Aged 11 - 17 years"
       }
       textOnLeft={false}
+      circlesPlacement="bl"
     />
   );
 }

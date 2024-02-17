@@ -101,6 +101,7 @@ export default function AchievedSection() {
       sectionBody={body}
       title="What our schools have achieved"
       textOnLeft={false}
+      circlesPlacement="bl"
     />
   );
 }

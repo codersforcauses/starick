@@ -19,7 +19,7 @@ export default function PageHeader({
         style={{ minHeight: "160px" }}
       >
         <Image
-          src="/images/starick-circles.png"
+          src="/images/circles/crop-1.png"
           width={0}
           height={0}
           alt="decorative circles"
@@ -27,7 +27,7 @@ export default function PageHeader({
           className="absolute inset-y-0 left-0 h-full w-auto"
         />
         <Image
-          src="/images/starick-circles.png"
+          src="/images/circles/crop-1.png"
           width={0}
           height={0}
           alt="decorative circles"
