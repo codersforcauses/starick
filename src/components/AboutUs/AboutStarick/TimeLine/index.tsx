@@ -12,9 +12,9 @@ export default function Timeline() {
     const handleResize = () => {
       const screenSize = window.innerWidth;
       // numbers consistent with tailwind screen breakpoints
-      if (screenSize <= 640) {
+      if (screenSize <= 768) {
         setNumVisible(1);
-      } else if (screenSize <= 768) {
+      } else if (screenSize <= 1280) {
         setNumVisible(2);
       } else {
         setNumVisible(3);
@@ -40,10 +40,10 @@ export default function Timeline() {
 
   return (
     <>
-      <div className="relative my-5 flex h-[70vh] items-center justify-around gap-0 bg-starick-white px-6 md:h-[40vh] md:px-32">
+      <div className="relative my-5 flex h-[50vh] sm:h-[40vh] xl:h-[50vh] 2xl:h-[40vh] items-center justify-around gap-0 bg-starick-white px-2 sm:px-16 text-sm lg:text-base">
         <Image
           src="icons/left-arrow.svg"
-          className="z-10 mx-2 mb-4 h-6 w-6 opacity-40 hover:opacity-60 md:h-12 md:w-12"
+          className="z-10 mx-1 mb-4 h-6 w-6 opacity-40 hover:opacity-60 md:h-12 md:w-12"
           height={100}
           width={100}
           alt="left-arrow"
