@@ -9,8 +9,8 @@ export default function Disclaimer() {
     <div className="h-auto w-full bg-starick-brown px-20 pb-10 pt-4 text-starick-white md:px-40 lg:px-60">
       <p className="mb-2 text-center text-xl font-medium">Disclaimer</p>
       <ol className="list-decimal">
-        {items.map((item) => (
-          <li>{item}</li>
+        {items.map((item, index) => (
+          <li key={index}>{item}</li>
         ))}
       </ol>
     </div>
