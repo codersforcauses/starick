@@ -112,6 +112,7 @@ export default function SchoolCohorts() {
       sectionBody={body}
       title="School Cohorts"
       textOnLeft={false}
+      circlesPlacement="br"
     />
   );
 }

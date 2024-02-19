@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 import ServicesSection from "../services-section";
+import ServicesLink from "../services-link";
 
 export default function WorkWithChildrenAndYoungPeopleSection() {
   const body = (
@@ -49,13 +50,16 @@ export default function WorkWithChildrenAndYoungPeopleSection() {
         linguistically diverse backgrounds and lesbian, gay, bisexual,
         transgender and intersex children and young people.
       </p>
-
-      <div className="flex items-center justify-center bg-starick-white py-10">
-        <button className="rounded-2xl bg-starick-brown p-5 text-lg text-white hover:bg-starick-black">
-          <Link href="/other-services/resources-and-toolkits">
-            Resources, toolkits, and further reading
-          </Link>
-        </button>
+      <br />
+      <br />
+      <div className="flex justify-center">
+        <ServicesLink
+          text={"Resources, toolkits, and further reading"}
+          link={"other-services/resources-and-toolkits"}
+          textColour="starick-black"
+          arrowColour="starick-white"
+          arrowBackgroundColor="starick-green"
+        />
       </div>
     </>
   );

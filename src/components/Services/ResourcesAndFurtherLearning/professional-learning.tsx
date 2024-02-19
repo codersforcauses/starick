@@ -92,6 +92,7 @@ export default function ProfessionalLearning() {
       sectionBody={body}
       title="Professional Learning"
       textOnLeft={false}
+      circlesPlacement="tr"
     />
   );
 }

@@ -166,6 +166,7 @@ export default function WorkplaceAwarenessSection() {
       sectionBody={body}
       title="Workplace Awareness"
       textOnLeft={false}
+      circlesPlacement="tr"
     />
   );
 }

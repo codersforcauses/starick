@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import SectionTitle from "@/components/old-section-title";
 import consultingResources from "@/components/Services/ResourceAndToolkits/child-part-items/consulting-resources.json";
 import powerpointPresentation from "@/components/Services/ResourceAndToolkits/child-part-items/powerpoint-presentation.json";
@@ -9,7 +7,7 @@ import Disclaimer from "@/components/Services/ResourceAndToolkits/disclaimer";
 import ResourceToolkitItem from "@/components/Services/ResourceAndToolkits/resource-toolkit-item";
 import Section from "@/components/Services/services-section";
 
-import ChildParticipationResources from "~/images/ResourcesToolkits/page-headers/child-participation-resources.png";
+import PageHeader from "@/components/page-header";
 
 export default function ChildrensParticipationAndEngagement() {
   const resourceToolkitBody = (
@@ -31,12 +29,9 @@ export default function ChildrensParticipationAndEngagement() {
   );
   return (
     <>
-      <Image
-        src={ChildParticipationResources}
-        alt="description"
-        width="0"
-        height="0"
-        className="h-auto w-full"
+      <PageHeader
+        titleText="Children’s Participation and Engagement"
+        subtitleText="Resource Toolkit"
       />
 
       <div className="font-regular px-20 py-10 md:px-40 md:py-20 lg:px-60">

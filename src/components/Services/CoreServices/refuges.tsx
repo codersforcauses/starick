@@ -147,6 +147,7 @@ export default function RefugesSection() {
       sectionBody={body}
       title="Refuges"
       textOnLeft={false}
+      circlesPlacement="br"
     />
   );
 }

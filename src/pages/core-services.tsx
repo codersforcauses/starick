@@ -1,8 +1,6 @@
 import Link from "next/link";
 
 import InPageNav from "@/components/InPageNav";
-import Banner from "@/components/Services/banner";
-
 import CounsellingSection from "../components/Services/CoreServices/counselling";
 import PoliceSection from "../components/Services/CoreServices/police-stations";
 import RefugesSection from "../components/Services/CoreServices/refuges";

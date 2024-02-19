@@ -68,6 +68,7 @@ export default function ResourceForParents() {
       sectionBody={body}
       title="Resources for Parents"
       textOnLeft={false}
+      circlesPlacement="r"
     />
   );
 }
