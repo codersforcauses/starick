@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import { List } from "@/components/Services/list";
 import PageHeader from "@/components/page-header";
+import Disclaimer from "@/components/Services/ResourceAndToolkits/disclaimer";
 
 export default function ResourcesAndToolkits() {
   const body = (
@@ -87,6 +88,7 @@ export default function ResourcesAndToolkits() {
           );
         })}
       </div>
+      <Disclaimer />
     </>
   );
 }
