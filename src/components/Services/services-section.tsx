@@ -84,7 +84,7 @@ export default function Section({
             height={0}
             alt="decorative circles"
             sizes="100vw"
-            className={`absolute ${positionStyle} ${rotationStyle} ${dimensions} hidden md:block ${originAndTranslate} aspect-auto`}
+            className={`absolute ${positionStyle} ${rotationStyle} ${dimensions} hidden md:block ${originAndTranslate}`}
           />
         ) : null}
         <div className="relative z-10">{sectionBody}</div>
