@@ -100,6 +100,7 @@ export default function ChildSafeResources() {
           <ChildSafeItem
             backgroundColor="starick-olive"
             text="UN Convention on the Rights of the Child"
+            link="https://www.starick.org.au/wp-content/uploads/UNCONV1.pdf"
           />
         }
       />
