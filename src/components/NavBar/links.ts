@@ -24,7 +24,7 @@ export const primaryNav: Array<NavBarItem> = [
     ]
   },
   {
-    href: "/about",
+    href: "/about-us",
     label: "About Us",
     submenu: [
       {
@@ -46,6 +46,10 @@ export const primaryNav: Array<NavBarItem> = [
       {
         href: "/support",
         label: "Support Us"
+      },
+      {
+        href: "/useful-numbers-and-information",
+        label: "Useful numbers & information"
       }
     ]
   },

@@ -60,6 +60,7 @@ export default function HealthAndWellbeingSection() {
         "guidance in the use of a microphone",
         "techniques for speaking with more confidence in public"
       ]}
+      style="list-disc"
     />
   );
 
@@ -191,30 +192,33 @@ export default function HealthAndWellbeingSection() {
       <br></br>
       <SubSection
         sectionBody={subBodyBabyMassage}
-        iconPath="images/I-need-help-150x150.png"
+        iconPath="icons/health.svg"
+        iconOnRight={false}
       />
       <br></br>
       <br></br>
       <SubSection
         sectionBody={subBodyLivedExperience}
-        iconPath="images/Useful-Numbers-Support-150x150.png"
+        iconPath="icons/online-help.svg"
+        iconOnRight={false}
       />
       <br></br>
       <br></br>
       <SubSection
         sectionBody={subBodyYoga}
-        iconPath="images/Shop-Home-Decor-150x150.png"
+        iconPath="icons/yoga.svg"
+        iconOnRight={false}
       />
     </>
   );
 
   return (
     <ServicesSection
-      titleTextColour="[--starick-black]"
-      titleBackgroundColour="[--starick-olive]"
+      titleTextColour="starick-black"
+      titleBackgroundColour="starick-olive"
       sectionBody={body}
       title="Health and Wellbeing"
-      iconPath=""
+      textOnLeft={false}
     />
   );
 }

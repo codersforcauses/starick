@@ -1,10 +1,14 @@
-export function List({ items }: { items: string[] }) {
+export function List({
+  items,
+  style
+}: {
+  items: string[];
+  style: "list-disc" | "list-decimal";
+}) {
   return (
-    <ul>
+    <ul className={`ml-8 list-outside ${style}`}>
       {items.map((text, index) => (
-        <li className="list-inside list-disc" key={index}>
-          {text}
-        </li>
+        <li key={index}>{text}</li>
       ))}
     </ul>
   );

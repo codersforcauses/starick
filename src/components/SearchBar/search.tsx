@@ -1,9 +1,6 @@
-import React, { ChangeEvent, KeyboardEvent, useState } from "react";
-
-import { SearchProps } from "./types";
-
-const Search = (props: SearchProps) => {
-  const { onSearch } = props;
+import { ChangeEvent, KeyboardEvent, useState } from "react";
+import React from "react";
+export default function Search({ prompt }: { prompt: string }) {
   const [value, setValue] = useState("Enter search...");
   const searchHandler = (event: ChangeEvent<HTMLInputElement>) => {
     const { target } = event;
@@ -11,17 +8,17 @@ const Search = (props: SearchProps) => {
   };
 
   const handleClick = () => {
-    onSearch(value);
+    setValue(prompt);
   };
 
   const handleKeyDown = (event: KeyboardEvent<HTMLInputElement>) => {
     if (event.key === "Enter") {
-      onSearch(value);
+      setValue(prompt);
     }
   };
 
   return (
-    <div className="relative mx-auto my-10 w-1/2 text-gray-600">
+    <div className="relative top-16 mx-auto mb-5 mt-8 w-1/2 text-gray-600">
       <input
         type="search"
         name="search"
@@ -45,6 +42,4 @@ const Search = (props: SearchProps) => {
       </button>
     </div>
   );
-};
-
-export default Search;
+}
