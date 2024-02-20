@@ -190,8 +190,8 @@ export default function Home() {
           height="0"
           className=" object-cover "
         />
-        <p className=" text-2xl">Starick Op Shop</p>
-        <p>
+        <p className="mx-20 text-right text-2xl">Starick Op Shop</p>
+        <p className="top-20 mx-20 text-right">
           Give women and children a second chance through giving our wonderful
           shop items a second chance
         </p>
