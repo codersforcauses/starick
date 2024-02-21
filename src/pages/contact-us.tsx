@@ -3,8 +3,7 @@ import PageHeader from "@/components/page-header";
 
 
 export default function ContactUs() {
-  // const [error, setError] =useState("dsadsadsads")
-  // const [formErrorState, setFormErrorState] = 
+  const [error, setError] =useState("")
 
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
@@ -34,11 +33,9 @@ export default function ContactUs() {
       }),
     })
 
-    // if(response.status != "200"){
-    //   setError("Something went wrong")
-    // }
-
-
+    if(response.status != 200){
+      setError("Something went wrong.")
+    }
   }
 
   return (
@@ -89,14 +86,14 @@ export default function ContactUs() {
           </div>
 
           <div className="p-6  md:pr-16 lg:pr-32 basis-full md:basis-1/2">
-            {/* {error && <div>{error}</div>} */}
-
+            
             <form
               onSubmit={handleSubmit}
             >
               <div>
                 <p className="text pb-6 text-2xl font-semibold">Send us an email</p>
                 
+                {error && <div>{error}</div>}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-8">
                   <div className="col-span-1">
                     <label htmlFor="firstname">First Name <span className="text-red-700">*</span></label>
