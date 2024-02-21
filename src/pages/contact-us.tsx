@@ -1,4 +1,5 @@
 import { FormEvent, useState } from "react";
+import PageHeader from "@/components/page-header";
 
 
 export default function ContactUs() {
@@ -42,14 +43,7 @@ export default function ContactUs() {
 
   return (
     <>
-      <div className="h-auto w-full">
-        <img src="/images/starick-image1.jpg" className="w-full" alt="" />
-        <div className="relative -mt-20 mb-6 w-fit rounded-r-full bg-white px-14">
-          <p className="p-2 text-4xl font-bold text-[--starick-brown]">
-            Contact Us
-          </p>
-        </div>
-      </div>
+      <PageHeader titleText="Contact Us" />
       <div className="bg-[--starick-white] px-6 py-2">
         <div className="flex flex-wrap">
           <div className="p-6 basis-full md:basis-1/2 md:pl-16 lg:pl-32">
