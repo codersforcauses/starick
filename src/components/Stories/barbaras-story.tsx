@@ -1,5 +1,5 @@
-import ServicesSection from "../Services/services-section";
 import QuoteBlock from "./quote-block";
+import ServicesSection from "../Services/services-section";
 
 export default function BarbarasStory() {
   const quoteBlockText =
@@ -103,6 +103,7 @@ export default function BarbarasStory() {
       titleBackgroundColour="starick-brown"
       sectionBody={body}
       title="Barbara's Story"
+      textOnLeft={false}
     />
   );
 }

@@ -1,11 +1,9 @@
 import InPageNav from "@/components/InPageNav";
-
 import Banner from "@/components/Services/banner";
-
 import AnnesStory from "@/components/Stories/annes-story";
+import BarbarasStory from "@/components/Stories/barbaras-story";
 import CarolsStory from "@/components/Stories/carols-story";
 import HelenasStory from "@/components/Stories/helenas-story";
-import BarbarasStory from "@/components/Stories/barbaras-story";
 import TaranehsStory from "@/components/Stories/taranehs-story";
 
 export default function Stories() {

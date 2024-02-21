@@ -1,14 +1,14 @@
 import Image from "next/image";
 
-import SectionTitle from "@/components/section-title";
+import SectionTitle from "@/components/old-section-title";
+import ChildSafeItem from "@/components/Services/ResourceAndToolkits/child-safe-item";
 import childSafeTemplate from "@/components/Services/ResourceAndToolkits/child-safe-items/child-safe-template.json";
 import externalResources from "@/components/Services/ResourceAndToolkits/child-safe-items/external-resources.json";
 import practiceTools from "@/components/Services/ResourceAndToolkits/child-safe-items/practice-tools.json";
 import ChildSafeList from "@/components/Services/ResourceAndToolkits/child-safe-list";
+import Disclaimer from "@/components/Services/ResourceAndToolkits/disclaimer";
 
 import ChildSafeResourcesTitle from "~/images/ResourcesToolkits/page-headers/child-safe-resources-title.png";
-import ChildSafeItem from "@/components/Services/ResourceAndToolkits/child-safe-item";
-import Disclaimer from "@/components/Services/ResourceAndToolkits/disclaimer";
 
 export default function ChildSafeResources() {
   const emailAddress = "info@starick.org.au";

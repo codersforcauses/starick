@@ -1,9 +1,10 @@
-import Section from "@/components/basicInformation/Section";
-import Image from "next/image";
+import React from "react";
 import { useState } from "react";
 import { ReactNode } from "react";
+import Image from "next/image";
+
+import Section from "@/components/basicInformation/Section";
 import NavbarItem from "@/components/basicInformation/utility/NavbarItem";
-import { text } from "stream/consumers";
 type Section = {
   sectionId: string;
   titleBackgroundColor: string;
@@ -65,7 +66,7 @@ const sections: Section[] = [
     titleContent:
       "What should I do if someone I know is experiencing domestic or family violence?",
     contentBody: (
-      <div className="text-3xl">
+      <div>
         <p className="font-bold">
           If someone you know is in immediate danger, call the police now on
           000.
@@ -78,20 +79,18 @@ const sections: Section[] = [
         </p>
         <br />
         <p className="font-bold">Things you can say to the victim:</p>
-        <div className="pl-12">
-          <ul className="list-disc">
-            <li>&apos;I believe you.&apos;</li>
-            <li>&apos;You do not deserve to be abused.&apos;</li>
-            <li>
-              &apos;I am afraid for your safety and the safety of your
-              children.&apos;
-            </li>
-            <li>
-              &apos;Do you need help to find out what services are
-              available?&apos;
-            </li>
-          </ul>
-        </div>
+        <ul className="ml-8 list-outside list-disc">
+          <li>&apos;I believe you.&apos;</li>
+          <li>&apos;You do not deserve to be abused.&apos;</li>
+          <li>
+            &apos;I am afraid for your safety and the safety of your
+            children.&apos;
+          </li>
+          <li>
+            &apos;Do you need help to find out what services are
+            available?&apos;
+          </li>
+        </ul>
       </div>
     ),
     iconPath: "/icons/did-you-know.svg"
@@ -104,7 +103,7 @@ const sections: Section[] = [
     titleTextColor: "starick-black",
     titleContent: "How do I report an incident of domestic or family violence?",
     contentBody: (
-      <div className="text-3xl">
+      <div>
         <p>
           Phone the police on 131 444. People with hearing impairments can call
           TTY 106.
@@ -112,16 +111,14 @@ const sections: Section[] = [
         <br />
         <p className="font-bold">Information the police may ask you for:</p>
         <br />
-        <div className="pl-12">
-          <ul className="list-disc">
-            <li>The address where the incident is taking place</li>
-            <li>Your name and telephone number</li>
-            <li>The offender&apos;s name, age and date of birth</li>
-            <li>If there any weapons involved.</li>
-            <li>A description of the abuser.</li>
-            <li>The victim&apos;s name</li>
-          </ul>
-        </div>
+        <ul className="ml-8 list-outside list-disc">
+          <li>The address where the incident is taking place</li>
+          <li>Your name and telephone number</li>
+          <li>The offender&apos;s name, age and date of birth</li>
+          <li>If there any weapons involved.</li>
+          <li>A description of the abuser.</li>
+          <li>The victim&apos;s name</li>
+        </ul>
         <br />
         <p>
           If the incident is occurring while you are talking to the operator,
@@ -138,23 +135,21 @@ const sections: Section[] = [
     titleTextColor: "starick-white",
     titleContent: "How do I get into a Starick refuge?",
     contentBody: (
-      <div className="text-3xl">
+      <div>
         <p className="font-bold">How do I get into a Starick refuge?</p>
         <br />
-        <div className="pl-12">
-          <ul className="list-disc">
-            <li>
-              Essential clothing and personal items for yourself and your
-              children.
-            </li>
-            <li>Any medications you or your children are taking.</li>
-            <li>
-              Identification, such as birth certificates, children&apos;s
-              immunisation records, any Department of Housing documentation,
-              legal documents, passports and visa information you may have.
-            </li>
-          </ul>
-        </div>
+        <ul className="ml-8 list-outside list-disc">
+          <li>
+            Essential clothing and personal items for yourself and your
+            children.
+          </li>
+          <li>Any medications you or your children are taking.</li>
+          <li>
+            Identification, such as birth certificates, children&apos;s
+            immunisation records, any Department of Housing documentation, legal
+            documents, passports and visa information you may have.
+          </li>
+        </ul>
         <br />
         <p>
           Sometimes when women are not able to bring the above items with them,
@@ -173,7 +168,7 @@ const sections: Section[] = [
     titleContent: "What can I take with me to the refuge?",
     iconPath: "/icons/did-you-know.svg",
     contentBody: (
-      <div className="text-3xl">
+      <div>
         <p className="font-bold">How do I get into a Starick refuge?</p>
         <p>If you have the time, you should take:</p>
         <br />
@@ -194,7 +189,7 @@ const sections: Section[] = [
     titleContent: "Can I bring my pet to the refuge?",
     iconPath: "/icons/care.svg",
     contentBody: (
-      <div className="text-3xl">
+      <div>
         <p>Unfortunately pets cannot be brought to the refuges.</p>
         <br />
         <span>
@@ -237,7 +232,7 @@ const sections: Section[] = [
     titleContent: "How long can I stay at the refuge?",
     iconPath: "/icons/did-you-know.svg",
     contentBody: (
-      <div className="text-3xl">
+      <div>
         <p>
           Women and children are able to stay up to three months. This gives
           them time to sort out income and legal issues and to find alternative
@@ -254,7 +249,7 @@ const sections: Section[] = [
     titleContent: "How does witnessing domestic violence affect children?",
     iconPath: "/icons/did-you-know.svg",
     contentBody: (
-      <div className="text-3xl">
+      <div>
         <p>
           Domestic and family violence can affect children in many ways. It can
           affect their behaviour, development, physical health, relationships,
@@ -274,7 +269,7 @@ const sections: Section[] = [
     titleContent: "What is outreach?",
     iconPath: "/icons/did-you-know.svg",
     contentBody: (
-      <div className="text-3xl">
+      <div>
         <p className="font-bold">What is outreach?</p>
         <br />
         <p>
@@ -286,17 +281,15 @@ const sections: Section[] = [
           In addition to providing support to women while they are living in a
           Starick refuges, Starick also supports women and children:
         </p>
-        <div className="pl-12">
-          <ul className="list-disc">
-            <li>
-              when they are living in the community, are experiencing family and
-              domestic violence and are unable or unwilling to access refuge
-              accommodation;
-            </li>
-            <li>when they leave our refuges;</li>
-            <li>when they move into a Starick transitional home.</li>
-          </ul>
-        </div>
+        <ul className="ml-8 list-outside list-disc">
+          <li>
+            when they are living in the community, are experiencing family and
+            domestic violence and are unable or unwilling to access refuge
+            accommodation;
+          </li>
+          <li>when they leave our refuges;</li>
+          <li>when they move into a Starick transitional home.</li>
+        </ul>
         <br />
         <span>Information about these services can be found on the </span>
         <a href="" className="underline underline-offset-auto">
@@ -314,21 +307,19 @@ const sections: Section[] = [
           following ways:
         </p>
         <br />
-        <div className="pl-12">
-          <ul className="list-disc">
-            <li>Assisting with safety planning</li>
-            <li>
-              Liaison with services such as income support, health and education
-              services
-            </li>
-            <li>
-              Help with accessing support groups and other community services
-            </li>
-            <li>
-              Support if you need to attend court or access other legal services
-            </li>
-          </ul>
-        </div>
+        <ul className="ml-8 list-outside list-disc">
+          <li>Assisting with safety planning</li>
+          <li>
+            Liaison with services such as income support, health and education
+            services
+          </li>
+          <li>
+            Help with accessing support groups and other community services
+          </li>
+          <li>
+            Support if you need to attend court or access other legal services
+          </li>
+        </ul>
         <br />
         <p>
           Read how our outreach workers have helped two women,{" "}
@@ -364,7 +355,7 @@ const sections: Section[] = [
     titleContent: "What is a child advocate?",
     iconPath: "/icons/domestic violence.svg",
     contentBody: (
-      <div className="text-3xl">
+      <div>
         <p>
           Starick&apos;s child advocates are trained professionals who assist
           and support the children using our service. Starick recognises that
@@ -382,7 +373,7 @@ const sections: Section[] = [
     titleContent: "What is a women’s advocate?",
     iconPath: "/icons/did-you-know.svg",
     contentBody: (
-      <div className="text-3xl">
+      <div>
         <p className="font-bold">What is a women’s advocate?</p>
         <p>
           Starick&apos;s women&apos;s advocates are trained professionals who
@@ -399,7 +390,7 @@ const sections: Section[] = [
     titleContent: "What is a domestic violence advocate?",
     iconPath: "/icons/did-you-know.svg",
     contentBody: (
-      <div className="text-3xl">
+      <div>
         <p className="font-bold">What is a women’s advocate?</p>
         <p>
           Starick&apos;s domestic violence advocates work in police stations,
@@ -418,7 +409,7 @@ const sections: Section[] = [
     titleContent: "What is HOWIC?",
     iconPath: "/icons/did-you-know.svg",
     contentBody: (
-      <div className="text-3xl">
+      <div>
         <p>
           HOWIC stands for Housing of Women in the Community. This Starick
           program provides transitional medium to long term housing in the
@@ -437,7 +428,7 @@ const sections: Section[] = [
     titleContent: "What is a housing cluster?",
     iconPath: "/icons/did-you-know.svg",
     contentBody: (
-      <div className="text-3xl">
+      <div>
         <p>
           Some of our transitional housing is located within a small complex, or
           cluster.

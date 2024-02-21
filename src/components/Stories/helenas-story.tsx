@@ -1,5 +1,5 @@
-import ServicesSection from "../Services/services-section";
 import QuoteBlock from "./quote-block";
+import ServicesSection from "../Services/services-section";
 
 export default function HelenasStory() {
   const quoteBlockText =
@@ -71,6 +71,7 @@ export default function HelenasStory() {
       titleBackgroundColour="starick-olive"
       sectionBody={body}
       title="Helena's Story"
+      textOnLeft={false}
     />
   );
 }

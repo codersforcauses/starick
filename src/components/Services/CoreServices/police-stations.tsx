@@ -50,7 +50,7 @@ export default function PoliceSection() {
       titleBackgroundColour="starick-olive"
       sectionBody={body}
       title="Support in Police Stations"
-      iconPath="icons/police-justice.svg"
+      textOnLeft={true}
     />
   );
 }

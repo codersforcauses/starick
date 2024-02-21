@@ -1,13 +1,13 @@
 import { ReactNode } from "react";
 
-import SectionTitle from "../section-title";
+import SectionHeader from "../section-header";
 
 interface SectionProps {
   title: string;
   titleBackgroundColour: string;
   titleTextColour: string;
+  textOnLeft: boolean;
   sectionBody: ReactNode;
-  iconPath?: string;
 }
 
 export default function Section({
@@ -15,17 +15,18 @@ export default function Section({
   titleBackgroundColour,
   titleTextColour,
   sectionBody,
-  iconPath
+  textOnLeft
 }: SectionProps) {
   return (
     <div
       className="bg-starick-white px-6 py-2 md:px-32"
       id={title.replace("\n", "")}
     >
-      <SectionTitle
+      <SectionHeader
         backgroundColour={titleBackgroundColour}
-        text={title}
-        iconPath={iconPath}
+        titleText={title}
+        imagePath="/images/starick-image1.jpg"
+        textOnLeft={textOnLeft}
         textColour={titleTextColour}
       />
       <div className="pt-5 md:px-20">{sectionBody}</div>

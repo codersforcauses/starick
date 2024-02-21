@@ -1,5 +1,5 @@
-import ServicesSection from "../Services/services-section";
 import QuoteBlock from "./quote-block";
+import ServicesSection from "../Services/services-section";
 
 export default function AnnesStory() {
   const quoteBlockText =
@@ -182,6 +182,7 @@ export default function AnnesStory() {
       titleBackgroundColour="starick-olive"
       sectionBody={body}
       title="Anne's Story"
+      textOnLeft={false}
     />
   );
 }
