@@ -13,18 +13,17 @@ import SupportInPoliceStations from "~/icons/police-justice.svg";
 import CounsellingServices from "~/icons/psychology.svg";
 import TwoRefuges from "~/icons/refugees.svg";
 import Staricklogo from "~/icons/starick-logo.svg";
-
+import Opshoppic from "~/images/home/_MG_9216.jpg"
+import Afterdidyouknow from "~/images/home/_MG_9261.jpg"
 import Gridpic2 from "~/images/home/_MG_9460.jpg"
-import FillerOpshop from "~/images/home/carousel-4.png";
 import Gridpic1 from "~/images/home/Starick-Op-Shop-Volunteers.jpg";
 import HomeTitle from "~/images/Parents-with-kids-graphic.png";
-import FillerImage1 from "~/images/starick-image1.jpg";
 
 export default function Home() {
   return (
     <>
       <div className="relative">
-        <p className="bottom-15 left absolute left-20 top-20 w-2/5 text-7xl font-bold text-white">
+        <p className="bottom-15 left absolute left-20 top-24 w-2/5 text-7xl font-bold text-white">
           Domestic Violence Support & Services for Women and Children
         </p>
 
@@ -37,31 +36,20 @@ export default function Home() {
         />
       </div>
 
-      <div className="relative flex items-center justify-center bg-starick-olive py-10 pl-8 text-center font-bold text-starick-brown">
+      <div className="relative flex items-left bg-starick-olive py-10 pl-8 font-bold text-starick-brown">
         <Image
           src={CrisisAlert}
           alt="crisis alert sign"
           width="0"
           height="0"
-          className="z-2 absolute left-96 top-20 h-40 w-20 -translate-x-1/2 -translate-y-1/2 transform"
+          className="z-2 absolute pb-10 left-20 top-20 h-40 w-20 -translate-x-1/2 -translate-y-1/2 transform"
         />
-
-        {/* Right warning sign */}
-        <Image
-          src={CrisisAlert}
-          alt="crisis alert sign"
-          width="0"
-          height="0"
-          className="z-2 absolute right-96 top-20 h-40 w-20 -translate-y-1/2 translate-x-1/2 transform"
-        />
-        <p>
-          For urgent help call: <br />
-          Crisis Care:(08) 9223 1111 <br />
-          or <br />
-          Country Freecall: 1800 199 008 <br />
-          <br />
-          If you are in immediate physical danger call Police: 000
+        
+        <p className="flex justify-center mx-36"> 
+        If you need urgent help, call Crisis Care: (08) 9223 1111 or Country Freecall: 1800 199 008 <br />
+        If you are in immediate physical danger, call Police: 000
         </p>
+        
       </div>
 
       <div className="flex items-center pb-20 pt-20">
@@ -70,7 +58,7 @@ export default function Home() {
           alt="starick logo"
           width="0"
           height="0"
-          className="justify-left mx-20  w-1/3"
+          className="flex justify-center mx-20"
         />
 
 
@@ -120,22 +108,22 @@ export default function Home() {
     </div>
 
         {/* Bottom left: Other Services */}
-        <div className="bg-starick-olive">
-          <p className="mb-10 mt-10 text-center text-2xl text-starick-brown">
+        <div className="bg-starick-green">
+          <p className="mb-10 mt-10 text-center text-2xl text-white">
             Other Services
           </p>
           
-          <div className="mx-5 grid gap-4 px-24 mb-10 text-starick-brown">
-        <a href="./counselling-services">
+          <div className="mx-5 grid gap-4 px-24 mb-10 text-white">
+        <a href="./respectful-relationships.tsx">
           <CoreServiceItem text="WA Respectful Relationship Teaching Support Program" img={CounsellingServices} />
         </a>
-        <a href="./counselling-services">
+        <a href="./work-with-children-and-young-people">
           <CoreServiceItem text="Our Work with Children and Young People" img={CounsellingServices} />
         </a> 
-        <a href="./counselling-services">
+        <a href="./workplace-awareness">
           <CoreServiceItem text="Workplace Awareness" img={CounsellingServices} />
         </a>  
-        <a href="./counselling-services">
+        <a href="./health-wellbeing">
           <CoreServiceItem text="Health and Wellbeing" img={CounsellingServices} />
         </a>   
            
@@ -153,7 +141,7 @@ export default function Home() {
         <div className=" t-10 h-200 bg-gray-200">
 
           <Image
-            src={Gridpic1}
+            src={Afterdidyouknow}
             alt="image of starick people for home page"
             width="0"
             height="0"
@@ -177,31 +165,31 @@ export default function Home() {
           link="./what-is-domestic-violence"
         />
       </div>
-      <div className="flex place-items-center gap-4 ">
-        <Image
-          src={FillerImage1}
-          alt="description"
-          width="0"
-          height="0"
-          className="h-auto w-full"
-        />
-      </div>
 
-      <div className="grid justify-items-center gap-5 px-10 py-10 font-semibold text-starick-black">
 
-       
+      <div className="flex z-2  text-left font-semibold bg-starick-green">
+      <div className="flex items-center">
+            <Image
+              src={Gridpic1}
+              alt="description"
+              width="0"
+              height="0"
+              className="w-3/4 "
+              
+            />
+          </div>
+          <div className="grid bg-starick-green text-left justify-items-left">
+            <p className=" text-white  mt-10 text-2xl">Op Shop</p>
+            <p className="text-white text-left ">
+              Give women and children a second chance through giving our wonderful shop items a second chance
+            </p>
+            <LinkButton text="Through to Op Shop >" link="./op-shop"/>
+          </div>
+        
+        </div>
 
-        <p className="mx-20 text-right text-2xl">Starick Op Shop</p>
-        <p className="top-20 mx-20 text-right">
-
-          Give women and children a second chance through giving our wonderful
-          shop items a second chance
-        </p>
-        <LinkButton text="Make A Donation" link="./what-is-domestic-violence" />
-      </div>
-
-      <div>
-        <p className="text-left mx-60 text-3xl font-bold text-starick-brown">
+          <div>
+        <p className="text-left mx-60 text-3xl mt-10 font-bold text-starick-brown">
           Follow the movement on Facebook!
         </p>
 
