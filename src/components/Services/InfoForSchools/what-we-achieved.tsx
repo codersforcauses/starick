@@ -100,7 +100,7 @@ export default function AchievedSection() {
       titleBackgroundColour="starick-olive"
       sectionBody={body}
       title="What our schools have achieved"
-      textOnLeft={false}
+      textOnLeft={true}
       circlesPlacement="bl"
     />
   );

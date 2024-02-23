@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import PageHeader from "@/components/page-header";
+import Disclaimer from "@/components/Services/ResourceAndToolkits/disclaimer";
 
 export default function ResourcesAndToolkits() {
   return (
@@ -10,7 +11,7 @@ export default function ResourcesAndToolkits() {
         subtitleText="Resources and Toolkits"
       />
 
-      <div className="-mx-2 flex flex-wrap justify-center bg-starick-white">
+      <div className="-mx-2 mb-8 mt-12 flex flex-wrap justify-center bg-starick-white">
         <div className="w-1/2 px-4 md:w-1/3 lg:w-1/4">
           <Link href="./resources-and-toolkits/child-safe-resources">
             <Image
@@ -35,8 +36,7 @@ export default function ResourcesAndToolkits() {
         </div>
       </div>
 
-      <br />
-      <div className="-mx-2 flex flex-wrap justify-center bg-starick-white">
+      <div className="-mx-2 mb-12 flex flex-wrap justify-center bg-starick-white">
         <div className="w-1/2 px-4 md:w-1/3 lg:w-1/4">
           <a href="https://www.starick.org.au/wp-content/uploads/STARICK-Covid-Childrens-Resource-11.7.22.pdf">
             <Image
@@ -60,7 +60,7 @@ export default function ResourcesAndToolkits() {
           </Link>
         </div>
       </div>
-      <br />
+      <Disclaimer />
     </>
   );
 }

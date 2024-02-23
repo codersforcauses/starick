@@ -1,13 +1,11 @@
 import ChildSafeItem from "./child-safe-item";
+import { ChildSafeItemProps } from "./child-safe-item";
 
-interface ChildSafeListProps {
-  itemList: Array<{
-    backgroundColor: string;
-    text: string;
-  }>;
-}
-
-export default function ChildSafeList({ itemList }: ChildSafeListProps) {
+export default function ChildSafeList({
+  itemList
+}: {
+  itemList: ChildSafeItemProps[];
+}) {
   return (
     <div>
       {itemList.map((child, index) => (
@@ -15,6 +13,7 @@ export default function ChildSafeList({ itemList }: ChildSafeListProps) {
           key={index}
           backgroundColor={child.backgroundColor}
           text={child.text}
+          link={child.link}
         />
       ))}
     </div>
