@@ -4,7 +4,7 @@ import { GPTMessage, GPTMessageSchema } from "@/lib/chatbot/validators";
 
 import Bubble from "./bubble";
 import Message from "./message";
-import MessengerEmbed from "../messengerembed/messengerembed";
+import MessengerEmbed from "../MessengerChat";
 
 import styles from "./assistant.module.css";
 
@@ -70,7 +70,7 @@ function Assistant() {
     setChatOpen(!chatOpen);
   };
 
-  // Switch to MessengerEmbed//
+  // Switch to MessengerEmbed
   const handleButtonClick = () => {
     setShowChatbot(false);
   };

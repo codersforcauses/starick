@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import SectionTitle from "@/components/old-section-title";
 import consultingResources from "@/components/Services/ResourceAndToolkits/child-part-items/consulting-resources.json";
 import powerpointPresentation from "@/components/Services/ResourceAndToolkits/child-part-items/powerpoint-presentation.json";
@@ -9,7 +7,7 @@ import Disclaimer from "@/components/Services/ResourceAndToolkits/disclaimer";
 import ResourceToolkitItem from "@/components/Services/ResourceAndToolkits/resource-toolkit-item";
 import Section from "@/components/Services/services-section";
 
-import ChildParticipationResources from "~/images/ResourcesToolkits/page-headers/child-participation-resources.png";
+import PageHeader from "@/components/page-header";
 
 export default function ChildrensParticipationAndEngagement() {
   const resourceToolkitBody = (
@@ -31,12 +29,9 @@ export default function ChildrensParticipationAndEngagement() {
   );
   return (
     <>
-      <Image
-        src={ChildParticipationResources}
-        alt="description"
-        width="0"
-        height="0"
-        className="h-auto w-full"
+      <PageHeader
+        titleText="Children’s Participation and Engagement"
+        subtitleText="Resource Toolkit"
       />
 
       <div className="font-regular px-20 py-10 md:px-40 md:py-20 lg:px-60">
@@ -98,32 +93,20 @@ export default function ChildrensParticipationAndEngagement() {
         sectionBody={resourceToolkitBody}
         textOnLeft={false}
       />
-
-      <div className="px-10 md:px-20 lg:px-32">
-        <SectionTitle
-          text="Powerpoint Presentation"
-          backgroundColour="starick-brown"
-          textColour="starick-white"
-          iconPath="/icons/refugees.svg"
-        />
-      </div>
-
-      <div className="px-20 py-10 md:px-40 md:py-20 lg:px-60">
-        <ChildSafeList itemList={powerpointPresentation} />
-      </div>
-
-      <div className="px-10 md:px-20 lg:px-32">
-        <SectionTitle
-          text="Consulting Resources"
-          backgroundColour="starick-olive"
-          textColour="starick-black"
-          iconPath="/icons/refugees.svg"
-        />
-      </div>
-      <div className="px-20 py-10 md:px-40 md:py-20 lg:px-60">
-        <ChildSafeList itemList={consultingResources} />
-      </div>
-
+      <Section
+        title="Powerpoint Presentation"
+        titleBackgroundColour="starick-olive"
+        titleTextColour="starick-black"
+        sectionBody={<ChildSafeList itemList={powerpointPresentation} />}
+        textOnLeft={true}
+      />
+      <Section
+        title="Consulting Resources"
+        titleBackgroundColour="starick-green"
+        titleTextColour="starick-white"
+        sectionBody={<ChildSafeList itemList={consultingResources} />}
+        textOnLeft={false}
+      />
       <Disclaimer />
     </>
   );

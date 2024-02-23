@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import InPageNav from "@/components/InPageNav";
-import Banner from "@/components/Services/banner";
+import PageHeader from "@/components/page-header";
 import Crisis from "@/components/useful_numbers_and_information/crisis_section";
 import Legal from "@/components/useful_numbers_and_information/legal";
 import StarickServices from "@/components/useful_numbers_and_information/starick_services";
@@ -28,7 +28,7 @@ export default function CoreServices() {
   ];
   return (
     <>
-      <Banner titleText="Useful numbers and information" />
+      <PageHeader titleText="Useful numbers and information" />
       <InPageNav list={navLinkDetails}></InPageNav>
       <Crisis />
       <SupportInfo />

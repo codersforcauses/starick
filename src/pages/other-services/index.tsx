@@ -40,11 +40,6 @@ export default function OtherServices() {
       <WorkplaceAwarenessSection />
       <HealthAndWellbeingSection />
       <ThrivingThroughConnectionSection />
-      <div className="flex items-center justify-center bg-starick-white py-10">
-        <button className="rounded-2xl bg-starick-brown p-5 text-lg text-white hover:bg-starick-black">
-          <Link href="/core-services">Core Services</Link>
-        </button>
-      </div>
     </>
   );
 }

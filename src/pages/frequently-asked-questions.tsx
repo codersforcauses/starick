@@ -1,10 +1,10 @@
-import React from "react";
 import { useState } from "react";
 import { ReactNode } from "react";
 import Image from "next/image";
 
 import Section from "@/components/basicInformation/Section";
 import NavbarItem from "@/components/basicInformation/utility/NavbarItem";
+import PageHeader from "@/components/page-header";
 type Section = {
   sectionId: string;
   titleBackgroundColor: string;
@@ -443,24 +443,7 @@ export default function Questions() {
 
   return (
     <div className="bg-starick-white">
-      <div className="relative  ">
-        <div className="">
-          <Image
-            src="/images/starick-image1.jpg"
-            alt=""
-            width={1440}
-            height={100}
-            layout="responsive"
-          />
-        </div>
-        <div className=" absolute inset-y-0 left-0 z-10 w-2/3 rounded-r-full bg-starick-green">
-          <div className="flex h-full items-center justify-center text-4xl">
-            <p className=" text-[40px] font-black text-white">
-              Frequently Asked Questions
-            </p>
-          </div>
-        </div>
-      </div>
+      <PageHeader titleText="Frequently Asked Questions" />
 
       {/* nav drop--down menu */}
       <div className="px-4 pt-6 md:px-20 md:pt-20">

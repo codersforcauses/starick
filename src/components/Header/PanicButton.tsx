@@ -16,12 +16,10 @@ export default function PanicButton() {
   }, []);
 
   return (
-    <div className="fixed left-0 right-0 top-0 z-50 flex h-10 items-center justify-between bg-starick-brown px-4 text-center hover:bg-starick-orange">
-      <Link href="https://www.google.com.au/">
-        <button className="fixed left-0 right-0 top-0 z-50 h-10 items-center justify-between bg-starick-brown px-4 text-center text-white hover:bg-starick-orange">
-          <span className="font-bold text-white">X</span> Quick Exit (Esc)
-        </button>
-      </Link>
-    </div>
+    <Link href="https://www.google.com.au/" className="z-50">
+      <button className="w-screen bg-starick-brown px-4 py-2 text-starick-white hover:bg-starick-orange lg:w-auto">
+        <span className="font-bold">X</span> Quick Exit (Esc)
+      </button>
+    </Link>
   );
 }

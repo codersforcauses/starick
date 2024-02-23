@@ -91,7 +91,8 @@ export default function ProfessionalLearning() {
       titleBackgroundColour="starick-olive"
       sectionBody={body}
       title="Professional Learning"
-      textOnLeft={false}
+      textOnLeft={true}
+      circlesPlacement="tr"
     />
   );
 }

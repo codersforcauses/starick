@@ -1,7 +1,6 @@
-import Link from "next/link";
-
 import PageHeader from "@/components/page-header";
 import PageSummary from "@/components/page-summary";
+import ServicesLink from "@/components/Services/services-link";
 
 export default function OurServices() {
   const servicesSummaries = [
@@ -132,18 +131,13 @@ function Summary({
       <br />
       <p className={`text-center text-${textColour}`}>{text}</p>
       <br />
-      <Link href={link}>
-        <div className="flex">
-          <button
-            className={`bg-${arrowBackgroundColor} text-${arrowColour} mr-2 px-2 font-mono text-xl font-bold`}
-          >
-            &#62;
-          </button>
-          <p className={`text-lg font-semibold text-${textColour}`}>
-            More info
-          </p>
-        </div>
-      </Link>
+      <ServicesLink
+        text="More Info"
+        link={link}
+        arrowColour={arrowColour}
+        textColour={textColour}
+        arrowBackgroundColor={arrowBackgroundColor}
+      />
     </div>
   );
 }

@@ -99,6 +99,7 @@ export default function SafeAtHomeSection() {
       sectionBody={body}
       title="Safe at Home Program"
       textOnLeft={false}
+      circlesPlacement="tr"
     />
   );
 }

@@ -111,7 +111,8 @@ export default function SchoolCohorts() {
       titleBackgroundColour="starick-olive"
       sectionBody={body}
       title="School Cohorts"
-      textOnLeft={false}
+      textOnLeft={true}
+      circlesPlacement="br"
     />
   );
 }

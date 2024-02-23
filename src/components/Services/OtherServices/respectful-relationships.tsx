@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 import ServicesSection from "../services-section";
+import ServicesLink from "../services-link";
 
 export default function RespectfulRelationshipsSection() {
   const body = (
@@ -12,7 +13,7 @@ export default function RespectfulRelationshipsSection() {
         Relationships Teaching Support Program (WARRTSP) to primary and
         secondary public schools across Western Australia.
       </p>
-      <br></br>
+      <br />
       <p>
         WARRSTP uses a whole-of-school approach to support staff in delivering
         appropriate respectful relationships material in the school curriculum
@@ -44,12 +45,12 @@ export default function RespectfulRelationshipsSection() {
         WARRSTP is funded by the Department of Communities, and supported by the
         Department of Education.
       </p>
-      <br></br>
+      <br />
       <p>
         The WARRSTP is part of WA Labor&apos;s election commitment to stopping
         family and domestic violence.
       </p>
-      <br></br>
+      <br />
       <p>
         It is also a key initiative of Path to Safety:{" "}
         <Link
@@ -60,43 +61,43 @@ export default function RespectfulRelationshipsSection() {
           Violence 2020-2030.
         </Link>
       </p>
-      <br></br>
-      <br></br>
+      <br />
+      <br />
       <p className="flex items-center justify-center text-xl font-semibold">
         About Respectful Relationships Education
       </p>
-      <br></br>
+      <br />
       <p>
         Respectful Relationships Education (RRE) is a whole-of-school approach
         to creating and maintaining a culture of respect within school
         communities.{" "}
       </p>
-      <br></br>
+      <br />
       <p>
         RRE supports students, staff and the wider community to build healthy
         and safe relationships based on mutual respect, non-violence and gender
         equality.{" "}
       </p>
-      <br></br>
+      <br />
       <p>
         RRE is an evidence based, primary prevention approach delivered through
         schools to create generational and cultural change. It engages schools
         as places of learning and as workplaces to address the drivers of
         gender-based violence and create a future free from violence.{" "}
       </p>
-      <br></br>
-      <br></br>
+      <br />
+      <br />
       <p className="flex items-center justify-center text-xl font-semibold">
         What is a whole-of-school approach?
       </p>
-      <br></br>
+      <br />
       <p>Effective RRE recognises that schools are: </p>
       <ul className="ml-8 list-outside list-disc">
         <li>Places of learning</li>
         <li>Community hubs, and </li>
         <li>Workplaces. </li>
       </ul>
-      <br></br>
+      <br />
       <p>
         A whole-of-school approach engages with all aspects of a school
         including:
@@ -108,12 +109,12 @@ export default function RespectfulRelationshipsSection() {
         <li>promoting gender equality among staff and students, and </li>
         <li>fostering partnerships with the wider community. </li>
       </ul>
-      <br></br>
+      <br />
       <p>
         Evidence based, age-appropriate delivery is a key part of the
         whole-of-school approach to embed RRE.{" "}
       </p>
-      <br></br>
+      <br />
       <p>
         resources-toolkits-reading Evidence shows that when students have
         authentic opportunities to actively participate in their learning, they
@@ -121,14 +122,24 @@ export default function RespectfulRelationshipsSection() {
         relationships. It is therefore important to include student voices in
         implementing RRE in schools.{" "}
       </p>
-      <br></br>
-      <div className="flex justify-center gap-x-32 bg-starick-white py-10">
-        <button className="rounded-2xl bg-starick-brown p-5 text-lg text-white hover:bg-starick-black">
-          <Link href="/other-services/info-for-schools">Info for schools</Link>
-        </button>
-        <button className="rounded-2xl bg-starick-brown p-5 text-lg text-white hover:bg-starick-black">
-          <Link href="/other-services/further-reading">Further reading</Link>
-        </button>
+      <br />
+      <br />
+      <div className="flex justify-center">
+        <ServicesLink
+          text={"Info for schools"}
+          link={"/other-services/info-for-schools"}
+          textColour="starick-black"
+          arrowColour="starick-white"
+          arrowBackgroundColor="starick-green"
+        />
+        <div className="w-32"></div>
+        <ServicesLink
+          text={"Further reading"}
+          link={"/other-services/further-reading"}
+          textColour="starick-black"
+          arrowColour="starick-white"
+          arrowBackgroundColor="starick-green"
+        />
       </div>
     </>
   );
@@ -139,6 +150,7 @@ export default function RespectfulRelationshipsSection() {
       sectionBody={body}
       title="WA Respectful Relationships Teaching Support Program"
       textOnLeft={false}
+      circlesPlacement="bl"
     />
   );
 }
