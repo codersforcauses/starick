@@ -21,7 +21,7 @@ export default function StrategicPlans() {
       titleBackgroundColour="starick-green"
       sectionBody={body}
       title="Strategic Plans"
-      iconPath="icons/refugees.svg"
+      textOnLeft={false}
     />
   );
 }

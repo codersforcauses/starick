@@ -165,7 +165,8 @@ export default function WorkplaceAwarenessSection() {
       titleBackgroundColour="starick-green"
       sectionBody={body}
       title="Workplace Awareness"
-      iconPath=""
+      textOnLeft={false}
+      circlesPlacement="tr"
     />
   );
 }

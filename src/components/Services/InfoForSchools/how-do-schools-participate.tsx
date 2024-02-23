@@ -34,6 +34,7 @@ export default function HowDoSchoolsParticipate() {
       titleBackgroundColour="starick-green"
       sectionBody={body}
       title="How do schools participate in the program?"
+      textOnLeft={false}
     />
   );
 }

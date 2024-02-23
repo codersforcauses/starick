@@ -103,6 +103,7 @@ export default function BarbarasStory() {
       titleBackgroundColour="starick-brown"
       sectionBody={body}
       title="Barbara's Story"
+      textOnLeft={false}
     />
   );
 }

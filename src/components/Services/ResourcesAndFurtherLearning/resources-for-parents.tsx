@@ -67,6 +67,8 @@ export default function ResourceForParents() {
       titleBackgroundColour="starick-olive"
       sectionBody={body}
       title="Resources for Parents"
+      textOnLeft={true}
+      circlesPlacement="r"
     />
   );
 }

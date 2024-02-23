@@ -1,18 +1,22 @@
 [
   {
     "backgroundColor": "starick-olive",
-    "text": "Child friendly version of the Children's Safety and Wellbeing report"
+    "text": "Child friendly version of the Children's Safety and Wellbeing report",
+    "link": "https://www.starick.org.au/wp-content/uploads/CHILDF1.pdf"
   },
   {
     "backgroundColor": "white",
-    "text": "Commonwealth Child Safe Framework"
+    "text": "Commonwealth Child Safe Framework",
+    "link": "https://www.starick.org.au/wp-content/uploads/commonwealth-child-safe-framework-2nd-edition.pdf"
   },
   {
     "backgroundColor": "starick-olive",
-    "text": "Learning from lived experience - a guide for professionals supporting children and young people experiencing family violence"
+    "text": "Learning from lived experience - a guide for professionals supporting children and young people experiencing family violence",
+    "link": "https://www.starick.org.au/wp-content/uploads/SE_BerryStreet_YChange_TipSheet_03_01-REV-1.pdf"
   },
   {
     "backgroundColor": "white",
-    "text": "Commonwealth Child safe framework 2nd edition"
+    "text": "Commonwealth Child safe framework 2nd edition",
+    "link": "https://www.starick.org.au/wp-content/uploads/commonwealth-child-safe-framework-2nd-edition-1.pdf"
   }
 ]

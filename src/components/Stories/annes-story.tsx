@@ -182,6 +182,7 @@ export default function AnnesStory() {
       titleBackgroundColour="starick-olive"
       sectionBody={body}
       title="Anne's Story"
+      textOnLeft={false}
     />
   );
 }

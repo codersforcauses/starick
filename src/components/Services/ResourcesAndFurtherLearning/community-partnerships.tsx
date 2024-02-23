@@ -68,6 +68,7 @@ export default function CommunityPartnerships() {
       titleBackgroundColour="starick-green"
       sectionBody={body}
       title="Community Partnerships"
+      textOnLeft={false}
     />
   );
 }

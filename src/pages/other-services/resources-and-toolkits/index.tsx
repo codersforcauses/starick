@@ -1,31 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
+import PageHeader from "@/components/page-header";
+import Disclaimer from "@/components/Services/ResourceAndToolkits/disclaimer";
 
 export default function ResourcesAndToolkits() {
   return (
     <>
-      <div>
-        <Image
-          className="h-[500px] w-full object-cover"
-          src="/images/starick-image1.jpg"
-          alt=""
-          height="500"
-          width="1000"
-        />
-        <div className="relative -mt-36 mb-6 w-fit rounded-r-full bg-white px-10">
-          <p className="p-2 text-4xl font-bold text-starick-brown">
-            Work with Children and Young People
-          </p>
-          <p className="p-2 text-center text-3xl font-bold text-starick-brown">
-            Resources and Toolkits
-          </p>
-        </div>
-      </div>
+      <PageHeader
+        titleText="Work with Children and Young People"
+        subtitleText="Resources and Toolkits"
+      />
 
-      <br />
-      <br />
-
-      <div className="-mx-2 flex flex-wrap justify-center bg-starick-white">
+      <div className="-mx-2 mb-8 mt-12 flex flex-wrap justify-center bg-starick-white">
         <div className="w-1/2 px-4 md:w-1/3 lg:w-1/4">
           <Link href="./resources-and-toolkits/child-safe-resources">
             <Image
@@ -50,8 +36,7 @@ export default function ResourcesAndToolkits() {
         </div>
       </div>
 
-      <br />
-      <div className="-mx-2 flex flex-wrap justify-center bg-starick-white">
+      <div className="-mx-2 mb-12 flex flex-wrap justify-center bg-starick-white">
         <div className="w-1/2 px-4 md:w-1/3 lg:w-1/4">
           <a href="https://www.starick.org.au/wp-content/uploads/STARICK-Covid-Childrens-Resource-11.7.22.pdf">
             <Image
@@ -75,7 +60,7 @@ export default function ResourcesAndToolkits() {
           </Link>
         </div>
       </div>
-      <br />
+      <Disclaimer />
     </>
   );
 }

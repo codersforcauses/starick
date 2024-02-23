@@ -23,7 +23,7 @@ export default function WhatWeSell() {
       titleBackgroundColour="starick-green"
       sectionBody={body}
       title="What We Sell"
-      iconPath="/icons/refugees.svg"
+      textOnLeft={false}
     />
   );
 }

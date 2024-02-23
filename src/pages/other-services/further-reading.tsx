@@ -1,4 +1,4 @@
-import Banner from "@/components/Services/banner";
+import PageHeader from "@/components/page-header";
 import CommunityPartnerships from "@/components/Services/ResourcesAndFurtherLearning/community-partnerships";
 import EvidenceBase from "@/components/Services/ResourcesAndFurtherLearning/evidence-base";
 import ProfessionalLearning from "@/components/Services/ResourcesAndFurtherLearning/professional-learning";
@@ -9,7 +9,7 @@ import ResourceForSchools from "@/components/Services/ResourcesAndFurtherLearnin
 export default function InfoForSchools() {
   return (
     <>
-      <Banner
+      <PageHeader
         titleText="Respectful relationships"
         subtitleText="Resources and Further Reading"
       />

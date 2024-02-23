@@ -1,6 +1,5 @@
 import { ReactNode } from "react";
-import Image from "next/image";
-import Banner from "@/components/Services/banner";
+import PageHeader from "@/components/page-header";
 
 import Section from "@/components/basicInformation/Section";
 
@@ -269,7 +268,7 @@ const sections: Section[] = [
 export default function BasicInormation() {
   return (
     <div className="bg-starick-white">
-      <Banner titleText="What is Domestic Violence" />
+      <PageHeader titleText="What is Domestic Violence" />
       {/* sections */}
       <div className="flex flex-col p-4 md:px-40 md:py-20">
         {sections.map((section) => (
