@@ -1,6 +1,13 @@
 import { ChangeEvent, Dispatch, SetStateAction, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { MdLocalPhone } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
 
 import AboriginalFlag from "~/images/aboriginal_flags/aboriginal-flag-150x150.png";
 import TorresStraitIslanderFlag from "~/images/aboriginal_flags/torres-strait-islander-flag-150x150.png";
@@ -103,41 +110,56 @@ const Contact = ({ children }: Props) => {
           <p className="mb-2 max-w-lg text-4xl font-normal text-starick-white  lg:mr-0 lg:text-left">
             Building futures for women and children free from violence
           </p>
-          <div className="flex">
-            <div className="flex flex-col">
+          <div className="mt-4 flex font-medium">
+            <div className="mr-10 flex flex-col">
               <div>
-                <h4 className="pb-2 text-2xl">Explore our services</h4>
-                <p className="max-w-xs text-xs font-light">
-                  Our services include core services, such as refuges and
-                  outreach programs, and our other health and wellbeing services
-                  and programs
+                <h4 className="pb-2  text-2xl">Refuges</h4>
+                <p className="mt-2 max-w-xs items-center font-light">
+                  <MdLocalPhone className="inline" />: 08 9458 1107
                 </p>
               </div>
               <div>
-                <h4 className="pb-2 text-2xl">Explore our services</h4>
-                <p className="max-w-xs text-xs font-light">
-                  Our services include core services, such as refuges and
-                  outreach programs, and our other health and wellbeing services
-                  and programs
+                <h4 className="pb-2 text-2xl">Admin</h4>
+                <p className="max-w-xs  font-light">
+                  <MdLocalPhone className="inline" />: 08 9478 5300
                 </p>
+                <p>
+                  @: <span>info@starick.org.au</span>
+                </p>
+                <p>
+                  <MdEmail className="inline" />
+                  PO Box 174
+                </p>
+                <p>CLOVERDALE WA 6985</p>
               </div>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col  text-base">
               <div>
-                <h4 className="pb-2 text-2xl">Explore our services</h4>
-                <p className="max-w-xs text-xs font-light">
-                  Our services include core services, such as refuges and
-                  outreach programs, and our other health and wellbeing services
-                  and programs
+                <h4 className="mb-2 pb-2 text-2xl  ">Starick Op Shop</h4>
+                <p className="max-w-xs  font-light">
+                  <MdLocalPhone className="inline" />: 08 6271 0299
+                </p>
+                <p className=" max-w-xs  font-light ">
+                  <FaMapMarkerAlt className="inline" />: 110 Kooyong Road,
+                  RIVERVALE WA 6103
                 </p>
               </div>
               <div>
-                <h4 className="pb-2 text-2xl">Explore our services</h4>
-                <p className="max-w-xs text-xs font-light">
-                  Our services include core services, such as refuges and
-                  outreach programs, and our other health and wellbeing services
-                  and programs
-                </p>
+                <h4 className="pb-2 text-2xl">Social Media</h4>
+                <div className="mx-auto ml-3 flex min-w-fit font-light ">
+                  <a href="#">
+                    <FaFacebookSquare className=" mr-3"></FaFacebookSquare>
+                  </a>
+                  <a href="#">
+                    <FaXTwitter className=" mr-3"></FaXTwitter>
+                  </a>
+                  <a href="#">
+                    <FaLinkedin className=" mr-3"></FaLinkedin>
+                  </a>
+                  <a href="#">
+                    <FaSquareInstagram className=" mr-3"></FaSquareInstagram>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -255,10 +277,10 @@ const Donation = () => {
               Our services include core services, such as refuges and outreach
               programs, and our other health and wellbeing services and programs
             </p>
-            <button className=" h-9 text-sm font-semibold text-starick-white lg:text-left  ">
+            <button className="mt-4 h-9 text-sm font-semibold text-starick-white lg:text-left  ">
               <div className="ml-2 flex items-center gap-2">
                 <span className="relative inline-block h-5 w-5 bg-starick-white before:absolute before:left-1/4 before:top-1/3 before:inline-block before:h-[7px] before:w-[7px] before:rotate-45 before:border-r-2 before:border-t-2 before:border-starick-black     before:content-['']"></span>
-                <span className=" text-lg">Our Services</span>
+                <span className="text-lg">Our Services</span>
               </div>
             </button>
           </div>
