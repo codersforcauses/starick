@@ -13,11 +13,11 @@ import SupportInPoliceStations from "~/icons/police-justice.svg";
 import CounsellingServices from "~/icons/psychology.svg";
 import TwoRefuges from "~/icons/refugees.svg";
 import Staricklogo from "~/icons/starick-logo.svg";
-import Gridpic1 from "~/images/home/carousel-1.png";
+import Gridpic2 from "~/images/home/_MG_9460.jpg"
 import FillerOpshop from "~/images/home/carousel-4.png";
+import Gridpic1 from "~/images/home/Starick-Op-Shop-Volunteers.jpg";
 import HomeTitle from "~/images/Parents-with-kids-graphic.png";
 import FillerImage1 from "~/images/starick-image1.jpg";
-
 export default function Home() {
   return (
     <>
@@ -81,9 +81,9 @@ export default function Home() {
 
       <div className="grid grid-cols-2 font-semibold text-starick-black">
         {/* Top Left: picture */}
-        <div className="bg-gray-200 ">
+        <div className=" bg-gray-200 ">
           <Image
-            src={Gridpic1}
+            src={Gridpic2}
             alt="image of starick people for home page"
             width="0"
             height="0"
@@ -92,67 +92,73 @@ export default function Home() {
         </div>
 
         {/* Top Right: Core Services https://www.starick.org.au/services/transitional-housing/*/}
-        <div className="bg-starick-olive ">
-          <p className="p-10 text-center text-2xl font-bold text-starick-brown">
-            Core Services
-          </p>
-          <div className="mx-5 mb-10 grid gap-4 px-24 text-starick-brown">
-            <CoreServiceItem
-              text="Counselling Services"
-              img={CounsellingServices}
-            />
-            <CoreServiceItem
-              text="Transitional Housing"
-              img={TransitionalHousing}
-            />
-            <CoreServiceItem text="Two Refuges" img={TwoRefuges} />
-            <CoreServiceItem
-              text="Support in Police Stations"
-              img={SupportInPoliceStations}
-            />
-            <CoreServiceItem
-              text="Safe at Home Program"
-              img={SafeAtHomeProgram}
-            />
-            <div className="flex justify-around p-10">
-              <LinkButton text="View Core Services" link="./core-services" />
-            </div>
-          </div>
+            <div className="bg-starick-olive">
+      <p className="mt-10 text-center text-2xl text-starick-brown font-bold">Core Services</p>
+      <div className="mx-5 grid gap-4 px-24 mb-10 text-starick-brown">
+        <a href="./counselling-services">
+          <CoreServiceItem text="Counselling Services" img={CounsellingServices} />
+        </a>
+        <a href="./transitional-housing">
+          <CoreServiceItem text="Transitional Housing" img={TransitionalHousing} />
+        </a>
+        <a href="./two-refuges">
+          <CoreServiceItem text="Two Refuges" img={TwoRefuges} />
+        </a>
+        <a href="./support-in-police-stations">
+          <CoreServiceItem text="Support in Police Stations" img={SupportInPoliceStations} />
+        </a>
+        <a href="./safe-at-home-program">
+          <CoreServiceItem text="Safe at Home Program" img={SafeAtHomeProgram} />
+        </a>
+        <div className="flex justify-around">
+          <LinkButton text="View Core Services" link="./core-services" />
         </div>
+      </div>
+    </div>
 
         {/* Bottom left: Other Services */}
         <div className="bg-starick-olive">
           <p className="mb-10 mt-10 text-center text-2xl text-starick-brown">
             Other Services
           </p>
-          <div className="mx-5 grid h-1/2 gap-4 px-24 text-starick-brown">
-            <p>WA Respectful Relationships Teaching Support Program</p>
-            <p>Our Work with Children and Young People</p>
-            <p>Workplace Awareness</p>
-            <p>Health and Wellbeing</p>
-            <p>
+          
+          <div className="mx-5 grid gap-4 px-24 mb-10 text-starick-brown">
+        <a href="./counselling-services">
+          <CoreServiceItem text="WA Respectful Relationship Teaching Support Program" img={CounsellingServices} />
+        </a>
+        <a href="./counselling-services">
+          <CoreServiceItem text="Our Work with Children and Young People" img={CounsellingServices} />
+        </a> 
+        <a href="./counselling-services">
+          <CoreServiceItem text="Workplace Awareness" img={CounsellingServices} />
+        </a>  
+        <a href="./counselling-services">
+          <CoreServiceItem text="Health and Wellbeing" img={CounsellingServices} />
+        </a>   
+           
+          <p className="flex justify-center">
               Thriving Through Connection Supporting Young People Aged 11 -17
               years
-            </p>
-            <div className="justify-around">
+          </p>
+            <div className="flex justify-around ">
               <LinkButton text="View Other Services" link="./other-services" />
             </div>
           </div>
         </div>
-
+  
         {/* bottom right: picture */}
-        <div className="t-10 bg-gray-200">
+        <div className=" t-10 h-200 bg-gray-200">
           <Image
             src={Gridpic1}
             alt="image of starick people for home page"
             width="0"
             height="0"
-            className=""
+            className="h-full"
           />
         </div>
       </div>
 
-      <div className="grid justify-items-center gap-5 px-10 py-10 font-semibold text-starick-black">
+      <div className="grid justify-items-center gap-5 px-10 py-10 font-semibold text-starick-brown">
         <p className="text-center text-2xl">Did you know?</p>
         <p>
           One woman dies every week in Australia as a result of domestic and
@@ -199,26 +205,21 @@ export default function Home() {
       </div>
 
       <div>
-        <p className="text-center text-3xl font-bold text-starick-brown">
+        <p className="text-left mx-60 text-3xl font-bold text-starick-brown">
           Follow the movement on Facebook!
         </p>
-        <div className="flex flex-row justify-center">
+        <div className="flex flex-row justify-left  my-8 mx-36">
           <FacebookFeed />
         </div>
       </div>
 
-      <div className="relative mx-auto mb-8 w-1/2">
-        <Carousel images={carousel_list} />
-
-        <div className="flex justify-center text-center text-2xl  font-semibold text-starick-brown">
+      <div className="flex justify-center text-center text-2xl  font-semibold text-starick-brown">
           <p>
             {" "}
             Keep up with upcoming events! Follow us on instagram for more
             information how you can get involved
           </p>
-        </div>
       </div>
-
       <div className=" mt-1/2 mb-36 flex flex-row justify-center">
         <a
           href="https://www.instagram.com/starickservices/"
@@ -237,6 +238,14 @@ export default function Home() {
           </div>
         </a>
       </div>
+
+      <div className="relative mx-auto mb-8 w-1/2">
+        <Carousel images={carousel_list} />
+
+     
+      </div>
+
+      
     </>
   );
 }
