@@ -1,14 +1,17 @@
 [
   {
     "backgroundColor": "starick-olive",
-    "text": "<strong>Practice Tool 1</strong>&nbsp;- Building Relationships"
+    "text": "<strong>Practice Tool 1</strong>&nbsp;- Building Relationships",
+    "link": "https://www.starick.org.au/wp-content/uploads/CAYPEP-Practice-Tool-1.pdf"
   },
   {
     "backgroundColor": "starick-white",
-    "text": "<strong>Practice Tool 2</strong>&nbsp;- Empowerment & Participation"
+    "text": "<strong>Practice Tool 2</strong>&nbsp;- Empowerment & Participation",
+    "link": "https://www.starick.org.au/wp-content/uploads/CAYPEP-Practice-Tool-2.pdf"
   },
   {
     "backgroundColor": "starick-olive",
-    "text": "<strong>Practice Tool 3</strong>&nbsp;- Informed About Their Rights"
+    "text": "<strong>Practice Tool 3</strong>&nbsp;- Informed About Their Rights",
+    "link": "https://www.starick.org.au/wp-content/uploads/CAYPEP-Practice-Tool-3.pdf"
   }
 ]

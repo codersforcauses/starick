@@ -1,6 +1,4 @@
-import Image from "next/image";
-
-import SectionTitle from "@/components/old-section-title";
+import Section from "@/components/Services/services-section";
 import ChildSafeItem from "@/components/Services/ResourceAndToolkits/child-safe-item";
 import childSafeTemplate from "@/components/Services/ResourceAndToolkits/child-safe-items/child-safe-template.json";
 import externalResources from "@/components/Services/ResourceAndToolkits/child-safe-items/external-resources.json";
@@ -13,11 +11,19 @@ import PageHeader from "@/components/page-header";
 export default function ChildSafeResources() {
   const emailAddress = "info@starick.org.au";
 
+  const childSafeTemplatesBody = (
+    <>
+      <ChildSafeList itemList={childSafeTemplate} />
+      <p className="my-10 text-center text-2xl font-semibold">Practice Tools</p>
+      <ChildSafeList itemList={practiceTools} />
+    </>
+  );
+
   return (
     <>
       <PageHeader titleText="Child Safe Organisation Resources" />
 
-      <div className="px-20 py-10 font-semibold md:px-40 md:py-20 lg:px-60">
+      <div className="px-6 py-16 font-medium md:px-32 lg:px-72">
         <p className="mb-4">
           Starick&apos;s organisational culture prioritises the safety and
           wellbeing of all children and young people engaged with its services,
@@ -77,51 +83,35 @@ export default function ChildSafeResources() {
           .
         </p>
       </div>
-      <div className="px-10 md:px-20 lg:px-32">
-        <SectionTitle
-          text="Child Safe Template"
-          backgroundColour="starick-green"
-          textColour="starick-white"
-          iconPath="/icons/refugees.svg"
-        />
-      </div>
+      <Section
+        title="Child Safe Templates"
+        titleBackgroundColour="starick-green"
+        titleTextColour="starick-white"
+        textOnLeft={false}
+        sectionBody={childSafeTemplatesBody}
+      />
 
-      <div className="px-20 py-10 md:px-40 md:py-20 lg:px-60">
-        <ChildSafeList itemList={childSafeTemplate} />
-        <p className="my-10 text-center text-2xl font-semibold">
-          Practice Tools
-        </p>
-        <ChildSafeList itemList={practiceTools} />
-      </div>
+      <Section
+        title="Posters"
+        titleBackgroundColour="starick-olive"
+        titleTextColour="starick-black"
+        textOnLeft={true}
+        sectionBody={
+          <ChildSafeItem
+            backgroundColor="starick-olive"
+            text="UN Convention on the Rights of the Child"
+            link="https://www.starick.org.au/wp-content/uploads/UNCONV1.pdf"
+          />
+        }
+      />
 
-      <div className="px-10 md:px-20 lg:px-32">
-        <SectionTitle
-          text="Posters"
-          backgroundColour="starick-brown"
-          textColour="starick-white"
-          iconPath="/icons/refugees.svg"
-        />
-      </div>
-
-      <div className="px-20 py-10 md:px-40 md:py-20 lg:px-60">
-        <ChildSafeItem
-          backgroundColor="starick-olive"
-          text="UN Convention on the Rights of the Child"
-        />
-      </div>
-
-      <div className="px-10 md:px-20 lg:px-32">
-        <SectionTitle
-          text="External Resources"
-          backgroundColour="starick-olive"
-          textColour="black"
-          iconPath="/icons/refugees.svg"
-        />
-      </div>
-
-      <div className="px-20 py-10 md:px-40 md:py-20 lg:px-60">
-        <ChildSafeList itemList={externalResources} />
-      </div>
+      <Section
+        title="External Resources"
+        titleBackgroundColour="starick-green"
+        titleTextColour="starick-white"
+        textOnLeft={false}
+        sectionBody={<ChildSafeList itemList={externalResources} />}
+      />
 
       <Disclaimer />
     </>
