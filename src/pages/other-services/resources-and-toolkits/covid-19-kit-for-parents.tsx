@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import { List } from "@/components/Services/list";
 import PageHeader from "@/components/page-header";
+import Disclaimer from "@/components/Services/ResourceAndToolkits/disclaimer";
 
 export default function ResourcesAndToolkits() {
   const body = (
@@ -70,7 +71,7 @@ export default function ResourcesAndToolkits() {
       <PageHeader titleText="COVID-19 Kit for Parents" />
       {body}
 
-      <div className="-mx-2 flex flex-wrap justify-center bg-starick-white">
+      <div className="-mx-2 flex flex-wrap justify-center bg-starick-white pb-12">
         {pdfs.map((pdf) => {
           return (
             <div className="w-1/2 px-8 md:w-1/3 lg:w-1/6" key={pdf.linkhref}>
@@ -87,6 +88,7 @@ export default function ResourcesAndToolkits() {
           );
         })}
       </div>
+      <Disclaimer />
     </>
   );
 }

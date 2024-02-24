@@ -218,7 +218,7 @@ export default function HealthAndWellbeingSection() {
       titleBackgroundColour="starick-olive"
       sectionBody={body}
       title="Health and Wellbeing"
-      textOnLeft={false}
+      textOnLeft={true}
     />
   );
 }

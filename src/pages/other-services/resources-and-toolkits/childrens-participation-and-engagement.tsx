@@ -93,32 +93,20 @@ export default function ChildrensParticipationAndEngagement() {
         sectionBody={resourceToolkitBody}
         textOnLeft={false}
       />
-
-      <div className="px-10 md:px-20 lg:px-32">
-        <SectionTitle
-          text="Powerpoint Presentation"
-          backgroundColour="starick-brown"
-          textColour="starick-white"
-          iconPath="/icons/refugees.svg"
-        />
-      </div>
-
-      <div className="px-20 py-10 md:px-40 md:py-20 lg:px-60">
-        <ChildSafeList itemList={powerpointPresentation} />
-      </div>
-
-      <div className="px-10 md:px-20 lg:px-32">
-        <SectionTitle
-          text="Consulting Resources"
-          backgroundColour="starick-olive"
-          textColour="starick-black"
-          iconPath="/icons/refugees.svg"
-        />
-      </div>
-      <div className="px-20 py-10 md:px-40 md:py-20 lg:px-60">
-        <ChildSafeList itemList={consultingResources} />
-      </div>
-
+      <Section
+        title="Powerpoint Presentation"
+        titleBackgroundColour="starick-olive"
+        titleTextColour="starick-black"
+        sectionBody={<ChildSafeList itemList={powerpointPresentation} />}
+        textOnLeft={true}
+      />
+      <Section
+        title="Consulting Resources"
+        titleBackgroundColour="starick-green"
+        titleTextColour="starick-white"
+        sectionBody={<ChildSafeList itemList={consultingResources} />}
+        textOnLeft={false}
+      />
       <Disclaimer />
     </>
   );
