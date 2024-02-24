@@ -32,19 +32,19 @@ export default function Timeline() {
     if (numVisible != 1) {
       const res = timelineList.length % numVisible;
       res != 0
-      ? timelineList.push(
-        ...Array(numVisible - res).fill({ year: "", description: "" })
-        )
+        ? timelineList.push(
+            ...Array(numVisible - res).fill({ year: "", description: "" })
+          )
         : null;
-      }
+    }
   }, [numVisible]);
 
   return (
     <>
-      <div className="relative my-5 flex h-[45vh] sm:h-[20vh] md:h-[30vh] 2xl:h-[40vh] items-center justify-around gap-0 bg-starick-white px-2 sm:px-16 text-sm lg:text-base">
+      <div className="relative my-5 flex h-[45vh] items-center justify-around gap-0 bg-starick-white px-2 text-sm sm:h-[20vh] sm:px-16 md:h-[30vh] lg:text-base 2xl:h-[40vh]">
         <Image
           src="icons/left-arrow.svg"
-          className="mx-2 z-10 mb-4 h-6 w-6 opacity-40 hover:opacity-60 md:h-12 md:w-12"
+          className="z-10 mx-2 mb-4 h-6 w-6 opacity-40 hover:opacity-60 md:h-12 md:w-12"
           height={100}
           width={100}
           alt="left-arrow"
@@ -55,7 +55,7 @@ export default function Timeline() {
         {timelineList.map((section, index) => (
           <div
             key={index}
-            className={`flex h-full md:w-1/2 xl:w-1/3 w-full justify-center items-end opacity-0
+            className={`flex h-full w-full items-end justify-center opacity-0 md:w-1/2 xl:w-1/3
           ${
             index >= current && index < current + numVisible
               ? "translate-x-0 transform opacity-100 transition duration-500 ease-in-out"
@@ -73,7 +73,7 @@ export default function Timeline() {
         ))}
         <Image
           src="icons/right-arrow.svg"
-          className="mx-2 z-10 mb-4 h-6 w-6 opacity-40 hover:opacity-60 md:h-12 md:w-12"
+          className="z-10 mx-2 mb-4 h-6 w-6 opacity-40 hover:opacity-60 md:h-12 md:w-12"
           height={100}
           width={100}
           alt="right-arrow"
@@ -86,7 +86,7 @@ export default function Timeline() {
           }
         />
       </div>
-      <div className="my-5 flex flex-wrap justify-center px-16 h-12 sm:h-4">
+      <div className="my-5 flex h-12 flex-wrap justify-center px-16 sm:h-4">
         {Array.from({ length: timelineList.length / numVisible }).map(
           (_, index) => (
             <div
