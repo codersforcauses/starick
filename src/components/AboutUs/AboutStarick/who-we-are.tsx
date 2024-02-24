@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import SectionTitle from "@/components/section-title";
+import SectionTitle from "@/components/old-section-title";
 
 export default function WhoWeAre() {
   const body = (

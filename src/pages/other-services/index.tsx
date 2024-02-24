@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import InPageNav from "@/components/InPageNav";
-import Banner from "@/components/Services/banner";
+import PageHeader from "@/components/page-header";
 import HealthAndWellbeingSection from "@/components/Services/OtherServices/health-wellbeing";
 import RespectfulRelationshipsSection from "@/components/Services/OtherServices/respectful-relationships";
 import ThrivingThroughConnectionSection from "@/components/Services/OtherServices/thriving-through-connection";
@@ -33,18 +33,13 @@ export default function OtherServices() {
   ];
   return (
     <>
-      <Banner titleText="Other Services" />
+      <PageHeader titleText="Other Services" />
       <InPageNav list={navLinkDetails}></InPageNav>
       <RespectfulRelationshipsSection />
       <WorkWithChildrenAndYoungPeopleSection />
       <WorkplaceAwarenessSection />
       <HealthAndWellbeingSection />
       <ThrivingThroughConnectionSection />
-      <div className="flex items-center justify-center bg-starick-white py-10">
-        <button className="rounded-2xl bg-starick-brown p-5 text-lg text-white hover:bg-starick-black">
-          <Link href="/core-services">Core Services</Link>
-        </button>
-      </div>
     </>
   );
 }

@@ -32,11 +32,11 @@ export default function CounsellingSection({data}) {
   );
   return (
     <ServicesSection
-      titleTextColour="starick-white"
-      titleBackgroundColour="starick-green"
+      titleTextColour="starick-black"
+      titleBackgroundColour="starick-olive"
       sectionBody={body}
       title="Counselling Services"
-      iconPath="icons/speech.svg"
+      textOnLeft={true}
     />
   );
 }

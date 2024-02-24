@@ -4,19 +4,20 @@ import Carousel from "@/components/Home/carousel/carousel";
 import carousel_list from "@/components/Home/carousel/carousel_list.json";
 import CoreServiceItem from "@/components/Home/core-service-item";
 import LinkButton from "@/components/Home/link-button";
-import Subtitle from "@/components/Home/subtitle";
+import FacebookFeed from "@/components/social-media-feed";
 
+import CrisisAlert from "~/icons/crisis_alert.svg";
 import SafeAtHomeProgram from "~/icons/health.svg";
 import TransitionalHousing from "~/icons/houses.svg";
 import SupportInPoliceStations from "~/icons/police-justice.svg";
 import CounsellingServices from "~/icons/psychology.svg";
 import TwoRefuges from "~/icons/refugees.svg";
 import Staricklogo from "~/icons/starick-logo.svg";
-import Poster1 from "~/images/home/poster1.png";
-import Poster2 from "~/images/home/poster2.png";
-import Poster3 from "~/images/home/poster3.png";
+import Gridpic1 from "~/images/home/carousel-1.png";
+import FillerOpshop from "~/images/home/carousel-4.png";
 import HomeTitle from "~/images/Parents-with-kids-graphic.png";
 import { getWordpress } from "@/utils/utils";
+import FillerImage1 from "~/images/starick-image1.jpg";
 
 export default function Home({ data }: { data: any }) {
   const homeData = data[0];
@@ -39,18 +40,30 @@ export default function Home({ data }: { data: any }) {
         />
       </div>
 
-      <div className="bg-starick-olive py-2 pl-6 text-center font-bold text-starick-brown  ">
-        <p
-          dangerouslySetInnerHTML={{
-            __html: homeData["acf"]["index_title_span"]
-          }}
-        >
-          {/*For urgent help call:<br>*/}
-          {/*Crisis Care:(08) 9223 1111 <br>*/}
-          {/*or<br>*/}
-          {/*Country Freecall: 1800 199 008 <br>*/}
-          {/*<br>*/}
-          {/*    If you are in immediate physical danger call Police: 000<br>*/}
+      <div className="relative flex items-center justify-center bg-starick-olive py-10 pl-8 text-center font-bold text-starick-brown">
+        <Image
+          src={CrisisAlert}
+          alt="crisis alert sign"
+          width="0"
+          height="0"
+          className="z-2 absolute left-96 top-20 h-40 w-20 -translate-x-1/2 -translate-y-1/2 transform"
+        />
+
+        {/* Right warning sign */}
+        <Image
+          src={CrisisAlert}
+          alt="crisis alert sign"
+          width="0"
+          height="0"
+          className="z-2 absolute right-96 top-20 h-40 w-20 -translate-y-1/2 translate-x-1/2 transform"
+        />
+        <p>
+          For urgent help call: <br />
+          Crisis Care:(08) 9223 1111 <br />
+          or <br />
+          Country Freecall: 1800 199 008 <br />
+          <br />
+          If you are in immediate physical danger call Police: 000
         </p>
       </div>
 
@@ -73,13 +86,24 @@ export default function Home({ data }: { data: any }) {
         </p>
       </div>
 
-      <Subtitle title="Our Services" />
+      <div className="grid grid-cols-2 font-semibold text-starick-black">
+        {/* Top Left: picture */}
+        <div className="bg-gray-200 ">
+          <Image
+            src={Gridpic1}
+            alt="image of starick people for home page"
+            width="0"
+            height="0"
+            className=" h-full"
+          />
+        </div>
 
-      <div className="grid gap-10 px-10 py-20 font-semibold text-starick-black">
-        <p className="text-center text-2xl">Core Services</p>
-
-        <div className="grid grid-cols-1 gap-10 px-10 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
-          <div className="grid gap-10">
+        {/* Top Right: Core Services https://www.starick.org.au/services/transitional-housing/*/}
+        <div className="bg-starick-olive ">
+          <p className="p-10 text-center text-2xl font-bold text-starick-brown">
+            Core Services
+          </p>
+          <div className="mx-5 mb-10 grid gap-4 px-24 text-starick-brown">
             <CoreServiceItem
               text="Counselling Services"
               img={CounsellingServices}
@@ -88,50 +112,51 @@ export default function Home({ data }: { data: any }) {
               text="Transitional Housing"
               img={TransitionalHousing}
             />
-          </div>
-
-          <div className="grid gap-10">
             <CoreServiceItem text="Two Refuges" img={TwoRefuges} />
             <CoreServiceItem
               text="Support in Police Stations"
               img={SupportInPoliceStations}
             />
+            <CoreServiceItem
+              text="Safe at Home Program"
+              img={SafeAtHomeProgram}
+            />
+            <div className="flex justify-around p-10">
+              <LinkButton text="View Core Services" link="./core-services" />
+            </div>
           </div>
         </div>
-        <div className="grid px-10 lg:justify-center">
-          <CoreServiceItem
-            text="Safe at Home Program"
-            img={SafeAtHomeProgram}
-          />
-        </div>
-      </div>
 
-      <div className="grid gap-10 px-10 font-semibold  text-starick-black">
-        <p className="text-center text-2xl">Other Services</p>
-
-        <div className="grid grid-cols-1 gap-10 px-10 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
-          <div className="grid justify-center gap-10">
+        {/* Bottom left: Other Services */}
+        <div className="bg-starick-olive">
+          <p className="mb-10 mt-10 text-center text-2xl text-starick-brown">
+            Other Services
+          </p>
+          <div className="mx-5 grid h-1/2 gap-4 px-24 text-starick-brown">
             <p>WA Respectful Relationships Teaching Support Program</p>
             <p>Our Work with Children and Young People</p>
-          </div>
-
-          <div className="grid justify-center gap-10">
             <p>Workplace Awareness</p>
             <p>Health and Wellbeing</p>
+            <p>
+              Thriving Through Connection Supporting Young People Aged 11 -17
+              years
+            </p>
+            <div className="justify-around">
+              <LinkButton text="View Other Services" link="./other-services" />
+            </div>
           </div>
         </div>
-        <div className="grid px-10  lg:justify-center">
-          <p>
-            Thriving Through Connection Supporting Young People Aged 11 -17
-            years
-          </p>
+
+        {/* bottom right: picture */}
+        <div className="t-10 bg-gray-200">
+          <Image
+            src={Gridpic1}
+            alt="image of starick people for home page"
+            width="0"
+            height="0"
+            className=""
+          />
         </div>
-      </div>
-
-      <div className="flex justify-around p-10">
-        <LinkButton text="View Core Services" link="./core-services" />
-
-        <LinkButton text="View Other Services" link="./other-services" />
       </div>
 
       <div className="grid justify-items-center gap-5 px-10 py-10 font-semibold text-starick-black">
@@ -148,47 +173,76 @@ export default function Home({ data }: { data: any }) {
           link="./what-is-domestic-violence"
         />
       </div>
+      <div className="flex place-items-center gap-4 ">
+        <Image
+          src={FillerImage1}
+          alt="description"
+          width="0"
+          height="0"
+          className="h-auto w-full"
+        />
+      </div>
 
-      <Subtitle title="Social Media" />
+      <div className="grid justify-items-center gap-5 px-10 py-10 font-semibold text-starick-black">
+        <p className="text-center text-2xl">Make a Donation</p>
+        <p>Make a direct impact on woman and children by donating now!</p>
+        <LinkButton text="Make A Donation" link="./what-is-domestic-violence" />
+      </div>
+
+      <div className=" py-10 font-semibold text-starick-black">
+        <Image
+          src={FillerOpshop}
+          alt="opshop image"
+          width="0"
+          height="0"
+          className=" object-cover "
+        />
+        <p className=" text-2xl">Starick Op Shop</p>
+        <p>
+          Give women and children a second chance through giving our wonderful
+          shop items a second chance
+        </p>
+        <LinkButton text="Make A Donation" link="./what-is-domestic-violence" />
+      </div>
 
       <div>
         <p className="text-center text-3xl font-bold text-starick-brown">
           Follow the movement on Facebook!
         </p>
-
-        <div className="flex place-items-center gap-4 px-10 py-10">
-          <div className="flex w-1/2 flex-wrap place-content-end gap-4">
-            <Image
-              src={Poster1}
-              alt="description"
-              width="0"
-              height="0"
-              className="h-auto w-1/2"
-            />
-            <Image
-              src={Poster3}
-              alt="description"
-              width="0"
-              height="0"
-              className="h-auto w-1/2"
-            />
-          </div>
-          <div className="w-1/2">
-            <Image
-              src={Poster2}
-              alt="description"
-              width="0"
-              height="0"
-              className="h-auto w-1/2"
-            />
-          </div>
+        <div className="flex flex-row justify-center">
+          <FacebookFeed />
         </div>
       </div>
 
-      <Subtitle title="Events" />
-
-      <div className="relative mx-auto w-1/2">
+      <div className="relative mx-auto mb-8 w-1/2">
         <Carousel images={carousel_list} />
+
+        <div className="flex justify-center text-center text-2xl  font-semibold text-starick-brown">
+          <p>
+            {" "}
+            Keep up with upcoming events! Follow us on instagram for more
+            information how you can get involved
+          </p>
+        </div>
+      </div>
+
+      <div className=" mt-1/2 mb-36 flex flex-row justify-center">
+        <a
+          href="https://www.instagram.com/starickservices/"
+          className="flex items-center rounded-md bg-starick-green px-3 py-1 text-white transition-colors duration-300 hover:bg-starick-orange"
+        >
+          <Image
+            src="/icons/white_insta.svg"
+            alt="instagram"
+            width={40}
+            height={40}
+            className="my-1"
+          />
+
+          <div className=" mx-20 text-xl font-semibold">
+            <p>Instagram</p>
+          </div>
+        </a>
       </div>
     </>
   );

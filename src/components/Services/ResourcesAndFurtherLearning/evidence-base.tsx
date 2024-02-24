@@ -77,6 +77,7 @@ export default function EvidenceBase() {
       titleBackgroundColour="starick-green"
       sectionBody={body}
       title="Evidence Base"
+      textOnLeft={false}
     />
   );
 }
