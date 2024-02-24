@@ -54,7 +54,7 @@ export const primaryNav: Array<NavBarItem> = [
     ]
   },
   {
-    href: "/news",
+    href: "https://us20.campaign-archive.com/?u=fd9ee23110367fb6d7afdc749&id=bc2242df48",
     label: "News"
   },
   {
