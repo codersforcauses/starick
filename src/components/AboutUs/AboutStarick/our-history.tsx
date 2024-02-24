@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import SectionTitle from "@/components/old-section-title";
+import SectionHeader from "@/components/section-header";
 
 export default function OurHistory() {
   const body = (
@@ -69,14 +69,15 @@ export default function OurHistory() {
     </div>
   );
   return (
-    <div className="bg-starick-white px-6 py-2 md:px-32">
-      <SectionTitle
-        backgroundColour="starick-green"
-        text="Our History"
-        iconPath=""
-        textColour="starick-white"
-      />
-      <div className="mb-4 flex w-full flex-row pt-5 md:px-20">
+    <div className="bg-starick-white">
+      <SectionHeader
+          backgroundColour="starick-green"
+          titleText="Our History"
+          imagePath="/images/starick-image1.jpg"
+          textOnLeft={false}
+          textColour="starick-white"
+        />
+      <div className="mb-4 flex w-full px-6 py-2 flex-row pt-5 md:px-20">
         <Image
           src="icons/history.svg"
           className="mx-2 h-12 w-12 md:h-24 md:w-24"
