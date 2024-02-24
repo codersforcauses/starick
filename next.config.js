@@ -2,7 +2,17 @@
 const nextConfig = {
   reactStrictMode: true,
   distDir: "build",
-  output: "standalone"
+  output: "standalone",
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'http',
+        hostname: 'localhost',
+        port: '',
+        pathname: '/**',
+      },
+    ],
+  }
 };
 
 export default nextConfig;

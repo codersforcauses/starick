@@ -1,6 +1,12 @@
 import ServicesSection from "../services-section";
 
-export default function CounsellingSection() {
+export default function CounsellingSection({data}) {
+  // const postHtml2 = data.map((pages) => {
+  //   return(
+  //     <p key={pages.id}>{pages.content.rendered}</p>
+  //   )
+  // })
+  // const  = data[0].content.rendered;
   const body = (
     <>
       <p>
@@ -38,4 +44,20 @@ export default function CounsellingSection() {
       iconPath="icons/speech.svg"
     />
   );
+}
+
+export async function getServerSideProps(context){
+  const res = await fetch('http://localhost/wp-json/wp/v2/pages')
+  const data = await res.json()
+  // console.log(data[0].title)
+  if(!data){
+    return {
+      notFound: true,
+    }
+  }
+  return {
+    props: {
+      data,
+    },
+  }
 }
