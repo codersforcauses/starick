@@ -1,6 +1,8 @@
 import Image from "next/image";
 
 import { List } from "@/components/Services/list";
+import PageHeader from "@/components/page-header";
+import Disclaimer from "@/components/Services/ResourceAndToolkits/disclaimer";
 
 export default function ResourcesAndToolkits() {
   const body = (
@@ -66,23 +68,10 @@ export default function ResourcesAndToolkits() {
 
   return (
     <>
-      <div>
-        <Image
-          className="h-[500px] w-full object-cover"
-          src="/images/Parents-with-kids-graphic.png"
-          alt=""
-          height="500"
-          width="1000"
-        />
-        <div className="relative -mt-20 mb-6 w-fit rounded-r-full bg-white px-10">
-          <p className="p-2 text-4xl font-bold text-starick-brown">
-            COVID-19 Kit for Parents
-          </p>
-        </div>
-      </div>
+      <PageHeader titleText="COVID-19 Kit for Parents" />
       {body}
 
-      <div className="-mx-2 flex flex-wrap justify-center bg-starick-white">
+      <div className="-mx-2 flex flex-wrap justify-center bg-starick-white pb-12">
         {pdfs.map((pdf) => {
           return (
             <div className="w-1/2 px-8 md:w-1/3 lg:w-1/6" key={pdf.linkhref}>
@@ -99,6 +88,7 @@ export default function ResourcesAndToolkits() {
           );
         })}
       </div>
+      <Disclaimer />
     </>
   );
 }

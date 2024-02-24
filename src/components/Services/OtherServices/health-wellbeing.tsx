@@ -192,21 +192,21 @@ export default function HealthAndWellbeingSection() {
       <br></br>
       <SubSection
         sectionBody={subBodyBabyMassage}
-        iconPath="images/I-need-help-150x150.png"
+        iconPath="icons/health.svg"
         iconOnRight={false}
       />
       <br></br>
       <br></br>
       <SubSection
         sectionBody={subBodyLivedExperience}
-        iconPath="images/Useful-Numbers-Support-150x150.png"
+        iconPath="icons/online-help.svg"
         iconOnRight={false}
       />
       <br></br>
       <br></br>
       <SubSection
         sectionBody={subBodyYoga}
-        iconPath="images/Shop-Home-Decor-150x150.png"
+        iconPath="icons/yoga.svg"
         iconOnRight={false}
       />
     </>
@@ -218,7 +218,7 @@ export default function HealthAndWellbeingSection() {
       titleBackgroundColour="starick-olive"
       sectionBody={body}
       title="Health and Wellbeing"
-      iconPath=""
+      textOnLeft={true}
     />
   );
 }

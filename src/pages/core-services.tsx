@@ -1,13 +1,13 @@
 import Link from "next/link";
 
 import InPageNav from "@/components/InPageNav";
-
 import CounsellingSection from "../components/Services/CoreServices/counselling";
 import PoliceSection from "../components/Services/CoreServices/police-stations";
 import RefugesSection from "../components/Services/CoreServices/refuges";
 import SafeAtHomeSection from "../components/Services/CoreServices/safe-at-home";
 import TransitionalHousingSection from "../components/Services/CoreServices/transitional-housing";
-import Banner from "@/components/Services/banner";
+
+import PageHeader from "@/components/page-header";
 
 export default function CoreServices() {
   const navLinkDetails = [
@@ -32,12 +32,13 @@ export default function CoreServices() {
       name: "Safe at Home Program"
     }
   ];
+
   return (
     <>
-      <Banner titleText="Core Services" />
+      <PageHeader titleText="Core Services" />
       <InPageNav list={navLinkDetails}></InPageNav>
-      <CounsellingSection />
       <RefugesSection />
+      <CounsellingSection />
       <TransitionalHousingSection />
       <PoliceSection />
       <SafeAtHomeSection />

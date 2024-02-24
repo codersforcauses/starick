@@ -1,15 +1,15 @@
-import Banner from "@/components/Services/banner";
-import ProfessionalLearning from "@/components/Services/ResourcesAndFurtherLearning/professional-learning";
-import EvidenceBase from "@/components/Services/ResourcesAndFurtherLearning/evidence-base";
-import ResourceForParents from "@/components/Services/ResourcesAndFurtherLearning/resources-for-parents";
+import PageHeader from "@/components/page-header";
 import CommunityPartnerships from "@/components/Services/ResourcesAndFurtherLearning/community-partnerships";
-import ResourceForSchools from "@/components/Services/ResourcesAndFurtherLearning/resources-for-schools";
+import EvidenceBase from "@/components/Services/ResourcesAndFurtherLearning/evidence-base";
+import ProfessionalLearning from "@/components/Services/ResourcesAndFurtherLearning/professional-learning";
 import ResourcesForAboriginal from "@/components/Services/ResourcesAndFurtherLearning/resources-for-aboriginal";
+import ResourceForParents from "@/components/Services/ResourcesAndFurtherLearning/resources-for-parents";
+import ResourceForSchools from "@/components/Services/ResourcesAndFurtherLearning/resources-for-schools";
 
 export default function InfoForSchools() {
   return (
     <>
-      <Banner
+      <PageHeader
         titleText="Respectful relationships"
         subtitleText="Resources and Further Reading"
       />

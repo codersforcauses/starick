@@ -98,6 +98,7 @@ export default function ResourcesForAboriginal() {
       sectionBody={body}
       title="Resources for Aboriginal 
       and Torres Strait Islander People"
+      textOnLeft={false}
     />
   );
 }

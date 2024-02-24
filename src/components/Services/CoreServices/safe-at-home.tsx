@@ -98,7 +98,8 @@ export default function SafeAtHomeSection() {
       titleBackgroundColour="starick-green"
       sectionBody={body}
       title="Safe at Home Program"
-      iconPath="icons/care.svg"
+      textOnLeft={false}
+      circlesPlacement="tr"
     />
   );
 }
