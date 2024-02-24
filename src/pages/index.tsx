@@ -24,19 +24,11 @@ export default function Home() {
       <div className="relative">
         <p className="bottom-15 left absolute left-20 top-24 w-2/5 text-7xl font-bold text-white">
           Domestic Violence Support & Services for Women and Children
-          <p className="mx-20 mt-10 ">
-            <LinkButton
-            text="Donate now"
-            link="./donations"/>
-            <LinkButton
-            text="Learn more about domestic violence"
-            link="./what-is-domestic-violence"/>
+          <p className="mx-20 mt-10  ">
+            <LinkButton text="Donate now" link="./donations" />
+            <LinkButton text="Learn more about domestic violence" link="./what-is-domestic-violence"/>
           </p>
         </p>
-         
-
-
-       
 
         <Image
           src={HomeTitle}
@@ -88,7 +80,7 @@ export default function Home() {
             alt="image of starick people for home page"
             width="0"
             height="0"
-            className=" h-full"
+            className=" h-fit"
           />
         </div>
 
