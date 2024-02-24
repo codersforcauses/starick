@@ -46,7 +46,6 @@ export default function WhatisDomesticViolenceSection() {
       title="What is domestic violence?"
       textOnLeft={false}
       circlesPlacement="br"
-
     />
   );
 }

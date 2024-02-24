@@ -59,7 +59,7 @@ export default function FrequentlyAskedQuestions() {
   ];
   return (
     <>
-      <PageHeader titleText="Frequently Asked Questions" />
+      <PageHeader titleText="Frequently Asked Questionsn" />
       <InPageNav list={navLinkDetails}></InPageNav>
 
       <SomeoneExperiencingViolenceSection />

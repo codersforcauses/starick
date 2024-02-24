@@ -1,8 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
-import SubSection from "../Services/subsection";
-import ServicesSection from "../Services/services-section";
 import Link from "next/link";
+
+import ServicesSection from "../Services/services-section";
+import SubSection from "../Services/subsection";
 
 export default function PetsToRefugeSection() {
   const subBody = (
@@ -48,7 +49,6 @@ export default function PetsToRefugeSection() {
       sectionBody={body}
       title="Can I bring my pet to the refuge?"
       textOnLeft={false}
-
     />
   );
 }

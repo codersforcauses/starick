@@ -4,13 +4,14 @@ import SubSection from "../Services/subsection";
 import ServicesSection from "../Services/services-section";
 
 export default function RefugeStayDurationSection() {
-
   const subBody = (
     <>
       <div className="pl-3">
-        <p>Women and children are able to stay up to three months. This gives them time to sort out income and legal issues and to find alternative accommodation.</p>
-      
-     
+        <p>
+          Women and children are able to stay up to three months. This gives
+          them time to sort out income and legal issues and to find alternative
+          accommodation.
+        </p>
       </div>
     </>
   );
@@ -30,7 +31,6 @@ export default function RefugeStayDurationSection() {
       sectionBody={body}
       title="How long can I stay at the refuge?"
       textOnLeft={true}
-
     />
   );
 }

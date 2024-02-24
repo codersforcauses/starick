@@ -53,7 +53,6 @@ export default function RecognisingTheSignsSection() {
           arrowColour="starick-white"
           arrowBackgroundColor="starick-green"
         />
-        
       </div>
     </>
   );

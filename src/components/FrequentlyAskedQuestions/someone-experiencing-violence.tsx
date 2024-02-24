@@ -55,7 +55,6 @@ export default function RespectfulRelationshipsSection() {
       sectionBody={body}
       title="What should I do if someone I know is experiencing domestic or family violence?"
       textOnLeft={false}
-
     />
   );
 }

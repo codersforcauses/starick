@@ -22,13 +22,15 @@ export default function ReportingViolenceSection() {
     <>
       <div className="pl-3">
         <p>
-        Phone the police on 131 444. People with hearing impairments can call TTY 106.
+          Phone the police on 131 444. People with hearing impairments can call
+          TTY 106.
         </p>
         <br />
         {InformationForPoliceExample}
         <br />
         <p>
-        If the incident is occurring while you are talking to the operator, stay on the telephone. Your safety is paramount to the police.
+          If the incident is occurring while you are talking to the operator,
+          stay on the telephone. Your safety is paramount to the police.
         </p>
       </div>
     </>

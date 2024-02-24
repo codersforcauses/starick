@@ -49,7 +49,6 @@ export default function StarickAdvocatesExample() {
       sectionBody={body}
       title="What are our different advocates?"
       textOnLeft={false}
-
     />
   );
 }
