@@ -1,6 +1,6 @@
 import PageHeader from "@/components/page-header";
 import PageSummary from "@/components/page-summary";
-import ServicesLink from "@/components/Services/services-link";
+import Button from "@/components/button";
 
 export default function OurServices() {
   const servicesSummaries = [
@@ -131,7 +131,7 @@ function Summary({
       <br />
       <p className={`text-center text-${textColour}`}>{text}</p>
       <br />
-      <ServicesLink
+      <Button
         text="More Info"
         link={link}
         arrowColour={arrowColour}

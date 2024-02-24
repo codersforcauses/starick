@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-interface ServicesLinkProps {
+interface ButtonProps {
   text: string;
   link: string;
   textColour: string;
@@ -8,13 +8,13 @@ interface ServicesLinkProps {
   arrowColour: string;
 }
 
-export default function ServicesLink({
+export default function Button({
   text,
   link,
   textColour,
   arrowBackgroundColor,
   arrowColour
-}: ServicesLinkProps) {
+}: ButtonProps) {
   return (
     <Link href={link}>
       <div className="group flex">

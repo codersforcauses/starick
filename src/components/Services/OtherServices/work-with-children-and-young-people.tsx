@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 import ServicesSection from "../services-section";
-import ServicesLink from "../services-link";
+import Button from "../../button";
 
 export default function WorkWithChildrenAndYoungPeopleSection() {
   const body = (
@@ -53,7 +53,7 @@ export default function WorkWithChildrenAndYoungPeopleSection() {
       <br />
       <br />
       <div className="flex justify-center">
-        <ServicesLink
+        <Button
           text={"Resources, toolkits, and further reading"}
           link={"other-services/resources-and-toolkits"}
           textColour="starick-black"

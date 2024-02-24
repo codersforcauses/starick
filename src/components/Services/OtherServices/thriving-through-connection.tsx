@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 import ServicesSection from "../services-section";
-import ServicesLink from "../services-link";
+import Button from "../../button";
 
 export default function ThrivingThroughConnectionSection() {
   const body = (
@@ -41,7 +41,7 @@ export default function ThrivingThroughConnectionSection() {
         src="/images/telethon-logo.png"
       ></img>
       <div className="flex justify-center">
-        <ServicesLink
+        <Button
           text={"Core Services"}
           link={"/core-services"}
           textColour="starick-black"
