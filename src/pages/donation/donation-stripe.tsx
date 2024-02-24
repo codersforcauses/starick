@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { set } from "zod";
+import CheckoutForm from "../../components/donation-stripe/checkoutform";
 
 export default function DonationStripe() {
   const [isClicked, setIsClicked] = useState(false);
@@ -8,10 +8,6 @@ export default function DonationStripe() {
   const [isSecondButtonActive, setIsSecondButtonActive] = useState(false);
 
   const [isPaymentButtonActive, setIsPaymentButtonActive] = useState(false);
-
-  const handlePaymentButtonClick = () => {
-    setIsPaymentButtonActive(true);
-  };
 
   const handleFirstButtonClick = () => {
     setIsFirstButtonActive(true);
@@ -23,6 +19,10 @@ export default function DonationStripe() {
     setIsFirstButtonActive(false);
     setIsSecondButtonActive(true);
     setIsClicked(true);
+  };
+
+  const handlePaymentButtonClick = () => {
+    setIsPaymentButtonActive(true);
   };
 
   const [is$20Active, set$20Active] = useState(false);
@@ -178,6 +178,9 @@ export default function DonationStripe() {
           className="w-120 border-2 border-starick-olive p-5 text-center hover:bg-starick-olive"
         >
           ADD PAYMENT DETAILS
+          {/* <CheckoutForm /> */}
+        </div>
+        <div>
         </div>
       </div>
     </div>
