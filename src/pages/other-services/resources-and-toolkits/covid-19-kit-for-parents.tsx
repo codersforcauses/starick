@@ -116,7 +116,7 @@ export default function ResourcesAndToolkits({data}) {
 }
 
 export async function getServerSideProps(context){
-  const res = await fetch('http://localhost/wp-json/wp/v2/covid19kit?&acf_format=standard&fields=id,title,acf')
+  const res = await fetch(`${process.env.URL}wp-json/wp/v2/covid19kit?&acf_format=standard&fields=id,title,acf`)
   const data = await res.json()
   // console.log(data[0].title)
   if(!data){
