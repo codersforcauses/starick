@@ -54,6 +54,10 @@ export const primaryNav: Array<NavBarItem> = [
     ]
   },
   {
+    href: "/news",
+    label: "News"
+  },
+  {
     href: "/support",
     label: "Support Us"
   },
