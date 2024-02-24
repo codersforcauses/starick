@@ -4,7 +4,8 @@ import ServicesSection from "../Services/services-section";
 export default function WhatisDomesticViolenceSection() {
   const subBody = (
     <div className="pl-3">
-      <p className="text-xl font-semibold">Domestic violence means abuse</p>
+      <p className="text-xl font-bold">Domestic violence means abuse</p>
+      <br />
       <p>
         Domestic violence is often called “domestic and family violence” because
         it’s not just partners that abuse.
@@ -45,6 +46,7 @@ export default function WhatisDomesticViolenceSection() {
       title="What is domestic violence?"
       textOnLeft={false}
       circlesPlacement="br"
+
     />
   );
 }

@@ -21,7 +21,8 @@ export default function WhatisDomesticViolenceSection() {
 
   const subBody = (
     <div className="pl-3">
-      <p className="text-xl font-semibold">Physical abuse</p>
+      <p className="text-xl font-bold">Physical abuse</p>
+      <br />
       <p>
         This may include hurting you (pushing, hair-pulling, spitting, slapping,
         punching, choking, kicking), or threatening to hurt you, a loved one or
@@ -34,38 +35,43 @@ export default function WhatisDomesticViolenceSection() {
         won't let you contact your friends, it can harm you just as much as
         physical violence. Here are some of the forms that abuse may take:
       </p>
+      <br /> <br />
+      <p className="text-xl font-bold">Financial abuse</p>
       <br />
-      <p className="text-xl font-semibold">Financial abuse</p>
       <p>
         Taking, stealing or controlling your money, denying you access to money
         or telling you what you can and can’t buy. You'll find more information
         on financial abuse and how to deal with it here.
       </p>
+      <br /> <br />
+      <p className="text-xl font-bold">Sexual abuse</p>
       <br />
-      <p className="text-xl font-semibold">Sexual abuse</p>
       <p>
         Pressuring, manipulating or forcing you into sexual activities you don’t
         want to do. Being "forced" also means not being in a position to say no
         as a result of fear, threats or intimidation.
       </p>
+      <br /> <br />
+      <p className="text-xl font-bold">Emotional abuse</p>
       <br />
-      <p className="text-xl font-semibold">Emotional abuse</p>
       <p>
         This form of abuse is often unrecognised and can be very hurtful. Mind
         games, manipulation, threats, humiliation, put-downs, shouting, telling
         you that you're worthless or no good – these are all types of emotional
         or psychological abuse.
       </p>
+      <br /> <br />
+      <p className="text-xl font-bold">Social abuse</p>
       <br />
-      <p className="text-xl font-semibold">Social abuse</p>
       <p>
         If someone is insulting you or teasing you in front of other people,
         keeping you isolated from family, friends and work, controlling what you
         do and where you go, then they are being abusive and you may need to
         take some action
       </p>
+      <br /> <br />
+      <p className="text-xl font-bold">Spiritual abuse</p>
       <br />
-      <p className="text-xl font-semibold">Spiritual abuse</p>
       <p>
         This type of violence involves a situation where you are not allowed to
         go to your place of worship or not allowed to have your own opinions
@@ -73,8 +79,9 @@ export default function WhatisDomesticViolenceSection() {
         manipulated to keep you feeling powerless, or you are forced to
         participate in religious practice you do not want to be involved with.
       </p>
+      <br /> <br />
+      <p className="text-xl font-bold">Technological or digital abuse</p>
       <br />
-      <p className="text-xl font-semibold">Technological or digital abuse</p>
       <p>
         Some abusers use social networks, emails and text messages to control
         you. This includes high-tech eavesdropping, video-monitoring the home,
@@ -83,8 +90,10 @@ export default function WhatisDomesticViolenceSection() {
       </p>
       <br />
       <p>
-      Ways that texting and social media can be used to bully, harass, stalk or intimidate you include:
+        Ways that texting and social media can be used to bully, harass, stalk
+        or intimidate you include:
       </p>
+      <br />
       {technologicalOrDigitalAbuseExample}
       <br />
     </div>
@@ -94,19 +103,19 @@ export default function WhatisDomesticViolenceSection() {
     <>
       <SubSection
         sectionBody={subBody}
-        iconPath="icons/did-you-know.svg"
+        iconPath="icons/reports.svg"
         iconOnRight={false}
       />
     </>
   );
   return (
     <ServicesSection
-      titleTextColour="starick-white"
-      titleBackgroundColour="starick-green"
+      titleTextColour="starick-black"
+      titleBackgroundColour="starick-olive"
       sectionBody={body}
       title="Types of abuse"
       textOnLeft={true}
-      circlesPlacement="br"
+      circlesPlacement="bl"
     />
   );
 }

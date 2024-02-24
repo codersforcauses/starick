@@ -27,6 +27,7 @@ export default function YourRightsAsAHumanBeingSection() {
       <p className="text-xl font-semibold">
         Every human being has the right to their own life. This includes:
       </p>
+      <br />
       {humanBeingRightsExample}
 
       <br />
@@ -37,7 +38,7 @@ export default function YourRightsAsAHumanBeingSection() {
     <>
       <SubSection
         sectionBody={subBody}
-        iconPath="icons/humanright.svg"
+        iconPath="icons/health.svg"
         iconOnRight={false}
       />
     </>

@@ -1,6 +1,7 @@
 import SubSection from "../Services/subsection";
 import ServicesSection from "../Services/services-section";
 import { List } from "../Services/list";
+import ServicesLink from "../Services/services-link";
 
 export default function RecognisingTheSignsSection() {
   const domesticViolenceSignsExample = (
@@ -25,9 +26,13 @@ export default function RecognisingTheSignsSection() {
         Is there someone in your life who is behaving in some or all of the
         following ways?
       </p>
+      <br />
       {domesticViolenceSignsExample}
       <br />
-      <p>If so, you may want to seek assistance or contact a Starick worker to discuss your situation</p>
+      <p>
+        If so, you may want to seek assistance or contact a Starick worker to
+        discuss your situation
+      </p>
     </div>
   );
 
@@ -38,16 +43,26 @@ export default function RecognisingTheSignsSection() {
         iconPath="icons/exclamation.svg"
         iconOnRight={false}
       />
+      <br />
+      <div className="flex justify-center">
+        <ServicesLink
+          text={"Frequently Asked Questions"}
+          link={"/frequently-asked-questions"}
+          textColour="starick-black"
+          arrowColour="starick-white"
+          arrowBackgroundColor="starick-green"
+        />
+      </div>
     </>
   );
   return (
     <ServicesSection
-      titleTextColour="starick-white"
-      titleBackgroundColour="starick-green"
+      titleTextColour="starick-black"
+      titleBackgroundColour="starick-olive"
       sectionBody={body}
       title="Recognising the signs"
       textOnLeft={true}
-      circlesPlacement="br"
+      circlesPlacement="bl"
     />
   );
 }
