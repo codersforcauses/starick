@@ -3,7 +3,6 @@ import Image from "next/image";
 
 import timelineList from "./timeline-list.json";
 import TimelineSection from "./timeline-section";
-// todo arrows moving on screen width 740
 export default function Timeline() {
   const [current, setCurrent] = useState(0);
   const [numVisible, setNumVisible] = useState(1);
@@ -42,7 +41,7 @@ export default function Timeline() {
 
   return (
     <>
-      <div className="relative my-5 flex h-[33vh] sm:h-[20vh] md:h-[30vh] 2xl:h-[40vh] items-center justify-around gap-0 bg-starick-white px-2 sm:px-16 text-sm lg:text-base">
+      <div className="relative my-5 flex h-[45vh] sm:h-[20vh] md:h-[30vh] 2xl:h-[40vh] items-center justify-around gap-0 bg-starick-white px-2 sm:px-16 text-sm lg:text-base">
         <Image
           src="icons/left-arrow.svg"
           className="mx-2 z-10 mb-4 h-6 w-6 opacity-40 hover:opacity-60 md:h-12 md:w-12"
@@ -57,7 +56,7 @@ export default function Timeline() {
           <div
             key={index}
             // ?  w-1/${numVisible} vs md:w-1/2 etc
-            className={`flex h-full w-1/${numVisible} items-end opacity-0
+            className={`flex h-full md:w-1/2 xl:w-1/3 w-full justify-center items-end opacity-0
           ${
             index >= current && index < current + numVisible
               ? "translate-x-0 transform opacity-100 transition duration-500 ease-in-out"
