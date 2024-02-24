@@ -33,6 +33,7 @@ export default function RecognisingTheSignsSection() {
         If so, you may want to seek assistance or contact a Starick worker to
         discuss your situation
       </p>
+      <br />
     </div>
   );
 
@@ -52,6 +53,7 @@ export default function RecognisingTheSignsSection() {
           arrowColour="starick-white"
           arrowBackgroundColor="starick-green"
         />
+        
       </div>
     </>
   );
