@@ -58,11 +58,11 @@ export const primaryNav: Array<NavBarItem> = [
     label: "News"
   },
   {
-    href: "/support",
-    label: "Support Us"
+    href: "/op-shop",
+    label: "Op Shop"
   },
   {
-    href: "/chat",
-    label: "Chat"
+    href: "/donate",
+    label: "Donate"
   }
 ];
