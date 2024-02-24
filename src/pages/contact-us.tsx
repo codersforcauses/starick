@@ -4,7 +4,7 @@ import PageHeader from "@/components/page-header";
 
 export default function ContactUs() {
   const [error, setError] =useState("")
-
+  const [success, setSuccess] =useState("");
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
@@ -16,12 +16,10 @@ export default function ContactUs() {
     const email = (event.currentTarget.elements.namedItem("entry.2009362426") as HTMLInputElement).value
     const enquiry = (event.currentTarget.elements.namedItem("entry.1073078232") as HTMLInputElement).value
 
-
     // console.log((event.currentTarget.elements.namedItem("entry.339576848") as HTMLInputElement).value)
     // const test: string = process.env.REACT_APP_FIRSTNAME_INPUT_NAME || '';
     console.log(process.env.NEXT_PUBLIC_TEST);
     
-
     const response = await fetch('/api/email/email' , {
       method: 'POST',
       body: JSON.stringify({
@@ -33,7 +31,10 @@ export default function ContactUs() {
       }),
     })
 
-    if(response.status != 200){
+    if(response.status == 200){
+      setSuccess("Thank you for your email.")
+    }
+    else {
       setError("Something went wrong.")
     }
   }
@@ -88,12 +89,14 @@ export default function ContactUs() {
           <div className="p-6  md:pr-16 lg:pr-32 basis-full md:basis-1/2">
             
             <form
+              id="emailform"
               onSubmit={handleSubmit}
             >
               <div>
                 <p className="text pb-6 text-2xl font-semibold">Send us an email</p>
                 
                 {error && <div>{error}</div>}
+                {success && <div>{success}</div>}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-8">
                   <div className="col-span-1">
                     <label htmlFor="firstname">First Name <span className="text-red-700">*</span></label>

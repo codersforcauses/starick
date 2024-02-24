@@ -1,10 +1,9 @@
+import { url } from "inspector";
 import { NextApiRequest, NextApiResponse } from "next";
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     if (req.method === 'POST') {
       // Process a POST request
-
-
       
       const details = JSON.parse(req.body)
       
@@ -17,10 +16,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         }
         newFormBody = formBody.join("&");
         
-        console.log(details)
-        console.log(newFormBody)
-        
-        const response = await fetch('https://docs.google.com/forms/u/0/d/e/1FAIpQLSdom5UoasUsG7u_lMByRvLR6-VSHmiIVLksgkpmgdaAPdRcPA/formResponse' , {
+        // console.log(details)
+        // console.log(newFormBody)
+
+        const url = process.env.NEXT_PUBLIC_FORM_RESPONSE_URL;
+        const response = await fetch(url as string , {
             method: 'POST',
             headers: {
               'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
@@ -28,9 +28,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             body: newFormBody
         })
 
-      console.log(response );
-      res.status(response.status);
+      // console.log(response.status );
+      res.status(response.status).send({});
   }
+}
 
 
-  // https://docs.google.com/forms/u/0/d/e/1FAIpQLSdom5UoasUsG7u_lMByRvLR6-VSHmiIVLksgkpmgdaAPdRcPA/formResponse
+// https://docs.google.com/forms/u/0/d/e/1FAIpQLSdom5UoasUsG7u_lMByRvLR6-VSHmiIVLksgkpmgdaAPdRcPA/formResponse
