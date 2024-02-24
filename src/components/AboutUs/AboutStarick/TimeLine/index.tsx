@@ -55,7 +55,6 @@ export default function Timeline() {
         {timelineList.map((section, index) => (
           <div
             key={index}
-            // ?  w-1/${numVisible} vs md:w-1/2 etc
             className={`flex h-full md:w-1/2 xl:w-1/3 w-full justify-center items-end opacity-0
           ${
             index >= current && index < current + numVisible
