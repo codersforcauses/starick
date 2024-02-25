@@ -10,11 +10,11 @@ export default function ContactUs() {
     event.preventDefault()
 
     // const formData = new FormData(event.currentTarget)
-    const firstname = (event.currentTarget.elements.namedItem("entry.339576848") as HTMLInputElement).value
-    const lastname = (event.currentTarget.elements.namedItem("entry.810035821") as HTMLInputElement).value
-    const phone = (event.currentTarget.elements.namedItem("entry.622549956") as HTMLInputElement).value
-    const email = (event.currentTarget.elements.namedItem("entry.2009362426") as HTMLInputElement).value
-    const enquiry = (event.currentTarget.elements.namedItem("entry.1073078232") as HTMLInputElement).value
+    const firstname = (event.currentTarget.elements.namedItem(process.env.NEXT_PUBLIC_FIRSTNAME_FIELD_NAME as string) as HTMLInputElement).value
+    const lastname = (event.currentTarget.elements.namedItem(process.env.NEXT_PUBLIC_LASTNAME_FIELD_NAME as string) as HTMLInputElement).value
+    const phone = (event.currentTarget.elements.namedItem(process.env.NEXT_PUBLIC_PHONE_FIELD_NAME as string) as HTMLInputElement).value
+    const email = (event.currentTarget.elements.namedItem(process.env.NEXT_PUBLIC_EMAIL_FIELD_NAME as string) as HTMLInputElement).value
+    const enquiry = (event.currentTarget.elements.namedItem(process.env.NEXT_PUBLIC_ENQUIRY_FIELD_NAME as string) as HTMLInputElement).value
 
     // console.log((event.currentTarget.elements.namedItem("entry.339576848") as HTMLInputElement).value)
     // const test: string = process.env.REACT_APP_FIRSTNAME_INPUT_NAME || '';
@@ -32,7 +32,8 @@ export default function ContactUs() {
     })
 
     if(response.status == 200){
-      setSuccess("Thank you for your email.")
+      setSuccess("Thank you for your email.");
+      (document.getElementById("emailform") as HTMLFormElement).reset()
     }
     else {
       setError("Something went wrong.")
@@ -102,7 +103,7 @@ export default function ContactUs() {
                     <label htmlFor="firstname">First Name <span className="text-red-700">*</span></label>
                     <div>
                       <input className="block w-full rounded-md border-0 ring-2 ring-inset ring-starick-olive py-1.5 px-1.5 outline-none focus:outline-2 focus:outline-offset-0 focus:outline-starick-green "
-                        name="entry.339576848"
+                        name={process.env.NEXT_PUBLIC_FIRSTNAME_FIELD_NAME}
                         id="firstname"
                         type="text"
                         required
@@ -113,7 +114,7 @@ export default function ContactUs() {
                     <label htmlFor="lastname">Last Name <span className="text-red-700">*</span></label>
                     <div>
                       <input className="block w-full rounded-md border-0 ring-2 ring-inset ring-starick-olive py-1.5 px-1.5 outline-none focus:outline-2 focus:outline-offset-0 focus:outline-starick-green"
-                        name="entry.810035821"
+                        name={process.env.NEXT_PUBLIC_LASTNAME_FIELD_NAME}
                         id="lastname"
                         type="text"
                         required
@@ -124,7 +125,7 @@ export default function ContactUs() {
                     <label htmlFor="phone">Phone <span className="text-red-700">*</span></label>
                     <div>
                       <input className="block w-full rounded-md border-0 ring-2 ring-inset ring-starick-olive py-1.5 px-1.5 outline-none focus:outline-2 focus:outline-offset-0 focus:outline-starick-green"
-                        name="entry.622549956"
+                        name={process.env.NEXT_PUBLIC_PHONE_FIELD_NAME}
                         id="phone"
                         type="text"
                         required
@@ -135,7 +136,7 @@ export default function ContactUs() {
                     <label htmlFor="email">Email Address <span className="text-red-700">*</span></label>
                     <div>
                       <input className="block w-full rounded-md border-0 ring-2 ring-inset ring-starick-olive py-1.5 px-1.5 outline-none focus:outline-2 focus:outline-offset-0 focus:outline-starick-green"
-                        name="entry.2009362426"
+                        name={process.env.NEXT_PUBLIC_EMAIL_FIELD_NAME}
                         id="email"
                         type="text"
                         required
@@ -145,7 +146,7 @@ export default function ContactUs() {
                   <div className="col-span-1 md:col-span-2">
                     <label htmlFor="enquiry">Enquiry <span className="text-red-700">*</span></label>
                     <div>
-                      <textarea className="bock w-full rounded-md border-0 ring-2 ring-inset ring-starick-olive py-1.5 px-1.5 outline-none focus:outline-2 focus:outline-offset-0 focus:outline-starick-green" name="entry.1073078232" id="enquiry" required></textarea>
+                      <textarea className="bock w-full rounded-md border-0 ring-2 ring-inset ring-starick-olive py-1.5 px-1.5 outline-none focus:outline-2 focus:outline-offset-0 focus:outline-starick-green" name={process.env.NEXT_PUBLIC_ENQUIRY_FIELD_NAME} id="enquiry" required></textarea>
                     </div>
                   </div>
                 </div>
