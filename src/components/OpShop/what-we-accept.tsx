@@ -32,10 +32,11 @@ export default function WhatWeAccept() {
       </p>
       <br />
       <p>
-        Please note we will accept only items that are clean and in good
-        condition
+        Please note we will accept{" "}
+        <span className="font-bold">
+          only items that are clean and in good condition:
+        </span>
       </p>
-      <p className="font-bold">We accept:</p>
       <br />
       <div className="grid grid-cols-1 md:grid-cols-2">
         {[0, 1].map((num) => (
@@ -54,24 +55,22 @@ export default function WhatWeAccept() {
         Please clean and fold all clothing, and ensure household and other goods
         are clean and in good working order.
       </p>
+      <br />
       <p>
         Please note that we do not allow direct delivery of donations to the
         refuges. We ask you to respect this policy, which is for security
         reasons and because we wish to assess and sort all donations through our
         Cloverdale op shop before making goods available to our clients.
       </p>
+      <br />
       <p>
         Once your donation is sorted by our volunteers, we will check in with
         the refuges and then deliver any suitable items.
       </p>
+      <br />
       <p>
         On an as-needs basis, our refuge and outreach clients receive vouchers
         from us and can select their own items from the op shop.
-      </p>
-      <p className="font-bold">
-        If you have any questions in relation to donations, please call our op
-        shop direct on (08) 6271 0299 during shop opening hours - Mon-Fri
-        10am-3pm Sat 10am-2pm.
       </p>
     </>
   );
