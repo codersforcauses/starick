@@ -2,7 +2,6 @@ import Image from "next/image";
 
 import Carousel from "@/components/Home/carousel/carousel";
 import carousel_list from "@/components/Home/carousel/carousel_list.json";
-import LinkButton from "@/components/Home/link-button";
 import ServicesLink from "@/components/Services/services-link";
 import FacebookFeed from "@/components/social-media-feed";
 
@@ -19,7 +18,7 @@ export default function Home() {
       <div className="relative">
         <p className="bottom-15 left absolute left-20 top-24 w-2/5 text-6xl font-bold text-white">
           Domestic Violence Support & Services for Women and Children
-          <div className="mb-10 gap-4">
+          <span className="hover:text-starick-green">
             <ServicesLink
               text={"Donate Now"}
               link={"/op-shop/donations"}
@@ -27,26 +26,29 @@ export default function Home() {
               arrowColour="starick-orange"
               arrowBackgroundColor="white"
             />
+          </span>
+          <span className="absolute hover:text-starick-green">
             <ServicesLink
               text={"Learn more about us"}
               link={"/op-shop/donations"}
-              textColour=""
+              textColour="relative hover:text-starick-green"
               arrowColour="starick-orange"
               arrowBackgroundColor="white"
             />
-          </div>
+          </span>
         </p>
-        {/* Image */}
+      </div>
 
-        <div className="justify-left items-left flex">
-          <Image
-            src={HomeTitle}
-            alt="description"
-            width="0"
-            height="0"
-            className="w-50 h-auto"
-          />
-        </div>
+      {/* Image */}
+
+      <div className="justify-left items-left flex">
+        <Image
+          src={HomeTitle}
+          alt="description"
+          width="0"
+          height="0"
+          className="w-50 h-auto"
+        />
       </div>
 
       <div className="items-left relative flex bg-starick-olive py-10 pl-8 font-bold text-starick-brown">
@@ -84,23 +86,25 @@ export default function Home() {
 
       <div className="grid grid-cols-2 font-semibold text-starick-black">
         {/* Top Left: picture */}
-        <div className=" h-210 bg-gray-200 ">
+        <div className="h-full ">
           <Image
             src={Gridpic2}
             alt="image of starick people for home page"
             width="0"
             height="0"
-            className=" "
+            className="h-full "
           />
         </div>
 
+        {/*Core  Services */}
         <div className="bg-starick-olive">
           <p className="mt-10  text-center text-2xl font-bold text-starick-brown">
             Core Services
           </p>
-          <div className="mx-5 mb-10 grid gap-4 px-24 text-starick-brown">
-            <a href="./counselling-services" className="service-link">
-              <p className="service-item mt-10">Counselling Services</p>
+          <a href="./transitional-housing" className="service-link">
+              <p className="service-item hover:text-starick-green">
+                Transitional Housing &gt;
+              </p>
               <div
                 className="brown-line mt-5"
                 style={{
@@ -110,21 +114,12 @@ export default function Home() {
                 }}
               ></div>
             </a>
-            <div className="brown-line"></div>
-            <a href="./transitional-housing" className="service-link">
-              <p className="service-item">Transitional Housing</p>
-              <div
-                className="brown-line mt-5"
-                style={{
-                  width: "100%",
-                  height: "1px",
-                  backgroundColor: "#738e4b"
-                }}
-              ></div>
-            </a>
+            
             <div className="starick-brown-line"></div>
             <a href="./two-refuges" className="service-link">
-              <p className="service-item">Two Refuges</p>
+              <p className="service-item hover:text-starick-green">
+                Two Refuges &gt;
+              </p>
               <div
                 className="brown-line mt-5"
                 style={{
@@ -136,7 +131,9 @@ export default function Home() {
             </a>
             <div className="brown-line"></div>
             <a href="./support-in-police-stations" className="service-link">
-              <p className="service-item">Support in Police Stations</p>
+              <p className="service-item hover:text-starick-green">
+                Support in Police Stations &gt;
+              </p>
               <div
                 className="brown-line mt-5"
                 style={{
@@ -146,9 +143,12 @@ export default function Home() {
                 }}
               ></div>
             </a>
+            
             <div className="brown-line"></div>
             <a href="./safe-at-home-program" className="service-link">
-              <p className="service-item">Safe at Home Program</p>
+              <p className="service-item hover:text-starick-green">
+                Safe at Home Program &gt;
+              </p>
             </a>
           </div>
         </div>
@@ -161,10 +161,9 @@ export default function Home() {
           <div className="mx-5 mb-10 grid gap-4 px-24 text-white">
             <a
               href="./OtherServices/respectful-relationships"
-              className="service-link"
-            >
-              <p className="service-item">
-                WA Respectful Relationships Teaching Support Program
+              className="service-link">
+              <p className="service-item hover:text-starick-olive">
+                WA Respectful Relationships Teaching Support Program &gt;
               </p>
               <div
                 className="brown-line mt-5"
@@ -176,12 +175,12 @@ export default function Home() {
               ></div>
             </a>
             <div className="brown-line"></div>
+
             <a
               href="./OtherServices/working-with-children-and-young-people"
-              className="service-link"
-            >
-              <p className="service-item">
-                Our Work With Children and Young People
+              className="service-link">
+              <p className="service-item hover:text-starick-olive">
+                Our Work With Children and Young People &gt;
               </p>
               <div
                 className="brown-line mt-5"
@@ -193,11 +192,13 @@ export default function Home() {
               ></div>
             </a>
             <div className="brown-line"></div>
+
             <a
               href="./OtherServices/workplace-awareness"
-              className="service-link"
-            >
-              <p className="service-item">Workplace Awareness</p>
+              className="service-link ">
+              <p className="service-item hover:text-starick-olive">
+                Workplace Awareness &gt;
+              </p>
               <div
                 className="brown-line mt-5"
                 style={{
@@ -210,9 +211,10 @@ export default function Home() {
             <div className="brown-line"></div>
             <a
               href="./OtherServices/support-in-police-stations"
-              className="service-link"
-            >
-              <p className="service-item">Health and Wellbeing</p>
+              className="service-link">
+              <p className="service-item hover:text-starick-olive">
+                Health and Wellbeing &gt;
+              </p>
               <div
                 className="brown-line mt-5"
                 style={{
@@ -225,11 +227,10 @@ export default function Home() {
             <div className="brown-line"></div>
             <a
               href="./OtherServices/safe-at-home-program"
-              className="service-link"
-            >
-              <p className="service-item">
+              className="service-link">
+              <p className="service-item hover:text-starick-olive">
                 Thriving Through Connections - Supporting Young People Aged
-                11-17 years
+                11-17 years &gt;
               </p>
             </a>
           </div>
@@ -245,7 +246,7 @@ export default function Home() {
             className=""
           />
         </div>
-      </div>
+      
 
       <div className="grid justify-items-center gap-6 px-16 py-16 font-semibold text-starick-brown">
         <p className="text-center text-2xl">Did you know?</p>
@@ -256,10 +257,12 @@ export default function Home() {
           violence is a major contributor to homelessness among women and
           children.
         </p>
-        <LinkButton
-          text="Learn more about domestic violence"
-          link="./what-is-domestic-violence"
-        />
+        <a
+          href="./what-is-domestic-violence"
+          className="rounded-lg bg-starick-brown px-6 py-3 font-semibold text-white transition-colors duration-300 hover:bg-starick-orange"
+        >
+          Learn more about domestic violence
+        </a>
       </div>
       <Image
         src={Opshoppic}
@@ -276,7 +279,7 @@ export default function Home() {
         </p>
         <a
           href="./donations"
-          className="rounded-lg bg-starick-orange px-6 py-3 font-semibold text-white hover:bg-opacity-90"
+          className="rounded-lg bg-starick-orange px-6 py-3 font-semibold text-white transition-colors duration-300 hover:bg-starick-green"
         >
           Donate Now
         </a>
@@ -298,55 +301,57 @@ export default function Home() {
             Give women and children a second chance through giving our wonderful
             shop items a second chance
           </p>
-          <LinkButton text="Through to Op Shop >" link="./op-shop" />
+          <a
+            href="./donations"
+            className="absolute mt-96 flex rounded-lg bg-starick-orange px-6 py-3 font-semibold text-white transition-colors duration-300 hover:bg-starick-brown"
+          >
+            Through to Op-shop
+          </a>
         </div>
       </div>
 
-      <div>
-        <div className="mx-12 mt-10 text-left text-3xl font-bold text-starick-brown">
-          Follow the movement on Facebook!
-        </div>
-
-        <div className="flex justify-center">
-          <div className="mx-36 my-8">
-            <FacebookFeed />
+      <div className="flex flex-col items-center justify-center ">
+        <div>
+          <div className="mx-12 mt-10 text-center text-3xl font-bold text-starick-brown">
+            Follow the movement on Facebook!
           </div>
 
-          <div className="mx-10 mr-24 flex flex-col justify-center">
-            <div className="mb-24 mr-24 w-5/6 text-center text-3xl font-semibold text-starick-brown">
-              <p>
-                Keep up with upcoming events! Follow us on Instagram for more
-                information on how you can get involved
-              </p>
-            </div>
-
-            <div className="mt-1/2 justify-left mb-36 flex flex-row px-72">
-              <a
-                href="https://www.instagram.com/starickservices/"
-                className="flex items-center rounded-md bg-starick-green px-12 py-1 text-white transition-colors duration-300 hover:bg-starick-orange"
-              >
-                <Image
-                  src="/icons/white_insta.svg"
-                  alt="instagram"
-                  width={40}
-                  height={40}
-                  className="right-10 my-1 ml-2 mr-2"
-                />
-
-                <div className="mx-1 text-xl font-semibold">
-                  <p>Instagram</p>
-                </div>
-              </a>
+          <div className="mt-10 flex justify-center">
+            <div className="">
+              <FacebookFeed />
             </div>
           </div>
-        </div>
-      </div>
-      <div className="mt-20 text-center text-3xl font-bold text-starick-brown ">
-        <p>Check out our past events!</p>
-      </div>
 
-      <div className="relative mx-auto mb-8 w-1/2">
-        <Carousel images={carousel_list} />
+          <div className="mb-10 ml-24 mt-10 flex  w-5/6 text-center text-2xl font-semibold text-starick-brown">
+            <p>
+              Keep up with upcoming events! Follow us on Instagram for more
+              information on how you can get involved
+            </p>
+          </div>
+
+          <div className="mt-1/2 mb-12 flex justify-center">
+            <a
+              href="https://www.instagram.com/starickservices/"
+              className=" absolute mx-10 mb-12 flex w-1/6 items-center rounded-md bg-starick-green px-6 py-1 text-white transition-colors duration-300 hover:bg-starick-orange"
+            >
+              <Image
+                src="/icons/white_insta.svg"
+                alt="instagram"
+                width={40}
+                height={40}
+                className="right-10 my-1 ml-2 mr-2"
+              />
+
+              <div className="mx-1 text-xl font-semibold">
+                <p>Instagram</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div className="relative mb-8 mt-10 w-1/2">
+          <Carousel images={carousel_list} />
+        </div>
       </div>
     </>
   );
