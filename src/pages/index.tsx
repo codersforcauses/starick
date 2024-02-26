@@ -102,151 +102,155 @@ export default function Home() {
             Core Services
           </p>
           <a href="./transitional-housing" className="service-link">
-              <p className="service-item hover:text-starick-green">
-                Transitional Housing &gt;
-              </p>
-              <div
-                className="brown-line mt-5"
-                style={{
-                  width: "100%",
-                  height: "1px",
-                  backgroundColor: "#738e4b"
-                }}
-              ></div>
-            </a>
-            
-            <div className="starick-brown-line"></div>
-            <a href="./two-refuges" className="service-link">
-              <p className="service-item hover:text-starick-green">
-                Two Refuges &gt;
-              </p>
-              <div
-                className="brown-line mt-5"
-                style={{
-                  width: "100%",
-                  height: "1px",
-                  backgroundColor: "#738e4b"
-                }}
-              ></div>
-            </a>
-            <div className="brown-line"></div>
-            <a href="./support-in-police-stations" className="service-link">
-              <p className="service-item hover:text-starick-green">
-                Support in Police Stations &gt;
-              </p>
-              <div
-                className="brown-line mt-5"
-                style={{
-                  width: "100%",
-                  height: "1px",
-                  backgroundColor: "#738e4b"
-                }}
-              ></div>
-            </a>
-            
-            <div className="brown-line"></div>
-            <a href="./safe-at-home-program" className="service-link">
-              <p className="service-item hover:text-starick-green">
-                Safe at Home Program &gt;
-              </p>
-            </a>
-          </div>
+            <p className="service-item hover:text-starick-green">
+              Transitional Housing &gt;
+            </p>
+            <div
+              className="brown-line mt-5"
+              style={{
+                width: "100%",
+                height: "1px",
+                backgroundColor: "#738e4b"
+              }}
+            ></div>
+          </a>
+
+          <div className="starick-brown-line"></div>
+          <a href="./two-refuges" className="service-link">
+            <p className="service-item hover:text-starick-green">
+              Two Refuges &gt;
+            </p>
+            <div
+              className="brown-line mt-5"
+              style={{
+                width: "100%",
+                height: "1px",
+                backgroundColor: "#738e4b"
+              }}
+            ></div>
+          </a>
+          <div className="brown-line"></div>
+          <a href="./support-in-police-stations" className="service-link">
+            <p className="service-item hover:text-starick-green">
+              Support in Police Stations &gt;
+            </p>
+            <div
+              className="brown-line mt-5"
+              style={{
+                width: "100%",
+                height: "1px",
+                backgroundColor: "#738e4b"
+              }}
+            ></div>
+          </a>
+
+          <div className="brown-line"></div>
+          <a href="./safe-at-home-program" className="service-link">
+            <p className="service-item hover:text-starick-green">
+              Safe at Home Program &gt;
+            </p>
+          </a>
         </div>
+      </div>
 
-        {/* OTHER SERVICES */}
-        <div className="bg-starick-green">
-          <p className="mb-10 mt-10 text-center text-2xl font-bold text-white">
-            Other Services
-          </p>
-          <div className="mx-5 mb-10 grid gap-4 px-24 text-white">
-            <a
-              href="./OtherServices/respectful-relationships"
-              className="service-link">
-              <p className="service-item hover:text-starick-olive">
-                WA Respectful Relationships Teaching Support Program &gt;
-              </p>
-              <div
-                className="brown-line mt-5"
-                style={{
-                  width: "100%",
-                  height: "1px",
-                  backgroundColor: "#FFFFFF"
-                }}
-              ></div>
-            </a>
-            <div className="brown-line"></div>
+      {/* OTHER SERVICES */}
+      <div className="bg-starick-green">
+        <p className="mb-10 mt-10 text-center text-2xl font-bold text-white">
+          Other Services
+        </p>
+        <div className="mx-5 mb-10 grid gap-4 px-24 text-white">
+          <a
+            href="./OtherServices/respectful-relationships"
+            className="service-link"
+          >
+            <p className="service-item hover:text-starick-olive">
+              WA Respectful Relationships Teaching Support Program &gt;
+            </p>
+            <div
+              className="brown-line mt-5"
+              style={{
+                width: "100%",
+                height: "1px",
+                backgroundColor: "#FFFFFF"
+              }}
+            ></div>
+          </a>
+          <div className="brown-line"></div>
 
-            <a
-              href="./OtherServices/working-with-children-and-young-people"
-              className="service-link">
-              <p className="service-item hover:text-starick-olive">
-                Our Work With Children and Young People &gt;
-              </p>
-              <div
-                className="brown-line mt-5"
-                style={{
-                  width: "100%",
-                  height: "1px",
-                  backgroundColor: "#FFFFFF"
-                }}
-              ></div>
-            </a>
-            <div className="brown-line"></div>
+          <a
+            href="./OtherServices/working-with-children-and-young-people"
+            className="service-link"
+          >
+            <p className="service-item hover:text-starick-olive">
+              Our Work With Children and Young People &gt;
+            </p>
+            <div
+              className="brown-line mt-5"
+              style={{
+                width: "100%",
+                height: "1px",
+                backgroundColor: "#FFFFFF"
+              }}
+            ></div>
+          </a>
+          <div className="brown-line"></div>
 
-            <a
-              href="./OtherServices/workplace-awareness"
-              className="service-link ">
-              <p className="service-item hover:text-starick-olive">
-                Workplace Awareness &gt;
-              </p>
-              <div
-                className="brown-line mt-5"
-                style={{
-                  width: "100%",
-                  height: "1px",
-                  backgroundColor: "#FFFFFF"
-                }}
-              ></div>
-            </a>
-            <div className="brown-line"></div>
-            <a
-              href="./OtherServices/support-in-police-stations"
-              className="service-link">
-              <p className="service-item hover:text-starick-olive">
-                Health and Wellbeing &gt;
-              </p>
-              <div
-                className="brown-line mt-5"
-                style={{
-                  width: "100%",
-                  height: "1px",
-                  backgroundColor: "#FFFFFF"
-                }}
-              ></div>
-            </a>
-            <div className="brown-line"></div>
-            <a
-              href="./OtherServices/safe-at-home-program"
-              className="service-link">
-              <p className="service-item hover:text-starick-olive">
-                Thriving Through Connections - Supporting Young People Aged
-                11-17 years &gt;
-              </p>
-            </a>
-          </div>
+          <a
+            href="./OtherServices/workplace-awareness"
+            className="service-link "
+          >
+            <p className="service-item hover:text-starick-olive">
+              Workplace Awareness &gt;
+            </p>
+            <div
+              className="brown-line mt-5"
+              style={{
+                width: "100%",
+                height: "1px",
+                backgroundColor: "#FFFFFF"
+              }}
+            ></div>
+          </a>
+          <div className="brown-line"></div>
+          <a
+            href="./OtherServices/support-in-police-stations"
+            className="service-link"
+          >
+            <p className="service-item hover:text-starick-olive">
+              Health and Wellbeing &gt;
+            </p>
+            <div
+              className="brown-line mt-5"
+              style={{
+                width: "100%",
+                height: "1px",
+                backgroundColor: "#FFFFFF"
+              }}
+            ></div>
+          </a>
+          <div className="brown-line"></div>
+          <a
+            href="./OtherServices/safe-at-home-program"
+            className="service-link"
+          >
+            <p className="service-item hover:text-starick-olive">
+              Thriving Through Connections - Supporting Young People Aged 11-17
+              years &gt;
+            </p>
+          </a>
         </div>
+      </div>
 
-        {/* bottom right: picture */}
-        <div className=" t-10 h-200 bg-gray-200">
-          <Image
-            src={Afterdidyouknow}
-            alt="image of starick people for home page"
-            width="0"
-            height="0"
-            className=""
-          />
-        </div>
-      
+      {/* bottom right: picture */}
+      <div className=" t-10 h-200 bg-gray-200">
+        <Image
+          src={Afterdidyouknow}
+          alt="image of starick people for home page"
+          width="0"
+          height="0"
+          className=""
+        />
+      </div>
 
       <div className="grid justify-items-center gap-6 px-16 py-16 font-semibold text-starick-brown">
         <p className="text-center text-2xl">Did you know?</p>
