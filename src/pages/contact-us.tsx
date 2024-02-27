@@ -15,9 +15,6 @@ export default function ContactUs() {
     const phone = (event.currentTarget.elements.namedItem(process.env.NEXT_PUBLIC_PHONE_FIELD_NAME as string) as HTMLInputElement).value
     const email = (event.currentTarget.elements.namedItem(process.env.NEXT_PUBLIC_EMAIL_FIELD_NAME as string) as HTMLInputElement).value
     const enquiry = (event.currentTarget.elements.namedItem(process.env.NEXT_PUBLIC_ENQUIRY_FIELD_NAME as string) as HTMLInputElement).value
-
-    // console.log((event.currentTarget.elements.namedItem("entry.339576848") as HTMLInputElement).value)
-    // const test: string = process.env.REACT_APP_FIRSTNAME_INPUT_NAME || '';
   
     const response = await fetch('/api/email/email' , {
       method: 'POST',
@@ -160,7 +157,6 @@ export default function ContactUs() {
                         </p>
                       </div>
                     </button>
-                  {/* <button className="m-5 p-5 rounded-2xl bg-starick-brown text-white" type="submit"></button> */}
                 </div>
               </div>
             </form>
