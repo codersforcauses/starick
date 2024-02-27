@@ -149,8 +149,18 @@ export default function ContactUs() {
                     </div>
                   </div>
                 </div>
-                <div className="flex justify-center">
-                  <button className="m-5 p-5 rounded-2xl bg-starick-brown text-white" type="submit">Enquire</button>
+                <div className="flex justify-center m-5">
+                    <button className="text-lg font-semibold text-black group-hover:text-starick-orange" type="submit">
+                      <div className="group flex">
+                        <div className="flex-none inline-block bg-starick-green group-hover:bg-starick-orange text-white mr-2 px-2 font-mono text-xl font-bold">&#62;</div>
+                        <p
+                          className="text-lg font-semibold text-black group-hover:text-starick-orange"
+                        >
+                          Enquire
+                        </p>
+                      </div>
+                    </button>
+                  {/* <button className="m-5 p-5 rounded-2xl bg-starick-brown text-white" type="submit"></button> */}
                 </div>
               </div>
             </form>
