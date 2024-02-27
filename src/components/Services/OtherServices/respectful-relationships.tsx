@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 import ServicesSection from "../services-section";
-import ServicesLink from "../services-link";
+import Button from "../../button";
 
 export default function RespectfulRelationshipsSection() {
   const body = (
@@ -125,7 +125,7 @@ export default function RespectfulRelationshipsSection() {
       <br />
       <br />
       <div className="flex justify-center">
-        <ServicesLink
+        <Button
           text={"Info for schools"}
           link={"/other-services/info-for-schools"}
           textColour="starick-black"
@@ -133,7 +133,7 @@ export default function RespectfulRelationshipsSection() {
           arrowBackgroundColor="starick-green"
         />
         <div className="w-32"></div>
-        <ServicesLink
+        <Button
           text={"Further reading"}
           link={"/other-services/further-reading"}
           textColour="starick-black"
