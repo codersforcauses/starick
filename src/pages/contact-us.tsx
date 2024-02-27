@@ -95,8 +95,8 @@ export default function ContactUs() {
               <div>
                 <p className="text pb-6 text-2xl font-semibold">Send us an email</p>
                 
-                {error && <div>{error}</div>}
-                {success && <div>{success}</div>}
+                {error && <div className="bg-red-100 text-red-700 border border-red-700 p-4 mb-8">{error}</div>}
+                {success && <div className="bg-starick-olive text-[#3a4726] border border-starick-green rounded-lg p-4 mb-8">{success}</div>}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-8">
                   <div className="col-span-1">
                     <label htmlFor="firstname">First Name <span className="text-red-700">*</span></label>
