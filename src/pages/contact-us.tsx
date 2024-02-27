@@ -18,16 +18,15 @@ export default function ContactUs() {
 
     // console.log((event.currentTarget.elements.namedItem("entry.339576848") as HTMLInputElement).value)
     // const test: string = process.env.REACT_APP_FIRSTNAME_INPUT_NAME || '';
-    console.log(process.env.NEXT_PUBLIC_TEST);
-    
+  
     const response = await fetch('/api/email/email' , {
       method: 'POST',
       body: JSON.stringify({
-        'entry.339576848': firstname,
-        'entry.810035821': lastname,
-        'entry.622549956': phone,
-        'entry.2009362426': email,
-        'entry.1073078232': enquiry,
+        [process.env.NEXT_PUBLIC_FIRSTNAME_FIELD_NAME as string]: firstname,
+        [process.env.NEXT_PUBLIC_LASTNAME_FIELD_NAME as string]: lastname,
+        [process.env.NEXT_PUBLIC_PHONE_FIELD_NAME as string]: phone,
+        [process.env.NEXT_PUBLIC_EMAIL_FIELD_NAME as string]: email,
+        [process.env.NEXT_PUBLIC_ENQUIRY_FIELD_NAME as string]: enquiry,
       }),
     })
 
