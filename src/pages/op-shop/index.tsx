@@ -1,7 +1,7 @@
+import { ReactNode } from "react";
+
 import PageHeader from "@/components/page-header";
 import PageSummary from "@/components/page-summary";
-import ServicesLink from "@/components/Services/services-link";
-import { ReactNode } from "react";
 
 export default function StarickOpShop() {
   const content1 = (
@@ -60,13 +60,42 @@ export default function StarickOpShop() {
       </p>
       <br />
       <div className="flex justify-center">
-        <ServicesLink
-          text={"Purchase"}
-          link="https://www.starick.org.au/get-involved/op-shop/op-shop-gift-sets/"
-          textColour="starick-white"
-          arrowBackgroundColor="starick-white"
-          arrowColour="starick-black"
-        />
+        <button
+          onClick={() =>
+            window.open(
+              "https://www.starick.org.au/get-involved/op-shop/op-shop-gift-sets/"
+            )
+          }
+          style={{
+            color: "white",
+            backgroundColor: "transparent",
+            border: "none",
+            cursor: "pointer"
+          }}
+        >
+          Purchase
+          <span
+            style={{
+              display: "inline-block",
+              marginLeft: "5px",
+              width: "10px",
+              height: "10px",
+              backgroundColor: "white",
+              borderRadius: "50%"
+            }}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="100%"
+              height="100%"
+              fill="black"
+            >
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path d="M18 16.08V5.92L10.94 12 18 16.08zM6 6l6 4.5L6 15V6z" />
+            </svg>
+          </span>
+        </button>
       </div>
     </>
   );
@@ -84,13 +113,38 @@ export default function StarickOpShop() {
       </p>
       <br />
       <div className="flex justify-center">
-        <Link
-          text={"Donate Stock"}
-          link="/op-shop/donations"
-          textColour="starick-black"
-          arrowBackgroundColor="starick-green"
-          arrowColour="starick-white"
-        />
+        <button
+          onClick={() => (window.location.href = "/op-shop/donations")}
+          style={{
+            color: "black",
+            backgroundColor: "transparent",
+            border: "none",
+            cursor: "pointer"
+          }}
+        >
+          Donate Stock
+          <span
+            style={{
+              display: "inline-block",
+              marginLeft: "5px",
+              width: "10px",
+              height: "10px",
+              backgroundColor: "green",
+              borderRadius: "50%"
+            }}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="100%"
+              height="100%"
+              fill="white"
+            >
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path d="M18 16.08V5.92L10.94 12 18 16.08zM6 6l6 4.5L6 15V6z" />
+            </svg>
+          </span>
+        </button>
       </div>
     </>
   );

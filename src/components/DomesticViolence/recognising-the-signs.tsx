@@ -1,7 +1,6 @@
-import SubSection from "../Services/subsection";
-import ServicesSection from "../Services/services-section";
 import { List } from "../Services/list";
-import ServicesLink from "../Services/services-link";
+import ServicesSection from "../Services/services-section";
+import SubSection from "../Services/subsection";
 
 export default function RecognisingTheSignsSection() {
   const domesticViolenceSignsExample = (
@@ -46,13 +45,38 @@ export default function RecognisingTheSignsSection() {
       />
       <br />
       <div className="flex justify-center">
-        <ServicesLink
-          text={"Frequently Asked Questions"}
-          link={"/frequently-asked-questions"}
-          textColour="starick-black"
-          arrowColour="starick-white"
-          arrowBackgroundColor="starick-green"
-        />
+        <button
+          onClick={() => (window.location.href = "/frequently-asked-questions")}
+          style={{
+            color: "black",
+            backgroundColor: "transparent",
+            border: "none",
+            cursor: "pointer"
+          }}
+        >
+          Frequently Asked Questions
+          <span
+            style={{
+              display: "inline-block",
+              marginLeft: "5px",
+              width: "10px",
+              height: "10px",
+              backgroundColor: "green",
+              borderRadius: "50%"
+            }}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="100%"
+              height="100%"
+              fill="white"
+            >
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path d="M18 16.08V5.92L10.94 12 18 16.08zM6 6l6 4.5L6 15V6z" />
+            </svg>
+          </span>
+        </button>
       </div>
     </>
   );
