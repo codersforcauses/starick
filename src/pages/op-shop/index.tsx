@@ -84,7 +84,7 @@ export default function StarickOpShop() {
       </p>
       <br />
       <div className="flex justify-center">
-        <ServicesLink
+        <Link
           text={"Donate Stock"}
           link="/op-shop/donations"
           textColour="starick-black"

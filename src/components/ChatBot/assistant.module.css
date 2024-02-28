@@ -1,0 +1,99 @@
+.windowOpen {
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+  flex-direction: column;
+  position: relative;
+  height: 448px;
+  width: 384px;
+  border-width: 1px;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+  transition: height 0.2s ease-in, visibility 0.2s linear, opacity 0.2s linear;
+}
+
+.windowClosed {
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  width: 384px;
+  transition: height 0.2s ease-out, visibility 0.2s linear, opacity 0.2s linear;
+}
+
+.textOpen {
+  height: 100%;
+  width: 100%;
+  resize: none;
+  padding: 2px;
+}
+
+.loading {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: theme(colors.starick-orange);
+  color: theme(colors.starick-orange);
+  animation: loading 1s infinite linear alternate;
+  animation-delay: 0.5s;
+}
+
+.loading::before,
+.loading::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.loading::before {
+  left: -15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: theme(colors.starick-orange);
+  color: theme(colors.starick-orange);
+  animation: loading 1s infinite alternate;
+  animation-delay: 0s;
+}
+
+.loading::after {
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: theme(colors.starick-orange);
+  color: theme(colors.starick-orange);
+  animation: loading 1s infinite alternate;
+  animation-delay: 1s;
+}
+
+@keyframes loading {
+  0% {
+    background-color: theme(colors.starick-orange);
+  }
+  50%,
+  100% {
+    background-color: rgba(152, 128, 255, 0.2);
+  }
+}
+
+@media (max-width: 767px) {
+  .windowOpen {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    flex-direction: column;
+    position: relative;
+    height: 80vh;
+    width: 100vw;
+    margin-right: -24px;
+    border-width: 1px;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+    transition: height 0.2s ease-in, visibility 0.2s linear, opacity 0.2s linear;
+  }
+}
