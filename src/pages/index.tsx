@@ -3,7 +3,7 @@ import Image from "next/image";
 import Carousel from "@/components/Home/carousel/carousel";
 import carousel_list from "@/components/Home/carousel/carousel_list.json";
 import LinkButton from "@/components/Home/link-button";
-import ServicesLink from "@/components/Services/services-link";
+import Button from "@/components/button";
 import FacebookFeed from "@/components/social-media-feed";
 
 import CrisisAlert from "~/icons/crisis_alert.svg";
@@ -20,14 +20,14 @@ export default function Home() {
         <p className="bottom-15 left absolute left-20 top-24 w-2/5 text-6xl font-bold text-white">
           Domestic Violence Support & Services for Women and Children
           <div className="mb-10 gap-4">
-            <ServicesLink
+            <Button
               text={"Donate Now"}
               link={"/op-shop/donations"}
               textColour=""
               arrowColour="starick-orange"
               arrowBackgroundColor="white"
             />
-            <ServicesLink
+            <Button
               text={"Learn more about us"}
               link={"/op-shop/donations"}
               textColour=""
