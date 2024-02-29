@@ -17,25 +17,25 @@ export default function Home() {
   return (
     <>
       <div className="relative">
-        <p className="bottom-15 left absolute left-20 top-24 w-2/5 text-6xl font-bold text-white">
+        <div className="bottom-15 left absolute left-20 top-24 w-2/5 text-6xl font-bold text-white">
           Domestic Violence Support & Services for Women and Children
           <div className="mb-10 gap-4">
             <Button
-              text={"Donate Now"}
-              link={"/op-shop/donations"}
+              text="Donate Now"
+              link="/op-shop/donations"
               textColour=""
               arrowColour="starick-orange"
               arrowBackgroundColor="white"
             />
             <Button
-              text={"Learn more about us"}
-              link={"/op-shop/donations"}
+              text="Learn more about us"
+              link="/op-shop/donations"
               textColour=""
               arrowColour="starick-orange"
               arrowBackgroundColor="white"
             />
           </div>
-        </p>
+        </div>
         {/* Image */}
 
         <div className="justify-left items-left flex">

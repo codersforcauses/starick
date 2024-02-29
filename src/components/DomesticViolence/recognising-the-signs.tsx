@@ -47,8 +47,8 @@ export default function RecognisingTheSignsSection() {
       <br />
       <div className="flex justify-center">
         <Button
-          text={"Frequently Asked Questions"}
-          link={"/frequently-asked-questions"}
+          text="Frequently Asked Questions"
+          link="/frequently-asked-questions"
           textColour="starick-black"
           arrowColour="starick-white"
           arrowBackgroundColor="starick-green"

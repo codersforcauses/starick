@@ -61,7 +61,7 @@ export default function StarickOpShop() {
       <br />
       <div className="flex justify-center">
         <Button
-          text={"Purchase"}
+          text="Purchase"
           link="https://www.starick.org.au/get-involved/op-shop/op-shop-gift-sets/"
           textColour="starick-white"
           arrowBackgroundColor="starick-white"
@@ -85,7 +85,7 @@ export default function StarickOpShop() {
       <br />
       <div className="flex justify-center">
         <Button
-          text={"Donate Stock"}
+          text="Donate Stock"
           link="/op-shop/donations"
           textColour="starick-black"
           arrowBackgroundColor="starick-green"
