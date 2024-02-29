@@ -25,15 +25,15 @@ export default function Home() {
             className="w-25 h-30 mt-1"
           />
           <div className="absolute top-0  z-10 flex justify-center bg-black bg-opacity-50 p-24 text-white">
-            <p className="mx-10 mb-10 text-center text-6xl font-bold ">
-              Domestic Violence Support & Services for Women and Children
+            <div className="mx-10 mb-10 text-center text-6xl font-bold">
+              <p>Domestic Violence Support & Services for Women and Children</p>
               <p className="mt-10 justify-center text-xl  font-semibold hover:text-starick-green">
                 <Link href="/op-shop/donations">&gt; Donate Now</Link>
               </p>
-              <span className="text-xl font-semibold hover:text-starick-green">
+              <span className="mt-10 justify-center text-xl  font-semibold hover:text-starick-green">
                 <Link href="/op-shop/donations">&gt; Learn more about us</Link>
               </span>
-            </p>
+            </div>
           </div>
         </div>
       </div>
