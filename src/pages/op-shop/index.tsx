@@ -1,6 +1,6 @@
 import PageHeader from "@/components/page-header";
 import PageSummary from "@/components/page-summary";
-import ServicesLink from "@/components/Services/services-link";
+import Button from "@/components/button";
 import { ReactNode } from "react";
 
 export default function StarickOpShop() {
@@ -60,7 +60,7 @@ export default function StarickOpShop() {
       </p>
       <br />
       <div className="flex justify-center">
-        <ServicesLink
+        <Button
           text={"Purchase"}
           link="https://www.starick.org.au/get-involved/op-shop/op-shop-gift-sets/"
           textColour="starick-white"
@@ -84,7 +84,7 @@ export default function StarickOpShop() {
       </p>
       <br />
       <div className="flex justify-center">
-        <ServicesLink
+        <Button
           text={"Donate Stock"}
           link="/op-shop/donations"
           textColour="starick-black"

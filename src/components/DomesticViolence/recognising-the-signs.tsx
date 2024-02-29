@@ -1,7 +1,7 @@
 import SubSection from "../Services/subsection";
 import ServicesSection from "../Services/services-section";
 import { List } from "../Services/list";
-import ServicesLink from "../Services/services-link";
+import Button from "../button";
 
 export default function RecognisingTheSignsSection() {
   const domesticViolenceSignsExample = (
@@ -46,7 +46,7 @@ export default function RecognisingTheSignsSection() {
       />
       <br />
       <div className="flex justify-center">
-        <ServicesLink
+        <Button
           text={"Frequently Asked Questions"}
           link={"/frequently-asked-questions"}
           textColour="starick-black"
