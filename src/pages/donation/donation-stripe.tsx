@@ -1,5 +1,6 @@
 import { useState } from "react";
-import CheckoutForm from "../../components/donation-stripe/checkoutform";
+// import CheckoutForm from "../../components/donation-stripe/checkoutform";
+import { loadStripe } from '@stripe/stripe-js';
 
 export default function DonationStripe() {
   const [isClicked, setIsClicked] = useState(false);
@@ -177,7 +178,7 @@ export default function DonationStripe() {
           style={{ width: "480px" }}
           className="w-120 border-2 border-starick-olive p-5 text-center hover:bg-starick-olive"
         >
-          ADD PAYMENT DETAILS
+<button onClick={handleCheckout}>Donate</button>
           {/* <CheckoutForm /> */}
         </div>
         <div>
@@ -186,3 +187,24 @@ export default function DonationStripe() {
     </div>
   );
 }
+
+const handleCheckout = async () => {
+    // Load the Stripe library with the publishable key
+ const stripe = await loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
+
+  // Make a POST request to the '/api/checkout_sessions' endpoint
+  const response = await fetch('/api/checkout_sessions/checkout_session', { method: 'POST' });
+  console.log(response);
+
+  // Extract the JSON data from the response
+  const data = await response.json();
+  console.log(data);
+//  const { data } = await fetch('/api/checkout_sessions', { method: 'POST' });
+
+ if (stripe && data.sessionId) {
+      // Redirect the user to the Stripe checkout page with the session ID
+    stripe.redirectToCheckout({ sessionId: data.sessionId });
+ }
+};
+
+
