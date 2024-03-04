@@ -1,4 +1,5 @@
-import { useState } from "react";
+import {ChangeEvent, KeyboardEvent, useState} from "react";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { FiSearch, FiX } from "react-icons/fi";
 
@@ -7,6 +8,30 @@ import PanicButton from "./PanicButton";
 
 export default function Header() {
   const [searchOpen, setSearchOpen] = useState(false);
+  const [inputValue, setInputValue] = useState("");
+  const router = useRouter()
+
+
+  const searchHandler = (event: ChangeEvent<HTMLInputElement>) => {
+    const { target } = event;
+    setInputValue(target.value);
+  };
+
+  const handleSearch = () => {
+
+    if (inputValue) return router.push(`/?q=${inputValue}`);
+
+    else return router.push("/")
+
+  }
+
+  const handleKeyDown = (event: KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === "Enter") {
+      setInputValue(inputValue);
+      return handleSearch()
+    }
+  };
+
 
   return (
     <header className="sticky top-0 z-50">
@@ -44,6 +69,8 @@ export default function Header() {
             placeholder="Search..."
             type="text"
             className="relative inset-0 w-80 bg-transparent placeholder:text-starick-white placeholder:opacity-80  focus:outline-none"
+            onChange={searchHandler}
+            onKeyDown={handleKeyDown}
           />
           <FiSearch className="inline" />
         </div>

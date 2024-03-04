@@ -1,5 +1,5 @@
 import { ChangeEvent, KeyboardEvent, useState } from "react";
-export default function Search({ prompt }: { prompt: string }) {
+export default function ({ prompt }: { prompt: string }) {
   const [value, setValue] = useState("Enter search...");
   const searchHandler = (event: ChangeEvent<HTMLInputElement>) => {
     const { target } = event;
