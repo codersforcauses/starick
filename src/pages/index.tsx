@@ -24,14 +24,14 @@ export default function Home() {
             height="0"
             className="w-25 h-30 mt-1"
           />
-          <div className="absolute top-0  z-10 flex justify-center bg-black bg-opacity-50 p-24 text-white">
+          <div className="absolute top-0  z-10 flex justify-center bg-black bg-opacity-40 p-24 text-white">
             <div className="mx-10 mb-10 text-center text-6xl font-bold">
               <p>Domestic Violence Support & Services for Women and Children</p>
               <p className="mt-10 justify-center text-xl  font-semibold hover:text-starick-green">
                 <Link href="/op-shop/donations">&gt; Donate Now</Link>
               </p>
               <span className="mt-10 justify-center text-xl  font-semibold hover:text-starick-green">
-                <Link href="/op-shop/donations">&gt; Learn more about us</Link>
+                <Link href="/about-us">&gt; Learn more about us</Link>
               </span>
             </div>
           </div>
@@ -92,7 +92,11 @@ export default function Home() {
           {/* Newly added Counselling Services */}
           <div className="service-link">
             <p className="service-item ml-10 mt-5 hover:text-starick-green">
-              Counselling Services &gt;
+              <Link href="/core-services#Counselling%20Services">
+                <span className="service-item text-starick-brown hover:text-starick-green">
+                  Counselling Services &gt;
+                </span>
+              </Link>
             </p>
             <div
               className="brown-line ml-10 mt-5"
@@ -106,11 +110,13 @@ export default function Home() {
 
           <div className="starick-brown-line"></div>
           <div className="service-link">
-            <p className="service-item ml-10 mt-5 hover:text-starick-green">
-              Transitional Housing &gt;
-            </p>
+            <Link href="/core-services#Counselling%20Services">
+              <span className="service-item ml-10 mt-5 hover:text-starick-green">
+                Transitional Housing &gt;
+              </span>
+            </Link>
             <div
-              className="brown-line ml-10 mt-5"
+              className="brown-line mb-5 ml-10 mt-5"
               style={{
                 width: "90%",
                 height: "1px",
@@ -119,13 +125,15 @@ export default function Home() {
             ></div>
           </div>
 
-          <div className="brown-line"></div>
+          <div className="brown-line mb-5"></div>
           <div className="service-link">
-            <p className="service-item ml-10 mt-5 hover:text-starick-green">
-              Two Refuges &gt;
-            </p>
+            <Link href="/core-services#Refugees">
+              <span className="service-item ml-10 mt-5 hover:text-starick-green">
+                Two Refuges &gt;
+              </span>
+            </Link>
             <div
-              className="brown-line ml-10 mt-5"
+              className="brown-line mb-5 ml-10 mt-5"
               style={{
                 width: "90%",
                 height: "1px",
@@ -134,13 +142,15 @@ export default function Home() {
             ></div>
           </div>
 
-          <div className="brown-line"></div>
+          <div className="brown-line mb-5"></div>
           <div className="service-link">
-            <p className="service-item ml-10 mt-5 hover:text-starick-green">
-              Support in Police Stations &gt;
-            </p>
+            <Link href="/core-services#Transitional%20Housing">
+              <span className="service-item ml-10 mt-5 hover:text-starick-green">
+                Support in Police Stations &gt;
+              </span>
+            </Link>
             <div
-              className="brown-line ml-10 mt-5"
+              className="brown-line mb-5 ml-10 mt-5"
               style={{
                 width: "90%",
                 height: "1px",
@@ -149,11 +159,13 @@ export default function Home() {
             ></div>
           </div>
 
-          <div className="brown-line"></div>
+          <div className="brown-line mb-5"></div>
           <div className="service-link">
-            <p className="service-item ml-10 mt-5 hover:text-starick-green">
-              Safe at Home Program &gt;
-            </p>
+            <Link href="/core-services#Safe%20at%20Home%20Program">
+              <span className="service-item ml-10 mt-5 hover:text-starick-green">
+                Safe at Home Program &gt;
+              </span>
+            </Link>
           </div>
         </div>
       </div>
@@ -164,64 +176,64 @@ export default function Home() {
           <p className="mb-10 mt-10 text-center text-2xl font-bold text-white">
             Other Services
           </p>
-          <div className="mx-5 mb-10">
-            <Link href="./OtherServices/respectful-relationships">
-              <p className="service-item text-white hover:text-starick-olive">
+          <div className="mx-5 mb-10 mt-5">
+            <Link href="/other-services#WA%20Respectful%20Relationships%20Teaching%20Support%20Program">
+              <span className="service-item text-white hover:text-starick-olive">
                 WA Respectful Relationships Teaching Support Program &gt;
-              </p>
+              </span>
             </Link>
             <div
-              className="brown-line mt-5"
+              className="brown-line mb-5 mt-5"
               style={{
                 width: "90%",
                 height: "1px",
                 backgroundColor: "#FFFFFF"
               }}
             ></div>
-            <Link href="./OtherServices/working-with-children-and-young-people">
-              <p className="service-item mt-5 text-white hover:text-starick-olive">
+            <Link href="/other-services#Our%20Work%20with%20Children%20and%20Young%20People">
+              <span className="service-item mt-5 text-white hover:text-starick-olive">
                 Our Work With Children and Young People &gt;
-              </p>
+              </span>
             </Link>
             <div
-              className="brown-line mt-5"
+              className="brown-line mb-5 mt-5"
               style={{
                 width: "90%",
                 height: "1px",
                 backgroundColor: "#FFFFFF"
               }}
             ></div>
-            <Link href="./OtherServices/workplace-awareness">
-              <p className="service-item mt-5 text-white hover:text-starick-olive">
+            <Link href="/other-services#Workplace%20Awareness">
+              <span className="service-item mt-5 text-white hover:text-starick-olive">
                 Workplace Awareness &gt;
-              </p>
+              </span>
             </Link>
             <div
-              className="brown-line mt-5"
+              className="brown-line mb-5 mt-5"
               style={{
                 width: "90%",
                 height: "1px",
                 backgroundColor: "#FFFFFF"
               }}
             ></div>
-            <Link href="./OtherServices/support-in-police-stations">
-              <p className="service-item mt-5 text-white hover:text-starick-olive">
+            <Link href="/other-services#Health%20and%20Wellbeing">
+              <span className="service-item mt-5 text-white hover:text-starick-olive">
                 Health and Wellbeing &gt;
-              </p>
+              </span>
             </Link>
             <div
-              className="brown-line mt-5"
+              className="brown-line mb-5 mt-5"
               style={{
                 width: "90%",
                 height: "1px",
                 backgroundColor: "#FFFFFF"
               }}
             ></div>
-            <Link href="./OtherServices/safe-at-home-program">
-              <p className="service-item mt-5 text-white hover:text-starick-olive">
+            <Link href="other-services">
+              <span className="service-item mt-5  text-white hover:text-starick-olive">
                 Thriving Through Connections - Supporting Young People Aged
                 11-17 years &gt;
-              </p>
+              </span>
             </Link>
           </div>
         </div>
@@ -247,12 +259,12 @@ export default function Home() {
           violence is a major contributor to homelessness among women and
           children.
         </p>
-        <a
+        <Link
           href="./what-is-domestic-violence"
           className="rounded-lg bg-starick-brown px-6 py-3 font-semibold text-white transition-colors duration-300 hover:bg-starick-orange"
         >
           Learn more about domestic violence
-        </a>
+        </Link>
       </div>
       <Image
         src={Opshoppic}
@@ -267,12 +279,12 @@ export default function Home() {
           Help us support women and children being actively affected by domestic
           violence.
         </p>
-        <a
+        <Link
           href="./donations"
           className="rounded-lg bg-starick-orange px-6 py-3 font-semibold text-white transition-colors duration-300 hover:bg-starick-green"
         >
           Donate Now
-        </a>
+        </Link>
       </div>
 
       <div className="z-2 flex  bg-starick-green text-left font-semibold">
@@ -291,12 +303,12 @@ export default function Home() {
             Give women and children a second chance through giving our wonderful
             shop items a second chance
           </p>
-          <a
+          <Link
             href="./donations"
             className="absolute mt-96 flex rounded-lg bg-starick-orange px-6 py-3 font-semibold text-white transition-colors duration-300 hover:bg-starick-brown"
           >
             Through to Op-shop
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -320,7 +332,7 @@ export default function Home() {
           </div>
 
           <div className="mt-1/2 mb-12 flex justify-center">
-            <a
+            <Link
               href="https://www.instagram.com/starickservices/"
               className=" absolute mx-10 mb-12 flex w-1/6 items-center rounded-md bg-starick-green px-6 py-1 text-white transition-colors duration-300 hover:bg-starick-orange"
             >
@@ -335,7 +347,7 @@ export default function Home() {
               <div className="mx-1 text-xl font-semibold">
                 <p>Instagram</p>
               </div>
-            </a>
+            </Link>
           </div>
         </div>
 
