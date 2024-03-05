@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 import PageHeader from "@/components/page-header";
 import PageSummary from "@/components/page-summary";
 
+
 export default function StarickOpShop() {
   const content1 = (
     <>
@@ -60,6 +61,7 @@ export default function StarickOpShop() {
       </p>
       <br />
       <div className="flex justify-center">
+
         <button
           onClick={() =>
             window.open(
@@ -96,6 +98,7 @@ export default function StarickOpShop() {
             </svg>
           </span>
         </button>
+
       </div>
     </>
   );
@@ -113,6 +116,7 @@ export default function StarickOpShop() {
       </p>
       <br />
       <div className="flex justify-center">
+
         <button
           onClick={() => (window.location.href = "/op-shop/donations")}
           style={{
@@ -145,6 +149,7 @@ export default function StarickOpShop() {
             </svg>
           </span>
         </button>
+
       </div>
     </>
   );
