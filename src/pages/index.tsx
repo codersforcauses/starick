@@ -4,7 +4,6 @@ import Link from "next/link";
 import Carousel from "@/components/Home/carousel/carousel";
 import carousel_list from "@/components/Home/carousel/carousel_list.json";
 
-
 import FacebookFeed from "@/components/social-media-feed";
 
 import CrisisAlert from "~/icons/crisis_alert.svg";
@@ -18,9 +17,7 @@ export default function Home() {
   return (
     <>
       <div className="relative">
-
         <div className="relative">
-
           <Image
             src={HomeTitle}
             alt="description"

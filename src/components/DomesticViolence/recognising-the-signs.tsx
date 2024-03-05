@@ -3,7 +3,6 @@ import { List } from "../Services/list";
 import ServicesSection from "../Services/services-section";
 import SubSection from "../Services/subsection";
 
-
 export default function RecognisingTheSignsSection() {
   const domesticViolenceSignsExample = (
     <List
@@ -47,7 +46,6 @@ export default function RecognisingTheSignsSection() {
       />
       <br />
       <div className="flex justify-center">
-
         <button
           onClick={() => (window.location.href = "/frequently-asked-questions")}
           style={{
@@ -80,7 +78,6 @@ export default function RecognisingTheSignsSection() {
             </svg>
           </span>
         </button>
-
       </div>
     </>
   );
