@@ -7,6 +7,7 @@ export default function OurBoard() {
       <p className="px-16 py-16 text-center text-2xl font-semibold">
       </p>
       <div className="mx-2.5 my-2.5 flex flex-col gap-8 w-auto items-center">
+        {/* Added reverse to determine if the person should be reversed or not, according to Figma */}
         <Board
           name="Natalie Sangalli"
           position="Chair"
