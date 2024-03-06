@@ -5,17 +5,25 @@ interface PortraitInfo {
   position: string;
   info: string;
   imagePath: string;
+  board : boolean;
 }
 
-export default function Portrait({ name, position, info, imagePath }: PortraitInfo) {
+export default function Portrait({ name, position, info, imagePath, board}: PortraitInfo) {
   return (
     <>
-      <div>
-        <img src={imagePath} alt={name} className="h-64 w-auto"/>
-        <div className="h-36 bg-starick-green text-starick-white px-4 py-4">
-          <p className="font-semibold text-2xl ">{name}</p>
-          <p className="pt-6">{position}</p>
-
+      <div className={`${board ?'flex flex-row' : ''}`}>
+        <div className="flex justify-center">
+          <img src={imagePath} alt={name} className={`h-40 w-auto overflow-hidden mb-5 ${board ? '' : 'rounded-full'}`}/>
+        </div>
+        <div className="min-h-min-content h-40 w-auto px-2">
+          <p className="font-semibold text-2xl flex justify-center w-auto">{name}</p>
+          {board ? 
+          <div className = "h-auto">
+            <p className="pt-1 h-auto">{info}</p>
+          </div>
+          :
+          <p className="pt-1 flex justify-center w-auto">{position}</p>
+        }
         </div>
       </div>
     </>
