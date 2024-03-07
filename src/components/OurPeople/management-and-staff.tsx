@@ -3,7 +3,7 @@ import Portrait from "./portrait";
 export default function ManagementAndStaff() {
   return (
     <>
-    <div className = "flex justify-center gap-10">
+    <div className = "flex justify-center gap-10 mb-10">
     <div className="pt-5 md:px-20" style = {{maxWidth : "2000px"}}>
         <p className="px-16 py-16 text-center text-2xl font-semibold">
           Management and Staff
