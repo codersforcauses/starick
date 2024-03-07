@@ -11,13 +11,17 @@ export default function Portrait({ name, position, info, imagePath}: PortraitInf
   return (
     <>
       <div>
-        <div className="flex justify-center">
-          <img src={imagePath} alt={name} className="h-40 w-auto overflow-hidden mb-5 rounded-full"/>
+        {/* Image container */}
+        <div className="flex justify-center ">
+          <img src={imagePath} alt={name} className="w-60 h-60 object-cover"/>
         </div>
-        {/*Set the minimum height to fit the content space required*/}
-        <div className="min-h-min-content h-40 w-auto px-2">
-          <p className="font-semibold text-2xl flex justify-center w-auto">{name}</p>
-          <p className="pt-1 flex justify-center w-auto">{position}</p>
+
+        {/* Text box container */}
+        <div className = "flex justify-center">
+        <div className="h-36 w-60 px-2 bg-starick-green text-white p-5">
+          <p className="font-semibold text-2xl pb-2">{name}</p>
+          <p>{position}</p>
+        </div>
         </div>
       </div>
     </>

@@ -3,11 +3,12 @@ import Portrait from "./portrait";
 export default function ManagementAndStaff() {
   return (
     <>
-      <div className="pt-5 md:px-20">
+    <div className = "flex justify-center gap-10 mb-10">
+    <div className="pt-5 md:px-20" style = {{maxWidth : "2000px"}}>
         <p className="px-16 py-16 text-center text-2xl font-semibold">
           Management and Staff
         </p>
-        <div className="grid grid-cols-3 justify-center items-center">
+        <div className="grid grid-cols-4 gap-6 justify-center items-center mb-5">
           <Portrait
             name="Leanne"
             position="Chief Executive Officer"
@@ -56,23 +57,24 @@ export default function ManagementAndStaff() {
             imagePath="/images/our-people/Elena.jpg"
             info="blah"
           />
-          <Portrait
-            name="Fei"
-            position="Children's Advocate"
-            imagePath="/images/our-people/Fei.jpg"
-            info="blah"
-          />
         </div>
-        <div>
-          {/*Added last to conditionally render if should be in the middle at the end*/}
+        <div className = "flex -row justify-center gap-6">
+          <Portrait
+              name="Fei"
+              position="Children's Advocate"
+              imagePath="/images/our-people/Fei.jpg"
+              info="blah"
+            />
           <Portrait
               name="Sandie"
               position="Volunteer Op Shop Manager"
               imagePath="/images/our-people/Sandie.jpg"
-              info="last"
+              info="blah"
             />
         </div>
       </div>
+    </div>
+      
     </>
   );
 }
