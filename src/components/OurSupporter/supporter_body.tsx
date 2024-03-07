@@ -1,7 +1,7 @@
 export default function Body(){
     return (
         <>
-        <div>
+        <div className = "mb-10">
             <div className = "grid grid-cols-2">
                 <div className="our_partners bg-starick-olive flex justify-center items-center">
                     <p className="font-semibold text-xl ml-48">Our Partners in Service Delivery</p>
