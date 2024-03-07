@@ -3,7 +3,6 @@ import Link from "next/link";
 
 import Carousel from "@/components/Home/carousel/carousel";
 import carousel_list from "@/components/Home/carousel/carousel_list.json";
-
 import FacebookFeed from "@/components/social-media-feed";
 
 import CrisisAlert from "~/icons/crisis_alert.svg";
@@ -25,7 +24,7 @@ export default function Home() {
             height="0"
             className="w-25 h-30 mt-1"
           />
-          <div className="absolute top-0  z-10 flex justify-center bg-black bg-opacity-40 p-24 text-white">
+          <div className="z-2 absolute  top-0 flex justify-center bg-black bg-opacity-40 p-24 text-white">
             <div className="mx-10 mb-10 text-center text-6xl font-bold">
               <p>Domestic Violence Support & Services for Women and Children</p>
               <p className="mt-10 justify-center text-xl  font-semibold hover:text-starick-green">
@@ -109,7 +108,7 @@ export default function Home() {
             ></div>
           </div>
 
-          <div className="starick-brown-line"></div>
+          <div className="starick-brown-line mt-5"></div>
           <div className="service-link">
             <Link href="/core-services#Counselling%20Services">
               <span className="service-item ml-10 mt-5 hover:text-starick-green">
@@ -299,17 +298,17 @@ export default function Home() {
           />
         </div>
         <div className="justify-items-left grid bg-starick-green text-left">
-          <p className=" mr-12 mt-10 text-6xl text-white">Op Shop</p>
-          <p className="text-centre mr-24 text-3xl text-white">
+          <p className=" mr-12 mt-5 text-6xl text-white">Op Shop</p>
+          <p className="text-centre mr-24 text-xl text-white">
             Give women and children a second chance through giving our wonderful
             shop items a second chance
+            <Link
+              href="./donations"
+              className="absolute mt-12 flex rounded-lg bg-starick-orange px-6 py-3 font-semibold text-white transition-colors duration-300 hover:bg-starick-brown"
+            >
+              Through to Op-shop
+            </Link>
           </p>
-          <Link
-            href="./donations"
-            className="absolute mt-96 flex rounded-lg bg-starick-orange px-6 py-3 font-semibold text-white transition-colors duration-300 hover:bg-starick-brown"
-          >
-            Through to Op-shop
-          </Link>
         </div>
       </div>
 
