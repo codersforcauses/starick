@@ -208,8 +208,9 @@ export default function Home() {
           </p>
           <div className="mx-5 mb-10 mt-5">
             <Link href="/other-services#WA%20Respectful%20Relationships%20Teaching%20Support%20Program">
-              <span className="service-item text-white hover:text-starick-olive flex justify-between" style ={{width :"88%"}}>
-                WA Respectful Relationships Teaching Support Program <span className ="bg-starick-white text-black px-1.5 mr-2">&gt;</span>
+            <span className="service-item mt-5 text-white hover:text-starick-olive flex justify-between items-center" style ={{width :"88%"}}>
+              <span className ="flex items-center"><img className ="rounded-full h-10 w-10 mr-5" src ="./images/Group.jpg"/>WA Respectful Relationships Teaching Support <br/> Program</span>
+              <span className ="bg-starick-white text-black px-1.5 mr-2" style ={{height : "50%"}}>&gt;</span>
               </span>
             </Link>
             <div
@@ -221,8 +222,9 @@ export default function Home() {
               }}
             ></div>
             <Link href="/other-services#Our%20Work%20with%20Children%20and%20Young%20People">
-              <span className="service-item mt-5 text-white hover:text-starick-olive flex justify-between" style ={{width :"88%"}}>
-                Our Work With Children and Young People <span className ="bg-starick-white text-black px-1.5 mr-2">&gt;</span>
+              <span className="service-item mt-5 text-white hover:text-starick-olive flex justify-between items-center" style ={{width :"88%"}}>
+              <span className ="flex items-center"><img className ="rounded-full h-10 w-10 mr-5" src ="./images/Group.jpg"/>Our Work With Children and Young People</span>
+              <span className ="bg-starick-white text-black px-1.5 mr-2" style ={{height : "50%"}}>&gt;</span>
               </span>
             </Link>
             <div
@@ -234,8 +236,9 @@ export default function Home() {
               }}
             ></div>
             <Link href="/other-services#Workplace%20Awareness ">
-              <span className="service-item mt-5 text-white hover:text-starick-olive flex justify-between" style ={{width :"88%"}}>
-                Workplace Awareness <span className ="bg-starick-white text-black px-1.5 mr-2">&gt;</span>
+            <span className="service-item mt-5 text-white hover:text-starick-olive flex justify-between items-center" style ={{width :"88%"}}>
+              <span className ="flex items-center"><img className ="rounded-full h-10 w-10 mr-5" src ="./images/Group.jpg"/>Workplace Awareness</span>
+              <span className ="bg-starick-white text-black px-1.5 mr-2" style ={{height : "50%"}}>&gt;</span>
               </span>
             </Link>
             <div
@@ -247,8 +250,9 @@ export default function Home() {
               }}
             ></div>
             <Link href="/other-services#Health%20and%20Wellbeing">
-              <span className="service-item mt-5 text-white hover:text-starick-olive  flex justify-between" style ={{width :"88%"}}>
-                Health and Wellbeing <span className ="bg-starick-white text-black px-1.5 mr-2">&gt;</span>
+            <span className="service-item mt-5 text-white hover:text-starick-olive flex justify-between items-center" style ={{width :"88%"}}>
+              <span className ="flex items-center"><img className ="rounded-full h-10 w-10 mr-5" src ="./images/Group.jpg"/>Health and Wellbeing</span>
+              <span className ="bg-starick-white text-black px-1.5 mr-2" style ={{height : "50%"}}>&gt;</span>
               </span>
             </Link>
             <div
@@ -260,10 +264,12 @@ export default function Home() {
               }}
             ></div>
             <Link href="other-services">
-              <span className="service-item mt-5  text-white hover:text-starick-olive flex justify-between" style ={{width :"88%"}}>
+              <span className="service-item mt-5 text-white hover:text-starick-olive flex justify-between items-center" style ={{width :"88%"}}>
+              <span className ="flex items-center"><img className ="rounded-full h-10 w-10 mr-5" src ="./images/Group.jpg"/>                
                 Thriving Through Connections - 
                 <br/>Supporting Young People Aged
-                11-17 years <span className ="bg-starick-white text-black px-1.5 mr-2 mt-3" style ={{height : "50%"}}>&gt;</span>
+                11-17 years </span>
+              <span className ="bg-starick-white text-black px-1.5 mr-2" style ={{height : "50%"}}>&gt;</span>
               </span>
             </Link>
           </div>
@@ -288,42 +294,43 @@ export default function Home() {
         height="0"
         className="w-full object-cover" 
       />
-      <div className="grid justify-items-center gap-6 bg-starick-brown px-16 py-16 font-semibold text-white">
-        <p className="text-center text-2xl">Make a Donation</p>
-        <p>
-          Help us support women and children being actively affected by domestic
-          violence.
-        </p>
-        <Link
-          href="./donations"
-          className="rounded-lg bg-starick-orange px-6 py-3 font-semibold text-white transition-colors duration-300 hover:bg-starick-green"
-        >
-          Donate Now
-        </Link>
+      <div className = "text-white">
+        <PageHeader
+          titleText="Make a Donation"
+          subtitleText="Donate to Starick to help us support women and children escaping domestic and family violence"
+          backgroundColor="starick-brown"
+          buttonHref="./donations"
+          buttonText="Donate"
+        />
       </div>
 
-      <div className="z-2 flex  bg-starick-green text-left font-semibold">
-        <div className="flex items-center">
+      <div className="z-2 flex bg-starick-green">
           <Image
             src={Gridpic1}
             alt="description"
             width="0"
             height="0"
-            className="mr-2 w-3/4 "
+            className="w-2/4"
           />
-        </div>
-        <div className="justify-items-left grid bg-starick-green text-left">
-          <p className=" mr-12 mt-5 text-6xl text-white">Op Shop</p>
-          <p className="text-centre mr-24 text-xl text-white">
-            Give women and children a second chance through giving our wonderful
-            shop items a second chance
+        <div className="bg-starick-green text-white">
+          <p className="text-2xl text-center my-7">Op Shop</p>
+          <div className = "p-8">
+            <p className="text-start text-l mb-5">
+              Give women and children a second chance through giving our wonderful
+              shop items a second chance
+            </p>
+            <p className = "text-l">
+            The op shop is operated and run by hard-working, dedicated volunteers, and proceeds from sales of discounted clothing, toys, bedding, household goods and more support Starick's services.
+            </p> 
+            <div className = "text-center flex justify-center">
             <Link
-              href="./donations"
-              className="absolute mt-12 flex rounded-lg bg-starick-orange px-6 py-3 font-semibold text-white transition-colors duration-300 hover:bg-starick-brown"
+                href="./donations"
+                className = "mt-10"
             >
-              Through to Op-shop
+            <span><span className ="bg-starick-white text-black px-1.5 mr-2">&gt;</span>More Info</span>
             </Link>
-          </p>
+            </div>
+          </div>
         </div>
       </div>
 
