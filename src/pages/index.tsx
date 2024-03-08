@@ -98,13 +98,13 @@ export default function Home() {
       <div className="flex ">
         {/* Left side: Image */}
         <div className="relative w-1/2">
-          <div className="relative">
+          <div className="relative h-full w-full object-cover">
             <Image
               src={Gridpic2}
               alt="description"
               width="0"
               height="0"
-              className="w-50 h-auto"
+              className="h-full w-full object-cover"
             />
           </div>
         </div>
@@ -118,8 +118,9 @@ export default function Home() {
           <div className="service-link">
             <p className="service-item ml-10 mt-5 hover:text-starick-green">
               <Link href="/core-services#Counselling%20Services">
-                <span className="service-item text-starick-brown hover:text-starick-green flex justify-between" style ={{width :"94%"}}>
-                  Counselling Services <span className ="bg-starick-green text-white px-1.5 mr-2">&gt;</span>
+                <span className="service-item text-starick-brown hover:text-starick-green flex justify-between items-center" style ={{width :"94%"}}>
+                  <span className ="flex items-center"><img className ="rounded-full h-10 w-10 mr-5" src ="./images/Group.jpg"/>Counselling Services</span>
+                  <span className ="bg-starick-green text-white px-1.5 mr-2" style={{height : "50%"}}>&gt;</span>
                 </span>
               </Link>
             </p>
@@ -136,8 +137,9 @@ export default function Home() {
           <div className="starick-brown-line mt-5"></div>
           <div className="service-link">
             <Link href="/core-services#Counselling%20Services" >
-              <span className="service-item ml-10 mt-5 hover:text-starick-green flex justify-between" style ={{width :"88%"}}>
-                Transitional Housing <span className ="bg-starick-green text-white px-1.5 mr-2">&gt;</span>
+              <span className="service-item ml-10 mt-5 hover:text-starick-green flex justify-between items-center" style ={{width :"88%"}}>
+              <span className ="flex items-center"><img className ="rounded-full h-10 w-10 mr-5" src ="./images/Group.jpg"/>Transitional Housing</span>
+              <span className ="bg-starick-green text-white px-1.5 mr-2" style={{height : "50%"}}>&gt;</span>
               </span>
             </Link>
             <div
@@ -153,8 +155,9 @@ export default function Home() {
           <div className="brown-line mb-5"></div>
           <div className="service-link">
             <Link href="/core-services#Refugees">
-              <span className="service-item ml-10 mt-5 hover:text-starick-green flex justify-between" style ={{width :"88%"}}>
-                Two Refuges <span className ="bg-starick-green text-white px-1.5 mr-2">&gt;</span>
+            <span className="service-item ml-10 mt-5 hover:text-starick-green flex justify-between items-center" style ={{width :"88%"}}>
+              <span className ="flex items-center"><img className ="rounded-full h-10 w-10 mr-5" src ="./images/Group.jpg"/>Two Refugees</span>
+              <span className ="bg-starick-green text-white px-1.5 mr-2" style={{height : "50%"}}>&gt;</span>
               </span>
             </Link>
             <div
@@ -170,8 +173,9 @@ export default function Home() {
           <div className="brown-line mb-5"></div>
           <div className="service-link">
             <Link href="/core-services#Transitional%20Housing">
-              <span className="service-item ml-10 mt-5 hover:text-starick-green flex justify-between" style ={{width :"88%"}}>
-                Support in Police Stations <span className ="bg-starick-green text-white px-1.5 mr-2">&gt;</span>
+            <span className="service-item ml-10 mt-5 hover:text-starick-green flex justify-between items-center" style ={{width :"88%"}}>
+              <span className ="flex items-center"><img className ="rounded-full h-10 w-10 mr-5" src ="./images/Group.jpg"/>Support in Police Stations</span>
+              <span className ="bg-starick-green text-white px-1.5 mr-2" style={{height : "50%"}}>&gt;</span>
               </span>
             </Link>
             <div
@@ -185,10 +189,11 @@ export default function Home() {
           </div>
 
           <div className="brown-line mb-5"></div>
-          <div className="service-link">
+          <div className="service-link mb-5">
             <Link href="/core-services#Safe%20at%20Home%20Program">
-              <span className="service-item ml-10 mt-5 hover:text-starick-green flex justify-between" style ={{width :"88%"}}>
-                Safe at Home Program <span className ="bg-starick-green text-white px-1.5 mr-2">&gt;</span>
+            <span className="service-item ml-10 mt-5 hover:text-starick-green flex justify-between items-center" style ={{width :"88%"}}>
+              <span className ="flex items-center"><img className ="rounded-full h-10 w-10 mr-5" src ="./images/Group.jpg"/>Safe at Home Program</span>
+              <span className ="bg-starick-green text-white px-1.5 mr-2" style={{height : "50%"}}>&gt;</span>
               </span>
             </Link>
           </div>
