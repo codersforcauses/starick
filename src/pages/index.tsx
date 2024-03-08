@@ -4,6 +4,7 @@ import Link from "next/link";
 import Carousel from "@/components/Home/carousel/carousel";
 import carousel_list from "@/components/Home/carousel/carousel_list.json";
 import FacebookFeed from "@/components/social-media-feed";
+import PageHeader from "@/components/page-header";
 
 import CrisisAlert from "~/icons/crisis_alert.svg";
 import Staricklogo from "~/icons/starick-logo.svg";
@@ -12,6 +13,7 @@ import Afterdidyouknow from "~/images/home/_MG_9261.jpg";
 import Gridpic2 from "~/images/home/_MG_9460.jpg";
 import Gridpic1 from "~/images/home/Starick-Op-Shop-Volunteers.jpg";
 import HomeTitle from "~/images/Parents-with-kids-graphic.png";
+import PageHeaderBigCircle from "@/components/page-header-bigcircle";
 export default function Home() {
   return (
     <>
@@ -24,10 +26,10 @@ export default function Home() {
             height="0"
             className="w-25 h-30 mt-1"
           />
-          <div className="z-2 absolute  top-0 flex justify-center bg-black bg-opacity-40 p-24 text-white">
-            <div className="mx-10 mb-10 text-center text-6xl font-bold">
-              <p>Domestic Violence Support & Services for Women and Children</p>
-              <div className = "flex justify-center w-auto mt-10 gap-10">
+          <div className="flex flex-col items-center z-2 absolute top-0 flex justify-center bg-black bg-opacity-40 p-24 text-white text-center" style ={{width : "100%", height : "100%"}}>
+              <p className= "text-3xl font-bold">Domestic Violence Support & Services for Women and Children</p>
+              <p className = "pt-8" style = {{width : "80%"}}>Starick is a charity supporting women and children escaping domestic and family violence. We work predominantly in Perth's south-eastern metropolitan region. Our vision is to build futures free from violence for the women and children who use our service and for the community as a whole.</p>
+              <div className = "flex justify-center mt-10 gap-10">
                 <span className="justify-center text-xl  font-semibold hover:text-starick-green">
                   <Link href="/about-us"><span className ="bg-white text-black px-1 mr-2 border-none">&gt;</span>Learn more about us</Link>
                 </span>
@@ -35,25 +37,46 @@ export default function Home() {
                   <Link href="/op-shop/donations"><span className ="bg-white text-black px-1 mr-2 border-none">&gt;</span>Donate Now</Link>
                 </p>
               </div>
-            </div>
           </div>
         </div>
       </div>
 
-      <div className="items-left relative flex bg-starick-olive py-10 pl-8 font-bold text-starick-brown">
-        <Image
+      <div className = "flex flex-row items-center bg-starick-orange">
+        <div>
+          <Image
           src={CrisisAlert}
-          alt="crisis alert sign"
-          width="0"
-          height="0"
-          className="z-2 absolute left-20 top-20 h-40 w-20 -translate-x-1/2 -translate-y-1/2 transform pb-10"
-        />
+          alt="Crisis Alert Icon"
+          className = "m-5"
+          />
+        </div>
+        <div className = "">
+          <p className="h-auto">
+            If you need urgent help, call Crisis Care: (08) 9223 1111 or Country
+            Freecall: 1800 199 008 <br/>
+            If you are in immediate physical danger, call Police: 000
+          </p>
+        </div>
+      </div>
 
-        <p className="mx-36 flex justify-center">
-          If you need urgent help, call Crisis Care: (08) 9223 1111 or Country
-          Freecall: 1800 199 008 <br />
-          If you are in immediate physical danger, call Police: 000
-        </p>
+
+      <div className="grid justify-items-center font-semibold text-starick-brown h-64 w-full">
+        <PageHeaderBigCircle
+          titleText="Did you know?"
+          subtitleText={["One woman dies every week in Australia as a result of domestic and family violence", "1.6 million women in Australia have experienced some form of domestic or family violence", "Escaping domestic or family violence is a major contributor to homelessness among women and children"]}
+          subtitleElement={
+          //   <Link
+          //   href="./what-is-domestic-violence"
+          //   className="rounded-lg bg-starick-brown px-6 py-3 font-semibold text-white transition-colors duration-300 hover:bg-starick-orange"
+          // >
+          //   Learn more about domestic violence
+          // </Link>
+          <Link href="./what-is-domestic-violence" >
+            <span className="service-item mt-5 hover:text-starick-green mb-5">
+            <span className ="bg-starick-green text-white px-1.5 pb-1 mr-2 mb-5">&gt;</span> What is domestic violence?
+            </span>
+          </Link>
+          }
+        />
       </div>
 
       <div className="flex items-center pb-20 pt-20">
@@ -253,22 +276,6 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="grid justify-items-center gap-6 px-16 py-16 font-semibold text-starick-brown">
-        <p className="text-center text-2xl">Did you know?</p>
-        <p>
-          One woman dies every week in Australia as a result of domestic and
-          family violence. 1.6 million women in Australia have experienced some
-          form of domestic or family violence. Escaping domestic or family
-          violence is a major contributor to homelessness among women and
-          children.
-        </p>
-        <Link
-          href="./what-is-domestic-violence"
-          className="rounded-lg bg-starick-brown px-6 py-3 font-semibold text-white transition-colors duration-300 hover:bg-starick-orange"
-        >
-          Learn more about domestic violence
-        </Link>
-      </div>
       <Image
         src={Opshoppic}
         alt="description"
