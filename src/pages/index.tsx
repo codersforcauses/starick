@@ -20,13 +20,16 @@ import { getWordpress } from "@/utils/utils";
 import FillerImage1 from "~/images/starick-image1.jpg";
 
 export default function Home({ data }: { data: any }) {
-  const homeData = data[0];
+  const index_title = data[0]["acf"]["index_title"];
+  const index_title_span = data[0]["acf"]["index_title_span"]
+  const index_supporting = data[0]["acf"]["index_supporting"]
+  const index_one = data[0]["acf"]["index_one"]
   return (
     <>
       <div className="relative">
         <p
           className="bottom-15 left absolute left-20 top-20 w-2/5 text-7xl font-bold text-white"
-          dangerouslySetInnerHTML={{ __html: homeData["acf"]["index_title"] }}
+          dangerouslySetInnerHTML={{ __html: index_title }}
         >
           {/*Domestic Violence Support & Services for Women and Children*/}
         </p>
@@ -57,13 +60,13 @@ export default function Home({ data }: { data: any }) {
           height="0"
           className="z-2 absolute right-96 top-20 h-40 w-20 -translate-y-1/2 translate-x-1/2 transform"
         />
-        <p>
-          For urgent help call: <br />
-          Crisis Care:(08) 9223 1111 <br />
-          or <br />
-          Country Freecall: 1800 199 008 <br />
-          <br />
-          If you are in immediate physical danger call Police: 000
+        <p dangerouslySetInnerHTML={{ __html: index_title_span }}>
+          {/*For urgent help call: <br />*/}
+          {/*Crisis Care:(08) 9223 1111 <br />*/}
+          {/*or <br />*/}
+          {/*Country Freecall: 1800 199 008 <br />*/}
+          {/*<br />*/}
+          {/*If you are in immediate physical danger call Police: 000*/}
         </p>
       </div>
 
@@ -79,7 +82,7 @@ export default function Home({ data }: { data: any }) {
         <p
           className=" white-space-normal mx-36 ml-auto w-1/3 text-right  text-2xl font-semibold text-starick-brown"
           dangerouslySetInnerHTML={{
-            __html: homeData["acf"]["index_supporting"]
+            __html: index_supporting
           }}
         >
           {/*Supporting women and children escaping domestic and family violence. We work predominantly in Perth's south-eastern metropolitan region and our vision is to build futures free from violence for the women and children the community as a whole.*/}
@@ -161,7 +164,7 @@ export default function Home({ data }: { data: any }) {
 
       <div className="grid justify-items-center gap-5 px-10 py-10 font-semibold text-starick-black">
         <p className="text-center text-2xl">Did you know?</p>
-        <p dangerouslySetInnerHTML={{ __html: homeData["acf"]["index_one"] }}>
+        <p dangerouslySetInnerHTML={{ __html: index_one }}>
           {/*One woman dies every week in Australia as a result of domestic and*/}
           {/*family violence. 1.6 million women in Australia have experienced some*/}
           {/*form of domestic or family violence. Escaping domestic or family*/}
