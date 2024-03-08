@@ -7,12 +7,12 @@ export default function Body(){
                     <p className="font-semibold text-xl ml-48">Our Partners in Service Delivery</p>
                 </div>
                 <div className = "image flex justify-center">
-                    <img src = "./placeholder_starick_logo.png" /> 
+                    <img src = "./images/home/_MG_9216.jpg" /> 
                 </div>
             </div>
             <div className = "access_housing flex justify-center items-center">
                 <div className = "image mr-5">
-                    <img className = "h-32 w-32" src = "./images/health.png"/>
+                    <img className = "h-32 w-32" src = "./images/home/two-refuges.png"/>
                 </div>
                 <div className = "body-text w-auto py-10 pl-10 my-3" style ={{maxWidth : "700px"}}>
                 <p>
@@ -29,7 +29,7 @@ export default function Body(){
             </div>
             <div className = "donors grid grid-cols-2 mb-10">
                 <div className = "flex justify-center">
-                    <img src = "./placeholder_starick_logo.png"/>
+                    <img src = "./images/home/_MG_9222.jpg"/>
                 </div>
                 <div className = "flex justify-center bg-starick-green text-white items-center">
                     <p className = "font-semibold text-xl mr-48">Major Donors and Supporters</p>
