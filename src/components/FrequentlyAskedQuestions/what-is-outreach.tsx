@@ -1,9 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
-import SubSection from "../Services/subsection";
-import ServicesSection from "../Services/services-section";
-import { List } from "../Services/list";
 import Link from "next/link";
+
+import { List } from "../Services/list";
+import ServicesSection from "../Services/services-section";
+import SubSection from "../Services/subsection";
 
 export default function WhatIsOutreachSection() {
   const WhereStarickHelpsExample = (
@@ -46,7 +47,7 @@ export default function WhatIsOutreachSection() {
         {WhereStarickHelpsExample}
         <br />
         <p>
-          Information about these services can be found on the {""}
+          Information about these services can be found on the 
           <Link className="underline" href="pages/core-services">
             core services
           </Link>{" "}

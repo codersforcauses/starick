@@ -1,5 +1,5 @@
-import SubSection from "../Services/subsection";
 import ServicesSection from "../Services/services-section";
+import SubSection from "../Services/subsection";
 
 export default function WhatisDomesticViolenceSection() {
   const subBody = (

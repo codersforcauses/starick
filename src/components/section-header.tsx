@@ -36,7 +36,7 @@ export default function SectionHeader({
     </div>
   );
   return (
-    <div className={`grid h-44 grid-cols-2`}>
+    <div className="grid h-44 grid-cols-2">
       {textSection}
       {imageSection}
     </div>

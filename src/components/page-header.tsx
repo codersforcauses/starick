@@ -1,13 +1,13 @@
-import Image from "next/image";
 import { ReactNode } from "react";
+import Image from "next/image";
 import Link from "next/link";
 interface PageHeaderProps {
   titleText: string;
   subtitleText?: string;
-  backgroundColor ?: string;
+  backgroundColor?: string;
   subtitleElement?: ReactNode;
-  buttonText ?: string;
-  buttonHref ?: string;
+  buttonText?: string;
+  buttonHref?: string;
 }
 
 export default function PageHeader({
@@ -21,7 +21,9 @@ export default function PageHeader({
   return (
     <>
       <div
-        className={`relative flex flex-col items-center justify-center text-center ${backgroundColor ? `bg-${backgroundColor} p-10`: "bg-white"}`}
+        className={`relative flex flex-col items-center justify-center text-center ${
+          backgroundColor ? `bg-${backgroundColor} p-10` : "bg-white"
+        }`}
         style={{ minHeight: "160px" }}
       >
         <Image
@@ -41,20 +43,21 @@ export default function PageHeader({
           className="absolute inset-y-0 right-0 hidden h-full w-auto rotate-180 md:block"
         />
         <div className="z-10 px-2 py-6 md:px-10">
-          <p className="text-2xl font-bold mb-7">{titleText}</p>
+          <p className="mb-7 text-2xl font-bold">{titleText}</p>
           {subtitleText ? (
-            <p className="text-center text-m mb-10">{subtitleText}</p>
+            <p className="text-m mb-10 text-center">{subtitleText}</p>
           ) : null}
           {subtitleElement}
-          {buttonHref && buttonText ? 
-          <Link
-            href={buttonHref}
-          >
-            <span><span className ="bg-starick-white text-black px-1.5 mr-2">&gt;</span>{buttonText}</span>
-          </Link>
-          :
-          null
-          }
+          {buttonHref && buttonText ? (
+            <Link href={buttonHref}>
+              <span>
+                <span className="mr-2 bg-starick-white px-1.5 text-black">
+                  &gt;
+                </span>
+                {buttonText}
+              </span>
+            </Link>
+          ) : null}
         </div>
       </div>
     </>

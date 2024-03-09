@@ -26,49 +26,72 @@ export default function Home() {
             height="0"
             className="w-25 h-30 mt-1"
           />
-          <div className="flex flex-col items-center z-2 absolute top-0 flex justify-center bg-black bg-opacity-40 p-24 text-white text-center" style ={{width : "100%", height : "100%"}}>
-              <p className= "text-3xl font-bold">Domestic Violence Support & Services for Women and Children</p>
-              <p className = "pt-8" style = {{width : "80%"}}>Starick is a charity supporting women and children escaping domestic and family violence. We work predominantly in Perth's south-eastern metropolitan region. Our vision is to build futures free from violence for the women and children who use our service and for the community as a whole.</p>
-              <div className = "flex justify-center mt-10 gap-10">
-                <span className="justify-center text-xl  font-semibold hover:text-starick-green">
-                  <Link href="/about-us"><span className ="bg-white text-black px-1 mr-2 border-none">&gt;</span>Learn more about us</Link>
-                </span>
-                <p className="justify-center text-xl  font-semibold hover:text-starick-green">
-                  <Link href="/op-shop/donations"><span className ="bg-white text-black px-1 mr-2 border-none">&gt;</span>Donate Now</Link>
-                </p>
-              </div>
+          <div
+            className="z-2 absolute top-0 flex flex flex-col items-center justify-center bg-black bg-opacity-40 p-24 text-center text-white"
+            style={{ width: "100%", height: "100%" }}
+          >
+            <p className="text-3xl font-bold">
+              Domestic Violence Support & Services for Women and Children
+            </p>
+            <p className="pt-8" style={{ width: "80%" }}>
+              Starick is a charity supporting women and children escaping
+              domestic and family violence. We work predominantly in Perth's
+              south-eastern metropolitan region. Our vision is to build futures
+              free from violence for the women and children who use our service
+              and for the community as a whole.
+            </p>
+            <div className="mt-10 flex justify-center gap-10">
+              <span className="justify-center text-xl  font-semibold hover:text-starick-green">
+                <Link href="/about-us">
+                  <span className="mr-2 border-none bg-white px-1 text-black">
+                    &gt;
+                  </span>
+                  Learn more about us
+                </Link>
+              </span>
+              <p className="justify-center text-xl  font-semibold hover:text-starick-green">
+                <Link href="/op-shop/donations">
+                  <span className="mr-2 border-none bg-white px-1 text-black">
+                    &gt;
+                  </span>
+                  Donate Now
+                </Link>
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className = "flex flex-row items-center bg-starick-orange">
+      <div className="flex flex-row items-center bg-starick-orange">
         <div>
-          <Image
-          src={CrisisAlert}
-          alt="Crisis Alert Icon"
-          className = "m-5"
-          />
+          <Image src={CrisisAlert} alt="Crisis Alert Icon" className="m-5" />
         </div>
-        <div className = "">
+        <div className="">
           <p className="h-auto">
             If you need urgent help, call Crisis Care: (08) 9223 1111 or Country
-            Freecall: 1800 199 008 <br/>
+            Freecall: 1800 199 008 <br />
             If you are in immediate physical danger, call Police: 000
           </p>
         </div>
       </div>
 
-
-      <div className="grid justify-items-center font-semibold text-starick-brown h-96 w-full">
+      <div className="grid h-96 w-full justify-items-center font-semibold text-starick-brown">
         <PageHeaderBigCircle
           titleText="Did you know?"
-          subtitleText={["One woman dies every week in Australia as a result of domestic and family violence", "1.6 million women in Australia have experienced some form of domestic or family violence", "Escaping domestic or family violence is a major contributor to homelessness among women and children"]}
+          subtitleText={[
+            "One woman dies every week in Australia as a result of domestic and family violence",
+            "1.6 million women in Australia have experienced some form of domestic or family violence",
+            "Escaping domestic or family violence is a major contributor to homelessness among women and children"
+          ]}
           subtitleElement={
-          <Link href="./what-is-domestic-violence" >
-            <span className="service-item mt-5 hover:text-starick-green mb-5">
-            <span className ="bg-starick-green text-white px-1.5 pb-1 mr-2 mb-10">&gt;</span> What is domestic violence?
-            </span>
-          </Link>
+            <Link href="./what-is-domestic-violence">
+              <span className="service-item mb-5 mt-5 hover:text-starick-green">
+                <span className="mb-10 mr-2 bg-starick-green px-1.5 pb-1 text-white">
+                  &gt;
+                </span>{" "}
+                What is domestic violence?
+              </span>
+            </Link>
           }
           socialMedia={false}
         />
@@ -97,28 +120,56 @@ export default function Home() {
           <div className="service-link">
             <p className="service-item ml-10 mt-5 hover:text-starick-green">
               <Link href="/core-services#Counselling%20Services">
-                <span className="service-item text-starick-brown hover:text-starick-green flex justify-between items-center" style ={{width :"94%"}}>
-                  <span className ="flex items-center"><img className ="rounded-full h-10 w-10 mr-5" src ="./images/Group.jpg"/>Counselling Services</span>
-                  <span className ="bg-starick-green text-white px-1.5 mr-2" style={{height : "50%"}}>&gt;</span>
+                <span
+                  className="service-item flex items-center justify-between text-starick-brown hover:text-starick-green"
+                  style={{ width: "94%" }}
+                >
+                  <span className="flex items-center">
+                    <img
+                      className="mr-5 h-10 w-10 rounded-full"
+                      src="./images/Group.jpg"
+                    />
+                    Counselling Services
+                  </span>
+                  <span
+                    className="mr-2 bg-starick-green px-1.5 text-white"
+                    style={{ height: "50%" }}
+                  >
+                    &gt;
+                  </span>
                 </span>
               </Link>
             </p>
           </div>
           <div
-              className="brown-line ml-10 mt-5"
-              style={{
-                width: "90%",
-                height: "1px",
-                backgroundColor: "#738e4b"
-              }}
-            ></div>
+            className="brown-line ml-10 mt-5"
+            style={{
+              width: "90%",
+              height: "1px",
+              backgroundColor: "#738e4b"
+            }}
+          ></div>
 
           <div className="starick-brown-line mt-5"></div>
           <div className="service-link">
-            <Link href="/core-services#Counselling%20Services" >
-              <span className="service-item ml-10 mt-5 hover:text-starick-green flex justify-between items-center" style ={{width :"88%"}}>
-              <span className ="flex items-center"><img className ="rounded-full h-10 w-10 mr-5" src ="./images/Group.jpg"/>Transitional Housing</span>
-              <span className ="bg-starick-green text-white px-1.5 mr-2" style={{height : "50%"}}>&gt;</span>
+            <Link href="/core-services#Counselling%20Services">
+              <span
+                className="service-item ml-10 mt-5 flex items-center justify-between hover:text-starick-green"
+                style={{ width: "88%" }}
+              >
+                <span className="flex items-center">
+                  <img
+                    className="mr-5 h-10 w-10 rounded-full"
+                    src="./images/Group.jpg"
+                  />
+                  Transitional Housing
+                </span>
+                <span
+                  className="mr-2 bg-starick-green px-1.5 text-white"
+                  style={{ height: "50%" }}
+                >
+                  &gt;
+                </span>
               </span>
             </Link>
             <div
@@ -134,9 +185,23 @@ export default function Home() {
           <div className="brown-line mb-5"></div>
           <div className="service-link">
             <Link href="/core-services#Refugees">
-            <span className="service-item ml-10 mt-5 hover:text-starick-green flex justify-between items-center" style ={{width :"88%"}}>
-              <span className ="flex items-center"><img className ="rounded-full h-10 w-10 mr-5" src ="./images/Group.jpg"/>Two Refugees</span>
-              <span className ="bg-starick-green text-white px-1.5 mr-2" style={{height : "50%"}}>&gt;</span>
+              <span
+                className="service-item ml-10 mt-5 flex items-center justify-between hover:text-starick-green"
+                style={{ width: "88%" }}
+              >
+                <span className="flex items-center">
+                  <img
+                    className="mr-5 h-10 w-10 rounded-full"
+                    src="./images/Group.jpg"
+                  />
+                  Two Refugees
+                </span>
+                <span
+                  className="mr-2 bg-starick-green px-1.5 text-white"
+                  style={{ height: "50%" }}
+                >
+                  &gt;
+                </span>
               </span>
             </Link>
             <div
@@ -152,9 +217,23 @@ export default function Home() {
           <div className="brown-line mb-5"></div>
           <div className="service-link">
             <Link href="/core-services#Transitional%20Housing">
-            <span className="service-item ml-10 mt-5 hover:text-starick-green flex justify-between items-center" style ={{width :"88%"}}>
-              <span className ="flex items-center"><img className ="rounded-full h-10 w-10 mr-5" src ="./images/Group.jpg"/>Support in Police Stations</span>
-              <span className ="bg-starick-green text-white px-1.5 mr-2" style={{height : "50%"}}>&gt;</span>
+              <span
+                className="service-item ml-10 mt-5 flex items-center justify-between hover:text-starick-green"
+                style={{ width: "88%" }}
+              >
+                <span className="flex items-center">
+                  <img
+                    className="mr-5 h-10 w-10 rounded-full"
+                    src="./images/Group.jpg"
+                  />
+                  Support in Police Stations
+                </span>
+                <span
+                  className="mr-2 bg-starick-green px-1.5 text-white"
+                  style={{ height: "50%" }}
+                >
+                  &gt;
+                </span>
               </span>
             </Link>
             <div
@@ -170,9 +249,23 @@ export default function Home() {
           <div className="brown-line mb-5"></div>
           <div className="service-link mb-5">
             <Link href="/core-services#Safe%20at%20Home%20Program">
-            <span className="service-item ml-10 mt-5 hover:text-starick-green flex justify-between items-center" style ={{width :"88%"}}>
-              <span className ="flex items-center"><img className ="rounded-full h-10 w-10 mr-5" src ="./images/Group.jpg"/>Safe at Home Program</span>
-              <span className ="bg-starick-green text-white px-1.5 mr-2" style={{height : "50%"}}>&gt;</span>
+              <span
+                className="service-item ml-10 mt-5 flex items-center justify-between hover:text-starick-green"
+                style={{ width: "88%" }}
+              >
+                <span className="flex items-center">
+                  <img
+                    className="mr-5 h-10 w-10 rounded-full"
+                    src="./images/Group.jpg"
+                  />
+                  Safe at Home Program
+                </span>
+                <span
+                  className="mr-2 bg-starick-green px-1.5 text-white"
+                  style={{ height: "50%" }}
+                >
+                  &gt;
+                </span>
               </span>
             </Link>
           </div>
@@ -187,9 +280,23 @@ export default function Home() {
           </p>
           <div className="mx-5 mb-10 mt-5">
             <Link href="/other-services#WA%20Respectful%20Relationships%20Teaching%20Support%20Program">
-            <span className="service-item mt-5 text-white hover:text-starick-olive flex justify-between items-center" style ={{width :"88%"}}>
-              <span className ="flex items-center"><img className ="rounded-full h-10 w-10 mr-5" src ="./images/Group.jpg"/>WA Respectful Relationships Teaching Support <br/> Program</span>
-              <span className ="bg-starick-white text-black px-1.5 mr-2" style ={{height : "50%"}}>&gt;</span>
+              <span
+                className="service-item mt-5 flex items-center justify-between text-white hover:text-starick-olive"
+                style={{ width: "88%" }}
+              >
+                <span className="flex items-center">
+                  <img
+                    className="mr-5 h-10 w-10 rounded-full"
+                    src="./images/Group.jpg"
+                  />
+                  WA Respectful Relationships Teaching Support <br /> Program
+                </span>
+                <span
+                  className="mr-2 bg-starick-white px-1.5 text-black"
+                  style={{ height: "50%" }}
+                >
+                  &gt;
+                </span>
               </span>
             </Link>
             <div
@@ -201,9 +308,23 @@ export default function Home() {
               }}
             ></div>
             <Link href="/other-services#Our%20Work%20with%20Children%20and%20Young%20People">
-              <span className="service-item mt-5 text-white hover:text-starick-olive flex justify-between items-center" style ={{width :"88%"}}>
-              <span className ="flex items-center"><img className ="rounded-full h-10 w-10 mr-5" src ="./images/Group.jpg"/>Our Work With Children and Young People</span>
-              <span className ="bg-starick-white text-black px-1.5 mr-2" style ={{height : "50%"}}>&gt;</span>
+              <span
+                className="service-item mt-5 flex items-center justify-between text-white hover:text-starick-olive"
+                style={{ width: "88%" }}
+              >
+                <span className="flex items-center">
+                  <img
+                    className="mr-5 h-10 w-10 rounded-full"
+                    src="./images/Group.jpg"
+                  />
+                  Our Work With Children and Young People
+                </span>
+                <span
+                  className="mr-2 bg-starick-white px-1.5 text-black"
+                  style={{ height: "50%" }}
+                >
+                  &gt;
+                </span>
               </span>
             </Link>
             <div
@@ -215,9 +336,23 @@ export default function Home() {
               }}
             ></div>
             <Link href="/other-services#Workplace%20Awareness ">
-            <span className="service-item mt-5 text-white hover:text-starick-olive flex justify-between items-center" style ={{width :"88%"}}>
-              <span className ="flex items-center"><img className ="rounded-full h-10 w-10 mr-5" src ="./images/Group.jpg"/>Workplace Awareness</span>
-              <span className ="bg-starick-white text-black px-1.5 mr-2" style ={{height : "50%"}}>&gt;</span>
+              <span
+                className="service-item mt-5 flex items-center justify-between text-white hover:text-starick-olive"
+                style={{ width: "88%" }}
+              >
+                <span className="flex items-center">
+                  <img
+                    className="mr-5 h-10 w-10 rounded-full"
+                    src="./images/Group.jpg"
+                  />
+                  Workplace Awareness
+                </span>
+                <span
+                  className="mr-2 bg-starick-white px-1.5 text-black"
+                  style={{ height: "50%" }}
+                >
+                  &gt;
+                </span>
               </span>
             </Link>
             <div
@@ -229,9 +364,23 @@ export default function Home() {
               }}
             ></div>
             <Link href="/other-services#Health%20and%20Wellbeing">
-            <span className="service-item mt-5 text-white hover:text-starick-olive flex justify-between items-center" style ={{width :"88%"}}>
-              <span className ="flex items-center"><img className ="rounded-full h-10 w-10 mr-5" src ="./images/Group.jpg"/>Health and Wellbeing</span>
-              <span className ="bg-starick-white text-black px-1.5 mr-2" style ={{height : "50%"}}>&gt;</span>
+              <span
+                className="service-item mt-5 flex items-center justify-between text-white hover:text-starick-olive"
+                style={{ width: "88%" }}
+              >
+                <span className="flex items-center">
+                  <img
+                    className="mr-5 h-10 w-10 rounded-full"
+                    src="./images/Group.jpg"
+                  />
+                  Health and Wellbeing
+                </span>
+                <span
+                  className="mr-2 bg-starick-white px-1.5 text-black"
+                  style={{ height: "50%" }}
+                >
+                  &gt;
+                </span>
               </span>
             </Link>
             <div
@@ -243,12 +392,25 @@ export default function Home() {
               }}
             ></div>
             <Link href="other-services">
-              <span className="service-item mt-5 text-white hover:text-starick-olive flex justify-between items-center" style ={{width :"88%"}}>
-              <span className ="flex items-center"><img className ="rounded-full h-10 w-10 mr-5" src ="./images/Group.jpg"/>                
-                Thriving Through Connections - 
-                <br/>Supporting Young People Aged
-                11-17 years </span>
-              <span className ="bg-starick-white text-black px-1.5 mr-2" style ={{height : "50%"}}>&gt;</span>
+              <span
+                className="service-item mt-5 flex items-center justify-between text-white hover:text-starick-olive"
+                style={{ width: "88%" }}
+              >
+                <span className="flex items-center">
+                  <img
+                    className="mr-5 h-10 w-10 rounded-full"
+                    src="./images/Group.jpg"
+                  />
+                  Thriving Through Connections -
+                  <br />
+                  Supporting Young People Aged 11-17 years{" "}
+                </span>
+                <span
+                  className="mr-2 bg-starick-white px-1.5 text-black"
+                  style={{ height: "50%" }}
+                >
+                  &gt;
+                </span>
               </span>
             </Link>
           </div>
@@ -261,7 +423,7 @@ export default function Home() {
             alt="image of starick people for home page"
             width="0"
             height="0"
-            className="w-full object-cover" 
+            className="w-full object-cover"
           />
         </div>
       </div>
@@ -271,9 +433,9 @@ export default function Home() {
         alt="description"
         width="0"
         height="0"
-        className="w-full object-cover" 
+        className="w-full object-cover"
       />
-      <div className = "text-white">
+      <div className="text-white">
         <PageHeader
           titleText="Make a Donation"
           subtitleText="Donate to Starick to help us support women and children escaping domestic and family violence"
@@ -284,30 +446,34 @@ export default function Home() {
       </div>
 
       <div className="z-2 flex bg-starick-green">
-          <Image
-            src={Gridpic1}
-            alt="description"
-            width="0"
-            height="0"
-            className="w-2/4"
-          />
+        <Image
+          src={Gridpic1}
+          alt="description"
+          width="0"
+          height="0"
+          className="w-2/4"
+        />
         <div className="bg-starick-green text-white">
-          <p className="text-2xl text-center my-7">Op Shop</p>
-          <div className = "p-8">
-            <p className="text-start text-l mb-5">
-              Give women and children a second chance through giving our wonderful
-              shop items a second chance
+          <p className="my-7 text-center text-2xl">Op Shop</p>
+          <div className="p-8">
+            <p className="text-l mb-5 text-start">
+              Give women and children a second chance through giving our
+              wonderful shop items a second chance
             </p>
-            <p className = "text-l">
-            The op shop is operated and run by hard-working, dedicated volunteers, and proceeds from sales of discounted clothing, toys, bedding, household goods and more support Starick's services.
-            </p> 
-            <div className = "text-center flex justify-center">
-            <Link
-                href="./donations"
-                className = "mt-10"
-            >
-            <span><span className ="bg-starick-white text-black px-1.5 mr-2">&gt;</span>More Info</span>
-            </Link>
+            <p className="text-l">
+              The op shop is operated and run by hard-working, dedicated
+              volunteers, and proceeds from sales of discounted clothing, toys,
+              bedding, household goods and more support Starick's services.
+            </p>
+            <div className="flex justify-center text-center">
+              <Link href="./donations" className="mt-10">
+                <span>
+                  <span className="mr-2 bg-starick-white px-1.5 text-black">
+                    &gt;
+                  </span>
+                  More Info
+                </span>
+              </Link>
             </div>
           </div>
         </div>
@@ -322,20 +488,19 @@ export default function Home() {
           socialMedia={true}
         />
       </div>
-      
-      <div className = "flex justify-center mt-10">
-      <div className = "flex flex-col">
-        <div className = "flex justify-center mt-10">
-          <p className = "text-2xl font-bold">Upcoming Events</p>
-        </div>
-        <div className = "flex justify-center">
-        <div className = "w-1/2">
-        <Carousel images={carousel_list} />
-        </div>
+
+      <div className="mt-10 flex justify-center">
+        <div className="flex flex-col">
+          <div className="mt-10 flex justify-center">
+            <p className="text-2xl font-bold">Upcoming Events</p>
+          </div>
+          <div className="flex justify-center">
+            <div className="w-1/2">
+              <Carousel images={carousel_list} />
+            </div>
+          </div>
         </div>
       </div>
-      </div>
-      
     </>
   );
 }
