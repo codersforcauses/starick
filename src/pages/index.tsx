@@ -35,10 +35,10 @@ export default function Home() {
             </p>
             <p className="pt-8" style={{ width: "80%" }}>
               Starick is a charity supporting women and children escaping
-              domestic and family violence. We work predominantly in Perth&rsquo;s
-              south-eastern metropolitan region. Our vision is to build futures
-              free from violence for the women and children who use our service
-              and for the community as a whole.
+              domestic and family violence. We work predominantly in
+              Perth&rsquo;s south-eastern metropolitan region. Our vision is to
+              build futures free from violence for the women and children who
+              use our service and for the community as a whole.
             </p>
             <div className="mt-10 flex justify-center gap-10">
               <span className="justify-center text-xl  font-semibold hover:text-starick-green">
@@ -473,7 +473,8 @@ export default function Home() {
             <p className="text-l">
               The op shop is operated and run by hard-working, dedicated
               volunteers, and proceeds from sales of discounted clothing, toys,
-              bedding, household goods and more support Starick&rsquo;s services.
+              bedding, household goods and more support Starick&rsquo;s
+              services.
             </p>
             <div className="flex justify-center text-center">
               <Link href="./donations" className="mt-10">
