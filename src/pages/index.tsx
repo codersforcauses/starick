@@ -26,19 +26,6 @@ export default function Home() {
             height="0"
             className="w-25 h-30 mt-1"
           />
-<<<<<<< HEAD
-          <div className="z-2 absolute  top-0 flex justify-center bg-black bg-opacity-40 p-24 text-white">
-            <div className="mx-10 mb-10 text-center text-6xl font-bold">
-              <p>Domestic Violence Support & Services for Women and Children</p>
-              <div className = "flex justify-center w-auto mt-10 gap-10">
-                <span className="justify-center text-xl  font-semibold hover:text-starick-green">
-                  <Link href="/about-us"><span className ="bg-white text-black px-1 mr-2 border-none">&gt;</span>Learn more about us</Link>
-                </span>
-                <p className="justify-center text-xl  font-semibold hover:text-starick-green">
-                  <Link href="/op-shop/donations"><span className ="bg-white text-black px-1 mr-2 border-none">&gt;</span>Donate Now</Link>
-                </p>
-              </div>
-=======
           <div
             className="z-2 absolute top-0 flex flex flex-col items-center justify-center bg-black bg-opacity-40 p-24 text-center text-white"
             style={{ width: "100%", height: "100%" }}
@@ -70,7 +57,6 @@ export default function Home() {
                   Donate Now
                 </Link>
               </p>
->>>>>>> 68efade9b17e9e612e1c44cb1426802cb05877e3
             </div>
           </div>
         </div>
@@ -134,10 +120,6 @@ export default function Home() {
           <div className="service-link">
             <p className="service-item mt-5 hover:text-starick-green">
               <Link href="/core-services#Counselling%20Services">
-<<<<<<< HEAD
-                <span className="service-item text-starick-brown hover:text-starick-green flex justify-between" style ={{width :"94%"}}>
-                  Counselling Services <span className ="bg-starick-green text-white px-1.5 mr-2">&gt;</span>
-=======
                 <span
                   className="service-item ml-10 mt-5 flex items-center justify-between hover:text-starick-green"
                   style={{ width: "85%" }}
@@ -156,27 +138,11 @@ export default function Home() {
                   >
                     &gt;
                   </span>
->>>>>>> 68efade9b17e9e612e1c44cb1426802cb05877e3
                 </span>
               </Link>
             </p>
           </div>
           <div
-<<<<<<< HEAD
-              className="brown-line ml-10 mt-5"
-              style={{
-                width: "90%",
-                height: "1px",
-                backgroundColor: "#738e4b"
-              }}
-            ></div>
-
-          <div className="starick-brown-line mt-5"></div>
-          <div className="service-link">
-            <Link href="/core-services#Counselling%20Services" >
-              <span className="service-item ml-10 mt-5 hover:text-starick-green flex justify-between" style ={{width :"88%"}}>
-                Transitional Housing <span className ="bg-starick-green text-white px-1.5 mr-2">&gt;</span>
-=======
             className="brown-line ml-10 mt-5"
             style={{
               width: "90%",
@@ -206,7 +172,6 @@ export default function Home() {
                 >
                   &gt;
                 </span>
->>>>>>> 68efade9b17e9e612e1c44cb1426802cb05877e3
               </span>
             </Link>
             <div
@@ -222,10 +187,6 @@ export default function Home() {
           <div className="brown-line mb-5"></div>
           <div className="service-link">
             <Link href="/core-services#Refugees">
-<<<<<<< HEAD
-              <span className="service-item ml-10 mt-5 hover:text-starick-green flex justify-between" style ={{width :"88%"}}>
-                Two Refuges <span className ="bg-starick-green text-white px-1.5 mr-2">&gt;</span>
-=======
               <span
                 className="service-item ml-10 mt-5 flex items-center justify-between hover:text-starick-green"
                 style={{ width: "85%" }}
@@ -244,7 +205,6 @@ export default function Home() {
                 >
                   &gt;
                 </span>
->>>>>>> 68efade9b17e9e612e1c44cb1426802cb05877e3
               </span>
             </Link>
             <div
@@ -260,10 +220,6 @@ export default function Home() {
           <div className="brown-line mb-5"></div>
           <div className="service-link">
             <Link href="/core-services#Transitional%20Housing">
-<<<<<<< HEAD
-              <span className="service-item ml-10 mt-5 hover:text-starick-green flex justify-between" style ={{width :"88%"}}>
-                Support in Police Stations <span className ="bg-starick-green text-white px-1.5 mr-2">&gt;</span>
-=======
               <span
                 className="service-item ml-10 mt-5 flex items-center justify-between hover:text-starick-green"
                 style={{ width: "85%" }}
@@ -282,7 +238,6 @@ export default function Home() {
                 >
                   &gt;
                 </span>
->>>>>>> 68efade9b17e9e612e1c44cb1426802cb05877e3
               </span>
             </Link>
             <div
@@ -298,10 +253,6 @@ export default function Home() {
           <div className="brown-line mb-5"></div>
           <div className="service-link mb-8">
             <Link href="/core-services#Safe%20at%20Home%20Program">
-<<<<<<< HEAD
-              <span className="service-item ml-10 mt-5 hover:text-starick-green flex justify-between" style ={{width :"88%"}}>
-                Safe at Home Program <span className ="bg-starick-green text-white px-1.5 mr-2">&gt;</span>
-=======
               <span
                 className="service-item ml-10 mt-5 flex items-center justify-between hover:text-starick-green"
                 style={{ width: "85%" }}
@@ -320,7 +271,6 @@ export default function Home() {
                 >
                   &gt;
                 </span>
->>>>>>> 68efade9b17e9e612e1c44cb1426802cb05877e3
               </span>
             </Link>
           </div>
@@ -335,10 +285,6 @@ export default function Home() {
           </p>
           <div className="mx-5 mb-10 mt-5">
             <Link href="/other-services#WA%20Respectful%20Relationships%20Teaching%20Support%20Program">
-<<<<<<< HEAD
-              <span className="service-item text-white hover:text-starick-olive flex justify-between" style ={{width :"88%"}}>
-                WA Respectful Relationships Teaching Support Program <span className ="bg-starick-white text-black px-1.5 mr-2">&gt;</span>
-=======
               <span
                 className="service-item mt-5 flex items-center justify-between text-white hover:text-starick-olive"
                 style={{ width: "88%" }}
@@ -357,7 +303,6 @@ export default function Home() {
                 >
                   &gt;
                 </span>
->>>>>>> 68efade9b17e9e612e1c44cb1426802cb05877e3
               </span>
             </Link>
             <div
@@ -369,10 +314,6 @@ export default function Home() {
               }}
             ></div>
             <Link href="/other-services#Our%20Work%20with%20Children%20and%20Young%20People">
-<<<<<<< HEAD
-              <span className="service-item mt-5 text-white hover:text-starick-olive flex justify-between" style ={{width :"88%"}}>
-                Our Work With Children and Young People <span className ="bg-starick-white text-black px-1.5 mr-2">&gt;</span>
-=======
               <span
                 className="service-item mt-5 flex items-center justify-between text-white hover:text-starick-olive"
                 style={{ width: "88%" }}
@@ -391,7 +332,6 @@ export default function Home() {
                 >
                   &gt;
                 </span>
->>>>>>> 68efade9b17e9e612e1c44cb1426802cb05877e3
               </span>
             </Link>
             <div
@@ -403,10 +343,6 @@ export default function Home() {
               }}
             ></div>
             <Link href="/other-services#Workplace%20Awareness ">
-<<<<<<< HEAD
-              <span className="service-item mt-5 text-white hover:text-starick-olive flex justify-between" style ={{width :"88%"}}>
-                Workplace Awareness <span className ="bg-starick-white text-black px-1.5 mr-2">&gt;</span>
-=======
               <span
                 className="service-item mt-5 flex items-center justify-between text-white hover:text-starick-olive"
                 style={{ width: "88%" }}
@@ -425,7 +361,6 @@ export default function Home() {
                 >
                   &gt;
                 </span>
->>>>>>> 68efade9b17e9e612e1c44cb1426802cb05877e3
               </span>
             </Link>
             <div
@@ -437,10 +372,6 @@ export default function Home() {
               }}
             ></div>
             <Link href="/other-services#Health%20and%20Wellbeing">
-<<<<<<< HEAD
-              <span className="service-item mt-5 text-white hover:text-starick-olive  flex justify-between" style ={{width :"88%"}}>
-                Health and Wellbeing <span className ="bg-starick-white text-black px-1.5 mr-2">&gt;</span>
-=======
               <span
                 className="service-item mt-5 flex items-center justify-between text-white hover:text-starick-olive"
                 style={{ width: "88%" }}
@@ -459,7 +390,6 @@ export default function Home() {
                 >
                   &gt;
                 </span>
->>>>>>> 68efade9b17e9e612e1c44cb1426802cb05877e3
               </span>
             </Link>
             <div
@@ -471,12 +401,6 @@ export default function Home() {
               }}
             ></div>
             <Link href="other-services">
-<<<<<<< HEAD
-              <span className="service-item mt-5  text-white hover:text-starick-olive flex justify-between" style ={{width :"88%"}}>
-                Thriving Through Connections - 
-                <br/>Supporting Young People Aged
-                11-17 years <span className ="bg-starick-white text-black px-1.5 mr-2 mt-3" style ={{height : "50%"}}>&gt;</span>
-=======
               <span
                 className="service-item mt-5 flex items-center justify-between text-white hover:text-starick-olive"
                 style={{ width: "88%" }}
@@ -497,7 +421,6 @@ export default function Home() {
                 >
                   &gt;
                 </span>
->>>>>>> 68efade9b17e9e612e1c44cb1426802cb05877e3
               </span>
             </Link>
           </div>
@@ -510,11 +433,7 @@ export default function Home() {
             alt="image of starick people for home page"
             width="0"
             height="0"
-<<<<<<< HEAD
-            className="w-full object-cover" 
-=======
             className="w-full object-cover"
->>>>>>> 68efade9b17e9e612e1c44cb1426802cb05877e3
           />
         </div>
       </div>
@@ -524,11 +443,7 @@ export default function Home() {
         alt="description"
         width="0"
         height="0"
-<<<<<<< HEAD
-        className="w-full object-cover" 
-=======
         className="w-full object-cover"
->>>>>>> 68efade9b17e9e612e1c44cb1426802cb05877e3
       />
       <div className="text-white">
         <PageHeader

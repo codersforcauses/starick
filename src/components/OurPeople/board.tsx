@@ -4,20 +4,32 @@ interface PortraitInfo {
   name: string;
   position: string;
   imagePath: string;
-  info : string;
-  reverse : boolean;
+  info: string;
+  reverse: boolean;
 }
 
-export default function Board({ name, position, info, imagePath, reverse}: PortraitInfo) {
+export default function Board({
+  name,
+  position,
+  info,
+  imagePath,
+  reverse
+}: PortraitInfo) {
   return (
     <>
-      <div className = {`flex flex-row mx-auto h-auto pb-4 ${reverse ? 'flex-row-reverse' : ''}`}>
-        <div className = "p-4 items-center">
-          <img src={imagePath} alt={name} className="h-40 overflow-hidden"/>
+      <div
+        className={`mx-auto flex h-auto flex-row pb-4 ${
+          reverse ? "flex-row-reverse" : ""
+        }`}
+      >
+        <div className="items-center p-4">
+          <img src={imagePath} alt={name} className="h-40 overflow-hidden" />
         </div>
         {/*Set max width of content*/}
-        <div className="h-auto px-2" style={{ maxWidth: '700px' }}>
-          <p className="font-semibold text-2xl w-auto pb-2">{name} , {position}</p>
+        <div className="h-auto px-2" style={{ maxWidth: "700px" }}>
+          <p className="w-auto pb-2 text-2xl font-semibold">
+            {name} , {position}
+          </p>
           <p className="text-l flex w-auto">{info}</p>
         </div>
       </div>
