@@ -35,7 +35,7 @@ export default function Home() {
             </p>
             <p className="pt-8" style={{ width: "80%" }}>
               Starick is a charity supporting women and children escaping
-              domestic and family violence. We work predominantly in Perth's
+              domestic and family violence. We work predominantly in Perth&rsquo;s
               south-eastern metropolitan region. Our vision is to build futures
               free from violence for the women and children who use our service
               and for the community as a whole.
@@ -128,6 +128,7 @@ export default function Home() {
                     <img
                       className="mr-5 h-10 w-10 rounded-full"
                       src="./images/Group.jpg"
+                      alt=""
                     />
                     Counselling Services
                   </span>
@@ -161,6 +162,7 @@ export default function Home() {
                   <img
                     className="mr-5 h-10 w-10 rounded-full"
                     src="./images/Group.jpg"
+                    alt=""
                   />
                   Transitional Housing
                 </span>
@@ -193,6 +195,7 @@ export default function Home() {
                   <img
                     className="mr-5 h-10 w-10 rounded-full"
                     src="./images/Group.jpg"
+                    alt=""
                   />
                   Two Refugees
                 </span>
@@ -225,6 +228,7 @@ export default function Home() {
                   <img
                     className="mr-5 h-10 w-10 rounded-full"
                     src="./images/Group.jpg"
+                    alt=""
                   />
                   Support in Police Stations
                 </span>
@@ -257,6 +261,7 @@ export default function Home() {
                   <img
                     className="mr-5 h-10 w-10 rounded-full"
                     src="./images/Group.jpg"
+                    alt=""
                   />
                   Safe at Home Program
                 </span>
@@ -288,6 +293,7 @@ export default function Home() {
                   <img
                     className="mr-5 h-10 w-10 rounded-full"
                     src="./images/Group.jpg"
+                    alt=""
                   />
                   WA Respectful Relationships Teaching Support <br /> Program
                 </span>
@@ -316,6 +322,7 @@ export default function Home() {
                   <img
                     className="mr-5 h-10 w-10 rounded-full"
                     src="./images/Group.jpg"
+                    alt=""
                   />
                   Our Work With Children and Young People
                 </span>
@@ -344,6 +351,7 @@ export default function Home() {
                   <img
                     className="mr-5 h-10 w-10 rounded-full"
                     src="./images/Group.jpg"
+                    alt=""
                   />
                   Workplace Awareness
                 </span>
@@ -372,6 +380,7 @@ export default function Home() {
                   <img
                     className="mr-5 h-10 w-10 rounded-full"
                     src="./images/Group.jpg"
+                    alt=""
                   />
                   Health and Wellbeing
                 </span>
@@ -400,6 +409,7 @@ export default function Home() {
                   <img
                     className="mr-5 h-10 w-10 rounded-full"
                     src="./images/Group.jpg"
+                    alt=""
                   />
                   Thriving Through Connections -
                   <br />
@@ -463,7 +473,7 @@ export default function Home() {
             <p className="text-l">
               The op shop is operated and run by hard-working, dedicated
               volunteers, and proceeds from sales of discounted clothing, toys,
-              bedding, household goods and more support Starick's services.
+              bedding, household goods and more support Starick&rsquo;s services.
             </p>
             <div className="flex justify-center text-center">
               <Link href="./donations" className="mt-10">
