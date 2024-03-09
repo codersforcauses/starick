@@ -52,8 +52,8 @@ export const primaryNav: Array<NavBarItem> = [
         label: "Useful numbers & information"
       },
       {
-        href : "/supporter",
-        label : "Our Supporters"
+        href: "/supporter",
+        label: "Our Supporters"
       }
     ]
   },

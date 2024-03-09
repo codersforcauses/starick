@@ -3,14 +3,12 @@ import SupportBody from "@/components/OurSupporter/supporter_body";
 import SupportSponsors from "@/components/OurSupporter/supporter_sponsor";
 import PageHeader from "@/components/page-header";
 
-export default function Supporter(){
+export default function Supporter() {
   return (
     <>
       <div>
-        <PageHeader
-        titleText="Our Partners, Major Donors, and Supporters"
-        />
-        <div className = "flex justify-center h-auto bg-starick-green text-white">
+        <PageHeader titleText="Our Partners, Major Donors, and Supporters" />
+        <div className="flex h-auto justify-center bg-starick-green text-white">
           <SupportHeader />
         </div>
         <div>
@@ -21,5 +19,5 @@ export default function Supporter(){
         </div>
       </div>
     </>
-  )
+  );
 }
