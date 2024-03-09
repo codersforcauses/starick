@@ -47,7 +47,7 @@ export default function WhatIsOutreachSection() {
         {WhereStarickHelpsExample}
         <br />
         <p>
-          Information about these services can be found on the 
+          Information about these services can be found on the
           <Link className="underline" href="pages/core-services">
             core services
           </Link>{" "}

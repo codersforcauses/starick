@@ -49,27 +49,27 @@ export default function PageHeaderBigCircle({
             <div className="my-10 flex justify-center">
               <div className="flex w-1/6 justify-between">
                 <a href="https://youtube.com" target="_blank">
-                <Image
-                    src="/icons/instagram.svg" 
+                  <Image
+                    src="/icons/instagram.svg"
                     alt="Instagram Icon"
-                    width={32} 
-                    height={32} 
+                    width={32}
+                    height={32}
                   />
                 </a>
                 <a href="https://youtube.com" target="_blank">
-                <Image
-                    src="/icons/instagram.svg" 
+                  <Image
+                    src="/icons/instagram.svg"
                     alt="Instagram Icon"
-                    width={32} 
-                    height={32} 
+                    width={32}
+                    height={32}
                   />
                 </a>
                 <a href="https://youtube.com" target="_blank">
-                <Image
-                    src="/icons/instagram.svg" 
+                  <Image
+                    src="/icons/instagram.svg"
                     alt="Instagram Icon"
-                    width={32} 
-                    height={32} 
+                    width={32}
+                    height={32}
                   />
                 </a>
               </div>
