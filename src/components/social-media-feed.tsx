@@ -9,7 +9,7 @@ export default function FacebookFeed() {
           width="340"
           height="500"
           title="facebook-embed"
-          className="mx-40 flex justify-center"
+          className="mx-10 flex justify-center"
         ></iframe>
       </div>
     </>

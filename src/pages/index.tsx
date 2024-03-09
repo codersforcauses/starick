@@ -59,17 +59,18 @@ export default function Home() {
       </div>
 
 
-      <div className="grid justify-items-center font-semibold text-starick-brown h-64 w-full">
+      <div className="grid justify-items-center font-semibold text-starick-brown h-96 w-full">
         <PageHeaderBigCircle
           titleText="Did you know?"
           subtitleText={["One woman dies every week in Australia as a result of domestic and family violence", "1.6 million women in Australia have experienced some form of domestic or family violence", "Escaping domestic or family violence is a major contributor to homelessness among women and children"]}
           subtitleElement={
           <Link href="./what-is-domestic-violence" >
             <span className="service-item mt-5 hover:text-starick-green mb-5">
-            <span className ="bg-starick-green text-white px-1.5 pb-1 mr-2 mb-5">&gt;</span> What is domestic violence?
+            <span className ="bg-starick-green text-white px-1.5 pb-1 mr-2 mb-10">&gt;</span> What is domestic violence?
             </span>
           </Link>
           }
+          socialMedia={false}
         />
       </div>
 
@@ -312,49 +313,29 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center ">
-        <div>
-          <div className="mx-12 mt-10 text-center text-3xl font-bold text-starick-brown">
-            Follow the movement on Facebook!
-          </div>
-
-          <div className="mt-10 flex justify-center">
-            <div className="">
-              <FacebookFeed />
-            </div>
-          </div>
-
-          <div className="mb-10 ml-24 mt-10 flex  w-5/6 text-center text-2xl font-semibold text-starick-brown">
-            <p>
-              Keep up with upcoming events! Follow us on Instagram for more
-              information on how you can get involved
-            </p>
-          </div>
-
-          <div className="mt-1/2 mb-12 flex justify-center">
-            <Link
-              href="https://www.instagram.com/starickservices/"
-              className=" absolute mx-10 mb-12 flex w-1/6 items-center rounded-md bg-starick-green px-6 py-1 text-white transition-colors duration-300 hover:bg-starick-orange"
-            >
-              <Image
-                src="/icons/white_insta.svg"
-                alt="instagram"
-                width={40}
-                height={40}
-                className="right-10 my-1 ml-2 mr-2"
-              />
-
-              <div className="mx-1 text-xl font-semibold">
-                <p>Instagram</p>
-              </div>
-            </Link>
-          </div>
+      {/*Social Media */}
+      <div>
+        <PageHeaderBigCircle
+          titleText="Social Media"
+          subtitleElement={<FacebookFeed />}
+          subtitleElement2={<FacebookFeed />}
+          socialMedia={true}
+        />
+      </div>
+      
+      <div className = "flex justify-center mt-10">
+      <div className = "flex flex-col">
+        <div className = "flex justify-center mt-10">
+          <p className = "text-2xl font-bold">Upcoming Events</p>
         </div>
-
-        <div className="relative mb-8 mt-10 w-1/2">
-          <Carousel images={carousel_list} />
+        <div className = "flex justify-center">
+        <div className = "w-1/2">
+        <Carousel images={carousel_list} />
+        </div>
         </div>
       </div>
+      </div>
+      
     </>
   );
 }
