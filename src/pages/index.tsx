@@ -64,12 +64,6 @@ export default function Home() {
           titleText="Did you know?"
           subtitleText={["One woman dies every week in Australia as a result of domestic and family violence", "1.6 million women in Australia have experienced some form of domestic or family violence", "Escaping domestic or family violence is a major contributor to homelessness among women and children"]}
           subtitleElement={
-          //   <Link
-          //   href="./what-is-domestic-violence"
-          //   className="rounded-lg bg-starick-brown px-6 py-3 font-semibold text-white transition-colors duration-300 hover:bg-starick-orange"
-          // >
-          //   Learn more about domestic violence
-          // </Link>
           <Link href="./what-is-domestic-violence" >
             <span className="service-item mt-5 hover:text-starick-green mb-5">
             <span className ="bg-starick-green text-white px-1.5 pb-1 mr-2 mb-5">&gt;</span> What is domestic violence?
@@ -79,22 +73,6 @@ export default function Home() {
         />
       </div>
 
-      <div className="flex items-center pb-20 pt-20">
-        <Image
-          src={Staricklogo}
-          alt="starick logo"
-          width="0"
-          height="0"
-          className="mx-20 flex justify-center"
-        />
-
-        <p className=" white-space-normal mx-24 ml-auto w-1/2 text-right  text-2xl font-semibold text-starick-brown">
-          Supporting women and children escaping domestic and family violence.
-          We work predominantly in Perth&apos;s south-eastern metropolitan
-          region and our vision is to build futures free from violence for the
-          women and children the community as a whole.
-        </p>
-      </div>
       <div className="flex ">
         {/* Left side: Image */}
         <div className="relative w-1/2">
