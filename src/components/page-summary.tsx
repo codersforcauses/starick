@@ -1,5 +1,5 @@
-import Image from "next/image";
 import { ReactNode } from "react";
+import Image from "next/image";
 
 interface PageSummaryProps {
   content: ReactNode;
@@ -40,7 +40,7 @@ export default function PageSummary({
     </div>
   );
   return (
-    <div className={`grid grid-cols-1 md:grid-cols-2`}>
+    <div className="grid grid-cols-1 md:grid-cols-2">
       {imageSection}
       {contentSection}
     </div>

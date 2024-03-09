@@ -1,8 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
-import SubSection from "../Services/subsection";
-import ServicesSection from "../Services/services-section";
+
 import { List } from "../Services/list";
+import ServicesSection from "../Services/services-section";
+import SubSection from "../Services/subsection";
 
 export default function ItemsToBringToRefugeSection() {
   const ItemsToBringExample = (

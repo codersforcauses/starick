@@ -1,5 +1,5 @@
-import Section from "../Services/services-section";
 import { List } from "../Services/list";
+import Section from "../Services/services-section";
 
 export default function WhatWeAccept() {
   const acceptedItems = [
