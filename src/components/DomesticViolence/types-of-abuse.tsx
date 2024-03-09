@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
-import SubSection from "../Services/subsection";
 import { List } from "../Services/list";
 import ServicesSection from "../Services/services-section";
+import SubSection from "../Services/subsection";
 
 export default function WhatisDomesticViolenceSection() {
   const technologicalOrDigitalAbuseExample = (

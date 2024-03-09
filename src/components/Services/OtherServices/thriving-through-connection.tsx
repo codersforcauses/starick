@@ -42,8 +42,8 @@ export default function ThrivingThroughConnectionSection() {
       ></img>
       <div className="flex justify-center">
         <Button
-          text={"Core Services"}
-          link={"/core-services"}
+          text="Core Services"
+          link="/core-services"
           textColour="starick-black"
           arrowColour="starick-white"
           arrowBackgroundColor="starick-green"
