@@ -34,7 +34,7 @@ export default function ManagementAndStaff() {
               info="blah"
             />
           </div>
-          <div className ="flex justify-center gap-6">
+          <div className="flex justify-center gap-6">
             <Portrait
               name="Anne"
               position="Domestic Violence Advocate"
