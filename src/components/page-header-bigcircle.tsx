@@ -13,7 +13,6 @@ export default function PageHeaderBigCircle({
   titleText,
   subtitleText,
   subtitleElement,
-  subtitleElement2,
   socialMedia
 }: PageHeaderBigCircleProps) {
   return (
@@ -39,15 +38,12 @@ export default function PageHeaderBigCircle({
                   {titleText}
                 </div>
                 <div className="mt-10 flex justify-center">
-                  <div className="grid grid-cols-2 gap-0">
-                    {subtitleElement}
-                    {subtitleElement2}
-                  </div>
+                  <div>{subtitleElement}</div>
                 </div>
               </div>
             </div>
             <div className="my-10 flex justify-center">
-              <div className="flex w-1/6 justify-between">
+              <div className="flex w-1/2 justify-between">
                 <a href="https://youtube.com" target="_blank">
                   <Image
                     src="/icons/instagram.svg"

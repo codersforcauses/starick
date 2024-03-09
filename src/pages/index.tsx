@@ -118,16 +118,16 @@ export default function Home() {
           </p>
           {/* Newly added Counselling Services */}
           <div className="service-link">
-            <p className="service-item ml-10 mt-5 hover:text-starick-green">
+            <p className="service-item mt-5 hover:text-starick-green">
               <Link href="/core-services#Counselling%20Services">
                 <span
-                  className="service-item flex items-center justify-between text-starick-brown hover:text-starick-green"
-                  style={{ width: "94%" }}
+                  className="service-item ml-10 mt-5 flex items-center justify-between hover:text-starick-green"
+                  style={{ width: "85%" }}
                 >
                   <span className="flex items-center">
                     <img
                       className="mr-5 h-10 w-10 rounded-full"
-                      src="./images/Group.jpg"
+                      src="./icons/books.svg"
                       alt=""
                     />
                     Counselling Services
@@ -156,12 +156,12 @@ export default function Home() {
             <Link href="/core-services#Counselling%20Services">
               <span
                 className="service-item ml-10 mt-5 flex items-center justify-between hover:text-starick-green"
-                style={{ width: "88%" }}
+                style={{ width: "85%" }}
               >
                 <span className="flex items-center">
                   <img
                     className="mr-5 h-10 w-10 rounded-full"
-                    src="./images/Group.jpg"
+                    src="./icons/care.svg"
                     alt=""
                   />
                   Transitional Housing
@@ -189,12 +189,12 @@ export default function Home() {
             <Link href="/core-services#Refugees">
               <span
                 className="service-item ml-10 mt-5 flex items-center justify-between hover:text-starick-green"
-                style={{ width: "88%" }}
+                style={{ width: "85%" }}
               >
                 <span className="flex items-center">
                   <img
                     className="mr-5 h-10 w-10 rounded-full"
-                    src="./images/Group.jpg"
+                    src="./icons/aid.svg"
                     alt=""
                   />
                   Two Refugees
@@ -222,12 +222,12 @@ export default function Home() {
             <Link href="/core-services#Transitional%20Housing">
               <span
                 className="service-item ml-10 mt-5 flex items-center justify-between hover:text-starick-green"
-                style={{ width: "88%" }}
+                style={{ width: "85%" }}
               >
                 <span className="flex items-center">
                   <img
                     className="mr-5 h-10 w-10 rounded-full"
-                    src="./images/Group.jpg"
+                    src="./icons/domestic violence.svg"
                     alt=""
                   />
                   Support in Police Stations
@@ -251,16 +251,16 @@ export default function Home() {
           </div>
 
           <div className="brown-line mb-5"></div>
-          <div className="service-link mb-5">
+          <div className="service-link mb-8">
             <Link href="/core-services#Safe%20at%20Home%20Program">
               <span
                 className="service-item ml-10 mt-5 flex items-center justify-between hover:text-starick-green"
-                style={{ width: "88%" }}
+                style={{ width: "85%" }}
               >
                 <span className="flex items-center">
                   <img
                     className="mr-5 h-10 w-10 rounded-full"
-                    src="./images/Group.jpg"
+                    src="./icons/health.svg"
                     alt=""
                   />
                   Safe at Home Program
@@ -292,7 +292,7 @@ export default function Home() {
                 <span className="flex items-center">
                   <img
                     className="mr-5 h-10 w-10 rounded-full"
-                    src="./images/Group.jpg"
+                    src="./icons/history.svg"
                     alt=""
                   />
                   WA Respectful Relationships Teaching Support <br /> Program
@@ -321,7 +321,7 @@ export default function Home() {
                 <span className="flex items-center">
                   <img
                     className="mr-5 h-10 w-10 rounded-full"
-                    src="./images/Group.jpg"
+                    src="./icons/houses.svg"
                     alt=""
                   />
                   Our Work With Children and Young People
@@ -350,7 +350,7 @@ export default function Home() {
                 <span className="flex items-center">
                   <img
                     className="mr-5 h-10 w-10 rounded-full"
-                    src="./images/Group.jpg"
+                    src="./icons/humanright.svg"
                     alt=""
                   />
                   Workplace Awareness
@@ -379,7 +379,7 @@ export default function Home() {
                 <span className="flex items-center">
                   <img
                     className="mr-5 h-10 w-10 rounded-full"
-                    src="./images/Group.jpg"
+                    src="./icons/online-help.svg"
                     alt=""
                   />
                   Health and Wellbeing
@@ -408,7 +408,7 @@ export default function Home() {
                 <span className="flex items-center">
                   <img
                     className="mr-5 h-10 w-10 rounded-full"
-                    src="./images/Group.jpg"
+                    src="./icons/psychology.svg"
                     alt=""
                   />
                   Thriving Through Connections -
@@ -495,7 +495,6 @@ export default function Home() {
         <PageHeaderBigCircle
           titleText="Social Media"
           subtitleElement={<FacebookFeed />}
-          subtitleElement2={<FacebookFeed />}
           socialMedia={true}
         />
       </div>
