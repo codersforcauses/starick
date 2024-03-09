@@ -22,12 +22,6 @@ export default function ManagementAndStaff() {
               info="blah"
             />
             <Portrait
-              name="Kathleen"
-              position="Senior Social Worker"
-              imagePath="/images/our-people/Kathleen.jpg"
-              info="blah"
-            />
-            <Portrait
               name="Caroline"
               position="Outreach Coordinator"
               imagePath="/images/our-people/Caroline.png"
@@ -39,6 +33,8 @@ export default function ManagementAndStaff() {
               imagePath="/images/our-people/Jodie.png"
               info="blah"
             />
+          </div>
+          <div className ="flex justify-center gap-6">
             <Portrait
               name="Anne"
               position="Domestic Violence Advocate"
@@ -52,23 +48,9 @@ export default function ManagementAndStaff() {
               info="blah"
             />
             <Portrait
-              name="Elena"
-              position="Women's Advocate"
-              imagePath="/images/our-people/Elena.jpg"
-              info="blah"
-            />
-          </div>
-          <div className="-row flex justify-center gap-6">
-            <Portrait
               name="Fei"
               position="Children's Advocate"
               imagePath="/images/our-people/Fei.jpg"
-              info="blah"
-            />
-            <Portrait
-              name="Sandie"
-              position="Volunteer Op Shop Manager"
-              imagePath="/images/our-people/Sandie.jpg"
               info="blah"
             />
           </div>
