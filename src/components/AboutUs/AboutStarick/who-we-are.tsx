@@ -30,25 +30,24 @@ export default function WhoWeAre() {
   return (
     <div>
       <ServicesSection
-      titleTextColour="starick-white"
-      titleBackgroundColour="starick-green"
-      title="Who we are"
-      textOnLeft={true}
-      stories={true}
-    />
-      <div className = "flex justify-center mb-10">
-      <div className="my-6 flex w-3/4 flex-row py-2 pt-5 md:px-10">
-        <Image
-          src="icons/identity.svg"
-          className="mr-10 h-12 w-12 md:h-24 md:w-24"
-          height={100}
-          width={100}
-          alt="identity"
-        />
-        {body}
+        titleTextColour="starick-white"
+        titleBackgroundColour="starick-green"
+        title="Who we are"
+        textOnLeft={true}
+        stories={true}
+      />
+      <div className="mb-10 flex justify-center">
+        <div className="my-6 flex w-3/4 flex-row py-2 pt-5 md:px-10">
+          <Image
+            src="icons/identity.svg"
+            className="mr-10 h-12 w-12 md:h-24 md:w-24"
+            height={100}
+            width={100}
+            alt="identity"
+          />
+          {body}
+        </div>
       </div>
-      </div>
-      
     </div>
   );
 }

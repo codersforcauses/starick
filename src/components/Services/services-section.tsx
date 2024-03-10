@@ -6,14 +6,14 @@ import PageHeaderBigCircle from "../page-header-bigcircle";
 
 interface SectionProps {
   title: string;
-  titleNode ?: ReactNode;
+  titleNode?: ReactNode;
   titleBackgroundColour: string;
   titleTextColour: string;
   textOnLeft: boolean;
   sectionBody?: ReactNode;
   imagePath?: string;
   stories?: boolean;
-  centerText ?: boolean;
+  centerText?: boolean;
   circlesPlacement?: "tl" | "tr" | "bl" | "br" | "r" | "l";
 }
 
@@ -88,14 +88,16 @@ export default function Section({
           backgroundColour={titleBackgroundColour}
           titleText={title}
           titleNode={titleNode}
-          imagePath={imagePath ? imagePath: "/placeholder_starick_logo.png"}
+          imagePath={imagePath ? imagePath : "/placeholder_starick_logo.png"}
           textOnLeft={textOnLeft}
           textColour={titleTextColour}
           centerText={centerText}
         />
       )}
       <div
-        className={`relative bg-starick-white px-6 md:px-32 lg:px-72 ${sectionBody ? "py-10" : ""}`}
+        className={`relative bg-starick-white px-6 md:px-32 lg:px-72 ${
+          sectionBody ? "py-10" : ""
+        }`}
         id={title.replace("\n", "")}
       >
         {circlesPlacement ? (
@@ -112,11 +114,9 @@ export default function Section({
             className={`absolute ${positionStyle} ${rotationStyle} ${dimensions} hidden md:block ${originAndTranslate}`}
           />
         ) : null}
-        {sectionBody 
-        ?
-        <div className="relative z-10">{sectionBody}</div>
-        :
-        null}
+        {sectionBody ? (
+          <div className="relative z-10">{sectionBody}</div>
+        ) : null}
       </div>
     </>
   );

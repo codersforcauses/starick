@@ -8,8 +8,6 @@ import SectionHeader from "@/components/section-header";
 import InPageNav from "@/components/InPageNav";
 import ServicesSection from "@/components/Services/services-section";
 
-
-
 export default function AboutUs() {
   const navLinkDetails = [
     {
@@ -27,18 +25,17 @@ export default function AboutUs() {
     {
       href: "#Starick Timeline",
       name: "Starick Timeline"
-    },
+    }
   ];
 
   const body = (
-    <div className = "flex justify-center mt-3">
-      <p className = "text-center text-sm" style = {{maxWidth : "70%"}}>
-        Starick&apos;s vision is to build futures free from violence, for
-          the women and children who use our service and the community as a
-          whole.
+    <div className="mt-3 flex justify-center">
+      <p className="text-center text-sm" style={{ maxWidth: "70%" }}>
+        Starick&apos;s vision is to build futures free from violence, for the
+        women and children who use our service and the community as a whole.
       </p>
     </div>
-  )
+  );
   return (
     <>
       <PageHeader titleText="About Starick" />
@@ -58,7 +55,7 @@ export default function AboutUs() {
       </div>
       <OurHistory />
       <div className="bg-starick-white">
-      <ServicesSection
+        <ServicesSection
           titleTextColour="starick-black"
           titleBackgroundColour="starick-olive"
           titleNode={body}
