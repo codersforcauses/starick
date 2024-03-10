@@ -182,7 +182,7 @@ export default function AnnesStory() {
       titleBackgroundColour="starick-olive"
       sectionBody={body}
       title="Anne's Story"
-      imagePath="/placeholder_starick_logo.png"
+      imagePath="/hands.jpg"
       textOnLeft={false}
     />
   );

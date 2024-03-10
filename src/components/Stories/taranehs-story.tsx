@@ -84,7 +84,7 @@ export default function TaranehsStory() {
       titleTextColour="starick-black"
       titleBackgroundColour="starick-olive"
       sectionBody={body}
-      imagePath="/placeholder_starick_logo.png"
+      imagePath="/hands.jpg"
       title="Taraneh's Story"
       textOnLeft={true}
     />

@@ -46,7 +46,7 @@ export default function CarolsStory() {
       titleTextColour="starick-white"
       titleBackgroundColour="starick-green"
       sectionBody={body}
-      imagePath="/placeholder_starick_logo.png"
+      imagePath="/hands.jpg"
       title="Carol's Story"
       textOnLeft={false}
     />

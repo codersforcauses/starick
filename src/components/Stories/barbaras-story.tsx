@@ -103,7 +103,7 @@ export default function BarbarasStory() {
       titleBackgroundColour="starick-green"
       sectionBody={body}
       title="Barbara's Story"
-      imagePath="/placeholder_starick_logo.png"
+      imagePath="/hands.jpg"
       textOnLeft={false}
     />
   );

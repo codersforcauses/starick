@@ -71,7 +71,7 @@ export default function HelenasStory() {
       titleBackgroundColour="starick-olive"
       sectionBody={body}
       title="Helena's Story"
-      imagePath="/placeholder_starick_logo.png"
+      imagePath="/hands.jpg"
       textOnLeft={true}
     />
   );
