@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import Image from "next/image";
 
 import SectionHeader from "../section-header";
+import PageHeaderBigCircle from "../page-header-bigcircle";
 
 interface SectionProps {
   title: string;
@@ -64,13 +65,21 @@ export default function Section({
   }
   return (
     <>
-      <SectionHeader
+      {/* <SectionHeader
         backgroundColour={titleBackgroundColour}
         titleText={title}
         imagePath={imagePath}
         textOnLeft={textOnLeft}
         textColour={titleTextColour}
-      />
+      /> */}
+      <div>
+        <PageHeaderBigCircle 
+        titleText={title}
+        subtitleElement={null}
+        socialMedia={false}
+        textOnLeft={textOnLeft}
+        />
+      </div>
       <div
         className="relative bg-starick-white px-6 py-10 md:px-32 lg:px-72"
         id={title.replace("\n", "")}

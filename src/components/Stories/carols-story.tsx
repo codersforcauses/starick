@@ -36,9 +36,6 @@ export default function CarolsStory() {
         own home and, in her own words, “never look back!”
       </p>
       <br />
-      <p className="mb-10">
-        Here’s what she said about her experience at Starick House:
-      </p>
     </>
   );
   return (

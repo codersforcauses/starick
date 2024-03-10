@@ -71,9 +71,6 @@ export default function TaranehsStory() {
             Her social skills and confidence have improved and she is meeting
             new friends.
           </p>
-          <p className="mb-2">
-            Here’s what Taraneh says about the Mary Smith refuge...
-          </p>
           <QuoteBlock text={quoteBlockText} />
         </div>
       </div>
