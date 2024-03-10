@@ -26,13 +26,15 @@ export default function InPageNav({ list }: { list: listDetails[] }) {
     );
   });
   return (
+    <div className = "flex justify-center text-gray-600">
     <div
-      className={`flex flex-col justify-between bg-starick-white px-6 py-10 md:px-32 ${inter.className}`}
+      className={`flex flex-col bg-starick-white px-6 py-10 md:px-32 ${inter.className}`}
+      style = {{width : "1200px"}}
     >
       <button
         className={`${
           toggle ? "border-b" : "border-b-2"
-        } inline-flex justify-between rounded-md border-2 border-starick-olive bg-white p-2 font-semibold text-gray-600`}
+        } inline-flex justify-between rounded-md border-2 border-starick-olive bg-white p-2 font-semibold`}
         onClick={() => setToggle(!toggle)}
       >
         Page Navigation
@@ -51,5 +53,7 @@ export default function InPageNav({ list }: { list: listDetails[] }) {
       </button>
       {inPageNavList}
     </div>
+    </div>
+    
   );
 }
