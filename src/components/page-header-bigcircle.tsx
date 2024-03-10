@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import Image from "next/image";
 
 interface PageHeaderBigCircleProps {
-  titleText: string;
+  titleText?: string;
   subtitleText?: string[];
   subtitleElement: ReactNode;
   subtitleElement2?: ReactNode;

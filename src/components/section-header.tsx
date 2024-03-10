@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ReactNode } from "react";
 
 interface SectionHeaderProps {
   backgroundColour: string;
@@ -6,7 +7,9 @@ interface SectionHeaderProps {
   textOnLeft: boolean;
   imagePath: string;
   titleText: string;
+  titleNode ?: ReactNode;
   subtitleText ?: string;
+  centerText?: boolean;
 }
 
 export default function SectionHeader({
@@ -15,37 +18,55 @@ export default function SectionHeader({
   textOnLeft,
   imagePath,
   titleText,
-  subtitleText
+  subtitleText,
+  titleNode,
+  centerText
 }: SectionHeaderProps) {
-  const textSection = (
-    <div
-      className={`bg-${backgroundColour} flex ${subtitleText ? "flex-col" : ""} w-full items-center ${
-        textOnLeft ? "order-first" : "order-last"
-      } w-full px-12`}
-    >
+const textSection = (
+  <div
+    className={`bg-${backgroundColour} flex w-full items-center ${
+      textOnLeft ? "order-first" : "order-last"
+    } w-full px-12`}
+  >
+    {centerText ? (
+      <p
+        className={`text-${textColour} w-full text-2xl font-semibold text-center`}
+      >
+        {titleText}
+        {titleNode}
+      </p>
+    ) : (
       <p
         className={`text-${textColour} w-full text-2xl font-semibold ${
           textOnLeft ? "mr-10 text-right " : "text-left"
         }`}
       >
         {titleText}
+        {titleNode}
       </p>
-      {subtitleText
-      ?
-      <p className = "w-4/6 ml-10">
+    )}
+    {subtitleText ? (
+      <p className="w-4/6 ml-10">
         {subtitleText}
       </p>
-      :
-      null}     
-    </div>
-  );
+    ) : null}
+  </div>
+);
+
+
   const imageSection = (
     <div className="relative" style={{ backgroundColor: "#eedbe0" }}>
-      <Image src={imagePath} alt={titleText} fill />
+    <Image
+      src={imagePath}
+      alt={titleText}
+      fill
+      className="object-cover"
+    />
+
     </div>
   );
   return (
-    <div className="grid h-44 grid-cols-2">
+    <div className={`grid ${centerText ? "h-72" : "h-44"} grid-cols-2`}>
       {textSection}
       {imageSection}
     </div>

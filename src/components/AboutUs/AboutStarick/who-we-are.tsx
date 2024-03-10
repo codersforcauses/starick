@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import SectionHeader from "@/components/section-header";
+import ServicesSection from "@/components/Services/services-section";
 
 export default function WhoWeAre() {
   const body = (
@@ -27,15 +28,15 @@ export default function WhoWeAre() {
     </div>
   );
   return (
-    <div className="bg-starick-white">
-      <SectionHeader
-          backgroundColour="starick-green"
-          titleText="Who We Are"
-          imagePath="/images/starick-image1.jpg"
-          textOnLeft={false}
-          textColour="starick-white"
-        />
-      <div className = "flex justify-center">
+    <div>
+      <ServicesSection
+      titleTextColour="starick-white"
+      titleBackgroundColour="starick-green"
+      title="Who we are"
+      textOnLeft={true}
+      stories={true}
+    />
+      <div className = "flex justify-center mb-10">
       <div className="my-6 flex w-3/4 flex-row py-2 pt-5 md:px-10">
         <Image
           src="icons/identity.svg"

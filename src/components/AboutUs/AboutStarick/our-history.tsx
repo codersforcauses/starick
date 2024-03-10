@@ -1,10 +1,19 @@
 import Image from "next/image";
 
 import SectionHeader from "@/components/section-header";
+import ServicesSection from "@/components/Services/services-section";
 
 export default function OurHistory() {
   const body = (
-    <div className="grow pl-3">
+    <div className="flex justify-center my-10">
+        <Image
+          src="icons/history.svg"
+          className="mx-2 h-12 w-12 md:h-24 md:w-24"
+          height={100}
+          width={100}
+          alt="history"
+        />
+      <div className="grow pl-3" style={{maxWidth : "60%"}}>
       <p>
         The Starick of today evolved from the hard work and commitment of strong
         women who were dedicated to their vision of providing safety and support
@@ -67,26 +76,25 @@ export default function OurHistory() {
       </p>
       <br />
     </div>
+    </div>
   );
   return (
     <div className="bg-starick-white">
-      <SectionHeader
+      {/* <SectionHeader
           backgroundColour="starick-green"
           titleText="Our History"
           imagePath="/images/starick-image1.jpg"
           textOnLeft={false}
           textColour="starick-white"
-        />
-      <div className="mb-4 flex w-full px-6 py-2 flex-row pt-5 md:px-20">
-        <Image
-          src="icons/history.svg"
-          className="mx-2 h-12 w-12 md:h-24 md:w-24"
-          height={100}
-          width={100}
-          alt="history"
+        /> */}
+      <ServicesSection
+          titleTextColour="starick-white"
+          titleBackgroundColour="starick-green"
+          title="Our History"
+          textOnLeft={true}
+          stories={true}
         />
         {body}
-      </div>
     </div>
   );
 }
