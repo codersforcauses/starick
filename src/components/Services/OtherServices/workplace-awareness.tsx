@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 import Link from "next/link";
 
 import ServicesSection from "../services-section";
@@ -6,7 +6,7 @@ import SubSection from "../subsection";
 
 export default function WorkplaceAwarenessSection() {
   const subBodyHelp = (
-    <div className="pl-3">
+    <div className="pl-3 ml-5">
       <p className="text-xl font-semibold">How we can help</p>
       <br></br>
       <p>
@@ -50,7 +50,7 @@ export default function WorkplaceAwarenessSection() {
   );
 
   const subBodyRightsResponsibilities = (
-    <div className="pl-3">
+    <div className="pl-3 ml-5">
       <p className="text-xl font-semibold">Rights and responsibilities</p>
       <br></br>
       <p>
@@ -92,7 +92,7 @@ export default function WorkplaceAwarenessSection() {
   );
 
   const subBodyAware = (
-    <div className="pl-3">
+    <div className="pl-3 ml-5">
       <p className="text-xl font-semibold">
         Is your workplace family and domestic violence aware?
       </p>
@@ -165,8 +165,9 @@ export default function WorkplaceAwarenessSection() {
       titleBackgroundColour="starick-green"
       sectionBody={body}
       title="Workplace Awareness"
-      textOnLeft={false}
+      textOnLeft={true}
       circlesPlacement="tr"
+      stories={true}
     />
   );
 }

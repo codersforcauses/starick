@@ -63,7 +63,7 @@ export default function RespectfulRelationshipsSection() {
       </p>
       <br />
       <br />
-      <p className="flex items-center justify-center text-xl font-semibold">
+      <p className="flex items-center justify-center text-xl font-semibold mb-8">
         About Respectful Relationships Education
       </p>
       <br />
@@ -87,7 +87,7 @@ export default function RespectfulRelationshipsSection() {
       </p>
       <br />
       <br />
-      <p className="flex items-center justify-center text-xl font-semibold">
+      <p className="flex items-center justify-center text-xl font-semibold mb-8">
         What is a whole-of-school approach?
       </p>
       <br />
@@ -151,6 +151,7 @@ export default function RespectfulRelationshipsSection() {
       title="WA Respectful Relationships Teaching Support Program"
       textOnLeft={false}
       circlesPlacement="bl"
+      stories={true}
     />
   );
 }
