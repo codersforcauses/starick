@@ -75,7 +75,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="grid h-96 w-full justify-items-center font-semibold text-starick-brown">
+      <div className="grid h-96 w-full justify-items-center font-semibold text-black">
         <PageHeaderBigCircle
           titleText="Did you know?"
           subtitleText={[
