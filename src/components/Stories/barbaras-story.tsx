@@ -103,7 +103,7 @@ export default function BarbarasStory() {
       titleBackgroundColour="starick-green"
       sectionBody={body}
       title="Barbara's Story"
-      imagePath="/hands.jpg"
+      imagePath="/hands.png"
       textOnLeft={false}
     />
   );

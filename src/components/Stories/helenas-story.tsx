@@ -71,7 +71,7 @@ export default function HelenasStory() {
       titleBackgroundColour="starick-olive"
       sectionBody={body}
       title="Helena's Story"
-      imagePath="/hands.jpg"
+      imagePath="/hands.png"
       textOnLeft={true}
     />
   );

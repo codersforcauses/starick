@@ -46,7 +46,7 @@ export default function CarolsStory() {
       titleTextColour="starick-white"
       titleBackgroundColour="starick-green"
       sectionBody={body}
-      imagePath="/hands.jpg"
+      imagePath="/hands.png"
       title="Carol's Story"
       textOnLeft={false}
     />

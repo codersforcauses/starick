@@ -84,7 +84,7 @@ export default function TaranehsStory() {
       titleTextColour="starick-black"
       titleBackgroundColour="starick-olive"
       sectionBody={body}
-      imagePath="/hands.jpg"
+      imagePath="/hands.png"
       title="Taraneh's Story"
       textOnLeft={true}
     />
