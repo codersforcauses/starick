@@ -10,7 +10,8 @@ interface SectionProps {
   titleTextColour: string;
   textOnLeft: boolean;
   sectionBody: ReactNode;
-  imagePath: string;
+  imagePath?: string;
+  stories?: boolean;
   circlesPlacement?: "tl" | "tr" | "bl" | "br" | "r" | "l";
 }
 
@@ -21,7 +22,8 @@ export default function Section({
   sectionBody,
   textOnLeft,
   imagePath,
-  circlesPlacement
+  circlesPlacement,
+  stories
 }: SectionProps) {
   let positionStyle;
   let rotationStyle;
@@ -65,21 +67,24 @@ export default function Section({
   }
   return (
     <>
-      {/* <SectionHeader
-        backgroundColour={titleBackgroundColour}
-        titleText={title}
-        imagePath={imagePath}
-        textOnLeft={textOnLeft}
-        textColour={titleTextColour}
-      /> */}
-      <div>
-        <PageHeaderBigCircle
+      {stories ? (
+        <div>
+          <PageHeaderBigCircle
+            titleText={title}
+            subtitleElement={null}
+            socialMedia={false}
+            textOnLeft={textOnLeft}
+          />
+        </div>
+      ) : (
+        <SectionHeader
+          backgroundColour={titleBackgroundColour}
           titleText={title}
-          subtitleElement={null}
-          socialMedia={false}
+          imagePath="/placeholder_starick_log.png"
           textOnLeft={textOnLeft}
+          textColour={titleTextColour}
         />
-      </div>
+      )}
       <div
         className="relative bg-starick-white px-6 py-10 md:px-32 lg:px-72"
         id={title.replace("\n", "")}

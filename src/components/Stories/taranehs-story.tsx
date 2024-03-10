@@ -84,6 +84,7 @@ export default function TaranehsStory() {
       imagePath="/hands.png"
       title="Taraneh's Story"
       textOnLeft={true}
+      stories={true}
     />
   );
 }

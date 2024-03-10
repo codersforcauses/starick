@@ -46,6 +46,7 @@ export default function CarolsStory() {
       imagePath="/hands.png"
       title="Carol's Story"
       textOnLeft={false}
+      stories={true}
     />
   );
 }

@@ -73,6 +73,7 @@ export default function HelenasStory() {
       title="Helena's Story"
       imagePath="/hands.png"
       textOnLeft={true}
+      stories={true}
     />
   );
 }

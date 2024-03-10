@@ -105,6 +105,7 @@ export default function BarbarasStory() {
       title="Barbara's Story"
       imagePath="/hands.png"
       textOnLeft={false}
+      stories={true}
     />
   );
 }
