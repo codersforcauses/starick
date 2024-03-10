@@ -20,7 +20,7 @@ export default function PageSummary({
   const rightPadding = contentOnLeft ? "md:pr-10" : "md:pr-40";
   const contentSection = (
     <div
-      className={`text-xs flex bg-${backgroundColour} ${leftPadding} ${rightPadding} min-h-[400px] items-center px-4 py-10 ${
+      className={`flex text-xs bg-${backgroundColour} ${leftPadding} ${rightPadding} min-h-[400px] items-center px-4 py-10 ${
         contentOnLeft ? "md:order-first" : "md:order-last"
       }`}
     >
