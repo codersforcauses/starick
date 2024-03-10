@@ -24,8 +24,8 @@ export default function SectionHeader({
       } w-full px-12`}
     >
       <p
-        className={`text-${textColour} text-2xl font-semibold  ${subtitleText ? "w-3/4 flex justify-center mt-6 mb-5 ml-10" : "w-full"} ${
-          textOnLeft ? "text-right" : "text-left"
+        className={`text-${textColour} w-full text-2xl font-semibold ${
+          textOnLeft ? "mr-10 text-right " : "text-left"
         }`}
       >
         {titleText}
@@ -40,7 +40,7 @@ export default function SectionHeader({
     </div>
   );
   const imageSection = (
-    <div className="relative">
+    <div className="relative" style={{ backgroundColor: "#eedbe0" }}>
       <Image src={imagePath} alt={titleText} fill />
     </div>
   );
