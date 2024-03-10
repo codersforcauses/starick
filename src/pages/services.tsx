@@ -49,7 +49,8 @@ export default function OurServices() {
 
   const subtitleElement = (
     <>
-      <p>
+    <div>
+    <p>
         Starick is a charity supporting women and children escaping domestic and
         family violence, predominantly in Perth&apos;s south-eastern
         metropolitan region.
@@ -59,6 +60,7 @@ export default function OurServices() {
         Our core services are funded by the Department of Communities and
         Lotterywest:
       </p>
+    </div>
     </>
   );
   return (
@@ -137,6 +139,7 @@ function Summary({
         arrowColour={arrowColour}
         textColour={textColour}
         arrowBackgroundColor={arrowBackgroundColor}
+        fontsmall={true}
       />
     </div>
   );

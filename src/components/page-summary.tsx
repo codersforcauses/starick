@@ -20,7 +20,7 @@ export default function PageSummary({
   const rightPadding = contentOnLeft ? "md:pr-10" : "md:pr-40";
   const contentSection = (
     <div
-      className={`flex bg-${backgroundColour} ${leftPadding} ${rightPadding} min-h-[300px] items-center px-4 py-10 ${
+      className={`text-xs flex bg-${backgroundColour} ${leftPadding} ${rightPadding} min-h-[400px] items-center px-4 py-10 ${
         contentOnLeft ? "md:order-first" : "md:order-last"
       }`}
     >
@@ -35,7 +35,7 @@ export default function PageSummary({
         height={0}
         sizes="100vw"
         alt={imageAlt}
-        className="h-full w-full"
+        className="h-full w-full object-cover"
       />
     </div>
   );
