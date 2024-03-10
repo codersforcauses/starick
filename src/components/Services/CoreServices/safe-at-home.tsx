@@ -5,6 +5,7 @@ import SubSection from "../subsection";
 export default function SafeAtHomeSection() {
   const subbody1 = (
     <>
+      <div className="ml-8">
       <p className="text-xl font-semibold">What is the Safe at Home program?</p>
       <br />
       <p>
@@ -25,11 +26,14 @@ export default function SafeAtHomeSection() {
         This includes women with or without children. The service is free,
         confidential and sensitive to the needs of women.
       </p>
+      </div>
+     
     </>
   );
   const subbody2 = (
     <>
-      <p className="text-xl font-semibold">
+    <div className="ml-8">
+    <p className="text-xl font-semibold">
         What can the Safe at Home program offer?
       </p>
       <br />
@@ -49,11 +53,14 @@ export default function SafeAtHomeSection() {
         ]}
         style="list-disc"
       />
+    </div>
+      
     </>
   );
   const subbody3 = (
     <>
-      <p className="text-xl font-semibold">
+    <div className = "ml-8">
+    <p className="text-xl font-semibold">
         What is our catchment area for Safe at Home?
       </p>
       <br />
@@ -71,6 +78,8 @@ export default function SafeAtHomeSection() {
         Airport, Piesse Brook, Redcliffe, Rivervale, South Kalamunda, St James,
         Stoneville, Victoria Park, Walliston, Wattle Grove and Welshpool.
       </p>
+    </div>
+      
     </>
   );
   const body = (
@@ -94,12 +103,13 @@ export default function SafeAtHomeSection() {
   );
   return (
     <ServicesSection
-      titleTextColour="starick-white"
-      titleBackgroundColour="starick-green"
+    titleTextColour="starick-white"
+    titleBackgroundColour="starick-green"
       sectionBody={body}
       title="Safe at Home Program"
-      textOnLeft={false}
+      textOnLeft={true}
       circlesPlacement="tr"
+      stories={true}
     />
   );
 }

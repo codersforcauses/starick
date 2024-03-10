@@ -67,20 +67,23 @@ export default function Section({
   }
   return (
     <>
-      {stories ? (
+    {/* Render new style if it is in stories page */}
+      {stories? (
         <div>
           <PageHeaderBigCircle
             titleText={title}
             subtitleElement={null}
             socialMedia={false}
             textOnLeft={textOnLeft}
+            titleBackgroundColour={titleBackgroundColour}
+            titleTextColour={titleTextColour}
           />
         </div>
       ) : (
         <SectionHeader
           backgroundColour={titleBackgroundColour}
           titleText={title}
-          imagePath="/placeholder_starick_log.png"
+          imagePath="/placeholder_starick_logo.png"
           textOnLeft={textOnLeft}
           textColour={titleTextColour}
         />
