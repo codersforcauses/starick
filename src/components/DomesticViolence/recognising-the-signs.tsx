@@ -88,6 +88,7 @@ export default function RecognisingTheSignsSection() {
       title="Recognising the signs"
       textOnLeft={true}
       circlesPlacement="bl"
+      imagePath=""
     />
   );
 }
