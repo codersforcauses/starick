@@ -1,11 +1,11 @@
 import PageHeader from "@/components/page-header";
 import PageSummary from "@/components/page-summary";
-import ServicesLink from "@/components/Services/services-link";
+import Button from "@/components/button";
 
 export default function OurServices() {
   const servicesSummaries = [
     {
-      title: "Refugees",
+      title: "Refuges",
       text: "Starick's two refuges, Mary Smith Refuge and Starick House, offer short term crisis accommodation for women and children who need a safe place to stay where they are supported and offered access to free professional services to help them escape the violence and make plans for their future."
     },
     {
@@ -131,7 +131,7 @@ function Summary({
       <br />
       <p className={`text-center text-${textColour}`}>{text}</p>
       <br />
-      <ServicesLink
+      <Button
         text="More Info"
         link={link}
         arrowColour={arrowColour}

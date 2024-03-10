@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import OurHistory from "@/components/AboutUs/AboutStarick/our-history";
+import Timeline from "@/components/AboutUs/AboutStarick/TimeLine";
 import WhoWeAre from "@/components/AboutUs/AboutStarick/who-we-are";
 import SectionTitle from "@/components/old-section-title";
 import PageHeader from "@/components/page-header";
@@ -48,6 +49,7 @@ export default function AboutUs() {
           textColour="starick-black"
         />
       </div>
+      <Timeline />
     </>
   );
 }
