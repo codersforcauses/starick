@@ -6,11 +6,11 @@ export default function HelenasStory() {
     "Starick’s Outreach team continued to provide emotional support to Helena.  Referrals were also made to other agencies who were able to provide ongoing co-ordinated support and services to her.";
   const body = (
     <>
-      <p className="mx-10 my-6 text-center text-lg">
+      <p className="mb-10 mt-6 pb-5 text-center text-xl">
         Helena was assisted by our outreach services team. We have changed her
         name to protect her identity.
       </p>
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-20">
+      <div className="mb-10 grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-20">
         <div>
           <p>
             Helena is an elderly single woman who was socially isolated and
@@ -71,7 +71,8 @@ export default function HelenasStory() {
       titleBackgroundColour="starick-olive"
       sectionBody={body}
       title="Helena's Story"
-      textOnLeft={false}
+      imagePath="/placeholder_starick_logo.png"
+      textOnLeft={true}
     />
   );
 }

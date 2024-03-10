@@ -6,12 +6,12 @@ export default function BarbarasStory() {
     "The family started to attend a local church and the children enjoyed participating in youth groups and other activities there. Barbara was pleased to have re-engaged with the church since leaving her marriage. Her husband had stopped her and her children from attending.";
   const body = (
     <>
-      <p className="mx-10 my-6 text-center text-lg">
+      <p className="mb-10 mt-6 pb-7 text-center text-xl">
         Barbara was initially an Outreach Services client, who moved into one of
         our transitional homes. We have changed the names of herself and her
         three children to protect their identity.
       </p>
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-20">
+      <div className="mb-10 grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-20">
         <div>
           <p>
             Barbara moved into a Starick transitional house with her three
@@ -100,9 +100,10 @@ export default function BarbarasStory() {
   return (
     <ServicesSection
       titleTextColour="starick-white"
-      titleBackgroundColour="starick-brown"
+      titleBackgroundColour="starick-green"
       sectionBody={body}
       title="Barbara's Story"
+      imagePath="/placeholder_starick_logo.png"
       textOnLeft={false}
     />
   );

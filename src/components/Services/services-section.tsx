@@ -9,6 +9,7 @@ interface SectionProps {
   titleTextColour: string;
   textOnLeft: boolean;
   sectionBody: ReactNode;
+  imagePath: string;
   circlesPlacement?: "tl" | "tr" | "bl" | "br" | "r" | "l";
 }
 
@@ -18,6 +19,7 @@ export default function Section({
   titleTextColour,
   sectionBody,
   textOnLeft,
+  imagePath,
   circlesPlacement
 }: SectionProps) {
   let positionStyle;
@@ -65,12 +67,12 @@ export default function Section({
       <SectionHeader
         backgroundColour={titleBackgroundColour}
         titleText={title}
-        imagePath="/images/starick-image1.jpg"
+        imagePath={imagePath}
         textOnLeft={textOnLeft}
         textColour={titleTextColour}
       />
       <div
-        className="relative bg-starick-white px-6 py-16 md:px-32 lg:px-72"
+        className="relative bg-starick-white px-6 py-10 md:px-32 lg:px-72"
         id={title.replace("\n", "")}
       >
         {circlesPlacement ? (

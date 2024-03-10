@@ -23,7 +23,7 @@ export default function SectionHeader({
     >
       <p
         className={`text-${textColour} w-full text-2xl font-semibold ${
-          textOnLeft ? "text-right" : "text-left"
+          textOnLeft ? "mr-10 text-right " : "text-left"
         }`}
       >
         {titleText}

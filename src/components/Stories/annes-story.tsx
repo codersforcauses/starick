@@ -6,15 +6,15 @@ export default function AnnesStory() {
     "I am so very thankful for the women’s refuges throughout Perth, the police who see the destruction first hand yet continue to care in the wee hours when nobody else can help, the magistrates who watch our declining culture day in and day out but choose to protect us, still, by putting boundaries in place, and all the people who become a voice for those who have lost theirs.";
   const body = (
     <>
-      <p className="mx-10 my-6 text-center text-lg">
+      <p className="mb-10 px-4 pb-8 text-center text-xl">
         This moving and courageous first person account of domestic violence was
         written by a former Starick client. We have changed her name to protect
         her identity.
       </p>
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-20">
+      <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-20">
         <div>
           <p>
-            `&quot;`Hello. My name is Anne and I’m a survivor of domestic
+            &quot;Hello. My name is Anne and I’m a survivor of domestic
             violence. Fortunately I can tell my story because I am still here.
           </p>
           <br />
@@ -182,6 +182,7 @@ export default function AnnesStory() {
       titleBackgroundColour="starick-olive"
       sectionBody={body}
       title="Anne's Story"
+      imagePath="/placeholder_starick_logo.png"
       textOnLeft={false}
     />
   );
