@@ -6,12 +6,12 @@ export default function TaranehsStory() {
     " I appreciate all the help that staff have offered to me. I am noticing improvements in my health and wellbeing since being at the refuge. I feel that staff are very respectful of my Muslim culture.My daughter’s development is much better than before. I feel I am bonding with everyone well. I have learned how to use the ATM and how to use public transport to go to different places. I am more able to seek assistance, am more confident to talk to people and I now cook healthy food. ";
   const body = (
     <>
-      <p className="mx-10 my-6 text-center text-lg">
+      <p className="mb-10 pb-7 pt-7 text-center text-xl">
         Taraneh was a resident at our Mary Smith Refuge. We have changed her
         name to protect her identity.
       </p>
 
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-20">
+      <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-20">
         <div>
           <p className="mb-2">
             Taraneh and her 18-month-old daughter came to our Mary Smith Refuge
@@ -71,9 +71,6 @@ export default function TaranehsStory() {
             Her social skills and confidence have improved and she is meeting
             new friends.
           </p>
-          <p className="mb-2">
-            Here’s what Taraneh says about the Mary Smith refuge...
-          </p>
           <QuoteBlock text={quoteBlockText} />
         </div>
       </div>
@@ -81,11 +78,13 @@ export default function TaranehsStory() {
   );
   return (
     <ServicesSection
-      titleTextColour="starick-white"
-      titleBackgroundColour="starick-brown"
+      titleTextColour="starick-black"
+      titleBackgroundColour="starick-olive"
       sectionBody={body}
+      imagePath="/hands.png"
       title="Taraneh's Story"
-      textOnLeft={false}
+      textOnLeft={true}
+      stories={true}
     />
   );
 }
