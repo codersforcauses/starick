@@ -35,16 +35,19 @@ export default function WhoWeAre() {
           textOnLeft={false}
           textColour="starick-white"
         />
-      <div className="mb-4 flex w-full flex-row px-6 py-2 pt-5 md:px-20">
+      <div className = "flex justify-center">
+      <div className="my-6 flex w-3/4 flex-row py-2 pt-5 md:px-10">
         <Image
           src="icons/identity.svg"
-          className="mx-2 h-12 w-12 md:h-24 md:w-24"
+          className="mr-10 h-12 w-12 md:h-24 md:w-24"
           height={100}
           width={100}
           alt="identity"
         />
         {body}
       </div>
+      </div>
+      
     </div>
   );
 }

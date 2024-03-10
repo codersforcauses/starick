@@ -6,6 +6,7 @@ interface SectionHeaderProps {
   textOnLeft: boolean;
   imagePath: string;
   titleText: string;
+  subtitleText ?: string;
 }
 
 export default function SectionHeader({
@@ -13,21 +14,29 @@ export default function SectionHeader({
   textColour,
   textOnLeft,
   imagePath,
-  titleText
+  titleText,
+  subtitleText
 }: SectionHeaderProps) {
   const textSection = (
     <div
-      className={`bg-${backgroundColour} flex w-full items-center ${
+      className={`bg-${backgroundColour} flex ${subtitleText ? "flex-col" : ""} w-full items-center ${
         textOnLeft ? "order-first" : "order-last"
       } w-full px-12`}
     >
       <p
-        className={`text-${textColour} w-full text-2xl font-semibold ${
+        className={`text-${textColour} text-2xl font-semibold  ${subtitleText ? "w-3/4 flex justify-center mt-6 mb-5 ml-10" : "w-full"} ${
           textOnLeft ? "text-right" : "text-left"
         }`}
       >
         {titleText}
       </p>
+      {subtitleText
+      ?
+      <p className = "w-4/6 ml-10">
+        {subtitleText}
+      </p>
+      :
+      null}     
     </div>
   );
   const imageSection = (
