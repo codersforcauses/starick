@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import Image from "next/image";
 
 import SectionHeader from "../section-header";
+import PageHeaderBigCircle from "../page-header-bigcircle";
 
 interface SectionProps {
   title: string;
@@ -9,6 +10,8 @@ interface SectionProps {
   titleTextColour: string;
   textOnLeft: boolean;
   sectionBody: ReactNode;
+  imagePath?: string;
+  stories?: boolean;
   circlesPlacement?: "tl" | "tr" | "bl" | "br" | "r" | "l";
 }
 
@@ -18,7 +21,9 @@ export default function Section({
   titleTextColour,
   sectionBody,
   textOnLeft,
-  circlesPlacement
+  imagePath,
+  circlesPlacement,
+  stories
 }: SectionProps) {
   let positionStyle;
   let rotationStyle;
@@ -62,15 +67,29 @@ export default function Section({
   }
   return (
     <>
-      <SectionHeader
-        backgroundColour={titleBackgroundColour}
-        titleText={title}
-        imagePath="/images/starick-image1.jpg"
-        textOnLeft={textOnLeft}
-        textColour={titleTextColour}
-      />
+      {/* Render new style if it is in stories page */}
+      {stories ? (
+        <div>
+          <PageHeaderBigCircle
+            titleText={title}
+            subtitleElement={null}
+            socialMedia={false}
+            textOnLeft={textOnLeft}
+            titleBackgroundColour={titleBackgroundColour}
+            titleTextColour={titleTextColour}
+          />
+        </div>
+      ) : (
+        <SectionHeader
+          backgroundColour={titleBackgroundColour}
+          titleText={title}
+          imagePath="/placeholder_starick_logo.png"
+          textOnLeft={textOnLeft}
+          textColour={titleTextColour}
+        />
+      )}
       <div
-        className="relative bg-starick-white px-6 py-16 md:px-32 lg:px-72"
+        className="relative bg-starick-white px-6 py-10 md:px-32 lg:px-72"
         id={title.replace("\n", "")}
       >
         {circlesPlacement ? (

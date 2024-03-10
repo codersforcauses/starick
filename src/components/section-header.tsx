@@ -23,7 +23,7 @@ export default function SectionHeader({
     >
       <p
         className={`text-${textColour} w-full text-2xl font-semibold ${
-          textOnLeft ? "text-right" : "text-left"
+          textOnLeft ? "mr-10 text-right " : "text-left"
         }`}
       >
         {titleText}
@@ -31,12 +31,12 @@ export default function SectionHeader({
     </div>
   );
   const imageSection = (
-    <div className="relative">
+    <div className="relative" style={{ backgroundColor: "#eedbe0" }}>
       <Image src={imagePath} alt={titleText} fill />
     </div>
   );
   return (
-    <div className={`grid h-44 grid-cols-2`}>
+    <div className="grid h-44 grid-cols-2">
       {textSection}
       {imageSection}
     </div>

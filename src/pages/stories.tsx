@@ -32,11 +32,6 @@ export default function Stories() {
   return (
     <>
       <PageHeader titleText="Our Stories" />
-      <div className="mx-4 mt-12 flex justify-center">
-        <p className="text-2xl">
-          Moving and courageous stories from the women who have used our service
-        </p>
-      </div>
       <InPageNav list={navLinkDetails} />
       <AnnesStory />
       <TaranehsStory />

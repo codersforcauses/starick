@@ -3,7 +3,7 @@ import ServicesSection from "../Services/services-section";
 export default function CarolsStory() {
   const body = (
     <>
-      <p className="mx-10 my-6 text-center text-lg">
+      <p className="my-6 mb-10 text-center text-xl">
         Carol was a resident at our Starick House Refuge. We have changed her
         name to protect her identity.
       </p>
@@ -36,7 +36,6 @@ export default function CarolsStory() {
         own home and, in her own words, “never look back!”
       </p>
       <br />
-      <p>Here’s what she said about her experience at Starick House:</p>
     </>
   );
   return (
@@ -44,8 +43,10 @@ export default function CarolsStory() {
       titleTextColour="starick-white"
       titleBackgroundColour="starick-green"
       sectionBody={body}
+      imagePath="/hands.png"
       title="Carol's Story"
       textOnLeft={false}
+      stories={true}
     />
   );
 }

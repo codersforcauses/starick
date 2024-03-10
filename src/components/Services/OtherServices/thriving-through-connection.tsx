@@ -38,12 +38,12 @@ export default function ThrivingThroughConnectionSection() {
       <img
         className="mx-auto w-96"
         alt="Telethon Logo"
-        src="/images/telethon-logo.png"
+        src="/supporter/telethon-logo.png"
       ></img>
       <div className="flex justify-center">
         <Button
-          text={"Core Services"}
-          link={"/core-services"}
+          text="Core Services"
+          link="/core-services"
           textColour="starick-black"
           arrowColour="starick-white"
           arrowBackgroundColor="starick-green"
@@ -62,6 +62,7 @@ export default function ThrivingThroughConnectionSection() {
       }
       textOnLeft={false}
       circlesPlacement="bl"
+      stories={true}
     />
   );
 }

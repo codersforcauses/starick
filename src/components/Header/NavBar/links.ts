@@ -50,6 +50,10 @@ export const primaryNav: Array<NavBarItem> = [
       {
         href: "/useful-numbers-and-information",
         label: "Useful numbers & information"
+      },
+      {
+        href: "/supporter",
+        label: "Our Supporters"
       }
     ]
   },

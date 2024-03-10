@@ -1,6 +1,6 @@
-import SubSection from "../Services/subsection";
-import ServicesSection from "../Services/services-section";
 import { List } from "../Services/list";
+import ServicesSection from "../Services/services-section";
+import SubSection from "../Services/subsection";
 
 export default function YourRightsAsAHumanBeingSection() {
   const humanBeingRightsExample = (

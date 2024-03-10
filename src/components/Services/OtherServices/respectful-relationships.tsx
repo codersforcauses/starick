@@ -63,7 +63,7 @@ export default function RespectfulRelationshipsSection() {
       </p>
       <br />
       <br />
-      <p className="flex items-center justify-center text-xl font-semibold">
+      <p className="mb-8 flex items-center justify-center text-xl font-semibold">
         About Respectful Relationships Education
       </p>
       <br />
@@ -87,7 +87,7 @@ export default function RespectfulRelationshipsSection() {
       </p>
       <br />
       <br />
-      <p className="flex items-center justify-center text-xl font-semibold">
+      <p className="mb-8 flex items-center justify-center text-xl font-semibold">
         What is a whole-of-school approach?
       </p>
       <br />
@@ -126,16 +126,16 @@ export default function RespectfulRelationshipsSection() {
       <br />
       <div className="flex justify-center">
         <Button
-          text={"Info for schools"}
-          link={"/other-services/info-for-schools"}
+          text="Info for schools"
+          link="/other-services/info-for-schools"
           textColour="starick-black"
           arrowColour="starick-white"
           arrowBackgroundColor="starick-green"
         />
         <div className="w-32"></div>
         <Button
-          text={"Further reading"}
-          link={"/other-services/further-reading"}
+          text="Further reading"
+          link="/other-services/further-reading"
           textColour="starick-black"
           arrowColour="starick-white"
           arrowBackgroundColor="starick-green"
@@ -151,6 +151,7 @@ export default function RespectfulRelationshipsSection() {
       title="WA Respectful Relationships Teaching Support Program"
       textOnLeft={false}
       circlesPlacement="bl"
+      stories={true}
     />
   );
 }

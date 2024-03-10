@@ -1,5 +1,4 @@
 import { List } from "../Services/list";
-
 import ServicesSection from "../Services/services-section";
 import SubSection from "../Services/subsection";
 
@@ -89,6 +88,7 @@ export default function RecognisingTheSignsSection() {
       title="Recognising the signs"
       textOnLeft={true}
       circlesPlacement="bl"
+      imagePath=""
     />
   );
 }
