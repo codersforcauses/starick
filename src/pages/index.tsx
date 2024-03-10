@@ -94,6 +94,7 @@ export default function Home() {
             </Link>
           }
           socialMedia={false}
+          textOnLeft={true}
         />
       </div>
 
