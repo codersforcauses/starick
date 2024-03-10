@@ -41,7 +41,7 @@ export default function Timeline() {
 
   return (
     <>
-      <div className="relative my-5 flex h-[45vh] items-center justify-around gap-0 bg-starick-white px-2 text-sm sm:h-[20vh] sm:px-16 md:h-[30vh] lg:text-base 2xl:h-[40vh]">
+      <div className="relative my-10 flex h-[45vh] items-center justify-around gap-0 bg-starick-white px-2 text-sm sm:h-[20vh] sm:px-16 md:h-[30vh] lg:text-base 2xl:h-[40vh]">
         <Image
           src="icons/left-arrow.svg"
           className="z-10 mx-2 mb-4 h-6 w-6 opacity-40 hover:opacity-60 md:h-12 md:w-12"
