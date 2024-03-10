@@ -8,8 +8,8 @@ interface PageHeaderBigCircleProps {
   subtitleElement2?: ReactNode;
   socialMedia: boolean;
   textOnLeft?: boolean;
-  titleBackgroundColour ?: string;
-  titleTextColour ?: string;
+  titleBackgroundColour?: string;
+  titleTextColour?: string;
 }
 
 export default function PageHeaderBigCircle({
@@ -80,7 +80,11 @@ export default function PageHeaderBigCircle({
         </div>
       ) : (
         <div
-          className={`relative flex flex-col items-center justify-center overflow-hidden text-center ${titleTextColour && titleBackgroundColour ? `text-${titleTextColour} bg-${titleBackgroundColour}`:""}`}
+          className={`relative flex flex-col items-center justify-center overflow-hidden text-center ${
+            titleTextColour && titleBackgroundColour
+              ? `text-${titleTextColour} bg-${titleBackgroundColour}`
+              : ""
+          }`}
           style={{ width: "100%" }}
         >
           <Image

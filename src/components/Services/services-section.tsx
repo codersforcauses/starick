@@ -67,8 +67,8 @@ export default function Section({
   }
   return (
     <>
-    {/* Render new style if it is in stories page */}
-      {stories? (
+      {/* Render new style if it is in stories page */}
+      {stories ? (
         <div>
           <PageHeaderBigCircle
             titleText={title}

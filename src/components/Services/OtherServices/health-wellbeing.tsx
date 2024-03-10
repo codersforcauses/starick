@@ -6,7 +6,7 @@ import SubSection from "../subsection";
 
 export default function HealthAndWellbeingSection() {
   const subBodyBabyMassage = (
-    <div className="pl-3 ml-5">
+    <div className="ml-5 pl-3">
       <p className="text-xl font-semibold">Baby Massage</p>
       <br></br>
       <p>
@@ -65,7 +65,7 @@ export default function HealthAndWellbeingSection() {
   );
 
   const subBodyLivedExperience = (
-    <div className="pl-3 ml-5">
+    <div className="ml-5 pl-3">
       <p className="text-xl font-semibold">The Lived Experience</p>
       <br></br>
       <p>
@@ -134,7 +134,7 @@ export default function HealthAndWellbeingSection() {
   );
 
   const subBodyYoga = (
-    <div className="pl-3 ml-5">
+    <div className="ml-5 pl-3">
       <p className="text-xl font-semibold">Yoga for Trauma</p>
       <p>
         Yoga classes are currently held for one hour on a weekly basis at both

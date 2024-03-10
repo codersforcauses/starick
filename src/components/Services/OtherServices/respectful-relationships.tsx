@@ -63,7 +63,7 @@ export default function RespectfulRelationshipsSection() {
       </p>
       <br />
       <br />
-      <p className="flex items-center justify-center text-xl font-semibold mb-8">
+      <p className="mb-8 flex items-center justify-center text-xl font-semibold">
         About Respectful Relationships Education
       </p>
       <br />
@@ -87,7 +87,7 @@ export default function RespectfulRelationshipsSection() {
       </p>
       <br />
       <br />
-      <p className="flex items-center justify-center text-xl font-semibold mb-8">
+      <p className="mb-8 flex items-center justify-center text-xl font-semibold">
         What is a whole-of-school approach?
       </p>
       <br />

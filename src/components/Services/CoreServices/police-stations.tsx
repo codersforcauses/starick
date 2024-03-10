@@ -46,8 +46,8 @@ export default function PoliceSection() {
   );
   return (
     <ServicesSection
-    titleTextColour="starick-white"
-    titleBackgroundColour="starick-green"
+      titleTextColour="starick-white"
+      titleBackgroundColour="starick-green"
       sectionBody={body}
       title="Support in Police Stations"
       textOnLeft={true}
