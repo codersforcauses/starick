@@ -31,7 +31,7 @@ export default function SectionHeader({
     </div>
   );
   const imageSection = (
-    <div className="relative" style = {{backgroundColor : "#eedbe0"}}>
+    <div className="relative" style={{ backgroundColor: "#eedbe0" }}>
       <Image src={imagePath} alt={titleText} fill />
     </div>
   );

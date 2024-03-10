@@ -73,11 +73,11 @@ export default function Section({
         textColour={titleTextColour}
       /> */}
       <div>
-        <PageHeaderBigCircle 
-        titleText={title}
-        subtitleElement={null}
-        socialMedia={false}
-        textOnLeft={textOnLeft}
+        <PageHeaderBigCircle
+          titleText={title}
+          subtitleElement={null}
+          socialMedia={false}
+          textOnLeft={textOnLeft}
         />
       </div>
       <div

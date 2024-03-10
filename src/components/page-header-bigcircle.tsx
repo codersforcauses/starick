@@ -7,7 +7,7 @@ interface PageHeaderBigCircleProps {
   subtitleElement: ReactNode;
   subtitleElement2?: ReactNode;
   socialMedia: boolean;
-  textOnLeft ?: boolean;
+  textOnLeft?: boolean;
 }
 
 export default function PageHeaderBigCircle({
@@ -15,7 +15,7 @@ export default function PageHeaderBigCircle({
   subtitleText,
   subtitleElement,
   socialMedia,
-  textOnLeft,
+  textOnLeft
 }: PageHeaderBigCircleProps) {
   return (
     <>
@@ -85,7 +85,9 @@ export default function PageHeaderBigCircle({
             height={0}
             alt="decorative circles"
             sizes="100vw"
-            className={`z-1 absolute inset-y-0 h-full w-auto ${textOnLeft ? "left-0" : "right-0"}`}
+            className={`z-1 absolute inset-y-0 h-full w-auto ${
+              textOnLeft ? "left-0" : "right-0"
+            }`}
             style={{ transform: "scale(1.55)" }}
           />
           <div className="z-10 px-2 py-6 text-black md:px-10">
