@@ -22,7 +22,7 @@ export default function Donation() {
             C10289306
           </p>
         </div>
-        <div className="flex justify-center">
+        <div className="flex flex-col justify-center">
           <div className="w-3/4">
             <p className="mb-3">
               To Support Starick and recycle at the same time
@@ -45,14 +45,11 @@ export default function Donation() {
               </li>
             </ol>
           </div>
-          <div>
-            <img alt="" />
-            <img alt="" />
-            <p></p>
-          </div>
-          <div>
-            <img alt="" />
-            <img alt="" />
+          <div className = "flex justify-center gap-10 mt-6">
+            <img alt="" src="/images/donations/bequests/BequestIcon11.png" style = {{height : "60px", width : "60px"}} />
+            <img alt="" src="/images/donations/bequests/BequestIcon12.png" style = {{height : "60px", width : "60px"}} />
+            <img alt="" src="/images/donations/bequests/BequestIcon10.png" style = {{height : "60px", width : "60px"}} />
+            <img alt="" src="/images/donations/bequests/BequestIcon13.png" style = {{height : "60px", width : "120px"}} />
           </div>
         </div>
       </div>
@@ -75,10 +72,8 @@ export default function Donation() {
         If you wish to offer volunteer services to the women and children in our
         services, contact the Starick Office on 9478 5300.
       </p>
-      <div className="flex justify-center">
-        <img alt="" />
-        <img alt="" />
-        <img alt="" />
+      <div className="flex justify-center mt-10">
+        <img alt="" src="/images/donations/bequests/BequestIcon14.png" style = {{height : "60px", width : "200px"}}/>
       </div>
     </div>
   );
@@ -314,7 +309,7 @@ export default function Donation() {
         backgroundColour="starick-green"
         contentOnLeft={false}
         imageAlt="Donate"
-        imagePath="/placeholder_starick_logo.png"
+        imagePath="/images/donations/bequests/Bequest2.png"
       />
       <PageSummary
         content={
@@ -327,7 +322,7 @@ export default function Donation() {
         backgroundColour="starick-olive"
         contentOnLeft={true}
         imageAlt="Donate"
-        imagePath="/placeholder_starick_logo.png"
+        imagePath="/images/donations/bequests/Bequest1.png"
       />
       <BottomRightDecoratedContent
         content={Ideasbody}
@@ -344,7 +339,7 @@ export default function Donation() {
         backgroundColour="starick-green"
         contentOnLeft={false}
         imageAlt="Donate"
-        imagePath="/placeholder_starick_logo.png"
+        imagePath="/images/donations/bequests/Bequest5.png"
       />
       <PageSummary
         content={
@@ -357,7 +352,7 @@ export default function Donation() {
         backgroundColour="starick-olive"
         contentOnLeft={true}
         imageAlt="Donate"
-        imagePath="/placeholder_starick_logo.png"
+        imagePath="/images/donations/bequests/Bequest6.png"
       />
       <PageSummary
         content={
@@ -370,7 +365,7 @@ export default function Donation() {
         backgroundColour="starick-green"
         contentOnLeft={false}
         imageAlt="Donate"
-        imagePath="/placeholder_starick_logo.png"
+        imagePath="/images/home/MG_2397.jpg"
       />
       <PageHeaderBigCircle
         titleText="Bequests"

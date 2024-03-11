@@ -2,12 +2,13 @@ import { NextApiRequest, NextApiResponse } from "next";
 import Stripe from "stripe";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: "2020-08-27"
+  apiVersion: "2023-10-16"
 });
 
 const handleRequest = async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === "POST") {
     try {
+      const {amountInCents} = req.body;
       const session = await stripe.checkout.sessions.create({
         payment_method_types: ["card"],
         line_items: [
@@ -17,7 +18,7 @@ const handleRequest = async (req: NextApiRequest, res: NextApiResponse) => {
               product_data: {
                 name: "Donation"
               },
-              unit_amount: 1000, // $10.00
+              unit_amount: amountInCents, // $10.00
               recurring: {
                 interval: "month"
               }
