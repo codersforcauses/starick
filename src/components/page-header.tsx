@@ -42,8 +42,18 @@ export default function PageHeader({
           sizes="100vw"
           className="absolute inset-y-0 right-0 hidden h-full w-auto rotate-180 md:block"
         />
-        <div className="z-10 px-2 py-6 md:px-10">
-          <p className="mb-7 text-2xl font-bold">{titleText}</p>
+        <div
+          className={`z-10 px-2 py-6 md:px-10 ${
+            titleText === "Our Services" ? "mb-8" : ""
+          }`}
+        >
+          <p
+            className={`pb-7 text-2xl font-bold ${
+              titleText === "Our Services" ? "pt-8" : ""
+            }`}
+          >
+            {titleText}
+          </p>
           {subtitleText ? (
             <p className="text-m mb-10 text-center">{subtitleText}</p>
           ) : null}

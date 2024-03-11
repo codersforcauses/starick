@@ -6,6 +6,7 @@ interface ButtonProps {
   textColour: string;
   arrowBackgroundColor: string;
   arrowColour: string;
+  fontsmall?: boolean;
 }
 
 export default function Button({
@@ -13,13 +14,16 @@ export default function Button({
   link,
   textColour,
   arrowBackgroundColor,
-  arrowColour
+  arrowColour,
+  fontsmall
 }: ButtonProps) {
   return (
     <Link href={link}>
-      <div className="group flex">
+      <div className="group flex items-center">
         <button
-          className={`bg-${arrowBackgroundColor} group-hover:bg-starick-orange text-${arrowColour} mr-2 px-2 font-mono text-xl font-bold`}
+          className={`bg-${arrowBackgroundColor} group-hover:bg-starick-orange text-${arrowColour} text-s mr-2 px-2 font-mono ${
+            fontsmall ? "h-6 w-6" : ""
+          } text-l font-bold`}
         >
           &#62;
         </button>
