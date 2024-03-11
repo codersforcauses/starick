@@ -1,6 +1,7 @@
+import { format } from "path";
 import { useState } from "react";
 // import CheckoutForm from "../../components/donation-stripe/checkoutform";
-import { loadStripe } from '@stripe/stripe-js';
+import {loadStripe} from '@stripe/stripe-js';
 
 export default function DonationStripe() {
   const [isClicked, setIsClicked] = useState(false);
@@ -9,6 +10,9 @@ export default function DonationStripe() {
   const [isSecondButtonActive, setIsSecondButtonActive] = useState(false);
 
   const [isPaymentButtonActive, setIsPaymentButtonActive] = useState(false);
+
+  const [amount, setAmount] = useState('');
+  const [errorAmount, toggleErrorAmount] = useState(false);
 
   const handleFirstButtonClick = () => {
     setIsFirstButtonActive(true);
@@ -38,6 +42,7 @@ export default function DonationStripe() {
     set$100Active(false);
     set$150Active(false);
     set$200Active(false);
+    setAmount("20");
   };
 
   const handle$50Click = () => {
@@ -46,6 +51,7 @@ export default function DonationStripe() {
     set$100Active(false);
     set$150Active(false);
     set$200Active(false);
+    setAmount("50");
   };
 
   const handle$100Click = () => {
@@ -54,6 +60,7 @@ export default function DonationStripe() {
     set$100Active(true);
     set$150Active(false);
     set$200Active(false);
+    setAmount("100");
   };
 
   const handle$150Click = () => {
@@ -62,6 +69,7 @@ export default function DonationStripe() {
     set$100Active(false);
     set$150Active(true);
     set$200Active(false);
+    setAmount("150");
   };
 
   const handle$200Click = () => {
@@ -72,8 +80,24 @@ export default function DonationStripe() {
     set$200Active(true);
   };
 
+  const handleErrorHandle = async () => {
+  var formatAmount = parseInt(amount);
+
+  if(formatAmount <= 0){
+    setAmount("0");
+    toggleErrorAmount(true);
+  }
+  else{
+    toggleErrorAmount(false);
+  }
+
+  handleCheckout();
+  
+};
+
+
   return (
-    <div>
+    <div style = {{maxWidth : "480px"}}>
       <div className="flex">
         <div
           onClick={handleFirstButtonClick}
@@ -113,7 +137,7 @@ export default function DonationStripe() {
           }}
           role="button"
           tabIndex={0}
-          className={`w-24 border-2 border-starick-olive p-5 text-center ${
+          className={`w-1/5 border-2 border-starick-olive p-5 text-center ${
             isClicked ? "hover:bg-starick-green" : "hover:bg-starick-olive"
           }  ${is$20Active ? "bg-starick-green" : "bg-starick-white"}`}
         >
@@ -126,7 +150,7 @@ export default function DonationStripe() {
           }}
           role="button"
           tabIndex={0}
-          className={`w-24 border-2 border-starick-olive p-5 text-center ${
+          className={`w-1/5 border-2 border-starick-olive p-5 text-center ${
             isClicked ? "hover:bg-starick-green" : "hover:bg-starick-olive"
           }  ${is$50Active ? "bg-starick-green" : "bg-starick-white"}`}
         >
@@ -139,7 +163,7 @@ export default function DonationStripe() {
           }}
           role="button"
           tabIndex={0}
-          className={`w-24 border-2 border-starick-olive p-5 text-center ${
+          className={`w-1/5 border-2 border-starick-olive p-5 text-center ${
             isClicked ? "hover:bg-starick-green" : "hover:bg-starick-olive"
           }  ${is$100Active ? "bg-starick-green" : "bg-starick-white"}`}
         >
@@ -152,7 +176,7 @@ export default function DonationStripe() {
           }}
           role="button"
           tabIndex={0}
-          className={`w-24 border-2 border-starick-olive p-5 text-center ${
+          className={`w-1/5 border-2 border-starick-olive p-5 text-center ${
             isClicked ? "hover:bg-starick-green" : "hover:bg-starick-olive"
           }  ${is$150Active ? "bg-starick-green" : "bg-starick-white"}`}
         >
@@ -165,32 +189,50 @@ export default function DonationStripe() {
           }}
           role="button"
           tabIndex={0}
-          className={`w-24 border-2 border-starick-olive p-5 text-center ${
+          className={`w-1/5 border-2 border-starick-olive p-5 text-center ${
             isClicked ? "hover:bg-starick-green" : "hover:bg-starick-olive"
           }  ${is$200Active ? "bg-starick-green" : "bg-starick-white"}`}
         >
           $_
         </div>
+
       </div>
 
+      {errorAmount
+      ?
+      <div className="mt-5 text-center">
+        <p className = "text-red-500 text-l">Please input a non negative number</p>
+      </div>
+      :
+      null}
+      
+      {is$200Active 
+      ? 
+      <div className = "mt-5">
+      <input
+        type="number"
+        placeholder="Other amount"
+        aria-invalid="false"
+        className="w-full p-3 border-2 border-starick-olive"
+        onChange = {(e) => {setAmount(e.target.value);  toggleErrorAmount(false)}}
+      />
+      </div>
+      :
+      null
+      }
+    
       <div className="mt-4 flex">
-        <div
-          style={{ width: "480px" }}
-          className="w-120 border-2 border-starick-olive p-5 text-center hover:bg-starick-olive"
-        >
-<button onClick={handleCheckout}>Donate</button>
-          {/* <CheckoutForm /> */}
-        </div>
-        <div>
-        </div>
+        <button className="w-full h-full border-2 border-starick-olive p-5 text-center hover:bg-starick-olive" onClick={handleErrorHandle}>Donate</button>
       </div>
     </div>
   );
 }
 
+
+
 const handleCheckout = async () => {
-    // Load the Stripe library with the publishable key
- const stripe = await loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
+     // Load the Stripe library with the publishable key
+  const stripe = await loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
 
   // Make a POST request to the '/api/checkout_sessions' endpoint
   const response = await fetch('/api/checkout_sessions/checkout_session', { method: 'POST' });
@@ -199,12 +241,11 @@ const handleCheckout = async () => {
   // Extract the JSON data from the response
   const data = await response.json();
   console.log(data);
-//  const { data } = await fetch('/api/checkout_sessions', { method: 'POST' });
+  //  const { data } = await fetch('/api/checkout_sessions', { method: 'POST' });
 
- if (stripe && data.sessionId) {
+  if (stripe && data.sessionId) {
       // Redirect the user to the Stripe checkout page with the session ID
     stripe.redirectToCheckout({ sessionId: data.sessionId });
- }
-};
+  }
 
-
+}
