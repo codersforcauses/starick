@@ -13,17 +13,20 @@ export default function DonationStripe() {
 
   const [amount, setAmount] = useState("");
   const [errorAmount, toggleErrorAmount] = useState(false);
+  const [interval, setInterval] = useState("month");
 
   const handleFirstButtonClick = () => {
     setIsFirstButtonActive(true);
     setIsSecondButtonActive(false);
     setIsClicked(true);
+    setInterval("month");
   };
 
   const handleSecondButtonClick = () => {
     setIsFirstButtonActive(false);
     setIsSecondButtonActive(true);
     setIsClicked(true);
+    setInterval("once");
   };
 
   const handlePaymentButtonClick = () => {
@@ -92,7 +95,7 @@ export default function DonationStripe() {
 
     const amountInCents = Math.round(formatAmount * 100);
 
-    handleCheckout({ amountInCents });
+    handleCheckout({ amountInCents, interval});
   };
 
   return (
@@ -231,7 +234,7 @@ export default function DonationStripe() {
   );
 }
 
-const handleCheckout = async (amountInCents: { amountInCents: number }) => {
+const handleCheckout = async ({ amountInCents, interval }: { amountInCents: number, interval: string }) => {
   // Load the Stripe library with the publishable key
   const stripe = await loadStripe(
     process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!
@@ -241,8 +244,12 @@ const handleCheckout = async (amountInCents: { amountInCents: number }) => {
   const response = await fetch("/api/checkout_sessions/checkout_session", {
     method: "POST",
     body: JSON.stringify({
-      amountInCents: amountInCents // Pass the formatted amount to the API
-    })
+      amountInCents: amountInCents,
+      interval : interval
+    }),
+    headers: {
+      "Content-Type": "application/json",
+    },
   });
   console.log(response);
 

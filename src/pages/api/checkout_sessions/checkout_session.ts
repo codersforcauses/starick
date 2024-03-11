@@ -8,7 +8,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
 const handleRequest = async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === "POST") {
     try {
-      const { amountInCents } = req.body;
+      const { amountInCents, interval } = req.body;
       const session = await stripe.checkout.sessions.create({
         payment_method_types: ["card"],
         line_items: [
@@ -20,7 +20,7 @@ const handleRequest = async (req: NextApiRequest, res: NextApiResponse) => {
               },
               unit_amount: amountInCents, // $10.00
               recurring: {
-                interval: "month"
+                interval: interval
               }
             },
             quantity: 1
