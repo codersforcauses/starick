@@ -8,6 +8,7 @@ import Donate from "./donation/donate";
 import FinancialDonations from "./donation/financial-donations";
 import PageSummary from "@/components/page-summary";
 import BottomRightDecoratedContent from "@/components/page-bottom-right-circle";
+import PageHeaderBigCircle from "@/components/page-header-bigcircle";
 
 import { ReactNode } from "react";
 
@@ -47,8 +48,15 @@ export default function Donation() {
     )
 
     const donateServices = (
-        <div>
-            Hello World
+        <div className = "text-start">
+            <p className="mb-3 ">Your organisation or community group can help us improve the wellness and quality of life of the women and children in our service.</p>
+            <p className="mb-8">Donated services could include providing a regular gardening service, offering yoga classes, providing us with health club memberships for our clients or teaching our clients a skill to help them become independent, such as cooking classes and self defence. </p>
+            <p className="mb-3 font-bold">If you wish to offer volunteer services to the women and children in our services, contact the Starick Office on 9478 5300.</p>
+            <div className = "flex justify-center">
+                <img />
+                <img />
+                <img />
+            </div>
         </div>
     )
 
@@ -97,6 +105,76 @@ export default function Donation() {
             </div>
         </div>
         </div>
+        
+    )
+
+    const donateContainers = (
+        <div>
+            <div className = "text-start">
+                <p className="mb-5">WA&apos;s new container deposit scheme aims to reduce litter and increase recycling of beverage containers by offering 10c refunds on every eligible contained returned (including cans, plastic and glass bottles, but not wine bottles).</p>
+                <p className="mb-8">You can donate your refund to Starick using the Starick SCHEME ID: C10289306.</p>
+            </div>  
+            <div className = "text-start">
+                <p className="mb-5">To support Starick and recycle at the same time:</p>
+                <ol className="list-decimal ml-10">
+                    <li className="mb-3">Find your closest point at the containers for change website</li>
+                    <li className="mb-3">Collect eligible drink containers (check the label to see if it carries 10c return information)</li>
+                    <li className="mb-3">Take your containers to the refund point</li>
+                    <li className="mb-3">Use the Starick Scheme ID C10289306. You can also download our barcode for scanning by clicking below</li>
+                    <li className="mb-3">The donation is sent directly to Starick from the refund point</li>
+                </ol>
+
+            </div>
+        </div>
+
+    )
+
+    const SpecialGifts = (
+        <div className = "text-start">
+            <p className="mb-3">Your organisation or community group can help us improve the wellness and quality of life of the women and children in our service.</p>
+            <p className="mb-10">Donated services could include providing a regular gardening service, offering yoga classes, providing us with health club memberships for our clients or teaching our clients a skill to help them become independent, such as cooking classes and self defence. </p>
+            <p className = "font-bold">If you wish to offer volunteer services to the women and children in our services, contact the Starick Office on 9478 5300.</p>
+        </div>
+    )
+
+    const donateStock = (
+        <div>
+            <p className = "mb-3 text-start">Our Op Shop is run by a dedicated team of volunteers and we are always on the lookout for donations of stock.</p>
+            <div className = "flex flex-row justify-center gap-5">
+                <Link href="/op-shop/donations">
+                  <span className="mr-2 border-none bg-white px-1 text-black">
+                    &gt;
+                  </span>
+                  Donate Stock
+                </Link>
+            </div>
+        </div>
+    )
+
+    const Bequests=(
+        <div className = "flex justify-center mb-10">
+            <div className = "w-5/6">
+        <div className="mb-10">
+            <p className ="text-start mb-3">Starick welcomes and values bequests.  Through making a gift to Starick in your will, you project your values and wishes, as well as support our work with women and children well into the future.</p>
+            <p className ="text-start mb-10">You may find the following words helpful for inclusion in your will.  However it is important to see your legal advisor before you do so.</p>
+        </div>
+        <div>
+        <p className ="text-start">
+            I GIVE, FREE OF ALL DUTIES AND TAXES<br/>
+            The whole of my estate, or<br/>
+            ___ % of my estate, or<br/>
+            The residue of my estate (or ___ % of the residue of my estate), or<br/>
+            The sum of $ ____, or<br/>
+            My units/shares in __________________ Trust/Ltd, or<br/>
+            My real property situated at (insert street address) having the title reference (insert reference)<br/>
+            TO STARICK SERVICES INC, ABN 56 721 993 085<br/>
+            PO BOX 174<br/>
+            CLOVERDALE  WA  6985<br/>
+            THE RECEIPT OF THE TREASURER, SECRETARY OR EXECUTIVE OFFICER FOR THE TIME BEING IS AN ABSOLUTE DISCHARGE TO MY EXECUTOR<br/>
+            For more information about how your bequest can help women and children escaping and recovering from violence, call Starick on 9478 5300 or email
+        </p>
+        </div>
+    </div></div>
         
     )
 
@@ -151,6 +229,74 @@ export default function Donation() {
         children={Ideasbody}
         bottomRightCircle="/images/circles/crop-2.png"
         />
+        <PageSummary
+              content={
+                <Summary
+                  title="Donate your 'Containers for Change' refunds to Starick"
+                  text={donateContainers}
+                  textColour="starick-white"
+                />
+              }
+              backgroundColour="starick-green"
+              contentOnLeft={false}
+              imageAlt="Donate"
+              imagePath="/placeholder_starick_logo.png"
+        />
+        <PageSummary
+              content={
+                <Summary
+                  title="Special Gifts"
+                  text={SpecialGifts}
+                  textColour="starick-black"
+                />
+              }
+              backgroundColour="starick-olive"
+              contentOnLeft={true}
+              imageAlt="Donate"
+              imagePath="/placeholder_starick_logo.png"
+        />
+        <PageSummary
+              content={
+                <Summary
+                  title="Donate Stock to our Op Shop"
+                  text={donateStock}
+                  textColour="starick-white"
+                />
+              }
+              backgroundColour="starick-green"
+              contentOnLeft={false}
+              imageAlt="Donate"
+              imagePath="/placeholder_starick_logo.png"
+        />
+        <PageHeaderBigCircle
+        titleText = "Bequests"
+        textOnLeft={true}
+        subtitleElement={Bequests}
+        socialMedia={false}
+        />
+        <div className = "flex justify-center text-center bg-starick-olive">
+        <div>
+            <p className="text-2xl font-bold my-10">All Donations are worthwhile</p>
+            <div>
+              <p className="mb-8">Any financial donation no matter how small can assist us to enhance and increase the support we are able to provide to women and children at risk.</p>
+            </div>
+            <div className="mb-8">
+                <p>Donate online below, or if you prefer send a cheque to:</p>      
+                <p>Starick, PO Box 174 Cloverdale WA 6985.</p>
+            </div>
+            <div className = "my-10 flex justify-center">
+                <Link href="/op-shop/donations">
+                <div className = "flex flex-row">
+                <span className="mr-2 border-none bg-starick-green px-1 text-white">
+                    &gt;
+                  </span>
+                  <p className="font-bold">Email Starick About a Donation</p>
+                </div>
+                </Link>
+            </div>
+        </div>
+        </div>
+        
 
 
     </>
