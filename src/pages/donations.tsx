@@ -45,11 +45,27 @@ export default function Donation() {
               </li>
             </ol>
           </div>
-          <div className = "flex justify-center gap-10 mt-6">
-            <img alt="" src="/images/donations/bequests/BequestIcon11.png" style = {{height : "60px", width : "60px"}} />
-            <img alt="" src="/images/donations/bequests/BequestIcon12.png" style = {{height : "60px", width : "60px"}} />
-            <img alt="" src="/images/donations/bequests/BequestIcon10.png" style = {{height : "60px", width : "60px"}} />
-            <img alt="" src="/images/donations/bequests/BequestIcon13.png" style = {{height : "60px", width : "120px"}} />
+          <div className="mt-6 flex justify-center gap-10">
+            <img
+              alt=""
+              src="/images/donations/bequests/BequestIcon11.png"
+              style={{ height: "60px", width: "60px" }}
+            />
+            <img
+              alt=""
+              src="/images/donations/bequests/BequestIcon12.png"
+              style={{ height: "60px", width: "60px" }}
+            />
+            <img
+              alt=""
+              src="/images/donations/bequests/BequestIcon10.png"
+              style={{ height: "60px", width: "60px" }}
+            />
+            <img
+              alt=""
+              src="/images/donations/bequests/BequestIcon13.png"
+              style={{ height: "60px", width: "120px" }}
+            />
           </div>
         </div>
       </div>
@@ -72,8 +88,12 @@ export default function Donation() {
         If you wish to offer volunteer services to the women and children in our
         services, contact the Starick Office on 9478 5300.
       </p>
-      <div className="flex justify-center mt-10">
-        <img alt="" src="/images/donations/bequests/BequestIcon14.png" style = {{height : "60px", width : "200px"}}/>
+      <div className="mt-10 flex justify-center">
+        <img
+          alt=""
+          src="/images/donations/bequests/BequestIcon14.png"
+          style={{ height: "60px", width: "200px" }}
+        />
       </div>
     </div>
   );

@@ -92,7 +92,7 @@ export default function DonationStripe() {
 
     const amountInCents = Math.round(formatAmount * 100);
 
-    handleCheckout({amountInCents});
+    handleCheckout({ amountInCents });
   };
 
   return (
@@ -231,7 +231,7 @@ export default function DonationStripe() {
   );
 }
 
-const handleCheckout = async (amountInCents : {amountInCents : number}) => {
+const handleCheckout = async (amountInCents: { amountInCents: number }) => {
   // Load the Stripe library with the publishable key
   const stripe = await loadStripe(
     process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!
@@ -241,8 +241,8 @@ const handleCheckout = async (amountInCents : {amountInCents : number}) => {
   const response = await fetch("/api/checkout_sessions/checkout_session", {
     method: "POST",
     body: JSON.stringify({
-      amountInCents: amountInCents, // Pass the formatted amount to the API
-    }),
+      amountInCents: amountInCents // Pass the formatted amount to the API
+    })
   });
   console.log(response);
 
