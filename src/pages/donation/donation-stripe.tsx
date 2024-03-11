@@ -222,7 +222,7 @@ export default function DonationStripe() {
       }
     
       <div className="mt-4 flex">
-        <button className="w-full h-full border-2 border-starick-olive p-5 text-center hover:bg-starick-olive" onClick={handleErrorHandle}>Donate</button>
+        <button className="w-full h-full bg-white border-2 border-starick-olive p-5 text-center hover:bg-starick-green" onClick={handleErrorHandle}>Donate</button>
       </div>
     </div>
   );
