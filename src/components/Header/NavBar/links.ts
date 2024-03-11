@@ -66,7 +66,7 @@ export const primaryNav: Array<NavBarItem> = [
     label: "Chat"
   },
   {
-    href : "donations",
-    label : "Donate"
-    }
+    href: "donations",
+    label: "Donate"
+  }
 ];

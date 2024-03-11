@@ -10,7 +10,7 @@ export default function OurServices() {
       text: "Donating goods to Starick helps support women and children escaping domestic violence",
       imagePath: "/images/home/_MG_9460.jpg",
       imageAlt: "Starick"
-    },
+    }
   ];
 
   return (
@@ -69,7 +69,9 @@ function Summary({
 }: SummaryProps) {
   return (
     <div className="flex flex-col items-center">
-      <p className={`w-5/6 text-center text-xl font-semibold text-${textColour}`}>
+      <p
+        className={`w-5/6 text-center text-xl font-semibold text-${textColour}`}
+      >
         {title}
       </p>
       <br />
