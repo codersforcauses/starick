@@ -95,7 +95,7 @@ export default function DonationStripe() {
 
     const amountInCents = Math.round(formatAmount * 100);
 
-    handleCheckout({ amountInCents, interval});
+    handleCheckout({ amountInCents, interval });
   };
 
   return (
@@ -234,22 +234,26 @@ export default function DonationStripe() {
   );
 }
 
-const handleCheckout = async ({ amountInCents, interval }: { amountInCents: number, interval: string }) => {
+const handleCheckout = async ({
+  amountInCents,
+  interval
+}: {
+  amountInCents: number;
+  interval: string;
+}) => {
   // Load the Stripe library with the publishable key
-  const stripe = await loadStripe(
-    process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!
-  );
+  const stripe = await loadStripe("pk_test_L1f0e3XAzjsG7jtp4uN7L9ql");
 
   // Make a POST request to the '/api/checkout_sessions' endpoint
   const response = await fetch("/api/checkout_sessions/checkout_session", {
     method: "POST",
     body: JSON.stringify({
       amountInCents: amountInCents,
-      interval : interval
+      interval: interval
     }),
     headers: {
-      "Content-Type": "application/json",
-    },
+      "Content-Type": "application/json"
+    }
   });
   console.log(response);
 
