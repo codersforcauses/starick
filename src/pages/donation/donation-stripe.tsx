@@ -4,7 +4,7 @@ import { useState } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 
 const apiKey: string | undefined =
-  process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY;
+  process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!;
 
 export default function DonationStripe() {
   const [isClicked, setIsClicked] = useState(false);
