@@ -3,7 +3,7 @@ import { useState } from "react";
 // import CheckoutForm from "../../components/donation-stripe/checkoutform";
 import { loadStripe } from "@stripe/stripe-js";
 
-const apiKey = "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"
+const apiKey: string | undefined = process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY;
 
 export default function DonationStripe() {
   const [isClicked, setIsClicked] = useState(false);
@@ -230,6 +230,9 @@ const handleCheckout = async ({
   interval: string;
 }) => {
   // Load the Stripe library with the publishable key
+  if (!apiKey) {
+    throw new Error("Stripe API key is not defined.");
+  }
   const stripe = await loadStripe(
     // process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!
     apiKey
