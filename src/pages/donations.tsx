@@ -432,9 +432,9 @@ function Summary({ title, text, textColour }: SummaryProps) {
       <p className={`text-center text-xl font-semibold text-${textColour}`}>
         {title}
       </p>
-      <br />
-      <p className={`text-center text-${textColour}`}>{text}</p>
-      <br />
+      <div className={`text-center text-${textColour}`}>
+        {text}
+      </div>
     </div>
   );
 }
