@@ -1,34 +1,44 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import Stripe from "stripe";
 
-const stripe = new Stripe("pk_test_L1f0e3XAzjsG7jtp4uN7L9ql", {
-  apiVersion: "2023-10-16"
-});
+const apiKey = "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"
+
+const stripe = new Stripe(apiKey);
 
 const handleRequest = async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === "POST") {
     try {
-      const { amountInCents, interval } = req.body;
+      // const { amountInCents, interval } = req.body;
+      // const session = await stripe.checkout.sessions.create({
+      //   payment_method_types: ["card"],
+      //   line_items: [
+      //     {
+      //       price_data: {
+      //         currency: "aud",
+      //         product_data: {
+      //           name: "Donation"
+      //         },
+      //         unit_amount: amountInCents, // $10.00
+      //         recurring: {
+      //           interval: interval
+      //         }
+      //       },
+      //       quantity: 1
+      //     }
+      //   ],
+      //   mode: "subscription",
+      //   success_url: `${req.headers.origin}/success?session_id={CHECKOUT_SESSION_ID}`,
+      //   cancel_url: `${req.headers.origin}/donation/donation-stripe`
+      // });
       const session = await stripe.checkout.sessions.create({
-        payment_method_types: ["card"],
+        success_url: 'https://example.com/success',
         line_items: [
           {
-            price_data: {
-              currency: "aud",
-              product_data: {
-                name: "Donation"
-              },
-              unit_amount: amountInCents, // $10.00
-              recurring: {
-                interval: interval
-              }
-            },
-            quantity: 1
-          }
+            price: 'price_1MotwRLkdIwHu7ixYcPLm5uZ',
+            quantity: 2,
+          },
         ],
-        mode: "subscription",
-        success_url: `${req.headers.origin}/success?session_id={CHECKOUT_SESSION_ID}`,
-        cancel_url: `${req.headers.origin}/donation/donation-stripe`
+        mode: 'payment',
       });
 
       // If the session is successfully created, return the session ID in the response

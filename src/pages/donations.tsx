@@ -302,11 +302,6 @@ export default function Donation() {
       <PageHeader titleText="Donations" />
       <Donate />
       <FinancialDonations />
-      <img src="/images/home/_MG_9216.jpg" alt="Section breaker" />
-      <div>
-        <p></p>
-        <p></p>
-      </div>
       <div
         className={`flex h-36 w-full flex-col items-center justify-center bg-starick-orange`}
       >

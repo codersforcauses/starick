@@ -3,6 +3,8 @@ import { useState } from "react";
 // import CheckoutForm from "../../components/donation-stripe/checkoutform";
 import { loadStripe } from "@stripe/stripe-js";
 
+const apiKey = "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"
+
 export default function DonationStripe() {
   const [isClicked, setIsClicked] = useState(false);
 
@@ -108,9 +110,7 @@ export default function DonationStripe() {
           }}
           role="button"
           tabIndex={0}
-          className={`w-60 border-2 border-starick-olive p-5 text-center ${
-            isClicked ? "hover:bg-starick-green" : "hover:bg-starick-olive"
-          } 
+          className={`w-60 border-2 border-starick-olive p-5 text-center hover:bg-starick-green
             ${isFirstButtonActive ? "bg-starick-green" : "bg-starick-white"}`}
         >
           Give monthly
@@ -122,9 +122,7 @@ export default function DonationStripe() {
           }}
           role="button"
           tabIndex={0}
-          className={`w-60 border-2 border-starick-olive p-5 text-center ${
-            isClicked ? "hover:bg-starick-green" : "hover:bg-starick-olive"
-          } 
+          className={`w-60 border-2 border-starick-olive p-5 text-center hover:bg-starick-green
          ${isSecondButtonActive ? "bg-starick-green" : "bg-starick-white"}`}
         >
           Give once
@@ -139,9 +137,7 @@ export default function DonationStripe() {
           }}
           role="button"
           tabIndex={0}
-          className={`w-1/5 border-2 border-starick-olive p-5 text-center ${
-            isClicked ? "hover:bg-starick-green" : "hover:bg-starick-olive"
-          }  ${is$20Active ? "bg-starick-green" : "bg-starick-white"}`}
+          className={`w-1/5 border-2 border-starick-olive p-5 text-center hover:bg-starick-green ${is$20Active ? "bg-starick-green" : "bg-starick-white"}`}
         >
           $20
         </div>
@@ -152,9 +148,7 @@ export default function DonationStripe() {
           }}
           role="button"
           tabIndex={0}
-          className={`w-1/5 border-2 border-starick-olive p-5 text-center ${
-            isClicked ? "hover:bg-starick-green" : "hover:bg-starick-olive"
-          }  ${is$50Active ? "bg-starick-green" : "bg-starick-white"}`}
+          className={`w-1/5 border-2 border-starick-olive p-5 text-center hover:bg-starick-green ${is$50Active ? "bg-starick-green" : "bg-starick-white"}`}
         >
           $50
         </div>
@@ -165,9 +159,7 @@ export default function DonationStripe() {
           }}
           role="button"
           tabIndex={0}
-          className={`w-1/5 border-2 border-starick-olive p-5 text-center ${
-            isClicked ? "hover:bg-starick-green" : "hover:bg-starick-olive"
-          }  ${is$100Active ? "bg-starick-green" : "bg-starick-white"}`}
+          className={`w-1/5 border-2 border-starick-olive p-5 text-center hover:bg-starick-green ${is$100Active ? "bg-starick-green" : "bg-starick-white"}`}
         >
           $100
         </div>
@@ -178,9 +170,7 @@ export default function DonationStripe() {
           }}
           role="button"
           tabIndex={0}
-          className={`w-1/5 border-2 border-starick-olive p-5 text-center ${
-            isClicked ? "hover:bg-starick-green" : "hover:bg-starick-olive"
-          }  ${is$150Active ? "bg-starick-green" : "bg-starick-white"}`}
+          className={`w-1/5 border-2 border-starick-olive p-5 text-center hover:bg-starick-green ${is$150Active ? "bg-starick-green" : "bg-starick-white"}`}
         >
           $150
         </div>
@@ -191,9 +181,7 @@ export default function DonationStripe() {
           }}
           role="button"
           tabIndex={0}
-          className={`w-1/5 border-2 border-starick-olive p-5 text-center ${
-            isClicked ? "hover:bg-starick-green" : "hover:bg-starick-olive"
-          }  ${is$200Active ? "bg-starick-green" : "bg-starick-white"}`}
+          className={`w-1/5 border-2 border-starick-olive p-5 text-center hover:bg-starick-green ${is$200Active ? "bg-starick-green" : "bg-starick-white"}`}
         >
           $_
         </div>
@@ -243,7 +231,8 @@ const handleCheckout = async ({
 }) => {
   // Load the Stripe library with the publishable key
   const stripe = await loadStripe(
-    process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!
+    // process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!
+    apiKey
   );
 
   // Make a POST request to the '/api/checkout_sessions' endpoint
