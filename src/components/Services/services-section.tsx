@@ -2,13 +2,18 @@ import { ReactNode } from "react";
 import Image from "next/image";
 
 import SectionHeader from "../section-header";
+import PageHeaderBigCircle from "../page-header-bigcircle";
 
 interface SectionProps {
   title: string;
+  titleNode?: ReactNode;
   titleBackgroundColour: string;
   titleTextColour: string;
   textOnLeft: boolean;
-  sectionBody: ReactNode;
+  sectionBody?: ReactNode;
+  imagePath?: string;
+  stories?: boolean;
+  centerText?: boolean;
   circlesPlacement?: "tl" | "tr" | "bl" | "br" | "r" | "l";
 }
 
@@ -18,7 +23,11 @@ export default function Section({
   titleTextColour,
   sectionBody,
   textOnLeft,
-  circlesPlacement
+  imagePath,
+  circlesPlacement,
+  stories,
+  titleNode,
+  centerText
 }: SectionProps) {
   let positionStyle;
   let rotationStyle;
@@ -62,15 +71,33 @@ export default function Section({
   }
   return (
     <>
-      <SectionHeader
-        backgroundColour={titleBackgroundColour}
-        titleText={title}
-        imagePath="/images/starick-image1.jpg"
-        textOnLeft={textOnLeft}
-        textColour={titleTextColour}
-      />
+      {/* Render new style if it is in stories page */}
+      {stories ? (
+        <div>
+          <PageHeaderBigCircle
+            titleText={title}
+            subtitleElement={null}
+            socialMedia={false}
+            textOnLeft={textOnLeft}
+            titleBackgroundColour={titleBackgroundColour}
+            titleTextColour={titleTextColour}
+          />
+        </div>
+      ) : (
+        <SectionHeader
+          backgroundColour={titleBackgroundColour}
+          titleText={title}
+          titleNode={titleNode}
+          imagePath={imagePath ? imagePath : "/placeholder_starick_logo.png"}
+          textOnLeft={textOnLeft}
+          textColour={titleTextColour}
+          centerText={centerText}
+        />
+      )}
       <div
-        className="relative bg-starick-white px-6 py-16 md:px-32 lg:px-72"
+        className={`relative bg-starick-white px-6 md:px-32 lg:px-72 ${
+          sectionBody ? "py-10" : ""
+        }`}
         id={title.replace("\n", "")}
       >
         {circlesPlacement ? (
@@ -87,7 +114,9 @@ export default function Section({
             className={`absolute ${positionStyle} ${rotationStyle} ${dimensions} hidden md:block ${originAndTranslate}`}
           />
         ) : null}
-        <div className="relative z-10">{sectionBody}</div>
+        {sectionBody ? (
+          <div className="relative z-10">{sectionBody}</div>
+        ) : null}
       </div>
     </>
   );

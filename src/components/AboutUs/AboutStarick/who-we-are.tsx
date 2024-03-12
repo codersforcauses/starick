@@ -1,6 +1,7 @@
 import Image from "next/image";
 
-import SectionTitle from "@/components/old-section-title";
+import SectionHeader from "@/components/section-header";
+import ServicesSection from "@/components/Services/services-section";
 
 export default function WhoWeAre() {
   const body = (
@@ -27,22 +28,25 @@ export default function WhoWeAre() {
     </div>
   );
   return (
-    <div className="bg-starick-white px-6 py-2 md:px-32">
-      <SectionTitle
-        backgroundColour="starick-green"
-        text="Who We Are"
-        iconPath=""
-        textColour="starick-white"
+    <div>
+      <ServicesSection
+        titleTextColour="starick-white"
+        titleBackgroundColour="starick-green"
+        title="Who we are"
+        textOnLeft={true}
+        stories={true}
       />
-      <div className="mb-4 flex w-full flex-row pt-5 md:px-20">
-        <Image
-          src="icons/identity.svg"
-          className="mx-2 h-12 w-12 md:h-24 md:w-24"
-          height={100}
-          width={100}
-          alt="identity"
-        />
-        {body}
+      <div className="mb-10 flex justify-center">
+        <div className="my-6 flex w-3/4 flex-row py-2 pt-5 md:px-10">
+          <Image
+            src="icons/identity.svg"
+            className="mr-10 h-12 w-12 md:h-24 md:w-24"
+            height={100}
+            width={100}
+            alt="identity"
+          />
+          {body}
+        </div>
       </div>
     </div>
   );
