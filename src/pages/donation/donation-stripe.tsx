@@ -3,7 +3,8 @@ import { useState } from "react";
 // import CheckoutForm from "../../components/donation-stripe/checkoutform";
 import { loadStripe } from "@stripe/stripe-js";
 
-const apiKey: string | undefined = process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY;
+const apiKey: string | undefined =
+  process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY;
 
 export default function DonationStripe() {
   const [isClicked, setIsClicked] = useState(false);
@@ -137,7 +138,9 @@ export default function DonationStripe() {
           }}
           role="button"
           tabIndex={0}
-          className={`w-1/5 border-2 border-starick-olive p-5 text-center hover:bg-starick-green ${is$20Active ? "bg-starick-green" : "bg-starick-white"}`}
+          className={`w-1/5 border-2 border-starick-olive p-5 text-center hover:bg-starick-green ${
+            is$20Active ? "bg-starick-green" : "bg-starick-white"
+          }`}
         >
           $20
         </div>
@@ -148,7 +151,9 @@ export default function DonationStripe() {
           }}
           role="button"
           tabIndex={0}
-          className={`w-1/5 border-2 border-starick-olive p-5 text-center hover:bg-starick-green ${is$50Active ? "bg-starick-green" : "bg-starick-white"}`}
+          className={`w-1/5 border-2 border-starick-olive p-5 text-center hover:bg-starick-green ${
+            is$50Active ? "bg-starick-green" : "bg-starick-white"
+          }`}
         >
           $50
         </div>
@@ -159,7 +164,9 @@ export default function DonationStripe() {
           }}
           role="button"
           tabIndex={0}
-          className={`w-1/5 border-2 border-starick-olive p-5 text-center hover:bg-starick-green ${is$100Active ? "bg-starick-green" : "bg-starick-white"}`}
+          className={`w-1/5 border-2 border-starick-olive p-5 text-center hover:bg-starick-green ${
+            is$100Active ? "bg-starick-green" : "bg-starick-white"
+          }`}
         >
           $100
         </div>
@@ -170,7 +177,9 @@ export default function DonationStripe() {
           }}
           role="button"
           tabIndex={0}
-          className={`w-1/5 border-2 border-starick-olive p-5 text-center hover:bg-starick-green ${is$150Active ? "bg-starick-green" : "bg-starick-white"}`}
+          className={`w-1/5 border-2 border-starick-olive p-5 text-center hover:bg-starick-green ${
+            is$150Active ? "bg-starick-green" : "bg-starick-white"
+          }`}
         >
           $150
         </div>
@@ -181,7 +190,9 @@ export default function DonationStripe() {
           }}
           role="button"
           tabIndex={0}
-          className={`w-1/5 border-2 border-starick-olive p-5 text-center hover:bg-starick-green ${is$200Active ? "bg-starick-green" : "bg-starick-white"}`}
+          className={`w-1/5 border-2 border-starick-olive p-5 text-center hover:bg-starick-green ${
+            is$200Active ? "bg-starick-green" : "bg-starick-white"
+          }`}
         >
           $_
         </div>

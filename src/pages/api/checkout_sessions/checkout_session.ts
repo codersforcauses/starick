@@ -13,8 +13,8 @@ const handleRequest = async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === "POST") {
     try {
       const { amountInCents, interval } = req.body;
-      var session;
-      if(interval === "month"){
+      let session;
+      if (interval === "month") {
         session = await stripe.checkout.sessions.create({
           payment_method_types: ["card"],
           line_items: [
@@ -36,8 +36,7 @@ const handleRequest = async (req: NextApiRequest, res: NextApiResponse) => {
           success_url: `${req.headers.origin}/success?session_id={CHECKOUT_SESSION_ID}`,
           cancel_url: `${req.headers.origin}/donations`
         });
-      }
-      else{
+      } else {
         session = await stripe.checkout.sessions.create({
           payment_method_types: ["card"],
           line_items: [
@@ -47,7 +46,7 @@ const handleRequest = async (req: NextApiRequest, res: NextApiResponse) => {
                 product_data: {
                   name: "Donation"
                 },
-                unit_amount: amountInCents, // $10.00
+                unit_amount: amountInCents // $10.00
               },
               quantity: 1
             }
@@ -57,7 +56,7 @@ const handleRequest = async (req: NextApiRequest, res: NextApiResponse) => {
           cancel_url: `${req.headers.origin}/donations`
         });
       }
-      
+
       // If the session is successfully created, return the session ID in the response
       res.status(200).json({ sessionId: session.id });
     } catch (error: any) {
