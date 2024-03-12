@@ -242,7 +242,9 @@ const handleCheckout = async ({
   interval: string;
 }) => {
   // Load the Stripe library with the publishable key
-  const stripe = await loadStripe("pk_test_L1f0e3XAzjsG7jtp4uN7L9ql");
+  const stripe = await loadStripe(
+    process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!
+  );
 
   // Make a POST request to the '/api/checkout_sessions' endpoint
   const response = await fetch("/api/checkout_sessions/checkout_session", {
