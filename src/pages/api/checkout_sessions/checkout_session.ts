@@ -76,7 +76,7 @@ const handleRequest = async (req: NextApiRequest, res: NextApiResponse) => {
             }
           ],
           mode: "payment",
-          success_url: `${req.headers.origin}/donations?session_id={CHECKOUT_SESSION_ID}&amount=${amountInCents}`,
+          success_url: `${req.headers.origin}/donations-success?session_id={CHECKOUT_SESSION_ID}&amount=${amountInCents}`,
           cancel_url: `${req.headers.origin}/donations-failure?session_id={CHECKOUT_SESSION_ID}`
         });
       }
