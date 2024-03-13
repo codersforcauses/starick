@@ -16,14 +16,20 @@ export default function DonationSuccess() {
         const response = await fetch(
           `/api/getSession?session_id=${sessionIdFromURL}`
         );
-        const sessionData = await response.json();
 
-        if (sessionData) {
-          if (sessionData.session.amount_total == amountInCentsfromURL) {
-            const formatted_amount = parseInt(amountInCentsfromURL) / 100;
+        if(response.ok){
+            const sessionData = await response.json();
 
-            setAmount(formatted_amount);
-          }
+            if (sessionData) {
+              if (sessionData.session.amount_total == amountInCentsfromURL) {
+                const formatted_amount = parseInt(amountInCentsfromURL) / 100;
+    
+                setAmount(formatted_amount);
+              }
+            }
+        }
+        else{
+            setAmount(-1);
         }
       }
     };
