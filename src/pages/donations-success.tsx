@@ -2,7 +2,7 @@ import PageHeaderBigCircle from "@/components/page-header-bigcircle";
 import { format } from "path";
 import { useState, useEffect } from "react";
 
-export default function donationSuccess() {
+export default function DonationSuccess() {
   const [amount, setAmount] = useState(0);
 
   useEffect(() => {
