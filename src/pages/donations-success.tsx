@@ -17,19 +17,18 @@ export default function DonationSuccess() {
           `/api/getSession?session_id=${sessionIdFromURL}`
         );
 
-        if(response.ok){
-            const sessionData = await response.json();
+        if (response.ok) {
+          const sessionData = await response.json();
 
-            if (sessionData) {
-              if (sessionData.session.amount_total == amountInCentsfromURL) {
-                const formatted_amount = parseInt(amountInCentsfromURL) / 100;
-    
-                setAmount(formatted_amount);
-              }
+          if (sessionData) {
+            if (sessionData.session.amount_total == amountInCentsfromURL) {
+              const formatted_amount = parseInt(amountInCentsfromURL) / 100;
+
+              setAmount(formatted_amount);
             }
-        }
-        else{
-            setAmount(-1);
+          }
+        } else {
+          setAmount(-1);
         }
       }
     };
