@@ -59,7 +59,6 @@ const handleRequest = async (req: NextApiRequest, res: NextApiResponse) => {
 
       // If the session is successfully created, return the session ID in the response
       res.status(200).json({ sessionId: session.id });
-     
     } catch (error: any) {
       // If there's an error, return a 500 status code with the error message
       res.status(500).json({ statusCode: 500, message: error.message });
