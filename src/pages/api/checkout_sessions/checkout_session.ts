@@ -33,7 +33,7 @@ const handleRequest = async (req: NextApiRequest, res: NextApiResponse) => {
             }
           ],
           mode: "subscription",
-          success_url: `${req.headers.origin}/success?session_id={CHECKOUT_SESSION_ID}`,
+          success_url: `${req.headers.origin}/`,
           cancel_url: `${req.headers.origin}/donations`
         });
       } else {
@@ -52,13 +52,14 @@ const handleRequest = async (req: NextApiRequest, res: NextApiResponse) => {
             }
           ],
           mode: "payment",
-          success_url: `${req.headers.origin}/success?session_id={CHECKOUT_SESSION_ID}`,
+          success_url: `${req.headers.origin}`,
           cancel_url: `${req.headers.origin}/donations`
         });
       }
 
       // If the session is successfully created, return the session ID in the response
       res.status(200).json({ sessionId: session.id });
+     
     } catch (error: any) {
       // If there's an error, return a 500 status code with the error message
       res.status(500).json({ statusCode: 500, message: error.message });
