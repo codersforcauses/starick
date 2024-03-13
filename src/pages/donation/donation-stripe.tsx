@@ -1,5 +1,5 @@
 import { format } from "path";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 // import CheckoutForm from "../../components/donation-stripe/checkoutform";
 import { loadStripe } from "@stripe/stripe-js";
 
@@ -102,134 +102,136 @@ export default function DonationStripe() {
   };
 
   return (
-    <div style={{ maxWidth: "480px" }}>
-      <div className="flex">
-        <div
-          onClick={handleFirstButtonClick}
-          onKeyDown={(event) => {
-            if (event.key === "Enter") handleFirstButtonClick();
-          }}
-          role="button"
-          tabIndex={0}
-          className={`w-60 border-2 border-starick-olive p-5 text-center hover:bg-starick-green
-            ${isFirstButtonActive ? "bg-starick-green" : "bg-starick-white"}`}
-        >
-          Give monthly
-        </div>
-        <div
-          onClick={handleSecondButtonClick}
-          onKeyDown={(event) => {
-            if (event.key === "Enter") handleFirstButtonClick();
-          }}
-          role="button"
-          tabIndex={0}
-          className={`w-60 border-2 border-starick-olive p-5 text-center hover:bg-starick-green
-         ${isSecondButtonActive ? "bg-starick-green" : "bg-starick-white"}`}
-        >
-          Give once
-        </div>
-      </div>
-
-      <div className="mt-4 flex">
-        <div
-          onClick={handle$20Click}
-          onKeyDown={(event) => {
-            if (event.key === "Enter") handleFirstButtonClick();
-          }}
-          role="button"
-          tabIndex={0}
-          className={`w-1/5 border-2 border-starick-olive p-5 text-center hover:bg-starick-green ${
-            is$20Active ? "bg-starick-green" : "bg-starick-white"
-          }`}
-        >
-          $20
-        </div>
-        <div
-          onClick={handle$50Click}
-          onKeyDown={(event) => {
-            if (event.key === "Enter") handleFirstButtonClick();
-          }}
-          role="button"
-          tabIndex={0}
-          className={`w-1/5 border-2 border-starick-olive p-5 text-center hover:bg-starick-green ${
-            is$50Active ? "bg-starick-green" : "bg-starick-white"
-          }`}
-        >
-          $50
-        </div>
-        <div
-          onClick={handle$100Click}
-          onKeyDown={(event) => {
-            if (event.key === "Enter") handleFirstButtonClick();
-          }}
-          role="button"
-          tabIndex={0}
-          className={`w-1/5 border-2 border-starick-olive p-5 text-center hover:bg-starick-green ${
-            is$100Active ? "bg-starick-green" : "bg-starick-white"
-          }`}
-        >
-          $100
-        </div>
-        <div
-          onClick={handle$150Click}
-          onKeyDown={(event) => {
-            if (event.key === "Enter") handleFirstButtonClick();
-          }}
-          role="button"
-          tabIndex={0}
-          className={`w-1/5 border-2 border-starick-olive p-5 text-center hover:bg-starick-green ${
-            is$150Active ? "bg-starick-green" : "bg-starick-white"
-          }`}
-        >
-          $150
-        </div>
-        <div
-          onClick={handle$200Click}
-          onKeyDown={(event) => {
-            if (event.key === "Enter") handleFirstButtonClick();
-          }}
-          role="button"
-          tabIndex={0}
-          className={`w-1/5 border-2 border-starick-olive p-5 text-center hover:bg-starick-green ${
-            is$200Active ? "bg-starick-green" : "bg-starick-white"
-          }`}
-        >
-          $_
-        </div>
-      </div>
-
-      {errorAmount ? (
-        <div className="mt-5 text-center">
-          <p className="text-l text-red-500">
-            Please input a non negative number
-          </p>
-        </div>
-      ) : null}
-
-      {is$200Active ? (
-        <div className="mt-5">
-          <input
-            type="number"
-            placeholder="Other amount"
-            aria-invalid="false"
-            className="w-full border-2 border-starick-olive p-3"
-            onChange={(e) => {
-              setAmount(e.target.value);
-              toggleErrorAmount(false);
+    <>
+      <div style={{ maxWidth: "480px" }}>
+        <div className="flex">
+          <div
+            onClick={handleFirstButtonClick}
+            onKeyDown={(event) => {
+              if (event.key === "Enter") handleFirstButtonClick();
             }}
-          />
+            role="button"
+            tabIndex={0}
+            className={`w-60 border-2 border-starick-olive p-5 text-center hover:bg-starick-green
+            ${isFirstButtonActive ? "bg-starick-green" : "bg-starick-white"}`}
+          >
+            Give monthly
+          </div>
+          <div
+            onClick={handleSecondButtonClick}
+            onKeyDown={(event) => {
+              if (event.key === "Enter") handleFirstButtonClick();
+            }}
+            role="button"
+            tabIndex={0}
+            className={`w-60 border-2 border-starick-olive p-5 text-center hover:bg-starick-green
+         ${isSecondButtonActive ? "bg-starick-green" : "bg-starick-white"}`}
+          >
+            Give once
+          </div>
         </div>
-      ) : null}
 
-      <div className="mt-4 flex">
-        <button
-          className="h-full w-full border-2 border-starick-olive bg-white p-5 text-center hover:bg-starick-green"
-          onClick={handleErrorHandle}
-        >
-          Donate
-        </button>
+        <div className="mt-4 flex">
+          <div
+            onClick={handle$20Click}
+            onKeyDown={(event) => {
+              if (event.key === "Enter") handleFirstButtonClick();
+            }}
+            role="button"
+            tabIndex={0}
+            className={`w-1/5 border-2 border-starick-olive p-5 text-center hover:bg-starick-green ${
+              is$20Active ? "bg-starick-green" : "bg-starick-white"
+            }`}
+          >
+            $20
+          </div>
+          <div
+            onClick={handle$50Click}
+            onKeyDown={(event) => {
+              if (event.key === "Enter") handleFirstButtonClick();
+            }}
+            role="button"
+            tabIndex={0}
+            className={`w-1/5 border-2 border-starick-olive p-5 text-center hover:bg-starick-green ${
+              is$50Active ? "bg-starick-green" : "bg-starick-white"
+            }`}
+          >
+            $50
+          </div>
+          <div
+            onClick={handle$100Click}
+            onKeyDown={(event) => {
+              if (event.key === "Enter") handleFirstButtonClick();
+            }}
+            role="button"
+            tabIndex={0}
+            className={`w-1/5 border-2 border-starick-olive p-5 text-center hover:bg-starick-green ${
+              is$100Active ? "bg-starick-green" : "bg-starick-white"
+            }`}
+          >
+            $100
+          </div>
+          <div
+            onClick={handle$150Click}
+            onKeyDown={(event) => {
+              if (event.key === "Enter") handleFirstButtonClick();
+            }}
+            role="button"
+            tabIndex={0}
+            className={`w-1/5 border-2 border-starick-olive p-5 text-center hover:bg-starick-green ${
+              is$150Active ? "bg-starick-green" : "bg-starick-white"
+            }`}
+          >
+            $150
+          </div>
+          <div
+            onClick={handle$200Click}
+            onKeyDown={(event) => {
+              if (event.key === "Enter") handleFirstButtonClick();
+            }}
+            role="button"
+            tabIndex={0}
+            className={`w-1/5 border-2 border-starick-olive p-5 text-center hover:bg-starick-green ${
+              is$200Active ? "bg-starick-green" : "bg-starick-white"
+            }`}
+          >
+            $_
+          </div>
+        </div>
+
+        {errorAmount ? (
+          <div className="mt-5 text-center">
+            <p className="text-l text-red-500">
+              Please input a non negative number
+            </p>
+          </div>
+        ) : null}
+
+        {is$200Active ? (
+          <div className="mt-5">
+            <input
+              type="number"
+              placeholder="Other amount"
+              aria-invalid="false"
+              className="w-full border-2 border-starick-olive p-3"
+              onChange={(e) => {
+                setAmount(e.target.value);
+                toggleErrorAmount(false);
+              }}
+            />
+          </div>
+        ) : null}
+
+        <div className="mt-4 flex">
+          <button
+            className="h-full w-full border-2 border-starick-olive bg-white p-5 text-center hover:bg-starick-green"
+            onClick={handleErrorHandle}
+          >
+            Donate
+          </button>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
@@ -260,11 +262,9 @@ const handleCheckout = async ({
       "Content-Type": "application/json"
     }
   });
-  console.log(response);
 
   // Extract the JSON data from the response
   const data = await response.json();
-  console.log(data);
   //  const { data } = await fetch('/api/checkout_sessions', { method: 'POST' });
 
   if (stripe && data.sessionId) {
