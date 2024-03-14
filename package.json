@@ -14,6 +14,7 @@
     "test": "dotenv -e .env -- mocha"
   },
   "dependencies": {
+    "@stripe/stripe-js": "^3.0.6",
     "@types/chai": "^4.3.5",
     "next": "^13.5.6",
     "react": "18.2.0",
@@ -21,6 +22,8 @@
     "react-easy-swipe": "^0.0.23",
     "react-hook-form": "^7.43.9",
     "react-icons": "^5.0.1",
+    "react-router-dom": "^6.22.3",
+    "stripe": "^14.18.0",
     "zod": "^3.22.4"
   },
   "devDependencies": {
