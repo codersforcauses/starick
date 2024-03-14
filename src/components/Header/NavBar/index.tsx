@@ -10,10 +10,10 @@ export default function NavBar() {
   const [hamburgerMenuOpen, setHamburgerMenuOpen] = useState(false);
 
   return (
-    <div className="flex h-14 items-center justify-between whitespace-nowrap bg-white px-4 text-starick-brown">
+    <div className="flex h-20 items-center justify-center whitespace-nowrap bg-white px-4 text-starick-black">
       {/* Left nav container (logo and links) */}
-      <div className="flex items-center justify-center">
-        {/* Header container */}
+      {/* Header container */}
+      <div className="flex flex-row items-center gap-80">
         <Link href="/">
           <Image
             src="/placeholder_starick_logo.png"
@@ -24,18 +24,20 @@ export default function NavBar() {
           />
         </Link>
         {/* Primary nav link container */}
-        <div
-          className={`flex items-center justify-center lg:visible lg:static lg:block lg:h-full lg:w-full ${
-            hamburgerMenuOpen
-              ? "fixed bottom-0 left-0 right-0 top-0 h-full bg-white"
-              : "hidden"
-          }`}
-        >
-          <ul className="ml-20 flex w-full flex-col divide-starick-olive font-semibold lg:ml-0 lg:flex-row lg:divide-x-2">
-            {primaryNav.map((link) => (
-              <NavItem link={link} key={link.href} />
-            ))}
-          </ul>
+        <div className="items-center text-end">
+          <div
+            className={`flex items-center justify-center lg:visible lg:static lg:block lg:h-full lg:w-full ${
+              hamburgerMenuOpen
+                ? "fixed bottom-0 left-0 right-0 top-0 h-full bg-white"
+                : "hidden"
+            }`}
+          >
+            <ul className="flex w-full flex-col divide-starick-olive font-semibold lg:ml-0 lg:flex-row lg:divide-x-2">
+              {primaryNav.map((link) => (
+                <NavItem link={link} key={link.href} />
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
 

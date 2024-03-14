@@ -66,7 +66,7 @@ export const primaryNav: Array<NavBarItem> = [
     label: "Op Shop"
   },
   {
-    href: "/donate",
+    href: "/donations",
     label: "Donate"
   }
 ];
