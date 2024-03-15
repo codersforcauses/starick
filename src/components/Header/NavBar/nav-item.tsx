@@ -19,7 +19,7 @@ const NavItem = ({ link }: Props) => {
       onMouseLeave={() => setActivated(false)}
     >
       {/* button handles click action */}
-      <button className="my-2 w-max border-t-4 border-white hover:brightness-90 hover:filter lg:my-0 lg:px-2 hover:lg:border-starick-green">
+      <button className="mx-2 my-2 w-max border-t-4 border-white hover:brightness-90 hover:filter lg:my-0 lg:px-2 hover:lg:border-starick-green">
         <Link href={link.href}>
           {link.label}
           {link.submenu && <FiChevronDown className="inline" />}
