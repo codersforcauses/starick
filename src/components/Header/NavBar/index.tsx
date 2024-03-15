@@ -6,7 +6,7 @@ import { primaryNav } from "./links";
 import NavItem from "./nav-item";
 
 export default function NavBar() {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(0);
 
   useEffect(() => {
     const handleResize = () => {
