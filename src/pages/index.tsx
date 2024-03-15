@@ -98,7 +98,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="flex ">
+      <div className="flex  overflow-hidden ">
         {/* Left side: Image */}
         <div className="relative w-1/2">
           <div className="relative h-full w-full object-cover">
