@@ -50,15 +50,23 @@ export const primaryNav: Array<NavBarItem> = [
       {
         href: "/useful-numbers-and-information",
         label: "Useful numbers & information"
+      },
+      {
+        href: "/supporter",
+        label: "Our Supporters"
       }
     ]
   },
   {
-    href: "/support",
-    label: "Support Us"
+    href: "https://us20.campaign-archive.com/?u=fd9ee23110367fb6d7afdc749&id=bc2242df48",
+    label: "News"
   },
   {
-    href: "/chat",
-    label: "Chat"
+    href: "/op-shop",
+    label: "Op Shop"
+  },
+  {
+    href: "/donations",
+    label: "Donate"
   }
 ];

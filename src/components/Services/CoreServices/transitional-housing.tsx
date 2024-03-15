@@ -45,6 +45,7 @@ export default function TransitionalHousingSection() {
       title="Transitional Housing"
       textOnLeft={false}
       circlesPlacement="l"
+      stories={true}
     />
   );
 }

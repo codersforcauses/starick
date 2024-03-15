@@ -1,6 +1,6 @@
+import { List } from "../Services/list";
 import Section from "../Services/services-section";
 import SubSection from "../Services/subsection";
-import { List } from "../Services/list";
 
 export default function SpecialDonations() {
   const acceptedItems = [

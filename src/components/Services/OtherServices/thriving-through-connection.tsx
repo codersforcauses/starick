@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 import ServicesSection from "../services-section";
-import ServicesLink from "../services-link";
+import Button from "../../button";
 
 export default function ThrivingThroughConnectionSection() {
   const body = (
@@ -38,12 +38,12 @@ export default function ThrivingThroughConnectionSection() {
       <img
         className="mx-auto w-96"
         alt="Telethon Logo"
-        src="/images/telethon-logo.png"
+        src="/supporter/telethon-logo.png"
       ></img>
       <div className="flex justify-center">
-        <ServicesLink
-          text={"Core Services"}
-          link={"/core-services"}
+        <Button
+          text="Core Services"
+          link="/core-services"
           textColour="starick-black"
           arrowColour="starick-white"
           arrowBackgroundColor="starick-green"
@@ -62,6 +62,7 @@ export default function ThrivingThroughConnectionSection() {
       }
       textOnLeft={false}
       circlesPlacement="bl"
+      stories={true}
     />
   );
 }
