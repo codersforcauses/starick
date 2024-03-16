@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -24,25 +24,22 @@ export default function NavBar() {
   const [hamburgerMenuOpen, setHamburgerMenuOpen] = useState(false);
 
   return (
-    <div className="flex h-20 items-center justify-center gap-60 whitespace-nowrap bg-white px-4 text-starick-black">
+    <nav className="flex h-16  place-content-between items-center whitespace-nowrap bg-white px-4 text-starick-black">
       {/* Left nav container (logo and links) */}
-      {/* Header container */}
-      <div
-        className={`flex flex-row items-center ${
-          windowWidth >= 1200 ? "lg:gap-60" : "md:gap-30"
-        }`}
-      >
-        <Link href="/">
+
+      {/* Header container below */}
+      <div className="flex h-full w-full flex-row place-content-between items-center">
+        <Link href="/" className="flex-none">
           <Image
             src="/placeholder_starick_logo.png"
             alt="Starick Logo"
             width={170}
             height={50}
-            className="font-bold lg:pr-6"
+            className="font-bold lg:pr-6 "
           />
         </Link>
         {/* Primary nav link container */}
-        <div className="items-center text-end">
+        <div className="max-w-[900px] grow h-full items-center text-end">
           <div
             className={`flex items-center justify-center lg:visible lg:static lg:block lg:h-full lg:w-full ${
               hamburgerMenuOpen
@@ -50,7 +47,7 @@ export default function NavBar() {
                 : "hidden"
             }`}
           >
-            <ul className="flex w-full flex-col divide-starick-olive font-semibold lg:ml-0 lg:flex-row lg:divide-x-2">
+            <ul className=" flex relative h-full w-full flex-col divide-starick-olive  font-semibold lg:flex-row after:bg-starick-olive after:absolute after:w-1 after:h-5 after:top-[36%] after:right-  ">
               {primaryNav.map((link) => (
                 <NavItem link={link} key={link.href} />
               ))}
@@ -86,6 +83,6 @@ export default function NavBar() {
           }
         />
       </button>
-    </div>
+    </nav>
   );
 }

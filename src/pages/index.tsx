@@ -3,8 +3,9 @@ import Link from "next/link";
 
 import Carousel from "@/components/Home/carousel/carousel";
 import carousel_list from "@/components/Home/carousel/carousel_list.json";
-import FacebookFeed from "@/components/social-media-feed";
 import PageHeader from "@/components/page-header";
+import PageHeaderBigCircle from "@/components/page-header-bigcircle";
+import FacebookFeed from "@/components/social-media-feed";
 
 import CrisisAlert from "~/icons/crisis_alert.svg";
 import Staricklogo from "~/icons/starick-logo.svg";
@@ -13,7 +14,6 @@ import Afterdidyouknow from "~/images/home/_MG_9261.jpg";
 import Gridpic2 from "~/images/home/_MG_9460.jpg";
 import Gridpic1 from "~/images/home/Starick-Op-Shop-Volunteers.jpg";
 import HomeTitle from "~/images/Parents-with-kids-graphic.png";
-import PageHeaderBigCircle from "@/components/page-header-bigcircle";
 export default function Home() {
   return (
     <>

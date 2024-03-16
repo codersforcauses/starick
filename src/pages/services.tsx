@@ -1,6 +1,6 @@
+import Button from "@/components/button";
 import PageHeader from "@/components/page-header";
 import PageSummary from "@/components/page-summary";
-import Button from "@/components/button";
 
 export default function OurServices() {
   const servicesSummaries = [
