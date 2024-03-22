@@ -39,7 +39,7 @@ export default function NavBar() {
           />
         </Link>
         {/* Primary nav link container */}
-        <div className="max-w-[900px] grow h-full items-center text-end">
+        <div className="h-full max-w-[900px] grow items-center text-end">
           <div
             className={`flex items-center justify-center lg:visible lg:static lg:block lg:h-full lg:w-full ${
               hamburgerMenuOpen
@@ -47,7 +47,7 @@ export default function NavBar() {
                 : "hidden"
             }`}
           >
-            <ul className=" flex relative h-full w-full flex-col divide-starick-olive  font-semibold lg:flex-row after:bg-starick-olive after:absolute after:w-1 after:h-5 after:top-[36%] after:right-  ">
+            <ul className=" after:right- relative flex h-full w-full flex-col  divide-starick-olive font-semibold after:absolute after:top-[36%] after:h-5 after:w-1 after:bg-starick-olive lg:flex-row  ">
               {primaryNav.map((link) => (
                 <NavItem link={link} key={link.href} />
               ))}

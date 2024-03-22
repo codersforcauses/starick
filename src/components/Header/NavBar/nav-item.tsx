@@ -37,7 +37,7 @@ const NavItem = ({ link }: Props) => {
       <li
         onMouseEnter={() => enterHandler()}
         onMouseLeave={() => leaveHandler()}
-        className={`relative lg:flex lg:grow items-center justify-center before:h-1  hover:before:block lg:h-full 
+        className={`relative items-center justify-center before:h-1 hover:before:block lg:flex  lg:h-full lg:grow 
         lg:before:absolute lg:before:right-0 lg:before:top-3 lg:before:hidden lg:before:w-full lg:before:bg-starick-green lg:before:content-[''] `}
       >
         {/* button handles click action */}
@@ -68,26 +68,26 @@ const NavItem = ({ link }: Props) => {
           <div
             className={`lg:grid lg:grid-cols-${
               link.submenu.length > 3 ? "3" : "2"
-            } gap-3 lg:py-4 lg:ml-8 lg:px-12`}
+            } gap-3 lg:ml-8 lg:px-12 lg:py-4`}
           >
             {link.submenu.map((sublink) => (
               <li
-                className="lg:relative lg:transition-colors lg:p-2 lg:before:absolute lg:before:-left-0 before:top-4 before:h-16 before:w-0.5 lg:before:bg-starick-olive before:content-[''] hover:bg-starick-olive before:hover:hidden "
+                className="before:top-4 before:h-16 before:w-0.5 before:content-[''] hover:bg-starick-olive before:hover:hidden lg:relative lg:p-2 lg:transition-colors lg:before:absolute lg:before:-left-0 lg:before:bg-starick-olive "
                 key={sublink.href}
               >
                 <Link
                   href={sublink.href}
-                  className="relative  lg:h-20  lg:pl-3.5  text-starick-black  lg:flex lg:items-center lg:py-0.5"
+                  className="relative  text-starick-black  lg:flex  lg:h-20  lg:items-center lg:py-0.5 lg:pl-3.5"
                 >
                   <Image
                     src={AboriginalFlag}
                     alt="Aboriginal Flag"
                     width={40}
                     height={40}
-                    className="lg:mx-3 hidden lg:block "
+                    className="hidden lg:mx-3 lg:block "
                   />
                   <span className="text-sm ">{sublink.label}</span>
-                  <BiSolidChevronRightSquare className=" hidden lg:block ml-4 shrink-0 text-2xl text-starick-green" />
+                  <BiSolidChevronRightSquare className=" ml-4 hidden shrink-0 text-2xl text-starick-green lg:block" />
                 </Link>
               </li>
             ))}
