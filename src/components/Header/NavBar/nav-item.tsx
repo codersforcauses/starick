@@ -44,7 +44,7 @@ const NavItem = ({ link }: Props) => {
 
         <Link
           href={link.href}
-          className=" relative flex h-full before:absolute before:-left-5 before:top-[36%] before:h-5 before:w-1 before:bg-starick-olive  before:content-['']"
+          className=" relative flex h-full before:absolute before:-left-5 before:top-[36%] before:h-5 before:w-1 lg:before:bg-starick-olive  before:content-['']"
         >
           <button className="h-full items-center justify-center">
             {link.label}

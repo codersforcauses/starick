@@ -39,21 +39,20 @@ export default function NavBar() {
           />
         </Link>
         {/* Primary nav link container */}
-        <div className="h-full max-w-[900px] grow items-center text-end">
           <div
             className={`flex items-center justify-center lg:visible lg:static lg:block lg:h-full lg:w-full ${
               hamburgerMenuOpen
-                ? "fixed bottom-0 left-0 right-0 top-0 h-full bg-white"
+                ? "fixed bottom-0 left-0 right-0 top-0 h-screen w-screen bg-white"
                 : "hidden"
             }`}
           >
-            <ul className=" after:right- relative flex h-full w-full flex-col  divide-starick-olive font-semibold after:absolute after:top-[36%] after:h-5 after:w-1 after:bg-starick-olive lg:flex-row  ">
+            <ul className="relative flex flex-col divide-starick-olive font-semibold  lg:flex-row  ">
               {primaryNav.map((link) => (
                 <NavItem link={link} key={link.href} />
               ))}
             </ul>
           </div>
-        </div>
+
       </div>
 
       {/* Right nav component (help/donate/hamburger buttons) */}
