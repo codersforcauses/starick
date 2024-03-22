@@ -60,13 +60,12 @@ const NavItem = ({ link }: Props) => {
           onMouseLeave={() => leaveHandler()}
           className={`${
             activated ? "" : "hidden"
-          } w-screen border-t-2 border-starick-olive bg-white  lg:absolute  lg:-right-4 lg:top-16 lg:shadow-md 
+          } w-screen border-t-2 border-starick-olive bg-white  lg:absolute lg:-right-4 lg:top-16 lg:shadow-md 
           lg:before:absolute lg:before:left-0 lg:before:top-0 lg:before:w-full lg:before:content-[''] 
-          
           `}
         >
           <div
-            className={`lg:grid lg:grid-cols-${
+            className={`lg:grid grid-cols-${
               link.submenu.length > 3 ? "3" : "2"
             } gap-3 lg:ml-8 lg:px-12 lg:py-4`}
           >
@@ -77,7 +76,7 @@ const NavItem = ({ link }: Props) => {
               >
                 <Link
                   href={sublink.href}
-                  className="relative  text-starick-black  lg:flex  lg:h-20  lg:items-center lg:py-0.5 lg:pl-3.5"
+                  className="relative  text-starick-black lg:flex  lg:h-20  lg:items-center lg:py-0.5 lg:pl-3.5"
                 >
                   <Image
                     src={AboriginalFlag}

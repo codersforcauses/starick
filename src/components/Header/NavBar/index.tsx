@@ -24,7 +24,7 @@ export default function NavBar() {
   const [hamburgerMenuOpen, setHamburgerMenuOpen] = useState(false);
 
   return (
-    <nav className="flex h-16  place-content-between items-center whitespace-nowrap bg-white px-4 text-starick-black">
+    <nav className="flex h-16 place-content-between items-center whitespace-nowrap bg-white px-4 text-starick-black">
       {/* Left nav container (logo and links) */}
 
       {/* Header container below */}
