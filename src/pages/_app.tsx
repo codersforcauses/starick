@@ -11,7 +11,6 @@ export default function App({ Component, pageProps }: AppProps) {
     <div className="flex min-h-screen flex-col">
       <Header />
       <main className="flex flex-grow flex-col bg-starick-white">
-        <Assistant />
         <Component {...pageProps} />
       </main>
       <footer>

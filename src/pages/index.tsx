@@ -12,7 +12,7 @@ import Opshoppic from "~/images/home/_MG_9216.jpg";
 import Afterdidyouknow from "~/images/home/_MG_9261.jpg";
 import Gridpic2 from "~/images/home/_MG_9460.jpg";
 import Gridpic1 from "~/images/home/Starick-Op-Shop-Volunteers.jpg";
-import HomeTitle from "~/images/Parents-with-kids-graphic.png";
+import HomeTitle from "~/images/home/speech.png";
 import PageHeaderBigCircle from "@/components/page-header-bigcircle";
 export default function Home() {
   return (
